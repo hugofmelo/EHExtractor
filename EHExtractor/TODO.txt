@@ -3,8 +3,11 @@ DONE Prioridade 0: Revisar loggers
 	DONE Separar o logger do resultado do log de processamento
 	DONE Transferir os métodos que calculam os totais dos resultados para o logger de resultado
 Prioridade 0: aprender a usar a api do github e implementar minha própria busca.
+	Como pegar mais que 1000 resultados
+		
 Prioridade 1: Criar exceção para centralizar falhas de Analyzer.
 Prioridade 2: Revisar todo o código, linha a linha, removendo ou movendo classes para seus devidos lugares..
+Prioridade 2: Baixar e extrair os projetos automaticamente
 Prioridade 2: Algumas classes android não são incluidas nas dependencias. As classes são dos projetos 'support' do android (até agora, só v4). Verificar se os existem projetos android q usam classes support e q não tem problemas. Estou pensando que esse problema é de configuração do projeto, e não do EHMetrics.
 Prioridade 3: Identificar diferentes projetos em um mesmo repositório do Github
 Prioridade 4: Verificar padrões de autocomplete do Eclipse, NetBeans e IntelliJ
@@ -33,6 +36,8 @@ Procedimento:
 	Baixar e extrair os projetos
 	Rodar a ferramenta
 	Colar os resultados
+
+Nota: as classes de modelo que vão ser populadas pelo GitHub precisam ter os atributos iguais as tags do JSON (ver documentação), mas não precisam de getters e setters. Então a recomendação é trocar o nome dos getters para criar uma API mais amigável.
 Nota: o EHMetrics não suporta arquivos java sem pacote. A ferramenta descarta esses arquivos java.
 Nota: o JavaParser não resolve anonymous inner nested classes. Quando ocorrem em um arquivo, o arquivo é removido da análise.
 Nota: É preciso instalar o maven, gradle, android studio, etc, a depender do que o sistema analisado precisa.

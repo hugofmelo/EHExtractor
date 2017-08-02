@@ -2,7 +2,7 @@ package ufrn.dimap.lets.ehmetrics.repositoryexplorer.model;
 
 import java.util.Date;
 
-public class GHRelease
+public class Release
 {
 	private String name;
 	private Date published_at;

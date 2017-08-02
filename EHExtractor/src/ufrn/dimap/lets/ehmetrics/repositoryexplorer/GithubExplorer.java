@@ -26,7 +26,8 @@ import com.jcabi.github.RtGithub;
 import com.jcabi.http.response.JsonResponse;
 
 import ufrn.dimap.lets.ehmetrics.repositoryexplorer.GHRepositorySeacher.LANGUAGE;
-import ufrn.dimap.lets.ehmetrics.repositoryexplorer.model.GHRelease;
+import ufrn.dimap.lets.ehmetrics.repositoryexplorer.model.Release;
+import ufrn.dimap.lets.ehmetrics.repositoryexplorer.model.RepositorySearchResult;
 
 public class GithubExplorer
 {
@@ -77,17 +78,30 @@ public class GithubExplorer
 		GHRepositorySeacher repositorySeacher = new GHRepositorySeacher();
 		
 		repositorySeacher.setLanguage(LANGUAGE.JAVA);
+		repositorySeacher.setStarsExactly(0);
 		
 		RepositorySearchResult result = repositorySeacher.doIt();
 		
-		for (ufrn.dimap.lets.ehmetrics.repositoryexplorer.model.GHRepository repository : result.getItems()) 
+		System.out.println();
+		System.out.println();
+		System.out.println();
+		System.out.println("****************** RESULTADO******************");
+		System.out.println(result.getTotal());
+		
+		for (ufrn.dimap.lets.ehmetrics.repositoryexplorer.model.Repository repository : result.getRepositories()) 
 		{
-			repository.fetchReleases();
+			System.out.println(repository.getUrl());
+			//System.out.println(repository.getStars());
+			//System.out.println(dateFormat.format(repository.getLastCommit()));
+			//System.out.println();
 			
-			for ( GHRelease release : repository.getReleases() )
+			/*
+			repository.fetchReleases();
+			for ( Release release : repository.getReleases() )
 			{
 				System.out.println(release.getName());
 			}
+			*/
 		}
 	}
 	/*

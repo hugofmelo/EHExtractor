@@ -15,6 +15,8 @@ import org.kohsuke.github.GHRepositorySearchBuilder.Sort;
 
 import com.google.gson.Gson;
 
+import ufrn.dimap.lets.ehmetrics.repositoryexplorer.model.RepositorySearchResult;
+
 public class GHRepositorySeacher
 {
 	private static final String searchRepositoriesURL = "search/repositories";
@@ -38,8 +40,8 @@ public class GHRepositorySeacher
 		this.creationDate = null;
 		this.lastUpdateDate = null;
 		
-		this.sort = "sort:" + SORT.STARS.toString();
-		this.order = "order:" + ORDER.DESC.toString();
+		//this.sort = "sort:" + SORT.STARS.toString();
+		//this.order = "order:" + ORDER.DESC.toString();
 	}
 	
 	public RepositorySearchResult doIt () throws MalformedURLException, IOException, RepositoryExplorerException
@@ -59,10 +61,10 @@ public class GHRepositorySeacher
 		else
 		{
 			String query = 	"q=" +
-							String.join("+", criteria) +
+							String.join("+", criteria)/* +
 							"&" + 
 							this.sort+ "&" +
-							this.order;
+							this.order*/;
 			
 			System.out.println ("Query string: " + query);
 			
