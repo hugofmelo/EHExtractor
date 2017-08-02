@@ -1,0 +1,14 @@
+Unsolved types: 0
+Unsupported errors: 0
+Unkown ancestral: 0
+
+GENERAL ERRORS
+Falha em ArtifactResolver. O arquivo java não possui package declaration. File: D:\git\EHExtractor\EHExtractor\.\projects\lottie-android-master\LottieSample\src\release\java\com\airbnb\lotte\samples\Lotte.java
+Falha em ArtifactResolver. O arquivo java não é válido. File: D:\git\EHExtractor\EHExtractor\.\projects\lottie-android-master\LottieSample\src\release\java\com\airbnb\lotte\samples\LottieApplication.java
+
+UNSOLVED ERROR FILES
+
+UNSUPPORTED ERROR FILES
+
+UNKNOWN ANCESTRAL
+

@@ -15,8 +15,8 @@ import com.github.javaparser.symbolsolver.resolution.typesolvers.JarTypeSolver;
 import com.github.javaparser.symbolsolver.resolution.typesolvers.JavaParserTypeSolver;
 import com.github.javaparser.symbolsolver.resolution.typesolvers.ReflectionTypeSolver;
 
+import javassist.NotFoundException;
 import ufrn.dimap.lets.ehmetrics.dependencyresolver.ProjectArtifacts;
-import ufrn.dimap.lets.ehmetrics.visitor.AutoCompleteCheckVisitor;
 
 public class Analyzer
 {
@@ -38,22 +38,22 @@ public class Analyzer
 			catch (UnsolvedSymbolException e)
 			{
 				System.out.println(" Error - Unsolved Symbol");
-				ErrorLogger.getInstance().write("Falha no Analyzer. Classe '" + e.getMessage() + "' não encontrada. File: " + javaFile.getAbsolutePath() + "\n");
+				ErrorLogger.addUnsolved("Falha no Analyzer. Classe '" + e.getMessage() + "' não encontrada. File: " + javaFile.getAbsolutePath());
 			}
 			catch (FileNotFoundException e)
 			{
 				System.out.println(" Error - File not found.");
-				ErrorLogger.getInstance().write("Falha no Analyzer. Arquivo não encontrado. File:" + javaFile.getAbsolutePath() + "\n");
+				ErrorLogger.addError("Falha no Analyzer. Arquivo não encontrado. File:" + javaFile.getAbsolutePath());
 			}
 			catch (UnsupportedOperationException e)
 			{
 				System.out.println(" Error - Unsupported operation.");
-				ErrorLogger.getInstance().write("Falha no Analyzer. UnsupportedOperation ao parsear arquivo. File: " + javaFile.getAbsolutePath() + "\n");
+				ErrorLogger.addUnsupported("Falha no Analyzer. UnsupportedOperation ao parsear arquivo. File: " + javaFile.getAbsolutePath());
 			}
 			catch (AnalyzerException e)
 			{
 				System.out.println(" Error - Ancestral não resolvido.");
-				ErrorLogger.getInstance().write("Falha no Analyzer. " + e.getMessage() + " File: " + javaFile.getAbsolutePath() + "\n");
+				ErrorLogger.addUnknownAncestral("Falha no Analyzer. " + e.getMessage() + " File: " + javaFile.getAbsolutePath());
 			}
 		}
 	}
@@ -78,9 +78,20 @@ public class Analyzer
 			{
 				solver.add( new JarTypeSolver(dependencyFile.getAbsolutePath()) );
 			}
+			catch (RuntimeException e)
+			{
+				if ( e.getCause() instanceof NotFoundException )
+				{
+					ErrorLogger.addError("Falha no Analyzer. Falha ao adicionar JarSolver. File: " + dependencyFile.getAbsolutePath());
+				}
+				else
+				{
+					throw e;
+				}
+			}
 			catch (IOException e)
 			{
-				ErrorLogger.getInstance().write("Falha no Analyzer. Falha ao adicionar JarSolver. File: " + dependencyFile.getAbsolutePath() + "\n");		
+				ErrorLogger.addError("Falha no Analyzer. Falha ao adicionar JarSolver. File: " + dependencyFile.getAbsolutePath());		
 			}
 		}
 		

@@ -1,0 +1,108 @@
+PROJECT	EXCEPTION	TYPE	ORIGIN	HANDLERS	AUTOCOMPLETE	EMPTY
+AndroidUtilCode-master	java.lang.Throwable	Checked	Java	1	0	0
+AndroidUtilCode-master	java.lang.Exception	Checked	Java	20	13	0
+AndroidUtilCode-master	java.text.ParseException	Checked	Java	2	2	0
+AndroidUtilCode-master	java.util.zip.DataFormatException	Checked	Java	1	1	0
+AndroidUtilCode-master	org.json.JSONException	Checked	Library	1	1	0
+AndroidUtilCode-master	java.security.InvalidKeyException	Checked	Java	1	0	0
+AndroidUtilCode-master	java.security.NoSuchAlgorithmException	Checked	Java	4	1	0
+AndroidUtilCode-master	java.io.IOException	Checked	Java	34	10	1
+AndroidUtilCode-master	java.net.UnknownHostException	Checked	Java	1	0	0
+AndroidUtilCode-master	java.net.SocketException	Checked	Java	1	1	0
+AndroidUtilCode-master	java.io.FileNotFoundException	Checked	Java	3	0	0
+AndroidUtilCode-master	java.io.UnsupportedEncodingException	Checked	Java	6	0	0
+AndroidUtilCode-master	java.lang.NumberFormatException	Unchecked	Java	1	0	0
+AndroidUtilCode-master	android.provider.Settings.SettingNotFoundException	Checked	Library	1	0	0
+AndroidUtilCode-master	android.content.pm.PackageManager.NameNotFoundException	Checked	Library	11	2	0
+
+
+
+HANDLER ID	HANDLED EXCEPTION	EXCEPTION TYPE	EXCEPTION ORIGIN	AUTOCOMPLETE	EMPTY
+1	java.lang.Exception	Checked	Java	true	false
+2	android.content.pm.PackageManager.NameNotFoundException	Checked	Library	false	false
+3	android.content.pm.PackageManager.NameNotFoundException	Checked	Library	false	false
+4	android.content.pm.PackageManager.NameNotFoundException	Checked	Library	false	false
+5	android.content.pm.PackageManager.NameNotFoundException	Checked	Library	false	false
+6	android.content.pm.PackageManager.NameNotFoundException	Checked	Library	false	false
+7	android.content.pm.PackageManager.NameNotFoundException	Checked	Library	false	false
+8	android.content.pm.PackageManager.NameNotFoundException	Checked	Library	false	false
+9	android.content.pm.PackageManager.NameNotFoundException	Checked	Library	false	false
+10	android.content.pm.PackageManager.NameNotFoundException	Checked	Library	false	false
+11	java.lang.Exception	Checked	Java	true	false
+12	java.lang.NumberFormatException	Unchecked	Java	false	false
+13	java.io.IOException	Checked	Java	true	false
+14	java.io.IOException	Checked	Java	false	false
+15	java.lang.Exception	Checked	Java	false	false
+16	java.lang.Exception	Checked	Java	false	false
+17	java.lang.Exception	Checked	Java	false	false
+18	java.lang.Exception	Checked	Java	false	false
+19	java.io.IOException	Checked	Java	true	false
+20	java.io.IOException	Checked	Java	false	true
+21	java.io.IOException	Checked	Java	false	false
+22	java.io.IOException	Checked	Java	false	false
+23	java.io.UnsupportedEncodingException	Checked	Java	false	false
+24	java.io.UnsupportedEncodingException	Checked	Java	false	false
+25	java.io.UnsupportedEncodingException	Checked	Java	false	false
+26	java.io.UnsupportedEncodingException	Checked	Java	false	false
+27	android.content.pm.PackageManager.NameNotFoundException	Checked	Library	true	false
+28	java.io.IOException	Checked	Java	true	false
+29	java.io.IOException	Checked	Java	false	false
+30	java.lang.Exception	Checked	Java	true	false
+31	java.lang.Exception	Checked	Java	true	false
+32	java.lang.Exception	Checked	Java	true	false
+33	java.io.UnsupportedEncodingException	Checked	Java	false	false
+34	java.io.UnsupportedEncodingException	Checked	Java	false	false
+35	java.security.NoSuchAlgorithmException	Checked	Java	false	false
+35	java.io.IOException	Checked	Java	false	false
+36	java.security.NoSuchAlgorithmException	Checked	Java	false	false
+37	java.security.InvalidKeyException	Checked	Java	false	false
+37	java.security.NoSuchAlgorithmException	Checked	Java	false	false
+38	java.lang.Throwable	Checked	Java	false	false
+39	java.io.IOException	Checked	Java	false	false
+40	java.io.IOException	Checked	Java	false	false
+41	java.io.IOException	Checked	Java	false	false
+42	java.io.IOException	Checked	Java	false	false
+43	java.io.IOException	Checked	Java	false	false
+44	java.io.IOException	Checked	Java	false	false
+45	java.io.IOException	Checked	Java	false	false
+46	java.io.IOException	Checked	Java	false	false
+47	java.io.IOException	Checked	Java	false	false
+48	java.io.IOException	Checked	Java	false	false
+49	java.io.IOException	Checked	Java	false	false
+50	java.io.IOException	Checked	Java	false	false
+51	java.io.IOException	Checked	Java	false	false
+52	java.io.FileNotFoundException	Checked	Java	false	false
+53	java.io.IOException	Checked	Java	true	false
+54	java.io.IOException	Checked	Java	true	false
+55	java.security.NoSuchAlgorithmException	Checked	Java	true	false
+55	java.io.IOException	Checked	Java	true	false
+56	java.io.FileNotFoundException	Checked	Java	false	false
+57	java.io.FileNotFoundException	Checked	Java	false	false
+58	java.io.IOException	Checked	Java	true	false
+59	java.io.IOException	Checked	Java	true	false
+60	java.io.IOException	Checked	Java	false	false
+61	java.io.IOException	Checked	Java	false	false
+62	org.json.JSONException	Checked	Library	true	false
+63	java.lang.Exception	Checked	Java	true	false
+64	java.io.IOException	Checked	Java	false	false
+65	java.io.IOException	Checked	Java	true	false
+66	java.io.IOException	Checked	Java	false	false
+67	java.util.zip.DataFormatException	Checked	Java	true	false
+68	java.lang.Exception	Checked	Java	true	false
+69	java.lang.Exception	Checked	Java	true	false
+70	java.net.SocketException	Checked	Java	true	false
+71	java.net.UnknownHostException	Checked	Java	false	false
+72	java.lang.Exception	Checked	Java	true	false
+73	android.content.pm.PackageManager.NameNotFoundException	Checked	Library	true	false
+74	android.provider.Settings.SettingNotFoundException	Checked	Library	false	false
+75	java.lang.Exception	Checked	Java	true	false
+76	java.lang.Exception	Checked	Java	true	false
+77	java.lang.Exception	Checked	Java	false	false
+78	java.lang.Exception	Checked	Java	true	false
+79	java.lang.Exception	Checked	Java	true	false
+80	java.io.IOException	Checked	Java	false	false
+81	java.lang.Exception	Checked	Java	false	false
+82	java.lang.Exception	Checked	Java	false	false
+83	java.text.ParseException	Checked	Java	true	false
+84	java.text.ParseException	Checked	Java	true	false
+85	java.io.IOException	Checked	Java	true	false

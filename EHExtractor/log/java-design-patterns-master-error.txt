@@ -1,0 +1,35 @@
+Unsolved types: 1
+Unsupported errors: 1
+Unkown ancestral: 0
+
+GENERAL ERRORS
+Falha em ArtifactResolver. O arquivo java não possui package declaration. File: D:\git\EHExtractor\EHExtractor\.\projects\java-design-patterns-master\marker\src\test\java\AppTest.java
+Falha em ArtifactResolver. O arquivo java não possui package declaration. File: D:\git\EHExtractor\EHExtractor\.\projects\java-design-patterns-master\marker\src\test\java\GuardTest.java
+Falha em ArtifactResolver. O arquivo java não possui package declaration. File: D:\git\EHExtractor\EHExtractor\.\projects\java-design-patterns-master\marker\src\test\java\ThiefTest.java
+Falha em ArtifactResolver. O arquivo java não possui package declaration. File: D:\git\EHExtractor\EHExtractor\.\projects\java-design-patterns-master\marker\src\main\java\App.java
+Falha em ArtifactResolver. O arquivo java não possui package declaration. File: D:\git\EHExtractor\EHExtractor\.\projects\java-design-patterns-master\marker\src\main\java\Guard.java
+Falha em ArtifactResolver. O arquivo java não possui package declaration. File: D:\git\EHExtractor\EHExtractor\.\projects\java-design-patterns-master\marker\src\main\java\Permission.java
+Falha em ArtifactResolver. O arquivo java não possui package declaration. File: D:\git\EHExtractor\EHExtractor\.\projects\java-design-patterns-master\marker\src\main\java\Thief.java
+Falha em ArtifactResolver. O arquivo java não possui package declaration. File: D:\git\EHExtractor\EHExtractor\.\projects\java-design-patterns-master\extension-objects\src\test\java\AppTest.java
+Falha em ArtifactResolver. O arquivo java não possui package declaration. File: D:\git\EHExtractor\EHExtractor\.\projects\java-design-patterns-master\extension-objects\src\main\java\App.java
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\git\EHExtractor\EHExtractor\.\projects\java-design-patterns-master\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\git\EHExtractor\EHExtractor\.\projects\java-design-patterns-master\service-layer\bin\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\git\EHExtractor\EHExtractor\.\projects\java-design-patterns-master\naked-objects\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\git\EHExtractor\EHExtractor\.\projects\java-design-patterns-master\naked-objects\webapp\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\git\EHExtractor\EHExtractor\.\projects\java-design-patterns-master\naked-objects\integtests\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\git\EHExtractor\EHExtractor\.\projects\java-design-patterns-master\naked-objects\fixture\pom.xml
+
+
+UNSOLVED ERROR FILES
+Falha no Analyzer. Classe 'Unsolved symbol : IsisWicketApplication' não encontrada. File: D:\git\EHExtractor\EHExtractor\.\projects\java-design-patterns-master\naked-objects\webapp\src\main\java\domainapp\webapp\SimpleApplication.java
+
+UNSUPPORTED ERROR FILES
+Falha no Analyzer. UnsupportedOperation ao parsear arquivo. File: D:\git\EHExtractor\EHExtractor\.\projects\java-design-patterns-master\dao\src\main\java\com\iluwatar\dao\DbCustomerDao.java
+
+UNKNOWN ANCESTRAL
+

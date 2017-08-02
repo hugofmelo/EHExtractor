@@ -1,0 +1,19 @@
+PROJECT	EXCEPTION	TYPE	ORIGIN	HANDLERS	AUTOCOMPLETE	EMPTY
+material-dialogs-master	java.lang.Throwable	Checked	Library	3	0	1
+material-dialogs-master	java.lang.Exception	Checked	Library	3	0	2
+material-dialogs-master	java.lang.NoSuchFieldException	Checked	Java	1	0	0
+material-dialogs-master	java.lang.RuntimeException	Unchecked	Library	1	0	0
+material-dialogs-master	android.view.WindowManager.BadTokenException	Unchecked	Library	1	0	0
+
+
+
+HANDLER ID	HANDLED EXCEPTION	EXCEPTION TYPE	EXCEPTION ORIGIN	AUTOCOMPLETE	EMPTY
+1	android.view.WindowManager.BadTokenException	Unchecked	Library	false	false
+2	java.lang.Throwable	Checked	Library	false	true
+3	java.lang.Throwable	Checked	Library	false	false
+4	java.lang.Throwable	Checked	Library	false	false
+5	java.lang.RuntimeException	Unchecked	Library	false	false
+6	java.lang.NoSuchFieldException	Checked	Java	false	false
+7	java.lang.Exception	Checked	Library	false	false
+8	java.lang.Exception	Checked	Library	false	true
+9	java.lang.Exception	Checked	Library	false	true

@@ -1,0 +1,160 @@
+PROJECT	EXCEPTION	TYPE	ORIGIN	HANDLERS	AUTOCOMPLETE	EMPTY
+fresco-master	java.lang.Throwable	Checked	Java	10	0	4
+fresco-master	java.lang.UnsatisfiedLinkError	Error	Java	1	0	1
+fresco-master	java.lang.Exception	Checked	Java	52	0	2
+fresco-master	java.security.NoSuchAlgorithmException	Checked	Java	2	0	0
+fresco-master	java.lang.InterruptedException	Checked	Java	1	0	0
+fresco-master	java.lang.RuntimeException	Unchecked	Java	3	0	0
+fresco-master	android.database.SQLException	Unchecked	Library	1	0	0
+fresco-master	android.database.sqlite.SQLiteException	Unchecked	Library	1	0	1
+fresco-master	android.content.res.Resources.NotFoundException	Unchecked	Library	1	0	0
+fresco-master	java.lang.IllegalArgumentException	Unchecked	Java	2	0	0
+fresco-master	java.lang.NumberFormatException	Unchecked	Java	1	0	0
+fresco-master	java.lang.NullPointerException	Unchecked	Java	1	0	1
+fresco-master	java.io.IOException	Checked	Java	50	3	6
+fresco-master	com.facebook.common.file.FileUtils.RenameException	Checked	System	1	0	0
+fresco-master	java.io.FileNotFoundException	Checked	Java	1	0	0
+fresco-master	com.facebook.common.file.FileUtils.CreateDirectoryException	Checked	System	3	0	0
+fresco-master	java.io.UnsupportedEncodingException	Checked	Java	7	0	0
+
+
+
+HANDLER ID	HANDLED EXCEPTION	EXCEPTION TYPE	EXCEPTION ORIGIN	AUTOCOMPLETE	EMPTY
+1	java.io.IOException	Checked	Java	false	false
+2	java.lang.Exception	Checked	Java	false	true
+3	java.lang.Exception	Checked	Java	false	true
+4	java.lang.Throwable	Checked	Java	false	true
+5	java.lang.UnsatisfiedLinkError	Error	Java	false	true
+6	java.io.IOException	Checked	Java	false	false
+7	java.io.IOException	Checked	Java	false	false
+8	java.io.IOException	Checked	Java	false	false
+9	java.lang.Exception	Checked	Java	false	false
+10	java.lang.Exception	Checked	Java	false	false
+11	java.io.IOException	Checked	Java	false	false
+12	java.io.IOException	Checked	Java	false	false
+13	java.io.IOException	Checked	Java	true	false
+14	java.lang.Exception	Checked	Java	false	false
+15	java.lang.Throwable	Checked	Java	false	false
+16	java.lang.NullPointerException	Unchecked	Java	false	true
+17	java.io.IOException	Checked	Java	false	false
+18	java.io.IOException	Checked	Java	true	false
+19	java.io.IOException	Checked	Java	true	false
+20	java.lang.Throwable	Checked	Java	false	false
+21	java.io.IOException	Checked	Java	false	true
+22	java.lang.Throwable	Checked	Java	false	true
+23	java.lang.IllegalArgumentException	Unchecked	Java	false	false
+24	java.lang.Throwable	Checked	Java	false	true
+25	java.io.IOException	Checked	Java	false	false
+26	java.io.IOException	Checked	Java	false	false
+27	java.io.UnsupportedEncodingException	Checked	Java	false	false
+28	java.lang.Exception	Checked	Java	false	false
+29	java.io.IOException	Checked	Java	false	false
+30	com.facebook.common.file.FileUtils.CreateDirectoryException	Checked	System	false	false
+31	com.facebook.common.file.FileUtils.CreateDirectoryException	Checked	System	false	false
+32	java.io.IOException	Checked	Java	false	false
+33	java.io.FileNotFoundException	Checked	Java	false	false
+34	com.facebook.common.file.FileUtils.RenameException	Checked	System	false	false
+35	java.lang.InterruptedException	Checked	Java	false	false
+36	java.io.IOException	Checked	Java	false	false
+37	java.io.IOException	Checked	Java	false	false
+38	java.io.IOException	Checked	Java	false	false
+39	java.io.IOException	Checked	Java	false	false
+40	java.io.IOException	Checked	Java	false	false
+41	java.io.IOException	Checked	Java	false	false
+42	java.io.IOException	Checked	Java	false	false
+43	java.io.IOException	Checked	Java	false	false
+44	java.io.IOException	Checked	Java	false	false
+45	java.io.IOException	Checked	Java	false	false
+46	java.io.IOException	Checked	Java	false	false
+47	java.io.IOException	Checked	Java	false	false
+48	java.io.IOException	Checked	Java	false	false
+49	java.io.IOException	Checked	Java	false	false
+50	com.facebook.common.file.FileUtils.CreateDirectoryException	Checked	System	false	false
+51	java.io.UnsupportedEncodingException	Checked	Java	false	false
+52	java.io.UnsupportedEncodingException	Checked	Java	false	false
+53	java.lang.Exception	Checked	Java	false	false
+54	java.lang.Exception	Checked	Java	false	false
+55	java.lang.NumberFormatException	Unchecked	Java	false	false
+56	java.lang.Exception	Checked	Java	false	false
+57	java.lang.Exception	Checked	Java	false	false
+58	java.lang.Exception	Checked	Java	false	false
+59	java.lang.Exception	Checked	Java	false	false
+60	java.lang.Exception	Checked	Java	false	false
+61	java.io.IOException	Checked	Java	false	false
+62	java.io.IOException	Checked	Java	false	true
+63	java.io.IOException	Checked	Java	false	false
+64	java.io.IOException	Checked	Java	false	true
+65	java.io.IOException	Checked	Java	false	false
+66	java.io.IOException	Checked	Java	false	true
+67	android.content.res.Resources.NotFoundException	Unchecked	Library	false	false
+68	java.io.IOException	Checked	Java	false	true
+69	java.io.IOException	Checked	Java	false	false
+70	java.io.IOException	Checked	Java	false	false
+71	java.lang.Exception	Checked	Java	false	false
+72	java.lang.Exception	Checked	Java	false	false
+73	java.lang.RuntimeException	Unchecked	Java	false	false
+74	java.lang.RuntimeException	Unchecked	Java	false	false
+75	java.lang.RuntimeException	Unchecked	Java	false	false
+76	java.lang.Exception	Checked	Java	false	false
+77	java.lang.Exception	Checked	Java	false	false
+78	java.lang.Exception	Checked	Java	false	false
+79	java.io.IOException	Checked	Java	false	false
+80	java.lang.Throwable	Checked	Java	false	false
+81	java.lang.Exception	Checked	Java	false	false
+82	java.io.IOException	Checked	Java	false	false
+83	java.lang.Throwable	Checked	Java	false	false
+84	java.lang.Exception	Checked	Java	false	false
+85	java.lang.Exception	Checked	Java	false	false
+86	java.lang.Exception	Checked	Java	false	false
+87	java.lang.Exception	Checked	Java	false	false
+88	java.lang.Exception	Checked	Java	false	false
+89	java.lang.Exception	Checked	Java	false	false
+90	java.lang.Exception	Checked	Java	false	false
+91	java.lang.Exception	Checked	Java	false	false
+92	java.lang.Exception	Checked	Java	false	false
+93	java.lang.Exception	Checked	Java	false	false
+94	java.io.IOException	Checked	Java	false	false
+95	java.io.IOException	Checked	Java	false	false
+96	java.lang.Exception	Checked	Java	false	false
+97	java.lang.Exception	Checked	Java	false	false
+98	java.lang.Exception	Checked	Java	false	false
+99	java.lang.Exception	Checked	Java	false	false
+100	java.lang.Exception	Checked	Java	false	false
+101	java.lang.Exception	Checked	Java	false	false
+102	java.lang.Exception	Checked	Java	false	false
+103	java.lang.Exception	Checked	Java	false	false
+104	java.lang.Exception	Checked	Java	false	false
+105	java.lang.Exception	Checked	Java	false	false
+106	java.lang.Exception	Checked	Java	false	false
+107	java.lang.Exception	Checked	Java	false	false
+108	java.lang.Exception	Checked	Java	false	false
+109	java.io.IOException	Checked	Java	false	false
+110	java.io.IOException	Checked	Java	false	false
+111	java.lang.Exception	Checked	Java	false	false
+112	android.database.SQLException	Unchecked	Library	false	false
+113	java.lang.Exception	Checked	Java	false	false
+114	android.database.sqlite.SQLiteException	Unchecked	Library	false	true
+115	java.io.IOException	Checked	Java	false	false
+116	java.lang.Throwable	Checked	Java	false	true
+117	java.io.UnsupportedEncodingException	Checked	Java	false	false
+118	java.io.UnsupportedEncodingException	Checked	Java	false	false
+119	java.security.NoSuchAlgorithmException	Checked	Java	false	false
+120	java.io.UnsupportedEncodingException	Checked	Java	false	false
+121	java.security.NoSuchAlgorithmException	Checked	Java	false	false
+122	java.io.UnsupportedEncodingException	Checked	Java	false	false
+123	java.lang.IllegalArgumentException	Unchecked	Java	false	false
+124	java.lang.Throwable	Checked	Java	false	false
+125	java.io.IOException	Checked	Java	false	true
+126	java.io.IOException	Checked	Java	false	false
+127	java.io.IOException	Checked	Java	false	false
+128	java.io.IOException	Checked	Java	false	false
+129	java.io.IOException	Checked	Java	false	false
+130	java.lang.Exception	Checked	Java	false	false
+131	java.lang.Exception	Checked	Java	false	false
+132	java.lang.Exception	Checked	Java	false	false
+133	java.lang.Exception	Checked	Java	false	false
+134	java.lang.Exception	Checked	Java	false	false
+135	java.lang.Exception	Checked	Java	false	false
+136	java.lang.Exception	Checked	Java	false	false
+137	java.lang.Exception	Checked	Java	false	false
+138	java.lang.Throwable	Checked	Java	false	false

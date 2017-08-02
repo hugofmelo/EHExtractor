@@ -1,0 +1,30 @@
+Unsolved types: 11
+Unsupported errors: 0
+Unkown ancestral: 0
+
+GENERAL ERRORS
+Falha no GradleResolver. Could not find com.android.tools.build:gradle:2.2.1.
+Searched in the following locations:
+    https://repo1.maven.org/maven2/com/android/tools/build/gradle/2.2.1/gradle-2.2.1.pom
+    https://repo1.maven.org/maven2/com/android/tools/build/gradle/2.2.1/gradle-2.2.1.jar
+Required by:
+    :volley:unspecified. File: D:\git\EHExtractor\EHExtractor\.\projects\iosched-master\third_party\volley\build.gradle
+
+
+UNSOLVED ERROR FILES
+Falha no Analyzer. Classe 'Unsolved symbol : MultiDexApplication' não encontrada. File: D:\git\EHExtractor\EHExtractor\.\projects\iosched-master\android\src\main\java\com\google\samples\apps\iosched\AppApplication.java
+Falha no Analyzer. Classe 'Unsolved symbol : UserRecoverableNotifiedException' não encontrada. File: D:\git\EHExtractor\EHExtractor\.\projects\iosched-master\android\src\main\java\com\google\samples\apps\iosched\util\AccountUtils.java
+Falha no Analyzer. Classe 'Unsolved symbol : AppCompatActivity' não encontrada. File: D:\git\EHExtractor\EHExtractor\.\projects\iosched-master\android\src\main\java\com\google\samples\apps\iosched\ui\BaseActivity.java
+Falha no Analyzer. Classe 'Unsolved symbol : FirebaseException' não encontrada. File: D:\git\EHExtractor\EHExtractor\.\projects\iosched-master\android\src\main\java\com\google\samples\apps\iosched\sync\userdata\firebase\FirebaseAuthHelper.java
+Falha no Analyzer. Classe 'Unsolved symbol : FirebaseException' não encontrada. File: D:\git\EHExtractor\EHExtractor\.\projects\iosched-master\android\src\main\java\com\google\samples\apps\iosched\sync\userdata\firebase\FirebaseDataReconciler.java
+Falha no Analyzer. Classe 'Unsolved symbol : MapFragment' não encontrada. File: D:\git\EHExtractor\EHExtractor\.\projects\iosched-master\android\src\main\java\com\google\samples\apps\iosched\map\MapFragment.java
+Falha no Analyzer. Classe 'Unsolved symbol : TileProvider' não encontrada. File: D:\git\EHExtractor\EHExtractor\.\projects\iosched-master\android\src\main\java\com\google\samples\apps\iosched\map\util\CachedTileProvider.java
+Falha no Analyzer. Classe 'Unsolved symbol : TileProvider' não encontrada. File: D:\git\EHExtractor\EHExtractor\.\projects\iosched-master\android\src\main\java\com\google\samples\apps\iosched\map\util\SVGTileProvider.java
+Falha no Analyzer. Classe 'Unsolved symbol : ConnectionCallbacks' não encontrada. File: D:\git\EHExtractor\EHExtractor\.\projects\iosched-master\android\src\main\java\com\google\samples\apps\iosched\login\LoginAndAuthWithGoogleApi.java
+Falha no Analyzer. Classe 'Unsolved symbol : ViewHolder' não encontrada. File: D:\git\EHExtractor\EHExtractor\.\projects\iosched-master\android\src\main\java\com\google\samples\apps\iosched\explore\EventDataAdapter.java
+Falha no Analyzer. Classe 'Unsolved symbol : NoMatchingViewException' não encontrada. File: D:\git\EHExtractor\EHExtractor\.\projects\iosched-master\android\src\androidTest\java\com\google\samples\apps\iosched\testutils\NavigationUtils.java
+
+UNSUPPORTED ERROR FILES
+
+UNKNOWN ANCESTRAL
+

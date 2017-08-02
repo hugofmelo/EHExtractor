@@ -1,0 +1,13 @@
+Unsolved types: 0
+Unsupported errors: 0
+Unkown ancestral: 0
+
+GENERAL ERRORS
+Falha em ArtifactResolver. O arquivo java não possui package declaration. File: D:\git\EHExtractor\EHExtractor\.\projects\fastjson-master\src\test\java\ArrayTest.java
+
+UNSOLVED ERROR FILES
+
+UNSUPPORTED ERROR FILES
+
+UNKNOWN ANCESTRAL
+

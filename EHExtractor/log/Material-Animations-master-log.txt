@@ -1,0 +1,65 @@
+Java files: 15
+Jar files: 0
+Maven files: 0
+Gradle files: 2
+Android file: true
+
+Analyzed java files: 15
+Source dirs: 2
+Test dirs: 0
+Dependencies files: 1
+
+JAVA FILES
+D:\git\EHExtractor\EHExtractor\.\projects\Material-Animations-master\app\src\main\java\com\lgvalle\material_animations\AnimationsActivity1.java
+D:\git\EHExtractor\EHExtractor\.\projects\Material-Animations-master\app\src\main\java\com\lgvalle\material_animations\AnimationsActivity2.java
+D:\git\EHExtractor\EHExtractor\.\projects\Material-Animations-master\app\src\main\java\com\lgvalle\material_animations\BaseDetailActivity.java
+D:\git\EHExtractor\EHExtractor\.\projects\Material-Animations-master\app\src\main\java\com\lgvalle\material_animations\MainActivity.java
+D:\git\EHExtractor\EHExtractor\.\projects\Material-Animations-master\app\src\main\java\com\lgvalle\material_animations\RevealActivity.java
+D:\git\EHExtractor\EHExtractor\.\projects\Material-Animations-master\app\src\main\java\com\lgvalle\material_animations\Sample.java
+D:\git\EHExtractor\EHExtractor\.\projects\Material-Animations-master\app\src\main\java\com\lgvalle\material_animations\SamplesRecyclerAdapter.java
+D:\git\EHExtractor\EHExtractor\.\projects\Material-Animations-master\app\src\main\java\com\lgvalle\material_animations\SharedElementActivity.java
+D:\git\EHExtractor\EHExtractor\.\projects\Material-Animations-master\app\src\main\java\com\lgvalle\material_animations\SharedElementFragment1.java
+D:\git\EHExtractor\EHExtractor\.\projects\Material-Animations-master\app\src\main\java\com\lgvalle\material_animations\SharedElementFragment2.java
+D:\git\EHExtractor\EHExtractor\.\projects\Material-Animations-master\app\src\main\java\com\lgvalle\material_animations\TransitionActivity1.java
+D:\git\EHExtractor\EHExtractor\.\projects\Material-Animations-master\app\src\main\java\com\lgvalle\material_animations\TransitionActivity2.java
+D:\git\EHExtractor\EHExtractor\.\projects\Material-Animations-master\app\src\main\java\com\lgvalle\material_animations\TransitionActivity3.java
+D:\git\EHExtractor\EHExtractor\.\projects\Material-Animations-master\app\src\main\java\com\lgvalle\material_animations\TransitionHelper.java
+D:\git\EHExtractor\EHExtractor\.\projects\Material-Animations-master\app\src\androidTest\java\com\lgvalle\material_animations\ApplicationTest.java
+
+JAR FILES
+
+MAVEN FILES
+
+GRADLE FILES
+D:\git\EHExtractor\EHExtractor\.\projects\Material-Animations-master\build.gradle
+D:\git\EHExtractor\EHExtractor\.\projects\Material-Animations-master\app\build.gradle
+
+ANDROID MANIFEST FILE
+D:\git\EHExtractor\EHExtractor\.\projects\Material-Animations-master\app\src\main\AndroidManifest.xml
+
+ANALYZED JAVA FILES
+D:\git\EHExtractor\EHExtractor\.\projects\Material-Animations-master\app\src\main\java\com\lgvalle\material_animations\AnimationsActivity1.java
+D:\git\EHExtractor\EHExtractor\.\projects\Material-Animations-master\app\src\main\java\com\lgvalle\material_animations\AnimationsActivity2.java
+D:\git\EHExtractor\EHExtractor\.\projects\Material-Animations-master\app\src\main\java\com\lgvalle\material_animations\BaseDetailActivity.java
+D:\git\EHExtractor\EHExtractor\.\projects\Material-Animations-master\app\src\main\java\com\lgvalle\material_animations\MainActivity.java
+D:\git\EHExtractor\EHExtractor\.\projects\Material-Animations-master\app\src\main\java\com\lgvalle\material_animations\RevealActivity.java
+D:\git\EHExtractor\EHExtractor\.\projects\Material-Animations-master\app\src\main\java\com\lgvalle\material_animations\Sample.java
+D:\git\EHExtractor\EHExtractor\.\projects\Material-Animations-master\app\src\main\java\com\lgvalle\material_animations\SamplesRecyclerAdapter.java
+D:\git\EHExtractor\EHExtractor\.\projects\Material-Animations-master\app\src\main\java\com\lgvalle\material_animations\SharedElementActivity.java
+D:\git\EHExtractor\EHExtractor\.\projects\Material-Animations-master\app\src\main\java\com\lgvalle\material_animations\SharedElementFragment1.java
+D:\git\EHExtractor\EHExtractor\.\projects\Material-Animations-master\app\src\main\java\com\lgvalle\material_animations\SharedElementFragment2.java
+D:\git\EHExtractor\EHExtractor\.\projects\Material-Animations-master\app\src\main\java\com\lgvalle\material_animations\TransitionActivity1.java
+D:\git\EHExtractor\EHExtractor\.\projects\Material-Animations-master\app\src\main\java\com\lgvalle\material_animations\TransitionActivity2.java
+D:\git\EHExtractor\EHExtractor\.\projects\Material-Animations-master\app\src\main\java\com\lgvalle\material_animations\TransitionActivity3.java
+D:\git\EHExtractor\EHExtractor\.\projects\Material-Animations-master\app\src\main\java\com\lgvalle\material_animations\TransitionHelper.java
+D:\git\EHExtractor\EHExtractor\.\projects\Material-Animations-master\app\src\androidTest\java\com\lgvalle\material_animations\ApplicationTest.java
+
+SOURCE DIRECTORIES
+D:\git\EHExtractor\EHExtractor\.\projects\Material-Animations-master\app\src\main\java
+D:\git\EHExtractor\EHExtractor\.\projects\Material-Animations-master\app\src\androidTest\java
+
+TEST DIRECTORIES
+
+DEPENDENCIES
+D:\AndroidSDK\platforms\android-26\android.jar
+

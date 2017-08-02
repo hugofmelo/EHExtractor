@@ -152,8 +152,8 @@ public class CatchVisitor extends VoidVisitorAdapter<JavaParserFacade>
 				{
 					handler.addHandlerAction(throwStatement, HandlerActionType.UNKNOWN);
 					model.addSignaler(throwStatement, thrownType, SignalerType.UNKNOWN);
-					Logger.getInstance().writeLog("Um NameExpr que não está no topo da pilha (ou estamos em um catch aninhado e foi sinalizado uma exceção mais externa ou foi instanciada uma nova exceção no corpo do tratador) ---> " + exp.getClass().getSimpleName() + "\n" +
-							   						   "Code:\n" + throwStatement.getParentNode().get() + "\n");
+					//Logger.getInstance().writeLog("Um NameExpr que não está no topo da pilha (ou estamos em um catch aninhado e foi sinalizado uma exceção mais externa ou foi instanciada uma nova exceção no corpo do tratador) ---> " + exp.getClass().getSimpleName() + "\n" +
+					//		   						   "Code:\n" + throwStatement.getParentNode().get() + "\n");
 					//throw new UnknownSignalerPatternException("Sinalizado um NameExpr que não está no topo da pilha.", statement);
 				}
 			}
@@ -254,8 +254,8 @@ public class CatchVisitor extends VoidVisitorAdapter<JavaParserFacade>
 					}
 					else
 					{
-						Logger.getInstance().writeLog("Wrapping de tipo não identificado." + "\n" +
-		   						   "Code:\n" + throwStatement + "\n");
+						//Logger.getInstance().writeLog("Wrapping de tipo não identificado." + "\n" +
+		   				//		   "Code:\n" + throwStatement + "\n");
 					}
 				}
 			}
@@ -281,7 +281,7 @@ public class CatchVisitor extends VoidVisitorAdapter<JavaParserFacade>
 		// Retrieve Exception Type
 		if ( catchClause.getParameter().getType() instanceof UnionType )
 		{
-			Logger.getInstance().writeLog(""+this.getClass().getCanonicalName()+"#public void visit (CatchClause, JavaParserFacade):" + "Multicatch não suportado\n");
+			//Logger.getInstance().writeLog(""+this.getClass().getCanonicalName()+"#public void visit (CatchClause, JavaParserFacade):" + "Multicatch não suportado\n");
 		}
 		else if ( catchClause.getParameter().getType() instanceof ClassOrInterfaceType )
 		{
@@ -405,7 +405,7 @@ public class CatchVisitor extends VoidVisitorAdapter<JavaParserFacade>
 			else
 			{
 				handler.addHandlerAction(expression, HandlerActionType.UNKNOWN);
-				Logger.getInstance().writeLog("Um ExpressionStmt que não é MethodCallExpr || VariableDeclarationExpr || AssignExpr --> " + expression.getClass().getSimpleName() + "\n");
+				//Logger.getInstance().writeLog("Um ExpressionStmt que não é MethodCallExpr || VariableDeclarationExpr || AssignExpr --> " + expression.getClass().getSimpleName() + "\n");
 			}
 		}
 		
@@ -414,7 +414,7 @@ public class CatchVisitor extends VoidVisitorAdapter<JavaParserFacade>
 	
 	private void processHandler (CatchClause catchClause)
 	{
-		Logger logger = Logger.getInstance();
+		//Logger logger = Logger.getInstance();
 		
 		for ( Iterator<Statement> i = catchClause.getBody().getStatements().iterator() ; i.hasNext() ; )
 		{
@@ -429,7 +429,7 @@ public class CatchVisitor extends VoidVisitorAdapter<JavaParserFacade>
 				 !(statement instanceof ForeachStmt) &&
 				 !(statement instanceof ReturnStmt))
 			{
-				logger.writeLog("## " + statement.getClass().getCanonicalName() + " >>> " + statement + "\n");
+				//logger.writeLog("## " + statement.getClass().getCanonicalName() + " >>> " + statement + "\n");
 			}
 			
 		}

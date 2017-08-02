@@ -1,0 +1,8 @@
+PROJECT	EXCEPTION	TYPE	ORIGIN	HANDLERS	AUTOCOMPLETE	EMPTY
+RxAndroid-2.x	java.lang.Throwable	Checked	Java	2	0	0
+
+
+
+HANDLER ID	HANDLED EXCEPTION	EXCEPTION TYPE	EXCEPTION ORIGIN	AUTOCOMPLETE	EMPTY
+1	java.lang.Throwable	Checked	Java	false	false
+2	java.lang.Throwable	Checked	Java	false	false

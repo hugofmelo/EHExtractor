@@ -340,19 +340,4 @@ public class MetricsModel
 		
 		return totalAutoCompleteHandlers;
 	}
-	
-	public int computeTotalEmptyHandlers()
-	{
-		int totalEmptyHandlers = 0;
-		
-		for ( Handler h : this.handlers )
-		{
-			if (h.isEmpty())
-			{
-				totalEmptyHandlers++;
-			}
-		}
-		
-		return totalEmptyHandlers;
-	}
 }

@@ -1,0 +1,204 @@
+PROJECT	EXCEPTION	TYPE	ORIGIN	HANDLERS	AUTOCOMPLETE	EMPTY
+iosched-master	java.lang.Throwable	Checked	Java	8	0	1
+iosched-master	java.lang.OutOfMemoryError	Error	Java	1	0	0
+iosched-master	java.lang.Exception	Checked	Java	28	1	9
+iosched-master	java.lang.CloneNotSupportedException	Checked	Java	1	0	0
+iosched-master	android.content.OperationApplicationException	Checked	Library	5	0	0
+iosched-master	com.google.appengine.api.datastore.EntityNotFoundException	Checked	Library	2	0	0
+iosched-master	java.text.ParseException	Checked	Java	7	0	0
+iosched-master	java.security.NoSuchAlgorithmException	Checked	Java	1	0	0
+iosched-master	javax.servlet.ServletException	Checked	Library	1	0	0
+iosched-master	com.turbomanage.httpclient.HttpRequestException	Checked	System	2	0	0
+iosched-master	java.lang.RuntimeException	Unchecked	Java	1	0	0
+iosched-master	com.google.gson.JsonSyntaxException	Unchecked	Library	2	0	0
+iosched-master	java.lang.UnsupportedOperationException	Unchecked	Java	1	0	0
+iosched-master	android.database.sqlite.SQLiteConstraintException	Unchecked	Library	1	0	0
+iosched-master	com.google.samples.apps.iosched.sync.SyncHelper.AuthException	Unchecked	System	1	0	0
+iosched-master	com.larvalabs.svgandroid.SVGParseException	Unchecked	System	1	0	0
+iosched-master	java.lang.NullPointerException	Unchecked	Java	3	0	0
+iosched-master	java.lang.ArrayIndexOutOfBoundsException	Unchecked	Java	1	0	0
+iosched-master	java.lang.IllegalArgumentException	Unchecked	Java	5	0	0
+iosched-master	java.lang.NumberFormatException	Unchecked	Java	14	0	3
+iosched-master	org.xml.sax.SAXNotRecognizedException	Checked	Library	1	0	0
+iosched-master	android.os.RemoteException	Checked	Library	5	0	0
+iosched-master	android.provider.Settings.SettingNotFoundException	Checked	Library	1	0	0
+iosched-master	android.content.pm.PackageManager.NameNotFoundException	Checked	Library	2	0	1
+iosched-master	java.util.concurrent.TimeoutException	Checked	Java	1	0	0
+iosched-master	org.json.JSONException	Checked	Library	2	0	0
+iosched-master	org.apache.http.impl.cookie.DateParseException	Checked	Library	1	0	0
+iosched-master	java.io.IOException	Checked	Java	36	1	7
+iosched-master	java.io.FileNotFoundException	Checked	Java	4	0	0
+iosched-master	java.io.EOFException	Checked	Java	1	0	0
+iosched-master	java.net.MalformedURLException	Checked	Java	3	0	0
+iosched-master	org.apache.http.conn.ConnectTimeoutException	Checked	Library	1	0	0
+iosched-master	java.net.SocketTimeoutException	Checked	Java	1	0	0
+iosched-master	java.io.UnsupportedEncodingException	Checked	Java	8	2	0
+iosched-master	java.lang.InterruptedException	Checked	Java	6	0	1
+iosched-master	com.android.volley.VolleyError	Checked	System	2	0	0
+iosched-master	com.android.volley.AuthFailureError	Checked	System	1	0	0
+
+
+
+HANDLER ID	HANDLED EXCEPTION	EXCEPTION TYPE	EXCEPTION ORIGIN	AUTOCOMPLETE	EMPTY
+1	com.android.volley.AuthFailureError	Checked	System	false	false
+2	java.lang.InterruptedException	Checked	Java	false	false
+3	java.lang.InterruptedException	Checked	Java	false	true
+4	java.lang.InterruptedException	Checked	Java	false	false
+5	com.android.volley.VolleyError	Checked	System	false	false
+6	java.lang.Exception	Checked	Java	false	false
+7	java.io.UnsupportedEncodingException	Checked	Java	false	false
+8	java.lang.Exception	Checked	Java	false	false
+9	java.net.SocketTimeoutException	Checked	Java	false	false
+10	org.apache.http.conn.ConnectTimeoutException	Checked	Library	false	false
+11	java.net.MalformedURLException	Checked	Java	false	false
+12	java.io.IOException	Checked	Java	false	false
+13	com.android.volley.VolleyError	Checked	System	false	false
+14	java.io.IOException	Checked	Java	false	false
+15	java.io.IOException	Checked	Java	false	false
+16	java.io.IOException	Checked	Java	false	false
+17	java.io.IOException	Checked	Java	false	false
+18	java.io.IOException	Checked	Java	false	true
+19	java.io.IOException	Checked	Java	false	true
+20	java.io.IOException	Checked	Java	false	false
+21	java.lang.Exception	Checked	Java	false	true
+22	org.apache.http.impl.cookie.DateParseException	Checked	Library	false	false
+23	java.io.IOException	Checked	Java	false	false
+24	java.lang.OutOfMemoryError	Error	Java	false	false
+25	java.io.UnsupportedEncodingException	Checked	Java	false	false
+26	org.json.JSONException	Checked	Library	false	false
+27	java.io.UnsupportedEncodingException	Checked	Java	false	false
+28	org.json.JSONException	Checked	Library	false	false
+29	java.io.UnsupportedEncodingException	Checked	Java	false	false
+30	java.util.concurrent.TimeoutException	Checked	Java	false	false
+31	java.io.UnsupportedEncodingException	Checked	Java	false	false
+32	android.content.pm.PackageManager.NameNotFoundException	Checked	Library	false	true
+33	java.io.IOException	Checked	Java	false	false
+34	java.io.IOException	Checked	Java	false	false
+35	java.lang.Exception	Checked	Java	false	false
+36	org.xml.sax.SAXNotRecognizedException	Checked	Library	false	false
+37	java.lang.NumberFormatException	Unchecked	Java	false	true
+38	java.lang.NumberFormatException	Unchecked	Java	false	false
+39	java.lang.ArrayIndexOutOfBoundsException	Unchecked	Java	false	false
+40	java.lang.IllegalArgumentException	Unchecked	Java	false	false
+41	java.lang.NumberFormatException	Unchecked	Java	false	false
+42	java.lang.NumberFormatException	Unchecked	Java	false	false
+43	java.lang.NumberFormatException	Unchecked	Java	false	true
+44	java.lang.NumberFormatException	Unchecked	Java	false	true
+45	java.io.IOException	Checked	Java	false	false
+46	java.io.EOFException	Checked	Java	false	false
+47	java.io.FileNotFoundException	Checked	Java	false	false
+48	java.io.FileNotFoundException	Checked	Java	false	false
+49	java.io.FileNotFoundException	Checked	Java	false	false
+50	java.io.FileNotFoundException	Checked	Java	false	false
+51	java.io.IOException	Checked	Java	false	true
+52	java.io.IOException	Checked	Java	false	false
+53	java.io.IOException	Checked	Java	false	false
+54	java.io.IOException	Checked	Java	false	false
+55	java.io.IOException	Checked	Java	false	false
+56	java.lang.NumberFormatException	Unchecked	Java	false	false
+57	java.io.UnsupportedEncodingException	Checked	Java	false	false
+58	java.lang.RuntimeException	Unchecked	Java	false	false
+59	java.lang.Exception	Checked	Java	false	true
+60	com.turbomanage.httpclient.HttpRequestException	Checked	System	false	false
+61	java.lang.Exception	Checked	Java	false	false
+62	java.lang.Exception	Checked	Java	false	false
+63	java.lang.Exception	Checked	Java	true	false
+64	java.net.MalformedURLException	Checked	Java	false	false
+65	java.lang.Exception	Checked	Java	false	true
+66	java.lang.Exception	Checked	Java	false	true
+67	java.lang.Exception	Checked	Java	false	true
+68	com.turbomanage.httpclient.HttpRequestException	Checked	System	false	false
+69	java.lang.InterruptedException	Checked	Java	false	false
+70	java.io.IOException	Checked	Java	true	false
+71	java.io.UnsupportedEncodingException	Checked	Java	true	false
+72	java.io.UnsupportedEncodingException	Checked	Java	true	false
+73	java.lang.Exception	Checked	Java	false	false
+74	java.lang.Throwable	Checked	Java	false	false
+75	java.lang.NullPointerException	Unchecked	Java	false	false
+76	java.lang.NumberFormatException	Unchecked	Java	false	false
+77	java.lang.Exception	Checked	Java	false	false
+78	javax.servlet.ServletException	Checked	Library	false	false
+79	java.security.NoSuchAlgorithmException	Checked	Java	false	false
+80	java.text.ParseException	Checked	Java	false	false
+81	java.text.ParseException	Checked	Java	false	false
+82	java.lang.Exception	Checked	Java	false	false
+83	java.lang.NumberFormatException	Unchecked	Java	false	false
+84	java.text.ParseException	Checked	Java	false	false
+85	java.lang.NumberFormatException	Unchecked	Java	false	false
+86	java.lang.NumberFormatException	Unchecked	Java	false	false
+87	java.io.IOException	Checked	Java	false	false
+88	com.google.appengine.api.datastore.EntityNotFoundException	Checked	Library	false	false
+89	com.google.appengine.api.datastore.EntityNotFoundException	Checked	Library	false	false
+90	java.io.IOException	Checked	Java	false	false
+91	java.lang.Exception	Checked	Java	false	false
+92	java.lang.Exception	Checked	Java	false	false
+93	java.io.IOException	Checked	Java	false	false
+94	java.io.IOException	Checked	Java	false	false
+95	java.io.IOException	Checked	Java	false	false
+96	java.io.IOException	Checked	Java	false	true
+97	java.text.ParseException	Checked	Java	false	false
+98	java.lang.Exception	Checked	Java	false	false
+99	android.provider.Settings.SettingNotFoundException	Checked	Library	false	false
+100	android.os.RemoteException	Checked	Library	false	false
+101	android.content.OperationApplicationException	Checked	Library	false	false
+102	java.io.IOException	Checked	Java	false	false
+103	com.larvalabs.svgandroid.SVGParseException	Unchecked	System	false	false
+104	java.io.IOException	Checked	Java	false	false
+105	java.io.IOException	Checked	Java	false	false
+106	com.google.samples.apps.iosched.sync.SyncHelper.AuthException	Unchecked	System	false	false
+107	java.lang.Throwable	Checked	Java	false	false
+108	java.lang.Throwable	Checked	Java	false	false
+109	java.lang.Throwable	Checked	Java	false	false
+110	java.lang.Throwable	Checked	Java	false	false
+111	java.lang.Exception	Checked	Java	false	false
+112	android.os.RemoteException	Checked	Library	false	false
+113	android.content.OperationApplicationException	Checked	Library	false	false
+114	java.lang.InterruptedException	Checked	Java	false	false
+115	java.lang.NullPointerException	Unchecked	Java	false	false
+116	java.lang.NullPointerException	Unchecked	Java	false	false
+117	java.lang.Throwable	Checked	Java	false	true
+118	java.io.IOException	Checked	Java	false	false
+119	java.lang.Exception	Checked	Java	false	true
+120	java.lang.Exception	Checked	Java	false	true
+121	java.lang.Exception	Checked	Java	false	true
+122	java.lang.Exception	Checked	Java	false	true
+123	android.os.RemoteException	Checked	Library	false	false
+123	android.content.OperationApplicationException	Checked	Library	false	false
+124	android.os.RemoteException	Checked	Library	false	false
+124	android.content.OperationApplicationException	Checked	Library	false	false
+125	android.os.RemoteException	Checked	Library	false	false
+125	android.content.OperationApplicationException	Checked	Library	false	false
+126	java.lang.Exception	Checked	Java	false	false
+127	java.lang.Exception	Checked	Java	false	false
+128	android.database.sqlite.SQLiteConstraintException	Unchecked	Library	false	false
+129	java.lang.UnsupportedOperationException	Unchecked	Java	false	false
+130	java.lang.Exception	Checked	Java	false	false
+131	java.lang.CloneNotSupportedException	Checked	Java	false	false
+132	java.io.IOException	Checked	Java	false	false
+133	java.lang.IllegalArgumentException	Unchecked	Java	false	false
+134	java.lang.IllegalArgumentException	Unchecked	Java	false	false
+135	java.lang.IllegalArgumentException	Unchecked	Java	false	false
+136	java.io.IOException	Checked	Java	false	true
+137	java.io.IOException	Checked	Java	false	true
+138	java.io.IOException	Checked	Java	false	true
+139	java.lang.IllegalArgumentException	Unchecked	Java	false	false
+140	java.text.ParseException	Checked	Java	false	false
+141	java.text.ParseException	Checked	Java	false	false
+142	java.io.IOException	Checked	Java	false	false
+143	java.lang.Throwable	Checked	Java	false	false
+144	java.io.IOException	Checked	Java	false	false
+145	java.lang.InterruptedException	Checked	Java	false	false
+146	java.io.IOException	Checked	Java	false	false
+147	java.io.IOException	Checked	Java	false	false
+148	java.net.MalformedURLException	Checked	Java	false	false
+149	java.lang.Exception	Checked	Java	false	false
+150	java.lang.NumberFormatException	Unchecked	Java	false	false
+151	java.lang.Exception	Checked	Java	false	false
+152	com.google.gson.JsonSyntaxException	Unchecked	Library	false	false
+153	com.google.gson.JsonSyntaxException	Unchecked	Library	false	false
+154	java.lang.Exception	Checked	Java	false	false
+155	android.content.pm.PackageManager.NameNotFoundException	Checked	Library	false	false
+156	java.text.ParseException	Checked	Java	false	false
+157	java.lang.NumberFormatException	Unchecked	Java	false	false
+158	java.lang.NumberFormatException	Unchecked	Java	false	false
+159	java.lang.Throwable	Checked	Java	false	false

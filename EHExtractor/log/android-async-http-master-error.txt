@@ -1,0 +1,17 @@
+Unsolved types: 5
+Unsupported errors: 0
+Unkown ancestral: 0
+
+GENERAL ERRORS
+
+UNSOLVED ERROR FILES
+Falha no Analyzer. Classe 'Unsolved symbol : SSLSocketFactory' não encontrada. File: D:\git\EHExtractor\EHExtractor\.\projects\android-async-http-master\sample\src\main\java\com\loopj\android\http\sample\util\SecureSocketFactory.java
+Falha no Analyzer. Classe 'Unsolved symbol : DefaultRedirectHandler' não encontrada. File: D:\git\EHExtractor\EHExtractor\.\projects\android-async-http-master\library\src\main\java\com\loopj\android\http\MyRedirectHandler.java
+Falha no Analyzer. Classe 'Unsolved symbol : SSLSocketFactory' não encontrada. File: D:\git\EHExtractor\EHExtractor\.\projects\android-async-http-master\library\src\main\java\com\loopj\android\http\MySSLSocketFactory.java
+Falha no Analyzer. Classe 'Unsolved symbol : CookieStore' não encontrada. File: D:\git\EHExtractor\EHExtractor\.\projects\android-async-http-master\library\src\main\java\com\loopj\android\http\PersistentCookieStore.java
+Falha no Analyzer. Classe 'Unsolved symbol : HttpEntity' não encontrada. File: D:\git\EHExtractor\EHExtractor\.\projects\android-async-http-master\library\src\main\java\com\loopj\android\http\SimpleMultipartEntity.java
+
+UNSUPPORTED ERROR FILES
+
+UNKNOWN ANCESTRAL
+

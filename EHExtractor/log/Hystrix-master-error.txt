@@ -1,0 +1,68 @@
+Unsolved types: 8
+Unsupported errors: 14
+Unkown ancestral: 0
+
+GENERAL ERRORS
+Falha no GradleResolver. Cannot set property 'defaultVersionStrategy' on null object. File: D:\git\EHExtractor\EHExtractor\.\projects\Hystrix-master\build.gradle
+
+Falha no GradleResolver. Cannot set property 'defaultVersionStrategy' on null object. File: D:\git\EHExtractor\EHExtractor\.\projects\Hystrix-master\hystrix-serialization\build.gradle
+
+Falha no GradleResolver. Cannot set property 'defaultVersionStrategy' on null object. File: D:\git\EHExtractor\EHExtractor\.\projects\Hystrix-master\hystrix-examples-webapp\build.gradle
+
+Falha no GradleResolver. Cannot set property 'defaultVersionStrategy' on null object. File: D:\git\EHExtractor\EHExtractor\.\projects\Hystrix-master\hystrix-examples\build.gradle
+
+Falha no GradleResolver. Cannot set property 'defaultVersionStrategy' on null object. File: D:\git\EHExtractor\EHExtractor\.\projects\Hystrix-master\hystrix-dashboard\build.gradle
+
+Falha no GradleResolver. Cannot set property 'defaultVersionStrategy' on null object. File: D:\git\EHExtractor\EHExtractor\.\projects\Hystrix-master\hystrix-core\build.gradle
+
+Falha no GradleResolver. Cannot set property 'defaultVersionStrategy' on null object. File: D:\git\EHExtractor\EHExtractor\.\projects\Hystrix-master\hystrix-contrib\hystrix-yammer-metrics-publisher\build.gradle
+
+Falha no GradleResolver. Cannot set property 'defaultVersionStrategy' on null object. File: D:\git\EHExtractor\EHExtractor\.\projects\Hystrix-master\hystrix-contrib\hystrix-servo-metrics-publisher\build.gradle
+
+Falha no GradleResolver. Cannot set property 'defaultVersionStrategy' on null object. File: D:\git\EHExtractor\EHExtractor\.\projects\Hystrix-master\hystrix-contrib\hystrix-rx-netty-metrics-stream\build.gradle
+
+Falha no GradleResolver. Cannot set property 'defaultVersionStrategy' on null object. File: D:\git\EHExtractor\EHExtractor\.\projects\Hystrix-master\hystrix-contrib\hystrix-request-servlet\build.gradle
+
+Falha no GradleResolver. Cannot set property 'defaultVersionStrategy' on null object. File: D:\git\EHExtractor\EHExtractor\.\projects\Hystrix-master\hystrix-contrib\hystrix-network-auditor-agent\build.gradle
+
+Falha no GradleResolver. Cannot set property 'defaultVersionStrategy' on null object. File: D:\git\EHExtractor\EHExtractor\.\projects\Hystrix-master\hystrix-contrib\hystrix-metrics-event-stream-jaxrs\build.gradle
+
+Falha no GradleResolver. Cannot set property 'defaultVersionStrategy' on null object. File: D:\git\EHExtractor\EHExtractor\.\projects\Hystrix-master\hystrix-contrib\hystrix-metrics-event-stream\build.gradle
+
+Falha no GradleResolver. Cannot set property 'defaultVersionStrategy' on null object. File: D:\git\EHExtractor\EHExtractor\.\projects\Hystrix-master\hystrix-contrib\hystrix-junit\build.gradle
+
+Falha no GradleResolver. Cannot set property 'defaultVersionStrategy' on null object. File: D:\git\EHExtractor\EHExtractor\.\projects\Hystrix-master\hystrix-contrib\hystrix-javanica\build.gradle
+
+Falha no GradleResolver. Cannot set property 'defaultVersionStrategy' on null object. File: D:\git\EHExtractor\EHExtractor\.\projects\Hystrix-master\hystrix-contrib\hystrix-codahale-metrics-publisher\build.gradle
+
+Falha no GradleResolver. Cannot set property 'defaultVersionStrategy' on null object. File: D:\git\EHExtractor\EHExtractor\.\projects\Hystrix-master\hystrix-contrib\hystrix-clj\build.gradle
+
+
+UNSOLVED ERROR FILES
+Falha no Analyzer. Classe 'Unsolved symbol : HttpServlet' não encontrada. File: D:\git\EHExtractor\EHExtractor\.\projects\Hystrix-master\hystrix-dashboard\src\main\java\com\netflix\hystrix\dashboard\stream\EurekaInfoServlet.java
+Falha no Analyzer. Classe 'Unsolved symbol : HttpServlet' não encontrada. File: D:\git\EHExtractor\EHExtractor\.\projects\Hystrix-master\hystrix-dashboard\src\main\java\com\netflix\hystrix\dashboard\stream\MockStreamServlet.java
+Falha no Analyzer. Classe 'Unsolved symbol : HttpServlet' não encontrada. File: D:\git\EHExtractor\EHExtractor\.\projects\Hystrix-master\hystrix-dashboard\src\main\java\com\netflix\hystrix\dashboard\stream\ProxyStreamServlet.java
+Falha no Analyzer. Classe 'Unsolved symbol : Action0' não encontrada. File: D:\git\EHExtractor\EHExtractor\.\projects\Hystrix-master\hystrix-core\src\main\java\com\netflix\hystrix\strategy\concurrency\HystrixContexSchedulerAction.java
+Falha no Analyzer. Classe 'Unsolved symbol : RequestHandler' não encontrada. File: D:\git\EHExtractor\EHExtractor\.\projects\Hystrix-master\hystrix-contrib\hystrix-rx-netty-metrics-stream\src\main\java\com\netflix\hystrix\contrib\rxnetty\metricsstream\HystrixMetricsStreamHandler.java
+Falha no Analyzer. Classe 'Unsolved symbol : Filter' não encontrada. File: D:\git\EHExtractor\EHExtractor\.\projects\Hystrix-master\hystrix-contrib\hystrix-request-servlet\src\main\java\com\netflix\hystrix\contrib\requestservlet\HystrixRequestLogViaLoggerServletFilter.java
+Falha no Analyzer. Classe 'Unsolved symbol : Filter' não encontrada. File: D:\git\EHExtractor\EHExtractor\.\projects\Hystrix-master\hystrix-contrib\hystrix-request-servlet\src\main\java\com\netflix\hystrix\contrib\requestservlet\HystrixRequestLogViaResponseHeaderServletFilter.java
+Falha no Analyzer. Classe 'Unsolved symbol : HttpServlet' não encontrada. File: D:\git\EHExtractor\EHExtractor\.\projects\Hystrix-master\hystrix-contrib\hystrix-metrics-event-stream\src\main\java\com\netflix\hystrix\contrib\sample\stream\HystrixSampleSseServlet.java
+
+UNSUPPORTED ERROR FILES
+Falha no Analyzer. UnsupportedOperation ao parsear arquivo. File: D:\git\EHExtractor\EHExtractor\.\projects\Hystrix-master\hystrix-core\src\main\java\com\netflix\hystrix\AbstractCommand.java
+Falha no Analyzer. UnsupportedOperation ao parsear arquivo. File: D:\git\EHExtractor\EHExtractor\.\projects\Hystrix-master\hystrix-core\src\main\java\com\netflix\hystrix\HystrixCommand.java
+Falha no Analyzer. UnsupportedOperation ao parsear arquivo. File: D:\git\EHExtractor\EHExtractor\.\projects\Hystrix-master\hystrix-core\src\main\java\com\netflix\hystrix\HystrixObservableCollapser.java
+Falha no Analyzer. UnsupportedOperation ao parsear arquivo. File: D:\git\EHExtractor\EHExtractor\.\projects\Hystrix-master\hystrix-core\src\main\java\com\netflix\hystrix\collapser\RequestBatch.java
+Falha no Analyzer. UnsupportedOperation ao parsear arquivo. File: D:\git\EHExtractor\EHExtractor\.\projects\Hystrix-master\hystrix-core\src\jmh\java\com\netflix\hystrix\perf\ObservableCollapserPerfTest.java
+Falha no Analyzer. UnsupportedOperation ao parsear arquivo. File: D:\git\EHExtractor\EHExtractor\.\projects\Hystrix-master\hystrix-contrib\hystrix-yammer-metrics-publisher\src\main\java\com\netflix\hystrix\contrib\yammermetricspublisher\HystrixYammerMetricsPublisherCollapser.java
+Falha no Analyzer. UnsupportedOperation ao parsear arquivo. File: D:\git\EHExtractor\EHExtractor\.\projects\Hystrix-master\hystrix-contrib\hystrix-yammer-metrics-publisher\src\main\java\com\netflix\hystrix\contrib\yammermetricspublisher\HystrixYammerMetricsPublisherCommand.java
+Falha no Analyzer. UnsupportedOperation ao parsear arquivo. File: D:\git\EHExtractor\EHExtractor\.\projects\Hystrix-master\hystrix-contrib\hystrix-yammer-metrics-publisher\src\main\java\com\netflix\hystrix\contrib\yammermetricspublisher\HystrixYammerMetricsPublisherThreadPool.java
+Falha no Analyzer. UnsupportedOperation ao parsear arquivo. File: D:\git\EHExtractor\EHExtractor\.\projects\Hystrix-master\hystrix-contrib\hystrix-metrics-event-stream-jaxrs\src\main\java\com\netflix\hystrix\contrib\metrics\HystrixStreamingOutputProvider.java
+Falha no Analyzer. UnsupportedOperation ao parsear arquivo. File: D:\git\EHExtractor\EHExtractor\.\projects\Hystrix-master\hystrix-contrib\hystrix-metrics-event-stream\src\main\java\com\netflix\hystrix\contrib\sample\stream\HystrixConfigurationJsonStream.java
+Falha no Analyzer. UnsupportedOperation ao parsear arquivo. File: D:\git\EHExtractor\EHExtractor\.\projects\Hystrix-master\hystrix-contrib\hystrix-metrics-event-stream\src\main\java\com\netflix\hystrix\contrib\sample\stream\HystrixUtilizationJsonStream.java
+Falha no Analyzer. UnsupportedOperation ao parsear arquivo. File: D:\git\EHExtractor\EHExtractor\.\projects\Hystrix-master\hystrix-contrib\hystrix-codahale-metrics-publisher\src\main\java\com\netflix\hystrix\contrib\codahalemetricspublisher\HystrixCodaHaleMetricsPublisherCollapser.java
+Falha no Analyzer. UnsupportedOperation ao parsear arquivo. File: D:\git\EHExtractor\EHExtractor\.\projects\Hystrix-master\hystrix-contrib\hystrix-codahale-metrics-publisher\src\main\java\com\netflix\hystrix\contrib\codahalemetricspublisher\HystrixCodaHaleMetricsPublisherCommand.java
+Falha no Analyzer. UnsupportedOperation ao parsear arquivo. File: D:\git\EHExtractor\EHExtractor\.\projects\Hystrix-master\hystrix-contrib\hystrix-codahale-metrics-publisher\src\main\java\com\netflix\hystrix\contrib\codahalemetricspublisher\HystrixCodaHaleMetricsPublisherThreadPool.java
+
+UNKNOWN ANCESTRAL
+

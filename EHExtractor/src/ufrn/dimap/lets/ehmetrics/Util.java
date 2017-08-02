@@ -1,6 +1,5 @@
 package ufrn.dimap.lets.ehmetrics;
 
-import java.util.List;
 import java.util.Stack;
 
 import com.github.javaparser.symbolsolver.javaparsermodel.declarations.JavaParserClassDeclaration;

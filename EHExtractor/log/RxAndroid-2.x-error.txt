@@ -1,0 +1,19 @@
+Unsolved types: 1
+Unsupported errors: 0
+Unkown ancestral: 0
+
+GENERAL ERRORS
+Falha no GradleResolver. failed to find Build Tools revision 25.0.1. File: D:\git\EHExtractor\EHExtractor\.\projects\RxAndroid-2.x\build.gradle
+
+Falha no GradleResolver. failed to find Build Tools revision 25.0.1. File: D:\git\EHExtractor\EHExtractor\.\projects\RxAndroid-2.x\sample-app\build.gradle
+
+Falha no GradleResolver. failed to find Build Tools revision 25.0.1. File: D:\git\EHExtractor\EHExtractor\.\projects\RxAndroid-2.x\rxandroid\build.gradle
+
+
+UNSOLVED ERROR FILES
+Falha no Analyzer. Classe 'Unsolved symbol : Scheduler' não encontrada. File: D:\git\EHExtractor\EHExtractor\.\projects\RxAndroid-2.x\rxandroid\src\main\java\io\reactivex\android\schedulers\HandlerScheduler.java
+
+UNSUPPORTED ERROR FILES
+
+UNKNOWN ANCESTRAL
+

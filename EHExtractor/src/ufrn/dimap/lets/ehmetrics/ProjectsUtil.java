@@ -10,8 +10,8 @@ public class ProjectsUtil
 	private static final boolean projectsOnDemand = false;
 	
 	// Colocar endereço com barra ('/') no final
-	public static final String projectsRoot = "./projects/size 1024..1100 & stars 0/";
-	public static final String logsRoot = "./log/size 1024..1100 & stars 0/";
+	public static final String projectsRoot = "./projects/";
+	public static final String logsRoot = "./log/";
 	
 	public static List<File> listProjects ()
 	{

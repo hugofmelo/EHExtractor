@@ -1,0 +1,165 @@
+Java files: 73
+Jar files: 1
+Maven files: 0
+Gradle files: 4
+Android file: true
+
+Analyzed java files: 51
+Source dirs: 3
+Test dirs: 2
+Dependencies files: 1
+
+JAVA FILES
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso-sample\src\main\java\com\example\picasso\Data.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso-sample\src\main\java\com\example\picasso\GrayscaleTransformation.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso-sample\src\main\java\com\example\picasso\PicassoSampleActivity.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso-sample\src\main\java\com\example\picasso\PicassoSampleAdapter.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso-sample\src\main\java\com\example\picasso\SampleContactsActivity.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso-sample\src\main\java\com\example\picasso\SampleContactsAdapter.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso-sample\src\main\java\com\example\picasso\SampleGalleryActivity.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso-sample\src\main\java\com\example\picasso\SampleGridViewActivity.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso-sample\src\main\java\com\example\picasso\SampleGridViewAdapter.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso-sample\src\main\java\com\example\picasso\SampleListDetailActivity.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso-sample\src\main\java\com\example\picasso\SampleListDetailAdapter.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso-sample\src\main\java\com\example\picasso\SampleScrollListener.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso-sample\src\main\java\com\example\picasso\SampleWidgetProvider.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso-sample\src\main\java\com\example\picasso\SquaredImageView.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso-pollexor\src\test\java\com\squareup\picasso\pollexor\PollexorRequestTransformerTest.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso-pollexor\src\main\java\com\squareup\picasso\pollexor\PollexorRequestTransformer.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\test\java\com\squareup\picasso\AssetRequestHandlerTest.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\test\java\com\squareup\picasso\BitmapHunterTest.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\test\java\com\squareup\picasso\DeferredRequestCreatorTest.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\test\java\com\squareup\picasso\DispatcherTest.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\test\java\com\squareup\picasso\ImageViewActionTest.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\test\java\com\squareup\picasso\LruCacheTest.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\test\java\com\squareup\picasso\MarkableInputStreamTest.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\test\java\com\squareup\picasso\MediaStoreRequestHandlerTest.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\test\java\com\squareup\picasso\MemoryPolicyTest.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\test\java\com\squareup\picasso\NetworkRequestHandlerTest.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\test\java\com\squareup\picasso\OkHttp3DownloaderTest.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\test\java\com\squareup\picasso\PicassoDrawableTest.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\test\java\com\squareup\picasso\PicassoTest.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\test\java\com\squareup\picasso\RemoteViewsActionTest.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\test\java\com\squareup\picasso\RequestCreatorTest.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\test\java\com\squareup\picasso\RequestHandlerTest.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\test\java\com\squareup\picasso\Shadows.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\test\java\com\squareup\picasso\TargetActionTest.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\test\java\com\squareup\picasso\TestTransformation.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\test\java\com\squareup\picasso\TestUtils.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\test\java\com\squareup\picasso\UtilsTest.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\Action.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\AssetRequestHandler.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\BitmapHunter.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\Cache.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\Callback.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\ContactsPhotoRequestHandler.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\ContentStreamRequestHandler.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\DeferredRequestCreator.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\Dispatcher.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\Downloader.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\FetchAction.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\FileRequestHandler.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\GetAction.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\ImageViewAction.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\LruCache.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\MarkableInputStream.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\MediaStoreRequestHandler.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\MemoryPolicy.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\NetworkPolicy.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\NetworkRequestHandler.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\OkHttp3Downloader.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\Picasso.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\PicassoDrawable.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\PicassoExecutorService.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\PicassoProvider.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\RemoteViewsAction.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\Request.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\RequestCreator.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\RequestHandler.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\ResourceRequestHandler.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\Stats.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\StatsSnapshot.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\Target.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\TargetAction.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\Transformation.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\Utils.java
+
+JAR FILES
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\gradle\wrapper\gradle-wrapper.jar
+
+MAVEN FILES
+
+GRADLE FILES
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\build.gradle
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso-sample\build.gradle
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso-pollexor\build.gradle
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\build.gradle
+
+ANDROID MANIFEST FILE
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\AndroidManifest.xml
+
+ANALYZED JAVA FILES
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso-sample\src\main\java\com\example\picasso\Data.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso-sample\src\main\java\com\example\picasso\GrayscaleTransformation.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso-sample\src\main\java\com\example\picasso\PicassoSampleActivity.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso-sample\src\main\java\com\example\picasso\PicassoSampleAdapter.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso-sample\src\main\java\com\example\picasso\SampleContactsActivity.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso-sample\src\main\java\com\example\picasso\SampleContactsAdapter.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso-sample\src\main\java\com\example\picasso\SampleGalleryActivity.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso-sample\src\main\java\com\example\picasso\SampleGridViewActivity.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso-sample\src\main\java\com\example\picasso\SampleGridViewAdapter.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso-sample\src\main\java\com\example\picasso\SampleListDetailActivity.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso-sample\src\main\java\com\example\picasso\SampleListDetailAdapter.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso-sample\src\main\java\com\example\picasso\SampleScrollListener.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso-sample\src\main\java\com\example\picasso\SampleWidgetProvider.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso-sample\src\main\java\com\example\picasso\SquaredImageView.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso-pollexor\src\main\java\com\squareup\picasso\pollexor\PollexorRequestTransformer.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\Action.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\AssetRequestHandler.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\BitmapHunter.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\Cache.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\Callback.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\ContactsPhotoRequestHandler.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\ContentStreamRequestHandler.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\DeferredRequestCreator.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\Dispatcher.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\Downloader.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\FetchAction.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\FileRequestHandler.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\GetAction.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\ImageViewAction.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\LruCache.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\MarkableInputStream.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\MediaStoreRequestHandler.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\MemoryPolicy.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\NetworkPolicy.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\NetworkRequestHandler.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\OkHttp3Downloader.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\Picasso.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\PicassoDrawable.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\PicassoExecutorService.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\PicassoProvider.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\RemoteViewsAction.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\Request.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\RequestCreator.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\RequestHandler.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\ResourceRequestHandler.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\Stats.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\StatsSnapshot.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\Target.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\TargetAction.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\Transformation.java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java\com\squareup\picasso\Utils.java
+
+SOURCE DIRECTORIES
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso-sample\src\main\java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso-pollexor\src\main\java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\main\java
+
+TEST DIRECTORIES
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso-pollexor\src\test\java
+D:\git\EHExtractor\EHExtractor\.\projects\picasso-master\picasso\src\test\java
+
+DEPENDENCIES
+D:\AndroidSDK\platforms\android-26\android.jar
+

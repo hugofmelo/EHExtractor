@@ -2,12 +2,7 @@ package ufrn.dimap.lets.ehmetrics;
 
 import java.util.HashMap;
 
-import ufrn.dimap.lets.ehmetrics.HandlerActionResolver;
-import ufrn.dimap.lets.ehmetrics.abstractmodel.HandlerActionType;
-
 import com.github.javaparser.ast.Node;
-import com.github.javaparser.ast.NodeList;
-import com.github.javaparser.ast.body.VariableDeclarator;
 import com.github.javaparser.ast.expr.AssignExpr;
 import com.github.javaparser.ast.expr.BinaryExpr;
 import com.github.javaparser.ast.expr.BooleanLiteralExpr;
@@ -22,6 +17,8 @@ import com.github.javaparser.ast.expr.NullLiteralExpr;
 import com.github.javaparser.ast.expr.ObjectCreationExpr;
 import com.github.javaparser.ast.expr.StringLiteralExpr;
 import com.github.javaparser.ast.expr.VariableDeclarationExpr;
+
+import ufrn.dimap.lets.ehmetrics.abstractmodel.HandlerActionType;
 
 public class HandlerActionResolver
 {
@@ -94,7 +91,7 @@ public class HandlerActionResolver
 		}
 		else if ( expression instanceof ConditionalExpr )
 		{
-			ConditionalExpr conditionExpr = (ConditionalExpr) expression;
+			//ConditionalExpr conditionExpr = (ConditionalExpr) expression;
 			
 			//conditionExpr.getThenExpr();
 			//actionType = ask(expression.getParentNode().get());
@@ -122,7 +119,7 @@ public class HandlerActionResolver
 		}
 		else
 		{
-			Logger.getInstance().writeLog("Um Expression que não é MethodCallExpr || VariableDeclarationExpr || BinaryExpr || StringLiteralExpr || IntegerLiteralExpr || ObjectCreationExpr || ConditionalExpr || FieldAccessExpr --> " + expression.getClass().getSimpleName() + "\n");
+			//Logger.getInstance().writeLog("Um Expression que não é MethodCallExpr || VariableDeclarationExpr || BinaryExpr || StringLiteralExpr || IntegerLiteralExpr || ObjectCreationExpr || ConditionalExpr || FieldAccessExpr --> " + expression.getClass().getSimpleName() + "\n");
 			return HandlerActionType.UNKNOWN;
 		}
 	}

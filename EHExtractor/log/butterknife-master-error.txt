@@ -1,0 +1,19 @@
+Unsolved types: 0
+Unsupported errors: 0
+Unkown ancestral: 0
+
+GENERAL ERRORS
+Falha em ArtifactResolver. O arquivo java não é válido. File: D:\git\EHExtractor\EHExtractor\.\projects\butterknife-master\butterknife-gradle-plugin\src\test\resources\fixtures\R.java
+Falha em ArtifactResolver. O arquivo java não é válido. File: D:\git\EHExtractor\EHExtractor\.\projects\butterknife-master\butterknife-gradle-plugin\src\test\resources\fixtures\R2.java
+Falha em ArtifactResolver. O arquivo java não é válido. File: D:\git\EHExtractor\EHExtractor\.\projects\butterknife-master\butterknife-gradle-plugin\src\test\resources\fixtures\RFinal.java
+Falha no GradleResolver. Could not get unknown property 'versions' for object of type org.gradle.api.internal.artifacts.dsl.dependencies.DefaultDependencyHandler.. File: D:\git\EHExtractor\EHExtractor\.\projects\butterknife-master\sample\library\build.gradle
+
+Falha no GradleResolver. Plugin with id 'com.android.application' not found.. File: D:\git\EHExtractor\EHExtractor\.\projects\butterknife-master\sample\app\build.gradle
+
+
+UNSOLVED ERROR FILES
+
+UNSUPPORTED ERROR FILES
+
+UNKNOWN ANCESTRAL
+

@@ -1,0 +1,19 @@
+PROJECT	EXCEPTION	TYPE	ORIGIN	HANDLERS	AUTOCOMPLETE	EMPTY
+lottie-android-master	java.lang.Exception	Checked	Java	1	0	1
+lottie-android-master	java.lang.RuntimeException	Unchecked	Java	1	0	0
+lottie-android-master	java.io.IOException	Checked	Java	4	0	0
+lottie-android-master	org.json.JSONException	Checked	Library	2	0	1
+lottie-android-master	java.lang.InterruptedException	Checked	Java	1	0	1
+
+
+
+HANDLER ID	HANDLED EXCEPTION	EXCEPTION TYPE	EXCEPTION ORIGIN	AUTOCOMPLETE	EMPTY
+1	java.lang.InterruptedException	Checked	Java	false	true
+2	org.json.JSONException	Checked	Library	false	true
+3	java.io.IOException	Checked	Java	false	false
+4	java.io.IOException	Checked	Java	false	false
+5	java.io.IOException	Checked	Java	false	false
+6	java.io.IOException	Checked	Java	false	false
+7	org.json.JSONException	Checked	Library	false	false
+8	java.lang.RuntimeException	Unchecked	Java	false	false
+9	java.lang.Exception	Checked	Java	false	true

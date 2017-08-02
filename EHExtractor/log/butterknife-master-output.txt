@@ -1,0 +1,47 @@
+PROJECT	EXCEPTION	TYPE	ORIGIN	HANDLERS	AUTOCOMPLETE	EMPTY
+butterknife-master	java.lang.Exception	Checked	Java	14	0	0
+butterknife-master	java.io.IOException	Checked	Java	1	0	0
+butterknife-master	java.lang.IllegalStateException	Unchecked	Java	3	0	0
+butterknife-master	java.lang.ClassCastException	Unchecked	Java	2	0	0
+butterknife-master	javax.lang.model.type.MirroredTypeException	Unchecked	Java	1	0	0
+butterknife-master	java.lang.IllegalArgumentException	Unchecked	Java	1	0	1
+butterknife-master	java.lang.NumberFormatException	Unchecked	Java	1	0	0
+butterknife-master	java.lang.NoSuchMethodException	Checked	Java	1	0	0
+butterknife-master	java.lang.ClassNotFoundException	Checked	Java	1	0	0
+butterknife-master	java.lang.reflect.InvocationTargetException	Checked	Java	1	0	0
+butterknife-master	java.lang.InstantiationException	Checked	Java	1	0	0
+butterknife-master	java.lang.IllegalAccessException	Checked	Java	1	0	0
+butterknife-master	java.lang.NoSuchFieldException	Checked	Java	1	0	0
+
+
+
+HANDLER ID	HANDLED EXCEPTION	EXCEPTION TYPE	EXCEPTION ORIGIN	AUTOCOMPLETE	EMPTY
+1	java.lang.NoSuchFieldException	Checked	Java	false	false
+2	java.lang.NumberFormatException	Unchecked	Java	false	false
+3	java.lang.IllegalArgumentException	Unchecked	Java	false	true
+4	java.io.IOException	Checked	Java	false	false
+5	java.lang.Exception	Checked	Java	false	false
+6	java.lang.Exception	Checked	Java	false	false
+7	java.lang.Exception	Checked	Java	false	false
+8	java.lang.Exception	Checked	Java	false	false
+9	java.lang.Exception	Checked	Java	false	false
+10	java.lang.Exception	Checked	Java	false	false
+11	java.lang.Exception	Checked	Java	false	false
+12	java.lang.Exception	Checked	Java	false	false
+13	java.lang.Exception	Checked	Java	false	false
+14	java.lang.Exception	Checked	Java	false	false
+15	java.lang.Exception	Checked	Java	false	false
+16	java.lang.Exception	Checked	Java	false	false
+17	java.lang.Exception	Checked	Java	false	false
+18	java.lang.Exception	Checked	Java	false	false
+19	javax.lang.model.type.MirroredTypeException	Unchecked	Java	false	false
+20	java.lang.IllegalAccessException	Checked	Java	false	false
+21	java.lang.InstantiationException	Checked	Java	false	false
+22	java.lang.reflect.InvocationTargetException	Checked	Java	false	false
+23	java.lang.ClassNotFoundException	Checked	Java	false	false
+24	java.lang.NoSuchMethodException	Checked	Java	false	false
+25	java.lang.ClassCastException	Unchecked	Java	false	false
+26	java.lang.ClassCastException	Unchecked	Java	false	false
+27	java.lang.IllegalStateException	Unchecked	Java	false	false
+28	java.lang.IllegalStateException	Unchecked	Java	false	false
+29	java.lang.IllegalStateException	Unchecked	Java	false	false

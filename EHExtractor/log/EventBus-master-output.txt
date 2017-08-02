@@ -1,0 +1,51 @@
+PROJECT	EXCEPTION	TYPE	ORIGIN	HANDLERS	AUTOCOMPLETE	EMPTY
+EventBus-master	java.lang.Throwable	Checked	Java	1	0	0
+EventBus-master	java.lang.Exception	Checked	Java	10	0	0
+EventBus-master	java.lang.InstantiationException	Checked	Java	1	0	0
+EventBus-master	java.lang.NoSuchMethodException	Checked	Java	2	0	0
+EventBus-master	java.lang.IllegalAccessException	Checked	Java	2	0	0
+EventBus-master	java.lang.reflect.InvocationTargetException	Checked	Java	1	0	0
+EventBus-master	java.io.IOException	Checked	Java	2	0	1
+EventBus-master	java.lang.RuntimeException	Unchecked	Java	2	0	1
+EventBus-master	org.greenrobot.eventbus.EventBusException	Unchecked	System	5	0	3
+EventBus-master	java.lang.InterruptedException	Checked	Java	10	0	2
+
+
+
+HANDLER ID	HANDLED EXCEPTION	EXCEPTION TYPE	EXCEPTION ORIGIN	AUTOCOMPLETE	EMPTY
+1	java.lang.InterruptedException	Checked	Java	false	false
+2	java.lang.InterruptedException	Checked	Java	false	false
+3	java.lang.RuntimeException	Unchecked	Java	false	true
+4	org.greenrobot.eventbus.EventBusException	Unchecked	System	false	true
+5	org.greenrobot.eventbus.EventBusException	Unchecked	System	false	true
+6	org.greenrobot.eventbus.EventBusException	Unchecked	System	false	true
+7	org.greenrobot.eventbus.EventBusException	Unchecked	System	false	false
+8	org.greenrobot.eventbus.EventBusException	Unchecked	System	false	false
+9	java.lang.InterruptedException	Checked	Java	false	true
+10	java.lang.InterruptedException	Checked	Java	false	false
+11	java.lang.InterruptedException	Checked	Java	false	false
+12	java.lang.InterruptedException	Checked	Java	false	false
+13	java.lang.InterruptedException	Checked	Java	false	false
+14	java.lang.InterruptedException	Checked	Java	false	false
+15	java.lang.Exception	Checked	Java	false	false
+16	java.lang.InterruptedException	Checked	Java	false	true
+17	java.lang.Exception	Checked	Java	false	false
+18	java.lang.Exception	Checked	Java	false	false
+19	java.lang.Exception	Checked	Java	false	false
+20	java.lang.Exception	Checked	Java	false	false
+21	java.lang.Exception	Checked	Java	false	false
+22	java.lang.Exception	Checked	Java	false	false
+23	java.lang.RuntimeException	Unchecked	Java	false	false
+24	java.io.IOException	Checked	Java	false	false
+25	java.io.IOException	Checked	Java	false	true
+26	java.lang.InterruptedException	Checked	Java	false	false
+27	java.lang.reflect.InvocationTargetException	Checked	Java	false	false
+28	java.lang.IllegalAccessException	Checked	Java	false	false
+29	java.lang.Throwable	Checked	Java	false	false
+30	java.lang.NoSuchMethodException	Checked	Java	false	false
+31	java.lang.Exception	Checked	Java	false	false
+32	java.lang.Exception	Checked	Java	false	false
+33	java.lang.Exception	Checked	Java	false	false
+34	java.lang.InstantiationException	Checked	Java	false	false
+35	java.lang.IllegalAccessException	Checked	Java	false	false
+36	java.lang.NoSuchMethodException	Checked	Java	false	false

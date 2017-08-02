@@ -1,0 +1,87 @@
+Java files: 25
+Jar files: 1
+Maven files: 0
+Gradle files: 3
+Android file: true
+
+Analyzed java files: 25
+Source dirs: 2
+Test dirs: 0
+Dependencies files: 1
+
+JAVA FILES
+D:\git\EHExtractor\EHExtractor\.\projects\PhotoView-master\sample\src\main\java\com\github\chrisbanes\photoview\sample\ActivityTransitionActivity.java
+D:\git\EHExtractor\EHExtractor\.\projects\PhotoView-master\sample\src\main\java\com\github\chrisbanes\photoview\sample\ActivityTransitionToActivity.java
+D:\git\EHExtractor\EHExtractor\.\projects\PhotoView-master\sample\src\main\java\com\github\chrisbanes\photoview\sample\HackyDrawerLayout.java
+D:\git\EHExtractor\EHExtractor\.\projects\PhotoView-master\sample\src\main\java\com\github\chrisbanes\photoview\sample\HackyViewPager.java
+D:\git\EHExtractor\EHExtractor\.\projects\PhotoView-master\sample\src\main\java\com\github\chrisbanes\photoview\sample\ImageAdapter.java
+D:\git\EHExtractor\EHExtractor\.\projects\PhotoView-master\sample\src\main\java\com\github\chrisbanes\photoview\sample\ImageViewHolder.java
+D:\git\EHExtractor\EHExtractor\.\projects\PhotoView-master\sample\src\main\java\com\github\chrisbanes\photoview\sample\ImmersiveActivity.java
+D:\git\EHExtractor\EHExtractor\.\projects\PhotoView-master\sample\src\main\java\com\github\chrisbanes\photoview\sample\LauncherActivity.java
+D:\git\EHExtractor\EHExtractor\.\projects\PhotoView-master\sample\src\main\java\com\github\chrisbanes\photoview\sample\PicassoSampleActivity.java
+D:\git\EHExtractor\EHExtractor\.\projects\PhotoView-master\sample\src\main\java\com\github\chrisbanes\photoview\sample\RotationSampleActivity.java
+D:\git\EHExtractor\EHExtractor\.\projects\PhotoView-master\sample\src\main\java\com\github\chrisbanes\photoview\sample\SimpleSampleActivity.java
+D:\git\EHExtractor\EHExtractor\.\projects\PhotoView-master\sample\src\main\java\com\github\chrisbanes\photoview\sample\ViewPagerActivity.java
+D:\git\EHExtractor\EHExtractor\.\projects\PhotoView-master\photoview\src\main\java\com\github\chrisbanes\photoview\Compat.java
+D:\git\EHExtractor\EHExtractor\.\projects\PhotoView-master\photoview\src\main\java\com\github\chrisbanes\photoview\CustomGestureDetector.java
+D:\git\EHExtractor\EHExtractor\.\projects\PhotoView-master\photoview\src\main\java\com\github\chrisbanes\photoview\OnGestureListener.java
+D:\git\EHExtractor\EHExtractor\.\projects\PhotoView-master\photoview\src\main\java\com\github\chrisbanes\photoview\OnMatrixChangedListener.java
+D:\git\EHExtractor\EHExtractor\.\projects\PhotoView-master\photoview\src\main\java\com\github\chrisbanes\photoview\OnOutsidePhotoTapListener.java
+D:\git\EHExtractor\EHExtractor\.\projects\PhotoView-master\photoview\src\main\java\com\github\chrisbanes\photoview\OnPhotoTapListener.java
+D:\git\EHExtractor\EHExtractor\.\projects\PhotoView-master\photoview\src\main\java\com\github\chrisbanes\photoview\OnScaleChangedListener.java
+D:\git\EHExtractor\EHExtractor\.\projects\PhotoView-master\photoview\src\main\java\com\github\chrisbanes\photoview\OnSingleFlingListener.java
+D:\git\EHExtractor\EHExtractor\.\projects\PhotoView-master\photoview\src\main\java\com\github\chrisbanes\photoview\OnViewDragListener.java
+D:\git\EHExtractor\EHExtractor\.\projects\PhotoView-master\photoview\src\main\java\com\github\chrisbanes\photoview\OnViewTapListener.java
+D:\git\EHExtractor\EHExtractor\.\projects\PhotoView-master\photoview\src\main\java\com\github\chrisbanes\photoview\PhotoView.java
+D:\git\EHExtractor\EHExtractor\.\projects\PhotoView-master\photoview\src\main\java\com\github\chrisbanes\photoview\PhotoViewAttacher.java
+D:\git\EHExtractor\EHExtractor\.\projects\PhotoView-master\photoview\src\main\java\com\github\chrisbanes\photoview\Util.java
+
+JAR FILES
+D:\git\EHExtractor\EHExtractor\.\projects\PhotoView-master\gradle\wrapper\gradle-wrapper.jar
+
+MAVEN FILES
+
+GRADLE FILES
+D:\git\EHExtractor\EHExtractor\.\projects\PhotoView-master\build.gradle
+D:\git\EHExtractor\EHExtractor\.\projects\PhotoView-master\sample\build.gradle
+D:\git\EHExtractor\EHExtractor\.\projects\PhotoView-master\photoview\build.gradle
+
+ANDROID MANIFEST FILE
+D:\git\EHExtractor\EHExtractor\.\projects\PhotoView-master\photoview\src\main\AndroidManifest.xml
+
+ANALYZED JAVA FILES
+D:\git\EHExtractor\EHExtractor\.\projects\PhotoView-master\sample\src\main\java\com\github\chrisbanes\photoview\sample\ActivityTransitionActivity.java
+D:\git\EHExtractor\EHExtractor\.\projects\PhotoView-master\sample\src\main\java\com\github\chrisbanes\photoview\sample\ActivityTransitionToActivity.java
+D:\git\EHExtractor\EHExtractor\.\projects\PhotoView-master\sample\src\main\java\com\github\chrisbanes\photoview\sample\HackyDrawerLayout.java
+D:\git\EHExtractor\EHExtractor\.\projects\PhotoView-master\sample\src\main\java\com\github\chrisbanes\photoview\sample\HackyViewPager.java
+D:\git\EHExtractor\EHExtractor\.\projects\PhotoView-master\sample\src\main\java\com\github\chrisbanes\photoview\sample\ImageAdapter.java
+D:\git\EHExtractor\EHExtractor\.\projects\PhotoView-master\sample\src\main\java\com\github\chrisbanes\photoview\sample\ImageViewHolder.java
+D:\git\EHExtractor\EHExtractor\.\projects\PhotoView-master\sample\src\main\java\com\github\chrisbanes\photoview\sample\ImmersiveActivity.java
+D:\git\EHExtractor\EHExtractor\.\projects\PhotoView-master\sample\src\main\java\com\github\chrisbanes\photoview\sample\LauncherActivity.java
+D:\git\EHExtractor\EHExtractor\.\projects\PhotoView-master\sample\src\main\java\com\github\chrisbanes\photoview\sample\PicassoSampleActivity.java
+D:\git\EHExtractor\EHExtractor\.\projects\PhotoView-master\sample\src\main\java\com\github\chrisbanes\photoview\sample\RotationSampleActivity.java
+D:\git\EHExtractor\EHExtractor\.\projects\PhotoView-master\sample\src\main\java\com\github\chrisbanes\photoview\sample\SimpleSampleActivity.java
+D:\git\EHExtractor\EHExtractor\.\projects\PhotoView-master\sample\src\main\java\com\github\chrisbanes\photoview\sample\ViewPagerActivity.java
+D:\git\EHExtractor\EHExtractor\.\projects\PhotoView-master\photoview\src\main\java\com\github\chrisbanes\photoview\Compat.java
+D:\git\EHExtractor\EHExtractor\.\projects\PhotoView-master\photoview\src\main\java\com\github\chrisbanes\photoview\CustomGestureDetector.java
+D:\git\EHExtractor\EHExtractor\.\projects\PhotoView-master\photoview\src\main\java\com\github\chrisbanes\photoview\OnGestureListener.java
+D:\git\EHExtractor\EHExtractor\.\projects\PhotoView-master\photoview\src\main\java\com\github\chrisbanes\photoview\OnMatrixChangedListener.java
+D:\git\EHExtractor\EHExtractor\.\projects\PhotoView-master\photoview\src\main\java\com\github\chrisbanes\photoview\OnOutsidePhotoTapListener.java
+D:\git\EHExtractor\EHExtractor\.\projects\PhotoView-master\photoview\src\main\java\com\github\chrisbanes\photoview\OnPhotoTapListener.java
+D:\git\EHExtractor\EHExtractor\.\projects\PhotoView-master\photoview\src\main\java\com\github\chrisbanes\photoview\OnScaleChangedListener.java
+D:\git\EHExtractor\EHExtractor\.\projects\PhotoView-master\photoview\src\main\java\com\github\chrisbanes\photoview\OnSingleFlingListener.java
+D:\git\EHExtractor\EHExtractor\.\projects\PhotoView-master\photoview\src\main\java\com\github\chrisbanes\photoview\OnViewDragListener.java
+D:\git\EHExtractor\EHExtractor\.\projects\PhotoView-master\photoview\src\main\java\com\github\chrisbanes\photoview\OnViewTapListener.java
+D:\git\EHExtractor\EHExtractor\.\projects\PhotoView-master\photoview\src\main\java\com\github\chrisbanes\photoview\PhotoView.java
+D:\git\EHExtractor\EHExtractor\.\projects\PhotoView-master\photoview\src\main\java\com\github\chrisbanes\photoview\PhotoViewAttacher.java
+D:\git\EHExtractor\EHExtractor\.\projects\PhotoView-master\photoview\src\main\java\com\github\chrisbanes\photoview\Util.java
+
+SOURCE DIRECTORIES
+D:\git\EHExtractor\EHExtractor\.\projects\PhotoView-master\sample\src\main\java
+D:\git\EHExtractor\EHExtractor\.\projects\PhotoView-master\photoview\src\main\java
+
+TEST DIRECTORIES
+
+DEPENDENCIES
+D:\AndroidSDK\platforms\android-26\android.jar
+

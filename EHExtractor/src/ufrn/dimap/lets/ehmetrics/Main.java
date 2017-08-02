@@ -1,6 +1,7 @@
 package ufrn.dimap.lets.ehmetrics;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.List;
 
 import ufrn.dimap.lets.ehmetrics.abstractmodel.MetricsModel;
@@ -9,14 +10,21 @@ import ufrn.dimap.lets.ehmetrics.dependencyresolver.FileFinder;
 import ufrn.dimap.lets.ehmetrics.dependencyresolver.ProjectArtifacts;
 import ufrn.dimap.lets.ehmetrics.dependencyresolver.ProjectFiles;
 import ufrn.dimap.lets.ehmetrics.visitor.AutoCompleteCheckVisitor;
-import ufrn.dimap.lets.ehmetrics.visitor.TestVisitor;
 
 public class Main
 {
 	public static void main(String[] args)
 	{
 		Main main = new Main();
-		main.execute();
+		
+		try
+		{
+			main.execute();
+		}
+		catch (IOException e)
+		{
+			e.printStackTrace();
+		}
 	}
 
 	/*
@@ -32,11 +40,10 @@ public class Main
 	write report
 	 */	
 
-	public void execute()
+	public void execute() throws IOException
 	{
-		Logger logger = Logger.getInstance();
-		ErrorLogger errorLogger = ErrorLogger.getInstance();
-
+		ModelLogger.start();
+		
 		System.out.println("Identificando projetos para analise...");
 		List<File> projects = ProjectsUtil.listProjects();
 
@@ -50,9 +57,8 @@ public class Main
 
 		for ( File project : projects )
 		{
-			logger.initProjectLogger(project.getName());
-			errorLogger.initProjectLogger(project.getName());
-
+			ErrorLogger.start();
+			
 			System.out.println("****** PROJETO " + project.getName() + " ******");
 
 			System.out.println("Identificando arquivos...");
@@ -62,7 +68,7 @@ public class Main
 			ProjectArtifacts projectArtifacts = ArtifactResolver.resolve(projectFiles);
 			
 			// Logging
-			logger.writeFilesAndArtifacts(projectFiles, projectArtifacts);
+			Logger.writeReport(project.getName(), projectFiles, projectArtifacts);
 
 			System.out.println("Criando modelo...");
 			MetricsModel model = new MetricsModel();
@@ -76,17 +82,15 @@ public class Main
 
 			System.out.println("Salvando resultados...");
 			// Logging
-			logger.writeModel(model);
-			logger.writeResultLn(project.getName() + "\t" + model.computeHandledTypes() + "\t" + model.getHandlers().size() + "\t" + model.computeTotalAutoCompleteHandlers()+ "\t" + model.computeTotalEmptyHandlers());
-
+			ModelLogger.writeModel(project.getName(), model);
+			ErrorLogger.writeReport(project.getName());
+			ErrorLogger.stop();
+			
 			System.out.println("Finalizada a analise do projeto " + project.getName() + ".");
 			System.out.println();	
-
-			logger.closeProjectLogger();
-			errorLogger.closeProjectLogger();
 		}
 
-		logger.closeResult();
+		ModelLogger.stop();
 
 		System.out.println("FINALIZADO");
 	}

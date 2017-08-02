@@ -2,13 +2,8 @@ package ufrn.dimap.lets.ehmetrics.dependencyresolver;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
 import java.util.Map;
 import java.util.Optional;
-import java.util.Set;
 
 import com.github.javaparser.JavaParser;
 import com.github.javaparser.ParseProblemException;
@@ -16,7 +11,6 @@ import com.github.javaparser.ast.CompilationUnit;
 import com.github.javaparser.ast.PackageDeclaration;
 
 import ufrn.dimap.lets.ehmetrics.ErrorLogger;
-import ufrn.dimap.lets.ehmetrics.Logger;
 
 public class ArtifactResolver
 {
@@ -53,7 +47,7 @@ public class ArtifactResolver
 			}
 			catch ( DependencyResolverException e )
 			{
-				ErrorLogger.getInstance().write(e.getMessage() + " File: " + e.getFile().getAbsolutePath()+"\n");
+				ErrorLogger.addError(e.getMessage() + " File: " + e.getFile().getAbsolutePath());
 			}
 		}	
 	}
@@ -69,7 +63,7 @@ public class ArtifactResolver
 
 			if ( androidHomePath == null )
 			{
-				ErrorLogger.getInstance().write("Falha no DependencyResolver. ANDROID_HOME não foi encontrado.");
+				ErrorLogger.addError("Falha no DependencyResolver. ANDROID_HOME não foi encontrado.");
 			}
 			else
 			{
@@ -79,7 +73,7 @@ public class ArtifactResolver
 				File androidJar = new File (androidHomePath + "/platforms/android-26/android.jar");
 				if ( !androidJar.exists() )
 				{
-					ErrorLogger.getInstance().write("Falha no DependencyResolver. android.jar não encontrado.");
+					ErrorLogger.addError("Falha no DependencyResolver. android.jar não encontrado.");
 				}
 				else
 				{
@@ -100,7 +94,7 @@ public class ArtifactResolver
 			}
 			catch (DependencyResolverException e)
 			{
-				ErrorLogger.getInstance().write(e.getMessage() + " Pom file: " + e.getFile().getAbsolutePath() + "\n");
+				ErrorLogger.addError(e.getMessage() + " Pom file: " + e.getFile().getAbsolutePath() + "\n");
 			}
 			
 		}
@@ -117,14 +111,13 @@ public class ArtifactResolver
 			}
 			catch (Throwable e)
 			{
-				//throw new FileFinderException ("Erro ao resolver dependencias Gradle");
 				Throwable t = e;
 				while (t.getCause() != null)
 				{
 						t=t.getCause();
 				}
 				
-				ErrorLogger.getInstance().write("Falha no GradleResolver. " + t.getMessage() + ". File: " + gradleFile.getAbsolutePath() + "\n");
+				ErrorLogger.addError("Falha no GradleResolver. " + t.getMessage() + ". File: " + gradleFile.getAbsolutePath() + "\n");
 				//continue;
 			}
 		}

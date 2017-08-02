@@ -1,0 +1,10 @@
+PROJECT	EXCEPTION	TYPE	ORIGIN	HANDLERS	AUTOCOMPLETE	EMPTY
+PhotoView-master	java.lang.Exception	Checked	Java	2	0	0
+PhotoView-master	java.lang.IllegalArgumentException	Unchecked	Java	1	0	0
+
+
+
+HANDLER ID	HANDLED EXCEPTION	EXCEPTION TYPE	EXCEPTION ORIGIN	AUTOCOMPLETE	EMPTY
+1	java.lang.Exception	Checked	Java	false	false
+2	java.lang.Exception	Checked	Java	false	false
+3	java.lang.IllegalArgumentException	Unchecked	Java	false	false

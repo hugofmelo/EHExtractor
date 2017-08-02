@@ -1,0 +1,35 @@
+Unsolved types: 0
+Unsupported errors: 0
+Unkown ancestral: 0
+
+GENERAL ERRORS
+Falha no GradleResolver. Could not find method test() for arguments [build_2k02vkqfthh9yajswqr37xc71$_run_closure1@5b3ec17] on root project 'ios-moe' of type org.gradle.api.Project.. File: D:\git\EHExtractor\EHExtractor\.\projects\libgdx-master\extensions\gdx-setup\src\com\badlogic\gdx\setup\resources\ios-moe\build.gradle
+
+Falha no GradleResolver. Could not get unknown property 'sourceSets' for root project 'ios' of type org.gradle.api.Project.. File: D:\git\EHExtractor\EHExtractor\.\projects\libgdx-master\extensions\gdx-setup\src\com\badlogic\gdx\setup\resources\ios\build.gradle
+
+Falha no GradleResolver. Plugin with id 'jetty' not found.. File: D:\git\EHExtractor\EHExtractor\.\projects\libgdx-master\extensions\gdx-setup\src\com\badlogic\gdx\setup\resources\html\build.gradle
+
+Falha no GradleResolver. Plugin with id '%LANG%' not found.. File: D:\git\EHExtractor\EHExtractor\.\projects\libgdx-master\extensions\gdx-setup\src\com\badlogic\gdx\setup\resources\desktop\build.gradle
+
+Falha no GradleResolver. Plugin with id '%LANG%' not found.. File: D:\git\EHExtractor\EHExtractor\.\projects\libgdx-master\extensions\gdx-setup\src\com\badlogic\gdx\setup\resources\core\build.gradle
+
+Falha no GradleResolver. startup failed:
+build file 'D:\git\EHExtractor\EHExtractor\projects\libgdx-master\extensions\gdx-setup\src\com\badlogic\gdx\setup\resources\android\build.gradle': 24: expecting '}', found '1' @ line 24, column 21.
+           versionCode 1
+                       ^
+
+1 error
+. File: D:\git\EHExtractor\EHExtractor\.\projects\libgdx-master\extensions\gdx-setup\src\com\badlogic\gdx\setup\resources\android\build.gradle
+
+Falha no Analyzer. Falha ao adicionar JarSolver. File: D:\git\EHExtractor\EHExtractor\projects\libgdx-master\gdx\libs\gdx-natives.jar
+Falha no Analyzer. Falha ao adicionar JarSolver. File: D:\git\EHExtractor\EHExtractor\projects\libgdx-master\extensions\gdx-box2d\gdx-box2d\libs\gdx-box2d-natives.jar
+Falha no Analyzer. Falha ao adicionar JarSolver. File: D:\git\EHExtractor\EHExtractor\projects\libgdx-master\extensions\gdx-bullet\libs\gdx-bullet-natives.jar
+Falha no Analyzer. Falha ao adicionar JarSolver. File: D:\git\EHExtractor\EHExtractor\projects\libgdx-master\extensions\gdx-controllers\gdx-controllers-desktop\libs\gdx-controllers-desktop-natives.jar
+Falha no Analyzer. Falha ao adicionar JarSolver. File: D:\git\EHExtractor\EHExtractor\projects\libgdx-master\extensions\gdx-freetype\libs\gdx-freetype-natives.jar
+
+UNSOLVED ERROR FILES
+
+UNSUPPORTED ERROR FILES
+
+UNKNOWN ANCESTRAL
+

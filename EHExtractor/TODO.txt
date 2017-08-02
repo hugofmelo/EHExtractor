@@ -1,12 +1,7 @@
-Prioridade -1:
-	Unificado os caminhos para projects e logs.
-	Adicionada verificação de handler vazio
-	Atualizado arquivo TODO e GitExplorer.
-
-Prioridade 0: Revisar loggers
-	Criar um variável em logger para cada tipo de erro. Elas seriam reiniciadas junto do projeto
-	Separar o logger do resultado do log de processamento
-	Transferir os métodos que calculam os totais dos resultados para o logger de resultado
+DONE Prioridade 0: Revisar loggers
+	DONE Criar um variável em logger para cada tipo de erro. Elas seriam reiniciadas junto do projeto
+	DONE Separar o logger do resultado do log de processamento
+	DONE Transferir os métodos que calculam os totais dos resultados para o logger de resultado
 Prioridade 0: aprender a usar a api do github e implementar minha própria busca.
 Prioridade 1: Criar exceção para centralizar falhas de Analyzer.
 Prioridade 2: Revisar todo o código, linha a linha, removendo ou movendo classes para seus devidos lugares..

@@ -1,0 +1,46 @@
+Unsolved types: 5
+Unsupported errors: 1
+Unkown ancestral: 0
+
+GENERAL ERRORS
+Falha no GradleResolver. Could not find com.android.tools.build:gradle:3.0.0-alpha7.
+Searched in the following locations:
+    https://jcenter.bintray.com/com/android/tools/build/gradle/3.0.0-alpha7/gradle-3.0.0-alpha7.pom
+    https://jcenter.bintray.com/com/android/tools/build/gradle/3.0.0-alpha7/gradle-3.0.0-alpha7.jar
+Required by:
+    project :. File: D:\git\EHExtractor\EHExtractor\.\projects\material-dialogs-master\build.gradle
+
+Falha no GradleResolver. Could not find com.android.tools.build:gradle:3.0.0-alpha7.
+Searched in the following locations:
+    https://jcenter.bintray.com/com/android/tools/build/gradle/3.0.0-alpha7/gradle-3.0.0-alpha7.pom
+    https://jcenter.bintray.com/com/android/tools/build/gradle/3.0.0-alpha7/gradle-3.0.0-alpha7.jar
+Required by:
+    project :. File: D:\git\EHExtractor\EHExtractor\.\projects\material-dialogs-master\sample\build.gradle
+
+Falha no GradleResolver. Could not find com.android.tools.build:gradle:3.0.0-alpha7.
+Searched in the following locations:
+    https://jcenter.bintray.com/com/android/tools/build/gradle/3.0.0-alpha7/gradle-3.0.0-alpha7.pom
+    https://jcenter.bintray.com/com/android/tools/build/gradle/3.0.0-alpha7/gradle-3.0.0-alpha7.jar
+Required by:
+    project :. File: D:\git\EHExtractor\EHExtractor\.\projects\material-dialogs-master\core\build.gradle
+
+Falha no GradleResolver. Could not find com.android.tools.build:gradle:3.0.0-alpha7.
+Searched in the following locations:
+    https://jcenter.bintray.com/com/android/tools/build/gradle/3.0.0-alpha7/gradle-3.0.0-alpha7.pom
+    https://jcenter.bintray.com/com/android/tools/build/gradle/3.0.0-alpha7/gradle-3.0.0-alpha7.jar
+Required by:
+    project :. File: D:\git\EHExtractor\EHExtractor\.\projects\material-dialogs-master\commons\build.gradle
+
+
+UNSOLVED ERROR FILES
+Falha no Analyzer. Classe 'Unsolved symbol : DialogFragment' não encontrada. File: D:\git\EHExtractor\EHExtractor\.\projects\material-dialogs-master\sample\src\main\java\com\afollestad\materialdialogssample\ChangelogDialog.java
+Falha no Analyzer. Classe 'Unsolved symbol : AppCompatActivity' não encontrada. File: D:\git\EHExtractor\EHExtractor\.\projects\material-dialogs-master\sample\src\main\java\com\afollestad\materialdialogssample\MainActivity.java
+Falha no Analyzer. Classe 'Unsolved symbol : DialogFragment' não encontrada. File: D:\git\EHExtractor\EHExtractor\.\projects\material-dialogs-master\commons\src\main\java\com\afollestad\materialdialogs\folderselector\FileChooserDialog.java
+Falha no Analyzer. Classe 'Unsolved symbol : DialogFragment' não encontrada. File: D:\git\EHExtractor\EHExtractor\.\projects\material-dialogs-master\commons\src\main\java\com\afollestad\materialdialogs\folderselector\FolderChooserDialog.java
+Falha no Analyzer. Classe 'Unsolved symbol : DialogFragment' não encontrada. File: D:\git\EHExtractor\EHExtractor\.\projects\material-dialogs-master\commons\src\main\java\com\afollestad\materialdialogs\color\ColorChooserDialog.java
+
+UNSUPPORTED ERROR FILES
+Falha no Analyzer. UnsupportedOperation ao parsear arquivo. File: D:\git\EHExtractor\EHExtractor\.\projects\material-dialogs-master\commons\src\main\java\com\afollestad\materialdialogs\prefs\MaterialListPreference.java
+
+UNKNOWN ANCESTRAL
+
