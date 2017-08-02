@@ -1,0 +1,58 @@
+Prioridade -1:
+	Unificado os caminhos para projects e logs.
+	Adicionada verificação de handler vazio
+	Atualizado arquivo TODO e GitExplorer.
+
+Prioridade 0: Revisar loggers
+	Criar um variável em logger para cada tipo de erro. Elas seriam reiniciadas junto do projeto
+	Separar o logger do resultado do log de processamento
+	Transferir os métodos que calculam os totais dos resultados para o logger de resultado
+Prioridade 0: aprender a usar a api do github e implementar minha própria busca.
+Prioridade 1: Criar exceção para centralizar falhas de Analyzer.
+Prioridade 2: Revisar todo o código, linha a linha, removendo ou movendo classes para seus devidos lugares..
+Prioridade 2: Algumas classes android não são incluidas nas dependencias. As classes são dos projetos 'support' do android (até agora, só v4). Verificar se os existem projetos android q usam classes support e q não tem problemas. Estou pensando que esse problema é de configuração do projeto, e não do EHMetrics.
+Prioridade 3: Identificar diferentes projetos em um mesmo repositório do Github
+Prioridade 4: Verificar padrões de autocomplete do Eclipse, NetBeans e IntelliJ
+	Implementar verificação de padrões
+		OK Eclipse
+		OK IntelliJ
+		OK AndroidStudio
+		NetBeans
+
+
+Busca por projetos Github
+	Verificar como pega o total
+	Verificar como pega dados de todos os projetos
+	Verificar se é viável pegar tamanho e estrela de todos os projetos Java
+		Java projects: 3439964
+		Java projects with 1+ stars: 444896
+		Java projects with 1+ AND 1mb+: 173772
+	
+
+Procedimento:
+	Filtrar projetos no github
+	Abrir em planilha
+	Selecionar a quantidade desejada para rodar
+	Copiar os selecionados para outra planilha
+	Ordenar por nome do projeto (e não usuário/nome)
+	Baixar e extrair os projetos
+	Rodar a ferramenta
+	Colar os resultados
+Nota: o EHMetrics não suporta arquivos java sem pacote. A ferramenta descarta esses arquivos java.
+Nota: o JavaParser não resolve anonymous inner nested classes. Quando ocorrem em um arquivo, o arquivo é removido da análise.
+Nota: É preciso instalar o maven, gradle, android studio, etc, a depender do que o sistema analisado precisa.
+Nota: É considerado que qualquer dependencia em jars é externa ao sistema (library).
+
+
+OLD
+Prioridade 3: Mudar todo processamento para diferentes visitors. Como o HandlerActionVisitor
+Prioridade 4: procurar com mais afinco pela exceção sinalizada quando não é o mesmo nome da capturada
+Prioridade 4: Mudar a forma de determinar as ações. Exibir o try-catch completo e algumas opções em check boxes (log, recover, terminate, etc).
+Prioridade 4: Remover referencia a Node em AbstractEHModelElement para ter um modelo mais leve.
+Prioridade 4: Resolver a parte dos comentários do relatório
+Prioridade 5: Trocar gerenciamento de dependencia de maven para gradle
+
+OLD
+Nota: É olhado somente o nome dos métodos na hora de inferir algumas ações de tratamento
+Nota: se houverem catches aninhados, as ações de tratamento serão associadas ao catch mais interno, e não aos dois.
+Nota: É considerado que qualquer dependencia em jars é externa ao sistema (library).
