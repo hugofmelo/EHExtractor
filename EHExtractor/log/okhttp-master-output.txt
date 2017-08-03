@@ -1,255 +1,295 @@
-PROJECT	EXCEPTION	TYPE	ORIGIN	HANDLERS	AUTOCOMPLETE	EMPTY
-okhttp-master	java.lang.Throwable	Checked	Java	2	0	1
-okhttp-master	java.lang.Error	Error	Java	1	0	0
-okhttp-master	java.lang.AssertionError	Error	Java	3	0	0
-okhttp-master	java.lang.Exception	Checked	Java	19	1	6
-okhttp-master	java.lang.CloneNotSupportedException	Checked	Java	1	0	0
-okhttp-master	java.lang.NoSuchFieldException	Checked	Java	1	0	1
-okhttp-master	java.lang.reflect.InvocationTargetException	Checked	Java	11	0	1
-okhttp-master	java.lang.IllegalAccessException	Checked	Java	12	0	1
-okhttp-master	java.lang.NoSuchMethodException	Checked	Java	7	0	3
-okhttp-master	java.lang.ClassNotFoundException	Checked	Java	7	0	3
-okhttp-master	java.net.URISyntaxException	Checked	Java	1	0	0
-okhttp-master	java.lang.RuntimeException	Unchecked	Java	4	0	0
-okhttp-master	java.lang.NullPointerException	Unchecked	Java	1	0	0
-okhttp-master	okhttp3.internal.connection.RouteException	Unchecked	System	1	0	0
-okhttp-master	java.lang.SecurityException	Unchecked	Java	1	0	0
-okhttp-master	java.lang.IllegalArgumentException	Unchecked	Java	5	0	2
-okhttp-master	java.lang.NumberFormatException	Unchecked	Java	11	0	1
-okhttp-master	java.lang.InterruptedException	Checked	Java	18	1	4
-okhttp-master	java.security.GeneralSecurityException	Checked	Java	6	0	0
-okhttp-master	java.security.cert.CertificateException	Checked	Java	1	0	0
-okhttp-master	java.security.cert.CertificateParsingException	Checked	Java	1	0	0
-okhttp-master	java.security.cert.CertificateEncodingException	Checked	Java	1	0	0
-okhttp-master	java.io.IOException	Checked	Java	76	2	20
-okhttp-master	java.net.SocketException	Checked	Java	1	0	0
-okhttp-master	java.net.ConnectException	Checked	Java	1	0	0
-okhttp-master	java.net.ProtocolException	Checked	Java	1	0	0
-okhttp-master	java.net.MalformedURLException	Checked	Java	1	0	0
-okhttp-master	javax.net.ssl.SSLException	Checked	Java	1	0	0
-okhttp-master	javax.net.ssl.SSLPeerUnverifiedException	Checked	Java	4	0	0
-okhttp-master	java.io.EOFException	Checked	Java	3	0	0
-okhttp-master	java.net.UnknownHostException	Checked	Java	3	0	0
-okhttp-master	java.io.InterruptedIOException	Checked	Java	3	0	0
-okhttp-master	java.net.SocketTimeoutException	Checked	Java	1	0	1
-okhttp-master	java.io.FileNotFoundException	Checked	Java	6	0	0
+EXCEPTION HIERARCHY
+java.lang.Throwable
+	java.lang.Exception
+		java.io.IOException
+			java.io.FileNotFoundException
+			java.io.InterruptedIOException
+				java.net.SocketTimeoutException
+			java.net.UnknownHostException
+			java.io.EOFException
+			javax.net.ssl.SSLException
+				javax.net.ssl.SSLPeerUnverifiedException
+			java.net.MalformedURLException
+			java.net.ProtocolException
+			java.net.SocketException
+				java.net.ConnectException
+		java.security.GeneralSecurityException
+			java.security.cert.CertificateException
+				java.security.cert.CertificateEncodingException
+				java.security.cert.CertificateParsingException
+		java.lang.InterruptedException
+		java.lang.RuntimeException
+			java.lang.IllegalArgumentException
+				java.lang.NumberFormatException
+			java.lang.SecurityException
+			okhttp3.internal.connection.RouteException
+			java.lang.NullPointerException
+		java.net.URISyntaxException
+		java.lang.ReflectiveOperationException
+			java.lang.ClassNotFoundException
+			java.lang.NoSuchMethodException
+			java.lang.IllegalAccessException
+			java.lang.reflect.InvocationTargetException
+			java.lang.NoSuchFieldException
+		java.lang.CloneNotSupportedException
+	java.lang.Error
+		java.lang.AssertionError
 
 
+PROJECT	EXCEPTION	HANDLERS	AUTOCOMPLETE	EMPTY
+okhttp-master	java.lang.Throwable	2	0	1
+okhttp-master	java.lang.Exception	19	1	6
+okhttp-master	java.io.IOException	76	2	20
+okhttp-master	java.io.FileNotFoundException	6	0	0
+okhttp-master	java.io.InterruptedIOException	3	0	0
+okhttp-master	java.net.SocketTimeoutException	1	0	1
+okhttp-master	java.net.UnknownHostException	3	0	0
+okhttp-master	java.io.EOFException	3	0	0
+okhttp-master	javax.net.ssl.SSLException	1	0	0
+okhttp-master	javax.net.ssl.SSLPeerUnverifiedException	4	0	0
+okhttp-master	java.net.MalformedURLException	1	0	0
+okhttp-master	java.net.ProtocolException	1	0	0
+okhttp-master	java.net.SocketException	1	0	0
+okhttp-master	java.net.ConnectException	1	0	0
+okhttp-master	java.security.GeneralSecurityException	6	0	0
+okhttp-master	java.security.cert.CertificateException	1	0	0
+okhttp-master	java.security.cert.CertificateEncodingException	1	0	0
+okhttp-master	java.security.cert.CertificateParsingException	1	0	0
+okhttp-master	java.lang.InterruptedException	18	1	4
+okhttp-master	java.lang.RuntimeException	4	0	0
+okhttp-master	java.lang.IllegalArgumentException	5	0	2
+okhttp-master	java.lang.NumberFormatException	11	0	1
+okhttp-master	java.lang.SecurityException	1	0	0
+okhttp-master	okhttp3.internal.connection.RouteException	1	0	0
+okhttp-master	java.lang.NullPointerException	1	0	0
+okhttp-master	java.net.URISyntaxException	1	0	0
+okhttp-master	java.lang.ReflectiveOperationException	0	0	0
+okhttp-master	java.lang.ClassNotFoundException	7	0	3
+okhttp-master	java.lang.NoSuchMethodException	7	0	3
+okhttp-master	java.lang.IllegalAccessException	12	0	1
+okhttp-master	java.lang.reflect.InvocationTargetException	11	0	1
+okhttp-master	java.lang.NoSuchFieldException	1	0	1
+okhttp-master	java.lang.CloneNotSupportedException	1	0	0
+okhttp-master	java.lang.Error	1	0	0
+okhttp-master	java.lang.AssertionError	3	0	0
 
-HANDLER ID	HANDLED EXCEPTION	EXCEPTION TYPE	EXCEPTION ORIGIN	AUTOCOMPLETE	EMPTY
-1	java.io.FileNotFoundException	Checked	Java	false	false
-2	java.io.IOException	Checked	Java	false	false
-3	java.io.IOException	Checked	Java	false	false
-4	java.io.IOException	Checked	Java	false	true
-5	java.io.IOException	Checked	Java	false	false
-6	java.security.GeneralSecurityException	Checked	Java	false	false
-7	java.io.IOException	Checked	Java	false	false
-8	java.io.IOException	Checked	Java	false	false
-9	java.io.IOException	Checked	Java	false	false
-10	java.io.IOException	Checked	Java	true	false
-10	java.lang.InterruptedException	Checked	Java	true	false
-11	java.lang.Exception	Checked	Java	true	false
-12	java.io.IOException	Checked	Java	false	false
-13	java.io.IOException	Checked	Java	false	false
-14	java.io.IOException	Checked	Java	false	false
-15	java.lang.InterruptedException	Checked	Java	false	false
-16	java.io.IOException	Checked	Java	false	false
-17	java.io.IOException	Checked	Java	false	false
-18	java.io.IOException	Checked	Java	false	false
-19	java.io.IOException	Checked	Java	false	false
-20	java.io.IOException	Checked	Java	false	false
-21	java.io.IOException	Checked	Java	false	false
-22	java.lang.InterruptedException	Checked	Java	false	false
-23	java.lang.Error	Error	Java	false	false
-23	java.lang.RuntimeException	Unchecked	Java	false	false
-24	java.lang.InterruptedException	Checked	Java	false	false
-25	java.io.InterruptedIOException	Checked	Java	false	false
-26	java.lang.InterruptedException	Checked	Java	false	false
-27	java.lang.InterruptedException	Checked	Java	false	false
-28	java.lang.InterruptedException	Checked	Java	false	false
-29	java.net.UnknownHostException	Checked	Java	false	false
-30	java.lang.Exception	Checked	Java	false	false
-31	java.io.EOFException	Checked	Java	false	false
-32	java.lang.Throwable	Checked	Java	false	true
-33	javax.net.ssl.SSLPeerUnverifiedException	Checked	Java	false	false
-34	javax.net.ssl.SSLPeerUnverifiedException	Checked	Java	false	false
-35	java.lang.NumberFormatException	Unchecked	Java	false	false
-36	java.io.IOException	Checked	Java	false	false
-37	java.io.IOException	Checked	Java	false	false
-38	java.io.IOException	Checked	Java	false	true
-39	java.io.IOException	Checked	Java	false	false
-40	java.io.IOException	Checked	Java	false	false
-41	java.io.IOException	Checked	Java	false	true
-42	java.io.IOException	Checked	Java	false	true
-43	java.io.IOException	Checked	Java	false	true
-44	java.security.cert.CertificateException	Checked	Java	false	false
-45	java.security.cert.CertificateEncodingException	Checked	Java	false	false
-46	java.lang.NumberFormatException	Unchecked	Java	false	false
-47	java.lang.NumberFormatException	Unchecked	Java	false	false
-48	java.lang.InterruptedException	Checked	Java	false	true
-49	java.lang.IllegalArgumentException	Unchecked	Java	false	true
-50	java.lang.NumberFormatException	Unchecked	Java	false	true
-51	java.lang.IllegalArgumentException	Unchecked	Java	false	true
-52	java.lang.NumberFormatException	Unchecked	Java	false	false
-53	javax.net.ssl.SSLPeerUnverifiedException	Checked	Java	false	false
-54	java.net.MalformedURLException	Checked	Java	false	false
-55	java.net.URISyntaxException	Checked	Java	false	false
-56	java.lang.Exception	Checked	Java	false	false
-57	java.net.UnknownHostException	Checked	Java	false	false
-58	java.lang.NumberFormatException	Unchecked	Java	false	false
-59	java.lang.IllegalArgumentException	Unchecked	Java	false	false
-60	java.security.GeneralSecurityException	Checked	Java	false	false
-61	java.security.GeneralSecurityException	Checked	Java	false	false
-62	java.io.IOException	Checked	Java	false	false
-63	java.lang.RuntimeException	Unchecked	Java	false	false
-64	java.lang.Exception	Checked	Java	false	true
-65	java.lang.AssertionError	Error	Java	false	false
-66	java.lang.RuntimeException	Unchecked	Java	false	false
-67	java.lang.Exception	Checked	Java	false	true
-68	java.lang.RuntimeException	Unchecked	Java	false	false
-69	java.lang.Exception	Checked	Java	false	true
-70	java.io.IOException	Checked	Java	false	false
-71	java.io.InterruptedIOException	Checked	Java	false	false
-72	java.lang.IllegalArgumentException	Unchecked	Java	false	false
-73	java.io.IOException	Checked	Java	false	false
-74	java.net.ProtocolException	Checked	Java	false	false
-75	java.lang.Exception	Checked	Java	false	false
-76	java.lang.Exception	Checked	Java	false	false
-77	java.io.IOException	Checked	Java	false	false
-78	java.security.GeneralSecurityException	Checked	Java	false	false
-79	java.lang.Exception	Checked	Java	false	true
-80	javax.net.ssl.SSLException	Checked	Java	false	false
-81	java.security.cert.CertificateParsingException	Checked	Java	false	false
-82	java.lang.InterruptedException	Checked	Java	false	true
-83	java.io.InterruptedIOException	Checked	Java	false	false
-84	java.io.IOException	Checked	Java	false	false
-85	java.lang.AssertionError	Error	Java	false	false
-86	java.lang.SecurityException	Unchecked	Java	false	false
-87	java.lang.ClassNotFoundException	Checked	Java	false	false
-88	java.lang.ClassNotFoundException	Checked	Java	false	false
-88	java.lang.NoSuchMethodException	Checked	Java	false	false
-89	java.lang.IllegalAccessException	Checked	Java	false	false
-89	java.lang.IllegalArgumentException	Unchecked	Java	false	false
-89	java.lang.reflect.InvocationTargetException	Checked	Java	false	false
-90	java.lang.NoSuchMethodException	Checked	Java	false	false
-91	java.lang.NoSuchMethodException	Checked	Java	false	false
-92	java.lang.Exception	Checked	Java	false	false
-93	java.lang.ClassNotFoundException	Checked	Java	false	true
-94	java.lang.ClassNotFoundException	Checked	Java	false	false
-95	java.lang.ClassNotFoundException	Checked	Java	false	true
-96	java.lang.NoSuchMethodException	Checked	Java	false	false
-97	java.lang.reflect.InvocationTargetException	Checked	Java	false	false
-98	java.lang.IllegalAccessException	Checked	Java	false	false
-99	java.lang.Exception	Checked	Java	false	true
-100	java.lang.Exception	Checked	Java	false	true
-101	java.lang.Exception	Checked	Java	false	false
-102	java.lang.IllegalAccessException	Checked	Java	false	false
-103	java.lang.reflect.InvocationTargetException	Checked	Java	false	false
-104	java.lang.IllegalAccessException	Checked	Java	false	false
-104	java.lang.reflect.InvocationTargetException	Checked	Java	false	false
-105	java.lang.IllegalAccessException	Checked	Java	false	false
-105	java.lang.reflect.InvocationTargetException	Checked	Java	false	false
-106	java.lang.NoSuchMethodException	Checked	Java	false	true
-107	java.lang.reflect.InvocationTargetException	Checked	Java	false	false
-107	java.lang.IllegalAccessException	Checked	Java	false	false
-108	java.lang.IllegalAccessException	Checked	Java	false	false
-108	java.lang.reflect.InvocationTargetException	Checked	Java	false	false
-109	java.lang.reflect.InvocationTargetException	Checked	Java	false	false
-109	java.lang.IllegalAccessException	Checked	Java	false	false
-110	java.lang.ClassNotFoundException	Checked	Java	false	true
-110	java.lang.NoSuchMethodException	Checked	Java	false	true
-111	java.lang.IllegalAccessException	Checked	Java	false	false
-112	java.lang.reflect.InvocationTargetException	Checked	Java	false	false
-113	java.lang.IllegalAccessException	Checked	Java	false	false
-114	java.lang.reflect.InvocationTargetException	Checked	Java	false	false
-115	java.lang.NoSuchMethodException	Checked	Java	false	true
-116	java.lang.ClassNotFoundException	Checked	Java	false	false
-117	java.lang.NoSuchFieldException	Checked	Java	false	true
-118	java.lang.IllegalAccessException	Checked	Java	false	false
-119	java.io.FileNotFoundException	Checked	Java	false	false
-120	java.io.FileNotFoundException	Checked	Java	false	false
-121	java.lang.InterruptedException	Checked	Java	false	false
-122	java.io.IOException	Checked	Java	false	true
-123	java.io.IOException	Checked	Java	false	true
-124	java.io.IOException	Checked	Java	false	true
-125	java.io.IOException	Checked	Java	false	false
-126	java.io.IOException	Checked	Java	false	false
-127	java.io.IOException	Checked	Java	false	false
-128	java.io.IOException	Checked	Java	false	false
-129	java.io.IOException	Checked	Java	false	false
-130	java.io.IOException	Checked	Java	false	true
-131	java.io.IOException	Checked	Java	false	false
-132	java.io.IOException	Checked	Java	false	true
-133	java.io.IOException	Checked	Java	false	true
-134	java.io.IOException	Checked	Java	false	true
-135	java.io.IOException	Checked	Java	false	true
-136	java.io.IOException	Checked	Java	false	true
-137	java.io.IOException	Checked	Java	false	false
-138	java.lang.InterruptedException	Checked	Java	false	false
-139	java.io.EOFException	Checked	Java	false	false
-140	java.lang.NumberFormatException	Unchecked	Java	false	false
-141	java.lang.NumberFormatException	Unchecked	Java	false	false
-142	java.lang.NumberFormatException	Unchecked	Java	false	false
-143	okhttp3.internal.connection.RouteException	Unchecked	System	false	false
-144	java.io.IOException	Checked	Java	false	false
-145	java.lang.NumberFormatException	Unchecked	Java	false	false
-146	java.io.IOException	Checked	Java	false	false
-147	java.net.ConnectException	Checked	Java	false	false
-148	java.lang.NullPointerException	Unchecked	Java	false	false
-149	java.lang.Exception	Checked	Java	false	false
-150	java.lang.AssertionError	Error	Java	false	false
-151	javax.net.ssl.SSLPeerUnverifiedException	Checked	Java	false	false
-152	java.net.SocketTimeoutException	Checked	Java	false	true
-153	java.io.IOException	Checked	Java	false	false
-154	java.lang.Exception	Checked	Java	false	false
-155	java.lang.reflect.InvocationTargetException	Checked	Java	false	true
-155	java.lang.IllegalAccessException	Checked	Java	false	true
-156	java.lang.Exception	Checked	Java	false	false
-157	java.io.IOException	Checked	Java	false	false
-158	java.io.IOException	Checked	Java	false	true
-159	java.io.IOException	Checked	Java	false	false
-160	java.io.IOException	Checked	Java	false	false
-161	java.io.IOException	Checked	Java	false	false
-162	java.io.IOException	Checked	Java	false	false
-163	java.io.EOFException	Checked	Java	false	false
-164	java.io.IOException	Checked	Java	false	true
-165	java.io.IOException	Checked	Java	false	true
-166	java.io.FileNotFoundException	Checked	Java	false	false
-167	java.io.FileNotFoundException	Checked	Java	false	false
-168	java.io.IOException	Checked	Java	false	true
-169	java.lang.NumberFormatException	Unchecked	Java	false	false
-170	java.io.FileNotFoundException	Checked	Java	false	false
-171	java.io.IOException	Checked	Java	false	true
-172	java.io.IOException	Checked	Java	false	false
-173	java.io.IOException	Checked	Java	false	false
-174	java.io.IOException	Checked	Java	false	false
-175	java.io.IOException	Checked	Java	false	false
-176	java.io.IOException	Checked	Java	true	false
-177	java.lang.Exception	Checked	Java	false	false
-178	java.lang.CloneNotSupportedException	Checked	Java	false	false
-179	java.io.IOException	Checked	Java	false	false
-180	java.lang.Throwable	Checked	Java	false	false
-181	java.net.SocketException	Checked	Java	false	false
-182	java.lang.InterruptedException	Checked	Java	false	false
-183	java.io.IOException	Checked	Java	false	false
-184	java.io.IOException	Checked	Java	false	false
-185	java.lang.Exception	Checked	Java	false	false
-186	java.io.IOException	Checked	Java	false	true
-187	java.io.IOException	Checked	Java	false	false
-188	java.io.IOException	Checked	Java	false	false
-189	java.lang.InterruptedException	Checked	Java	false	true
-190	java.lang.InterruptedException	Checked	Java	false	false
-191	java.lang.InterruptedException	Checked	Java	false	false
-192	java.lang.InterruptedException	Checked	Java	false	false
-193	java.lang.InterruptedException	Checked	Java	false	false
-194	java.security.GeneralSecurityException	Checked	Java	false	false
-194	java.net.UnknownHostException	Checked	Java	false	false
-195	java.security.GeneralSecurityException	Checked	Java	false	false
-196	java.io.IOException	Checked	Java	false	false
-197	java.io.IOException	Checked	Java	false	false
-198	java.lang.Exception	Checked	Java	false	false
-199	java.io.IOException	Checked	Java	false	false
-200	java.io.IOException	Checked	Java	false	false
-201	java.lang.InterruptedException	Checked	Java	false	true
-202	java.io.IOException	Checked	Java	false	false
-203	java.io.IOException	Checked	Java	false	false
+
+PROJECT	HANDLER ID	HANDLED EXCEPTION	EXCEPTION TYPE	EXCEPTION ORIGIN	AUTOCOMPLETE	EMPTY
+okhttp-master	1	java.io.FileNotFoundException	Checked	Java	false	false
+okhttp-master	2	java.io.IOException	Checked	Java	false	false
+okhttp-master	3	java.io.IOException	Checked	Java	false	false
+okhttp-master	4	java.io.IOException	Checked	Java	false	true
+okhttp-master	5	java.io.IOException	Checked	Java	false	false
+okhttp-master	6	java.security.GeneralSecurityException	Checked	Java	false	false
+okhttp-master	7	java.io.IOException	Checked	Java	false	false
+okhttp-master	8	java.io.IOException	Checked	Java	false	false
+okhttp-master	9	java.io.IOException	Checked	Java	false	false
+okhttp-master	10	java.io.IOException	Checked	Java	true	false
+okhttp-master	10	java.lang.InterruptedException	Checked	Java	true	false
+okhttp-master	11	java.lang.Exception	Checked	Java	true	false
+okhttp-master	12	java.io.IOException	Checked	Java	false	false
+okhttp-master	13	java.io.IOException	Checked	Java	false	false
+okhttp-master	14	java.io.IOException	Checked	Java	false	false
+okhttp-master	15	java.lang.InterruptedException	Checked	Java	false	false
+okhttp-master	16	java.io.IOException	Checked	Java	false	false
+okhttp-master	17	java.io.IOException	Checked	Java	false	false
+okhttp-master	18	java.io.IOException	Checked	Java	false	false
+okhttp-master	19	java.io.IOException	Checked	Java	false	false
+okhttp-master	20	java.io.IOException	Checked	Java	false	false
+okhttp-master	21	java.io.IOException	Checked	Java	false	false
+okhttp-master	22	java.lang.InterruptedException	Checked	Java	false	false
+okhttp-master	23	java.lang.Error	Error	Java	false	false
+okhttp-master	23	java.lang.RuntimeException	Unchecked	Java	false	false
+okhttp-master	24	java.lang.InterruptedException	Checked	Java	false	false
+okhttp-master	25	java.io.InterruptedIOException	Checked	Java	false	false
+okhttp-master	26	java.lang.InterruptedException	Checked	Java	false	false
+okhttp-master	27	java.lang.InterruptedException	Checked	Java	false	false
+okhttp-master	28	java.lang.InterruptedException	Checked	Java	false	false
+okhttp-master	29	java.net.UnknownHostException	Checked	Java	false	false
+okhttp-master	30	java.lang.Exception	Checked	Java	false	false
+okhttp-master	31	java.io.EOFException	Checked	Java	false	false
+okhttp-master	32	java.lang.Throwable	Checked	Java	false	true
+okhttp-master	33	javax.net.ssl.SSLPeerUnverifiedException	Checked	Java	false	false
+okhttp-master	34	javax.net.ssl.SSLPeerUnverifiedException	Checked	Java	false	false
+okhttp-master	35	java.lang.NumberFormatException	Unchecked	Java	false	false
+okhttp-master	36	java.io.IOException	Checked	Java	false	false
+okhttp-master	37	java.io.IOException	Checked	Java	false	false
+okhttp-master	38	java.io.IOException	Checked	Java	false	true
+okhttp-master	39	java.io.IOException	Checked	Java	false	false
+okhttp-master	40	java.io.IOException	Checked	Java	false	false
+okhttp-master	41	java.io.IOException	Checked	Java	false	true
+okhttp-master	42	java.io.IOException	Checked	Java	false	true
+okhttp-master	43	java.io.IOException	Checked	Java	false	true
+okhttp-master	44	java.security.cert.CertificateException	Checked	Java	false	false
+okhttp-master	45	java.security.cert.CertificateEncodingException	Checked	Java	false	false
+okhttp-master	46	java.lang.NumberFormatException	Unchecked	Java	false	false
+okhttp-master	47	java.lang.NumberFormatException	Unchecked	Java	false	false
+okhttp-master	48	java.lang.InterruptedException	Checked	Java	false	true
+okhttp-master	49	java.lang.IllegalArgumentException	Unchecked	Java	false	true
+okhttp-master	50	java.lang.NumberFormatException	Unchecked	Java	false	true
+okhttp-master	51	java.lang.IllegalArgumentException	Unchecked	Java	false	true
+okhttp-master	52	java.lang.NumberFormatException	Unchecked	Java	false	false
+okhttp-master	53	javax.net.ssl.SSLPeerUnverifiedException	Checked	Java	false	false
+okhttp-master	54	java.net.MalformedURLException	Checked	Java	false	false
+okhttp-master	55	java.net.URISyntaxException	Checked	Java	false	false
+okhttp-master	56	java.lang.Exception	Checked	Java	false	false
+okhttp-master	57	java.net.UnknownHostException	Checked	Java	false	false
+okhttp-master	58	java.lang.NumberFormatException	Unchecked	Java	false	false
+okhttp-master	59	java.lang.IllegalArgumentException	Unchecked	Java	false	false
+okhttp-master	60	java.security.GeneralSecurityException	Checked	Java	false	false
+okhttp-master	61	java.security.GeneralSecurityException	Checked	Java	false	false
+okhttp-master	62	java.io.IOException	Checked	Java	false	false
+okhttp-master	63	java.lang.RuntimeException	Unchecked	Java	false	false
+okhttp-master	64	java.lang.Exception	Checked	Java	false	true
+okhttp-master	65	java.lang.AssertionError	Error	Java	false	false
+okhttp-master	66	java.lang.RuntimeException	Unchecked	Java	false	false
+okhttp-master	67	java.lang.Exception	Checked	Java	false	true
+okhttp-master	68	java.lang.RuntimeException	Unchecked	Java	false	false
+okhttp-master	69	java.lang.Exception	Checked	Java	false	true
+okhttp-master	70	java.io.IOException	Checked	Java	false	false
+okhttp-master	71	java.io.InterruptedIOException	Checked	Java	false	false
+okhttp-master	72	java.lang.IllegalArgumentException	Unchecked	Java	false	false
+okhttp-master	73	java.io.IOException	Checked	Java	false	false
+okhttp-master	74	java.net.ProtocolException	Checked	Java	false	false
+okhttp-master	75	java.lang.Exception	Checked	Java	false	false
+okhttp-master	76	java.lang.Exception	Checked	Java	false	false
+okhttp-master	77	java.io.IOException	Checked	Java	false	false
+okhttp-master	78	java.security.GeneralSecurityException	Checked	Java	false	false
+okhttp-master	79	java.lang.Exception	Checked	Java	false	true
+okhttp-master	80	javax.net.ssl.SSLException	Checked	Java	false	false
+okhttp-master	81	java.security.cert.CertificateParsingException	Checked	Java	false	false
+okhttp-master	82	java.lang.InterruptedException	Checked	Java	false	true
+okhttp-master	83	java.io.InterruptedIOException	Checked	Java	false	false
+okhttp-master	84	java.io.IOException	Checked	Java	false	false
+okhttp-master	85	java.lang.AssertionError	Error	Java	false	false
+okhttp-master	86	java.lang.SecurityException	Unchecked	Java	false	false
+okhttp-master	87	java.lang.ClassNotFoundException	Checked	Java	false	false
+okhttp-master	88	java.lang.ClassNotFoundException	Checked	Java	false	false
+okhttp-master	88	java.lang.NoSuchMethodException	Checked	Java	false	false
+okhttp-master	89	java.lang.IllegalAccessException	Checked	Java	false	false
+okhttp-master	89	java.lang.IllegalArgumentException	Unchecked	Java	false	false
+okhttp-master	89	java.lang.reflect.InvocationTargetException	Checked	Java	false	false
+okhttp-master	90	java.lang.NoSuchMethodException	Checked	Java	false	false
+okhttp-master	91	java.lang.NoSuchMethodException	Checked	Java	false	false
+okhttp-master	92	java.lang.Exception	Checked	Java	false	false
+okhttp-master	93	java.lang.ClassNotFoundException	Checked	Java	false	true
+okhttp-master	94	java.lang.ClassNotFoundException	Checked	Java	false	false
+okhttp-master	95	java.lang.ClassNotFoundException	Checked	Java	false	true
+okhttp-master	96	java.lang.NoSuchMethodException	Checked	Java	false	false
+okhttp-master	97	java.lang.reflect.InvocationTargetException	Checked	Java	false	false
+okhttp-master	98	java.lang.IllegalAccessException	Checked	Java	false	false
+okhttp-master	99	java.lang.Exception	Checked	Java	false	true
+okhttp-master	100	java.lang.Exception	Checked	Java	false	true
+okhttp-master	101	java.lang.Exception	Checked	Java	false	false
+okhttp-master	102	java.lang.IllegalAccessException	Checked	Java	false	false
+okhttp-master	103	java.lang.reflect.InvocationTargetException	Checked	Java	false	false
+okhttp-master	104	java.lang.IllegalAccessException	Checked	Java	false	false
+okhttp-master	104	java.lang.reflect.InvocationTargetException	Checked	Java	false	false
+okhttp-master	105	java.lang.IllegalAccessException	Checked	Java	false	false
+okhttp-master	105	java.lang.reflect.InvocationTargetException	Checked	Java	false	false
+okhttp-master	106	java.lang.NoSuchMethodException	Checked	Java	false	true
+okhttp-master	107	java.lang.reflect.InvocationTargetException	Checked	Java	false	false
+okhttp-master	107	java.lang.IllegalAccessException	Checked	Java	false	false
+okhttp-master	108	java.lang.IllegalAccessException	Checked	Java	false	false
+okhttp-master	108	java.lang.reflect.InvocationTargetException	Checked	Java	false	false
+okhttp-master	109	java.lang.reflect.InvocationTargetException	Checked	Java	false	false
+okhttp-master	109	java.lang.IllegalAccessException	Checked	Java	false	false
+okhttp-master	110	java.lang.ClassNotFoundException	Checked	Java	false	true
+okhttp-master	110	java.lang.NoSuchMethodException	Checked	Java	false	true
+okhttp-master	111	java.lang.IllegalAccessException	Checked	Java	false	false
+okhttp-master	112	java.lang.reflect.InvocationTargetException	Checked	Java	false	false
+okhttp-master	113	java.lang.IllegalAccessException	Checked	Java	false	false
+okhttp-master	114	java.lang.reflect.InvocationTargetException	Checked	Java	false	false
+okhttp-master	115	java.lang.NoSuchMethodException	Checked	Java	false	true
+okhttp-master	116	java.lang.ClassNotFoundException	Checked	Java	false	false
+okhttp-master	117	java.lang.NoSuchFieldException	Checked	Java	false	true
+okhttp-master	118	java.lang.IllegalAccessException	Checked	Java	false	false
+okhttp-master	119	java.io.FileNotFoundException	Checked	Java	false	false
+okhttp-master	120	java.io.FileNotFoundException	Checked	Java	false	false
+okhttp-master	121	java.lang.InterruptedException	Checked	Java	false	false
+okhttp-master	122	java.io.IOException	Checked	Java	false	true
+okhttp-master	123	java.io.IOException	Checked	Java	false	true
+okhttp-master	124	java.io.IOException	Checked	Java	false	true
+okhttp-master	125	java.io.IOException	Checked	Java	false	false
+okhttp-master	126	java.io.IOException	Checked	Java	false	false
+okhttp-master	127	java.io.IOException	Checked	Java	false	false
+okhttp-master	128	java.io.IOException	Checked	Java	false	false
+okhttp-master	129	java.io.IOException	Checked	Java	false	false
+okhttp-master	130	java.io.IOException	Checked	Java	false	true
+okhttp-master	131	java.io.IOException	Checked	Java	false	false
+okhttp-master	132	java.io.IOException	Checked	Java	false	true
+okhttp-master	133	java.io.IOException	Checked	Java	false	true
+okhttp-master	134	java.io.IOException	Checked	Java	false	true
+okhttp-master	135	java.io.IOException	Checked	Java	false	true
+okhttp-master	136	java.io.IOException	Checked	Java	false	true
+okhttp-master	137	java.io.IOException	Checked	Java	false	false
+okhttp-master	138	java.lang.InterruptedException	Checked	Java	false	false
+okhttp-master	139	java.io.EOFException	Checked	Java	false	false
+okhttp-master	140	java.lang.NumberFormatException	Unchecked	Java	false	false
+okhttp-master	141	java.lang.NumberFormatException	Unchecked	Java	false	false
+okhttp-master	142	java.lang.NumberFormatException	Unchecked	Java	false	false
+okhttp-master	143	okhttp3.internal.connection.RouteException	Unchecked	System	false	false
+okhttp-master	144	java.io.IOException	Checked	Java	false	false
+okhttp-master	145	java.lang.NumberFormatException	Unchecked	Java	false	false
+okhttp-master	146	java.io.IOException	Checked	Java	false	false
+okhttp-master	147	java.net.ConnectException	Checked	Java	false	false
+okhttp-master	148	java.lang.NullPointerException	Unchecked	Java	false	false
+okhttp-master	149	java.lang.Exception	Checked	Java	false	false
+okhttp-master	150	java.lang.AssertionError	Error	Java	false	false
+okhttp-master	151	javax.net.ssl.SSLPeerUnverifiedException	Checked	Java	false	false
+okhttp-master	152	java.net.SocketTimeoutException	Checked	Java	false	true
+okhttp-master	153	java.io.IOException	Checked	Java	false	false
+okhttp-master	154	java.lang.Exception	Checked	Java	false	false
+okhttp-master	155	java.lang.reflect.InvocationTargetException	Checked	Java	false	true
+okhttp-master	155	java.lang.IllegalAccessException	Checked	Java	false	true
+okhttp-master	156	java.lang.Exception	Checked	Java	false	false
+okhttp-master	157	java.io.IOException	Checked	Java	false	false
+okhttp-master	158	java.io.IOException	Checked	Java	false	true
+okhttp-master	159	java.io.IOException	Checked	Java	false	false
+okhttp-master	160	java.io.IOException	Checked	Java	false	false
+okhttp-master	161	java.io.IOException	Checked	Java	false	false
+okhttp-master	162	java.io.IOException	Checked	Java	false	false
+okhttp-master	163	java.io.EOFException	Checked	Java	false	false
+okhttp-master	164	java.io.IOException	Checked	Java	false	true
+okhttp-master	165	java.io.IOException	Checked	Java	false	true
+okhttp-master	166	java.io.FileNotFoundException	Checked	Java	false	false
+okhttp-master	167	java.io.FileNotFoundException	Checked	Java	false	false
+okhttp-master	168	java.io.IOException	Checked	Java	false	true
+okhttp-master	169	java.lang.NumberFormatException	Unchecked	Java	false	false
+okhttp-master	170	java.io.FileNotFoundException	Checked	Java	false	false
+okhttp-master	171	java.io.IOException	Checked	Java	false	true
+okhttp-master	172	java.io.IOException	Checked	Java	false	false
+okhttp-master	173	java.io.IOException	Checked	Java	false	false
+okhttp-master	174	java.io.IOException	Checked	Java	false	false
+okhttp-master	175	java.io.IOException	Checked	Java	false	false
+okhttp-master	176	java.io.IOException	Checked	Java	true	false
+okhttp-master	177	java.lang.Exception	Checked	Java	false	false
+okhttp-master	178	java.lang.CloneNotSupportedException	Checked	Java	false	false
+okhttp-master	179	java.io.IOException	Checked	Java	false	false
+okhttp-master	180	java.lang.Throwable	Checked	Java	false	false
+okhttp-master	181	java.net.SocketException	Checked	Java	false	false
+okhttp-master	182	java.lang.InterruptedException	Checked	Java	false	false
+okhttp-master	183	java.io.IOException	Checked	Java	false	false
+okhttp-master	184	java.io.IOException	Checked	Java	false	false
+okhttp-master	185	java.lang.Exception	Checked	Java	false	false
+okhttp-master	186	java.io.IOException	Checked	Java	false	true
+okhttp-master	187	java.io.IOException	Checked	Java	false	false
+okhttp-master	188	java.io.IOException	Checked	Java	false	false
+okhttp-master	189	java.lang.InterruptedException	Checked	Java	false	true
+okhttp-master	190	java.lang.InterruptedException	Checked	Java	false	false
+okhttp-master	191	java.lang.InterruptedException	Checked	Java	false	false
+okhttp-master	192	java.lang.InterruptedException	Checked	Java	false	false
+okhttp-master	193	java.lang.InterruptedException	Checked	Java	false	false
+okhttp-master	194	java.security.GeneralSecurityException	Checked	Java	false	false
+okhttp-master	194	java.net.UnknownHostException	Checked	Java	false	false
+okhttp-master	195	java.security.GeneralSecurityException	Checked	Java	false	false
+okhttp-master	196	java.io.IOException	Checked	Java	false	false
+okhttp-master	197	java.io.IOException	Checked	Java	false	false
+okhttp-master	198	java.lang.Exception	Checked	Java	false	false
+okhttp-master	199	java.io.IOException	Checked	Java	false	false
+okhttp-master	200	java.io.IOException	Checked	Java	false	false
+okhttp-master	201	java.lang.InterruptedException	Checked	Java	false	true
+okhttp-master	202	java.io.IOException	Checked	Java	false	false
+okhttp-master	203	java.io.IOException	Checked	Java	false	false
+
+

@@ -1,123 +1,147 @@
-PROJECT	EXCEPTION	TYPE	ORIGIN	HANDLERS	AUTOCOMPLETE	EMPTY
-java-design-patterns-master	java.lang.Throwable	Checked	Java	3	0	0
-java-design-patterns-master	java.lang.Exception	Checked	Java	29	4	0
-java-design-patterns-master	java.text.ParseException	Checked	Java	5	5	0
-java-design-patterns-master	java.sql.SQLException	Checked	Java	1	0	0
-java-design-patterns-master	com.iluwatar.event.asynchronous.InvalidOperationException	Checked	System	2	0	0
-java-design-patterns-master	com.iluwatar.event.asynchronous.EventDoesNotExistException	Checked	System	5	0	0
-java-design-patterns-master	com.iluwatar.event.asynchronous.LongRunningEventException	Checked	System	3	0	0
-java-design-patterns-master	com.iluwatar.event.asynchronous.MaxNumOfEventsAllowedException	Checked	System	3	0	0
-java-design-patterns-master	java.lang.IllegalArgumentException	Unchecked	Java	1	0	0
-java-design-patterns-master	javax.sound.sampled.LineUnavailableException	Checked	Java	1	0	0
-java-design-patterns-master	java.lang.ClassNotFoundException	Checked	Java	1	0	0
-java-design-patterns-master	java.util.concurrent.ExecutionException	Checked	Java	1	0	0
-java-design-patterns-master	com.iluwatar.layers.CakeBakingException	Checked	System	2	2	0
-java-design-patterns-master	java.lang.CloneNotSupportedException	Checked	Java	3	0	0
-java-design-patterns-master	java.io.IOException	Checked	Java	15	3	0
-java-design-patterns-master	java.lang.InterruptedException	Checked	Java	27	11	1
+EXCEPTION HIERARCHY
+java.lang.Throwable
+	java.lang.Exception
+		java.lang.InterruptedException
+		java.io.IOException
+		java.lang.CloneNotSupportedException
+		com.iluwatar.layers.CakeBakingException
+		java.util.concurrent.ExecutionException
+		java.lang.ReflectiveOperationException
+			java.lang.ClassNotFoundException
+		javax.sound.sampled.LineUnavailableException
+		java.lang.RuntimeException
+			java.lang.IllegalArgumentException
+		com.iluwatar.event.asynchronous.MaxNumOfEventsAllowedException
+		com.iluwatar.event.asynchronous.LongRunningEventException
+		com.iluwatar.event.asynchronous.EventDoesNotExistException
+		com.iluwatar.event.asynchronous.InvalidOperationException
+		java.sql.SQLException
+		java.text.ParseException
 
 
+PROJECT	EXCEPTION	HANDLERS	AUTOCOMPLETE	EMPTY
+java-design-patterns-master	java.lang.Throwable	3	0	0
+java-design-patterns-master	java.lang.Exception	29	4	0
+java-design-patterns-master	java.lang.InterruptedException	27	11	1
+java-design-patterns-master	java.io.IOException	15	3	0
+java-design-patterns-master	java.lang.CloneNotSupportedException	3	0	0
+java-design-patterns-master	com.iluwatar.layers.CakeBakingException	2	2	0
+java-design-patterns-master	java.util.concurrent.ExecutionException	1	0	0
+java-design-patterns-master	java.lang.ReflectiveOperationException	0	0	0
+java-design-patterns-master	java.lang.ClassNotFoundException	1	0	0
+java-design-patterns-master	javax.sound.sampled.LineUnavailableException	1	0	0
+java-design-patterns-master	java.lang.RuntimeException	0	0	0
+java-design-patterns-master	java.lang.IllegalArgumentException	1	0	0
+java-design-patterns-master	com.iluwatar.event.asynchronous.MaxNumOfEventsAllowedException	3	0	0
+java-design-patterns-master	com.iluwatar.event.asynchronous.LongRunningEventException	3	0	0
+java-design-patterns-master	com.iluwatar.event.asynchronous.EventDoesNotExistException	5	0	0
+java-design-patterns-master	com.iluwatar.event.asynchronous.InvalidOperationException	2	0	0
+java-design-patterns-master	java.sql.SQLException	1	0	0
+java-design-patterns-master	java.text.ParseException	5	5	0
 
-HANDLER ID	HANDLED EXCEPTION	EXCEPTION TYPE	EXCEPTION ORIGIN	AUTOCOMPLETE	EMPTY
-1	java.lang.InterruptedException	Checked	Java	false	false
-2	java.lang.Exception	Checked	Java	false	false
-3	java.lang.Exception	Checked	Java	false	false
-4	java.lang.InterruptedException	Checked	Java	true	false
-5	java.lang.Exception	Checked	Java	false	false
-6	java.lang.Exception	Checked	Java	false	false
-7	java.lang.Exception	Checked	Java	false	false
-8	java.lang.Throwable	Checked	Java	false	false
-9	java.lang.Exception	Checked	Java	false	false
-10	java.lang.Exception	Checked	Java	false	false
-11	java.lang.Exception	Checked	Java	false	false
-12	java.lang.Exception	Checked	Java	false	false
-13	java.lang.Exception	Checked	Java	false	false
-14	java.lang.InterruptedException	Checked	Java	true	false
-15	java.lang.InterruptedException	Checked	Java	false	false
-16	java.lang.InterruptedException	Checked	Java	true	false
-17	java.lang.InterruptedException	Checked	Java	true	false
-18	java.lang.InterruptedException	Checked	Java	true	false
-19	java.io.IOException	Checked	Java	true	false
-20	java.io.IOException	Checked	Java	false	false
-21	java.io.IOException	Checked	Java	false	false
-22	java.lang.InterruptedException	Checked	Java	true	false
-23	java.lang.InterruptedException	Checked	Java	true	false
-24	java.io.IOException	Checked	Java	false	false
-25	java.io.IOException	Checked	Java	false	false
-26	java.lang.InterruptedException	Checked	Java	false	false
-27	java.lang.Exception	Checked	Java	false	false
-28	java.lang.Exception	Checked	Java	false	false
-29	java.lang.Exception	Checked	Java	false	false
-30	java.lang.InterruptedException	Checked	Java	false	false
-31	java.lang.Exception	Checked	Java	false	false
-32	java.lang.Exception	Checked	Java	false	false
-33	java.lang.InterruptedException	Checked	Java	false	false
-34	java.lang.Exception	Checked	Java	false	false
-35	java.lang.CloneNotSupportedException	Checked	Java	false	false
-36	java.lang.CloneNotSupportedException	Checked	Java	false	false
-37	java.lang.CloneNotSupportedException	Checked	Java	false	false
-38	java.lang.Exception	Checked	Java	false	false
-39	java.lang.Throwable	Checked	Java	false	false
-40	java.lang.Throwable	Checked	Java	false	false
-41	java.io.IOException	Checked	Java	false	false
-42	java.io.IOException	Checked	Java	false	false
-43	java.io.IOException	Checked	Java	false	false
-44	java.lang.InterruptedException	Checked	Java	false	false
-45	java.lang.InterruptedException	Checked	Java	false	false
-46	java.lang.InterruptedException	Checked	Java	false	false
-47	java.lang.InterruptedException	Checked	Java	false	false
-48	java.io.IOException	Checked	Java	false	false
-49	java.lang.InterruptedException	Checked	Java	true	false
-50	java.lang.Exception	Checked	Java	true	false
-51	java.lang.Exception	Checked	Java	false	false
-52	java.lang.Exception	Checked	Java	true	false
-53	java.lang.Exception	Checked	Java	true	false
-54	java.lang.InterruptedException	Checked	Java	false	false
-55	com.iluwatar.layers.CakeBakingException	Checked	System	true	false
-56	com.iluwatar.layers.CakeBakingException	Checked	System	true	false
-57	java.lang.Exception	Checked	Java	false	false
-58	java.lang.Exception	Checked	Java	false	false
-59	java.lang.Exception	Checked	Java	true	false
-60	java.lang.InterruptedException	Checked	Java	false	false
-61	java.lang.Exception	Checked	Java	false	false
-62	java.lang.InterruptedException	Checked	Java	false	true
-63	java.util.concurrent.ExecutionException	Checked	Java	false	false
-64	java.lang.InterruptedException	Checked	Java	true	false
-65	java.lang.InterruptedException	Checked	Java	true	false
-66	java.lang.InterruptedException	Checked	Java	true	false
-67	java.lang.Exception	Checked	Java	false	false
-68	java.lang.ClassNotFoundException	Checked	Java	false	false
-69	java.lang.Exception	Checked	Java	false	false
-70	javax.sound.sampled.LineUnavailableException	Checked	Java	false	false
-71	java.io.IOException	Checked	Java	false	false
-72	java.lang.IllegalArgumentException	Unchecked	Java	false	false
-73	java.io.IOException	Checked	Java	false	false
-74	com.iluwatar.event.asynchronous.MaxNumOfEventsAllowedException	Checked	System	false	false
-74	com.iluwatar.event.asynchronous.LongRunningEventException	Checked	System	false	false
-74	com.iluwatar.event.asynchronous.EventDoesNotExistException	Checked	System	false	false
-74	com.iluwatar.event.asynchronous.InvalidOperationException	Checked	System	false	false
-75	com.iluwatar.event.asynchronous.EventDoesNotExistException	Checked	System	false	false
-76	com.iluwatar.event.asynchronous.EventDoesNotExistException	Checked	System	false	false
-77	com.iluwatar.event.asynchronous.MaxNumOfEventsAllowedException	Checked	System	false	false
-77	com.iluwatar.event.asynchronous.InvalidOperationException	Checked	System	false	false
-77	com.iluwatar.event.asynchronous.LongRunningEventException	Checked	System	false	false
-77	com.iluwatar.event.asynchronous.EventDoesNotExistException	Checked	System	false	false
-78	com.iluwatar.event.asynchronous.MaxNumOfEventsAllowedException	Checked	System	false	false
-78	com.iluwatar.event.asynchronous.LongRunningEventException	Checked	System	false	false
-78	com.iluwatar.event.asynchronous.EventDoesNotExistException	Checked	System	false	false
-79	java.lang.InterruptedException	Checked	Java	false	false
-80	java.lang.InterruptedException	Checked	Java	false	false
-81	java.sql.SQLException	Checked	Java	false	false
-82	java.lang.Exception	Checked	Java	false	false
-83	java.text.ParseException	Checked	Java	true	false
-84	java.text.ParseException	Checked	Java	true	false
-85	java.text.ParseException	Checked	Java	true	false
-86	java.text.ParseException	Checked	Java	true	false
-87	java.text.ParseException	Checked	Java	true	false
-88	java.lang.InterruptedException	Checked	Java	false	false
-89	java.lang.InterruptedException	Checked	Java	false	false
-90	java.lang.Exception	Checked	Java	false	false
-91	java.io.IOException	Checked	Java	true	false
-92	java.io.IOException	Checked	Java	true	false
-93	java.io.IOException	Checked	Java	false	false
-94	java.io.IOException	Checked	Java	false	false
+
+PROJECT	HANDLER ID	HANDLED EXCEPTION	EXCEPTION TYPE	EXCEPTION ORIGIN	AUTOCOMPLETE	EMPTY
+java-design-patterns-master	1	java.lang.InterruptedException	Checked	Java	false	false
+java-design-patterns-master	2	java.lang.Exception	Checked	Java	false	false
+java-design-patterns-master	3	java.lang.Exception	Checked	Java	false	false
+java-design-patterns-master	4	java.lang.InterruptedException	Checked	Java	true	false
+java-design-patterns-master	5	java.lang.Exception	Checked	Java	false	false
+java-design-patterns-master	6	java.lang.Exception	Checked	Java	false	false
+java-design-patterns-master	7	java.lang.Exception	Checked	Java	false	false
+java-design-patterns-master	8	java.lang.Throwable	Checked	Java	false	false
+java-design-patterns-master	9	java.lang.Exception	Checked	Java	false	false
+java-design-patterns-master	10	java.lang.Exception	Checked	Java	false	false
+java-design-patterns-master	11	java.lang.Exception	Checked	Java	false	false
+java-design-patterns-master	12	java.lang.Exception	Checked	Java	false	false
+java-design-patterns-master	13	java.lang.Exception	Checked	Java	false	false
+java-design-patterns-master	14	java.lang.InterruptedException	Checked	Java	true	false
+java-design-patterns-master	15	java.lang.InterruptedException	Checked	Java	false	false
+java-design-patterns-master	16	java.lang.InterruptedException	Checked	Java	true	false
+java-design-patterns-master	17	java.lang.InterruptedException	Checked	Java	true	false
+java-design-patterns-master	18	java.lang.InterruptedException	Checked	Java	true	false
+java-design-patterns-master	19	java.io.IOException	Checked	Java	true	false
+java-design-patterns-master	20	java.io.IOException	Checked	Java	false	false
+java-design-patterns-master	21	java.io.IOException	Checked	Java	false	false
+java-design-patterns-master	22	java.lang.InterruptedException	Checked	Java	true	false
+java-design-patterns-master	23	java.lang.InterruptedException	Checked	Java	true	false
+java-design-patterns-master	24	java.io.IOException	Checked	Java	false	false
+java-design-patterns-master	25	java.io.IOException	Checked	Java	false	false
+java-design-patterns-master	26	java.lang.InterruptedException	Checked	Java	false	false
+java-design-patterns-master	27	java.lang.Exception	Checked	Java	false	false
+java-design-patterns-master	28	java.lang.Exception	Checked	Java	false	false
+java-design-patterns-master	29	java.lang.Exception	Checked	Java	false	false
+java-design-patterns-master	30	java.lang.InterruptedException	Checked	Java	false	false
+java-design-patterns-master	31	java.lang.Exception	Checked	Java	false	false
+java-design-patterns-master	32	java.lang.Exception	Checked	Java	false	false
+java-design-patterns-master	33	java.lang.InterruptedException	Checked	Java	false	false
+java-design-patterns-master	34	java.lang.Exception	Checked	Java	false	false
+java-design-patterns-master	35	java.lang.CloneNotSupportedException	Checked	Java	false	false
+java-design-patterns-master	36	java.lang.CloneNotSupportedException	Checked	Java	false	false
+java-design-patterns-master	37	java.lang.CloneNotSupportedException	Checked	Java	false	false
+java-design-patterns-master	38	java.lang.Exception	Checked	Java	false	false
+java-design-patterns-master	39	java.lang.Throwable	Checked	Java	false	false
+java-design-patterns-master	40	java.lang.Throwable	Checked	Java	false	false
+java-design-patterns-master	41	java.io.IOException	Checked	Java	false	false
+java-design-patterns-master	42	java.io.IOException	Checked	Java	false	false
+java-design-patterns-master	43	java.io.IOException	Checked	Java	false	false
+java-design-patterns-master	44	java.lang.InterruptedException	Checked	Java	false	false
+java-design-patterns-master	45	java.lang.InterruptedException	Checked	Java	false	false
+java-design-patterns-master	46	java.lang.InterruptedException	Checked	Java	false	false
+java-design-patterns-master	47	java.lang.InterruptedException	Checked	Java	false	false
+java-design-patterns-master	48	java.io.IOException	Checked	Java	false	false
+java-design-patterns-master	49	java.lang.InterruptedException	Checked	Java	true	false
+java-design-patterns-master	50	java.lang.Exception	Checked	Java	true	false
+java-design-patterns-master	51	java.lang.Exception	Checked	Java	false	false
+java-design-patterns-master	52	java.lang.Exception	Checked	Java	true	false
+java-design-patterns-master	53	java.lang.Exception	Checked	Java	true	false
+java-design-patterns-master	54	java.lang.InterruptedException	Checked	Java	false	false
+java-design-patterns-master	55	com.iluwatar.layers.CakeBakingException	Checked	System	true	false
+java-design-patterns-master	56	com.iluwatar.layers.CakeBakingException	Checked	System	true	false
+java-design-patterns-master	57	java.lang.Exception	Checked	Java	false	false
+java-design-patterns-master	58	java.lang.Exception	Checked	Java	false	false
+java-design-patterns-master	59	java.lang.Exception	Checked	Java	true	false
+java-design-patterns-master	60	java.lang.InterruptedException	Checked	Java	false	false
+java-design-patterns-master	61	java.lang.Exception	Checked	Java	false	false
+java-design-patterns-master	62	java.lang.InterruptedException	Checked	Java	false	true
+java-design-patterns-master	63	java.util.concurrent.ExecutionException	Checked	Java	false	false
+java-design-patterns-master	64	java.lang.InterruptedException	Checked	Java	true	false
+java-design-patterns-master	65	java.lang.InterruptedException	Checked	Java	true	false
+java-design-patterns-master	66	java.lang.InterruptedException	Checked	Java	true	false
+java-design-patterns-master	67	java.lang.Exception	Checked	Java	false	false
+java-design-patterns-master	68	java.lang.ClassNotFoundException	Checked	Java	false	false
+java-design-patterns-master	69	java.lang.Exception	Checked	Java	false	false
+java-design-patterns-master	70	javax.sound.sampled.LineUnavailableException	Checked	Java	false	false
+java-design-patterns-master	71	java.io.IOException	Checked	Java	false	false
+java-design-patterns-master	72	java.lang.IllegalArgumentException	Unchecked	Java	false	false
+java-design-patterns-master	73	java.io.IOException	Checked	Java	false	false
+java-design-patterns-master	74	com.iluwatar.event.asynchronous.MaxNumOfEventsAllowedException	Checked	System	false	false
+java-design-patterns-master	74	com.iluwatar.event.asynchronous.LongRunningEventException	Checked	System	false	false
+java-design-patterns-master	74	com.iluwatar.event.asynchronous.EventDoesNotExistException	Checked	System	false	false
+java-design-patterns-master	74	com.iluwatar.event.asynchronous.InvalidOperationException	Checked	System	false	false
+java-design-patterns-master	75	com.iluwatar.event.asynchronous.EventDoesNotExistException	Checked	System	false	false
+java-design-patterns-master	76	com.iluwatar.event.asynchronous.EventDoesNotExistException	Checked	System	false	false
+java-design-patterns-master	77	com.iluwatar.event.asynchronous.MaxNumOfEventsAllowedException	Checked	System	false	false
+java-design-patterns-master	77	com.iluwatar.event.asynchronous.InvalidOperationException	Checked	System	false	false
+java-design-patterns-master	77	com.iluwatar.event.asynchronous.LongRunningEventException	Checked	System	false	false
+java-design-patterns-master	77	com.iluwatar.event.asynchronous.EventDoesNotExistException	Checked	System	false	false
+java-design-patterns-master	78	com.iluwatar.event.asynchronous.MaxNumOfEventsAllowedException	Checked	System	false	false
+java-design-patterns-master	78	com.iluwatar.event.asynchronous.LongRunningEventException	Checked	System	false	false
+java-design-patterns-master	78	com.iluwatar.event.asynchronous.EventDoesNotExistException	Checked	System	false	false
+java-design-patterns-master	79	java.lang.InterruptedException	Checked	Java	false	false
+java-design-patterns-master	80	java.lang.InterruptedException	Checked	Java	false	false
+java-design-patterns-master	81	java.sql.SQLException	Checked	Java	false	false
+java-design-patterns-master	82	java.lang.Exception	Checked	Java	false	false
+java-design-patterns-master	83	java.text.ParseException	Checked	Java	true	false
+java-design-patterns-master	84	java.text.ParseException	Checked	Java	true	false
+java-design-patterns-master	85	java.text.ParseException	Checked	Java	true	false
+java-design-patterns-master	86	java.text.ParseException	Checked	Java	true	false
+java-design-patterns-master	87	java.text.ParseException	Checked	Java	true	false
+java-design-patterns-master	88	java.lang.InterruptedException	Checked	Java	false	false
+java-design-patterns-master	89	java.lang.InterruptedException	Checked	Java	false	false
+java-design-patterns-master	90	java.lang.Exception	Checked	Java	false	false
+java-design-patterns-master	91	java.io.IOException	Checked	Java	true	false
+java-design-patterns-master	92	java.io.IOException	Checked	Java	true	false
+java-design-patterns-master	93	java.io.IOException	Checked	Java	false	false
+java-design-patterns-master	94	java.io.IOException	Checked	Java	false	false
+
+

@@ -1,1154 +1,1236 @@
-PROJECT	EXCEPTION	TYPE	ORIGIN	HANDLERS	AUTOCOMPLETE	EMPTY
-netty-4.1	java.lang.Throwable	Checked	Java	314	0	14
-netty-4.1	io.netty.util.Signal	Error	System	2	0	0
-netty-4.1	java.lang.NoSuchMethodError	Error	Java	1	0	0
-netty-4.1	java.lang.UnsatisfiedLinkError	Error	Java	4	0	0
-netty-4.1	java.lang.Exception	Checked	Java	176	1	22
-netty-4.1	java.util.zip.DataFormatException	Checked	Java	2	0	0
-netty-4.1	javax.xml.stream.XMLStreamException	Checked	Java	1	0	0
-netty-4.1	java.text.ParseException	Checked	Java	1	0	0
-netty-4.1	javax.security.cert.CertificateException	Checked	Java	1	0	0
-netty-4.1	io.netty.handler.codec.http2.Http2Exception	Checked	System	26	0	0
-netty-4.1	io.netty.handler.codec.http2.Http2Exception.StreamException	Checked	System	1	0	0
-netty-4.1	java.net.URISyntaxException	Checked	Java	1	0	0
-netty-4.1	javax.naming.NamingException	Checked	Java	1	0	1
-netty-4.1	java.security.InvalidAlgorithmParameterException	Checked	Java	1	0	0
-netty-4.1	java.security.KeyStoreException	Checked	Java	1	0	0
-netty-4.1	java.security.NoSuchAlgorithmException	Checked	Java	4	0	0
-netty-4.1	java.security.spec.InvalidKeySpecException	Checked	Java	3	0	0
-netty-4.1	java.security.cert.CertificateException	Checked	Java	10	0	0
-netty-4.1	java.lang.InstantiationException	Checked	Java	1	0	0
-netty-4.1	java.lang.NoSuchMethodException	Checked	Java	5	0	0
-netty-4.1	java.lang.ClassNotFoundException	Checked	Java	5	0	0
-netty-4.1	java.lang.reflect.InvocationTargetException	Checked	Java	7	0	0
-netty-4.1	java.lang.IllegalAccessException	Checked	Java	7	0	0
-netty-4.1	java.lang.NoSuchFieldException	Checked	Java	3	0	0
-netty-4.1	java.lang.InterruptedException	Checked	Java	41	0	26
-netty-4.1	java.lang.RuntimeException	Unchecked	Java	4	0	0
-netty-4.1	net.jpountz.lz4.LZ4Exception	Unchecked	Library	2	0	0
-netty-4.1	java.lang.NullPointerException	Unchecked	Java	7	0	0
-netty-4.1	io.netty.handler.codec.http.websocketx.WebSocketHandshakeException	Unchecked	System	1	0	0
-netty-4.1	java.lang.IndexOutOfBoundsException	Unchecked	Java	12	0	0
-netty-4.1	io.netty.handler.codec.CodecException	Unchecked	System	1	0	0
-netty-4.1	io.netty.handler.codec.EncoderException	Unchecked	System	2	0	0
-netty-4.1	io.netty.handler.codec.redis.RedisCodecException	Unchecked	System	1	0	0
-netty-4.1	io.netty.handler.codec.DecoderException	Unchecked	System	7	0	0
-netty-4.1	io.netty.handler.codec.haproxy.HAProxyProtocolException	Unchecked	System	1	0	0
-netty-4.1	io.netty.handler.codec.http.multipart.HttpPostRequestDecoder.NotEnoughDataDecoderException	Unchecked	System	3	0	0
-netty-4.1	io.netty.handler.codec.http.multipart.HttpPostRequestDecoder.EndOfDataDecoderException	Unchecked	System	1	0	0
-netty-4.1	io.netty.handler.codec.http.multipart.HttpPostRequestDecoder.ErrorDataDecoderException	Unchecked	System	4	0	0
-netty-4.1	io.netty.handler.codec.CorruptedFrameException	Unchecked	System	3	0	0
-netty-4.1	java.lang.UnsupportedOperationException	Unchecked	Java	2	0	0
-netty-4.1	java.util.NoSuchElementException	Unchecked	Java	1	0	0
-netty-4.1	java.lang.SecurityException	Unchecked	Java	9	0	0
-netty-4.1	java.lang.IllegalArgumentException	Unchecked	Java	21	0	2
-netty-4.1	java.nio.charset.UnsupportedCharsetException	Unchecked	Java	3	0	0
-netty-4.1	java.lang.NumberFormatException	Unchecked	Java	11	0	4
-netty-4.1	java.lang.ClassCastException	Unchecked	Java	3	0	0
-netty-4.1	java.util.concurrent.RejectedExecutionException	Unchecked	Java	3	0	0
-netty-4.1	io.netty.util.IllegalReferenceCountException	Unchecked	System	2	0	0
-netty-4.1	java.nio.channels.CancelledKeyException	Unchecked	Java	3	0	0
-netty-4.1	java.nio.channels.NotYetConnectedException	Unchecked	Java	2	0	2
-netty-4.1	java.io.IOException	Checked	Java	235	1	17
-netty-4.1	java.nio.channels.ClosedChannelException	Checked	Java	12	0	0
-netty-4.1	io.netty.handler.codec.marshalling.LimitingByteInput.TooBigObjectException	Checked	System	1	0	0
-netty-4.1	java.nio.charset.CharacterCodingException	Checked	Java	4	0	0
-netty-4.1	java.io.UnsupportedEncodingException	Checked	Java	3	0	0
-netty-4.1	com.google.protobuf.InvalidProtocolBufferException	Checked	Library	8	0	0
-netty-4.1	java.io.FileNotFoundException	Checked	Java	3	0	0
-netty-4.1	javax.net.ssl.SSLException	Checked	Java	9	0	0
-netty-4.1	javax.net.ssl.SSLPeerUnverifiedException	Checked	Java	3	0	3
-netty-4.1	java.net.SocketTimeoutException	Checked	Java	4	0	1
-netty-4.1	java.net.SocketException	Checked	Java	48	0	0
-netty-4.1	java.net.ConnectException	Checked	Java	1	0	0
-netty-4.1	java.net.UnknownHostException	Checked	Java	11	0	2
-netty-4.1	java.security.PrivilegedActionException	Checked	Java	15	0	0
+EXCEPTION HIERARCHY
+java.lang.Throwable
+	java.lang.Exception
+		java.security.PrivilegedActionException
+		java.io.IOException
+			java.net.UnknownHostException
+			java.net.SocketException
+				java.net.ConnectException
+			java.io.InterruptedIOException
+				java.net.SocketTimeoutException
+			javax.net.ssl.SSLException
+				javax.net.ssl.SSLPeerUnverifiedException
+			java.io.FileNotFoundException
+			com.google.protobuf.InvalidProtocolBufferException
+			java.io.UnsupportedEncodingException
+			java.nio.charset.CharacterCodingException
+			io.netty.handler.codec.marshalling.LimitingByteInput.TooBigObjectException
+			java.nio.channels.ClosedChannelException
+		java.lang.RuntimeException
+			java.lang.IllegalStateException
+				java.nio.channels.NotYetConnectedException
+				java.nio.channels.CancelledKeyException
+				io.netty.util.IllegalReferenceCountException
+			java.util.concurrent.RejectedExecutionException
+			java.lang.ClassCastException
+			java.lang.IllegalArgumentException
+				java.lang.NumberFormatException
+				java.nio.charset.UnsupportedCharsetException
+			java.lang.SecurityException
+			java.util.NoSuchElementException
+			java.lang.UnsupportedOperationException
+			io.netty.handler.codec.CodecException
+				io.netty.handler.codec.DecoderException
+					io.netty.handler.codec.CorruptedFrameException
+					io.netty.handler.codec.http.multipart.HttpPostRequestDecoder.ErrorDataDecoderException
+					io.netty.handler.codec.http.multipart.HttpPostRequestDecoder.EndOfDataDecoderException
+					io.netty.handler.codec.http.multipart.HttpPostRequestDecoder.NotEnoughDataDecoderException
+					io.netty.handler.codec.haproxy.HAProxyProtocolException
+				io.netty.handler.codec.redis.RedisCodecException
+				io.netty.handler.codec.EncoderException
+			java.lang.IndexOutOfBoundsException
+			io.netty.handler.codec.http.websocketx.WebSocketHandshakeException
+			java.lang.NullPointerException
+			net.jpountz.lz4.LZ4Exception
+		java.lang.InterruptedException
+		java.lang.ReflectiveOperationException
+			java.lang.NoSuchFieldException
+			java.lang.IllegalAccessException
+			java.lang.reflect.InvocationTargetException
+			java.lang.ClassNotFoundException
+			java.lang.NoSuchMethodException
+			java.lang.InstantiationException
+		java.security.GeneralSecurityException
+			java.security.cert.CertificateException
+			java.security.spec.InvalidKeySpecException
+			java.security.NoSuchAlgorithmException
+			java.security.KeyStoreException
+			java.security.InvalidAlgorithmParameterException
+		javax.naming.NamingException
+		java.net.URISyntaxException
+		io.netty.handler.codec.http2.Http2Exception
+			io.netty.handler.codec.http2.Http2Exception.StreamException
+		javax.security.cert.CertificateException
+		java.text.ParseException
+		javax.xml.stream.XMLStreamException
+		java.util.zip.DataFormatException
+	java.lang.Error
+		java.lang.LinkageError
+			java.lang.UnsatisfiedLinkError
+			java.lang.IncompatibleClassChangeError
+				java.lang.NoSuchMethodError
+		io.netty.util.Signal
 
 
+PROJECT	EXCEPTION	HANDLERS	AUTOCOMPLETE	EMPTY
+netty-4.1	java.lang.Throwable	314	0	14
+netty-4.1	java.lang.Exception	176	1	22
+netty-4.1	java.security.PrivilegedActionException	15	0	0
+netty-4.1	java.io.IOException	235	1	17
+netty-4.1	java.net.UnknownHostException	11	0	2
+netty-4.1	java.net.SocketException	48	0	0
+netty-4.1	java.net.ConnectException	1	0	0
+netty-4.1	java.io.InterruptedIOException	0	0	0
+netty-4.1	java.net.SocketTimeoutException	4	0	1
+netty-4.1	javax.net.ssl.SSLException	9	0	0
+netty-4.1	javax.net.ssl.SSLPeerUnverifiedException	3	0	3
+netty-4.1	java.io.FileNotFoundException	3	0	0
+netty-4.1	com.google.protobuf.InvalidProtocolBufferException	8	0	0
+netty-4.1	java.io.UnsupportedEncodingException	3	0	0
+netty-4.1	java.nio.charset.CharacterCodingException	4	0	0
+netty-4.1	io.netty.handler.codec.marshalling.LimitingByteInput.TooBigObjectException	1	0	0
+netty-4.1	java.nio.channels.ClosedChannelException	12	0	0
+netty-4.1	java.lang.RuntimeException	4	0	0
+netty-4.1	java.lang.IllegalStateException	0	0	0
+netty-4.1	java.nio.channels.NotYetConnectedException	2	0	2
+netty-4.1	java.nio.channels.CancelledKeyException	3	0	0
+netty-4.1	io.netty.util.IllegalReferenceCountException	2	0	0
+netty-4.1	java.util.concurrent.RejectedExecutionException	3	0	0
+netty-4.1	java.lang.ClassCastException	3	0	0
+netty-4.1	java.lang.IllegalArgumentException	21	0	2
+netty-4.1	java.lang.NumberFormatException	11	0	4
+netty-4.1	java.nio.charset.UnsupportedCharsetException	3	0	0
+netty-4.1	java.lang.SecurityException	9	0	0
+netty-4.1	java.util.NoSuchElementException	1	0	0
+netty-4.1	java.lang.UnsupportedOperationException	2	0	0
+netty-4.1	io.netty.handler.codec.CodecException	1	0	0
+netty-4.1	io.netty.handler.codec.DecoderException	7	0	0
+netty-4.1	io.netty.handler.codec.CorruptedFrameException	3	0	0
+netty-4.1	io.netty.handler.codec.http.multipart.HttpPostRequestDecoder.ErrorDataDecoderException	4	0	0
+netty-4.1	io.netty.handler.codec.http.multipart.HttpPostRequestDecoder.EndOfDataDecoderException	1	0	0
+netty-4.1	io.netty.handler.codec.http.multipart.HttpPostRequestDecoder.NotEnoughDataDecoderException	3	0	0
+netty-4.1	io.netty.handler.codec.haproxy.HAProxyProtocolException	1	0	0
+netty-4.1	io.netty.handler.codec.redis.RedisCodecException	1	0	0
+netty-4.1	io.netty.handler.codec.EncoderException	2	0	0
+netty-4.1	java.lang.IndexOutOfBoundsException	12	0	0
+netty-4.1	io.netty.handler.codec.http.websocketx.WebSocketHandshakeException	1	0	0
+netty-4.1	java.lang.NullPointerException	7	0	0
+netty-4.1	net.jpountz.lz4.LZ4Exception	2	0	0
+netty-4.1	java.lang.InterruptedException	41	0	26
+netty-4.1	java.lang.ReflectiveOperationException	0	0	0
+netty-4.1	java.lang.NoSuchFieldException	3	0	0
+netty-4.1	java.lang.IllegalAccessException	7	0	0
+netty-4.1	java.lang.reflect.InvocationTargetException	7	0	0
+netty-4.1	java.lang.ClassNotFoundException	5	0	0
+netty-4.1	java.lang.NoSuchMethodException	5	0	0
+netty-4.1	java.lang.InstantiationException	1	0	0
+netty-4.1	java.security.GeneralSecurityException	0	0	0
+netty-4.1	java.security.cert.CertificateException	10	0	0
+netty-4.1	java.security.spec.InvalidKeySpecException	3	0	0
+netty-4.1	java.security.NoSuchAlgorithmException	4	0	0
+netty-4.1	java.security.KeyStoreException	1	0	0
+netty-4.1	java.security.InvalidAlgorithmParameterException	1	0	0
+netty-4.1	javax.naming.NamingException	1	0	1
+netty-4.1	java.net.URISyntaxException	1	0	0
+netty-4.1	io.netty.handler.codec.http2.Http2Exception	26	0	0
+netty-4.1	io.netty.handler.codec.http2.Http2Exception.StreamException	1	0	0
+netty-4.1	javax.security.cert.CertificateException	1	0	0
+netty-4.1	java.text.ParseException	1	0	0
+netty-4.1	javax.xml.stream.XMLStreamException	1	0	0
+netty-4.1	java.util.zip.DataFormatException	2	0	0
+netty-4.1	java.lang.Error	0	0	0
+netty-4.1	java.lang.LinkageError	0	0	0
+netty-4.1	java.lang.UnsatisfiedLinkError	4	0	0
+netty-4.1	java.lang.IncompatibleClassChangeError	0	0	0
+netty-4.1	java.lang.NoSuchMethodError	1	0	0
+netty-4.1	io.netty.util.Signal	2	0	0
 
-HANDLER ID	HANDLED EXCEPTION	EXCEPTION TYPE	EXCEPTION ORIGIN	AUTOCOMPLETE	EMPTY
-1	java.lang.Exception	Checked	Java	false	false
-2	java.lang.Exception	Checked	Java	false	false
-3	java.lang.Exception	Checked	Java	false	false
-4	java.lang.Exception	Checked	Java	false	false
-5	java.security.PrivilegedActionException	Checked	Java	false	false
-6	java.lang.Exception	Checked	Java	false	false
-7	java.lang.Exception	Checked	Java	false	false
-8	java.security.PrivilegedActionException	Checked	Java	false	false
-9	java.io.IOException	Checked	Java	false	false
-10	java.io.IOException	Checked	Java	false	false
-11	java.io.IOException	Checked	Java	false	false
-12	java.lang.Exception	Checked	Java	false	true
-13	java.io.IOException	Checked	Java	false	false
-14	java.io.IOException	Checked	Java	false	false
-15	java.io.IOException	Checked	Java	false	false
-16	java.io.IOException	Checked	Java	false	false
-17	java.io.IOException	Checked	Java	false	false
-18	java.io.IOException	Checked	Java	false	false
-19	java.io.IOException	Checked	Java	false	false
-20	java.io.IOException	Checked	Java	false	false
-21	java.io.IOException	Checked	Java	false	false
-22	java.io.IOException	Checked	Java	false	false
-23	java.io.IOException	Checked	Java	false	false
-24	java.io.IOException	Checked	Java	false	false
-25	java.io.IOException	Checked	Java	false	false
-26	java.io.IOException	Checked	Java	false	false
-27	java.io.IOException	Checked	Java	false	false
-28	java.lang.Exception	Checked	Java	false	false
-29	java.io.IOException	Checked	Java	false	false
-30	java.lang.Throwable	Checked	Java	false	false
-31	java.io.IOException	Checked	Java	false	false
-32	java.io.IOException	Checked	Java	false	true
-33	java.lang.Throwable	Checked	Java	false	false
-34	java.io.IOException	Checked	Java	false	true
-35	java.lang.Throwable	Checked	Java	false	false
-36	java.io.IOException	Checked	Java	false	false
-37	java.lang.Throwable	Checked	Java	false	false
-38	java.lang.Throwable	Checked	Java	false	false
-39	java.io.IOException	Checked	Java	false	false
-40	java.lang.Exception	Checked	Java	false	false
-41	java.io.IOException	Checked	Java	false	false
-42	java.io.IOException	Checked	Java	false	true
-43	java.lang.Throwable	Checked	Java	false	false
-44	java.io.IOException	Checked	Java	false	false
-45	java.lang.Throwable	Checked	Java	false	false
-46	java.lang.Throwable	Checked	Java	false	false
-47	java.lang.Throwable	Checked	Java	false	false
-48	java.lang.Throwable	Checked	Java	false	false
-49	java.io.IOException	Checked	Java	false	false
-50	java.io.IOException	Checked	Java	false	false
-51	java.io.IOException	Checked	Java	false	false
-52	java.io.IOException	Checked	Java	false	false
-53	java.lang.Throwable	Checked	Java	false	false
-54	java.lang.Throwable	Checked	Java	false	false
-55	java.io.IOException	Checked	Java	false	true
-56	java.io.IOException	Checked	Java	false	true
-57	java.lang.Throwable	Checked	Java	false	false
-58	java.lang.Throwable	Checked	Java	false	false
-59	java.lang.Throwable	Checked	Java	false	false
-60	java.io.IOException	Checked	Java	false	false
-61	java.lang.Throwable	Checked	Java	false	false
-62	java.io.IOException	Checked	Java	false	true
-63	java.lang.Throwable	Checked	Java	false	false
-64	java.lang.Throwable	Checked	Java	false	false
-65	java.io.IOException	Checked	Java	false	false
-66	java.net.UnknownHostException	Checked	Java	false	false
-67	java.io.IOException	Checked	Java	false	false
-68	java.io.IOException	Checked	Java	false	false
-69	java.nio.channels.NotYetConnectedException	Unchecked	Java	false	true
-70	java.io.IOException	Checked	Java	false	false
-71	java.lang.Throwable	Checked	Java	false	false
-72	java.lang.Throwable	Checked	Java	false	false
-73	java.lang.Throwable	Checked	Java	false	false
-74	java.lang.Throwable	Checked	Java	false	false
-75	java.lang.Throwable	Checked	Java	false	false
-76	java.lang.Throwable	Checked	Java	false	false
-77	java.lang.Throwable	Checked	Java	false	false
-78	java.lang.Throwable	Checked	Java	false	false
-79	java.lang.Exception	Checked	Java	false	true
-80	java.net.SocketException	Checked	Java	false	false
-81	java.net.SocketException	Checked	Java	false	false
-82	java.lang.Throwable	Checked	Java	false	false
-83	java.io.IOException	Checked	Java	false	false
-84	java.lang.Throwable	Checked	Java	false	false
-85	java.lang.Throwable	Checked	Java	false	false
-86	java.io.IOException	Checked	Java	false	false
-87	java.io.IOException	Checked	Java	false	false
-88	java.io.IOException	Checked	Java	false	false
-89	java.io.IOException	Checked	Java	false	false
-90	java.io.IOException	Checked	Java	false	false
-91	java.io.IOException	Checked	Java	false	false
-92	java.io.IOException	Checked	Java	false	false
-93	java.io.IOException	Checked	Java	false	false
-94	java.io.IOException	Checked	Java	false	false
-95	java.io.IOException	Checked	Java	false	false
-96	java.io.IOException	Checked	Java	false	false
-97	java.io.IOException	Checked	Java	false	false
-98	java.lang.Throwable	Checked	Java	false	false
-99	java.lang.Throwable	Checked	Java	false	false
-100	java.lang.Throwable	Checked	Java	false	false
-101	java.io.IOException	Checked	Java	false	false
-102	java.io.IOException	Checked	Java	false	true
-103	java.lang.InterruptedException	Checked	Java	false	true
-104	java.io.IOException	Checked	Java	false	false
-105	java.io.IOException	Checked	Java	false	false
-106	java.io.IOException	Checked	Java	false	false
-107	java.io.IOException	Checked	Java	false	false
-108	java.io.IOException	Checked	Java	false	false
-109	java.io.IOException	Checked	Java	false	false
-110	java.io.IOException	Checked	Java	false	false
-111	java.io.IOException	Checked	Java	false	false
-112	java.net.UnknownHostException	Checked	Java	false	true
-113	java.lang.Throwable	Checked	Java	false	true
-114	java.io.IOException	Checked	Java	false	false
-115	java.io.IOException	Checked	Java	false	false
-116	java.io.IOException	Checked	Java	false	false
-117	java.io.IOException	Checked	Java	false	false
-118	java.io.IOException	Checked	Java	false	false
-119	java.io.IOException	Checked	Java	false	false
-120	java.io.IOException	Checked	Java	false	false
-121	java.io.IOException	Checked	Java	false	false
-122	java.io.IOException	Checked	Java	false	false
-123	java.io.IOException	Checked	Java	false	false
-124	java.io.IOException	Checked	Java	false	false
-125	java.io.IOException	Checked	Java	false	false
-126	java.io.IOException	Checked	Java	false	false
-127	java.io.IOException	Checked	Java	false	false
-128	java.io.IOException	Checked	Java	false	false
-129	java.io.IOException	Checked	Java	false	false
-130	java.io.IOException	Checked	Java	false	false
-131	java.io.IOException	Checked	Java	false	false
-132	java.lang.UnsatisfiedLinkError	Error	Java	false	false
-133	java.io.IOException	Checked	Java	false	false
-134	java.io.IOException	Checked	Java	false	false
-135	java.io.IOException	Checked	Java	false	false
-136	java.nio.channels.NotYetConnectedException	Unchecked	Java	false	true
-137	java.io.IOException	Checked	Java	false	false
-138	java.lang.Throwable	Checked	Java	false	false
-139	java.lang.Throwable	Checked	Java	false	false
-140	java.lang.Throwable	Checked	Java	false	false
-141	java.lang.Throwable	Checked	Java	false	false
-142	java.io.IOException	Checked	Java	false	false
-143	java.lang.Throwable	Checked	Java	false	false
-144	java.lang.Throwable	Checked	Java	false	false
-145	java.lang.Throwable	Checked	Java	false	false
-146	java.lang.Throwable	Checked	Java	false	false
-147	java.io.IOException	Checked	Java	false	false
-148	java.lang.Throwable	Checked	Java	false	false
-149	java.lang.Throwable	Checked	Java	false	false
-150	java.lang.Exception	Checked	Java	false	true
-151	java.lang.Exception	Checked	Java	false	true
-152	java.io.IOException	Checked	Java	false	false
-153	java.net.SocketException	Checked	Java	false	false
-154	java.net.SocketException	Checked	Java	false	false
-155	java.lang.Throwable	Checked	Java	false	false
-156	java.io.IOException	Checked	Java	false	false
-157	java.lang.Throwable	Checked	Java	false	false
-158	java.lang.Throwable	Checked	Java	false	false
-159	java.io.IOException	Checked	Java	false	false
-160	java.io.IOException	Checked	Java	false	false
-161	java.io.IOException	Checked	Java	false	false
-162	java.io.IOException	Checked	Java	false	false
-163	java.io.IOException	Checked	Java	false	false
-164	java.io.IOException	Checked	Java	false	false
-165	java.io.IOException	Checked	Java	false	false
-166	java.io.IOException	Checked	Java	false	false
-167	java.io.IOException	Checked	Java	false	false
-168	java.io.IOException	Checked	Java	false	false
-169	java.io.IOException	Checked	Java	false	false
-170	java.io.IOException	Checked	Java	false	false
-171	java.lang.Throwable	Checked	Java	false	false
-172	java.lang.Exception	Checked	Java	false	true
-173	java.lang.Exception	Checked	Java	false	true
-174	java.io.IOException	Checked	Java	false	false
-175	java.lang.Throwable	Checked	Java	false	false
-176	java.lang.Throwable	Checked	Java	false	false
-177	java.lang.InterruptedException	Checked	Java	false	true
-178	java.io.IOException	Checked	Java	false	true
-179	java.io.IOException	Checked	Java	false	true
-180	java.io.IOException	Checked	Java	false	false
-181	java.io.IOException	Checked	Java	false	false
-182	java.io.IOException	Checked	Java	false	false
-183	java.io.IOException	Checked	Java	false	false
-184	java.io.IOException	Checked	Java	false	false
-185	java.io.IOException	Checked	Java	false	false
-186	java.io.IOException	Checked	Java	false	false
-187	java.io.IOException	Checked	Java	false	false
-188	java.io.IOException	Checked	Java	false	false
-189	java.io.IOException	Checked	Java	false	false
-190	java.io.IOException	Checked	Java	false	false
-191	java.io.IOException	Checked	Java	false	false
-192	java.io.IOException	Checked	Java	false	false
-193	java.io.IOException	Checked	Java	false	false
-194	java.io.IOException	Checked	Java	false	false
-195	java.io.IOException	Checked	Java	false	false
-196	java.net.UnknownHostException	Checked	Java	false	true
-197	java.lang.Throwable	Checked	Java	false	true
-198	java.io.IOException	Checked	Java	false	false
-199	java.io.IOException	Checked	Java	false	false
-200	java.io.IOException	Checked	Java	false	false
-201	java.io.IOException	Checked	Java	false	false
-202	java.io.IOException	Checked	Java	false	false
-203	java.io.IOException	Checked	Java	false	false
-204	java.io.IOException	Checked	Java	false	false
-205	java.io.IOException	Checked	Java	false	false
-206	java.io.IOException	Checked	Java	false	false
-207	java.io.IOException	Checked	Java	false	false
-208	java.io.IOException	Checked	Java	false	false
-209	java.io.IOException	Checked	Java	false	false
-210	java.io.IOException	Checked	Java	false	false
-211	java.io.IOException	Checked	Java	false	false
-212	java.io.IOException	Checked	Java	false	false
-213	java.io.IOException	Checked	Java	false	false
-214	java.io.IOException	Checked	Java	false	false
-215	java.io.IOException	Checked	Java	false	false
-216	java.io.IOException	Checked	Java	false	false
-217	java.io.IOException	Checked	Java	false	false
-218	java.io.IOException	Checked	Java	false	false
-219	java.io.IOException	Checked	Java	false	false
-220	java.io.IOException	Checked	Java	false	false
-221	java.io.IOException	Checked	Java	false	false
-222	java.io.IOException	Checked	Java	false	false
-223	java.io.IOException	Checked	Java	false	false
-224	java.io.IOException	Checked	Java	false	false
-225	java.io.IOException	Checked	Java	false	false
-226	java.io.IOException	Checked	Java	false	false
-227	java.io.IOException	Checked	Java	false	false
-228	java.io.IOException	Checked	Java	false	false
-229	java.lang.UnsatisfiedLinkError	Error	Java	false	false
-230	java.lang.Throwable	Checked	Java	false	false
-231	java.lang.Throwable	Checked	Java	false	false
-232	java.lang.Throwable	Checked	Java	false	false
-233	java.lang.Throwable	Checked	Java	false	false
-234	java.lang.Throwable	Checked	Java	false	false
-235	java.lang.Throwable	Checked	Java	false	false
-236	java.lang.Throwable	Checked	Java	false	false
-237	java.lang.Exception	Checked	Java	false	false
-238	java.lang.Throwable	Checked	Java	false	false
-239	java.lang.Exception	Checked	Java	false	false
-240	java.lang.Throwable	Checked	Java	false	false
-241	java.lang.Throwable	Checked	Java	false	false
-242	java.util.concurrent.RejectedExecutionException	Unchecked	Java	false	false
-243	java.lang.Throwable	Checked	Java	false	false
-244	java.lang.Throwable	Checked	Java	false	false
-245	java.lang.Throwable	Checked	Java	false	false
-246	java.lang.Throwable	Checked	Java	false	false
-247	java.lang.Throwable	Checked	Java	false	false
-248	java.lang.Throwable	Checked	Java	false	false
-249	java.lang.Throwable	Checked	Java	false	false
-250	java.lang.Throwable	Checked	Java	false	false
-251	java.lang.Throwable	Checked	Java	false	false
-252	java.lang.Throwable	Checked	Java	false	false
-253	java.lang.Throwable	Checked	Java	false	false
-254	java.lang.Throwable	Checked	Java	false	false
-255	java.lang.Throwable	Checked	Java	false	false
-256	java.lang.Throwable	Checked	Java	false	false
-257	java.lang.Throwable	Checked	Java	false	false
-258	java.lang.Throwable	Checked	Java	false	false
-259	java.lang.RuntimeException	Unchecked	Java	false	false
-260	java.lang.Throwable	Checked	Java	false	false
-261	java.lang.Throwable	Checked	Java	false	false
-262	java.lang.Throwable	Checked	Java	false	false
-263	java.lang.Throwable	Checked	Java	false	false
-264	java.lang.Throwable	Checked	Java	false	false
-265	java.lang.Throwable	Checked	Java	false	false
-266	java.lang.Throwable	Checked	Java	false	false
-267	java.lang.Throwable	Checked	Java	false	false
-268	java.lang.ClassCastException	Unchecked	Java	false	false
-269	java.lang.ClassCastException	Unchecked	Java	false	false
-270	java.lang.NumberFormatException	Unchecked	Java	false	true
-271	java.lang.Exception	Checked	Java	false	false
-272	java.lang.Throwable	Checked	Java	false	false
-273	java.lang.Throwable	Checked	Java	false	false
-274	java.lang.NumberFormatException	Unchecked	Java	false	false
-275	java.lang.Throwable	Checked	Java	false	false
-276	java.lang.Throwable	Checked	Java	false	false
-277	java.lang.Throwable	Checked	Java	false	false
-278	java.util.concurrent.RejectedExecutionException	Unchecked	Java	false	false
-279	java.util.concurrent.RejectedExecutionException	Unchecked	Java	false	false
-280	java.io.IOException	Checked	Java	false	false
-281	java.lang.Throwable	Checked	Java	false	false
-282	java.lang.Throwable	Checked	Java	false	false
-283	java.lang.Throwable	Checked	Java	false	false
-284	java.lang.Throwable	Checked	Java	false	false
-285	java.lang.Throwable	Checked	Java	false	false
-286	java.net.SocketException	Checked	Java	false	false
-287	java.net.SocketException	Checked	Java	false	false
-288	java.net.SocketException	Checked	Java	false	false
-289	java.net.SocketException	Checked	Java	false	false
-290	java.net.SocketException	Checked	Java	false	false
-291	java.net.SocketException	Checked	Java	false	false
-292	java.net.SocketException	Checked	Java	false	false
-293	java.net.SocketException	Checked	Java	false	false
-294	java.net.SocketException	Checked	Java	false	false
-295	java.net.SocketException	Checked	Java	false	false
-296	java.net.SocketException	Checked	Java	false	false
-297	java.net.SocketException	Checked	Java	false	false
-298	java.net.SocketException	Checked	Java	false	false
-299	java.net.SocketException	Checked	Java	false	false
-300	java.io.IOException	Checked	Java	false	false
-301	java.io.IOException	Checked	Java	false	false
-302	java.net.SocketException	Checked	Java	false	false
-303	java.net.SocketException	Checked	Java	false	false
-304	java.net.SocketException	Checked	Java	false	false
-305	java.net.SocketException	Checked	Java	false	false
-306	java.net.SocketException	Checked	Java	false	false
-307	java.net.SocketException	Checked	Java	false	false
-308	java.lang.Exception	Checked	Java	false	true
-309	java.net.SocketException	Checked	Java	false	false
-310	java.net.SocketException	Checked	Java	false	false
-311	java.net.SocketException	Checked	Java	false	false
-312	java.net.SocketException	Checked	Java	false	false
-313	java.net.SocketException	Checked	Java	false	false
-314	java.net.SocketException	Checked	Java	false	false
-315	java.net.SocketException	Checked	Java	false	false
-316	java.net.SocketException	Checked	Java	false	false
-317	java.net.SocketException	Checked	Java	false	false
-318	java.net.SocketException	Checked	Java	false	false
-319	java.net.SocketException	Checked	Java	false	false
-320	java.net.SocketException	Checked	Java	false	false
-321	java.net.SocketException	Checked	Java	false	false
-322	java.net.SocketException	Checked	Java	false	false
-323	java.io.IOException	Checked	Java	false	false
-324	java.io.IOException	Checked	Java	false	false
-325	java.io.IOException	Checked	Java	false	false
-326	java.io.IOException	Checked	Java	false	false
-327	java.lang.Exception	Checked	Java	false	false
-328	java.net.SocketException	Checked	Java	false	false
-329	java.lang.Throwable	Checked	Java	false	false
-330	java.net.SocketTimeoutException	Checked	Java	false	false
-331	java.net.SocketException	Checked	Java	false	false
-332	java.lang.Throwable	Checked	Java	false	false
-333	java.io.IOException	Checked	Java	false	false
-334	java.io.IOException	Checked	Java	false	false
-335	java.io.IOException	Checked	Java	false	false
-336	java.io.IOException	Checked	Java	false	false
-337	java.io.IOException	Checked	Java	false	false
-338	java.io.IOException	Checked	Java	false	false
-339	java.io.IOException	Checked	Java	false	false
-340	java.io.IOException	Checked	Java	false	false
-341	java.net.SocketTimeoutException	Checked	Java	false	true
-342	java.lang.Throwable	Checked	Java	false	false
-343	java.lang.Throwable	Checked	Java	false	false
-344	java.lang.Exception	Checked	Java	false	false
-345	java.io.IOException	Checked	Java	false	false
-346	java.net.SocketTimeoutException	Checked	Java	false	false
-347	java.lang.Throwable	Checked	Java	false	false
-348	java.lang.Throwable	Checked	Java	false	false
-349	java.lang.Throwable	Checked	Java	false	false
-350	java.lang.Throwable	Checked	Java	false	false
-351	java.net.SocketTimeoutException	Checked	Java	false	false
-352	java.lang.Throwable	Checked	Java	false	true
-353	java.io.IOException	Checked	Java	false	false
-354	java.io.IOException	Checked	Java	false	false
-355	java.lang.Throwable	Checked	Java	false	false
-356	java.net.SocketException	Checked	Java	false	false
-357	java.lang.Throwable	Checked	Java	false	false
-358	java.net.SocketException	Checked	Java	false	false
-359	java.io.IOException	Checked	Java	false	false
-360	java.net.SocketException	Checked	Java	false	false
-361	java.lang.Exception	Checked	Java	false	true
-362	java.lang.Exception	Checked	Java	false	true
-363	java.lang.Exception	Checked	Java	false	false
-364	java.lang.Exception	Checked	Java	false	false
-365	java.lang.Exception	Checked	Java	false	false
-366	java.lang.Throwable	Checked	Java	false	true
-367	java.lang.Exception	Checked	Java	false	false
-368	java.lang.Exception	Checked	Java	false	false
-369	java.net.SocketException	Checked	Java	false	false
-370	java.lang.Exception	Checked	Java	false	false
-371	java.lang.Exception	Checked	Java	false	false
-372	java.io.IOException	Checked	Java	false	false
-373	java.lang.Throwable	Checked	Java	false	false
-374	java.lang.Throwable	Checked	Java	false	false
-375	java.io.IOException	Checked	Java	false	false
-376	java.lang.Throwable	Checked	Java	false	false
-377	java.lang.Throwable	Checked	Java	false	false
-378	java.lang.Throwable	Checked	Java	false	false
-379	java.lang.Throwable	Checked	Java	false	false
-380	java.lang.Throwable	Checked	Java	false	true
-381	java.lang.Throwable	Checked	Java	false	false
-382	java.lang.Throwable	Checked	Java	false	false
-383	java.lang.Throwable	Checked	Java	false	false
-384	java.lang.Throwable	Checked	Java	false	false
-385	java.lang.Throwable	Checked	Java	false	false
-386	java.lang.Throwable	Checked	Java	false	false
-387	java.lang.Throwable	Checked	Java	false	false
-388	java.lang.Throwable	Checked	Java	false	false
-389	java.io.IOException	Checked	Java	false	false
-390	java.lang.Throwable	Checked	Java	false	false
-391	java.io.IOException	Checked	Java	false	false
-392	java.io.IOException	Checked	Java	false	false
-393	java.lang.Throwable	Checked	Java	false	false
-394	java.lang.Throwable	Checked	Java	false	false
-395	java.nio.channels.CancelledKeyException	Unchecked	Java	false	false
-396	java.lang.Throwable	Checked	Java	false	false
-397	java.io.IOException	Checked	Java	false	false
-398	java.lang.SecurityException	Unchecked	Java	false	false
-399	java.io.IOException	Checked	Java	false	false
-400	java.lang.Throwable	Checked	Java	false	false
-401	java.lang.NoSuchFieldException	Checked	Java	false	false
-402	java.lang.IllegalAccessException	Checked	Java	false	false
-403	java.lang.Exception	Checked	Java	false	false
-404	java.lang.Exception	Checked	Java	false	false
-405	java.lang.Exception	Checked	Java	false	false
-406	java.lang.Throwable	Checked	Java	false	false
-407	java.lang.Throwable	Checked	Java	false	false
-408	java.lang.Throwable	Checked	Java	false	false
-409	java.lang.InterruptedException	Checked	Java	false	true
-410	java.io.IOException	Checked	Java	false	false
-411	java.lang.Throwable	Checked	Java	false	false
-412	java.nio.channels.CancelledKeyException	Unchecked	Java	false	false
-413	java.lang.Exception	Checked	Java	false	false
-414	java.lang.Exception	Checked	Java	false	false
-415	java.nio.channels.CancelledKeyException	Unchecked	Java	false	false
-416	java.lang.Throwable	Checked	Java	false	false
-417	java.lang.Throwable	Checked	Java	false	false
-418	java.lang.Throwable	Checked	Java	false	false
-419	java.lang.Throwable	Checked	Java	false	false
-420	java.lang.Throwable	Checked	Java	false	false
-421	java.lang.Throwable	Checked	Java	false	false
-422	java.util.NoSuchElementException	Unchecked	Java	false	false
-423	java.lang.Exception	Checked	Java	false	false
-424	java.lang.Exception	Checked	Java	false	false
-425	java.lang.Exception	Checked	Java	false	false
-426	java.lang.Throwable	Checked	Java	false	false
-427	java.lang.Throwable	Checked	Java	false	false
-428	java.lang.Throwable	Checked	Java	false	false
-429	java.lang.Throwable	Checked	Java	false	false
-430	java.lang.Exception	Checked	Java	false	false
-431	java.lang.UnsupportedOperationException	Unchecked	Java	false	false
-432	java.lang.Throwable	Checked	Java	false	false
-433	java.io.IOException	Checked	Java	false	true
-434	java.lang.Throwable	Checked	Java	false	false
-435	java.io.IOException	Checked	Java	false	true
-436	java.io.IOException	Checked	Java	false	true
-437	java.lang.Exception	Checked	Java	false	false
-438	java.lang.Exception	Checked	Java	false	false
-439	java.io.IOException	Checked	Java	false	true
-440	java.lang.UnsupportedOperationException	Unchecked	Java	false	false
-441	java.lang.reflect.InvocationTargetException	Checked	Java	false	false
-442	java.lang.reflect.InvocationTargetException	Checked	Java	false	false
-443	java.lang.Throwable	Checked	Java	false	false
-444	java.lang.Throwable	Checked	Java	false	false
-445	java.lang.InterruptedException	Checked	Java	false	true
-446	java.lang.Throwable	Checked	Java	false	false
-447	java.lang.Throwable	Checked	Java	false	false
-448	java.net.ConnectException	Checked	Java	false	false
-449	java.lang.Exception	Checked	Java	false	true
-450	java.io.IOException	Checked	Java	false	true
-451	java.lang.InterruptedException	Checked	Java	false	true
-452	java.lang.InterruptedException	Checked	Java	false	true
-453	java.lang.InterruptedException	Checked	Java	false	true
-454	java.lang.InterruptedException	Checked	Java	false	true
-455	java.lang.InterruptedException	Checked	Java	false	true
-456	java.lang.Throwable	Checked	Java	false	false
-457	java.lang.InterruptedException	Checked	Java	false	true
-458	java.lang.InterruptedException	Checked	Java	false	true
-459	java.lang.InterruptedException	Checked	Java	false	true
-460	java.lang.Throwable	Checked	Java	false	false
-461	java.lang.Throwable	Checked	Java	false	false
-462	java.lang.InterruptedException	Checked	Java	false	true
-463	java.security.cert.CertificateException	Checked	Java	false	false
-464	io.netty.handler.codec.DecoderException	Unchecked	System	false	false
-465	java.security.cert.CertificateException	Checked	Java	false	false
-466	java.lang.InterruptedException	Checked	Java	false	true
-467	java.lang.InterruptedException	Checked	Java	false	true
-468	java.security.cert.CertificateException	Checked	Java	false	false
-469	javax.net.ssl.SSLPeerUnverifiedException	Checked	Java	false	true
-470	javax.net.ssl.SSLPeerUnverifiedException	Checked	Java	false	true
-471	javax.net.ssl.SSLPeerUnverifiedException	Checked	Java	false	true
-472	java.security.cert.CertificateException	Checked	Java	false	false
-473	java.security.cert.CertificateException	Checked	Java	false	false
-474	java.lang.InterruptedException	Checked	Java	false	true
-475	java.lang.InterruptedException	Checked	Java	false	true
-476	java.lang.InterruptedException	Checked	Java	false	true
-477	java.lang.InterruptedException	Checked	Java	false	true
-478	java.lang.InterruptedException	Checked	Java	false	true
-479	java.lang.InterruptedException	Checked	Java	false	true
-480	javax.naming.NamingException	Checked	Java	false	true
-481	java.net.URISyntaxException	Checked	Java	false	false
-482	java.lang.Exception	Checked	Java	false	true
-483	java.lang.Exception	Checked	Java	false	false
-484	java.lang.Exception	Checked	Java	false	false
-485	java.lang.Exception	Checked	Java	false	false
-486	java.lang.Exception	Checked	Java	false	false
-487	java.lang.Exception	Checked	Java	false	false
-488	java.net.UnknownHostException	Checked	Java	false	false
-489	io.netty.handler.codec.CorruptedFrameException	Unchecked	System	false	false
-490	java.lang.Throwable	Checked	Java	false	false
-491	java.lang.Throwable	Checked	Java	false	false
-492	java.lang.IllegalArgumentException	Unchecked	Java	false	false
-493	java.net.UnknownHostException	Checked	Java	false	false
-494	java.net.UnknownHostException	Checked	Java	false	false
-495	java.lang.Exception	Checked	Java	false	false
-496	java.lang.Exception	Checked	Java	false	false
-497	java.lang.Exception	Checked	Java	false	false
-498	java.lang.Exception	Checked	Java	false	false
-499	java.lang.Exception	Checked	Java	false	false
-500	java.lang.Exception	Checked	Java	false	false
-501	java.lang.Throwable	Checked	Java	false	false
-502	java.net.UnknownHostException	Checked	Java	false	false
-503	java.net.UnknownHostException	Checked	Java	false	false
-504	java.io.IOException	Checked	Java	false	false
-505	java.io.IOException	Checked	Java	false	false
-506	java.lang.Exception	Checked	Java	false	false
-507	java.lang.Exception	Checked	Java	false	false
-508	java.lang.IndexOutOfBoundsException	Unchecked	Java	false	false
-509	java.lang.InterruptedException	Checked	Java	false	false
-510	java.security.PrivilegedActionException	Checked	Java	false	false
-511	java.security.PrivilegedActionException	Checked	Java	false	false
-512	java.security.PrivilegedActionException	Checked	Java	false	false
-513	java.security.PrivilegedActionException	Checked	Java	false	false
-514	java.lang.InterruptedException	Checked	Java	false	false
-515	javax.net.ssl.SSLException	Checked	Java	false	false
-516	java.lang.Exception	Checked	Java	false	false
-517	javax.net.ssl.SSLException	Checked	Java	false	false
-518	java.lang.Exception	Checked	Java	false	false
-519	java.lang.Exception	Checked	Java	false	false
-520	java.lang.Exception	Checked	Java	false	false
-521	java.lang.Exception	Checked	Java	false	false
-522	java.lang.Exception	Checked	Java	false	false
-523	java.lang.Exception	Checked	Java	false	false
-524	java.lang.Exception	Checked	Java	false	false
-525	java.lang.Exception	Checked	Java	false	false
-526	java.lang.Exception	Checked	Java	false	false
-527	java.lang.Exception	Checked	Java	false	false
-528	java.lang.Exception	Checked	Java	false	false
-529	java.lang.Exception	Checked	Java	false	false
-530	java.lang.Exception	Checked	Java	false	false
-531	io.netty.handler.codec.http2.Http2Exception	Checked	System	false	false
-532	java.lang.Throwable	Checked	Java	false	false
-533	java.lang.Exception	Checked	Java	false	false
-534	java.lang.Exception	Checked	Java	false	false
-535	java.lang.Throwable	Checked	Java	false	false
-536	java.lang.Throwable	Checked	Java	false	false
-537	java.lang.Throwable	Checked	Java	false	false
-538	java.lang.Throwable	Checked	Java	false	false
-539	java.lang.Exception	Checked	Java	false	false
-540	java.lang.Exception	Checked	Java	false	false
-541	java.lang.Exception	Checked	Java	false	false
-542	java.lang.Throwable	Checked	Java	false	false
-543	java.lang.Throwable	Checked	Java	false	false
-544	java.lang.Throwable	Checked	Java	false	false
-545	java.lang.Throwable	Checked	Java	false	false
-546	io.netty.handler.codec.DecoderException	Unchecked	System	false	false
-547	java.lang.Throwable	Checked	Java	false	false
-548	java.lang.Throwable	Checked	Java	false	false
-549	java.lang.Throwable	Checked	Java	false	false
-550	java.lang.Throwable	Checked	Java	false	false
-551	java.lang.Throwable	Checked	Java	false	false
-552	java.lang.Exception	Checked	Java	false	false
-553	java.lang.Exception	Checked	Java	false	false
-554	java.lang.Exception	Checked	Java	false	false
-555	java.lang.Throwable	Checked	Java	false	true
-556	java.lang.Exception	Checked	Java	false	true
-557	java.lang.Throwable	Checked	Java	false	false
-558	java.lang.Throwable	Checked	Java	false	false
-559	java.lang.ClassNotFoundException	Checked	Java	false	false
-560	java.lang.Throwable	Checked	Java	false	false
-561	java.lang.Throwable	Checked	Java	false	false
-562	java.lang.Exception	Checked	Java	false	false
-563	java.lang.Throwable	Checked	Java	false	false
-564	java.lang.Throwable	Checked	Java	false	false
-565	java.lang.Throwable	Checked	Java	false	false
-566	java.lang.Exception	Checked	Java	false	true
-567	java.lang.Exception	Checked	Java	false	false
-568	javax.security.cert.CertificateException	Checked	Java	false	false
-569	javax.net.ssl.SSLException	Checked	Java	false	false
-570	java.lang.Exception	Checked	Java	false	false
-571	javax.net.ssl.SSLException	Checked	Java	false	false
-572	java.lang.Exception	Checked	Java	false	false
-573	java.security.cert.CertificateException	Checked	Java	false	false
-574	java.io.FileNotFoundException	Checked	Java	false	false
-575	java.io.IOException	Checked	Java	false	false
-576	java.io.FileNotFoundException	Checked	Java	false	false
-577	java.io.IOException	Checked	Java	false	false
-578	java.io.IOException	Checked	Java	false	false
-579	java.io.IOException	Checked	Java	false	false
-580	java.lang.Exception	Checked	Java	false	false
-581	java.lang.Exception	Checked	Java	false	false
-582	java.lang.Throwable	Checked	Java	false	false
-583	java.lang.Throwable	Checked	Java	false	true
-584	java.lang.NumberFormatException	Unchecked	Java	false	false
-585	java.lang.Exception	Checked	Java	false	false
-586	javax.net.ssl.SSLException	Checked	Java	false	false
-587	java.lang.Exception	Checked	Java	false	false
-588	java.lang.Throwable	Checked	Java	false	false
-589	javax.net.ssl.SSLException	Checked	Java	false	false
-590	java.lang.Exception	Checked	Java	false	false
-591	java.lang.Throwable	Checked	Java	false	false
-592	java.lang.Throwable	Checked	Java	false	false
-593	java.lang.Exception	Checked	Java	false	false
-594	java.lang.Exception	Checked	Java	false	false
-595	javax.net.ssl.SSLException	Checked	Java	false	false
-596	java.lang.Exception	Checked	Java	false	false
-597	java.lang.Throwable	Checked	Java	false	false
-598	java.lang.Throwable	Checked	Java	false	false
-599	java.security.cert.CertificateException	Checked	Java	false	false
-600	java.lang.Exception	Checked	Java	false	false
-601	java.lang.Exception	Checked	Java	false	false
-602	java.security.spec.InvalidKeySpecException	Checked	Java	false	false
-603	java.security.spec.InvalidKeySpecException	Checked	Java	false	false
-604	java.security.spec.InvalidKeySpecException	Checked	Java	false	false
-605	java.io.IOException	Checked	Java	false	false
-606	java.lang.Exception	Checked	Java	false	false
-607	java.security.cert.CertificateException	Checked	Java	false	false
-608	java.lang.Exception	Checked	Java	false	false
-609	java.lang.Exception	Checked	Java	false	false
-610	java.lang.Exception	Checked	Java	false	false
-611	java.lang.Exception	Checked	Java	false	false
-612	java.lang.Exception	Checked	Java	false	false
-613	java.lang.Exception	Checked	Java	false	false
-614	java.lang.Exception	Checked	Java	false	false
-615	java.lang.Throwable	Checked	Java	false	false
-616	java.lang.Throwable	Checked	Java	false	false
-617	java.lang.Throwable	Checked	Java	false	false
-618	java.lang.Throwable	Checked	Java	false	false
-619	javax.net.ssl.SSLException	Checked	Java	false	false
-620	java.lang.Exception	Checked	Java	false	false
-621	java.lang.InterruptedException	Checked	Java	false	false
-622	javax.net.ssl.SSLException	Checked	Java	false	false
-623	java.lang.Throwable	Checked	Java	false	false
-624	java.security.NoSuchAlgorithmException	Checked	Java	false	false
-625	java.security.cert.CertificateException	Checked	Java	false	false
-626	java.security.cert.CertificateException	Checked	Java	false	false
-627	java.security.NoSuchAlgorithmException	Checked	Java	false	false
-628	java.lang.Throwable	Checked	Java	false	false
-629	java.lang.Throwable	Checked	Java	false	false
-630	java.lang.Exception	Checked	Java	false	false
-631	java.io.IOException	Checked	Java	false	false
-632	java.io.IOException	Checked	Java	false	false
-633	java.security.KeyStoreException	Checked	Java	false	false
-634	java.lang.Exception	Checked	Java	false	false
-635	java.security.InvalidAlgorithmParameterException	Checked	Java	false	false
-636	java.lang.Exception	Checked	Java	false	false
-637	java.net.UnknownHostException	Checked	Java	false	false
-638	java.lang.InterruptedException	Checked	Java	false	false
-639	com.google.protobuf.InvalidProtocolBufferException	Checked	Library	false	false
-640	java.io.IOException	Checked	Java	false	false
-641	com.google.protobuf.InvalidProtocolBufferException	Checked	Library	false	false
-642	com.google.protobuf.InvalidProtocolBufferException	Checked	Library	false	false
-643	java.io.IOException	Checked	Java	false	false
-644	com.google.protobuf.InvalidProtocolBufferException	Checked	Library	false	false
-645	com.google.protobuf.InvalidProtocolBufferException	Checked	Library	false	false
-646	java.io.IOException	Checked	Java	false	false
-647	com.google.protobuf.InvalidProtocolBufferException	Checked	Library	false	false
-648	com.google.protobuf.InvalidProtocolBufferException	Checked	Library	false	false
-649	java.io.IOException	Checked	Java	false	false
-650	com.google.protobuf.InvalidProtocolBufferException	Checked	Library	false	false
-651	java.io.IOException	Checked	Java	true	false
-652	java.lang.Exception	Checked	Java	true	false
-653	io.netty.handler.codec.http.websocketx.WebSocketHandshakeException	Unchecked	System	false	false
-654	io.netty.handler.codec.http.multipart.HttpPostRequestDecoder.ErrorDataDecoderException	Unchecked	System	false	false
-655	io.netty.handler.codec.http.multipart.HttpPostRequestDecoder.ErrorDataDecoderException	Unchecked	System	false	false
-656	io.netty.handler.codec.http.multipart.HttpPostRequestDecoder.EndOfDataDecoderException	Unchecked	System	false	false
-657	java.io.IOException	Checked	Java	false	false
-658	java.io.IOException	Checked	Java	false	false
-659	java.io.FileNotFoundException	Checked	Java	false	false
-660	java.io.UnsupportedEncodingException	Checked	Java	false	false
-661	java.lang.Exception	Checked	Java	false	false
-662	java.lang.InterruptedException	Checked	Java	false	false
-663	java.lang.Exception	Checked	Java	false	false
-664	java.lang.Exception	Checked	Java	false	false
-665	java.lang.Exception	Checked	Java	false	false
-666	java.lang.Exception	Checked	Java	false	false
-667	java.lang.InterruptedException	Checked	Java	false	true
-668	java.lang.InterruptedException	Checked	Java	false	false
-669	java.lang.Throwable	Checked	Java	false	false
-670	java.lang.InterruptedException	Checked	Java	false	false
-671	java.lang.Throwable	Checked	Java	false	false
-672	java.lang.Exception	Checked	Java	false	false
-673	java.lang.Exception	Checked	Java	false	false
-674	java.net.SocketException	Checked	Java	false	false
-675	java.net.SocketException	Checked	Java	false	false
-676	java.lang.Exception	Checked	Java	false	true
-677	java.lang.Exception	Checked	Java	false	false
-678	java.lang.Exception	Checked	Java	false	true
-679	java.net.UnknownHostException	Checked	Java	false	false
-680	java.lang.Throwable	Checked	Java	false	false
-681	java.lang.Throwable	Checked	Java	false	false
-682	java.lang.Exception	Checked	Java	false	false
-683	java.lang.Throwable	Checked	Java	false	false
-684	java.lang.Throwable	Checked	Java	false	false
-685	java.lang.Throwable	Checked	Java	false	false
-686	java.lang.Throwable	Checked	Java	false	false
-687	java.lang.Throwable	Checked	Java	false	false
-688	java.lang.InterruptedException	Checked	Java	false	true
-689	java.lang.Throwable	Checked	Java	false	false
-690	java.lang.Exception	Checked	Java	false	true
-691	java.lang.Exception	Checked	Java	false	true
-692	java.text.ParseException	Checked	Java	false	false
-693	java.lang.Throwable	Checked	Java	false	false
-694	java.lang.Throwable	Checked	Java	false	false
-695	java.lang.NoSuchMethodException	Checked	Java	false	false
-696	java.lang.reflect.InvocationTargetException	Checked	Java	false	false
-697	java.lang.IllegalAccessException	Checked	Java	false	false
-698	java.lang.Throwable	Checked	Java	false	false
-699	java.lang.ClassCastException	Unchecked	Java	false	false
-700	java.net.SocketException	Checked	Java	false	false
-701	java.net.SocketException	Checked	Java	false	false
-702	java.lang.Exception	Checked	Java	false	true
-703	java.lang.Exception	Checked	Java	false	true
-704	java.lang.Exception	Checked	Java	false	false
-705	java.lang.Throwable	Checked	Java	false	false
-706	java.lang.UnsatisfiedLinkError	Error	Java	false	false
-707	java.lang.Throwable	Checked	Java	false	false
-708	java.lang.Exception	Checked	Java	false	false
-709	java.lang.UnsatisfiedLinkError	Error	Java	false	false
-710	java.lang.Exception	Checked	Java	false	false
-711	java.lang.Exception	Checked	Java	false	false
-712	java.lang.ClassNotFoundException	Checked	Java	false	false
-713	java.lang.Exception	Checked	Java	false	false
-714	java.io.IOException	Checked	Java	false	false
-715	java.io.IOException	Checked	Java	false	true
-716	java.lang.Throwable	Checked	Java	false	false
-717	java.lang.Throwable	Checked	Java	false	false
-718	java.lang.Throwable	Checked	Java	false	false
-719	java.lang.Throwable	Checked	Java	false	true
-720	java.lang.Throwable	Checked	Java	false	true
-721	java.lang.Throwable	Checked	Java	false	true
-722	java.lang.Exception	Checked	Java	false	false
-723	java.lang.NoSuchFieldException	Checked	Java	false	false
-724	java.lang.SecurityException	Unchecked	Java	false	false
-725	java.lang.IllegalAccessException	Checked	Java	false	false
-726	java.lang.NoSuchMethodException	Checked	Java	false	false
-727	java.lang.SecurityException	Unchecked	Java	false	false
-728	java.lang.NoSuchFieldException	Checked	Java	false	false
-729	java.lang.SecurityException	Unchecked	Java	false	false
-730	java.lang.NoSuchMethodException	Checked	Java	false	false
-731	java.lang.SecurityException	Unchecked	Java	false	false
-732	java.lang.InstantiationException	Checked	Java	false	false
-733	java.lang.IllegalAccessException	Checked	Java	false	false
-734	java.lang.reflect.InvocationTargetException	Checked	Java	false	false
-735	java.lang.NoSuchMethodException	Checked	Java	false	false
-736	java.lang.SecurityException	Unchecked	Java	false	false
-737	java.lang.IllegalAccessException	Checked	Java	false	false
-738	java.lang.ClassNotFoundException	Checked	Java	false	false
-739	java.lang.reflect.InvocationTargetException	Checked	Java	false	false
-740	java.lang.Throwable	Checked	Java	false	false
-741	java.lang.NoSuchMethodException	Checked	Java	false	false
-742	java.lang.SecurityException	Unchecked	Java	false	false
-743	java.lang.IllegalAccessException	Checked	Java	false	false
-744	java.lang.reflect.InvocationTargetException	Checked	Java	false	false
-745	java.lang.IllegalAccessException	Checked	Java	false	false
-746	java.lang.reflect.InvocationTargetException	Checked	Java	false	false
-747	java.lang.Throwable	Checked	Java	false	false
-748	java.lang.Throwable	Checked	Java	false	false
-749	java.lang.SecurityException	Unchecked	Java	false	false
-750	java.lang.RuntimeException	Unchecked	Java	false	false
-751	java.security.PrivilegedActionException	Checked	Java	false	false
-752	java.security.PrivilegedActionException	Checked	Java	false	false
-753	java.security.PrivilegedActionException	Checked	Java	false	false
-754	java.security.PrivilegedActionException	Checked	Java	false	false
-755	java.security.PrivilegedActionException	Checked	Java	false	false
-756	java.security.PrivilegedActionException	Checked	Java	false	false
-757	java.security.PrivilegedActionException	Checked	Java	false	false
-758	java.security.PrivilegedActionException	Checked	Java	false	false
-759	java.net.UnknownHostException	Checked	Java	false	false
-760	java.security.PrivilegedActionException	Checked	Java	false	false
-761	java.io.IOException	Checked	Java	false	false
-762	java.io.IOException	Checked	Java	false	false
-763	java.lang.SecurityException	Unchecked	Java	false	false
-764	java.lang.Exception	Checked	Java	false	true
-765	java.lang.Exception	Checked	Java	false	true
-766	java.lang.InterruptedException	Checked	Java	false	false
-767	java.io.IOException	Checked	Java	false	true
-768	java.lang.Throwable	Checked	Java	false	false
-769	java.lang.Throwable	Checked	Java	false	false
-770	java.lang.NoSuchMethodError	Error	Java	false	false
-771	java.lang.Throwable	Checked	Java	false	false
-772	java.lang.Throwable	Checked	Java	false	false
-773	java.lang.InterruptedException	Checked	Java	false	false
-774	java.lang.InterruptedException	Checked	Java	false	false
-775	java.lang.InterruptedException	Checked	Java	false	false
-776	java.lang.Throwable	Checked	Java	false	false
-777	java.lang.InterruptedException	Checked	Java	false	false
-778	java.lang.Throwable	Checked	Java	false	false
-779	java.lang.Throwable	Checked	Java	false	false
-780	java.lang.Exception	Checked	Java	false	true
-781	java.lang.Exception	Checked	Java	false	false
-782	java.lang.Exception	Checked	Java	false	false
-783	java.lang.InterruptedException	Checked	Java	false	false
-784	java.lang.InterruptedException	Checked	Java	false	true
-785	java.lang.Throwable	Checked	Java	false	false
-786	java.lang.Throwable	Checked	Java	false	false
-787	java.lang.Throwable	Checked	Java	false	false
-788	java.lang.Exception	Checked	Java	false	false
-789	java.lang.InterruptedException	Checked	Java	false	false
-790	java.lang.Throwable	Checked	Java	false	false
-791	java.lang.Throwable	Checked	Java	false	false
-792	java.lang.Throwable	Checked	Java	false	false
-793	java.lang.Throwable	Checked	Java	false	false
-794	java.lang.InterruptedException	Checked	Java	false	false
-795	java.lang.InterruptedException	Checked	Java	false	true
-796	java.lang.Throwable	Checked	Java	false	false
-797	java.lang.InterruptedException	Checked	Java	false	true
-798	java.lang.Throwable	Checked	Java	false	false
-799	java.lang.Throwable	Checked	Java	false	false
-800	javax.xml.stream.XMLStreamException	Checked	Java	false	false
-801	java.lang.Exception	Checked	Java	false	false
-802	java.lang.Exception	Checked	Java	false	false
-803	java.lang.IllegalArgumentException	Unchecked	Java	false	true
-804	java.lang.IllegalArgumentException	Unchecked	Java	false	true
-805	java.lang.Exception	Checked	Java	false	false
-806	java.lang.Exception	Checked	Java	false	false
-807	java.lang.Exception	Checked	Java	false	false
-808	java.lang.Exception	Checked	Java	false	false
-809	java.lang.Exception	Checked	Java	false	false
-810	java.lang.Exception	Checked	Java	false	false
-811	java.lang.Exception	Checked	Java	false	false
-812	java.lang.Exception	Checked	Java	false	false
-813	io.netty.handler.codec.redis.RedisCodecException	Unchecked	System	false	false
-814	java.lang.Exception	Checked	Java	false	false
-815	io.netty.handler.codec.CodecException	Unchecked	System	false	false
-816	java.lang.Exception	Checked	Java	false	false
-817	java.lang.Exception	Checked	Java	false	false
-818	java.lang.Exception	Checked	Java	false	false
-819	java.lang.Exception	Checked	Java	false	false
-820	java.lang.Exception	Checked	Java	false	false
-821	java.lang.Exception	Checked	Java	false	false
-822	java.lang.Exception	Checked	Java	false	false
-823	java.lang.Exception	Checked	Java	false	false
-824	java.lang.Throwable	Checked	Java	false	false
-825	java.lang.Throwable	Checked	Java	false	false
-826	java.lang.Throwable	Checked	Java	false	false
-827	java.lang.Throwable	Checked	Java	false	false
-828	java.lang.Throwable	Checked	Java	false	false
-829	java.lang.Throwable	Checked	Java	false	false
-830	java.lang.Throwable	Checked	Java	false	false
-831	java.lang.Throwable	Checked	Java	false	false
-832	io.netty.handler.codec.http2.Http2Exception	Checked	System	false	false
-833	java.lang.Throwable	Checked	Java	false	false
-834	io.netty.handler.codec.http2.Http2Exception	Checked	System	false	false
-835	java.lang.Throwable	Checked	Java	false	false
-836	java.lang.Throwable	Checked	Java	false	false
-837	java.lang.Throwable	Checked	Java	false	false
-838	java.lang.Throwable	Checked	Java	false	false
-839	java.lang.Throwable	Checked	Java	false	false
-840	java.lang.Throwable	Checked	Java	false	false
-841	io.netty.handler.codec.http2.Http2Exception	Checked	System	false	false
-842	java.lang.Throwable	Checked	Java	false	false
-843	io.netty.handler.codec.http2.Http2Exception	Checked	System	false	false
-844	java.lang.RuntimeException	Unchecked	Java	false	false
-845	java.lang.Throwable	Checked	Java	false	false
-846	java.lang.Throwable	Checked	Java	false	false
-847	io.netty.handler.codec.http2.Http2Exception	Checked	System	false	false
-848	java.lang.Throwable	Checked	Java	false	false
-849	java.lang.Throwable	Checked	Java	false	false
-850	io.netty.handler.codec.http2.Http2Exception	Checked	System	false	false
-851	java.lang.RuntimeException	Unchecked	Java	false	false
-852	java.lang.Throwable	Checked	Java	false	false
-853	java.lang.IllegalArgumentException	Unchecked	Java	false	false
-854	java.lang.Throwable	Checked	Java	false	false
-855	java.lang.Throwable	Checked	Java	false	false
-856	java.lang.Throwable	Checked	Java	false	false
-857	java.lang.Throwable	Checked	Java	false	false
-858	java.lang.Throwable	Checked	Java	false	false
-859	java.lang.Throwable	Checked	Java	false	false
-860	io.netty.handler.codec.http2.Http2Exception	Checked	System	false	false
-861	java.lang.Throwable	Checked	Java	false	false
-862	java.lang.Throwable	Checked	Java	false	false
-863	java.lang.Throwable	Checked	Java	false	false
-864	java.lang.Throwable	Checked	Java	false	false
-865	io.netty.handler.codec.http2.Http2Exception	Checked	System	false	false
-866	java.lang.Throwable	Checked	Java	false	false
-867	io.netty.handler.codec.http2.Http2Exception	Checked	System	false	false
-868	java.lang.Throwable	Checked	Java	false	false
-869	io.netty.handler.codec.http2.Http2Exception	Checked	System	false	false
-870	java.lang.Throwable	Checked	Java	false	false
-871	io.netty.handler.codec.http2.Http2Exception	Checked	System	false	false
-872	java.lang.Throwable	Checked	Java	false	false
-873	io.netty.handler.codec.http2.Http2Exception	Checked	System	false	false
-874	java.lang.Throwable	Checked	Java	false	false
-875	io.netty.handler.codec.http2.Http2Exception.StreamException	Checked	System	false	false
-876	java.lang.Throwable	Checked	Java	false	false
-877	java.lang.Throwable	Checked	Java	false	false
-878	java.lang.Throwable	Checked	Java	false	false
-879	io.netty.handler.codec.http2.Http2Exception	Checked	System	false	false
-880	io.netty.handler.codec.http2.Http2Exception	Checked	System	false	false
-881	io.netty.handler.codec.http2.Http2Exception	Checked	System	false	false
-882	java.lang.Throwable	Checked	Java	false	false
-883	io.netty.handler.codec.http2.Http2Exception	Checked	System	false	false
-884	java.lang.Throwable	Checked	Java	false	false
-885	io.netty.handler.codec.http2.Http2Exception	Checked	System	false	false
-886	java.lang.Throwable	Checked	Java	false	false
-887	java.lang.Exception	Checked	Java	false	false
-888	java.lang.Exception	Checked	Java	false	false
-889	io.netty.handler.codec.http2.Http2Exception	Checked	System	false	false
-890	java.lang.Throwable	Checked	Java	false	false
-891	java.lang.Throwable	Checked	Java	false	false
-892	java.lang.Throwable	Checked	Java	false	false
-893	io.netty.handler.codec.http2.Http2Exception	Checked	System	false	false
-894	java.lang.Throwable	Checked	Java	false	false
-895	java.lang.Throwable	Checked	Java	false	false
-896	java.lang.Exception	Checked	Java	false	false
-897	java.lang.Throwable	Checked	Java	false	false
-898	io.netty.handler.codec.http2.Http2Exception	Checked	System	false	false
-899	java.lang.Throwable	Checked	Java	false	false
-900	java.lang.Throwable	Checked	Java	false	false
-901	java.lang.Throwable	Checked	Java	false	false
-902	java.lang.Throwable	Checked	Java	false	false
-903	io.netty.handler.codec.http2.Http2Exception	Checked	System	false	false
-904	java.lang.Throwable	Checked	Java	false	false
-905	io.netty.handler.codec.http2.Http2Exception	Checked	System	false	false
-906	java.lang.Throwable	Checked	Java	false	false
-907	io.netty.handler.codec.http2.Http2Exception	Checked	System	false	false
-908	java.lang.Throwable	Checked	Java	false	false
-909	io.netty.handler.codec.http2.Http2Exception	Checked	System	false	false
-910	java.lang.Throwable	Checked	Java	false	false
-911	io.netty.handler.codec.http2.Http2Exception	Checked	System	false	false
-912	java.lang.Throwable	Checked	Java	false	false
-913	java.lang.Exception	Checked	Java	false	false
-914	java.lang.Throwable	Checked	Java	false	false
-915	java.lang.Throwable	Checked	Java	false	false
-916	java.lang.Throwable	Checked	Java	false	false
-917	java.lang.Throwable	Checked	Java	false	false
-918	java.lang.Exception	Checked	Java	false	false
-919	java.lang.Exception	Checked	Java	false	false
-920	java.lang.IllegalArgumentException	Unchecked	Java	false	false
-921	java.util.zip.DataFormatException	Checked	Java	false	false
-922	java.lang.IllegalArgumentException	Unchecked	Java	false	false
-923	java.lang.Throwable	Checked	Java	false	false
-924	java.lang.Throwable	Checked	Java	false	false
-925	java.lang.Throwable	Checked	Java	false	false
-926	java.lang.Throwable	Checked	Java	false	false
-927	java.lang.NumberFormatException	Unchecked	Java	false	true
-928	java.lang.NumberFormatException	Unchecked	Java	false	true
-929	io.netty.util.IllegalReferenceCountException	Unchecked	System	false	false
-930	io.netty.util.IllegalReferenceCountException	Unchecked	System	false	false
-931	java.lang.Exception	Checked	Java	false	false
-932	java.lang.Throwable	Checked	Java	false	false
-933	java.lang.NumberFormatException	Unchecked	Java	false	false
-934	java.lang.NumberFormatException	Unchecked	Java	false	false
-935	java.lang.Exception	Checked	Java	false	false
-936	java.lang.Exception	Checked	Java	false	false
-937	java.lang.Exception	Checked	Java	false	false
-938	java.lang.Exception	Checked	Java	false	false
-939	java.lang.Exception	Checked	Java	false	false
-940	java.lang.Exception	Checked	Java	false	false
-941	java.nio.charset.UnsupportedCharsetException	Unchecked	Java	false	false
-942	java.nio.charset.CharacterCodingException	Checked	Java	false	false
-943	java.io.UnsupportedEncodingException	Checked	Java	false	false
-944	io.netty.handler.codec.CorruptedFrameException	Unchecked	System	false	false
-945	io.netty.handler.codec.CorruptedFrameException	Unchecked	System	false	false
-946	java.lang.Throwable	Checked	Java	false	false
-947	java.lang.Throwable	Checked	Java	false	false
-948	java.lang.Throwable	Checked	Java	false	false
-949	java.lang.Throwable	Checked	Java	false	false
-950	java.security.NoSuchAlgorithmException	Checked	Java	false	false
-951	java.security.NoSuchAlgorithmException	Checked	Java	false	false
-952	java.io.IOException	Checked	Java	false	false
-953	java.io.IOException	Checked	Java	false	false
-954	java.io.IOException	Checked	Java	false	false
-955	java.io.IOException	Checked	Java	false	false
-956	java.io.IOException	Checked	Java	false	false
-957	java.io.IOException	Checked	Java	false	false
-958	java.io.IOException	Checked	Java	false	false
-959	java.io.IOException	Checked	Java	false	false
-960	java.io.IOException	Checked	Java	false	false
-961	java.io.IOException	Checked	Java	false	false
-962	java.io.IOException	Checked	Java	false	true
-963	java.io.IOException	Checked	Java	false	false
-964	java.io.IOException	Checked	Java	false	false
-965	java.nio.charset.UnsupportedCharsetException	Unchecked	Java	false	false
-966	java.io.IOException	Checked	Java	false	false
-967	java.lang.NumberFormatException	Unchecked	Java	false	false
-968	java.lang.NullPointerException	Unchecked	Java	false	false
-969	java.lang.IllegalArgumentException	Unchecked	Java	false	false
-970	java.io.IOException	Checked	Java	false	false
-971	java.lang.IndexOutOfBoundsException	Unchecked	Java	false	false
-972	io.netty.handler.codec.http.multipart.HttpPostRequestDecoder.NotEnoughDataDecoderException	Unchecked	System	false	false
-973	io.netty.handler.codec.http.multipart.HttpPostRequestDecoder.NotEnoughDataDecoderException	Unchecked	System	false	false
-974	io.netty.handler.codec.http.multipart.HttpPostRequestDecoder.NotEnoughDataDecoderException	Unchecked	System	false	false
-975	java.lang.NullPointerException	Unchecked	Java	false	false
-976	java.lang.IllegalArgumentException	Unchecked	Java	false	false
-977	java.lang.NullPointerException	Unchecked	Java	false	false
-978	java.lang.IllegalArgumentException	Unchecked	Java	false	false
-979	java.lang.NullPointerException	Unchecked	Java	false	false
-980	java.lang.IllegalArgumentException	Unchecked	Java	false	false
-981	java.lang.NullPointerException	Unchecked	Java	false	false
-982	java.lang.IllegalArgumentException	Unchecked	Java	false	false
-983	java.lang.NullPointerException	Unchecked	Java	false	false
-984	java.lang.IllegalArgumentException	Unchecked	Java	false	false
-985	java.io.IOException	Checked	Java	false	false
-986	java.io.IOException	Checked	Java	false	false
-987	java.nio.charset.UnsupportedCharsetException	Unchecked	Java	false	false
-988	java.io.IOException	Checked	Java	false	false
-989	java.lang.NumberFormatException	Unchecked	Java	false	false
-990	java.lang.NullPointerException	Unchecked	Java	false	false
-991	java.lang.IllegalArgumentException	Unchecked	Java	false	false
-992	java.io.IOException	Checked	Java	false	false
-993	java.lang.IndexOutOfBoundsException	Unchecked	Java	false	false
-994	java.lang.IndexOutOfBoundsException	Unchecked	Java	false	false
-995	java.lang.IndexOutOfBoundsException	Unchecked	Java	false	false
-996	java.lang.IndexOutOfBoundsException	Unchecked	Java	false	false
-997	java.io.IOException	Checked	Java	false	false
-998	java.io.IOException	Checked	Java	false	false
-999	java.io.IOException	Checked	Java	false	false
-1000	java.io.IOException	Checked	Java	false	false
-1001	java.io.UnsupportedEncodingException	Checked	Java	false	false
-1002	java.io.IOException	Checked	Java	false	false
-1003	java.io.IOException	Checked	Java	false	false
-1004	io.netty.handler.codec.http.multipart.HttpPostRequestDecoder.ErrorDataDecoderException	Unchecked	System	false	false
-1005	java.io.IOException	Checked	Java	false	false
-1006	io.netty.handler.codec.http.multipart.HttpPostRequestDecoder.ErrorDataDecoderException	Unchecked	System	false	false
-1007	java.io.IOException	Checked	Java	false	false
-1008	java.lang.IllegalArgumentException	Unchecked	Java	false	false
-1009	java.lang.IllegalArgumentException	Unchecked	Java	false	false
-1010	java.io.IOException	Checked	Java	false	false
-1011	java.io.IOException	Checked	Java	false	false
-1012	java.io.IOException	Checked	Java	false	false
-1013	java.io.IOException	Checked	Java	false	false
-1014	java.io.IOException	Checked	Java	false	false
-1015	java.lang.Exception	Checked	Java	false	false
-1016	java.lang.NumberFormatException	Unchecked	Java	false	true
-1017	java.lang.IllegalArgumentException	Unchecked	Java	false	false
-1018	java.lang.IllegalArgumentException	Unchecked	Java	false	false
-1019	java.lang.IllegalArgumentException	Unchecked	Java	false	false
-1020	java.lang.IllegalArgumentException	Unchecked	Java	false	false
-1021	java.lang.NumberFormatException	Unchecked	Java	false	false
-1022	io.netty.handler.codec.haproxy.HAProxyProtocolException	Unchecked	System	false	false
-1023	io.netty.handler.codec.DecoderException	Unchecked	System	false	false
-1024	java.lang.Throwable	Checked	Java	false	false
-1025	io.netty.handler.codec.DecoderException	Unchecked	System	false	false
-1026	java.lang.Exception	Checked	Java	false	false
-1027	io.netty.handler.codec.DecoderException	Unchecked	System	false	false
-1028	java.lang.Throwable	Checked	Java	false	false
-1029	java.lang.IndexOutOfBoundsException	Unchecked	Java	false	false
-1030	java.lang.Throwable	Checked	Java	false	false
-1031	io.netty.handler.codec.EncoderException	Unchecked	System	false	false
-1032	java.lang.Throwable	Checked	Java	false	false
-1033	io.netty.handler.codec.DecoderException	Unchecked	System	false	false
-1034	java.lang.Exception	Checked	Java	false	false
-1035	io.netty.handler.codec.EncoderException	Unchecked	System	false	false
-1036	java.lang.Throwable	Checked	Java	false	false
-1037	io.netty.util.Signal	Error	System	false	false
-1038	io.netty.handler.codec.DecoderException	Unchecked	System	false	false
-1039	java.lang.Throwable	Checked	Java	false	false
-1040	io.netty.util.Signal	Error	System	false	false
-1041	java.lang.ClassNotFoundException	Checked	Java	false	false
-1042	java.lang.ClassNotFoundException	Checked	Java	false	false
-1043	java.lang.Throwable	Checked	Java	false	true
-1044	io.netty.handler.codec.marshalling.LimitingByteInput.TooBigObjectException	Checked	System	false	false
-1045	java.lang.Throwable	Checked	Java	false	false
-1046	java.lang.Throwable	Checked	Java	false	false
-1047	java.lang.Exception	Checked	Java	false	false
-1048	java.util.zip.DataFormatException	Checked	Java	false	false
-1049	java.lang.Exception	Checked	Java	false	false
-1050	net.jpountz.lz4.LZ4Exception	Unchecked	Library	false	false
-1051	net.jpountz.lz4.LZ4Exception	Unchecked	Library	false	false
-1052	java.lang.Exception	Checked	Java	false	false
-1053	java.lang.Exception	Checked	Java	false	false
-1054	java.lang.Throwable	Checked	Java	false	false
-1055	java.lang.IndexOutOfBoundsException	Unchecked	Java	false	false
-1056	java.lang.IndexOutOfBoundsException	Unchecked	Java	false	false
-1057	java.lang.IndexOutOfBoundsException	Unchecked	Java	false	false
-1058	java.lang.Exception	Checked	Java	false	false
-1059	java.lang.Exception	Checked	Java	false	false
-1060	java.lang.Exception	Checked	Java	false	false
-1061	java.lang.Exception	Checked	Java	false	false
-1062	java.lang.IndexOutOfBoundsException	Unchecked	Java	false	false
-1063	java.nio.charset.CharacterCodingException	Checked	Java	false	false
-1064	java.nio.charset.CharacterCodingException	Checked	Java	false	false
-1065	java.nio.charset.CharacterCodingException	Checked	Java	false	false
-1066	java.lang.Throwable	Checked	Java	false	true
-1067	java.lang.Throwable	Checked	Java	false	true
-1068	java.lang.IndexOutOfBoundsException	Unchecked	Java	false	false
-1069	java.lang.Throwable	Checked	Java	false	true
-1070	java.lang.Throwable	Checked	Java	false	false
-1071	java.lang.Throwable	Checked	Java	false	false
-1072	java.nio.channels.ClosedChannelException	Checked	Java	false	false
-1073	java.nio.channels.ClosedChannelException	Checked	Java	false	false
-1074	java.nio.channels.ClosedChannelException	Checked	Java	false	false
-1075	java.nio.channels.ClosedChannelException	Checked	Java	false	false
-1076	java.nio.channels.ClosedChannelException	Checked	Java	false	false
-1077	java.nio.channels.ClosedChannelException	Checked	Java	false	false
-1078	java.lang.IllegalArgumentException	Unchecked	Java	false	false
-1079	java.nio.channels.ClosedChannelException	Checked	Java	false	false
-1080	java.nio.channels.ClosedChannelException	Checked	Java	false	false
-1081	java.lang.IllegalArgumentException	Unchecked	Java	false	false
-1082	java.nio.channels.ClosedChannelException	Checked	Java	false	false
-1083	java.nio.channels.ClosedChannelException	Checked	Java	false	false
-1084	java.nio.channels.ClosedChannelException	Checked	Java	false	false
-1085	java.nio.channels.ClosedChannelException	Checked	Java	false	false
+
+PROJECT	HANDLER ID	HANDLED EXCEPTION	EXCEPTION TYPE	EXCEPTION ORIGIN	AUTOCOMPLETE	EMPTY
+netty-4.1	1	java.lang.Exception	Checked	Java	false	false
+netty-4.1	2	java.lang.Exception	Checked	Java	false	false
+netty-4.1	3	java.lang.Exception	Checked	Java	false	false
+netty-4.1	4	java.lang.Exception	Checked	Java	false	false
+netty-4.1	5	java.security.PrivilegedActionException	Checked	Java	false	false
+netty-4.1	6	java.lang.Exception	Checked	Java	false	false
+netty-4.1	7	java.lang.Exception	Checked	Java	false	false
+netty-4.1	8	java.security.PrivilegedActionException	Checked	Java	false	false
+netty-4.1	9	java.io.IOException	Checked	Java	false	false
+netty-4.1	10	java.io.IOException	Checked	Java	false	false
+netty-4.1	11	java.io.IOException	Checked	Java	false	false
+netty-4.1	12	java.lang.Exception	Checked	Java	false	true
+netty-4.1	13	java.io.IOException	Checked	Java	false	false
+netty-4.1	14	java.io.IOException	Checked	Java	false	false
+netty-4.1	15	java.io.IOException	Checked	Java	false	false
+netty-4.1	16	java.io.IOException	Checked	Java	false	false
+netty-4.1	17	java.io.IOException	Checked	Java	false	false
+netty-4.1	18	java.io.IOException	Checked	Java	false	false
+netty-4.1	19	java.io.IOException	Checked	Java	false	false
+netty-4.1	20	java.io.IOException	Checked	Java	false	false
+netty-4.1	21	java.io.IOException	Checked	Java	false	false
+netty-4.1	22	java.io.IOException	Checked	Java	false	false
+netty-4.1	23	java.io.IOException	Checked	Java	false	false
+netty-4.1	24	java.io.IOException	Checked	Java	false	false
+netty-4.1	25	java.io.IOException	Checked	Java	false	false
+netty-4.1	26	java.io.IOException	Checked	Java	false	false
+netty-4.1	27	java.io.IOException	Checked	Java	false	false
+netty-4.1	28	java.lang.Exception	Checked	Java	false	false
+netty-4.1	29	java.io.IOException	Checked	Java	false	false
+netty-4.1	30	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	31	java.io.IOException	Checked	Java	false	false
+netty-4.1	32	java.io.IOException	Checked	Java	false	true
+netty-4.1	33	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	34	java.io.IOException	Checked	Java	false	true
+netty-4.1	35	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	36	java.io.IOException	Checked	Java	false	false
+netty-4.1	37	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	38	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	39	java.io.IOException	Checked	Java	false	false
+netty-4.1	40	java.lang.Exception	Checked	Java	false	false
+netty-4.1	41	java.io.IOException	Checked	Java	false	false
+netty-4.1	42	java.io.IOException	Checked	Java	false	true
+netty-4.1	43	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	44	java.io.IOException	Checked	Java	false	false
+netty-4.1	45	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	46	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	47	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	48	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	49	java.io.IOException	Checked	Java	false	false
+netty-4.1	50	java.io.IOException	Checked	Java	false	false
+netty-4.1	51	java.io.IOException	Checked	Java	false	false
+netty-4.1	52	java.io.IOException	Checked	Java	false	false
+netty-4.1	53	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	54	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	55	java.io.IOException	Checked	Java	false	true
+netty-4.1	56	java.io.IOException	Checked	Java	false	true
+netty-4.1	57	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	58	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	59	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	60	java.io.IOException	Checked	Java	false	false
+netty-4.1	61	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	62	java.io.IOException	Checked	Java	false	true
+netty-4.1	63	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	64	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	65	java.io.IOException	Checked	Java	false	false
+netty-4.1	66	java.net.UnknownHostException	Checked	Java	false	false
+netty-4.1	67	java.io.IOException	Checked	Java	false	false
+netty-4.1	68	java.io.IOException	Checked	Java	false	false
+netty-4.1	69	java.nio.channels.NotYetConnectedException	Unchecked	Java	false	true
+netty-4.1	70	java.io.IOException	Checked	Java	false	false
+netty-4.1	71	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	72	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	73	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	74	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	75	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	76	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	77	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	78	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	79	java.lang.Exception	Checked	Java	false	true
+netty-4.1	80	java.net.SocketException	Checked	Java	false	false
+netty-4.1	81	java.net.SocketException	Checked	Java	false	false
+netty-4.1	82	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	83	java.io.IOException	Checked	Java	false	false
+netty-4.1	84	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	85	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	86	java.io.IOException	Checked	Java	false	false
+netty-4.1	87	java.io.IOException	Checked	Java	false	false
+netty-4.1	88	java.io.IOException	Checked	Java	false	false
+netty-4.1	89	java.io.IOException	Checked	Java	false	false
+netty-4.1	90	java.io.IOException	Checked	Java	false	false
+netty-4.1	91	java.io.IOException	Checked	Java	false	false
+netty-4.1	92	java.io.IOException	Checked	Java	false	false
+netty-4.1	93	java.io.IOException	Checked	Java	false	false
+netty-4.1	94	java.io.IOException	Checked	Java	false	false
+netty-4.1	95	java.io.IOException	Checked	Java	false	false
+netty-4.1	96	java.io.IOException	Checked	Java	false	false
+netty-4.1	97	java.io.IOException	Checked	Java	false	false
+netty-4.1	98	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	99	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	100	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	101	java.io.IOException	Checked	Java	false	false
+netty-4.1	102	java.io.IOException	Checked	Java	false	true
+netty-4.1	103	java.lang.InterruptedException	Checked	Java	false	true
+netty-4.1	104	java.io.IOException	Checked	Java	false	false
+netty-4.1	105	java.io.IOException	Checked	Java	false	false
+netty-4.1	106	java.io.IOException	Checked	Java	false	false
+netty-4.1	107	java.io.IOException	Checked	Java	false	false
+netty-4.1	108	java.io.IOException	Checked	Java	false	false
+netty-4.1	109	java.io.IOException	Checked	Java	false	false
+netty-4.1	110	java.io.IOException	Checked	Java	false	false
+netty-4.1	111	java.io.IOException	Checked	Java	false	false
+netty-4.1	112	java.net.UnknownHostException	Checked	Java	false	true
+netty-4.1	113	java.lang.Throwable	Checked	Java	false	true
+netty-4.1	114	java.io.IOException	Checked	Java	false	false
+netty-4.1	115	java.io.IOException	Checked	Java	false	false
+netty-4.1	116	java.io.IOException	Checked	Java	false	false
+netty-4.1	117	java.io.IOException	Checked	Java	false	false
+netty-4.1	118	java.io.IOException	Checked	Java	false	false
+netty-4.1	119	java.io.IOException	Checked	Java	false	false
+netty-4.1	120	java.io.IOException	Checked	Java	false	false
+netty-4.1	121	java.io.IOException	Checked	Java	false	false
+netty-4.1	122	java.io.IOException	Checked	Java	false	false
+netty-4.1	123	java.io.IOException	Checked	Java	false	false
+netty-4.1	124	java.io.IOException	Checked	Java	false	false
+netty-4.1	125	java.io.IOException	Checked	Java	false	false
+netty-4.1	126	java.io.IOException	Checked	Java	false	false
+netty-4.1	127	java.io.IOException	Checked	Java	false	false
+netty-4.1	128	java.io.IOException	Checked	Java	false	false
+netty-4.1	129	java.io.IOException	Checked	Java	false	false
+netty-4.1	130	java.io.IOException	Checked	Java	false	false
+netty-4.1	131	java.io.IOException	Checked	Java	false	false
+netty-4.1	132	java.lang.UnsatisfiedLinkError	Error	Java	false	false
+netty-4.1	133	java.io.IOException	Checked	Java	false	false
+netty-4.1	134	java.io.IOException	Checked	Java	false	false
+netty-4.1	135	java.io.IOException	Checked	Java	false	false
+netty-4.1	136	java.nio.channels.NotYetConnectedException	Unchecked	Java	false	true
+netty-4.1	137	java.io.IOException	Checked	Java	false	false
+netty-4.1	138	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	139	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	140	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	141	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	142	java.io.IOException	Checked	Java	false	false
+netty-4.1	143	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	144	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	145	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	146	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	147	java.io.IOException	Checked	Java	false	false
+netty-4.1	148	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	149	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	150	java.lang.Exception	Checked	Java	false	true
+netty-4.1	151	java.lang.Exception	Checked	Java	false	true
+netty-4.1	152	java.io.IOException	Checked	Java	false	false
+netty-4.1	153	java.net.SocketException	Checked	Java	false	false
+netty-4.1	154	java.net.SocketException	Checked	Java	false	false
+netty-4.1	155	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	156	java.io.IOException	Checked	Java	false	false
+netty-4.1	157	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	158	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	159	java.io.IOException	Checked	Java	false	false
+netty-4.1	160	java.io.IOException	Checked	Java	false	false
+netty-4.1	161	java.io.IOException	Checked	Java	false	false
+netty-4.1	162	java.io.IOException	Checked	Java	false	false
+netty-4.1	163	java.io.IOException	Checked	Java	false	false
+netty-4.1	164	java.io.IOException	Checked	Java	false	false
+netty-4.1	165	java.io.IOException	Checked	Java	false	false
+netty-4.1	166	java.io.IOException	Checked	Java	false	false
+netty-4.1	167	java.io.IOException	Checked	Java	false	false
+netty-4.1	168	java.io.IOException	Checked	Java	false	false
+netty-4.1	169	java.io.IOException	Checked	Java	false	false
+netty-4.1	170	java.io.IOException	Checked	Java	false	false
+netty-4.1	171	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	172	java.lang.Exception	Checked	Java	false	true
+netty-4.1	173	java.lang.Exception	Checked	Java	false	true
+netty-4.1	174	java.io.IOException	Checked	Java	false	false
+netty-4.1	175	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	176	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	177	java.lang.InterruptedException	Checked	Java	false	true
+netty-4.1	178	java.io.IOException	Checked	Java	false	true
+netty-4.1	179	java.io.IOException	Checked	Java	false	true
+netty-4.1	180	java.io.IOException	Checked	Java	false	false
+netty-4.1	181	java.io.IOException	Checked	Java	false	false
+netty-4.1	182	java.io.IOException	Checked	Java	false	false
+netty-4.1	183	java.io.IOException	Checked	Java	false	false
+netty-4.1	184	java.io.IOException	Checked	Java	false	false
+netty-4.1	185	java.io.IOException	Checked	Java	false	false
+netty-4.1	186	java.io.IOException	Checked	Java	false	false
+netty-4.1	187	java.io.IOException	Checked	Java	false	false
+netty-4.1	188	java.io.IOException	Checked	Java	false	false
+netty-4.1	189	java.io.IOException	Checked	Java	false	false
+netty-4.1	190	java.io.IOException	Checked	Java	false	false
+netty-4.1	191	java.io.IOException	Checked	Java	false	false
+netty-4.1	192	java.io.IOException	Checked	Java	false	false
+netty-4.1	193	java.io.IOException	Checked	Java	false	false
+netty-4.1	194	java.io.IOException	Checked	Java	false	false
+netty-4.1	195	java.io.IOException	Checked	Java	false	false
+netty-4.1	196	java.net.UnknownHostException	Checked	Java	false	true
+netty-4.1	197	java.lang.Throwable	Checked	Java	false	true
+netty-4.1	198	java.io.IOException	Checked	Java	false	false
+netty-4.1	199	java.io.IOException	Checked	Java	false	false
+netty-4.1	200	java.io.IOException	Checked	Java	false	false
+netty-4.1	201	java.io.IOException	Checked	Java	false	false
+netty-4.1	202	java.io.IOException	Checked	Java	false	false
+netty-4.1	203	java.io.IOException	Checked	Java	false	false
+netty-4.1	204	java.io.IOException	Checked	Java	false	false
+netty-4.1	205	java.io.IOException	Checked	Java	false	false
+netty-4.1	206	java.io.IOException	Checked	Java	false	false
+netty-4.1	207	java.io.IOException	Checked	Java	false	false
+netty-4.1	208	java.io.IOException	Checked	Java	false	false
+netty-4.1	209	java.io.IOException	Checked	Java	false	false
+netty-4.1	210	java.io.IOException	Checked	Java	false	false
+netty-4.1	211	java.io.IOException	Checked	Java	false	false
+netty-4.1	212	java.io.IOException	Checked	Java	false	false
+netty-4.1	213	java.io.IOException	Checked	Java	false	false
+netty-4.1	214	java.io.IOException	Checked	Java	false	false
+netty-4.1	215	java.io.IOException	Checked	Java	false	false
+netty-4.1	216	java.io.IOException	Checked	Java	false	false
+netty-4.1	217	java.io.IOException	Checked	Java	false	false
+netty-4.1	218	java.io.IOException	Checked	Java	false	false
+netty-4.1	219	java.io.IOException	Checked	Java	false	false
+netty-4.1	220	java.io.IOException	Checked	Java	false	false
+netty-4.1	221	java.io.IOException	Checked	Java	false	false
+netty-4.1	222	java.io.IOException	Checked	Java	false	false
+netty-4.1	223	java.io.IOException	Checked	Java	false	false
+netty-4.1	224	java.io.IOException	Checked	Java	false	false
+netty-4.1	225	java.io.IOException	Checked	Java	false	false
+netty-4.1	226	java.io.IOException	Checked	Java	false	false
+netty-4.1	227	java.io.IOException	Checked	Java	false	false
+netty-4.1	228	java.io.IOException	Checked	Java	false	false
+netty-4.1	229	java.lang.UnsatisfiedLinkError	Error	Java	false	false
+netty-4.1	230	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	231	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	232	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	233	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	234	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	235	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	236	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	237	java.lang.Exception	Checked	Java	false	false
+netty-4.1	238	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	239	java.lang.Exception	Checked	Java	false	false
+netty-4.1	240	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	241	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	242	java.util.concurrent.RejectedExecutionException	Unchecked	Java	false	false
+netty-4.1	243	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	244	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	245	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	246	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	247	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	248	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	249	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	250	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	251	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	252	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	253	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	254	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	255	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	256	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	257	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	258	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	259	java.lang.RuntimeException	Unchecked	Java	false	false
+netty-4.1	260	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	261	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	262	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	263	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	264	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	265	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	266	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	267	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	268	java.lang.ClassCastException	Unchecked	Java	false	false
+netty-4.1	269	java.lang.ClassCastException	Unchecked	Java	false	false
+netty-4.1	270	java.lang.NumberFormatException	Unchecked	Java	false	true
+netty-4.1	271	java.lang.Exception	Checked	Java	false	false
+netty-4.1	272	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	273	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	274	java.lang.NumberFormatException	Unchecked	Java	false	false
+netty-4.1	275	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	276	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	277	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	278	java.util.concurrent.RejectedExecutionException	Unchecked	Java	false	false
+netty-4.1	279	java.util.concurrent.RejectedExecutionException	Unchecked	Java	false	false
+netty-4.1	280	java.io.IOException	Checked	Java	false	false
+netty-4.1	281	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	282	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	283	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	284	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	285	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	286	java.net.SocketException	Checked	Java	false	false
+netty-4.1	287	java.net.SocketException	Checked	Java	false	false
+netty-4.1	288	java.net.SocketException	Checked	Java	false	false
+netty-4.1	289	java.net.SocketException	Checked	Java	false	false
+netty-4.1	290	java.net.SocketException	Checked	Java	false	false
+netty-4.1	291	java.net.SocketException	Checked	Java	false	false
+netty-4.1	292	java.net.SocketException	Checked	Java	false	false
+netty-4.1	293	java.net.SocketException	Checked	Java	false	false
+netty-4.1	294	java.net.SocketException	Checked	Java	false	false
+netty-4.1	295	java.net.SocketException	Checked	Java	false	false
+netty-4.1	296	java.net.SocketException	Checked	Java	false	false
+netty-4.1	297	java.net.SocketException	Checked	Java	false	false
+netty-4.1	298	java.net.SocketException	Checked	Java	false	false
+netty-4.1	299	java.net.SocketException	Checked	Java	false	false
+netty-4.1	300	java.io.IOException	Checked	Java	false	false
+netty-4.1	301	java.io.IOException	Checked	Java	false	false
+netty-4.1	302	java.net.SocketException	Checked	Java	false	false
+netty-4.1	303	java.net.SocketException	Checked	Java	false	false
+netty-4.1	304	java.net.SocketException	Checked	Java	false	false
+netty-4.1	305	java.net.SocketException	Checked	Java	false	false
+netty-4.1	306	java.net.SocketException	Checked	Java	false	false
+netty-4.1	307	java.net.SocketException	Checked	Java	false	false
+netty-4.1	308	java.lang.Exception	Checked	Java	false	true
+netty-4.1	309	java.net.SocketException	Checked	Java	false	false
+netty-4.1	310	java.net.SocketException	Checked	Java	false	false
+netty-4.1	311	java.net.SocketException	Checked	Java	false	false
+netty-4.1	312	java.net.SocketException	Checked	Java	false	false
+netty-4.1	313	java.net.SocketException	Checked	Java	false	false
+netty-4.1	314	java.net.SocketException	Checked	Java	false	false
+netty-4.1	315	java.net.SocketException	Checked	Java	false	false
+netty-4.1	316	java.net.SocketException	Checked	Java	false	false
+netty-4.1	317	java.net.SocketException	Checked	Java	false	false
+netty-4.1	318	java.net.SocketException	Checked	Java	false	false
+netty-4.1	319	java.net.SocketException	Checked	Java	false	false
+netty-4.1	320	java.net.SocketException	Checked	Java	false	false
+netty-4.1	321	java.net.SocketException	Checked	Java	false	false
+netty-4.1	322	java.net.SocketException	Checked	Java	false	false
+netty-4.1	323	java.io.IOException	Checked	Java	false	false
+netty-4.1	324	java.io.IOException	Checked	Java	false	false
+netty-4.1	325	java.io.IOException	Checked	Java	false	false
+netty-4.1	326	java.io.IOException	Checked	Java	false	false
+netty-4.1	327	java.lang.Exception	Checked	Java	false	false
+netty-4.1	328	java.net.SocketException	Checked	Java	false	false
+netty-4.1	329	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	330	java.net.SocketTimeoutException	Checked	Java	false	false
+netty-4.1	331	java.net.SocketException	Checked	Java	false	false
+netty-4.1	332	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	333	java.io.IOException	Checked	Java	false	false
+netty-4.1	334	java.io.IOException	Checked	Java	false	false
+netty-4.1	335	java.io.IOException	Checked	Java	false	false
+netty-4.1	336	java.io.IOException	Checked	Java	false	false
+netty-4.1	337	java.io.IOException	Checked	Java	false	false
+netty-4.1	338	java.io.IOException	Checked	Java	false	false
+netty-4.1	339	java.io.IOException	Checked	Java	false	false
+netty-4.1	340	java.io.IOException	Checked	Java	false	false
+netty-4.1	341	java.net.SocketTimeoutException	Checked	Java	false	true
+netty-4.1	342	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	343	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	344	java.lang.Exception	Checked	Java	false	false
+netty-4.1	345	java.io.IOException	Checked	Java	false	false
+netty-4.1	346	java.net.SocketTimeoutException	Checked	Java	false	false
+netty-4.1	347	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	348	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	349	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	350	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	351	java.net.SocketTimeoutException	Checked	Java	false	false
+netty-4.1	352	java.lang.Throwable	Checked	Java	false	true
+netty-4.1	353	java.io.IOException	Checked	Java	false	false
+netty-4.1	354	java.io.IOException	Checked	Java	false	false
+netty-4.1	355	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	356	java.net.SocketException	Checked	Java	false	false
+netty-4.1	357	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	358	java.net.SocketException	Checked	Java	false	false
+netty-4.1	359	java.io.IOException	Checked	Java	false	false
+netty-4.1	360	java.net.SocketException	Checked	Java	false	false
+netty-4.1	361	java.lang.Exception	Checked	Java	false	true
+netty-4.1	362	java.lang.Exception	Checked	Java	false	true
+netty-4.1	363	java.lang.Exception	Checked	Java	false	false
+netty-4.1	364	java.lang.Exception	Checked	Java	false	false
+netty-4.1	365	java.lang.Exception	Checked	Java	false	false
+netty-4.1	366	java.lang.Throwable	Checked	Java	false	true
+netty-4.1	367	java.lang.Exception	Checked	Java	false	false
+netty-4.1	368	java.lang.Exception	Checked	Java	false	false
+netty-4.1	369	java.net.SocketException	Checked	Java	false	false
+netty-4.1	370	java.lang.Exception	Checked	Java	false	false
+netty-4.1	371	java.lang.Exception	Checked	Java	false	false
+netty-4.1	372	java.io.IOException	Checked	Java	false	false
+netty-4.1	373	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	374	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	375	java.io.IOException	Checked	Java	false	false
+netty-4.1	376	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	377	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	378	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	379	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	380	java.lang.Throwable	Checked	Java	false	true
+netty-4.1	381	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	382	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	383	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	384	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	385	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	386	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	387	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	388	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	389	java.io.IOException	Checked	Java	false	false
+netty-4.1	390	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	391	java.io.IOException	Checked	Java	false	false
+netty-4.1	392	java.io.IOException	Checked	Java	false	false
+netty-4.1	393	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	394	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	395	java.nio.channels.CancelledKeyException	Unchecked	Java	false	false
+netty-4.1	396	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	397	java.io.IOException	Checked	Java	false	false
+netty-4.1	398	java.lang.SecurityException	Unchecked	Java	false	false
+netty-4.1	399	java.io.IOException	Checked	Java	false	false
+netty-4.1	400	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	401	java.lang.NoSuchFieldException	Checked	Java	false	false
+netty-4.1	402	java.lang.IllegalAccessException	Checked	Java	false	false
+netty-4.1	403	java.lang.Exception	Checked	Java	false	false
+netty-4.1	404	java.lang.Exception	Checked	Java	false	false
+netty-4.1	405	java.lang.Exception	Checked	Java	false	false
+netty-4.1	406	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	407	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	408	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	409	java.lang.InterruptedException	Checked	Java	false	true
+netty-4.1	410	java.io.IOException	Checked	Java	false	false
+netty-4.1	411	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	412	java.nio.channels.CancelledKeyException	Unchecked	Java	false	false
+netty-4.1	413	java.lang.Exception	Checked	Java	false	false
+netty-4.1	414	java.lang.Exception	Checked	Java	false	false
+netty-4.1	415	java.nio.channels.CancelledKeyException	Unchecked	Java	false	false
+netty-4.1	416	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	417	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	418	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	419	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	420	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	421	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	422	java.util.NoSuchElementException	Unchecked	Java	false	false
+netty-4.1	423	java.lang.Exception	Checked	Java	false	false
+netty-4.1	424	java.lang.Exception	Checked	Java	false	false
+netty-4.1	425	java.lang.Exception	Checked	Java	false	false
+netty-4.1	426	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	427	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	428	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	429	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	430	java.lang.Exception	Checked	Java	false	false
+netty-4.1	431	java.lang.UnsupportedOperationException	Unchecked	Java	false	false
+netty-4.1	432	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	433	java.io.IOException	Checked	Java	false	true
+netty-4.1	434	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	435	java.io.IOException	Checked	Java	false	true
+netty-4.1	436	java.io.IOException	Checked	Java	false	true
+netty-4.1	437	java.lang.Exception	Checked	Java	false	false
+netty-4.1	438	java.lang.Exception	Checked	Java	false	false
+netty-4.1	439	java.io.IOException	Checked	Java	false	true
+netty-4.1	440	java.lang.UnsupportedOperationException	Unchecked	Java	false	false
+netty-4.1	441	java.lang.reflect.InvocationTargetException	Checked	Java	false	false
+netty-4.1	442	java.lang.reflect.InvocationTargetException	Checked	Java	false	false
+netty-4.1	443	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	444	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	445	java.lang.InterruptedException	Checked	Java	false	true
+netty-4.1	446	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	447	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	448	java.net.ConnectException	Checked	Java	false	false
+netty-4.1	449	java.lang.Exception	Checked	Java	false	true
+netty-4.1	450	java.io.IOException	Checked	Java	false	true
+netty-4.1	451	java.lang.InterruptedException	Checked	Java	false	true
+netty-4.1	452	java.lang.InterruptedException	Checked	Java	false	true
+netty-4.1	453	java.lang.InterruptedException	Checked	Java	false	true
+netty-4.1	454	java.lang.InterruptedException	Checked	Java	false	true
+netty-4.1	455	java.lang.InterruptedException	Checked	Java	false	true
+netty-4.1	456	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	457	java.lang.InterruptedException	Checked	Java	false	true
+netty-4.1	458	java.lang.InterruptedException	Checked	Java	false	true
+netty-4.1	459	java.lang.InterruptedException	Checked	Java	false	true
+netty-4.1	460	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	461	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	462	java.lang.InterruptedException	Checked	Java	false	true
+netty-4.1	463	java.security.cert.CertificateException	Checked	Java	false	false
+netty-4.1	464	io.netty.handler.codec.DecoderException	Unchecked	System	false	false
+netty-4.1	465	java.security.cert.CertificateException	Checked	Java	false	false
+netty-4.1	466	java.lang.InterruptedException	Checked	Java	false	true
+netty-4.1	467	java.lang.InterruptedException	Checked	Java	false	true
+netty-4.1	468	java.security.cert.CertificateException	Checked	Java	false	false
+netty-4.1	469	javax.net.ssl.SSLPeerUnverifiedException	Checked	Java	false	true
+netty-4.1	470	javax.net.ssl.SSLPeerUnverifiedException	Checked	Java	false	true
+netty-4.1	471	javax.net.ssl.SSLPeerUnverifiedException	Checked	Java	false	true
+netty-4.1	472	java.security.cert.CertificateException	Checked	Java	false	false
+netty-4.1	473	java.security.cert.CertificateException	Checked	Java	false	false
+netty-4.1	474	java.lang.InterruptedException	Checked	Java	false	true
+netty-4.1	475	java.lang.InterruptedException	Checked	Java	false	true
+netty-4.1	476	java.lang.InterruptedException	Checked	Java	false	true
+netty-4.1	477	java.lang.InterruptedException	Checked	Java	false	true
+netty-4.1	478	java.lang.InterruptedException	Checked	Java	false	true
+netty-4.1	479	java.lang.InterruptedException	Checked	Java	false	true
+netty-4.1	480	javax.naming.NamingException	Checked	Java	false	true
+netty-4.1	481	java.net.URISyntaxException	Checked	Java	false	false
+netty-4.1	482	java.lang.Exception	Checked	Java	false	true
+netty-4.1	483	java.lang.Exception	Checked	Java	false	false
+netty-4.1	484	java.lang.Exception	Checked	Java	false	false
+netty-4.1	485	java.lang.Exception	Checked	Java	false	false
+netty-4.1	486	java.lang.Exception	Checked	Java	false	false
+netty-4.1	487	java.lang.Exception	Checked	Java	false	false
+netty-4.1	488	java.net.UnknownHostException	Checked	Java	false	false
+netty-4.1	489	io.netty.handler.codec.CorruptedFrameException	Unchecked	System	false	false
+netty-4.1	490	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	491	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	492	java.lang.IllegalArgumentException	Unchecked	Java	false	false
+netty-4.1	493	java.net.UnknownHostException	Checked	Java	false	false
+netty-4.1	494	java.net.UnknownHostException	Checked	Java	false	false
+netty-4.1	495	java.lang.Exception	Checked	Java	false	false
+netty-4.1	496	java.lang.Exception	Checked	Java	false	false
+netty-4.1	497	java.lang.Exception	Checked	Java	false	false
+netty-4.1	498	java.lang.Exception	Checked	Java	false	false
+netty-4.1	499	java.lang.Exception	Checked	Java	false	false
+netty-4.1	500	java.lang.Exception	Checked	Java	false	false
+netty-4.1	501	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	502	java.net.UnknownHostException	Checked	Java	false	false
+netty-4.1	503	java.net.UnknownHostException	Checked	Java	false	false
+netty-4.1	504	java.io.IOException	Checked	Java	false	false
+netty-4.1	505	java.io.IOException	Checked	Java	false	false
+netty-4.1	506	java.lang.Exception	Checked	Java	false	false
+netty-4.1	507	java.lang.Exception	Checked	Java	false	false
+netty-4.1	508	java.lang.IndexOutOfBoundsException	Unchecked	Java	false	false
+netty-4.1	509	java.lang.InterruptedException	Checked	Java	false	false
+netty-4.1	510	java.security.PrivilegedActionException	Checked	Java	false	false
+netty-4.1	511	java.security.PrivilegedActionException	Checked	Java	false	false
+netty-4.1	512	java.security.PrivilegedActionException	Checked	Java	false	false
+netty-4.1	513	java.security.PrivilegedActionException	Checked	Java	false	false
+netty-4.1	514	java.lang.InterruptedException	Checked	Java	false	false
+netty-4.1	515	javax.net.ssl.SSLException	Checked	Java	false	false
+netty-4.1	516	java.lang.Exception	Checked	Java	false	false
+netty-4.1	517	javax.net.ssl.SSLException	Checked	Java	false	false
+netty-4.1	518	java.lang.Exception	Checked	Java	false	false
+netty-4.1	519	java.lang.Exception	Checked	Java	false	false
+netty-4.1	520	java.lang.Exception	Checked	Java	false	false
+netty-4.1	521	java.lang.Exception	Checked	Java	false	false
+netty-4.1	522	java.lang.Exception	Checked	Java	false	false
+netty-4.1	523	java.lang.Exception	Checked	Java	false	false
+netty-4.1	524	java.lang.Exception	Checked	Java	false	false
+netty-4.1	525	java.lang.Exception	Checked	Java	false	false
+netty-4.1	526	java.lang.Exception	Checked	Java	false	false
+netty-4.1	527	java.lang.Exception	Checked	Java	false	false
+netty-4.1	528	java.lang.Exception	Checked	Java	false	false
+netty-4.1	529	java.lang.Exception	Checked	Java	false	false
+netty-4.1	530	java.lang.Exception	Checked	Java	false	false
+netty-4.1	531	io.netty.handler.codec.http2.Http2Exception	Checked	System	false	false
+netty-4.1	532	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	533	java.lang.Exception	Checked	Java	false	false
+netty-4.1	534	java.lang.Exception	Checked	Java	false	false
+netty-4.1	535	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	536	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	537	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	538	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	539	java.lang.Exception	Checked	Java	false	false
+netty-4.1	540	java.lang.Exception	Checked	Java	false	false
+netty-4.1	541	java.lang.Exception	Checked	Java	false	false
+netty-4.1	542	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	543	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	544	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	545	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	546	io.netty.handler.codec.DecoderException	Unchecked	System	false	false
+netty-4.1	547	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	548	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	549	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	550	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	551	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	552	java.lang.Exception	Checked	Java	false	false
+netty-4.1	553	java.lang.Exception	Checked	Java	false	false
+netty-4.1	554	java.lang.Exception	Checked	Java	false	false
+netty-4.1	555	java.lang.Throwable	Checked	Java	false	true
+netty-4.1	556	java.lang.Exception	Checked	Java	false	true
+netty-4.1	557	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	558	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	559	java.lang.ClassNotFoundException	Checked	Java	false	false
+netty-4.1	560	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	561	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	562	java.lang.Exception	Checked	Java	false	false
+netty-4.1	563	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	564	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	565	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	566	java.lang.Exception	Checked	Java	false	true
+netty-4.1	567	java.lang.Exception	Checked	Java	false	false
+netty-4.1	568	javax.security.cert.CertificateException	Checked	Java	false	false
+netty-4.1	569	javax.net.ssl.SSLException	Checked	Java	false	false
+netty-4.1	570	java.lang.Exception	Checked	Java	false	false
+netty-4.1	571	javax.net.ssl.SSLException	Checked	Java	false	false
+netty-4.1	572	java.lang.Exception	Checked	Java	false	false
+netty-4.1	573	java.security.cert.CertificateException	Checked	Java	false	false
+netty-4.1	574	java.io.FileNotFoundException	Checked	Java	false	false
+netty-4.1	575	java.io.IOException	Checked	Java	false	false
+netty-4.1	576	java.io.FileNotFoundException	Checked	Java	false	false
+netty-4.1	577	java.io.IOException	Checked	Java	false	false
+netty-4.1	578	java.io.IOException	Checked	Java	false	false
+netty-4.1	579	java.io.IOException	Checked	Java	false	false
+netty-4.1	580	java.lang.Exception	Checked	Java	false	false
+netty-4.1	581	java.lang.Exception	Checked	Java	false	false
+netty-4.1	582	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	583	java.lang.Throwable	Checked	Java	false	true
+netty-4.1	584	java.lang.NumberFormatException	Unchecked	Java	false	false
+netty-4.1	585	java.lang.Exception	Checked	Java	false	false
+netty-4.1	586	javax.net.ssl.SSLException	Checked	Java	false	false
+netty-4.1	587	java.lang.Exception	Checked	Java	false	false
+netty-4.1	588	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	589	javax.net.ssl.SSLException	Checked	Java	false	false
+netty-4.1	590	java.lang.Exception	Checked	Java	false	false
+netty-4.1	591	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	592	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	593	java.lang.Exception	Checked	Java	false	false
+netty-4.1	594	java.lang.Exception	Checked	Java	false	false
+netty-4.1	595	javax.net.ssl.SSLException	Checked	Java	false	false
+netty-4.1	596	java.lang.Exception	Checked	Java	false	false
+netty-4.1	597	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	598	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	599	java.security.cert.CertificateException	Checked	Java	false	false
+netty-4.1	600	java.lang.Exception	Checked	Java	false	false
+netty-4.1	601	java.lang.Exception	Checked	Java	false	false
+netty-4.1	602	java.security.spec.InvalidKeySpecException	Checked	Java	false	false
+netty-4.1	603	java.security.spec.InvalidKeySpecException	Checked	Java	false	false
+netty-4.1	604	java.security.spec.InvalidKeySpecException	Checked	Java	false	false
+netty-4.1	605	java.io.IOException	Checked	Java	false	false
+netty-4.1	606	java.lang.Exception	Checked	Java	false	false
+netty-4.1	607	java.security.cert.CertificateException	Checked	Java	false	false
+netty-4.1	608	java.lang.Exception	Checked	Java	false	false
+netty-4.1	609	java.lang.Exception	Checked	Java	false	false
+netty-4.1	610	java.lang.Exception	Checked	Java	false	false
+netty-4.1	611	java.lang.Exception	Checked	Java	false	false
+netty-4.1	612	java.lang.Exception	Checked	Java	false	false
+netty-4.1	613	java.lang.Exception	Checked	Java	false	false
+netty-4.1	614	java.lang.Exception	Checked	Java	false	false
+netty-4.1	615	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	616	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	617	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	618	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	619	javax.net.ssl.SSLException	Checked	Java	false	false
+netty-4.1	620	java.lang.Exception	Checked	Java	false	false
+netty-4.1	621	java.lang.InterruptedException	Checked	Java	false	false
+netty-4.1	622	javax.net.ssl.SSLException	Checked	Java	false	false
+netty-4.1	623	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	624	java.security.NoSuchAlgorithmException	Checked	Java	false	false
+netty-4.1	625	java.security.cert.CertificateException	Checked	Java	false	false
+netty-4.1	626	java.security.cert.CertificateException	Checked	Java	false	false
+netty-4.1	627	java.security.NoSuchAlgorithmException	Checked	Java	false	false
+netty-4.1	628	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	629	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	630	java.lang.Exception	Checked	Java	false	false
+netty-4.1	631	java.io.IOException	Checked	Java	false	false
+netty-4.1	632	java.io.IOException	Checked	Java	false	false
+netty-4.1	633	java.security.KeyStoreException	Checked	Java	false	false
+netty-4.1	634	java.lang.Exception	Checked	Java	false	false
+netty-4.1	635	java.security.InvalidAlgorithmParameterException	Checked	Java	false	false
+netty-4.1	636	java.lang.Exception	Checked	Java	false	false
+netty-4.1	637	java.net.UnknownHostException	Checked	Java	false	false
+netty-4.1	638	java.lang.InterruptedException	Checked	Java	false	false
+netty-4.1	639	com.google.protobuf.InvalidProtocolBufferException	Checked	Library	false	false
+netty-4.1	640	java.io.IOException	Checked	Java	false	false
+netty-4.1	641	com.google.protobuf.InvalidProtocolBufferException	Checked	Library	false	false
+netty-4.1	642	com.google.protobuf.InvalidProtocolBufferException	Checked	Library	false	false
+netty-4.1	643	java.io.IOException	Checked	Java	false	false
+netty-4.1	644	com.google.protobuf.InvalidProtocolBufferException	Checked	Library	false	false
+netty-4.1	645	com.google.protobuf.InvalidProtocolBufferException	Checked	Library	false	false
+netty-4.1	646	java.io.IOException	Checked	Java	false	false
+netty-4.1	647	com.google.protobuf.InvalidProtocolBufferException	Checked	Library	false	false
+netty-4.1	648	com.google.protobuf.InvalidProtocolBufferException	Checked	Library	false	false
+netty-4.1	649	java.io.IOException	Checked	Java	false	false
+netty-4.1	650	com.google.protobuf.InvalidProtocolBufferException	Checked	Library	false	false
+netty-4.1	651	java.io.IOException	Checked	Java	true	false
+netty-4.1	652	java.lang.Exception	Checked	Java	true	false
+netty-4.1	653	io.netty.handler.codec.http.websocketx.WebSocketHandshakeException	Unchecked	System	false	false
+netty-4.1	654	io.netty.handler.codec.http.multipart.HttpPostRequestDecoder.ErrorDataDecoderException	Unchecked	System	false	false
+netty-4.1	655	io.netty.handler.codec.http.multipart.HttpPostRequestDecoder.ErrorDataDecoderException	Unchecked	System	false	false
+netty-4.1	656	io.netty.handler.codec.http.multipart.HttpPostRequestDecoder.EndOfDataDecoderException	Unchecked	System	false	false
+netty-4.1	657	java.io.IOException	Checked	Java	false	false
+netty-4.1	658	java.io.IOException	Checked	Java	false	false
+netty-4.1	659	java.io.FileNotFoundException	Checked	Java	false	false
+netty-4.1	660	java.io.UnsupportedEncodingException	Checked	Java	false	false
+netty-4.1	661	java.lang.Exception	Checked	Java	false	false
+netty-4.1	662	java.lang.InterruptedException	Checked	Java	false	false
+netty-4.1	663	java.lang.Exception	Checked	Java	false	false
+netty-4.1	664	java.lang.Exception	Checked	Java	false	false
+netty-4.1	665	java.lang.Exception	Checked	Java	false	false
+netty-4.1	666	java.lang.Exception	Checked	Java	false	false
+netty-4.1	667	java.lang.InterruptedException	Checked	Java	false	true
+netty-4.1	668	java.lang.InterruptedException	Checked	Java	false	false
+netty-4.1	669	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	670	java.lang.InterruptedException	Checked	Java	false	false
+netty-4.1	671	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	672	java.lang.Exception	Checked	Java	false	false
+netty-4.1	673	java.lang.Exception	Checked	Java	false	false
+netty-4.1	674	java.net.SocketException	Checked	Java	false	false
+netty-4.1	675	java.net.SocketException	Checked	Java	false	false
+netty-4.1	676	java.lang.Exception	Checked	Java	false	true
+netty-4.1	677	java.lang.Exception	Checked	Java	false	false
+netty-4.1	678	java.lang.Exception	Checked	Java	false	true
+netty-4.1	679	java.net.UnknownHostException	Checked	Java	false	false
+netty-4.1	680	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	681	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	682	java.lang.Exception	Checked	Java	false	false
+netty-4.1	683	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	684	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	685	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	686	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	687	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	688	java.lang.InterruptedException	Checked	Java	false	true
+netty-4.1	689	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	690	java.lang.Exception	Checked	Java	false	true
+netty-4.1	691	java.lang.Exception	Checked	Java	false	true
+netty-4.1	692	java.text.ParseException	Checked	Java	false	false
+netty-4.1	693	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	694	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	695	java.lang.NoSuchMethodException	Checked	Java	false	false
+netty-4.1	696	java.lang.reflect.InvocationTargetException	Checked	Java	false	false
+netty-4.1	697	java.lang.IllegalAccessException	Checked	Java	false	false
+netty-4.1	698	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	699	java.lang.ClassCastException	Unchecked	Java	false	false
+netty-4.1	700	java.net.SocketException	Checked	Java	false	false
+netty-4.1	701	java.net.SocketException	Checked	Java	false	false
+netty-4.1	702	java.lang.Exception	Checked	Java	false	true
+netty-4.1	703	java.lang.Exception	Checked	Java	false	true
+netty-4.1	704	java.lang.Exception	Checked	Java	false	false
+netty-4.1	705	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	706	java.lang.UnsatisfiedLinkError	Error	Java	false	false
+netty-4.1	707	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	708	java.lang.Exception	Checked	Java	false	false
+netty-4.1	709	java.lang.UnsatisfiedLinkError	Error	Java	false	false
+netty-4.1	710	java.lang.Exception	Checked	Java	false	false
+netty-4.1	711	java.lang.Exception	Checked	Java	false	false
+netty-4.1	712	java.lang.ClassNotFoundException	Checked	Java	false	false
+netty-4.1	713	java.lang.Exception	Checked	Java	false	false
+netty-4.1	714	java.io.IOException	Checked	Java	false	false
+netty-4.1	715	java.io.IOException	Checked	Java	false	true
+netty-4.1	716	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	717	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	718	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	719	java.lang.Throwable	Checked	Java	false	true
+netty-4.1	720	java.lang.Throwable	Checked	Java	false	true
+netty-4.1	721	java.lang.Throwable	Checked	Java	false	true
+netty-4.1	722	java.lang.Exception	Checked	Java	false	false
+netty-4.1	723	java.lang.NoSuchFieldException	Checked	Java	false	false
+netty-4.1	724	java.lang.SecurityException	Unchecked	Java	false	false
+netty-4.1	725	java.lang.IllegalAccessException	Checked	Java	false	false
+netty-4.1	726	java.lang.NoSuchMethodException	Checked	Java	false	false
+netty-4.1	727	java.lang.SecurityException	Unchecked	Java	false	false
+netty-4.1	728	java.lang.NoSuchFieldException	Checked	Java	false	false
+netty-4.1	729	java.lang.SecurityException	Unchecked	Java	false	false
+netty-4.1	730	java.lang.NoSuchMethodException	Checked	Java	false	false
+netty-4.1	731	java.lang.SecurityException	Unchecked	Java	false	false
+netty-4.1	732	java.lang.InstantiationException	Checked	Java	false	false
+netty-4.1	733	java.lang.IllegalAccessException	Checked	Java	false	false
+netty-4.1	734	java.lang.reflect.InvocationTargetException	Checked	Java	false	false
+netty-4.1	735	java.lang.NoSuchMethodException	Checked	Java	false	false
+netty-4.1	736	java.lang.SecurityException	Unchecked	Java	false	false
+netty-4.1	737	java.lang.IllegalAccessException	Checked	Java	false	false
+netty-4.1	738	java.lang.ClassNotFoundException	Checked	Java	false	false
+netty-4.1	739	java.lang.reflect.InvocationTargetException	Checked	Java	false	false
+netty-4.1	740	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	741	java.lang.NoSuchMethodException	Checked	Java	false	false
+netty-4.1	742	java.lang.SecurityException	Unchecked	Java	false	false
+netty-4.1	743	java.lang.IllegalAccessException	Checked	Java	false	false
+netty-4.1	744	java.lang.reflect.InvocationTargetException	Checked	Java	false	false
+netty-4.1	745	java.lang.IllegalAccessException	Checked	Java	false	false
+netty-4.1	746	java.lang.reflect.InvocationTargetException	Checked	Java	false	false
+netty-4.1	747	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	748	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	749	java.lang.SecurityException	Unchecked	Java	false	false
+netty-4.1	750	java.lang.RuntimeException	Unchecked	Java	false	false
+netty-4.1	751	java.security.PrivilegedActionException	Checked	Java	false	false
+netty-4.1	752	java.security.PrivilegedActionException	Checked	Java	false	false
+netty-4.1	753	java.security.PrivilegedActionException	Checked	Java	false	false
+netty-4.1	754	java.security.PrivilegedActionException	Checked	Java	false	false
+netty-4.1	755	java.security.PrivilegedActionException	Checked	Java	false	false
+netty-4.1	756	java.security.PrivilegedActionException	Checked	Java	false	false
+netty-4.1	757	java.security.PrivilegedActionException	Checked	Java	false	false
+netty-4.1	758	java.security.PrivilegedActionException	Checked	Java	false	false
+netty-4.1	759	java.net.UnknownHostException	Checked	Java	false	false
+netty-4.1	760	java.security.PrivilegedActionException	Checked	Java	false	false
+netty-4.1	761	java.io.IOException	Checked	Java	false	false
+netty-4.1	762	java.io.IOException	Checked	Java	false	false
+netty-4.1	763	java.lang.SecurityException	Unchecked	Java	false	false
+netty-4.1	764	java.lang.Exception	Checked	Java	false	true
+netty-4.1	765	java.lang.Exception	Checked	Java	false	true
+netty-4.1	766	java.lang.InterruptedException	Checked	Java	false	false
+netty-4.1	767	java.io.IOException	Checked	Java	false	true
+netty-4.1	768	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	769	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	770	java.lang.NoSuchMethodError	Error	Java	false	false
+netty-4.1	771	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	772	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	773	java.lang.InterruptedException	Checked	Java	false	false
+netty-4.1	774	java.lang.InterruptedException	Checked	Java	false	false
+netty-4.1	775	java.lang.InterruptedException	Checked	Java	false	false
+netty-4.1	776	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	777	java.lang.InterruptedException	Checked	Java	false	false
+netty-4.1	778	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	779	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	780	java.lang.Exception	Checked	Java	false	true
+netty-4.1	781	java.lang.Exception	Checked	Java	false	false
+netty-4.1	782	java.lang.Exception	Checked	Java	false	false
+netty-4.1	783	java.lang.InterruptedException	Checked	Java	false	false
+netty-4.1	784	java.lang.InterruptedException	Checked	Java	false	true
+netty-4.1	785	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	786	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	787	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	788	java.lang.Exception	Checked	Java	false	false
+netty-4.1	789	java.lang.InterruptedException	Checked	Java	false	false
+netty-4.1	790	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	791	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	792	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	793	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	794	java.lang.InterruptedException	Checked	Java	false	false
+netty-4.1	795	java.lang.InterruptedException	Checked	Java	false	true
+netty-4.1	796	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	797	java.lang.InterruptedException	Checked	Java	false	true
+netty-4.1	798	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	799	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	800	javax.xml.stream.XMLStreamException	Checked	Java	false	false
+netty-4.1	801	java.lang.Exception	Checked	Java	false	false
+netty-4.1	802	java.lang.Exception	Checked	Java	false	false
+netty-4.1	803	java.lang.IllegalArgumentException	Unchecked	Java	false	true
+netty-4.1	804	java.lang.IllegalArgumentException	Unchecked	Java	false	true
+netty-4.1	805	java.lang.Exception	Checked	Java	false	false
+netty-4.1	806	java.lang.Exception	Checked	Java	false	false
+netty-4.1	807	java.lang.Exception	Checked	Java	false	false
+netty-4.1	808	java.lang.Exception	Checked	Java	false	false
+netty-4.1	809	java.lang.Exception	Checked	Java	false	false
+netty-4.1	810	java.lang.Exception	Checked	Java	false	false
+netty-4.1	811	java.lang.Exception	Checked	Java	false	false
+netty-4.1	812	java.lang.Exception	Checked	Java	false	false
+netty-4.1	813	io.netty.handler.codec.redis.RedisCodecException	Unchecked	System	false	false
+netty-4.1	814	java.lang.Exception	Checked	Java	false	false
+netty-4.1	815	io.netty.handler.codec.CodecException	Unchecked	System	false	false
+netty-4.1	816	java.lang.Exception	Checked	Java	false	false
+netty-4.1	817	java.lang.Exception	Checked	Java	false	false
+netty-4.1	818	java.lang.Exception	Checked	Java	false	false
+netty-4.1	819	java.lang.Exception	Checked	Java	false	false
+netty-4.1	820	java.lang.Exception	Checked	Java	false	false
+netty-4.1	821	java.lang.Exception	Checked	Java	false	false
+netty-4.1	822	java.lang.Exception	Checked	Java	false	false
+netty-4.1	823	java.lang.Exception	Checked	Java	false	false
+netty-4.1	824	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	825	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	826	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	827	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	828	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	829	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	830	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	831	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	832	io.netty.handler.codec.http2.Http2Exception	Checked	System	false	false
+netty-4.1	833	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	834	io.netty.handler.codec.http2.Http2Exception	Checked	System	false	false
+netty-4.1	835	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	836	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	837	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	838	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	839	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	840	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	841	io.netty.handler.codec.http2.Http2Exception	Checked	System	false	false
+netty-4.1	842	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	843	io.netty.handler.codec.http2.Http2Exception	Checked	System	false	false
+netty-4.1	844	java.lang.RuntimeException	Unchecked	Java	false	false
+netty-4.1	845	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	846	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	847	io.netty.handler.codec.http2.Http2Exception	Checked	System	false	false
+netty-4.1	848	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	849	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	850	io.netty.handler.codec.http2.Http2Exception	Checked	System	false	false
+netty-4.1	851	java.lang.RuntimeException	Unchecked	Java	false	false
+netty-4.1	852	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	853	java.lang.IllegalArgumentException	Unchecked	Java	false	false
+netty-4.1	854	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	855	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	856	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	857	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	858	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	859	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	860	io.netty.handler.codec.http2.Http2Exception	Checked	System	false	false
+netty-4.1	861	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	862	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	863	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	864	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	865	io.netty.handler.codec.http2.Http2Exception	Checked	System	false	false
+netty-4.1	866	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	867	io.netty.handler.codec.http2.Http2Exception	Checked	System	false	false
+netty-4.1	868	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	869	io.netty.handler.codec.http2.Http2Exception	Checked	System	false	false
+netty-4.1	870	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	871	io.netty.handler.codec.http2.Http2Exception	Checked	System	false	false
+netty-4.1	872	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	873	io.netty.handler.codec.http2.Http2Exception	Checked	System	false	false
+netty-4.1	874	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	875	io.netty.handler.codec.http2.Http2Exception.StreamException	Checked	System	false	false
+netty-4.1	876	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	877	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	878	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	879	io.netty.handler.codec.http2.Http2Exception	Checked	System	false	false
+netty-4.1	880	io.netty.handler.codec.http2.Http2Exception	Checked	System	false	false
+netty-4.1	881	io.netty.handler.codec.http2.Http2Exception	Checked	System	false	false
+netty-4.1	882	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	883	io.netty.handler.codec.http2.Http2Exception	Checked	System	false	false
+netty-4.1	884	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	885	io.netty.handler.codec.http2.Http2Exception	Checked	System	false	false
+netty-4.1	886	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	887	java.lang.Exception	Checked	Java	false	false
+netty-4.1	888	java.lang.Exception	Checked	Java	false	false
+netty-4.1	889	io.netty.handler.codec.http2.Http2Exception	Checked	System	false	false
+netty-4.1	890	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	891	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	892	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	893	io.netty.handler.codec.http2.Http2Exception	Checked	System	false	false
+netty-4.1	894	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	895	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	896	java.lang.Exception	Checked	Java	false	false
+netty-4.1	897	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	898	io.netty.handler.codec.http2.Http2Exception	Checked	System	false	false
+netty-4.1	899	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	900	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	901	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	902	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	903	io.netty.handler.codec.http2.Http2Exception	Checked	System	false	false
+netty-4.1	904	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	905	io.netty.handler.codec.http2.Http2Exception	Checked	System	false	false
+netty-4.1	906	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	907	io.netty.handler.codec.http2.Http2Exception	Checked	System	false	false
+netty-4.1	908	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	909	io.netty.handler.codec.http2.Http2Exception	Checked	System	false	false
+netty-4.1	910	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	911	io.netty.handler.codec.http2.Http2Exception	Checked	System	false	false
+netty-4.1	912	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	913	java.lang.Exception	Checked	Java	false	false
+netty-4.1	914	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	915	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	916	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	917	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	918	java.lang.Exception	Checked	Java	false	false
+netty-4.1	919	java.lang.Exception	Checked	Java	false	false
+netty-4.1	920	java.lang.IllegalArgumentException	Unchecked	Java	false	false
+netty-4.1	921	java.util.zip.DataFormatException	Checked	Java	false	false
+netty-4.1	922	java.lang.IllegalArgumentException	Unchecked	Java	false	false
+netty-4.1	923	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	924	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	925	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	926	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	927	java.lang.NumberFormatException	Unchecked	Java	false	true
+netty-4.1	928	java.lang.NumberFormatException	Unchecked	Java	false	true
+netty-4.1	929	io.netty.util.IllegalReferenceCountException	Unchecked	System	false	false
+netty-4.1	930	io.netty.util.IllegalReferenceCountException	Unchecked	System	false	false
+netty-4.1	931	java.lang.Exception	Checked	Java	false	false
+netty-4.1	932	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	933	java.lang.NumberFormatException	Unchecked	Java	false	false
+netty-4.1	934	java.lang.NumberFormatException	Unchecked	Java	false	false
+netty-4.1	935	java.lang.Exception	Checked	Java	false	false
+netty-4.1	936	java.lang.Exception	Checked	Java	false	false
+netty-4.1	937	java.lang.Exception	Checked	Java	false	false
+netty-4.1	938	java.lang.Exception	Checked	Java	false	false
+netty-4.1	939	java.lang.Exception	Checked	Java	false	false
+netty-4.1	940	java.lang.Exception	Checked	Java	false	false
+netty-4.1	941	java.nio.charset.UnsupportedCharsetException	Unchecked	Java	false	false
+netty-4.1	942	java.nio.charset.CharacterCodingException	Checked	Java	false	false
+netty-4.1	943	java.io.UnsupportedEncodingException	Checked	Java	false	false
+netty-4.1	944	io.netty.handler.codec.CorruptedFrameException	Unchecked	System	false	false
+netty-4.1	945	io.netty.handler.codec.CorruptedFrameException	Unchecked	System	false	false
+netty-4.1	946	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	947	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	948	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	949	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	950	java.security.NoSuchAlgorithmException	Checked	Java	false	false
+netty-4.1	951	java.security.NoSuchAlgorithmException	Checked	Java	false	false
+netty-4.1	952	java.io.IOException	Checked	Java	false	false
+netty-4.1	953	java.io.IOException	Checked	Java	false	false
+netty-4.1	954	java.io.IOException	Checked	Java	false	false
+netty-4.1	955	java.io.IOException	Checked	Java	false	false
+netty-4.1	956	java.io.IOException	Checked	Java	false	false
+netty-4.1	957	java.io.IOException	Checked	Java	false	false
+netty-4.1	958	java.io.IOException	Checked	Java	false	false
+netty-4.1	959	java.io.IOException	Checked	Java	false	false
+netty-4.1	960	java.io.IOException	Checked	Java	false	false
+netty-4.1	961	java.io.IOException	Checked	Java	false	false
+netty-4.1	962	java.io.IOException	Checked	Java	false	true
+netty-4.1	963	java.io.IOException	Checked	Java	false	false
+netty-4.1	964	java.io.IOException	Checked	Java	false	false
+netty-4.1	965	java.nio.charset.UnsupportedCharsetException	Unchecked	Java	false	false
+netty-4.1	966	java.io.IOException	Checked	Java	false	false
+netty-4.1	967	java.lang.NumberFormatException	Unchecked	Java	false	false
+netty-4.1	968	java.lang.NullPointerException	Unchecked	Java	false	false
+netty-4.1	969	java.lang.IllegalArgumentException	Unchecked	Java	false	false
+netty-4.1	970	java.io.IOException	Checked	Java	false	false
+netty-4.1	971	java.lang.IndexOutOfBoundsException	Unchecked	Java	false	false
+netty-4.1	972	io.netty.handler.codec.http.multipart.HttpPostRequestDecoder.NotEnoughDataDecoderException	Unchecked	System	false	false
+netty-4.1	973	io.netty.handler.codec.http.multipart.HttpPostRequestDecoder.NotEnoughDataDecoderException	Unchecked	System	false	false
+netty-4.1	974	io.netty.handler.codec.http.multipart.HttpPostRequestDecoder.NotEnoughDataDecoderException	Unchecked	System	false	false
+netty-4.1	975	java.lang.NullPointerException	Unchecked	Java	false	false
+netty-4.1	976	java.lang.IllegalArgumentException	Unchecked	Java	false	false
+netty-4.1	977	java.lang.NullPointerException	Unchecked	Java	false	false
+netty-4.1	978	java.lang.IllegalArgumentException	Unchecked	Java	false	false
+netty-4.1	979	java.lang.NullPointerException	Unchecked	Java	false	false
+netty-4.1	980	java.lang.IllegalArgumentException	Unchecked	Java	false	false
+netty-4.1	981	java.lang.NullPointerException	Unchecked	Java	false	false
+netty-4.1	982	java.lang.IllegalArgumentException	Unchecked	Java	false	false
+netty-4.1	983	java.lang.NullPointerException	Unchecked	Java	false	false
+netty-4.1	984	java.lang.IllegalArgumentException	Unchecked	Java	false	false
+netty-4.1	985	java.io.IOException	Checked	Java	false	false
+netty-4.1	986	java.io.IOException	Checked	Java	false	false
+netty-4.1	987	java.nio.charset.UnsupportedCharsetException	Unchecked	Java	false	false
+netty-4.1	988	java.io.IOException	Checked	Java	false	false
+netty-4.1	989	java.lang.NumberFormatException	Unchecked	Java	false	false
+netty-4.1	990	java.lang.NullPointerException	Unchecked	Java	false	false
+netty-4.1	991	java.lang.IllegalArgumentException	Unchecked	Java	false	false
+netty-4.1	992	java.io.IOException	Checked	Java	false	false
+netty-4.1	993	java.lang.IndexOutOfBoundsException	Unchecked	Java	false	false
+netty-4.1	994	java.lang.IndexOutOfBoundsException	Unchecked	Java	false	false
+netty-4.1	995	java.lang.IndexOutOfBoundsException	Unchecked	Java	false	false
+netty-4.1	996	java.lang.IndexOutOfBoundsException	Unchecked	Java	false	false
+netty-4.1	997	java.io.IOException	Checked	Java	false	false
+netty-4.1	998	java.io.IOException	Checked	Java	false	false
+netty-4.1	999	java.io.IOException	Checked	Java	false	false
+netty-4.1	1000	java.io.IOException	Checked	Java	false	false
+netty-4.1	1001	java.io.UnsupportedEncodingException	Checked	Java	false	false
+netty-4.1	1002	java.io.IOException	Checked	Java	false	false
+netty-4.1	1003	java.io.IOException	Checked	Java	false	false
+netty-4.1	1004	io.netty.handler.codec.http.multipart.HttpPostRequestDecoder.ErrorDataDecoderException	Unchecked	System	false	false
+netty-4.1	1005	java.io.IOException	Checked	Java	false	false
+netty-4.1	1006	io.netty.handler.codec.http.multipart.HttpPostRequestDecoder.ErrorDataDecoderException	Unchecked	System	false	false
+netty-4.1	1007	java.io.IOException	Checked	Java	false	false
+netty-4.1	1008	java.lang.IllegalArgumentException	Unchecked	Java	false	false
+netty-4.1	1009	java.lang.IllegalArgumentException	Unchecked	Java	false	false
+netty-4.1	1010	java.io.IOException	Checked	Java	false	false
+netty-4.1	1011	java.io.IOException	Checked	Java	false	false
+netty-4.1	1012	java.io.IOException	Checked	Java	false	false
+netty-4.1	1013	java.io.IOException	Checked	Java	false	false
+netty-4.1	1014	java.io.IOException	Checked	Java	false	false
+netty-4.1	1015	java.lang.Exception	Checked	Java	false	false
+netty-4.1	1016	java.lang.NumberFormatException	Unchecked	Java	false	true
+netty-4.1	1017	java.lang.IllegalArgumentException	Unchecked	Java	false	false
+netty-4.1	1018	java.lang.IllegalArgumentException	Unchecked	Java	false	false
+netty-4.1	1019	java.lang.IllegalArgumentException	Unchecked	Java	false	false
+netty-4.1	1020	java.lang.IllegalArgumentException	Unchecked	Java	false	false
+netty-4.1	1021	java.lang.NumberFormatException	Unchecked	Java	false	false
+netty-4.1	1022	io.netty.handler.codec.haproxy.HAProxyProtocolException	Unchecked	System	false	false
+netty-4.1	1023	io.netty.handler.codec.DecoderException	Unchecked	System	false	false
+netty-4.1	1024	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	1025	io.netty.handler.codec.DecoderException	Unchecked	System	false	false
+netty-4.1	1026	java.lang.Exception	Checked	Java	false	false
+netty-4.1	1027	io.netty.handler.codec.DecoderException	Unchecked	System	false	false
+netty-4.1	1028	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	1029	java.lang.IndexOutOfBoundsException	Unchecked	Java	false	false
+netty-4.1	1030	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	1031	io.netty.handler.codec.EncoderException	Unchecked	System	false	false
+netty-4.1	1032	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	1033	io.netty.handler.codec.DecoderException	Unchecked	System	false	false
+netty-4.1	1034	java.lang.Exception	Checked	Java	false	false
+netty-4.1	1035	io.netty.handler.codec.EncoderException	Unchecked	System	false	false
+netty-4.1	1036	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	1037	io.netty.util.Signal	Error	System	false	false
+netty-4.1	1038	io.netty.handler.codec.DecoderException	Unchecked	System	false	false
+netty-4.1	1039	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	1040	io.netty.util.Signal	Error	System	false	false
+netty-4.1	1041	java.lang.ClassNotFoundException	Checked	Java	false	false
+netty-4.1	1042	java.lang.ClassNotFoundException	Checked	Java	false	false
+netty-4.1	1043	java.lang.Throwable	Checked	Java	false	true
+netty-4.1	1044	io.netty.handler.codec.marshalling.LimitingByteInput.TooBigObjectException	Checked	System	false	false
+netty-4.1	1045	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	1046	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	1047	java.lang.Exception	Checked	Java	false	false
+netty-4.1	1048	java.util.zip.DataFormatException	Checked	Java	false	false
+netty-4.1	1049	java.lang.Exception	Checked	Java	false	false
+netty-4.1	1050	net.jpountz.lz4.LZ4Exception	Unchecked	Library	false	false
+netty-4.1	1051	net.jpountz.lz4.LZ4Exception	Unchecked	Library	false	false
+netty-4.1	1052	java.lang.Exception	Checked	Java	false	false
+netty-4.1	1053	java.lang.Exception	Checked	Java	false	false
+netty-4.1	1054	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	1055	java.lang.IndexOutOfBoundsException	Unchecked	Java	false	false
+netty-4.1	1056	java.lang.IndexOutOfBoundsException	Unchecked	Java	false	false
+netty-4.1	1057	java.lang.IndexOutOfBoundsException	Unchecked	Java	false	false
+netty-4.1	1058	java.lang.Exception	Checked	Java	false	false
+netty-4.1	1059	java.lang.Exception	Checked	Java	false	false
+netty-4.1	1060	java.lang.Exception	Checked	Java	false	false
+netty-4.1	1061	java.lang.Exception	Checked	Java	false	false
+netty-4.1	1062	java.lang.IndexOutOfBoundsException	Unchecked	Java	false	false
+netty-4.1	1063	java.nio.charset.CharacterCodingException	Checked	Java	false	false
+netty-4.1	1064	java.nio.charset.CharacterCodingException	Checked	Java	false	false
+netty-4.1	1065	java.nio.charset.CharacterCodingException	Checked	Java	false	false
+netty-4.1	1066	java.lang.Throwable	Checked	Java	false	true
+netty-4.1	1067	java.lang.Throwable	Checked	Java	false	true
+netty-4.1	1068	java.lang.IndexOutOfBoundsException	Unchecked	Java	false	false
+netty-4.1	1069	java.lang.Throwable	Checked	Java	false	true
+netty-4.1	1070	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	1071	java.lang.Throwable	Checked	Java	false	false
+netty-4.1	1072	java.nio.channels.ClosedChannelException	Checked	Java	false	false
+netty-4.1	1073	java.nio.channels.ClosedChannelException	Checked	Java	false	false
+netty-4.1	1074	java.nio.channels.ClosedChannelException	Checked	Java	false	false
+netty-4.1	1075	java.nio.channels.ClosedChannelException	Checked	Java	false	false
+netty-4.1	1076	java.nio.channels.ClosedChannelException	Checked	Java	false	false
+netty-4.1	1077	java.nio.channels.ClosedChannelException	Checked	Java	false	false
+netty-4.1	1078	java.lang.IllegalArgumentException	Unchecked	Java	false	false
+netty-4.1	1079	java.nio.channels.ClosedChannelException	Checked	Java	false	false
+netty-4.1	1080	java.nio.channels.ClosedChannelException	Checked	Java	false	false
+netty-4.1	1081	java.lang.IllegalArgumentException	Unchecked	Java	false	false
+netty-4.1	1082	java.nio.channels.ClosedChannelException	Checked	Java	false	false
+netty-4.1	1083	java.nio.channels.ClosedChannelException	Checked	Java	false	false
+netty-4.1	1084	java.nio.channels.ClosedChannelException	Checked	Java	false	false
+netty-4.1	1085	java.nio.channels.ClosedChannelException	Checked	Java	false	false
+
+

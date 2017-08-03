@@ -1,664 +1,772 @@
-PROJECT	EXCEPTION	TYPE	ORIGIN	HANDLERS	AUTOCOMPLETE	EMPTY
-spring-boot-master	java.lang.Throwable	Checked	Library	43	0	7
-spring-boot-master	java.lang.Error	Error	Java	4	0	2
-spring-boot-master	java.lang.OutOfMemoryError	Error	Java	1	0	1
-spring-boot-master	java.lang.LinkageError	Error	Java	3	0	1
-spring-boot-master	java.lang.UnsupportedClassVersionError	Error	Java	1	0	0
-spring-boot-master	java.lang.NoClassDefFoundError	Error	Java	11	0	6
-spring-boot-master	java.lang.NoSuchMethodError	Error	Java	6	0	2
-spring-boot-master	java.lang.AssertionError	Error	Java	1	0	0
-spring-boot-master	java.lang.Exception	Checked	Library	237	0	47
-spring-boot-master	org.json.simple.parser.ParseException	Checked	Library	2	0	0
-spring-boot-master	org.apache.catalina.LifecycleException	Checked	Library	2	0	2
-spring-boot-master	java.text.ParseException	Checked	Java	3	0	1
-spring-boot-master	org.springframework.batch.core.launch.NoSuchJobException	Checked	Library	1	0	0
-spring-boot-master	java.sql.SQLException	Checked	Java	3	0	0
-spring-boot-master	javax.mail.MessagingException	Checked	Library	1	0	0
-spring-boot-master	javax.naming.NamingException	Checked	Java	4	0	3
-spring-boot-master	org.springframework.validation.BindException	Checked	Library	1	0	0
-spring-boot-master	org.json.JSONException	Checked	Library	1	0	0
-spring-boot-master	org.eclipse.aether.resolution.ArtifactResolutionException	Checked	Library	1	0	0
-spring-boot-master	org.sonatype.plexus.components.cipher.PlexusCipherException	Checked	Library	1	0	0
-spring-boot-master	org.apache.maven.settings.building.SettingsBuildingException	Checked	Library	1	0	0
-spring-boot-master	org.codehaus.plexus.interpolation.InterpolationException	Checked	Library	1	0	0
-spring-boot-master	java.net.URISyntaxException	Checked	Java	8	0	0
-spring-boot-master	java.security.PrivilegedActionException	Checked	Java	1	0	1
-spring-boot-master	java.security.GeneralSecurityException	Checked	Java	1	0	0
-spring-boot-master	java.security.KeyManagementException	Checked	Java	1	0	0
-spring-boot-master	java.security.NoSuchAlgorithmException	Checked	Java	2	0	0
-spring-boot-master	org.apache.maven.plugin.MojoFailureException	Checked	Library	1	0	0
-spring-boot-master	org.apache.maven.plugin.MojoExecutionException	Checked	Library	1	0	0
-spring-boot-master	javax.management.MBeanException	Checked	Java	3	0	0
-spring-boot-master	javax.management.ReflectionException	Checked	Java	4	0	0
-spring-boot-master	javax.management.MalformedObjectNameException	Checked	Java	3	0	0
-spring-boot-master	javax.management.AttributeNotFoundException	Checked	Java	2	0	0
-spring-boot-master	javax.management.InstanceNotFoundException	Checked	Java	3	0	0
-spring-boot-master	java.lang.InterruptedException	Checked	Java	24	0	0
-spring-boot-master	java.lang.RuntimeException	Unchecked	Java	11	0	0
-spring-boot-master	org.springframework.core.convert.ConversionException	Unchecked	Library	1	0	0
-spring-boot-master	org.springframework.core.convert.ConverterNotFoundException	Unchecked	Library	1	0	0
-spring-boot-master	javax.validation.ValidationException	Unchecked	Java	1	0	0
-spring-boot-master	org.springframework.boot.web.server.WebServerException	Unchecked	System	1	0	0
-spring-boot-master	org.springframework.boot.web.embedded.tomcat.ConnectorStartFailedException	Unchecked	System	1	0	0
-spring-boot-master	java.lang.UnsupportedOperationException	Unchecked	Java	5	0	0
-spring-boot-master	org.springframework.boot.actuate.cloudfoundry.CloudFoundryAuthorizationException	Unchecked	System	1	0	0
-spring-boot-master	org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.NoSuchMetricException	Unchecked	System	1	0	1
-spring-boot-master	java.lang.NullPointerException	Unchecked	Java	1	0	1
-spring-boot-master	java.lang.SecurityException	Unchecked	Java	2	0	1
-spring-boot-master	java.security.AccessControlException	Unchecked	Java	2	0	1
-spring-boot-master	org.springframework.boot.autoconfigure.condition.OnBeanCondition.BeanTypeDeductionException	Unchecked	System	1	0	0
-spring-boot-master	org.springframework.boot.context.properties.bind.BindException	Unchecked	System	2	0	1
-spring-boot-master	java.lang.ClassCastException	Unchecked	Java	3	0	0
-spring-boot-master	org.springframework.boot.cli.command.init.ReportableException	Unchecked	System	1	0	0
-spring-boot-master	org.springframework.boot.cli.command.NoArgumentsException	Unchecked	System	1	0	0
-spring-boot-master	sample.narayana.SampleRuntimeException	Unchecked	System	1	0	0
-spring-boot-master	org.springframework.boot.configurationprocessor.metadata.InvalidConfigurationMetadataException	Unchecked	System	1	0	0
-spring-boot-master	java.lang.IllegalStateException	Unchecked	Java	2	0	1
-spring-boot-master	java.lang.IllegalArgumentException	Unchecked	Java	9	0	3
-spring-boot-master	java.lang.NumberFormatException	Unchecked	Java	5	0	4
-spring-boot-master	java.util.regex.PatternSyntaxException	Unchecked	Java	1	0	0
-spring-boot-master	org.springframework.boot.loader.tools.BuildPropertiesWriter.NullAdditionalPropertyValueException	Unchecked	System	1	0	0
-spring-boot-master	org.apache.maven.shared.artifact.filter.collection.ArtifactFilterException	Checked	Library	1	0	0
-spring-boot-master	java.io.IOException	Checked	Java	79	0	12
-spring-boot-master	java.net.UnknownHostException	Checked	Java	1	0	0
-spring-boot-master	org.springframework.boot.devtools.livereload.ConnectionClosedException	Checked	System	1	0	0
-spring-boot-master	java.nio.channels.AsynchronousCloseException	Checked	Java	1	0	1
-spring-boot-master	java.io.InterruptedIOException	Checked	Java	1	0	0
-spring-boot-master	java.net.SocketTimeoutException	Checked	Java	2	0	1
-spring-boot-master	java.net.BindException	Checked	Java	1	0	0
-spring-boot-master	java.net.ConnectException	Checked	Java	2	0	0
-spring-boot-master	java.io.FileNotFoundException	Checked	Java	4	0	2
-spring-boot-master	java.io.EOFException	Checked	Java	1	0	0
-spring-boot-master	java.io.UnsupportedEncodingException	Checked	Java	2	0	0
-spring-boot-master	java.net.MalformedURLException	Checked	Java	17	0	3
-spring-boot-master	java.lang.reflect.InvocationTargetException	Checked	Java	1	0	0
-spring-boot-master	java.lang.NoSuchMethodException	Checked	Java	4	0	3
-spring-boot-master	java.lang.ClassNotFoundException	Checked	Java	24	0	8
-spring-boot-master	javax.servlet.ServletException	Checked	Library	2	0	0
+EXCEPTION HIERARCHY
+java.lang.Throwable
+	java.lang.Exception
+		javax.servlet.ServletException
+		java.lang.ReflectiveOperationException
+			java.lang.ClassNotFoundException
+			java.lang.NoSuchMethodException
+			java.lang.reflect.InvocationTargetException
+		java.io.IOException
+			java.net.MalformedURLException
+			java.io.UnsupportedEncodingException
+			java.io.EOFException
+			java.io.FileNotFoundException
+			java.net.SocketException
+				java.net.ConnectException
+				java.net.BindException
+			java.io.InterruptedIOException
+				java.net.SocketTimeoutException
+			java.nio.channels.ClosedChannelException
+				java.nio.channels.AsynchronousCloseException
+			org.springframework.boot.devtools.livereload.ConnectionClosedException
+			java.net.UnknownHostException
+		org.apache.maven.shared.artifact.filter.collection.ArtifactFilterException
+		java.lang.RuntimeException
+			java.lang.IllegalArgumentException
+				org.springframework.boot.loader.tools.BuildPropertiesWriter.NullAdditionalPropertyValueException
+				java.util.regex.PatternSyntaxException
+				java.lang.NumberFormatException
+			java.lang.IllegalStateException
+			org.springframework.boot.configurationprocessor.metadata.InvalidConfigurationMetadataException
+			sample.narayana.SampleRuntimeException
+			org.springframework.boot.cli.command.CommandException
+				org.springframework.boot.cli.command.NoArgumentsException
+			org.springframework.boot.cli.command.init.ReportableException
+			java.lang.ClassCastException
+			org.springframework.boot.context.properties.bind.BindException
+			org.springframework.boot.autoconfigure.condition.OnBeanCondition.BeanTypeDeductionException
+			java.lang.SecurityException
+				java.security.AccessControlException
+			java.lang.NullPointerException
+			org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.NoSuchMetricException
+			org.springframework.boot.actuate.cloudfoundry.CloudFoundryAuthorizationException
+			java.lang.UnsupportedOperationException
+			org.springframework.boot.web.server.WebServerException
+				org.springframework.boot.web.embedded.tomcat.ConnectorStartFailedException
+			javax.validation.ValidationException
+			org.springframework.core.NestedRuntimeException
+				org.springframework.core.convert.ConversionException
+					org.springframework.core.convert.ConverterNotFoundException
+		java.lang.InterruptedException
+		javax.management.JMException
+			javax.management.OperationsException
+				javax.management.InstanceNotFoundException
+				javax.management.AttributeNotFoundException
+				javax.management.MalformedObjectNameException
+			javax.management.ReflectionException
+			javax.management.MBeanException
+		org.apache.maven.plugin.AbstractMojoExecutionException
+			org.apache.maven.plugin.MojoExecutionException
+			org.apache.maven.plugin.MojoFailureException
+		java.security.GeneralSecurityException
+			java.security.NoSuchAlgorithmException
+			java.security.KeyException
+				java.security.KeyManagementException
+		java.security.PrivilegedActionException
+		java.net.URISyntaxException
+		org.codehaus.plexus.interpolation.InterpolationException
+		org.apache.maven.settings.building.SettingsBuildingException
+		org.sonatype.plexus.components.cipher.PlexusCipherException
+		org.eclipse.aether.RepositoryException
+			org.eclipse.aether.resolution.ArtifactResolutionException
+		org.json.JSONException
+		org.springframework.validation.BindException
+		javax.naming.NamingException
+		javax.mail.MessagingException
+		java.sql.SQLException
+		org.springframework.batch.core.JobExecutionException
+			org.springframework.batch.core.launch.NoSuchJobException
+		java.text.ParseException
+		org.apache.catalina.LifecycleException
+		org.json.simple.parser.ParseException
+	java.lang.Error
+		java.lang.AssertionError
+		java.lang.LinkageError
+			java.lang.IncompatibleClassChangeError
+				java.lang.NoSuchMethodError
+			java.lang.NoClassDefFoundError
+			java.lang.ClassFormatError
+				java.lang.UnsupportedClassVersionError
+		java.lang.VirtualMachineError
+			java.lang.OutOfMemoryError
 
 
+PROJECT	EXCEPTION	HANDLERS	AUTOCOMPLETE	EMPTY
+spring-boot-master	java.lang.Throwable	43	0	7
+spring-boot-master	java.lang.Exception	237	0	47
+spring-boot-master	javax.servlet.ServletException	2	0	0
+spring-boot-master	java.lang.ReflectiveOperationException	0	0	0
+spring-boot-master	java.lang.ClassNotFoundException	24	0	8
+spring-boot-master	java.lang.NoSuchMethodException	4	0	3
+spring-boot-master	java.lang.reflect.InvocationTargetException	1	0	0
+spring-boot-master	java.io.IOException	79	0	12
+spring-boot-master	java.net.MalformedURLException	17	0	3
+spring-boot-master	java.io.UnsupportedEncodingException	2	0	0
+spring-boot-master	java.io.EOFException	1	0	0
+spring-boot-master	java.io.FileNotFoundException	4	0	2
+spring-boot-master	java.net.SocketException	0	0	0
+spring-boot-master	java.net.ConnectException	2	0	0
+spring-boot-master	java.net.BindException	1	0	0
+spring-boot-master	java.io.InterruptedIOException	1	0	0
+spring-boot-master	java.net.SocketTimeoutException	2	0	1
+spring-boot-master	java.nio.channels.ClosedChannelException	0	0	0
+spring-boot-master	java.nio.channels.AsynchronousCloseException	1	0	1
+spring-boot-master	org.springframework.boot.devtools.livereload.ConnectionClosedException	1	0	0
+spring-boot-master	java.net.UnknownHostException	1	0	0
+spring-boot-master	org.apache.maven.shared.artifact.filter.collection.ArtifactFilterException	1	0	0
+spring-boot-master	java.lang.RuntimeException	11	0	0
+spring-boot-master	java.lang.IllegalArgumentException	9	0	3
+spring-boot-master	org.springframework.boot.loader.tools.BuildPropertiesWriter.NullAdditionalPropertyValueException	1	0	0
+spring-boot-master	java.util.regex.PatternSyntaxException	1	0	0
+spring-boot-master	java.lang.NumberFormatException	5	0	4
+spring-boot-master	java.lang.IllegalStateException	2	0	1
+spring-boot-master	org.springframework.boot.configurationprocessor.metadata.InvalidConfigurationMetadataException	1	0	0
+spring-boot-master	sample.narayana.SampleRuntimeException	1	0	0
+spring-boot-master	org.springframework.boot.cli.command.CommandException	0	0	0
+spring-boot-master	org.springframework.boot.cli.command.NoArgumentsException	1	0	0
+spring-boot-master	org.springframework.boot.cli.command.init.ReportableException	1	0	0
+spring-boot-master	java.lang.ClassCastException	3	0	0
+spring-boot-master	org.springframework.boot.context.properties.bind.BindException	2	0	1
+spring-boot-master	org.springframework.boot.autoconfigure.condition.OnBeanCondition.BeanTypeDeductionException	1	0	0
+spring-boot-master	java.lang.SecurityException	2	0	1
+spring-boot-master	java.security.AccessControlException	2	0	1
+spring-boot-master	java.lang.NullPointerException	1	0	1
+spring-boot-master	org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.NoSuchMetricException	1	0	1
+spring-boot-master	org.springframework.boot.actuate.cloudfoundry.CloudFoundryAuthorizationException	1	0	0
+spring-boot-master	java.lang.UnsupportedOperationException	5	0	0
+spring-boot-master	org.springframework.boot.web.server.WebServerException	1	0	0
+spring-boot-master	org.springframework.boot.web.embedded.tomcat.ConnectorStartFailedException	1	0	0
+spring-boot-master	javax.validation.ValidationException	1	0	0
+spring-boot-master	org.springframework.core.NestedRuntimeException	0	0	0
+spring-boot-master	org.springframework.core.convert.ConversionException	1	0	0
+spring-boot-master	org.springframework.core.convert.ConverterNotFoundException	1	0	0
+spring-boot-master	java.lang.InterruptedException	24	0	0
+spring-boot-master	javax.management.JMException	0	0	0
+spring-boot-master	javax.management.OperationsException	0	0	0
+spring-boot-master	javax.management.InstanceNotFoundException	3	0	0
+spring-boot-master	javax.management.AttributeNotFoundException	2	0	0
+spring-boot-master	javax.management.MalformedObjectNameException	3	0	0
+spring-boot-master	javax.management.ReflectionException	4	0	0
+spring-boot-master	javax.management.MBeanException	3	0	0
+spring-boot-master	org.apache.maven.plugin.AbstractMojoExecutionException	0	0	0
+spring-boot-master	org.apache.maven.plugin.MojoExecutionException	1	0	0
+spring-boot-master	org.apache.maven.plugin.MojoFailureException	1	0	0
+spring-boot-master	java.security.GeneralSecurityException	1	0	0
+spring-boot-master	java.security.NoSuchAlgorithmException	2	0	0
+spring-boot-master	java.security.KeyException	0	0	0
+spring-boot-master	java.security.KeyManagementException	1	0	0
+spring-boot-master	java.security.PrivilegedActionException	1	0	1
+spring-boot-master	java.net.URISyntaxException	8	0	0
+spring-boot-master	org.codehaus.plexus.interpolation.InterpolationException	1	0	0
+spring-boot-master	org.apache.maven.settings.building.SettingsBuildingException	1	0	0
+spring-boot-master	org.sonatype.plexus.components.cipher.PlexusCipherException	1	0	0
+spring-boot-master	org.eclipse.aether.RepositoryException	0	0	0
+spring-boot-master	org.eclipse.aether.resolution.ArtifactResolutionException	1	0	0
+spring-boot-master	org.json.JSONException	1	0	0
+spring-boot-master	org.springframework.validation.BindException	1	0	0
+spring-boot-master	javax.naming.NamingException	4	0	3
+spring-boot-master	javax.mail.MessagingException	1	0	0
+spring-boot-master	java.sql.SQLException	3	0	0
+spring-boot-master	org.springframework.batch.core.JobExecutionException	0	0	0
+spring-boot-master	org.springframework.batch.core.launch.NoSuchJobException	1	0	0
+spring-boot-master	java.text.ParseException	3	0	1
+spring-boot-master	org.apache.catalina.LifecycleException	2	0	2
+spring-boot-master	org.json.simple.parser.ParseException	2	0	0
+spring-boot-master	java.lang.Error	4	0	2
+spring-boot-master	java.lang.AssertionError	1	0	0
+spring-boot-master	java.lang.LinkageError	3	0	1
+spring-boot-master	java.lang.IncompatibleClassChangeError	0	0	0
+spring-boot-master	java.lang.NoSuchMethodError	6	0	2
+spring-boot-master	java.lang.NoClassDefFoundError	11	0	6
+spring-boot-master	java.lang.ClassFormatError	0	0	0
+spring-boot-master	java.lang.UnsupportedClassVersionError	1	0	0
+spring-boot-master	java.lang.VirtualMachineError	0	0	0
+spring-boot-master	java.lang.OutOfMemoryError	1	0	1
 
-HANDLER ID	HANDLED EXCEPTION	EXCEPTION TYPE	EXCEPTION ORIGIN	AUTOCOMPLETE	EMPTY
-1	javax.servlet.ServletException	Checked	Library	false	false
-2	java.lang.Exception	Checked	Library	false	false
-3	java.lang.ClassNotFoundException	Checked	Java	false	false
-4	java.io.IOException	Checked	Java	false	true
-5	java.lang.Exception	Checked	Library	false	false
-6	java.lang.Exception	Checked	Library	false	false
-7	org.apache.maven.shared.artifact.filter.collection.ArtifactFilterException	Checked	Library	false	false
-8	java.lang.Exception	Checked	Library	false	false
-9	java.io.IOException	Checked	Java	false	false
-10	java.io.IOException	Checked	Java	false	false
-11	java.lang.NoSuchMethodException	Checked	Java	false	false
-12	java.lang.Exception	Checked	Library	false	false
-13	org.springframework.boot.loader.tools.BuildPropertiesWriter.NullAdditionalPropertyValueException	Unchecked	System	false	false
-14	java.lang.Exception	Checked	Library	false	false
-15	java.io.IOException	Checked	Java	false	false
-16	java.lang.Exception	Checked	Library	false	false
-17	java.lang.Exception	Checked	Library	false	false
-18	java.lang.InterruptedException	Checked	Java	false	false
-19	java.lang.Exception	Checked	Library	false	false
-20	javax.management.InstanceNotFoundException	Checked	Java	false	false
-21	javax.management.AttributeNotFoundException	Checked	Java	false	false
-22	javax.management.ReflectionException	Checked	Java	false	false
-23	javax.management.MBeanException	Checked	Java	false	false
-23	java.io.IOException	Checked	Java	false	false
-24	javax.management.ReflectionException	Checked	Java	false	false
-25	javax.management.MBeanException	Checked	Java	false	false
-26	javax.management.MalformedObjectNameException	Checked	Java	false	false
-27	org.apache.maven.plugin.MojoExecutionException	Checked	Library	false	false
-27	org.apache.maven.plugin.MojoFailureException	Checked	Library	false	false
-28	java.lang.Exception	Checked	Library	false	false
-29	java.lang.InterruptedException	Checked	Java	false	false
-30	java.io.IOException	Checked	Java	false	false
-31	java.lang.Exception	Checked	Library	false	false
-32	java.io.IOException	Checked	Java	false	false
-33	java.lang.Exception	Checked	Library	false	false
-34	javax.management.ReflectionException	Checked	Java	false	false
-35	java.lang.Exception	Checked	Library	false	false
-36	java.lang.InterruptedException	Checked	Java	false	false
-37	java.io.IOException	Checked	Java	false	false
-38	java.io.IOException	Checked	Java	false	false
-39	javax.management.InstanceNotFoundException	Checked	Java	false	false
-40	java.lang.ClassNotFoundException	Checked	Java	false	false
-41	java.lang.ClassNotFoundException	Checked	Java	false	false
-42	java.security.NoSuchAlgorithmException	Checked	Java	false	false
-43	java.lang.Throwable	Checked	Library	false	true
-44	java.lang.Exception	Checked	Library	false	true
-45	java.io.IOException	Checked	Java	false	false
-46	java.io.IOException	Checked	Java	false	false
-47	java.io.IOException	Checked	Java	false	false
-48	java.lang.InterruptedException	Checked	Java	false	false
-49	java.lang.Exception	Checked	Library	false	false
-50	java.lang.Exception	Checked	Library	false	false
-51	java.lang.Exception	Checked	Library	false	true
-52	java.lang.InterruptedException	Checked	Java	false	false
-53	java.lang.Exception	Checked	Library	false	false
-54	java.lang.IllegalArgumentException	Unchecked	Java	false	false
-55	java.lang.IllegalArgumentException	Unchecked	Java	false	false
-56	java.security.PrivilegedActionException	Checked	Java	false	true
-57	java.io.IOException	Checked	Java	false	true
-58	java.io.IOException	Checked	Java	false	true
-59	java.lang.Exception	Checked	Library	false	false
-60	java.lang.Exception	Checked	Library	false	false
-61	java.io.IOException	Checked	Java	false	false
-62	java.lang.NoSuchMethodException	Checked	Java	false	true
-63	java.lang.NoSuchMethodException	Checked	Java	false	true
-64	java.lang.IllegalStateException	Unchecked	Java	false	true
-65	java.io.IOException	Checked	Java	false	true
-66	java.lang.Throwable	Checked	Library	false	false
-67	java.lang.Exception	Checked	Library	false	true
-68	java.lang.Exception	Checked	Library	false	false
-69	java.lang.Exception	Checked	Library	false	false
-70	java.lang.Exception	Checked	Library	false	false
-71	java.lang.Exception	Checked	Library	false	true
-72	java.net.MalformedURLException	Checked	Java	false	false
-73	java.net.MalformedURLException	Checked	Java	false	false
-74	java.net.MalformedURLException	Checked	Java	false	true
-75	java.lang.Exception	Checked	Library	false	false
-76	java.lang.Exception	Checked	Library	false	false
-77	java.io.IOException	Checked	Java	false	false
-78	java.lang.Error	Error	Java	false	true
-79	java.io.IOException	Checked	Java	false	false
-80	java.net.MalformedURLException	Checked	Java	false	false
-81	java.net.MalformedURLException	Checked	Java	false	false
-82	java.io.IOException	Checked	Java	false	false
-83	java.io.IOException	Checked	Java	false	false
-84	java.io.IOException	Checked	Java	false	false
-85	java.io.UnsupportedEncodingException	Checked	Java	false	false
-86	java.io.EOFException	Checked	Java	false	false
-87	java.lang.Exception	Checked	Library	false	false
-88	java.lang.Exception	Checked	Library	false	false
-89	java.lang.Exception	Checked	Library	false	false
-90	java.io.IOException	Checked	Java	false	false
-91	java.io.IOException	Checked	Java	false	true
-92	java.io.IOException	Checked	Java	false	false
-93	java.io.IOException	Checked	Java	false	false
-94	java.io.IOException	Checked	Java	false	false
-95	java.io.IOException	Checked	Java	false	false
-96	java.io.IOException	Checked	Java	false	false
-97	java.io.IOException	Checked	Java	false	false
-98	java.io.IOException	Checked	Java	false	false
-99	java.lang.Throwable	Checked	Library	false	false
-100	java.lang.Exception	Checked	Library	false	false
-101	java.lang.Exception	Checked	Library	false	false
-102	java.io.FileNotFoundException	Checked	Java	false	true
-103	org.springframework.boot.configurationprocessor.metadata.InvalidConfigurationMetadataException	Unchecked	System	false	false
-104	java.lang.Exception	Checked	Library	false	false
-105	java.io.IOException	Checked	Java	false	false
-106	java.io.IOException	Checked	Java	false	false
-107	java.lang.Exception	Checked	Library	false	false
-108	java.lang.Exception	Checked	Library	false	true
-109	java.lang.IllegalArgumentException	Unchecked	Java	false	false
-110	java.lang.Exception	Checked	Library	false	false
-111	java.lang.ClassNotFoundException	Checked	Java	false	false
-112	java.lang.Exception	Checked	Library	false	false
-113	java.lang.Exception	Checked	Library	false	false
-114	java.lang.Exception	Checked	Library	false	false
-115	java.lang.IllegalArgumentException	Unchecked	Java	false	true
-116	java.lang.Exception	Checked	Library	false	false
-117	java.lang.Exception	Checked	Library	false	false
-118	java.io.IOException	Checked	Java	false	false
-119	java.lang.Exception	Checked	Library	false	false
-120	java.lang.Exception	Checked	Library	false	true
-121	java.lang.Exception	Checked	Library	false	false
-122	java.lang.ClassNotFoundException	Checked	Java	false	false
-123	java.lang.Throwable	Checked	Library	false	false
-124	java.lang.Exception	Checked	Library	false	false
-125	java.lang.Exception	Checked	Library	false	false
-126	java.lang.AssertionError	Error	Java	false	false
-127	java.net.URISyntaxException	Checked	Java	false	false
-128	java.lang.Exception	Checked	Library	false	false
-129	java.lang.Exception	Checked	Library	false	false
-130	java.io.IOException	Checked	Java	false	true
-131	java.lang.ClassNotFoundException	Checked	Java	false	false
-132	java.lang.Exception	Checked	Library	false	false
-133	java.io.IOException	Checked	Java	false	true
-134	java.lang.Exception	Checked	Library	false	false
-135	java.lang.NoSuchMethodError	Error	Java	false	false
-136	java.lang.Throwable	Checked	Library	false	false
-137	java.lang.RuntimeException	Unchecked	Java	false	false
-138	java.lang.Throwable	Checked	Library	false	false
-139	java.lang.Throwable	Checked	Library	false	false
-140	java.io.IOException	Checked	Java	false	true
-141	java.lang.Exception	Checked	Library	false	true
-142	java.lang.Exception	Checked	Library	false	false
-143	java.lang.Exception	Checked	Library	false	false
-144	java.lang.Exception	Checked	Library	false	false
-145	java.io.IOException	Checked	Java	false	false
-146	java.io.IOException	Checked	Java	false	false
-147	java.io.IOException	Checked	Java	false	false
-148	java.lang.RuntimeException	Unchecked	Java	false	false
-149	java.lang.Throwable	Checked	Library	false	false
-150	java.lang.Exception	Checked	Library	false	true
-151	java.lang.RuntimeException	Unchecked	Java	false	false
-152	java.lang.reflect.InvocationTargetException	Checked	Java	false	false
-153	java.lang.Throwable	Checked	Library	false	false
-154	java.lang.Throwable	Checked	Library	false	false
-155	java.lang.Throwable	Checked	Library	false	false
-156	java.lang.Throwable	Checked	Library	false	false
-157	java.lang.Throwable	Checked	Library	false	false
-158	java.lang.Throwable	Checked	Library	false	false
-159	sample.narayana.SampleRuntimeException	Unchecked	System	false	false
-160	java.lang.Exception	Checked	Library	false	false
-161	java.lang.Exception	Checked	Library	false	false
-162	java.lang.Exception	Checked	Library	false	false
-163	java.io.IOException	Checked	Java	false	false
-164	java.io.IOException	Checked	Java	false	false
-165	java.io.IOException	Checked	Java	false	false
-166	java.lang.InterruptedException	Checked	Java	false	false
-167	java.net.URISyntaxException	Checked	Java	false	false
-168	java.net.ConnectException	Checked	Java	false	false
-169	java.lang.Exception	Checked	Library	false	false
-170	java.lang.InterruptedException	Checked	Java	false	false
-171	java.lang.Exception	Checked	Library	false	false
-172	java.io.IOException	Checked	Java	false	false
-173	java.lang.Exception	Checked	Library	false	false
-174	java.lang.InterruptedException	Checked	Java	false	false
-175	java.io.InterruptedIOException	Checked	Java	false	false
-176	java.net.URISyntaxException	Checked	Java	false	false
-176	java.net.MalformedURLException	Checked	Java	false	false
-177	java.io.IOException	Checked	Java	false	false
-178	java.io.IOException	Checked	Java	false	true
-179	java.io.IOException	Checked	Java	false	false
-180	java.lang.InterruptedException	Checked	Java	false	false
-181	java.lang.Exception	Checked	Library	false	false
-182	java.nio.channels.AsynchronousCloseException	Checked	Java	false	true
-183	java.lang.Exception	Checked	Library	false	false
-184	java.io.IOException	Checked	Java	false	false
-185	java.lang.Exception	Checked	Library	false	true
-186	java.net.MalformedURLException	Checked	Java	false	false
-187	java.io.IOException	Checked	Java	false	false
-188	java.lang.Exception	Checked	Library	false	true
-189	java.lang.Exception	Checked	Library	false	false
-190	java.lang.Exception	Checked	Library	false	false
-191	java.lang.Exception	Checked	Library	false	false
-192	java.lang.Exception	Checked	Library	false	false
-193	java.lang.Exception	Checked	Library	false	false
-194	java.lang.OutOfMemoryError	Error	Java	false	true
-195	java.lang.InterruptedException	Checked	Java	false	false
-196	java.lang.InterruptedException	Checked	Java	false	false
-197	java.lang.Exception	Checked	Library	false	false
-198	java.lang.Throwable	Checked	Library	false	false
-199	java.lang.Exception	Checked	Library	false	false
-200	java.io.IOException	Checked	Java	false	true
-201	java.lang.Exception	Checked	Library	false	true
-202	java.lang.ClassNotFoundException	Checked	Java	false	false
-203	java.net.MalformedURLException	Checked	Java	false	false
-204	java.net.URISyntaxException	Checked	Java	false	false
-204	java.net.MalformedURLException	Checked	Java	false	false
-205	java.io.IOException	Checked	Java	false	false
-206	java.lang.InterruptedException	Checked	Java	false	false
-207	java.net.ConnectException	Checked	Java	false	false
-208	java.net.URISyntaxException	Checked	Java	false	false
-209	java.lang.InterruptedException	Checked	Java	false	false
-210	java.lang.Exception	Checked	Library	false	false
-211	java.net.SocketTimeoutException	Checked	Java	false	false
-212	java.net.SocketTimeoutException	Checked	Java	false	true
-213	java.lang.Exception	Checked	Library	false	false
-214	java.lang.InterruptedException	Checked	Java	false	false
-215	java.lang.InterruptedException	Checked	Java	false	false
-216	java.lang.Exception	Checked	Library	false	false
-217	org.springframework.boot.devtools.livereload.ConnectionClosedException	Checked	System	false	false
-218	java.lang.Exception	Checked	Library	false	false
-219	java.lang.InterruptedException	Checked	Java	false	false
-220	java.lang.InterruptedException	Checked	Java	false	false
-221	java.io.IOException	Checked	Java	false	false
-222	java.lang.Exception	Checked	Library	false	false
-223	java.lang.Exception	Checked	Library	false	false
-224	java.lang.InterruptedException	Checked	Java	false	false
-225	java.lang.Exception	Checked	Library	false	true
-226	java.lang.Exception	Checked	Library	false	false
-227	java.lang.Exception	Checked	Library	false	false
-228	java.net.MalformedURLException	Checked	Java	false	false
-229	java.lang.Exception	Checked	Library	false	false
-230	java.lang.IllegalArgumentException	Unchecked	Java	false	true
-231	java.net.MalformedURLException	Checked	Java	false	false
-232	java.lang.Exception	Checked	Library	false	false
-233	java.lang.Exception	Checked	Library	false	true
-234	java.lang.Exception	Checked	Library	false	true
-235	java.lang.Exception	Checked	Library	false	true
-236	java.lang.Exception	Checked	Library	false	false
-237	java.net.MalformedURLException	Checked	Java	false	false
-238	java.lang.ClassNotFoundException	Checked	Java	false	false
-239	java.lang.Exception	Checked	Library	false	false
-240	java.net.MalformedURLException	Checked	Java	false	true
-241	java.lang.Exception	Checked	Library	false	false
-242	org.codehaus.plexus.interpolation.InterpolationException	Checked	Library	false	false
-243	java.io.IOException	Checked	Java	false	false
-244	org.apache.maven.settings.building.SettingsBuildingException	Checked	Library	false	false
-245	java.lang.Exception	Checked	Library	false	false
-246	org.sonatype.plexus.components.cipher.PlexusCipherException	Checked	Library	false	false
-247	org.eclipse.aether.resolution.ArtifactResolutionException	Checked	Library	false	false
-247	java.net.MalformedURLException	Checked	Java	false	false
-248	java.lang.Exception	Checked	Library	false	false
-249	java.lang.Exception	Checked	Library	false	false
-250	java.lang.Exception	Checked	Library	false	false
-251	java.io.IOException	Checked	Java	false	false
-252	org.springframework.boot.cli.command.NoArgumentsException	Unchecked	System	false	false
-253	java.lang.Exception	Checked	Library	false	false
-254	java.io.IOException	Checked	Java	false	false
-255	java.lang.Exception	Checked	Library	false	false
-256	java.lang.Exception	Checked	Library	false	false
-257	java.lang.Exception	Checked	Library	false	false
-258	java.lang.NoSuchMethodException	Checked	Java	false	true
-259	java.lang.Exception	Checked	Library	false	false
-260	java.net.MalformedURLException	Checked	Java	false	true
-261	java.lang.InterruptedException	Checked	Java	false	false
-262	java.lang.Exception	Checked	Library	false	true
-263	java.io.IOException	Checked	Java	false	false
-264	java.lang.Exception	Checked	Library	false	true
-265	java.net.URISyntaxException	Checked	Java	false	false
-266	java.lang.Exception	Checked	Library	false	false
-267	java.lang.Exception	Checked	Library	false	false
-268	org.springframework.boot.cli.command.init.ReportableException	Unchecked	System	false	false
-269	java.lang.Exception	Checked	Library	false	false
-270	org.json.JSONException	Checked	Library	false	false
-271	java.io.IOException	Checked	Java	false	false
-272	java.lang.Exception	Checked	Library	false	true
-273	java.net.URISyntaxException	Checked	Java	false	false
-274	java.lang.Exception	Checked	Library	false	true
-275	java.lang.Exception	Checked	Library	false	false
-276	java.io.IOException	Checked	Java	false	false
-277	java.lang.Exception	Checked	Library	false	false
-278	java.io.IOException	Checked	Java	false	false
-279	java.io.IOException	Checked	Java	false	true
-280	java.io.IOException	Checked	Java	false	false
-281	java.io.IOException	Checked	Java	false	false
-282	java.io.IOException	Checked	Java	false	false
-283	java.lang.InterruptedException	Checked	Java	false	false
-284	java.lang.Exception	Checked	Library	false	false
-285	java.lang.Throwable	Checked	Library	false	true
-286	java.lang.Exception	Checked	Library	false	true
-287	java.lang.NoSuchMethodError	Error	Java	false	false
-288	java.lang.Exception	Checked	Library	false	false
-289	java.lang.Exception	Checked	Library	false	false
-290	java.lang.Exception	Checked	Library	false	false
-291	java.lang.Exception	Checked	Library	false	true
-292	java.lang.Throwable	Checked	Library	false	true
-293	java.lang.ClassCastException	Unchecked	Java	false	false
-294	java.io.IOException	Checked	Java	false	false
-295	org.springframework.boot.context.properties.bind.BindException	Unchecked	System	false	false
-296	java.lang.Exception	Checked	Library	false	false
-297	org.springframework.validation.BindException	Checked	Library	false	false
-298	java.lang.Exception	Checked	Library	false	false
-299	java.lang.LinkageError	Error	Java	false	false
-300	java.lang.Error	Error	Java	false	false
-301	java.lang.Exception	Checked	Library	false	true
-302	javax.naming.NamingException	Checked	Java	false	false
-303	javax.mail.MessagingException	Checked	Library	false	false
-304	java.lang.Exception	Checked	Library	false	false
-305	java.lang.Exception	Checked	Library	false	false
-306	java.io.IOException	Checked	Java	false	false
-307	javax.naming.NamingException	Checked	Java	false	true
-308	java.lang.Exception	Checked	Library	false	false
-309	java.lang.Exception	Checked	Library	false	true
-310	java.lang.NoClassDefFoundError	Error	Java	false	false
-311	java.lang.Exception	Checked	Library	false	false
-312	java.lang.Exception	Checked	Library	false	true
-313	java.lang.IllegalStateException	Unchecked	Java	false	false
-314	java.lang.Exception	Checked	Library	false	false
-315	java.sql.SQLException	Checked	Java	false	false
-316	java.lang.UnsupportedClassVersionError	Error	Java	false	false
-317	java.lang.Throwable	Checked	Library	false	false
-318	java.lang.Exception	Checked	Library	false	false
-319	java.lang.Exception	Checked	Library	false	false
-320	java.lang.IllegalArgumentException	Unchecked	Java	false	false
-321	java.lang.ClassNotFoundException	Checked	Java	false	false
-322	java.lang.ClassNotFoundException	Checked	Java	false	false
-323	java.lang.Exception	Checked	Library	false	false
-324	java.lang.ClassNotFoundException	Checked	Java	false	true
-324	java.lang.NoClassDefFoundError	Error	Java	false	true
-325	java.lang.Exception	Checked	Library	false	false
-326	java.lang.Exception	Checked	Library	false	false
-327	java.lang.Throwable	Checked	Library	false	false
-328	java.lang.RuntimeException	Unchecked	Java	false	false
-329	java.net.URISyntaxException	Checked	Java	false	false
-330	java.lang.Exception	Checked	Library	false	false
-331	java.lang.Exception	Checked	Library	false	false
-332	java.io.IOException	Checked	Java	false	false
-333	java.lang.ClassNotFoundException	Checked	Java	false	false
-333	java.lang.NoClassDefFoundError	Error	Java	false	false
-334	java.lang.ClassNotFoundException	Checked	Java	false	true
-335	org.springframework.boot.autoconfigure.condition.OnBeanCondition.BeanTypeDeductionException	Unchecked	System	false	false
-336	java.lang.Throwable	Checked	Library	false	false
-337	java.security.AccessControlException	Unchecked	Java	false	false
-338	java.lang.Throwable	Checked	Library	false	false
-339	java.lang.InterruptedException	Checked	Java	false	false
-340	java.lang.Exception	Checked	Library	false	true
-341	java.lang.NoClassDefFoundError	Error	Java	false	false
-342	javax.naming.NamingException	Checked	Java	false	true
-343	java.lang.NoClassDefFoundError	Error	Java	false	false
-344	java.lang.RuntimeException	Unchecked	Java	false	false
-345	org.springframework.boot.context.properties.bind.BindException	Unchecked	System	false	true
-346	java.lang.ClassCastException	Unchecked	Java	false	false
-347	java.io.IOException	Checked	Java	false	false
-348	java.lang.Exception	Checked	Library	false	false
-349	org.springframework.batch.core.launch.NoSuchJobException	Checked	Library	false	false
-350	javax.management.MalformedObjectNameException	Checked	Java	false	false
-351	java.lang.Exception	Checked	Library	false	true
-352	java.lang.Exception	Checked	Library	false	false
-353	java.lang.Exception	Checked	Library	false	false
-354	java.lang.Exception	Checked	Library	false	false
-355	java.lang.IllegalArgumentException	Unchecked	Java	false	false
-356	java.lang.Exception	Checked	Library	false	false
-357	java.lang.Exception	Checked	Library	false	false
-358	java.lang.Exception	Checked	Library	false	false
-359	java.lang.NoClassDefFoundError	Error	Java	false	true
-360	java.lang.Exception	Checked	Library	false	false
-361	java.lang.Exception	Checked	Library	false	false
-362	java.lang.Exception	Checked	Library	false	true
-363	java.lang.InterruptedException	Checked	Java	false	false
-364	java.lang.Throwable	Checked	Library	false	false
-365	java.lang.NoClassDefFoundError	Error	Java	false	true
-366	java.lang.InterruptedException	Checked	Java	false	false
-367	java.lang.NullPointerException	Unchecked	Java	false	true
-367	java.io.FileNotFoundException	Checked	Java	false	true
-368	java.lang.Throwable	Checked	Library	false	false
-369	java.lang.Exception	Checked	Library	false	false
-370	java.lang.IllegalArgumentException	Unchecked	Java	false	false
-371	org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.NoSuchMetricException	Unchecked	System	false	true
-372	java.util.regex.PatternSyntaxException	Unchecked	Java	false	false
-373	java.text.ParseException	Checked	Java	false	false
-374	org.springframework.boot.actuate.cloudfoundry.CloudFoundryAuthorizationException	Unchecked	System	false	false
-375	java.lang.Exception	Checked	Library	false	true
-376	java.lang.RuntimeException	Unchecked	Java	false	false
-377	java.security.GeneralSecurityException	Checked	Java	false	false
-378	javax.management.MalformedObjectNameException	Checked	Java	false	false
-379	javax.management.MBeanException	Checked	Java	false	false
-379	javax.management.ReflectionException	Checked	Java	false	false
-380	javax.management.AttributeNotFoundException	Checked	Java	false	false
-381	javax.management.InstanceNotFoundException	Checked	Java	false	false
-382	java.lang.Exception	Checked	Library	false	false
-383	java.io.IOException	Checked	Java	false	false
-384	java.lang.Exception	Checked	Library	false	false
-385	java.lang.Exception	Checked	Library	false	false
-386	java.lang.Exception	Checked	Library	false	false
-387	java.lang.Exception	Checked	Library	false	false
-388	java.lang.Exception	Checked	Library	false	false
-389	java.lang.Exception	Checked	Library	false	false
-390	java.lang.Exception	Checked	Library	false	true
-391	java.lang.Exception	Checked	Library	false	false
-392	java.lang.Exception	Checked	Library	false	true
-393	java.lang.Throwable	Checked	Library	false	false
-394	java.lang.UnsupportedOperationException	Unchecked	Java	false	false
-395	java.lang.Exception	Checked	Library	false	false
-396	java.lang.IllegalArgumentException	Unchecked	Java	false	true
-396	java.lang.ClassNotFoundException	Checked	Java	false	true
-397	java.io.IOException	Checked	Java	false	false
-398	java.lang.Exception	Checked	Library	false	true
-399	java.lang.Exception	Checked	Library	false	true
-400	java.lang.Exception	Checked	Library	false	true
-401	java.lang.Throwable	Checked	Library	false	false
-402	java.lang.Exception	Checked	Library	false	false
-403	java.lang.Throwable	Checked	Library	false	false
-404	java.lang.Exception	Checked	Library	false	false
-405	java.lang.ClassNotFoundException	Checked	Java	false	true
-406	java.lang.Throwable	Checked	Library	false	false
-407	java.security.AccessControlException	Unchecked	Java	false	true
-408	java.lang.Throwable	Checked	Library	false	false
-409	java.lang.Exception	Checked	Library	false	false
-410	java.lang.ClassNotFoundException	Checked	Java	false	false
-411	java.lang.Exception	Checked	Library	false	false
-412	java.lang.Exception	Checked	Library	false	false
-413	java.lang.Exception	Checked	Library	false	false
-414	java.lang.Throwable	Checked	Library	false	true
-415	java.lang.NoClassDefFoundError	Error	Java	false	false
-416	java.lang.Exception	Checked	Library	false	false
-417	java.io.UnsupportedEncodingException	Checked	Java	false	false
-418	java.lang.Throwable	Checked	Library	false	false
-419	java.lang.Throwable	Checked	Library	false	true
-420	java.lang.Exception	Checked	Library	false	true
-421	java.lang.RuntimeException	Unchecked	Java	false	false
-422	java.lang.Throwable	Checked	Library	false	false
-423	java.io.IOException	Checked	Java	false	false
-424	java.io.IOException	Checked	Java	false	false
-425	java.io.IOException	Checked	Java	false	false
-426	java.io.IOException	Checked	Java	false	false
-427	java.lang.RuntimeException	Unchecked	Java	false	false
-428	java.lang.Throwable	Checked	Library	false	false
-429	javax.servlet.ServletException	Checked	Library	false	false
-430	java.lang.RuntimeException	Unchecked	Java	false	false
-430	java.lang.Error	Error	Java	false	false
-431	java.lang.Exception	Checked	Library	false	false
-432	java.io.IOException	Checked	Java	false	false
-433	java.lang.ClassCastException	Unchecked	Java	false	false
-434	java.lang.Throwable	Checked	Library	false	false
-435	java.lang.RuntimeException	Unchecked	Java	false	false
-436	java.lang.Throwable	Checked	Library	false	false
-437	java.lang.Exception	Checked	Library	false	false
-438	java.lang.Exception	Checked	Library	false	false
-439	java.lang.Exception	Checked	Library	false	false
-440	java.lang.Exception	Checked	Library	false	false
-441	java.lang.Exception	Checked	Library	false	true
-442	java.lang.Exception	Checked	Library	false	true
-443	java.lang.Exception	Checked	Library	false	false
-444	java.security.NoSuchAlgorithmException	Checked	Java	false	false
-445	java.security.KeyManagementException	Checked	Java	false	false
-446	java.lang.Exception	Checked	Library	false	false
-447	java.lang.Exception	Checked	Library	false	false
-448	java.io.IOException	Checked	Java	false	false
-449	java.net.MalformedURLException	Checked	Java	false	false
-450	java.io.IOException	Checked	Java	false	false
-451	java.net.MalformedURLException	Checked	Java	false	false
-452	java.lang.Exception	Checked	Library	false	false
-453	java.lang.Exception	Checked	Library	false	true
-454	java.lang.Exception	Checked	Library	false	true
-455	java.lang.Exception	Checked	Library	false	false
-456	java.lang.Exception	Checked	Library	false	false
-457	java.lang.Exception	Checked	Library	false	false
-458	java.lang.ClassNotFoundException	Checked	Java	false	false
-459	java.lang.ClassNotFoundException	Checked	Java	false	false
-460	java.lang.SecurityException	Unchecked	Java	false	false
-461	java.lang.ClassNotFoundException	Checked	Java	false	true
-461	java.lang.LinkageError	Error	Java	false	true
-462	java.lang.Exception	Checked	Library	false	true
-463	java.io.FileNotFoundException	Checked	Java	false	false
-464	java.io.FileNotFoundException	Checked	Java	false	false
-465	java.lang.Exception	Checked	Library	false	true
-466	java.lang.Exception	Checked	Library	false	false
-467	java.lang.Exception	Checked	Library	false	false
-468	java.lang.Exception	Checked	Library	false	false
-469	java.lang.Exception	Checked	Library	false	false
-470	javax.naming.NamingException	Checked	Java	false	true
-471	org.springframework.boot.web.embedded.tomcat.ConnectorStartFailedException	Unchecked	System	false	false
-472	java.lang.Exception	Checked	Library	false	false
-473	org.apache.catalina.LifecycleException	Checked	Library	false	true
-474	java.lang.Exception	Checked	Library	false	false
-475	java.lang.Exception	Checked	Library	false	false
-476	java.lang.Exception	Checked	Library	false	false
-477	org.apache.catalina.LifecycleException	Checked	Library	false	true
-478	java.lang.Exception	Checked	Library	false	false
-479	java.lang.Exception	Checked	Library	false	true
-480	java.lang.Error	Error	Java	false	true
-481	java.lang.NoSuchMethodError	Error	Java	false	true
-482	java.lang.Exception	Checked	Library	false	false
-483	java.io.IOException	Checked	Java	false	false
-484	java.io.IOException	Checked	Java	false	false
-485	java.lang.Exception	Checked	Library	false	false
-486	java.lang.Exception	Checked	Library	false	false
-487	java.lang.Exception	Checked	Library	false	true
-488	org.springframework.boot.web.server.WebServerException	Unchecked	System	false	false
-489	java.lang.Exception	Checked	Library	false	false
-490	java.net.BindException	Checked	Java	false	false
-491	java.lang.Exception	Checked	Library	false	false
-492	java.lang.InterruptedException	Checked	Java	false	false
-493	java.lang.Exception	Checked	Library	false	false
-494	java.lang.NoSuchMethodError	Error	Java	false	true
-495	java.lang.Exception	Checked	Library	false	false
-496	javax.validation.ValidationException	Unchecked	Java	false	false
-497	java.lang.Exception	Checked	Library	false	true
-498	java.lang.Exception	Checked	Library	false	false
-499	java.lang.Exception	Checked	Library	false	false
-500	java.lang.Throwable	Checked	Library	false	false
-501	java.lang.Throwable	Checked	Library	false	false
-502	java.lang.Exception	Checked	Library	false	false
-503	java.lang.Throwable	Checked	Library	false	true
-504	java.lang.Throwable	Checked	Library	false	true
-505	java.lang.NoSuchMethodError	Error	Java	false	false
-506	java.lang.NoSuchMethodError	Error	Java	false	false
-507	java.lang.Exception	Checked	Library	false	false
-508	java.lang.SecurityException	Unchecked	Java	false	true
-509	java.lang.Exception	Checked	Library	false	false
-510	java.lang.Exception	Checked	Library	false	false
-511	java.lang.Exception	Checked	Library	false	true
-512	java.io.IOException	Checked	Java	false	false
-513	java.lang.ClassNotFoundException	Checked	Java	false	false
-513	java.lang.LinkageError	Error	Java	false	false
-514	java.lang.Throwable	Checked	Library	false	false
-515	java.sql.SQLException	Checked	Java	false	false
-516	java.sql.SQLException	Checked	Java	false	false
-517	java.lang.ClassNotFoundException	Checked	Java	false	true
-517	java.lang.NoClassDefFoundError	Error	Java	false	true
-518	java.lang.ClassNotFoundException	Checked	Java	false	true
-518	java.lang.NoClassDefFoundError	Error	Java	false	true
-519	java.lang.Exception	Checked	Library	false	false
-520	java.lang.ClassNotFoundException	Checked	Java	false	true
-520	java.lang.NoClassDefFoundError	Error	Java	false	true
-521	java.lang.NumberFormatException	Unchecked	Java	false	true
-522	java.lang.NumberFormatException	Unchecked	Java	false	true
-523	java.lang.Exception	Checked	Library	false	false
-524	java.lang.Exception	Checked	Library	false	false
-525	org.json.simple.parser.ParseException	Checked	Library	false	false
-526	org.json.simple.parser.ParseException	Checked	Library	false	false
-527	java.lang.Exception	Checked	Library	false	false
-528	java.lang.Exception	Checked	Library	false	false
-529	java.lang.Exception	Checked	Library	false	false
-530	java.text.ParseException	Checked	Java	false	true
-531	java.text.ParseException	Checked	Java	false	false
-532	java.lang.NumberFormatException	Unchecked	Java	false	false
-533	java.lang.NumberFormatException	Unchecked	Java	false	true
-534	java.lang.Exception	Checked	Library	false	false
-535	java.lang.Throwable	Checked	Library	false	false
-536	java.lang.Throwable	Checked	Library	false	false
-537	java.lang.Exception	Checked	Library	false	false
-538	java.lang.NumberFormatException	Unchecked	Java	false	true
-539	java.lang.Exception	Checked	Library	false	true
-540	java.lang.Exception	Checked	Library	false	true
-541	java.lang.UnsupportedOperationException	Unchecked	Java	false	false
-542	java.lang.UnsupportedOperationException	Unchecked	Java	false	false
-543	java.lang.Exception	Checked	Library	false	false
-544	java.lang.Exception	Checked	Library	false	false
-545	java.lang.UnsupportedOperationException	Unchecked	Java	false	false
-546	java.lang.Exception	Checked	Library	false	false
-547	java.lang.Exception	Checked	Library	false	false
-548	java.lang.Exception	Checked	Library	false	false
-549	java.lang.UnsupportedOperationException	Unchecked	Java	false	false
-550	java.lang.Exception	Checked	Library	false	false
-551	java.lang.Exception	Checked	Library	false	false
-552	java.lang.Exception	Checked	Library	false	false
-553	java.lang.Exception	Checked	Library	false	false
-554	java.lang.Exception	Checked	Library	false	true
-555	org.springframework.core.convert.ConversionException	Unchecked	Library	false	false
-556	org.springframework.core.convert.ConverterNotFoundException	Unchecked	Library	false	false
-557	java.lang.Exception	Checked	Library	false	false
-558	java.net.UnknownHostException	Checked	Java	false	false
-559	java.lang.Exception	Checked	Library	false	false
-560	java.lang.RuntimeException	Unchecked	Java	false	false
-561	java.lang.Exception	Checked	Library	false	false
-562	java.io.IOException	Checked	Java	false	true
-563	java.lang.ClassNotFoundException	Checked	Java	false	false
-564	java.lang.Exception	Checked	Library	false	false
-565	java.lang.Exception	Checked	Library	false	false
-566	java.lang.Exception	Checked	Library	false	false
-567	java.lang.Throwable	Checked	Library	false	false
+
+PROJECT	HANDLER ID	HANDLED EXCEPTION	EXCEPTION TYPE	EXCEPTION ORIGIN	AUTOCOMPLETE	EMPTY
+spring-boot-master	1	javax.servlet.ServletException	Checked	Library	false	false
+spring-boot-master	2	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	3	java.lang.ClassNotFoundException	Checked	Java	false	false
+spring-boot-master	4	java.io.IOException	Checked	Java	false	true
+spring-boot-master	5	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	6	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	7	org.apache.maven.shared.artifact.filter.collection.ArtifactFilterException	Checked	Library	false	false
+spring-boot-master	8	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	9	java.io.IOException	Checked	Java	false	false
+spring-boot-master	10	java.io.IOException	Checked	Java	false	false
+spring-boot-master	11	java.lang.NoSuchMethodException	Checked	Java	false	false
+spring-boot-master	12	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	13	org.springframework.boot.loader.tools.BuildPropertiesWriter.NullAdditionalPropertyValueException	Unchecked	System	false	false
+spring-boot-master	14	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	15	java.io.IOException	Checked	Java	false	false
+spring-boot-master	16	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	17	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	18	java.lang.InterruptedException	Checked	Java	false	false
+spring-boot-master	19	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	20	javax.management.InstanceNotFoundException	Checked	Java	false	false
+spring-boot-master	21	javax.management.AttributeNotFoundException	Checked	Java	false	false
+spring-boot-master	22	javax.management.ReflectionException	Checked	Java	false	false
+spring-boot-master	23	javax.management.MBeanException	Checked	Java	false	false
+spring-boot-master	23	java.io.IOException	Checked	Java	false	false
+spring-boot-master	24	javax.management.ReflectionException	Checked	Java	false	false
+spring-boot-master	25	javax.management.MBeanException	Checked	Java	false	false
+spring-boot-master	26	javax.management.MalformedObjectNameException	Checked	Java	false	false
+spring-boot-master	27	org.apache.maven.plugin.MojoExecutionException	Checked	Library	false	false
+spring-boot-master	27	org.apache.maven.plugin.MojoFailureException	Checked	Library	false	false
+spring-boot-master	28	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	29	java.lang.InterruptedException	Checked	Java	false	false
+spring-boot-master	30	java.io.IOException	Checked	Java	false	false
+spring-boot-master	31	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	32	java.io.IOException	Checked	Java	false	false
+spring-boot-master	33	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	34	javax.management.ReflectionException	Checked	Java	false	false
+spring-boot-master	35	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	36	java.lang.InterruptedException	Checked	Java	false	false
+spring-boot-master	37	java.io.IOException	Checked	Java	false	false
+spring-boot-master	38	java.io.IOException	Checked	Java	false	false
+spring-boot-master	39	javax.management.InstanceNotFoundException	Checked	Java	false	false
+spring-boot-master	40	java.lang.ClassNotFoundException	Checked	Java	false	false
+spring-boot-master	41	java.lang.ClassNotFoundException	Checked	Java	false	false
+spring-boot-master	42	java.security.NoSuchAlgorithmException	Checked	Java	false	false
+spring-boot-master	43	java.lang.Throwable	Checked	Library	false	true
+spring-boot-master	44	java.lang.Exception	Checked	Library	false	true
+spring-boot-master	45	java.io.IOException	Checked	Java	false	false
+spring-boot-master	46	java.io.IOException	Checked	Java	false	false
+spring-boot-master	47	java.io.IOException	Checked	Java	false	false
+spring-boot-master	48	java.lang.InterruptedException	Checked	Java	false	false
+spring-boot-master	49	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	50	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	51	java.lang.Exception	Checked	Library	false	true
+spring-boot-master	52	java.lang.InterruptedException	Checked	Java	false	false
+spring-boot-master	53	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	54	java.lang.IllegalArgumentException	Unchecked	Java	false	false
+spring-boot-master	55	java.lang.IllegalArgumentException	Unchecked	Java	false	false
+spring-boot-master	56	java.security.PrivilegedActionException	Checked	Java	false	true
+spring-boot-master	57	java.io.IOException	Checked	Java	false	true
+spring-boot-master	58	java.io.IOException	Checked	Java	false	true
+spring-boot-master	59	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	60	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	61	java.io.IOException	Checked	Java	false	false
+spring-boot-master	62	java.lang.NoSuchMethodException	Checked	Java	false	true
+spring-boot-master	63	java.lang.NoSuchMethodException	Checked	Java	false	true
+spring-boot-master	64	java.lang.IllegalStateException	Unchecked	Java	false	true
+spring-boot-master	65	java.io.IOException	Checked	Java	false	true
+spring-boot-master	66	java.lang.Throwable	Checked	Library	false	false
+spring-boot-master	67	java.lang.Exception	Checked	Library	false	true
+spring-boot-master	68	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	69	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	70	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	71	java.lang.Exception	Checked	Library	false	true
+spring-boot-master	72	java.net.MalformedURLException	Checked	Java	false	false
+spring-boot-master	73	java.net.MalformedURLException	Checked	Java	false	false
+spring-boot-master	74	java.net.MalformedURLException	Checked	Java	false	true
+spring-boot-master	75	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	76	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	77	java.io.IOException	Checked	Java	false	false
+spring-boot-master	78	java.lang.Error	Error	Java	false	true
+spring-boot-master	79	java.io.IOException	Checked	Java	false	false
+spring-boot-master	80	java.net.MalformedURLException	Checked	Java	false	false
+spring-boot-master	81	java.net.MalformedURLException	Checked	Java	false	false
+spring-boot-master	82	java.io.IOException	Checked	Java	false	false
+spring-boot-master	83	java.io.IOException	Checked	Java	false	false
+spring-boot-master	84	java.io.IOException	Checked	Java	false	false
+spring-boot-master	85	java.io.UnsupportedEncodingException	Checked	Java	false	false
+spring-boot-master	86	java.io.EOFException	Checked	Java	false	false
+spring-boot-master	87	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	88	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	89	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	90	java.io.IOException	Checked	Java	false	false
+spring-boot-master	91	java.io.IOException	Checked	Java	false	true
+spring-boot-master	92	java.io.IOException	Checked	Java	false	false
+spring-boot-master	93	java.io.IOException	Checked	Java	false	false
+spring-boot-master	94	java.io.IOException	Checked	Java	false	false
+spring-boot-master	95	java.io.IOException	Checked	Java	false	false
+spring-boot-master	96	java.io.IOException	Checked	Java	false	false
+spring-boot-master	97	java.io.IOException	Checked	Java	false	false
+spring-boot-master	98	java.io.IOException	Checked	Java	false	false
+spring-boot-master	99	java.lang.Throwable	Checked	Library	false	false
+spring-boot-master	100	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	101	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	102	java.io.FileNotFoundException	Checked	Java	false	true
+spring-boot-master	103	org.springframework.boot.configurationprocessor.metadata.InvalidConfigurationMetadataException	Unchecked	System	false	false
+spring-boot-master	104	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	105	java.io.IOException	Checked	Java	false	false
+spring-boot-master	106	java.io.IOException	Checked	Java	false	false
+spring-boot-master	107	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	108	java.lang.Exception	Checked	Library	false	true
+spring-boot-master	109	java.lang.IllegalArgumentException	Unchecked	Java	false	false
+spring-boot-master	110	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	111	java.lang.ClassNotFoundException	Checked	Java	false	false
+spring-boot-master	112	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	113	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	114	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	115	java.lang.IllegalArgumentException	Unchecked	Java	false	true
+spring-boot-master	116	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	117	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	118	java.io.IOException	Checked	Java	false	false
+spring-boot-master	119	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	120	java.lang.Exception	Checked	Library	false	true
+spring-boot-master	121	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	122	java.lang.ClassNotFoundException	Checked	Java	false	false
+spring-boot-master	123	java.lang.Throwable	Checked	Library	false	false
+spring-boot-master	124	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	125	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	126	java.lang.AssertionError	Error	Java	false	false
+spring-boot-master	127	java.net.URISyntaxException	Checked	Java	false	false
+spring-boot-master	128	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	129	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	130	java.io.IOException	Checked	Java	false	true
+spring-boot-master	131	java.lang.ClassNotFoundException	Checked	Java	false	false
+spring-boot-master	132	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	133	java.io.IOException	Checked	Java	false	true
+spring-boot-master	134	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	135	java.lang.NoSuchMethodError	Error	Java	false	false
+spring-boot-master	136	java.lang.Throwable	Checked	Library	false	false
+spring-boot-master	137	java.lang.RuntimeException	Unchecked	Java	false	false
+spring-boot-master	138	java.lang.Throwable	Checked	Library	false	false
+spring-boot-master	139	java.lang.Throwable	Checked	Library	false	false
+spring-boot-master	140	java.io.IOException	Checked	Java	false	true
+spring-boot-master	141	java.lang.Exception	Checked	Library	false	true
+spring-boot-master	142	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	143	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	144	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	145	java.io.IOException	Checked	Java	false	false
+spring-boot-master	146	java.io.IOException	Checked	Java	false	false
+spring-boot-master	147	java.io.IOException	Checked	Java	false	false
+spring-boot-master	148	java.lang.RuntimeException	Unchecked	Java	false	false
+spring-boot-master	149	java.lang.Throwable	Checked	Library	false	false
+spring-boot-master	150	java.lang.Exception	Checked	Library	false	true
+spring-boot-master	151	java.lang.RuntimeException	Unchecked	Java	false	false
+spring-boot-master	152	java.lang.reflect.InvocationTargetException	Checked	Java	false	false
+spring-boot-master	153	java.lang.Throwable	Checked	Library	false	false
+spring-boot-master	154	java.lang.Throwable	Checked	Library	false	false
+spring-boot-master	155	java.lang.Throwable	Checked	Library	false	false
+spring-boot-master	156	java.lang.Throwable	Checked	Library	false	false
+spring-boot-master	157	java.lang.Throwable	Checked	Library	false	false
+spring-boot-master	158	java.lang.Throwable	Checked	Library	false	false
+spring-boot-master	159	sample.narayana.SampleRuntimeException	Unchecked	System	false	false
+spring-boot-master	160	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	161	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	162	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	163	java.io.IOException	Checked	Java	false	false
+spring-boot-master	164	java.io.IOException	Checked	Java	false	false
+spring-boot-master	165	java.io.IOException	Checked	Java	false	false
+spring-boot-master	166	java.lang.InterruptedException	Checked	Java	false	false
+spring-boot-master	167	java.net.URISyntaxException	Checked	Java	false	false
+spring-boot-master	168	java.net.ConnectException	Checked	Java	false	false
+spring-boot-master	169	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	170	java.lang.InterruptedException	Checked	Java	false	false
+spring-boot-master	171	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	172	java.io.IOException	Checked	Java	false	false
+spring-boot-master	173	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	174	java.lang.InterruptedException	Checked	Java	false	false
+spring-boot-master	175	java.io.InterruptedIOException	Checked	Java	false	false
+spring-boot-master	176	java.net.URISyntaxException	Checked	Java	false	false
+spring-boot-master	176	java.net.MalformedURLException	Checked	Java	false	false
+spring-boot-master	177	java.io.IOException	Checked	Java	false	false
+spring-boot-master	178	java.io.IOException	Checked	Java	false	true
+spring-boot-master	179	java.io.IOException	Checked	Java	false	false
+spring-boot-master	180	java.lang.InterruptedException	Checked	Java	false	false
+spring-boot-master	181	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	182	java.nio.channels.AsynchronousCloseException	Checked	Java	false	true
+spring-boot-master	183	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	184	java.io.IOException	Checked	Java	false	false
+spring-boot-master	185	java.lang.Exception	Checked	Library	false	true
+spring-boot-master	186	java.net.MalformedURLException	Checked	Java	false	false
+spring-boot-master	187	java.io.IOException	Checked	Java	false	false
+spring-boot-master	188	java.lang.Exception	Checked	Library	false	true
+spring-boot-master	189	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	190	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	191	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	192	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	193	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	194	java.lang.OutOfMemoryError	Error	Java	false	true
+spring-boot-master	195	java.lang.InterruptedException	Checked	Java	false	false
+spring-boot-master	196	java.lang.InterruptedException	Checked	Java	false	false
+spring-boot-master	197	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	198	java.lang.Throwable	Checked	Library	false	false
+spring-boot-master	199	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	200	java.io.IOException	Checked	Java	false	true
+spring-boot-master	201	java.lang.Exception	Checked	Library	false	true
+spring-boot-master	202	java.lang.ClassNotFoundException	Checked	Java	false	false
+spring-boot-master	203	java.net.MalformedURLException	Checked	Java	false	false
+spring-boot-master	204	java.net.URISyntaxException	Checked	Java	false	false
+spring-boot-master	204	java.net.MalformedURLException	Checked	Java	false	false
+spring-boot-master	205	java.io.IOException	Checked	Java	false	false
+spring-boot-master	206	java.lang.InterruptedException	Checked	Java	false	false
+spring-boot-master	207	java.net.ConnectException	Checked	Java	false	false
+spring-boot-master	208	java.net.URISyntaxException	Checked	Java	false	false
+spring-boot-master	209	java.lang.InterruptedException	Checked	Java	false	false
+spring-boot-master	210	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	211	java.net.SocketTimeoutException	Checked	Java	false	false
+spring-boot-master	212	java.net.SocketTimeoutException	Checked	Java	false	true
+spring-boot-master	213	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	214	java.lang.InterruptedException	Checked	Java	false	false
+spring-boot-master	215	java.lang.InterruptedException	Checked	Java	false	false
+spring-boot-master	216	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	217	org.springframework.boot.devtools.livereload.ConnectionClosedException	Checked	System	false	false
+spring-boot-master	218	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	219	java.lang.InterruptedException	Checked	Java	false	false
+spring-boot-master	220	java.lang.InterruptedException	Checked	Java	false	false
+spring-boot-master	221	java.io.IOException	Checked	Java	false	false
+spring-boot-master	222	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	223	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	224	java.lang.InterruptedException	Checked	Java	false	false
+spring-boot-master	225	java.lang.Exception	Checked	Library	false	true
+spring-boot-master	226	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	227	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	228	java.net.MalformedURLException	Checked	Java	false	false
+spring-boot-master	229	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	230	java.lang.IllegalArgumentException	Unchecked	Java	false	true
+spring-boot-master	231	java.net.MalformedURLException	Checked	Java	false	false
+spring-boot-master	232	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	233	java.lang.Exception	Checked	Library	false	true
+spring-boot-master	234	java.lang.Exception	Checked	Library	false	true
+spring-boot-master	235	java.lang.Exception	Checked	Library	false	true
+spring-boot-master	236	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	237	java.net.MalformedURLException	Checked	Java	false	false
+spring-boot-master	238	java.lang.ClassNotFoundException	Checked	Java	false	false
+spring-boot-master	239	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	240	java.net.MalformedURLException	Checked	Java	false	true
+spring-boot-master	241	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	242	org.codehaus.plexus.interpolation.InterpolationException	Checked	Library	false	false
+spring-boot-master	243	java.io.IOException	Checked	Java	false	false
+spring-boot-master	244	org.apache.maven.settings.building.SettingsBuildingException	Checked	Library	false	false
+spring-boot-master	245	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	246	org.sonatype.plexus.components.cipher.PlexusCipherException	Checked	Library	false	false
+spring-boot-master	247	org.eclipse.aether.resolution.ArtifactResolutionException	Checked	Library	false	false
+spring-boot-master	247	java.net.MalformedURLException	Checked	Java	false	false
+spring-boot-master	248	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	249	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	250	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	251	java.io.IOException	Checked	Java	false	false
+spring-boot-master	252	org.springframework.boot.cli.command.NoArgumentsException	Unchecked	System	false	false
+spring-boot-master	253	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	254	java.io.IOException	Checked	Java	false	false
+spring-boot-master	255	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	256	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	257	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	258	java.lang.NoSuchMethodException	Checked	Java	false	true
+spring-boot-master	259	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	260	java.net.MalformedURLException	Checked	Java	false	true
+spring-boot-master	261	java.lang.InterruptedException	Checked	Java	false	false
+spring-boot-master	262	java.lang.Exception	Checked	Library	false	true
+spring-boot-master	263	java.io.IOException	Checked	Java	false	false
+spring-boot-master	264	java.lang.Exception	Checked	Library	false	true
+spring-boot-master	265	java.net.URISyntaxException	Checked	Java	false	false
+spring-boot-master	266	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	267	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	268	org.springframework.boot.cli.command.init.ReportableException	Unchecked	System	false	false
+spring-boot-master	269	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	270	org.json.JSONException	Checked	Library	false	false
+spring-boot-master	271	java.io.IOException	Checked	Java	false	false
+spring-boot-master	272	java.lang.Exception	Checked	Library	false	true
+spring-boot-master	273	java.net.URISyntaxException	Checked	Java	false	false
+spring-boot-master	274	java.lang.Exception	Checked	Library	false	true
+spring-boot-master	275	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	276	java.io.IOException	Checked	Java	false	false
+spring-boot-master	277	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	278	java.io.IOException	Checked	Java	false	false
+spring-boot-master	279	java.io.IOException	Checked	Java	false	true
+spring-boot-master	280	java.io.IOException	Checked	Java	false	false
+spring-boot-master	281	java.io.IOException	Checked	Java	false	false
+spring-boot-master	282	java.io.IOException	Checked	Java	false	false
+spring-boot-master	283	java.lang.InterruptedException	Checked	Java	false	false
+spring-boot-master	284	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	285	java.lang.Throwable	Checked	Library	false	true
+spring-boot-master	286	java.lang.Exception	Checked	Library	false	true
+spring-boot-master	287	java.lang.NoSuchMethodError	Error	Java	false	false
+spring-boot-master	288	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	289	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	290	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	291	java.lang.Exception	Checked	Library	false	true
+spring-boot-master	292	java.lang.Throwable	Checked	Library	false	true
+spring-boot-master	293	java.lang.ClassCastException	Unchecked	Java	false	false
+spring-boot-master	294	java.io.IOException	Checked	Java	false	false
+spring-boot-master	295	org.springframework.boot.context.properties.bind.BindException	Unchecked	System	false	false
+spring-boot-master	296	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	297	org.springframework.validation.BindException	Checked	Library	false	false
+spring-boot-master	298	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	299	java.lang.LinkageError	Error	Java	false	false
+spring-boot-master	300	java.lang.Error	Error	Java	false	false
+spring-boot-master	301	java.lang.Exception	Checked	Library	false	true
+spring-boot-master	302	javax.naming.NamingException	Checked	Java	false	false
+spring-boot-master	303	javax.mail.MessagingException	Checked	Library	false	false
+spring-boot-master	304	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	305	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	306	java.io.IOException	Checked	Java	false	false
+spring-boot-master	307	javax.naming.NamingException	Checked	Java	false	true
+spring-boot-master	308	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	309	java.lang.Exception	Checked	Library	false	true
+spring-boot-master	310	java.lang.NoClassDefFoundError	Error	Java	false	false
+spring-boot-master	311	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	312	java.lang.Exception	Checked	Library	false	true
+spring-boot-master	313	java.lang.IllegalStateException	Unchecked	Java	false	false
+spring-boot-master	314	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	315	java.sql.SQLException	Checked	Java	false	false
+spring-boot-master	316	java.lang.UnsupportedClassVersionError	Error	Java	false	false
+spring-boot-master	317	java.lang.Throwable	Checked	Library	false	false
+spring-boot-master	318	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	319	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	320	java.lang.IllegalArgumentException	Unchecked	Java	false	false
+spring-boot-master	321	java.lang.ClassNotFoundException	Checked	Java	false	false
+spring-boot-master	322	java.lang.ClassNotFoundException	Checked	Java	false	false
+spring-boot-master	323	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	324	java.lang.ClassNotFoundException	Checked	Java	false	true
+spring-boot-master	324	java.lang.NoClassDefFoundError	Error	Java	false	true
+spring-boot-master	325	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	326	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	327	java.lang.Throwable	Checked	Library	false	false
+spring-boot-master	328	java.lang.RuntimeException	Unchecked	Java	false	false
+spring-boot-master	329	java.net.URISyntaxException	Checked	Java	false	false
+spring-boot-master	330	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	331	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	332	java.io.IOException	Checked	Java	false	false
+spring-boot-master	333	java.lang.ClassNotFoundException	Checked	Java	false	false
+spring-boot-master	333	java.lang.NoClassDefFoundError	Error	Java	false	false
+spring-boot-master	334	java.lang.ClassNotFoundException	Checked	Java	false	true
+spring-boot-master	335	org.springframework.boot.autoconfigure.condition.OnBeanCondition.BeanTypeDeductionException	Unchecked	System	false	false
+spring-boot-master	336	java.lang.Throwable	Checked	Library	false	false
+spring-boot-master	337	java.security.AccessControlException	Unchecked	Java	false	false
+spring-boot-master	338	java.lang.Throwable	Checked	Library	false	false
+spring-boot-master	339	java.lang.InterruptedException	Checked	Java	false	false
+spring-boot-master	340	java.lang.Exception	Checked	Library	false	true
+spring-boot-master	341	java.lang.NoClassDefFoundError	Error	Java	false	false
+spring-boot-master	342	javax.naming.NamingException	Checked	Java	false	true
+spring-boot-master	343	java.lang.NoClassDefFoundError	Error	Java	false	false
+spring-boot-master	344	java.lang.RuntimeException	Unchecked	Java	false	false
+spring-boot-master	345	org.springframework.boot.context.properties.bind.BindException	Unchecked	System	false	true
+spring-boot-master	346	java.lang.ClassCastException	Unchecked	Java	false	false
+spring-boot-master	347	java.io.IOException	Checked	Java	false	false
+spring-boot-master	348	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	349	org.springframework.batch.core.launch.NoSuchJobException	Checked	Library	false	false
+spring-boot-master	350	javax.management.MalformedObjectNameException	Checked	Java	false	false
+spring-boot-master	351	java.lang.Exception	Checked	Library	false	true
+spring-boot-master	352	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	353	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	354	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	355	java.lang.IllegalArgumentException	Unchecked	Java	false	false
+spring-boot-master	356	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	357	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	358	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	359	java.lang.NoClassDefFoundError	Error	Java	false	true
+spring-boot-master	360	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	361	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	362	java.lang.Exception	Checked	Library	false	true
+spring-boot-master	363	java.lang.InterruptedException	Checked	Java	false	false
+spring-boot-master	364	java.lang.Throwable	Checked	Library	false	false
+spring-boot-master	365	java.lang.NoClassDefFoundError	Error	Java	false	true
+spring-boot-master	366	java.lang.InterruptedException	Checked	Java	false	false
+spring-boot-master	367	java.lang.NullPointerException	Unchecked	Java	false	true
+spring-boot-master	367	java.io.FileNotFoundException	Checked	Java	false	true
+spring-boot-master	368	java.lang.Throwable	Checked	Library	false	false
+spring-boot-master	369	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	370	java.lang.IllegalArgumentException	Unchecked	Java	false	false
+spring-boot-master	371	org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.NoSuchMetricException	Unchecked	System	false	true
+spring-boot-master	372	java.util.regex.PatternSyntaxException	Unchecked	Java	false	false
+spring-boot-master	373	java.text.ParseException	Checked	Java	false	false
+spring-boot-master	374	org.springframework.boot.actuate.cloudfoundry.CloudFoundryAuthorizationException	Unchecked	System	false	false
+spring-boot-master	375	java.lang.Exception	Checked	Library	false	true
+spring-boot-master	376	java.lang.RuntimeException	Unchecked	Java	false	false
+spring-boot-master	377	java.security.GeneralSecurityException	Checked	Java	false	false
+spring-boot-master	378	javax.management.MalformedObjectNameException	Checked	Java	false	false
+spring-boot-master	379	javax.management.MBeanException	Checked	Java	false	false
+spring-boot-master	379	javax.management.ReflectionException	Checked	Java	false	false
+spring-boot-master	380	javax.management.AttributeNotFoundException	Checked	Java	false	false
+spring-boot-master	381	javax.management.InstanceNotFoundException	Checked	Java	false	false
+spring-boot-master	382	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	383	java.io.IOException	Checked	Java	false	false
+spring-boot-master	384	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	385	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	386	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	387	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	388	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	389	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	390	java.lang.Exception	Checked	Library	false	true
+spring-boot-master	391	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	392	java.lang.Exception	Checked	Library	false	true
+spring-boot-master	393	java.lang.Throwable	Checked	Library	false	false
+spring-boot-master	394	java.lang.UnsupportedOperationException	Unchecked	Java	false	false
+spring-boot-master	395	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	396	java.lang.IllegalArgumentException	Unchecked	Java	false	true
+spring-boot-master	396	java.lang.ClassNotFoundException	Checked	Java	false	true
+spring-boot-master	397	java.io.IOException	Checked	Java	false	false
+spring-boot-master	398	java.lang.Exception	Checked	Library	false	true
+spring-boot-master	399	java.lang.Exception	Checked	Library	false	true
+spring-boot-master	400	java.lang.Exception	Checked	Library	false	true
+spring-boot-master	401	java.lang.Throwable	Checked	Library	false	false
+spring-boot-master	402	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	403	java.lang.Throwable	Checked	Library	false	false
+spring-boot-master	404	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	405	java.lang.ClassNotFoundException	Checked	Java	false	true
+spring-boot-master	406	java.lang.Throwable	Checked	Library	false	false
+spring-boot-master	407	java.security.AccessControlException	Unchecked	Java	false	true
+spring-boot-master	408	java.lang.Throwable	Checked	Library	false	false
+spring-boot-master	409	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	410	java.lang.ClassNotFoundException	Checked	Java	false	false
+spring-boot-master	411	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	412	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	413	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	414	java.lang.Throwable	Checked	Library	false	true
+spring-boot-master	415	java.lang.NoClassDefFoundError	Error	Java	false	false
+spring-boot-master	416	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	417	java.io.UnsupportedEncodingException	Checked	Java	false	false
+spring-boot-master	418	java.lang.Throwable	Checked	Library	false	false
+spring-boot-master	419	java.lang.Throwable	Checked	Library	false	true
+spring-boot-master	420	java.lang.Exception	Checked	Library	false	true
+spring-boot-master	421	java.lang.RuntimeException	Unchecked	Java	false	false
+spring-boot-master	422	java.lang.Throwable	Checked	Library	false	false
+spring-boot-master	423	java.io.IOException	Checked	Java	false	false
+spring-boot-master	424	java.io.IOException	Checked	Java	false	false
+spring-boot-master	425	java.io.IOException	Checked	Java	false	false
+spring-boot-master	426	java.io.IOException	Checked	Java	false	false
+spring-boot-master	427	java.lang.RuntimeException	Unchecked	Java	false	false
+spring-boot-master	428	java.lang.Throwable	Checked	Library	false	false
+spring-boot-master	429	javax.servlet.ServletException	Checked	Library	false	false
+spring-boot-master	430	java.lang.RuntimeException	Unchecked	Java	false	false
+spring-boot-master	430	java.lang.Error	Error	Java	false	false
+spring-boot-master	431	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	432	java.io.IOException	Checked	Java	false	false
+spring-boot-master	433	java.lang.ClassCastException	Unchecked	Java	false	false
+spring-boot-master	434	java.lang.Throwable	Checked	Library	false	false
+spring-boot-master	435	java.lang.RuntimeException	Unchecked	Java	false	false
+spring-boot-master	436	java.lang.Throwable	Checked	Library	false	false
+spring-boot-master	437	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	438	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	439	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	440	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	441	java.lang.Exception	Checked	Library	false	true
+spring-boot-master	442	java.lang.Exception	Checked	Library	false	true
+spring-boot-master	443	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	444	java.security.NoSuchAlgorithmException	Checked	Java	false	false
+spring-boot-master	445	java.security.KeyManagementException	Checked	Java	false	false
+spring-boot-master	446	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	447	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	448	java.io.IOException	Checked	Java	false	false
+spring-boot-master	449	java.net.MalformedURLException	Checked	Java	false	false
+spring-boot-master	450	java.io.IOException	Checked	Java	false	false
+spring-boot-master	451	java.net.MalformedURLException	Checked	Java	false	false
+spring-boot-master	452	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	453	java.lang.Exception	Checked	Library	false	true
+spring-boot-master	454	java.lang.Exception	Checked	Library	false	true
+spring-boot-master	455	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	456	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	457	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	458	java.lang.ClassNotFoundException	Checked	Java	false	false
+spring-boot-master	459	java.lang.ClassNotFoundException	Checked	Java	false	false
+spring-boot-master	460	java.lang.SecurityException	Unchecked	Java	false	false
+spring-boot-master	461	java.lang.ClassNotFoundException	Checked	Java	false	true
+spring-boot-master	461	java.lang.LinkageError	Error	Java	false	true
+spring-boot-master	462	java.lang.Exception	Checked	Library	false	true
+spring-boot-master	463	java.io.FileNotFoundException	Checked	Java	false	false
+spring-boot-master	464	java.io.FileNotFoundException	Checked	Java	false	false
+spring-boot-master	465	java.lang.Exception	Checked	Library	false	true
+spring-boot-master	466	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	467	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	468	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	469	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	470	javax.naming.NamingException	Checked	Java	false	true
+spring-boot-master	471	org.springframework.boot.web.embedded.tomcat.ConnectorStartFailedException	Unchecked	System	false	false
+spring-boot-master	472	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	473	org.apache.catalina.LifecycleException	Checked	Library	false	true
+spring-boot-master	474	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	475	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	476	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	477	org.apache.catalina.LifecycleException	Checked	Library	false	true
+spring-boot-master	478	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	479	java.lang.Exception	Checked	Library	false	true
+spring-boot-master	480	java.lang.Error	Error	Java	false	true
+spring-boot-master	481	java.lang.NoSuchMethodError	Error	Java	false	true
+spring-boot-master	482	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	483	java.io.IOException	Checked	Java	false	false
+spring-boot-master	484	java.io.IOException	Checked	Java	false	false
+spring-boot-master	485	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	486	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	487	java.lang.Exception	Checked	Library	false	true
+spring-boot-master	488	org.springframework.boot.web.server.WebServerException	Unchecked	System	false	false
+spring-boot-master	489	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	490	java.net.BindException	Checked	Java	false	false
+spring-boot-master	491	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	492	java.lang.InterruptedException	Checked	Java	false	false
+spring-boot-master	493	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	494	java.lang.NoSuchMethodError	Error	Java	false	true
+spring-boot-master	495	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	496	javax.validation.ValidationException	Unchecked	Java	false	false
+spring-boot-master	497	java.lang.Exception	Checked	Library	false	true
+spring-boot-master	498	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	499	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	500	java.lang.Throwable	Checked	Library	false	false
+spring-boot-master	501	java.lang.Throwable	Checked	Library	false	false
+spring-boot-master	502	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	503	java.lang.Throwable	Checked	Library	false	true
+spring-boot-master	504	java.lang.Throwable	Checked	Library	false	true
+spring-boot-master	505	java.lang.NoSuchMethodError	Error	Java	false	false
+spring-boot-master	506	java.lang.NoSuchMethodError	Error	Java	false	false
+spring-boot-master	507	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	508	java.lang.SecurityException	Unchecked	Java	false	true
+spring-boot-master	509	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	510	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	511	java.lang.Exception	Checked	Library	false	true
+spring-boot-master	512	java.io.IOException	Checked	Java	false	false
+spring-boot-master	513	java.lang.ClassNotFoundException	Checked	Java	false	false
+spring-boot-master	513	java.lang.LinkageError	Error	Java	false	false
+spring-boot-master	514	java.lang.Throwable	Checked	Library	false	false
+spring-boot-master	515	java.sql.SQLException	Checked	Java	false	false
+spring-boot-master	516	java.sql.SQLException	Checked	Java	false	false
+spring-boot-master	517	java.lang.ClassNotFoundException	Checked	Java	false	true
+spring-boot-master	517	java.lang.NoClassDefFoundError	Error	Java	false	true
+spring-boot-master	518	java.lang.ClassNotFoundException	Checked	Java	false	true
+spring-boot-master	518	java.lang.NoClassDefFoundError	Error	Java	false	true
+spring-boot-master	519	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	520	java.lang.ClassNotFoundException	Checked	Java	false	true
+spring-boot-master	520	java.lang.NoClassDefFoundError	Error	Java	false	true
+spring-boot-master	521	java.lang.NumberFormatException	Unchecked	Java	false	true
+spring-boot-master	522	java.lang.NumberFormatException	Unchecked	Java	false	true
+spring-boot-master	523	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	524	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	525	org.json.simple.parser.ParseException	Checked	Library	false	false
+spring-boot-master	526	org.json.simple.parser.ParseException	Checked	Library	false	false
+spring-boot-master	527	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	528	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	529	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	530	java.text.ParseException	Checked	Java	false	true
+spring-boot-master	531	java.text.ParseException	Checked	Java	false	false
+spring-boot-master	532	java.lang.NumberFormatException	Unchecked	Java	false	false
+spring-boot-master	533	java.lang.NumberFormatException	Unchecked	Java	false	true
+spring-boot-master	534	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	535	java.lang.Throwable	Checked	Library	false	false
+spring-boot-master	536	java.lang.Throwable	Checked	Library	false	false
+spring-boot-master	537	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	538	java.lang.NumberFormatException	Unchecked	Java	false	true
+spring-boot-master	539	java.lang.Exception	Checked	Library	false	true
+spring-boot-master	540	java.lang.Exception	Checked	Library	false	true
+spring-boot-master	541	java.lang.UnsupportedOperationException	Unchecked	Java	false	false
+spring-boot-master	542	java.lang.UnsupportedOperationException	Unchecked	Java	false	false
+spring-boot-master	543	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	544	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	545	java.lang.UnsupportedOperationException	Unchecked	Java	false	false
+spring-boot-master	546	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	547	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	548	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	549	java.lang.UnsupportedOperationException	Unchecked	Java	false	false
+spring-boot-master	550	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	551	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	552	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	553	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	554	java.lang.Exception	Checked	Library	false	true
+spring-boot-master	555	org.springframework.core.convert.ConversionException	Unchecked	Library	false	false
+spring-boot-master	556	org.springframework.core.convert.ConverterNotFoundException	Unchecked	Library	false	false
+spring-boot-master	557	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	558	java.net.UnknownHostException	Checked	Java	false	false
+spring-boot-master	559	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	560	java.lang.RuntimeException	Unchecked	Java	false	false
+spring-boot-master	561	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	562	java.io.IOException	Checked	Java	false	true
+spring-boot-master	563	java.lang.ClassNotFoundException	Checked	Java	false	false
+spring-boot-master	564	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	565	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	566	java.lang.Exception	Checked	Library	false	false
+spring-boot-master	567	java.lang.Throwable	Checked	Library	false	false
+
+

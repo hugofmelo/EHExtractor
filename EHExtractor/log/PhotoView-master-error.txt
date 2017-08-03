@@ -3,8 +3,6 @@ Unsupported errors: 1
 Unkown ancestral: 0
 
 GENERAL ERRORS
-Falha no GradleResolver. Failed to find Build Tools revision 26.0.1. File: D:\git\EHExtractor\EHExtractor\.\projects\PhotoView-master\build.gradle
-
 
 UNSOLVED ERROR FILES
 Falha no Analyzer. Classe 'Unsolved symbol : DrawerLayout' não encontrada. File: D:\git\EHExtractor\EHExtractor\.\projects\PhotoView-master\sample\src\main\java\com\github\chrisbanes\photoview\sample\HackyDrawerLayout.java

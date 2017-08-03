@@ -1,21 +1,33 @@
-PROJECT	EXCEPTION	TYPE	ORIGIN	HANDLERS	AUTOCOMPLETE	EMPTY
-MPAndroidChart-master	java.lang.Exception	Checked	Java	1	0	0
-MPAndroidChart-master	java.lang.InterruptedException	Checked	Java	1	1	0
-MPAndroidChart-master	java.lang.IllegalArgumentException	Unchecked	Java	2	0	2
-MPAndroidChart-master	java.io.IOException	Checked	Java	8	0	0
+EXCEPTION HIERARCHY
+java.lang.Throwable
+	java.lang.Exception
+		java.io.IOException
+		java.lang.RuntimeException
+			java.lang.IllegalArgumentException
+		java.lang.InterruptedException
 
 
+PROJECT	EXCEPTION	HANDLERS	AUTOCOMPLETE	EMPTY
+MPAndroidChart-master	java.lang.Throwable	0	0	0
+MPAndroidChart-master	java.lang.Exception	1	0	0
+MPAndroidChart-master	java.io.IOException	8	0	0
+MPAndroidChart-master	java.lang.RuntimeException	0	0	0
+MPAndroidChart-master	java.lang.IllegalArgumentException	2	0	2
+MPAndroidChart-master	java.lang.InterruptedException	1	1	0
 
-HANDLER ID	HANDLED EXCEPTION	EXCEPTION TYPE	EXCEPTION ORIGIN	AUTOCOMPLETE	EMPTY
-1	java.io.IOException	Checked	Java	false	false
-2	java.io.IOException	Checked	Java	false	false
-3	java.io.IOException	Checked	Java	false	false
-4	java.io.IOException	Checked	Java	false	false
-5	java.io.IOException	Checked	Java	false	false
-6	java.io.IOException	Checked	Java	false	false
-7	java.io.IOException	Checked	Java	false	false
-8	java.lang.IllegalArgumentException	Unchecked	Java	false	true
-9	java.lang.IllegalArgumentException	Unchecked	Java	false	true
-10	java.lang.Exception	Checked	Java	false	false
-11	java.io.IOException	Checked	Java	false	false
-12	java.lang.InterruptedException	Checked	Java	true	false
+
+PROJECT	HANDLER ID	HANDLED EXCEPTION	EXCEPTION TYPE	EXCEPTION ORIGIN	AUTOCOMPLETE	EMPTY
+MPAndroidChart-master	1	java.io.IOException	Checked	Java	false	false
+MPAndroidChart-master	2	java.io.IOException	Checked	Java	false	false
+MPAndroidChart-master	3	java.io.IOException	Checked	Java	false	false
+MPAndroidChart-master	4	java.io.IOException	Checked	Java	false	false
+MPAndroidChart-master	5	java.io.IOException	Checked	Java	false	false
+MPAndroidChart-master	6	java.io.IOException	Checked	Java	false	false
+MPAndroidChart-master	7	java.io.IOException	Checked	Java	false	false
+MPAndroidChart-master	8	java.lang.IllegalArgumentException	Unchecked	Java	false	true
+MPAndroidChart-master	9	java.lang.IllegalArgumentException	Unchecked	Java	false	true
+MPAndroidChart-master	10	java.lang.Exception	Checked	Java	false	false
+MPAndroidChart-master	11	java.io.IOException	Checked	Java	false	false
+MPAndroidChart-master	12	java.lang.InterruptedException	Checked	Java	true	false
+
+

@@ -1,85 +1,105 @@
-PROJECT	EXCEPTION	TYPE	ORIGIN	HANDLERS	AUTOCOMPLETE	EMPTY
-retrofit-master	java.lang.Throwable	Checked	Java	20	0	0
-retrofit-master	java.lang.Exception	Checked	Java	4	0	0
-retrofit-master	java.lang.ClassNotFoundException	Checked	Java	2	0	2
-retrofit-master	java.lang.NoSuchFieldException	Checked	Java	1	0	0
-retrofit-master	java.lang.IllegalAccessException	Checked	Java	2	0	0
-retrofit-master	java.lang.NoSuchMethodException	Checked	Java	1	0	0
-retrofit-master	java.lang.reflect.InvocationTargetException	Checked	Java	1	0	0
-retrofit-master	java.lang.RuntimeException	Unchecked	Java	7	0	0
-retrofit-master	rx.exceptions.OnErrorNotImplementedException	Unchecked	Library	6	0	0
-retrofit-master	rx.exceptions.OnErrorFailedException	Unchecked	Library	6	0	0
-retrofit-master	rx.exceptions.OnCompletedFailedException	Unchecked	Library	6	0	0
-retrofit-master	java.io.IOException	Checked	Java	7	0	0
-retrofit-master	com.google.protobuf.InvalidProtocolBufferException	Checked	Library	1	0	0
-retrofit-master	java.lang.InterruptedException	Checked	Java	2	0	0
+EXCEPTION HIERARCHY
+java.lang.Throwable
+	java.lang.Exception
+		java.lang.InterruptedException
+		java.io.IOException
+			com.google.protobuf.InvalidProtocolBufferException
+		java.lang.RuntimeException
+			rx.exceptions.OnCompletedFailedException
+			rx.exceptions.OnErrorFailedException
+			rx.exceptions.OnErrorNotImplementedException
+		java.lang.ReflectiveOperationException
+			java.lang.reflect.InvocationTargetException
+			java.lang.NoSuchMethodException
+			java.lang.IllegalAccessException
+			java.lang.NoSuchFieldException
+			java.lang.ClassNotFoundException
 
 
+PROJECT	EXCEPTION	HANDLERS	AUTOCOMPLETE	EMPTY
+retrofit-master	java.lang.Throwable	20	0	0
+retrofit-master	java.lang.Exception	4	0	0
+retrofit-master	java.lang.InterruptedException	2	0	0
+retrofit-master	java.io.IOException	7	0	0
+retrofit-master	com.google.protobuf.InvalidProtocolBufferException	1	0	0
+retrofit-master	java.lang.RuntimeException	7	0	0
+retrofit-master	rx.exceptions.OnCompletedFailedException	6	0	0
+retrofit-master	rx.exceptions.OnErrorFailedException	6	0	0
+retrofit-master	rx.exceptions.OnErrorNotImplementedException	6	0	0
+retrofit-master	java.lang.ReflectiveOperationException	0	0	0
+retrofit-master	java.lang.reflect.InvocationTargetException	1	0	0
+retrofit-master	java.lang.NoSuchMethodException	1	0	0
+retrofit-master	java.lang.IllegalAccessException	2	0	0
+retrofit-master	java.lang.NoSuchFieldException	1	0	0
+retrofit-master	java.lang.ClassNotFoundException	2	0	2
 
-HANDLER ID	HANDLED EXCEPTION	EXCEPTION TYPE	EXCEPTION ORIGIN	AUTOCOMPLETE	EMPTY
-1	java.lang.InterruptedException	Checked	Java	false	false
-2	java.lang.InterruptedException	Checked	Java	false	false
-3	java.io.IOException	Checked	Java	false	false
-4	java.lang.Exception	Checked	Java	false	false
-5	java.lang.Exception	Checked	Java	false	false
-6	java.lang.Exception	Checked	Java	false	false
-7	java.lang.RuntimeException	Unchecked	Java	false	false
-7	java.io.IOException	Checked	Java	false	false
-8	java.lang.Exception	Checked	Java	false	false
-9	java.lang.reflect.InvocationTargetException	Checked	Java	false	false
-10	java.lang.NoSuchMethodException	Checked	Java	false	false
-10	java.lang.IllegalAccessException	Checked	Java	false	false
-11	java.lang.NoSuchFieldException	Checked	Java	false	false
-11	java.lang.IllegalAccessException	Checked	Java	false	false
-12	com.google.protobuf.InvalidProtocolBufferException	Checked	Library	false	false
-13	java.lang.Throwable	Checked	Java	false	false
-14	java.lang.Throwable	Checked	Java	false	false
-15	java.lang.Throwable	Checked	Java	false	false
-16	java.lang.Throwable	Checked	Java	false	false
-17	java.lang.Throwable	Checked	Java	false	false
-18	java.lang.Throwable	Checked	Java	false	false
-19	java.lang.Throwable	Checked	Java	false	false
-20	java.lang.Throwable	Checked	Java	false	false
-21	rx.exceptions.OnCompletedFailedException	Unchecked	Library	false	false
-21	rx.exceptions.OnErrorFailedException	Unchecked	Library	false	false
-21	rx.exceptions.OnErrorNotImplementedException	Unchecked	Library	false	false
-22	java.lang.Throwable	Checked	Java	false	false
-23	rx.exceptions.OnCompletedFailedException	Unchecked	Library	false	false
-23	rx.exceptions.OnErrorFailedException	Unchecked	Library	false	false
-23	rx.exceptions.OnErrorNotImplementedException	Unchecked	Library	false	false
-24	java.lang.Throwable	Checked	Java	false	false
-25	rx.exceptions.OnCompletedFailedException	Unchecked	Library	false	false
-25	rx.exceptions.OnErrorFailedException	Unchecked	Library	false	false
-25	rx.exceptions.OnErrorNotImplementedException	Unchecked	Library	false	false
-26	java.lang.Throwable	Checked	Java	false	false
-27	rx.exceptions.OnCompletedFailedException	Unchecked	Library	false	false
-27	rx.exceptions.OnErrorFailedException	Unchecked	Library	false	false
-27	rx.exceptions.OnErrorNotImplementedException	Unchecked	Library	false	false
-28	java.lang.Throwable	Checked	Java	false	false
-29	rx.exceptions.OnCompletedFailedException	Unchecked	Library	false	false
-29	rx.exceptions.OnErrorFailedException	Unchecked	Library	false	false
-29	rx.exceptions.OnErrorNotImplementedException	Unchecked	Library	false	false
-30	java.lang.Throwable	Checked	Java	false	false
-31	java.lang.Throwable	Checked	Java	false	false
-32	java.lang.Throwable	Checked	Java	false	false
-33	rx.exceptions.OnCompletedFailedException	Unchecked	Library	false	false
-33	rx.exceptions.OnErrorFailedException	Unchecked	Library	false	false
-33	rx.exceptions.OnErrorNotImplementedException	Unchecked	Library	false	false
-34	java.lang.Throwable	Checked	Java	false	false
-35	java.lang.RuntimeException	Unchecked	Java	false	false
-36	java.io.IOException	Checked	Java	false	false
-37	java.lang.Throwable	Checked	Java	false	false
-38	java.lang.Throwable	Checked	Java	false	false
-39	java.lang.Throwable	Checked	Java	false	false
-40	java.lang.Throwable	Checked	Java	false	false
-41	java.io.IOException	Checked	Java	false	false
-41	java.lang.RuntimeException	Unchecked	Java	false	false
-42	java.lang.RuntimeException	Unchecked	Java	false	false
-43	java.io.IOException	Checked	Java	false	false
-44	java.io.IOException	Checked	Java	false	false
-45	java.io.IOException	Checked	Java	false	false
-46	java.lang.ClassNotFoundException	Checked	Java	false	true
-47	java.lang.ClassNotFoundException	Checked	Java	false	true
-48	java.lang.RuntimeException	Unchecked	Java	false	false
-49	java.lang.RuntimeException	Unchecked	Java	false	false
-50	java.lang.RuntimeException	Unchecked	Java	false	false
+
+PROJECT	HANDLER ID	HANDLED EXCEPTION	EXCEPTION TYPE	EXCEPTION ORIGIN	AUTOCOMPLETE	EMPTY
+retrofit-master	1	java.lang.InterruptedException	Checked	Java	false	false
+retrofit-master	2	java.lang.InterruptedException	Checked	Java	false	false
+retrofit-master	3	java.io.IOException	Checked	Java	false	false
+retrofit-master	4	java.lang.Exception	Checked	Java	false	false
+retrofit-master	5	java.lang.Exception	Checked	Java	false	false
+retrofit-master	6	java.lang.Exception	Checked	Java	false	false
+retrofit-master	7	java.lang.RuntimeException	Unchecked	Java	false	false
+retrofit-master	7	java.io.IOException	Checked	Java	false	false
+retrofit-master	8	java.lang.Exception	Checked	Java	false	false
+retrofit-master	9	java.lang.reflect.InvocationTargetException	Checked	Java	false	false
+retrofit-master	10	java.lang.NoSuchMethodException	Checked	Java	false	false
+retrofit-master	10	java.lang.IllegalAccessException	Checked	Java	false	false
+retrofit-master	11	java.lang.NoSuchFieldException	Checked	Java	false	false
+retrofit-master	11	java.lang.IllegalAccessException	Checked	Java	false	false
+retrofit-master	12	com.google.protobuf.InvalidProtocolBufferException	Checked	Library	false	false
+retrofit-master	13	java.lang.Throwable	Checked	Java	false	false
+retrofit-master	14	java.lang.Throwable	Checked	Java	false	false
+retrofit-master	15	java.lang.Throwable	Checked	Java	false	false
+retrofit-master	16	java.lang.Throwable	Checked	Java	false	false
+retrofit-master	17	java.lang.Throwable	Checked	Java	false	false
+retrofit-master	18	java.lang.Throwable	Checked	Java	false	false
+retrofit-master	19	java.lang.Throwable	Checked	Java	false	false
+retrofit-master	20	java.lang.Throwable	Checked	Java	false	false
+retrofit-master	21	rx.exceptions.OnCompletedFailedException	Unchecked	Library	false	false
+retrofit-master	21	rx.exceptions.OnErrorFailedException	Unchecked	Library	false	false
+retrofit-master	21	rx.exceptions.OnErrorNotImplementedException	Unchecked	Library	false	false
+retrofit-master	22	java.lang.Throwable	Checked	Java	false	false
+retrofit-master	23	rx.exceptions.OnCompletedFailedException	Unchecked	Library	false	false
+retrofit-master	23	rx.exceptions.OnErrorFailedException	Unchecked	Library	false	false
+retrofit-master	23	rx.exceptions.OnErrorNotImplementedException	Unchecked	Library	false	false
+retrofit-master	24	java.lang.Throwable	Checked	Java	false	false
+retrofit-master	25	rx.exceptions.OnCompletedFailedException	Unchecked	Library	false	false
+retrofit-master	25	rx.exceptions.OnErrorFailedException	Unchecked	Library	false	false
+retrofit-master	25	rx.exceptions.OnErrorNotImplementedException	Unchecked	Library	false	false
+retrofit-master	26	java.lang.Throwable	Checked	Java	false	false
+retrofit-master	27	rx.exceptions.OnCompletedFailedException	Unchecked	Library	false	false
+retrofit-master	27	rx.exceptions.OnErrorFailedException	Unchecked	Library	false	false
+retrofit-master	27	rx.exceptions.OnErrorNotImplementedException	Unchecked	Library	false	false
+retrofit-master	28	java.lang.Throwable	Checked	Java	false	false
+retrofit-master	29	rx.exceptions.OnCompletedFailedException	Unchecked	Library	false	false
+retrofit-master	29	rx.exceptions.OnErrorFailedException	Unchecked	Library	false	false
+retrofit-master	29	rx.exceptions.OnErrorNotImplementedException	Unchecked	Library	false	false
+retrofit-master	30	java.lang.Throwable	Checked	Java	false	false
+retrofit-master	31	java.lang.Throwable	Checked	Java	false	false
+retrofit-master	32	java.lang.Throwable	Checked	Java	false	false
+retrofit-master	33	rx.exceptions.OnCompletedFailedException	Unchecked	Library	false	false
+retrofit-master	33	rx.exceptions.OnErrorFailedException	Unchecked	Library	false	false
+retrofit-master	33	rx.exceptions.OnErrorNotImplementedException	Unchecked	Library	false	false
+retrofit-master	34	java.lang.Throwable	Checked	Java	false	false
+retrofit-master	35	java.lang.RuntimeException	Unchecked	Java	false	false
+retrofit-master	36	java.io.IOException	Checked	Java	false	false
+retrofit-master	37	java.lang.Throwable	Checked	Java	false	false
+retrofit-master	38	java.lang.Throwable	Checked	Java	false	false
+retrofit-master	39	java.lang.Throwable	Checked	Java	false	false
+retrofit-master	40	java.lang.Throwable	Checked	Java	false	false
+retrofit-master	41	java.io.IOException	Checked	Java	false	false
+retrofit-master	41	java.lang.RuntimeException	Unchecked	Java	false	false
+retrofit-master	42	java.lang.RuntimeException	Unchecked	Java	false	false
+retrofit-master	43	java.io.IOException	Checked	Java	false	false
+retrofit-master	44	java.io.IOException	Checked	Java	false	false
+retrofit-master	45	java.io.IOException	Checked	Java	false	false
+retrofit-master	46	java.lang.ClassNotFoundException	Checked	Java	false	true
+retrofit-master	47	java.lang.ClassNotFoundException	Checked	Java	false	true
+retrofit-master	48	java.lang.RuntimeException	Unchecked	Java	false	false
+retrofit-master	49	java.lang.RuntimeException	Unchecked	Java	false	false
+retrofit-master	50	java.lang.RuntimeException	Unchecked	Java	false	false
+
+

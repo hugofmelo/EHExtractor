@@ -1,124 +1,159 @@
-PROJECT	EXCEPTION	TYPE	ORIGIN	HANDLERS	AUTOCOMPLETE	EMPTY
-glide-master	java.lang.Throwable	Checked	Java	5	0	0
-glide-master	java.lang.NoClassDefFoundError	Error	Java	1	0	0
-glide-master	java.lang.Exception	Checked	Java	8	0	3
-glide-master	java.net.URISyntaxException	Checked	Java	1	0	1
-glide-master	java.lang.InterruptedException	Checked	Java	1	0	0
-glide-master	java.util.concurrent.ExecutionException	Checked	Java	1	0	0
-glide-master	com.bumptech.glide.load.engine.GlideException	Checked	System	2	0	0
-glide-master	java.util.concurrent.TimeoutException	Checked	Java	1	0	0
-glide-master	android.content.pm.PackageManager.NameNotFoundException	Checked	Library	2	1	0
-glide-master	java.lang.CloneNotSupportedException	Checked	Java	3	0	0
-glide-master	java.lang.IllegalAccessException	Checked	Java	2	0	0
-glide-master	java.lang.InstantiationException	Checked	Java	2	0	0
-glide-master	java.lang.ClassNotFoundException	Checked	Java	2	0	0
-glide-master	java.lang.RuntimeException	Unchecked	Java	2	0	0
-glide-master	android.content.res.Resources.NotFoundException	Unchecked	Library	1	0	0
-glide-master	java.lang.IllegalStateException	Unchecked	Java	1	0	0
-glide-master	java.lang.NullPointerException	Unchecked	Java	3	0	1
-glide-master	java.lang.IllegalArgumentException	Unchecked	Java	2	0	0
-glide-master	java.lang.NumberFormatException	Unchecked	Java	1	0	0
-glide-master	java.nio.BufferUnderflowException	Unchecked	Java	1	0	0
-glide-master	java.io.IOException	Checked	Java	50	1	18
-glide-master	java.io.FileNotFoundException	Checked	Java	3	0	0
-glide-master	java.net.MalformedURLException	Checked	Java	1	0	0
+EXCEPTION HIERARCHY
+java.lang.Throwable
+	java.lang.Exception
+		java.io.IOException
+			java.net.MalformedURLException
+			java.io.FileNotFoundException
+		java.lang.RuntimeException
+			java.nio.BufferUnderflowException
+			java.lang.IllegalArgumentException
+				java.lang.NumberFormatException
+			java.lang.NullPointerException
+			java.lang.IllegalStateException
+			android.content.res.Resources.NotFoundException
+		java.lang.ReflectiveOperationException
+			java.lang.ClassNotFoundException
+			java.lang.InstantiationException
+			java.lang.IllegalAccessException
+		java.lang.CloneNotSupportedException
+		android.util.AndroidException
+			android.content.pm.PackageManager.NameNotFoundException
+		java.util.concurrent.TimeoutException
+		com.bumptech.glide.load.engine.GlideException
+		java.util.concurrent.ExecutionException
+		java.lang.InterruptedException
+		java.net.URISyntaxException
+	java.lang.Error
+		java.lang.LinkageError
+			java.lang.NoClassDefFoundError
 
 
+PROJECT	EXCEPTION	HANDLERS	AUTOCOMPLETE	EMPTY
+glide-master	java.lang.Throwable	5	0	0
+glide-master	java.lang.Exception	8	0	3
+glide-master	java.io.IOException	50	1	18
+glide-master	java.net.MalformedURLException	1	0	0
+glide-master	java.io.FileNotFoundException	3	0	0
+glide-master	java.lang.RuntimeException	2	0	0
+glide-master	java.nio.BufferUnderflowException	1	0	0
+glide-master	java.lang.IllegalArgumentException	2	0	0
+glide-master	java.lang.NumberFormatException	1	0	0
+glide-master	java.lang.NullPointerException	3	0	1
+glide-master	java.lang.IllegalStateException	1	0	0
+glide-master	android.content.res.Resources.NotFoundException	1	0	0
+glide-master	java.lang.ReflectiveOperationException	0	0	0
+glide-master	java.lang.ClassNotFoundException	2	0	0
+glide-master	java.lang.InstantiationException	2	0	0
+glide-master	java.lang.IllegalAccessException	2	0	0
+glide-master	java.lang.CloneNotSupportedException	3	0	0
+glide-master	android.util.AndroidException	0	0	0
+glide-master	android.content.pm.PackageManager.NameNotFoundException	2	1	0
+glide-master	java.util.concurrent.TimeoutException	1	0	0
+glide-master	com.bumptech.glide.load.engine.GlideException	2	0	0
+glide-master	java.util.concurrent.ExecutionException	1	0	0
+glide-master	java.lang.InterruptedException	1	0	0
+glide-master	java.net.URISyntaxException	1	0	1
+glide-master	java.lang.Error	0	0	0
+glide-master	java.lang.LinkageError	0	0	0
+glide-master	java.lang.NoClassDefFoundError	1	0	0
 
-HANDLER ID	HANDLED EXCEPTION	EXCEPTION TYPE	EXCEPTION ORIGIN	AUTOCOMPLETE	EMPTY
-1	java.io.IOException	Checked	Java	false	false
-2	java.io.IOException	Checked	Java	false	false
-3	java.io.IOException	Checked	Java	false	false
-4	java.io.IOException	Checked	Java	false	false
-5	java.lang.Exception	Checked	Java	false	true
-6	java.lang.Exception	Checked	Java	false	true
-7	java.nio.BufferUnderflowException	Unchecked	Java	false	false
-8	java.lang.Exception	Checked	Java	false	false
-9	java.lang.Exception	Checked	Java	false	false
-10	java.io.IOException	Checked	Java	false	false
-11	java.io.IOException	Checked	Java	false	false
-12	java.lang.Exception	Checked	Java	false	false
-13	java.lang.Exception	Checked	Java	false	false
-14	java.net.MalformedURLException	Checked	Java	false	false
-15	java.io.IOException	Checked	Java	true	false
-16	java.io.IOException	Checked	Java	false	true
-17	java.lang.ClassNotFoundException	Checked	Java	false	false
-18	java.lang.InstantiationException	Checked	Java	false	false
-19	java.lang.IllegalAccessException	Checked	Java	false	false
-20	java.lang.CloneNotSupportedException	Checked	Java	false	false
-21	java.lang.CloneNotSupportedException	Checked	Java	false	false
-22	java.io.IOException	Checked	Java	false	true
-23	java.io.IOException	Checked	Java	false	true
-24	java.io.IOException	Checked	Java	false	true
-25	java.io.IOException	Checked	Java	false	true
-26	java.lang.NumberFormatException	Unchecked	Java	false	false
-27	java.io.IOException	Checked	Java	false	false
-28	java.io.IOException	Checked	Java	false	false
-29	java.io.IOException	Checked	Java	false	false
-30	java.io.IOException	Checked	Java	false	false
-31	java.lang.NullPointerException	Unchecked	Java	false	true
-32	android.content.pm.PackageManager.NameNotFoundException	Checked	Library	true	false
-33	java.util.concurrent.TimeoutException	Checked	Java	false	false
-34	java.lang.CloneNotSupportedException	Checked	Java	false	false
-35	java.lang.NoClassDefFoundError	Error	Java	false	false
-36	android.content.pm.PackageManager.NameNotFoundException	Checked	Library	false	false
-37	java.lang.ClassNotFoundException	Checked	Java	false	false
-38	java.lang.InstantiationException	Checked	Java	false	false
-39	java.lang.IllegalAccessException	Checked	Java	false	false
-40	java.lang.IllegalStateException	Unchecked	Java	false	false
-41	java.lang.Exception	Checked	Java	false	true
-42	java.io.IOException	Checked	Java	false	false
-43	java.io.IOException	Checked	Java	false	false
-44	java.io.IOException	Checked	Java	false	false
-45	java.io.IOException	Checked	Java	false	true
-46	java.io.IOException	Checked	Java	false	false
-47	java.io.IOException	Checked	Java	false	false
-48	java.lang.IllegalArgumentException	Unchecked	Java	false	false
-49	java.io.IOException	Checked	Java	false	false
-50	java.lang.Exception	Checked	Java	false	false
-51	java.lang.RuntimeException	Unchecked	Java	false	false
-52	java.io.IOException	Checked	Java	false	false
-53	java.io.IOException	Checked	Java	false	false
-54	java.lang.IllegalArgumentException	Unchecked	Java	false	false
-55	java.io.IOException	Checked	Java	false	true
-56	java.io.FileNotFoundException	Checked	Java	false	false
-57	java.io.IOException	Checked	Java	false	true
-58	java.lang.Throwable	Checked	Java	false	false
-59	java.lang.Throwable	Checked	Java	false	false
-60	android.content.res.Resources.NotFoundException	Unchecked	Library	false	false
-61	java.io.IOException	Checked	Java	false	false
-62	java.io.IOException	Checked	Java	false	true
-63	java.lang.RuntimeException	Unchecked	Java	false	false
-64	com.bumptech.glide.load.engine.GlideException	Checked	System	false	false
-65	java.io.IOException	Checked	Java	false	false
-66	java.io.IOException	Checked	Java	false	false
-67	java.io.IOException	Checked	Java	false	false
-68	com.bumptech.glide.load.engine.GlideException	Checked	System	false	false
-69	java.util.concurrent.ExecutionException	Checked	Java	false	false
-70	java.lang.InterruptedException	Checked	Java	false	false
-71	java.lang.Throwable	Checked	Java	false	false
-72	java.lang.Throwable	Checked	Java	false	false
-73	java.io.IOException	Checked	Java	false	false
-74	java.io.IOException	Checked	Java	false	false
-75	java.io.IOException	Checked	Java	false	false
-76	java.io.IOException	Checked	Java	false	false
-77	java.io.IOException	Checked	Java	false	false
-78	java.io.IOException	Checked	Java	false	true
-79	java.io.IOException	Checked	Java	false	false
-80	java.net.URISyntaxException	Checked	Java	false	true
-81	java.io.IOException	Checked	Java	false	true
-82	java.io.FileNotFoundException	Checked	Java	false	false
-83	java.io.IOException	Checked	Java	false	true
-84	java.io.FileNotFoundException	Checked	Java	false	false
-85	java.io.IOException	Checked	Java	false	true
-86	java.io.IOException	Checked	Java	false	false
-86	java.lang.NullPointerException	Unchecked	Java	false	false
-87	java.io.IOException	Checked	Java	false	true
-88	java.lang.NullPointerException	Unchecked	Java	false	false
-89	java.io.IOException	Checked	Java	false	true
-90	java.io.IOException	Checked	Java	false	true
-91	java.io.IOException	Checked	Java	false	true
-92	java.io.IOException	Checked	Java	false	false
-93	java.io.IOException	Checked	Java	false	true
-94	java.io.IOException	Checked	Java	false	false
-95	java.lang.Throwable	Checked	Java	false	false
+
+PROJECT	HANDLER ID	HANDLED EXCEPTION	EXCEPTION TYPE	EXCEPTION ORIGIN	AUTOCOMPLETE	EMPTY
+glide-master	1	java.io.IOException	Checked	Java	false	false
+glide-master	2	java.io.IOException	Checked	Java	false	false
+glide-master	3	java.io.IOException	Checked	Java	false	false
+glide-master	4	java.io.IOException	Checked	Java	false	false
+glide-master	5	java.lang.Exception	Checked	Java	false	true
+glide-master	6	java.lang.Exception	Checked	Java	false	true
+glide-master	7	java.nio.BufferUnderflowException	Unchecked	Java	false	false
+glide-master	8	java.lang.Exception	Checked	Java	false	false
+glide-master	9	java.lang.Exception	Checked	Java	false	false
+glide-master	10	java.io.IOException	Checked	Java	false	false
+glide-master	11	java.io.IOException	Checked	Java	false	false
+glide-master	12	java.lang.Exception	Checked	Java	false	false
+glide-master	13	java.lang.Exception	Checked	Java	false	false
+glide-master	14	java.net.MalformedURLException	Checked	Java	false	false
+glide-master	15	java.io.IOException	Checked	Java	true	false
+glide-master	16	java.io.IOException	Checked	Java	false	true
+glide-master	17	java.lang.ClassNotFoundException	Checked	Java	false	false
+glide-master	18	java.lang.InstantiationException	Checked	Java	false	false
+glide-master	19	java.lang.IllegalAccessException	Checked	Java	false	false
+glide-master	20	java.lang.CloneNotSupportedException	Checked	Java	false	false
+glide-master	21	java.lang.CloneNotSupportedException	Checked	Java	false	false
+glide-master	22	java.io.IOException	Checked	Java	false	true
+glide-master	23	java.io.IOException	Checked	Java	false	true
+glide-master	24	java.io.IOException	Checked	Java	false	true
+glide-master	25	java.io.IOException	Checked	Java	false	true
+glide-master	26	java.lang.NumberFormatException	Unchecked	Java	false	false
+glide-master	27	java.io.IOException	Checked	Java	false	false
+glide-master	28	java.io.IOException	Checked	Java	false	false
+glide-master	29	java.io.IOException	Checked	Java	false	false
+glide-master	30	java.io.IOException	Checked	Java	false	false
+glide-master	31	java.lang.NullPointerException	Unchecked	Java	false	true
+glide-master	32	android.content.pm.PackageManager.NameNotFoundException	Checked	Library	true	false
+glide-master	33	java.util.concurrent.TimeoutException	Checked	Java	false	false
+glide-master	34	java.lang.CloneNotSupportedException	Checked	Java	false	false
+glide-master	35	java.lang.NoClassDefFoundError	Error	Java	false	false
+glide-master	36	android.content.pm.PackageManager.NameNotFoundException	Checked	Library	false	false
+glide-master	37	java.lang.ClassNotFoundException	Checked	Java	false	false
+glide-master	38	java.lang.InstantiationException	Checked	Java	false	false
+glide-master	39	java.lang.IllegalAccessException	Checked	Java	false	false
+glide-master	40	java.lang.IllegalStateException	Unchecked	Java	false	false
+glide-master	41	java.lang.Exception	Checked	Java	false	true
+glide-master	42	java.io.IOException	Checked	Java	false	false
+glide-master	43	java.io.IOException	Checked	Java	false	false
+glide-master	44	java.io.IOException	Checked	Java	false	false
+glide-master	45	java.io.IOException	Checked	Java	false	true
+glide-master	46	java.io.IOException	Checked	Java	false	false
+glide-master	47	java.io.IOException	Checked	Java	false	false
+glide-master	48	java.lang.IllegalArgumentException	Unchecked	Java	false	false
+glide-master	49	java.io.IOException	Checked	Java	false	false
+glide-master	50	java.lang.Exception	Checked	Java	false	false
+glide-master	51	java.lang.RuntimeException	Unchecked	Java	false	false
+glide-master	52	java.io.IOException	Checked	Java	false	false
+glide-master	53	java.io.IOException	Checked	Java	false	false
+glide-master	54	java.lang.IllegalArgumentException	Unchecked	Java	false	false
+glide-master	55	java.io.IOException	Checked	Java	false	true
+glide-master	56	java.io.FileNotFoundException	Checked	Java	false	false
+glide-master	57	java.io.IOException	Checked	Java	false	true
+glide-master	58	java.lang.Throwable	Checked	Java	false	false
+glide-master	59	java.lang.Throwable	Checked	Java	false	false
+glide-master	60	android.content.res.Resources.NotFoundException	Unchecked	Library	false	false
+glide-master	61	java.io.IOException	Checked	Java	false	false
+glide-master	62	java.io.IOException	Checked	Java	false	true
+glide-master	63	java.lang.RuntimeException	Unchecked	Java	false	false
+glide-master	64	com.bumptech.glide.load.engine.GlideException	Checked	System	false	false
+glide-master	65	java.io.IOException	Checked	Java	false	false
+glide-master	66	java.io.IOException	Checked	Java	false	false
+glide-master	67	java.io.IOException	Checked	Java	false	false
+glide-master	68	com.bumptech.glide.load.engine.GlideException	Checked	System	false	false
+glide-master	69	java.util.concurrent.ExecutionException	Checked	Java	false	false
+glide-master	70	java.lang.InterruptedException	Checked	Java	false	false
+glide-master	71	java.lang.Throwable	Checked	Java	false	false
+glide-master	72	java.lang.Throwable	Checked	Java	false	false
+glide-master	73	java.io.IOException	Checked	Java	false	false
+glide-master	74	java.io.IOException	Checked	Java	false	false
+glide-master	75	java.io.IOException	Checked	Java	false	false
+glide-master	76	java.io.IOException	Checked	Java	false	false
+glide-master	77	java.io.IOException	Checked	Java	false	false
+glide-master	78	java.io.IOException	Checked	Java	false	true
+glide-master	79	java.io.IOException	Checked	Java	false	false
+glide-master	80	java.net.URISyntaxException	Checked	Java	false	true
+glide-master	81	java.io.IOException	Checked	Java	false	true
+glide-master	82	java.io.FileNotFoundException	Checked	Java	false	false
+glide-master	83	java.io.IOException	Checked	Java	false	true
+glide-master	84	java.io.FileNotFoundException	Checked	Java	false	false
+glide-master	85	java.io.IOException	Checked	Java	false	true
+glide-master	86	java.io.IOException	Checked	Java	false	false
+glide-master	86	java.lang.NullPointerException	Unchecked	Java	false	false
+glide-master	87	java.io.IOException	Checked	Java	false	true
+glide-master	88	java.lang.NullPointerException	Unchecked	Java	false	false
+glide-master	89	java.io.IOException	Checked	Java	false	true
+glide-master	90	java.io.IOException	Checked	Java	false	true
+glide-master	91	java.io.IOException	Checked	Java	false	true
+glide-master	92	java.io.IOException	Checked	Java	false	false
+glide-master	93	java.io.IOException	Checked	Java	false	true
+glide-master	94	java.io.IOException	Checked	Java	false	false
+glide-master	95	java.lang.Throwable	Checked	Java	false	false
+
+

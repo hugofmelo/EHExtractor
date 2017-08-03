@@ -64,6 +64,13 @@ public class Main
 			System.out.println("Identificando arquivos...");
 			ProjectFiles projectFiles = FileFinder.find(project);
 
+			if ( projectFiles.getAndroidManifest() == null )
+			{
+				continue;
+			}
+			
+			System.out.println("(!!!!!) ANDROID PROJECT CONFIRMED");
+			
 			System.out.println("Resolvendo artefatos e dependencias...");
 			ProjectArtifacts projectArtifacts = ArtifactResolver.resolve(projectFiles);
 			
