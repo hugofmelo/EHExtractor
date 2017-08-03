@@ -68,7 +68,7 @@ public class Main
 			ProjectArtifacts projectArtifacts = ArtifactResolver.resolve(projectFiles);
 			
 			// Logging
-			Logger.writeReport(project.getName(), projectFiles, projectArtifacts);
+			ArtifactLogger.writeReport(project.getName(), projectFiles, projectArtifacts);
 
 			System.out.println("Criando modelo...");
 			MetricsModel model = new MetricsModel();
@@ -82,7 +82,7 @@ public class Main
 
 			System.out.println("Salvando resultados...");
 			// Logging
-			ModelLogger.writeModel(project.getName(), model);
+			ModelLogger.writeReport(project.getName(), model);
 			ErrorLogger.writeReport(project.getName());
 			ErrorLogger.stop();
 			

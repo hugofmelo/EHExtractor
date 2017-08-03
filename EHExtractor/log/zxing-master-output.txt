@@ -1,0 +1,228 @@
+PROJECT	EXCEPTION	TYPE	ORIGIN	HANDLERS	AUTOCOMPLETE	EMPTY
+zxing-master	org.json.JSONException	Checked	Library	4	0	0
+zxing-master	java.lang.InterruptedException	Checked	Java	5	0	5
+zxing-master	java.text.ParseException	Checked	Java	3	0	1
+zxing-master	com.google.zxing.common.reedsolomon.ReedSolomonException	Checked	System	5	0	0
+zxing-master	java.lang.reflect.InvocationTargetException	Checked	Java	2	0	0
+zxing-master	java.lang.NoSuchMethodException	Checked	Java	2	0	0
+zxing-master	java.lang.IllegalAccessException	Checked	Java	3	0	0
+zxing-master	java.lang.InstantiationException	Checked	Java	1	0	0
+zxing-master	java.lang.ClassNotFoundException	Checked	Java	4	0	0
+zxing-master	org.xml.sax.SAXException	Checked	Library	1	0	0
+zxing-master	javax.xml.parsers.ParserConfigurationException	Checked	Java	1	0	0
+zxing-master	com.google.zxing.web.generator.client.GeneratorException	Checked	System	4	0	0
+zxing-master	com.google.zxing.ReaderException	Checked	System	16	0	8
+zxing-master	com.google.zxing.NotFoundException	Checked	System	22	0	9
+zxing-master	com.google.zxing.ChecksumException	Checked	System	5	0	1
+zxing-master	com.google.zxing.FormatException	Checked	System	12	0	0
+zxing-master	java.net.URISyntaxException	Checked	Java	5	0	1
+zxing-master	java.io.IOException	Checked	Java	20	0	5
+zxing-master	java.io.FileNotFoundException	Checked	Java	1	0	0
+zxing-master	java.io.UnsupportedEncodingException	Checked	Java	11	0	2
+zxing-master	java.net.MalformedURLException	Checked	Java	1	0	0
+zxing-master	com.google.zxing.WriterException	Checked	System	3	0	0
+zxing-master	java.lang.RuntimeException	Unchecked	Java	7	0	0
+zxing-master	java.lang.SecurityException	Unchecked	Java	1	0	0
+zxing-master	android.database.SQLException	Unchecked	Library	5	0	0
+zxing-master	java.util.concurrent.RejectedExecutionException	Unchecked	Java	3	0	1
+zxing-master	android.content.ActivityNotFoundException	Unchecked	Library	5	0	0
+zxing-master	java.awt.color.CMMException	Unchecked	Java	1	0	0
+zxing-master	java.lang.IndexOutOfBoundsException	Unchecked	Java	1	0	1
+zxing-master	android.database.CursorIndexOutOfBoundsException	Unchecked	Library	1	0	0
+zxing-master	java.lang.StringIndexOutOfBoundsException	Unchecked	Java	1	0	0
+zxing-master	java.lang.ArrayIndexOutOfBoundsException	Unchecked	Java	1	0	0
+zxing-master	java.lang.IllegalStateException	Unchecked	Java	3	0	0
+zxing-master	java.lang.NullPointerException	Unchecked	Java	5	0	1
+zxing-master	java.lang.IllegalArgumentException	Unchecked	Java	18	0	3
+zxing-master	java.lang.NumberFormatException	Unchecked	Java	4	0	0
+
+
+
+HANDLER ID	HANDLED EXCEPTION	EXCEPTION TYPE	EXCEPTION ORIGIN	AUTOCOMPLETE	EMPTY
+1	java.lang.IllegalArgumentException	Unchecked	Java	false	false
+1	java.lang.NullPointerException	Unchecked	Java	false	false
+2	com.google.zxing.WriterException	Checked	System	false	false
+3	java.io.IOException	Checked	Java	false	false
+4	java.net.URISyntaxException	Checked	Java	false	false
+5	java.io.IOException	Checked	Java	false	false
+5	java.lang.IllegalStateException	Unchecked	Java	false	false
+6	java.net.MalformedURLException	Checked	Java	false	false
+7	java.lang.IllegalArgumentException	Unchecked	Java	false	false
+8	java.io.IOException	Checked	Java	false	false
+8	java.lang.IllegalArgumentException	Unchecked	Java	false	false
+9	java.io.IOException	Checked	Java	false	false
+10	java.io.IOException	Checked	Java	false	true
+10	java.lang.IndexOutOfBoundsException	Unchecked	Java	false	true
+11	java.lang.IllegalStateException	Unchecked	Java	false	false
+12	java.io.IOException	Checked	Java	false	false
+13	java.io.IOException	Checked	Java	false	false
+13	java.awt.color.CMMException	Unchecked	Java	false	false
+13	java.lang.IllegalArgumentException	Unchecked	Java	false	false
+14	java.lang.RuntimeException	Unchecked	Java	false	false
+15	com.google.zxing.ReaderException	Checked	System	false	false
+16	com.google.zxing.ReaderException	Checked	System	false	false
+17	com.google.zxing.ReaderException	Checked	System	false	false
+18	com.google.zxing.ReaderException	Checked	System	false	false
+19	com.google.zxing.FormatException	Checked	System	false	false
+19	com.google.zxing.ChecksumException	Checked	System	false	false
+20	com.google.zxing.ReaderException	Checked	System	false	false
+21	com.google.zxing.web.generator.client.GeneratorException	Checked	System	false	false
+22	com.google.zxing.web.generator.client.GeneratorException	Checked	System	false	false
+23	java.lang.IllegalArgumentException	Unchecked	Java	false	false
+24	com.google.zxing.web.generator.client.GeneratorException	Checked	System	false	false
+25	com.google.zxing.web.generator.client.GeneratorException	Checked	System	false	false
+26	javax.xml.parsers.ParserConfigurationException	Checked	Java	false	false
+27	org.xml.sax.SAXException	Checked	Library	false	false
+28	java.lang.ClassNotFoundException	Checked	Java	false	false
+28	java.lang.InstantiationException	Checked	Java	false	false
+28	java.lang.IllegalAccessException	Checked	Java	false	false
+29	java.lang.ClassNotFoundException	Checked	Java	false	false
+30	java.net.URISyntaxException	Checked	Java	false	false
+31	com.google.zxing.NotFoundException	Checked	System	false	false
+32	com.google.zxing.NotFoundException	Checked	System	false	false
+33	com.google.zxing.NotFoundException	Checked	System	false	true
+34	java.io.IOException	Checked	Java	false	false
+35	java.io.IOException	Checked	Java	false	false
+36	com.google.zxing.ReaderException	Checked	System	false	false
+37	java.lang.IllegalArgumentException	Unchecked	Java	false	false
+38	java.lang.IllegalAccessException	Checked	Java	false	false
+38	java.lang.NoSuchMethodException	Checked	Java	false	false
+38	java.lang.ClassNotFoundException	Checked	Java	false	false
+39	java.lang.reflect.InvocationTargetException	Checked	Java	false	false
+40	java.lang.IllegalAccessException	Checked	Java	false	false
+40	java.lang.reflect.InvocationTargetException	Checked	Java	false	false
+40	java.lang.NoSuchMethodException	Checked	Java	false	false
+40	java.lang.ClassNotFoundException	Checked	Java	false	false
+41	com.google.zxing.NotFoundException	Checked	System	false	false
+42	com.google.zxing.ReaderException	Checked	System	false	true
+43	java.io.UnsupportedEncodingException	Checked	Java	false	false
+44	java.io.UnsupportedEncodingException	Checked	Java	false	false
+45	java.io.UnsupportedEncodingException	Checked	Java	false	false
+46	com.google.zxing.NotFoundException	Checked	System	false	true
+47	java.lang.IllegalArgumentException	Unchecked	Java	false	false
+48	java.io.UnsupportedEncodingException	Checked	Java	false	false
+49	java.io.UnsupportedEncodingException	Checked	Java	false	false
+50	java.io.UnsupportedEncodingException	Checked	Java	false	false
+51	com.google.zxing.FormatException	Checked	System	false	false
+52	com.google.zxing.ChecksumException	Checked	System	false	false
+53	com.google.zxing.FormatException	Checked	System	false	false
+53	com.google.zxing.ChecksumException	Checked	System	false	false
+54	com.google.zxing.common.reedsolomon.ReedSolomonException	Checked	System	false	false
+55	java.lang.IllegalArgumentException	Unchecked	Java	false	false
+56	com.google.zxing.FormatException	Checked	System	false	false
+56	com.google.zxing.ChecksumException	Checked	System	false	false
+57	com.google.zxing.ChecksumException	Checked	System	false	true
+58	com.google.zxing.FormatException	Checked	System	false	false
+59	com.google.zxing.FormatException	Checked	System	false	false
+60	com.google.zxing.FormatException	Checked	System	false	false
+61	com.google.zxing.FormatException	Checked	System	false	false
+62	com.google.zxing.ReaderException	Checked	System	false	true
+63	com.google.zxing.ReaderException	Checked	System	false	true
+64	com.google.zxing.NotFoundException	Checked	System	false	false
+65	com.google.zxing.NotFoundException	Checked	System	false	false
+66	com.google.zxing.ReaderException	Checked	System	false	true
+67	com.google.zxing.ReaderException	Checked	System	false	false
+68	com.google.zxing.ReaderException	Checked	System	false	true
+69	com.google.zxing.FormatException	Checked	System	false	false
+70	com.google.zxing.FormatException	Checked	System	false	false
+71	com.google.zxing.NotFoundException	Checked	System	false	false
+72	com.google.zxing.NotFoundException	Checked	System	false	true
+73	com.google.zxing.NotFoundException	Checked	System	false	false
+74	com.google.zxing.NotFoundException	Checked	System	false	true
+75	com.google.zxing.NotFoundException	Checked	System	false	true
+76	com.google.zxing.NotFoundException	Checked	System	false	false
+77	com.google.zxing.NotFoundException	Checked	System	false	false
+78	com.google.zxing.NotFoundException	Checked	System	false	true
+79	com.google.zxing.NotFoundException	Checked	System	false	true
+80	com.google.zxing.NotFoundException	Checked	System	false	true
+81	com.google.zxing.NotFoundException	Checked	System	false	true
+82	com.google.zxing.ReaderException	Checked	System	false	false
+83	com.google.zxing.ReaderException	Checked	System	false	true
+84	com.google.zxing.ReaderException	Checked	System	false	true
+85	com.google.zxing.common.reedsolomon.ReedSolomonException	Checked	System	false	false
+86	java.io.UnsupportedEncodingException	Checked	Java	false	false
+87	com.google.zxing.common.reedsolomon.ReedSolomonException	Checked	System	false	false
+88	java.lang.ArrayIndexOutOfBoundsException	Unchecked	Java	false	false
+89	java.text.ParseException	Checked	Java	false	false
+90	java.text.ParseException	Checked	Java	false	false
+91	java.lang.IllegalArgumentException	Unchecked	Java	false	false
+92	java.lang.NumberFormatException	Unchecked	Java	false	false
+93	java.lang.IllegalArgumentException	Unchecked	Java	false	true
+94	java.io.UnsupportedEncodingException	Checked	Java	false	false
+95	java.io.UnsupportedEncodingException	Checked	Java	false	false
+96	java.lang.NumberFormatException	Unchecked	Java	false	false
+97	java.lang.IllegalArgumentException	Unchecked	Java	false	false
+98	java.lang.IllegalArgumentException	Unchecked	Java	false	false
+99	com.google.zxing.NotFoundException	Checked	System	false	false
+100	com.google.zxing.FormatException	Checked	System	false	false
+101	com.google.zxing.NotFoundException	Checked	System	false	false
+101	com.google.zxing.FormatException	Checked	System	false	false
+102	com.google.zxing.common.reedsolomon.ReedSolomonException	Checked	System	false	false
+103	com.google.zxing.NotFoundException	Checked	System	false	false
+104	com.google.zxing.NotFoundException	Checked	System	false	false
+105	com.google.zxing.common.reedsolomon.ReedSolomonException	Checked	System	false	false
+106	java.io.IOException	Checked	Java	false	false
+107	java.io.IOException	Checked	Java	false	false
+108	java.lang.RuntimeException	Unchecked	Java	false	false
+109	android.content.ActivityNotFoundException	Unchecked	Library	false	false
+110	java.lang.InterruptedException	Checked	Java	false	true
+111	java.lang.IllegalArgumentException	Unchecked	Java	false	true
+112	com.google.zxing.ReaderException	Checked	System	false	true
+113	java.lang.NumberFormatException	Unchecked	Java	false	false
+114	java.lang.InterruptedException	Checked	Java	false	true
+115	java.io.IOException	Checked	Java	false	true
+115	java.lang.NullPointerException	Unchecked	Java	false	true
+116	java.net.URISyntaxException	Checked	Java	false	true
+117	java.lang.NullPointerException	Unchecked	Java	false	false
+118	java.lang.RuntimeException	Unchecked	Java	false	false
+119	java.lang.NullPointerException	Unchecked	Java	false	false
+119	java.lang.StringIndexOutOfBoundsException	Unchecked	Java	false	false
+119	java.lang.IllegalArgumentException	Unchecked	Java	false	false
+120	java.util.concurrent.RejectedExecutionException	Unchecked	Java	false	false
+121	java.lang.InterruptedException	Checked	Java	false	true
+122	java.net.URISyntaxException	Checked	Java	false	false
+123	java.io.UnsupportedEncodingException	Checked	Java	false	true
+124	java.lang.InterruptedException	Checked	Java	false	true
+125	java.lang.IllegalArgumentException	Unchecked	Java	false	false
+126	java.lang.IllegalArgumentException	Unchecked	Java	false	false
+127	java.text.ParseException	Checked	Java	false	true
+128	android.content.ActivityNotFoundException	Unchecked	Library	false	false
+129	android.content.ActivityNotFoundException	Unchecked	Library	false	false
+130	android.content.ActivityNotFoundException	Unchecked	Library	false	false
+131	java.io.UnsupportedEncodingException	Checked	Java	false	true
+132	org.json.JSONException	Checked	Library	false	false
+133	java.util.concurrent.RejectedExecutionException	Unchecked	Java	false	true
+134	java.io.IOException	Checked	Java	false	false
+135	java.io.IOException	Checked	Java	false	false
+136	java.net.URISyntaxException	Checked	Java	false	false
+137	android.content.ActivityNotFoundException	Unchecked	Library	false	false
+138	android.database.SQLException	Unchecked	Library	false	false
+139	android.database.CursorIndexOutOfBoundsException	Unchecked	Library	false	false
+140	android.database.SQLException	Unchecked	Library	false	false
+141	android.database.SQLException	Unchecked	Library	false	false
+142	android.database.SQLException	Unchecked	Library	false	false
+143	android.database.SQLException	Unchecked	Library	false	false
+144	java.io.IOException	Checked	Java	false	false
+145	java.io.IOException	Checked	Java	false	true
+146	com.google.zxing.WriterException	Checked	System	false	false
+147	java.io.FileNotFoundException	Checked	Java	false	false
+148	java.io.IOException	Checked	Java	false	true
+149	com.google.zxing.WriterException	Checked	System	false	false
+150	java.lang.IllegalArgumentException	Unchecked	Java	false	true
+151	java.io.IOException	Checked	Java	false	false
+152	java.io.IOException	Checked	Java	false	true
+153	java.lang.IllegalArgumentException	Unchecked	Java	false	false
+154	java.lang.NumberFormatException	Unchecked	Java	false	false
+155	java.lang.NullPointerException	Unchecked	Java	false	false
+155	java.lang.IllegalStateException	Unchecked	Java	false	false
+155	java.lang.SecurityException	Unchecked	Java	false	false
+156	java.util.concurrent.RejectedExecutionException	Unchecked	Java	false	false
+157	java.lang.RuntimeException	Unchecked	Java	false	false
+158	java.lang.RuntimeException	Unchecked	Java	false	false
+159	java.lang.InterruptedException	Checked	Java	false	true
+160	java.lang.RuntimeException	Unchecked	Java	false	false
+161	java.lang.RuntimeException	Unchecked	Java	false	false
+162	java.io.IOException	Checked	Java	false	false
+163	org.json.JSONException	Checked	Library	false	false
+164	org.json.JSONException	Checked	Library	false	false
+165	org.json.JSONException	Checked	Library	false	false

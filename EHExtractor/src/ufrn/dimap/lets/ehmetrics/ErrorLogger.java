@@ -38,52 +38,60 @@ public class ErrorLogger
 
 	public static void writeReport(String projectName) throws IOException
 	{
-		FileWriter logFile = new FileWriter (ProjectsUtil.logsRoot + projectName + "-error.txt");
+		FileWriter errorFile = new FileWriter (ProjectsUtil.logsRoot + projectName + "-error.txt");
 		
-		writeReportCount(logFile);
-		writeReportDetails(logFile);
+		errorFile.write( writeReportCount() );
+		errorFile.write( writeReportDetails() );
 		
-		logFile.close();
+		errorFile.close();
 	}
 
-	private static void writeReportCount(FileWriter logFile) throws IOException
+	private static String writeReportCount() throws IOException
 	{
-		logFile.write ("Unsolved types: " + unsolved.size() + "\n");
-		logFile.write ("Unsupported errors: " + unsupported.size() + "\n");
-		logFile.write ("Unkown ancestral: " + unknownAncestral.size() + "\n");
-		logFile.write ("\n");
+		String result = "";
+		
+		result += "Unsolved types: " + unsolved.size() + "\n";
+		result += "Unsupported errors: " + unsupported.size() + "\n";
+		result += "Unkown ancestral: " + unknownAncestral.size() + "\n";
+		result += "\n";
+		
+		return result;
 	
 	}
 
-	private static void writeReportDetails(FileWriter logFile) throws IOException
+	private static String writeReportDetails() throws IOException
 	{
-		logFile.write("GENERAL ERRORS\n");
+		String result = "";
+		
+		result += "GENERAL ERRORS\n";
 		for ( String str : errors )
 		{
-			logFile.write(str + "\n");
+			result += str + "\n";
 		}
-		logFile.write("\n");
+		result += "\n";
 		
-		logFile.write("UNSOLVED ERROR FILES\n");
+		result += "UNSOLVED ERROR FILES\n";
 		for ( String str : unsolved )
 		{
-			logFile.write(str + "\n");
+			result += str + "\n";
 		}
-		logFile.write("\n");
+		result += "\n";
 
-		logFile.write("UNSUPPORTED ERROR FILES\n");
+		result += "UNSUPPORTED ERROR FILES\n";
 		for ( String str : unsupported )
 		{
-			logFile.write(str + "\n");
+			result += str + "\n";
 		}
-		logFile.write("\n");
+		result += "\n";
 
-		logFile.write("UNKNOWN ANCESTRAL\n");
+		result += "UNKNOWN ANCESTRAL\n";
 		for ( String str : unknownAncestral )
 		{
-			logFile.write(str + "\n");
+			result += str + "\n";
 		}
-		logFile.write("\n");
+		result += "\n";
+		
+		return result;
 	}
 	
 	public static void addError (String errorMessage)

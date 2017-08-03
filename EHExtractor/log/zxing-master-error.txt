@@ -1,0 +1,25 @@
+Unsolved types: 0
+Unsupported errors: 1
+Unkown ancestral: 0
+
+GENERAL ERRORS
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\git\EHExtractor\EHExtractor\.\projects\zxing-master\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\git\EHExtractor\EHExtractor\.\projects\zxing-master\zxingorg\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\git\EHExtractor\EHExtractor\.\projects\zxing-master\javase\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\git\EHExtractor\EHExtractor\.\projects\zxing-master\android-integration\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\git\EHExtractor\EHExtractor\.\projects\zxing-master\android-core\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\git\EHExtractor\EHExtractor\.\projects\zxing-master\android\pom.xml
+
+
+UNSOLVED ERROR FILES
+
+UNSUPPORTED ERROR FILES
+Falha no Analyzer. UnsupportedOperation ao parsear arquivo. File: D:\git\EHExtractor\EHExtractor\.\projects\zxing-master\android-integration\src\main\java\com\google\zxing\integration\android\IntentIntegrator.java
+
+UNKNOWN ANCESTRAL
+

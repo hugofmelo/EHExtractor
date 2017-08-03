@@ -32,9 +32,8 @@ import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
 import com.github.javaparser.symbolsolver.javaparsermodel.JavaParserFacade;
 import com.github.javaparser.symbolsolver.model.declarations.ReferenceTypeDeclaration;
 import com.github.javaparser.symbolsolver.model.typesystem.ReferenceType;
-import com.github.javaparser.symbolsolver.model.typesystem.TypeVariable;
 
-import ufrn.dimap.lets.ehmetrics.Logger;
+import ufrn.dimap.lets.ehmetrics.HandlerActionResolver;
 import ufrn.dimap.lets.ehmetrics.Util;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.ExceptionType;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.Handler;
@@ -42,7 +41,6 @@ import ufrn.dimap.lets.ehmetrics.abstractmodel.HandlerActionType;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.MetricsModel;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.SignalerType;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.Type;
-import ufrn.dimap.lets.ehmetrics.HandlerActionResolver;
 
 public class CatchVisitor extends VoidVisitorAdapter<JavaParserFacade>
 {

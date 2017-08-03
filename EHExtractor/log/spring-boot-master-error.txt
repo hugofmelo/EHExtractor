@@ -1,0 +1,129 @@
+Unsolved types: 0
+Unsupported errors: 0
+Unkown ancestral: 31
+
+GENERAL ERRORS
+Falha em ArtifactResolver. O arquivo java não é válido. File: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-tools\spring-boot-maven-plugin\src\it\war-reactor\war\src\main\java\com\example\SampleApplication.java
+Falha em ArtifactResolver. O arquivo java não é válido. File: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-tools\spring-boot-loader\src\it\executable-war\src\main\java\org\springframework\launcher\it\war\ExampleController.java
+Falha em ArtifactResolver. O arquivo java não é válido. File: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-tools\spring-boot-loader\src\it\executable-war\src\main\java\org\springframework\launcher\it\war\SpringConfiguration.java
+Falha em ArtifactResolver. O arquivo java não é válido. File: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-tools\spring-boot-loader\src\it\executable-war\src\main\java\org\springframework\launcher\it\war\SpringInitializer.java
+Falha em ArtifactResolver. O arquivo java não é válido. File: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-tools\spring-boot-loader\src\it\executable-war\src\main\java\org\springframework\launcher\it\war\embedded\EmbeddedWarStarter.java
+Falha em ArtifactResolver. O arquivo java não é válido. File: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-tools\spring-boot-loader\src\it\executable-war\src\main\java\org\springframework\launcher\it\war\embedded\WebApplicationInitializersConfiguration.java
+Falha em ArtifactResolver. O arquivo java não é válido. File: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-tools\spring-boot-loader\src\it\executable-props\src\main\java\org\springframework\launcher\it\props\EmbeddedJarStarter.java
+Falha em ArtifactResolver. O arquivo java não é válido. File: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-tools\spring-boot-loader\src\it\executable-props\src\main\java\org\springframework\launcher\it\props\SpringConfiguration.java
+Falha em ArtifactResolver. O arquivo java não é válido. File: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-tools\spring-boot-loader\src\it\executable-jar\src\main\java\org\springframework\launcher\it\jar\EmbeddedJarStarter.java
+Falha em ArtifactResolver. O arquivo java não é válido. File: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-tools\spring-boot-loader\src\it\executable-jar\src\main\java\org\springframework\launcher\it\jar\ExampleController.java
+Falha em ArtifactResolver. O arquivo java não é válido. File: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-tools\spring-boot-loader\src\it\executable-jar\src\main\java\org\springframework\launcher\it\jar\SpringConfiguration.java
+Falha em ArtifactResolver. O arquivo java não é válido. File: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-tools\spring-boot-loader\src\it\executable-dir\src\main\java\org\springframework\launcher\it\jar\EmbeddedJarStarter.java
+Falha em ArtifactResolver. O arquivo java não é válido. File: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-tools\spring-boot-loader\src\it\executable-dir\src\main\java\org\springframework\launcher\it\jar\ExampleController.java
+Falha em ArtifactResolver. O arquivo java não é válido. File: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-tools\spring-boot-loader\src\it\executable-dir\src\main\java\org\springframework\launcher\it\jar\SpringConfiguration.java
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-tools\spring-boot-maven-plugin\src\it\war-with-unpack\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-tools\spring-boot-maven-plugin\src\it\war-reactor\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-tools\spring-boot-maven-plugin\src\it\war-reactor\war\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-tools\spring-boot-maven-plugin\src\it\war\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-tools\spring-boot-maven-plugin\src\it\run-use-test-classpath\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-tools\spring-boot-maven-plugin\src\it\run-exclude\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-tools\spring-boot-maven-plugin\src\it\prop\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-tools\spring-boot-maven-plugin\src\it\jar-with-unpack\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-tools\spring-boot-maven-plugin\src\it\jar-test-scope\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-tools\spring-boot-maven-plugin\src\it\jar-system-scope-default\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-tools\spring-boot-maven-plugin\src\it\jar-system-scope\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-tools\spring-boot-maven-plugin\src\it\jar-pom\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-tools\spring-boot-maven-plugin\src\it\jar-non-executable\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-tools\spring-boot-maven-plugin\src\it\jar-lib-name-conflict\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-tools\spring-boot-maven-plugin\src\it\jar-lib-name-conflict\test-project\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-tools\spring-boot-maven-plugin\src\it\jar-lib-name-conflict\acme-lib\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-tools\spring-boot-maven-plugin\src\it\jar-executable\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-tools\spring-boot-maven-plugin\src\it\jar-exclude-group\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-tools\spring-boot-maven-plugin\src\it\jar-exclude-entry\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-tools\spring-boot-maven-plugin\src\it\jar-exclude-artifact\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-tools\spring-boot-maven-plugin\src\it\jar-custom-launcher\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-tools\spring-boot-maven-plugin\src\it\jar-custom-dir\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-tools\spring-boot-maven-plugin\src\it\jar-create-dir\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-tools\spring-boot-maven-plugin\src\it\jar-attach-disabled\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-tools\spring-boot-maven-plugin\src\it\jar\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-tools\spring-boot-maven-plugin\src\it\build-info-custom-file\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-tools\spring-boot-maven-plugin\src\it\build-info-additional-properties\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-tools\spring-boot-maven-plugin\src\it\build-info\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-tools\spring-boot-loader\src\it\executable-war\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-tools\spring-boot-loader\src\it\executable-props-lib\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-tools\spring-boot-loader\src\it\executable-props\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-tools\spring-boot-loader\src\it\executable-jar\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-tools\spring-boot-loader\src\it\executable-dir\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-samples\spring-boot-sample-custom-layout\src\it\default\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-samples\spring-boot-sample-custom-layout\src\it\custom\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-full-build\pom.xml
+
+
+UNSOLVED ERROR FILES
+
+UNSUPPORTED ERROR FILES
+
+UNKNOWN ANCESTRAL
+Falha no Analyzer. Os ancestrais da classe 'org.springframework.beans.factory.NoSuchBeanDefinitionException' não foram encontrados. File: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-test-autoconfigure\src\main\java\org\springframework\boot\test\autoconfigure\web\servlet\SpringBootMockMvcBuilderCustomizer.java
+Falha no Analyzer. Os ancestrais da classe 'org.springframework.beans.factory.NoSuchBeanDefinitionException' não foram encontrados. File: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-test-autoconfigure\src\main\java\org\springframework\boot\test\autoconfigure\restdocs\RestDocsTestExecutionListener.java
+Falha no Analyzer. Os ancestrais da classe 'org.springframework.beans.factory.NoSuchBeanDefinitionException' não foram encontrados. File: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-test\src\main\java\org\springframework\boot\test\web\reactive\WebTestClientContextCustomizer.java
+Falha no Analyzer. Os ancestrais da classe 'org.springframework.beans.factory.NoSuchBeanDefinitionException' não foram encontrados. File: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-test\src\main\java\org\springframework\boot\test\mock\mockito\ResetMocksTestExecutionListener.java
+Falha no Analyzer. Os ancestrais da classe 'org.springframework.beans.factory.NoSuchBeanDefinitionException' não foram encontrados. File: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-test\src\main\java\org\springframework\boot\test\context\ImportsContextCustomizer.java
+Falha no Analyzer. Os ancestrais da classe 'org.springframework.beans.factory.NoSuchBeanDefinitionException' não foram encontrados. File: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-test\src\main\java\org\springframework\boot\test\context\SpringBootTestContextCustomizer.java
+Falha no Analyzer. Os ancestrais da classe 'org.springframework.beans.factory.NoSuchBeanDefinitionException' não foram encontrados. File: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-test\src\main\java\org\springframework\boot\test\context\assertj\ApplicationContextAssert.java
+Falha no Analyzer. Os ancestrais da classe 'org.springframework.web.client.HttpStatusCodeException' não foram encontrados. File: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-samples\spring-boot-sample-test\src\main\java\sample\test\service\RemoteVehicleDetailsService.java
+Falha no Analyzer. Os ancestrais da classe 'org.springframework.jdbc.support.MetaDataAccessException' não foram encontrados. File: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-autoconfigure\src\main\java\org\springframework\boot\autoconfigure\AbstractDatabaseInitializer.java
+Falha no Analyzer. Os ancestrais da classe 'org.springframework.beans.factory.NoSuchBeanDefinitionException' não foram encontrados. File: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-autoconfigure\src\main\java\org\springframework\boot\autoconfigure\AbstractDependsOnBeanFactoryPostProcessor.java
+Falha no Analyzer. Os ancestrais da classe 'org.springframework.beans.factory.NoSuchBeanDefinitionException' não foram encontrados. File: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-autoconfigure\src\main\java\org\springframework\boot\autoconfigure\AutoConfigurationImportSelector.java
+Falha no Analyzer. Os ancestrais da classe 'org.springframework.beans.factory.NoSuchBeanDefinitionException' não foram encontrados. File: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-autoconfigure\src\main\java\org\springframework\boot\autoconfigure\AutoConfigurationPackages.java
+Falha no Analyzer. Os ancestrais da classe 'org.springframework.beans.factory.NoSuchBeanDefinitionException' não foram encontrados. File: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-autoconfigure\src\main\java\org\springframework\boot\autoconfigure\SharedMetadataReaderFactoryContextInitializer.java
+Falha no Analyzer. Os ancestrais da classe 'org.springframework.beans.factory.NoSuchBeanDefinitionException' não foram encontrados. File: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-autoconfigure\src\main\java\org\springframework\boot\autoconfigure\web\servlet\WebMvcAutoConfiguration.java
+Falha no Analyzer. Os ancestrais da classe 'org.springframework.beans.factory.NoSuchBeanDefinitionException' não foram encontrados. File: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-autoconfigure\src\main\java\org\springframework\boot\autoconfigure\validation\ValidatorAdapter.java
+Falha no Analyzer. Os ancestrais da classe 'org.springframework.beans.factory.NoSuchBeanDefinitionException' não foram encontrados. File: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-autoconfigure\src\main\java\org\springframework\boot\autoconfigure\security\AuthenticationManagerConfiguration.java
+Falha no Analyzer. Os ancestrais da classe 'org.springframework.jdbc.support.MetaDataAccessException' não foram encontrados. File: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-autoconfigure\src\main\java\org\springframework\boot\autoconfigure\orm\jpa\DatabaseLookup.java
+Falha no Analyzer. Os ancestrais da classe 'org.springframework.jdbc.support.MetaDataAccessException' não foram encontrados. File: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-autoconfigure\src\main\java\org\springframework\boot\autoconfigure\jooq\SqlDialectLookup.java
+Falha no Analyzer. Os ancestrais da classe 'org.springframework.beans.BeansException' não foram encontrados. File: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-autoconfigure\src\main\java\org\springframework\boot\autoconfigure\jmx\ParentAwareNamingStrategy.java
+Falha no Analyzer. Os ancestrais da classe 'org.springframework.dao.DataAccessException' não foram encontrados. File: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-autoconfigure\src\main\java\org\springframework\boot\autoconfigure\jdbc\EmbeddedDatabaseConnection.java
+Falha no Analyzer. Os ancestrais da classe 'org.springframework.beans.factory.NoSuchBeanDefinitionException' não foram encontrados. File: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-autoconfigure\src\main\java\org\springframework\boot\autoconfigure\jdbc\JndiDataSourceAutoConfiguration.java
+Falha no Analyzer. Os ancestrais da classe 'org.springframework.beans.factory.NoSuchBeanDefinitionException' não foram encontrados. File: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-autoconfigure\src\main\java\org\springframework\boot\autoconfigure\hateoas\HypermediaAutoConfiguration.java
+Falha no Analyzer. Os ancestrais da classe 'org.springframework.jdbc.support.MetaDataAccessException' não foram encontrados. File: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-autoconfigure\src\main\java\org\springframework\boot\autoconfigure\flyway\FlywayAutoConfiguration.java
+Falha no Analyzer. Os ancestrais da classe 'org.springframework.beans.factory.NoSuchBeanDefinitionException' não foram encontrados. File: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-autoconfigure\src\main\java\org\springframework\boot\autoconfigure\domain\EntityScanPackages.java
+Falha no Analyzer. Os ancestrais da classe 'org.springframework.beans.factory.CannotLoadBeanClassException' não foram encontrados. File: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-autoconfigure\src\main\java\org\springframework\boot\autoconfigure\condition\BeanTypeRegistry.java
+Falha no Analyzer. Os ancestrais da classe 'org.springframework.beans.factory.NoSuchBeanDefinitionException' não foram encontrados. File: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-actuator\src\main\java\org\springframework\boot\actuate\endpoint\DataSourcePublicMetrics.java
+Falha no Analyzer. Os ancestrais da classe 'org.springframework.jmx.export.MBeanExportException' não foram encontrados. File: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-actuator\src\main\java\org\springframework\boot\actuate\endpoint\jmx\EndpointMBeanExporter.java
+Falha no Analyzer. Os ancestrais da classe 'org.springframework.web.client.HttpClientErrorException' não foram encontrados. File: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-actuator\src\main\java\org\springframework\boot\actuate\cloudfoundry\CloudFoundrySecurityService.java
+Falha no Analyzer. Os ancestrais da classe 'org.springframework.beans.factory.NoSuchBeanDefinitionException' não foram encontrados. File: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot-actuator\src\main\java\org\springframework\boot\actuate\autoconfigure\EndpointWebMvcAutoConfiguration.java
+Falha no Analyzer. Os ancestrais da classe 'org.springframework.beans.factory.NoSuchBeanDefinitionException' não foram encontrados. File: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot\src\main\java\org\springframework\boot\diagnostics\analyzer\NoUniqueBeanDefinitionFailureAnalyzer.java
+Falha no Analyzer. Os ancestrais da classe 'org.springframework.beans.factory.NoSuchBeanDefinitionException' não foram encontrados. File: D:\git\EHExtractor\EHExtractor\.\projects\spring-boot-master\spring-boot\src\main\java\org\springframework\boot\context\properties\ConfigurationPropertiesBindingPostProcessor.java
+

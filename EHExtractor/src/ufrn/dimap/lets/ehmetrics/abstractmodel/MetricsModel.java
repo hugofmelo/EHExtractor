@@ -12,7 +12,6 @@ import com.github.javaparser.ast.stmt.ThrowStmt;
 import com.github.javaparser.symbolsolver.model.declarations.ReferenceTypeDeclaration;
 import com.github.javaparser.symbolsolver.model.typesystem.ReferenceType;
 
-import ufrn.dimap.lets.ehmetrics.AnalyzerException;
 import ufrn.dimap.lets.ehmetrics.Util;
 
 public class MetricsModel
@@ -231,13 +230,14 @@ public class MetricsModel
 	
 	public List<Type> listTypes ()
 	{
-		List<Type> result = new ArrayList<Type>();
+		List<Type> types = new ArrayList<Type>();
 		
-		result.add(this.typeRoot);
-		result.addAll(this.typeRoot.getAllSubTypes());
+		types.add(this.typeRoot);
+		types.addAll(this.typeRoot.getAllSubTypes());
 		
-		return result;
+		return types;
 	}
+
 	/*
 	public FinallyEntry addFinally(Block finallyBlock)
 	{

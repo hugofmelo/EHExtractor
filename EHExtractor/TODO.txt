@@ -4,7 +4,21 @@ DONE Prioridade 0: Revisar loggers
 	DONE Transferir os métodos que calculam os totais dos resultados para o logger de resultado
 Prioridade 0: aprender a usar a api do github e implementar minha própria busca.
 	Como pegar mais que 1000 resultados
-		
+
+Prioridade 0:
+	Pegar 50 projetos android
+	Extrair
+		throws
+			exceção, tipo, origem
+		catches
+			exceção, tipo, origem, autocomplete, empty
+Prioridade 2:
+	Pegar 10 projetos com 10 releases
+		Extrair
+		throws
+			exceção, tipo, origem
+		catches
+			exceção, tipo, origem, autocomplete, empty
 Prioridade 1: Criar exceção para centralizar falhas de Analyzer.
 Prioridade 2: Revisar todo o código, linha a linha, removendo ou movendo classes para seus devidos lugares..
 Prioridade 2: Baixar e extrair os projetos automaticamente

@@ -3,34 +3,21 @@ package ufrn.dimap.lets.ehmetrics.visitor;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import java.util.Stack;
 
-import com.github.javaparser.ast.Node;
 import com.github.javaparser.ast.comments.Comment;
 import com.github.javaparser.ast.expr.Expression;
 import com.github.javaparser.ast.expr.MethodCallExpr;
 import com.github.javaparser.ast.expr.NameExpr;
-import com.github.javaparser.ast.expr.SimpleName;
-import com.github.javaparser.ast.stmt.BreakStmt;
 import com.github.javaparser.ast.stmt.CatchClause;
-import com.github.javaparser.ast.stmt.ContinueStmt;
 import com.github.javaparser.ast.stmt.ExpressionStmt;
-import com.github.javaparser.ast.stmt.ForeachStmt;
-import com.github.javaparser.ast.stmt.IfStmt;
-import com.github.javaparser.ast.stmt.ReturnStmt;
 import com.github.javaparser.ast.stmt.Statement;
-import com.github.javaparser.ast.stmt.ThrowStmt;
-import com.github.javaparser.ast.stmt.TryStmt;
 import com.github.javaparser.ast.type.ClassOrInterfaceType;
 import com.github.javaparser.ast.type.UnionType;
 import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
 import com.github.javaparser.symbolsolver.javaparsermodel.JavaParserFacade;
 import com.github.javaparser.symbolsolver.model.typesystem.ReferenceType;
 
-import ufrn.dimap.lets.ehmetrics.HandlerActionResolver;
-import ufrn.dimap.lets.ehmetrics.Logger;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.Handler;
-import ufrn.dimap.lets.ehmetrics.abstractmodel.HandlerActionType;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.MetricsModel;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.Type;
 

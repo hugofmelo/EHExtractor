@@ -36,32 +36,18 @@ public class Type extends AbstractEHModelElement
 		this.handlers = new ArrayList<Handler>();
 	}
 	
-	
-	
+	// Retorna todos os subtipos de this, em DFS order
 	public List<Type> getAllSubTypes()
 	{
-		List <Type> types = new ArrayList<Type>();
-		Stack <Type> stack = new Stack<Type> ();
-		Type auxType;
+		List<Type> result = new ArrayList<Type>();
 		
-		for ( Type t : this.subtypes )
+		for ( Type type : this.subtypes )
 		{
-			stack.push(t);
+			result.add(type);
+			result.addAll(type.getAllSubTypes());
 		}
 		
-		
-		while ( stack.isEmpty() == false )
-		{
-			auxType = stack.pop();
-			types.add(auxType);
-			
-			for ( Type t : auxType.subtypes )
-			{
-				stack.push(t);
-			} 
-		}
-		
-		return types;
+		return result;
 	}
 	
 	public List<Type> getAllAncestors()
