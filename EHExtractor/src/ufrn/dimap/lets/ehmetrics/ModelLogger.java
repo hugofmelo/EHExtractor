@@ -1,9 +1,9 @@
 package ufrn.dimap.lets.ehmetrics;
 
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.List;
-import java.util.Stack;
 
 import ufrn.dimap.lets.ehmetrics.abstractmodel.Handler;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.MetricsModel;
@@ -23,16 +23,47 @@ public class ModelLogger
 			throw new IllegalStateException ("O ModelLogger já havia sido iniciado.");
 		}
 		else
-		{			
-			result = new FileWriter (ProjectsUtil.logsRoot + "result.txt");
-			handlers = new FileWriter (ProjectsUtil.logsRoot + "handlers.txt");
-			signalers = new FileWriter (ProjectsUtil.logsRoot + "signalers.txt");
+		{	
+			File file; 
 			
-			result.write("PROJECT" + "\t" + "EXCEPTIONS" + "\t" + "HANDLERS" + "\t" + "AUTOCOMPLETE" + "\t" + "EMPTY\n" );
-			result.flush();
+			// Result
+			file = new File (ProjectsUtil.logsRoot + "result.txt");
+			if ( file.exists() )
+			{
+				result = new FileWriter (ProjectsUtil.logsRoot + "result.txt", true);
+			}
+			else
+			{
+				result = new FileWriter (ProjectsUtil.logsRoot + "result.txt");
+				result.write("PROJECT" + "\t" + "EXCEPTIONS" + "\t" + "HANDLERS" + "\t" + "AUTOCOMPLETE" + "\t" + "EMPTY\n" );
+				result.flush();
+			}
 			
-			handlers.write("PROJECT\tHANDLER ID\tHANDLED EXCEPTION\tEXCEPTION TYPE\tEXCEPTION ORIGIN\tAUTOCOMPLETE\tEMPTY\n");
-			handlers.flush();
+			// Handlers
+			file = new File (ProjectsUtil.logsRoot + "handlers.txt");
+			if ( file.exists() )
+			{
+				handlers = new FileWriter (ProjectsUtil.logsRoot + "handlers.txt", true);
+			}
+			else
+			{
+				handlers = new FileWriter (ProjectsUtil.logsRoot + "handlers.txt");
+				handlers.write("PROJECT\tHANDLER ID\tHANDLED EXCEPTION\tEXCEPTION TYPE\tEXCEPTION ORIGIN\tAUTOCOMPLETE\tEMPTY\n");
+				handlers.flush();
+			}
+			
+			// Signalers
+			file = new File (ProjectsUtil.logsRoot + "signalers.txt");
+			if ( file.exists() )
+			{
+				signalers = new FileWriter (ProjectsUtil.logsRoot + "signalers.txt", true);
+			}
+			else
+			{
+				signalers = new FileWriter (ProjectsUtil.logsRoot + "signalers.txt");
+				signalers.write("PROJECT\tSIGNALED EXCEPTION\tEXCEPTION TYPE\tEXCEPTION ORIGIN\n");
+				signalers.flush();
+			}
 		}
 	}
 
