@@ -13,6 +13,8 @@ import ufrn.dimap.lets.ehmetrics.abstractmodel.Type;
 public class ModelLogger
 {
 	private static FileWriter result = null;
+	private static FileWriter handlers = null;
+	private static FileWriter signalers = null;
 
 	public static void start () throws IOException
 	{
@@ -23,26 +25,40 @@ public class ModelLogger
 		else
 		{			
 			result = new FileWriter (ProjectsUtil.logsRoot + "result.txt");
-			writeResult("PROJECT" + "\t" + "EXCEPTIONS" + "\t" + "HANDLERS" + "\t" + "AUTOCOMPLETE" + "\t" + "EMPTY\n" );
+			handlers = new FileWriter (ProjectsUtil.logsRoot + "handlers.txt");
+			signalers = new FileWriter (ProjectsUtil.logsRoot + "signalers.txt");
+			
+			result.write("PROJECT" + "\t" + "EXCEPTIONS" + "\t" + "HANDLERS" + "\t" + "AUTOCOMPLETE" + "\t" + "EMPTY\n" );
+			result.flush();
+			
+			handlers.write("PROJECT\tHANDLER ID\tHANDLED EXCEPTION\tEXCEPTION TYPE\tEXCEPTION ORIGIN\tAUTOCOMPLETE\tEMPTY\n");
+			handlers.flush();
 		}
 	}
 
 	public static void stop () throws IOException
 	{
 		result.close();
+		handlers.close();
+		signalers.close();
+		
 		result = null;
+		handlers = null;
+		signalers = null;
 	}
 
 	public static void writeReport(String projectName, MetricsModel model) throws IOException
 	{
-		writeResult( writeProjectCount (projectName, model) );
+		result.write( writeProjectCount (projectName, model) );
+		result.flush();
 		
+		handlers.write(writeHandlers (projectName, model) );
+		handlers.flush();
 		
 		FileWriter output = new FileWriter (ProjectsUtil.logsRoot + projectName + "-output.txt");
 		output.write( writeHierarchy (projectName, model) ); output.write("\n\n");
-		output.write( writeTypesCount (projectName, model) ); output.write("\n\n");
+		//output.write( writeTypesCount (projectName, model) ); output.write("\n\n");
 		//output.write(writeSignalers (projectName, model) ); output.write("\n\n");
-		output.write(writeHandlers (projectName, model) ); output.write("\n\n");
 		output.close();
 	}
 
@@ -164,8 +180,6 @@ public class ModelLogger
 	{	
 		String result = "";
 		
-		result += "PROJECT\tHANDLER ID\tHANDLED EXCEPTION\tEXCEPTION TYPE\tEXCEPTION ORIGIN\tAUTOCOMPLETE\tEMPTY\n";
-		
 		int i = 1;
 		for ( Handler handler : model.getHandlers() )
 		{
@@ -177,12 +191,6 @@ public class ModelLogger
 		}
 		
 		return result;
-	}
-	
-	private static void writeResult (String msg) throws IOException
-	{
-		result.write(msg);
-		result.flush();
 	}
 }
 
