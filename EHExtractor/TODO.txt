@@ -3,10 +3,11 @@ DONE Prioridade 0: Revisar loggers
 	DONE Separar o logger do resultado do log de processamento
 	DONE Transferir os métodos que calculam os totais dos resultados para o logger de resultado
 
-Prioridade 0: criar SignalerVisitor e todo o que for preciso para fazer funcionar
+DONE Prioridade 0: criar SignalerVisitor e todo o que for preciso para fazer funcionar
 
-Prioridade 0: aprender a usar a api do github e implementar minha própria busca.
-	Como pegar mais que 1000 resultados
+
+
+
 
 Prioridade 0:
 	Pegar 50 projetos android mais estrelados
@@ -22,13 +23,22 @@ Prioridade 2:
 			exceção, tipo, origem
 		catches
 			exceção, tipo, origem, autocomplete, empty
-Prioridade 1: Um TypeVisitor para pegar os tipos.
+
+Prioridade 1: criar classe que baixa e unzipa os projetos. Deixar ela mais fácil e customizável
+	A classe Repository deve ter um método para baixar o repositório. Tipo Repository#downloadTo ( File targetFile, boolean unzip, String projectRootName ).
+	O método deve usar o System.out para avisar do progresso.
+	A classe deve receber um 
+
 Prioridade 1: Criar exceção para centralizar falhas de Analyzer.
 Prioridade 2: Adicionar linha de código nos modelos.
 Prioridade 2: Revisar todo o código, linha a linha, removendo ou movendo classes para seus devidos lugares..
 	Decidir como chamar os casos de "get" em que há processamento.
 Prioridade 2: Baixar e extrair os projetos automaticamente
 Prioridade 2: Algumas classes android não são incluidas nas dependencias. As classes são dos projetos 'support' do android (até agora, só v4). Verificar se os existem projetos android q usam classes support e q não tem problemas. Estou pensando que esse problema é de configuração do projeto, e não do EHMetrics.
+Prioridade 2: aprender a usar a api do github e implementar minha própria busca.
+	Como pegar mais que 1000 resultados
+Prioridade 2: publicar ferramenta que busca, baixa e descompacta para o LETS
+Prioridade 3: Um TypeVisitor para pegar os tipos.
 Prioridade 3: Identificar diferentes projetos em um mesmo repositório do Github
 Prioridade 4: Verificar padrões de autocomplete do Eclipse, NetBeans e IntelliJ
 	Implementar verificação de padrões
@@ -37,25 +47,6 @@ Prioridade 4: Verificar padrões de autocomplete do Eclipse, NetBeans e IntelliJ
 		OK AndroidStudio
 		NetBeans
 
-
-Busca por projetos Github
-	Verificar como pega o total
-	Verificar como pega dados de todos os projetos
-	Verificar se é viável pegar tamanho e estrela de todos os projetos Java
-		Java projects: 3439964
-		Java projects with 1+ stars: 444896
-		Java projects with 1+ AND 1mb+: 173772
-	
-
-Procedimento:
-	Filtrar projetos no github
-	Abrir em planilha
-	Selecionar a quantidade desejada para rodar
-	Copiar os selecionados para outra planilha
-	Ordenar por nome do projeto (e não usuário/nome)
-	Baixar e extrair os projetos
-	Rodar a ferramenta
-	Colar os resultados
 
 Nota: as classes de modelo que vão ser populadas pelo GitHub precisam ter os atributos iguais as tags do JSON (ver documentação), mas não precisam de getters e setters. Então a recomendação é trocar o nome dos getters para criar uma API mais amigável.
 Nota: o EHMetrics não suporta arquivos java sem pacote. A ferramenta descarta esses arquivos java.

@@ -2,6 +2,7 @@ package ufrn.dimap.lets.ehmetrics.repositoryexplorer;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.net.URL;
@@ -12,6 +13,8 @@ import java.util.Iterator;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
+import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.filefilter.FileFileFilter;
 import org.kohsuke.github.GHDirection;
 import org.kohsuke.github.GHRepository;
 import org.kohsuke.github.GHRepositorySearchBuilder;
@@ -20,6 +23,7 @@ import org.kohsuke.github.GitHub;
 import org.kohsuke.github.PagedSearchIterable;
 
 import ufrn.dimap.lets.ehmetrics.ProjectsUtil;
+import ufrn.dimap.lets.ehmetrics.dependencyresolver.FileFinder;
 import ufrn.dimap.lets.ehmetrics.repositoryexplorer.GHRepositorySeacher.LANGUAGE;
 import ufrn.dimap.lets.ehmetrics.repositoryexplorer.GHRepositorySeacher.ORDER;
 import ufrn.dimap.lets.ehmetrics.repositoryexplorer.GHRepositorySeacher.SORT;
@@ -54,6 +58,7 @@ public class GithubExplorer
 		while ( repoIte.hasNext() )
 		{
 			repo = repoIte.next();
+			
 			System.out.print((i+1)+"\t");
 			System.out.print(repo.getHtmlUrl()+"\t");
 			System.out.print(repo.getFullName()+"\t");
@@ -72,8 +77,8 @@ public class GithubExplorer
 				String projectDownloadURL = repo.getUrl()+"/zipball";
 				String zipFilePath = ProjectsUtil.projectsRoot+repo.getName()+".zip";
 				
-				GithubExplorer.downloadProjectZip(projectDownloadURL, zipFilePath);
-				GithubExplorer.unZip(zipFilePath, ProjectsUtil.projectsRoot);
+				//GithubExplorer.downloadProjectZip(projectDownloadURL, zipFilePath);
+				//GithubExplorer.unZip(zipFilePath, ProjectsUtil.projectsRoot);
 			}
 			i++;
 		}
@@ -130,62 +135,123 @@ public class GithubExplorer
 	}
 	 */
 
-	private static void downloadProjectZip (String sourceUrl, String targetFile) throws IOException
+	public void findAndroidProjects () throws IOException
+	{	
+		GitHub gitHub = GitHub.connectAnonymously();
+		GHRepositorySearchBuilder search = gitHub.searchRepositories();
+		search.sort(Sort.STARS);
+		search.order(GHDirection.DESC);
+		search.language("Java");		
+
+		// Executando a busca por projetos Java quaisquer
+		PagedSearchIterable<GHRepository> result = search.list();
+		System.out.println("Total: " + result.getTotalCount());
+		
+		// Para cada projeto, vamos baixá-lo, dezipa-lo e verificar se ele é android. Se for, são escritos seus dados
+		Iterator <GHRepository> repositoryIte = result.iterator();
+		GHRepository repository;
+		String projectDownloadURL;
+		File zipFile, projectRoot, projectRootNewName;
+
+		int androidProjects = 0;
+		
+		while ( repositoryIte.hasNext() && androidProjects < 100 )
+		{
+			repository = repositoryIte.next();
+			
+			projectDownloadURL = repository.getUrl()+"/zipball";
+			zipFile = new File (ProjectsUtil.projectsRoot+repository.getName()+".zip");
+			
+			GithubExplorer.downloadProjectZip(projectDownloadURL, zipFile);
+			projectRoot = GithubExplorer.unZip(zipFile, ProjectsUtil.projectsRoot);
+			projectRootNewName = new File ( ProjectsUtil.projectsRoot + File.separator + repository.getFullName().replaceAll("/", " ") );
+			
+			// Precisa checar se deu certo?
+			projectRoot.renameTo(projectRootNewName);
+			
+			if ( FileFinder.isAndroidProject(projectRootNewName) )
+			{
+				System.out.print((androidProjects+1)+"\t");
+				System.out.print(repository.getHtmlUrl()+"\t");
+				System.out.print(repository.getFullName()+"\t");
+				System.out.print(repository.getStargazersCount()+"\t");
+				System.out.print(repository.getSize()+"\t");
+				System.out.print(dateFormat.format(repository.getCreatedAt())+"\t");
+				System.out.print(dateFormat.format(repository.getPushedAt())+"\t");
+				//System.out.print(repo.listReleases().asList().size() + "\t");
+				//System.out.print(repo.listCommits().asList().size() + "\t");
+				//System.out.print(repo.listIssues(GHIssueState.ALL).asList().size() + "\t");
+				//System.out.print(dateFormat.format(repo.getUpdatedAt())+"\t");
+				System.out.println();
+				
+				androidProjects++;
+			}
+			else
+			{
+				FileUtils.deleteDirectory(projectRootNewName);
+			}
+			
+			zipFile.delete();
+		}
+	}
+	
+	private static void downloadProjectZip (String sourceUrl, File zipFile) throws IOException
 	{
 		// Download do arquivo
 		
 		URL website = new URL(sourceUrl);
 		ReadableByteChannel rbc = Channels.newChannel(website.openStream());
-		FileOutputStream fos = new FileOutputStream(targetFile);
+		FileOutputStream fos = new FileOutputStream(zipFile);
 		fos.getChannel().transferFrom(rbc, 0, Long.MAX_VALUE);
 		fos.close();
 		rbc.close();
 	}
 	
-	// Código não é meu.. Só peguei em qq lugar
-	private static void unZip(String zipFile, String outputFolder)
+	// Dezipa o projeto e retorna a raiz do projeto dezipado
+	private static File unZip(File zipFile, String outputFolder) throws IOException
 	{
 		byte[] buffer = new byte[1024];
 
-		try
+		//get the zip file content
+		ZipInputStream zis = new ZipInputStream(new FileInputStream(zipFile));
+		
+		// A primeira entry é a raiz do projeto. Vamos armazenar para retorná-la ao final
+		ZipEntry ze = zis.getNextEntry();
+		File projectRoot = new File(outputFolder + File.separator + ze.getName());
+		projectRoot.mkdirs();
+		
+		ze = zis.getNextEntry();
+				
+		while(ze != null)
 		{
-			//get the zip file content
-			ZipInputStream zis = new ZipInputStream(new FileInputStream(zipFile));
-			//get the zipped file list entry
-			ZipEntry ze = zis.getNextEntry();
-
-			while(ze != null)
+			String fileName = ze.getName();
+			File newFile = new File(outputFolder + File.separator + fileName);
+			
+			if ( ze.isDirectory() )
 			{
-				String fileName = ze.getName();
-				File newFile = new File(outputFolder + File.separator + fileName);
-				
-				if ( ze.isDirectory() )
-				{
-					newFile.mkdirs();
-				}
-				else
-				{
-					FileOutputStream fos = new FileOutputStream(newFile);
-
-					int len;
-					while ((len = zis.read(buffer)) > 0)
-					{
-						fos.write(buffer, 0, len);
-					}
-
-					fos.close();
-				}
-				
-				ze = zis.getNextEntry();
+				newFile.mkdirs();
 			}
+			else
+			{
+				FileOutputStream fos = new FileOutputStream(newFile);
 
-			zis.closeEntry();
-			zis.close();
+				int len;
+				while ((len = zis.read(buffer)) > 0)
+				{
+					fos.write(buffer, 0, len);
+				}
+
+				fos.close();
+			}
+			
+			ze = zis.getNextEntry();
 		}
-		catch(IOException ex)
-		{
-			ex.printStackTrace();
-		}
+
+		zis.closeEntry();
+		zis.close();
+		
+		
+		return projectRoot;
 	}
 
 	private void test () throws IOException
@@ -221,7 +287,7 @@ public class GithubExplorer
 		try
 		{
 			//explorer.test();
-			explorer.queryProjects( false );
+			explorer.findAndroidProjects();
 			//explorer.queryProjects2();
 		}
 		catch (IOException e)

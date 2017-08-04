@@ -4,10 +4,8 @@ import java.io.File;
 import java.util.Stack;
 
 // FileFinder recebe o diretorio de um projeto e busca por arquivos relevantes, que são armazenados em um objeto ProjectFiles.
-// IMPORTANTE: é comum ocorrer de um arquivo não ser parseado ou alguma dependencia falhar. Isso não vai parar o processamento. FileFinderException só é sinalizado se um erro fatal ocorrer, impedindo o projeto de ser processado.
 public class FileFinder
 {
-	// Esse método assume que 
 	public static ProjectFiles find (File projectRoot)
 	{
 		// Verificar se o caminho existe e é uma pasta
@@ -81,6 +79,56 @@ public class FileFinder
 			}
 			
 			return files;
+		}
+	}
+	
+	// Verifica se o projeto é android, sem armazenar nenhum dos arquivos.
+	public static boolean isAndroidProject (File projectRoot)
+	{
+		// Verificar se o caminho existe e é uma pasta
+		if ( projectRoot.exists() == false )
+		{
+			throw new IllegalStateException ("Caminho do projeto não existe: " + projectRoot);
+		}
+		else if ( projectRoot.isDirectory() == false )
+		{
+			throw new IllegalStateException ("Caminho do projeto não é uma pasta: " + projectRoot);
+		}
+		else
+		{
+			File parent;
+			Stack<File> filesStack = new Stack<File>();
+
+			parent = projectRoot;
+
+			// Percorre os arquivos do projeto (varredura em profundidade). O arquivo procurado é p AndroidManifest.xml
+			filesStack.add(parent);
+			while (filesStack.isEmpty() == false)
+			{
+				parent = filesStack.pop();
+
+				// Para cada documento na pasta
+				for (File child : parent.listFiles())
+				{
+					// Se for uma pasta, empilha para ser processado depois 
+					if ( child.isDirectory() )
+					{
+						filesStack.add(child);
+					}
+					// É um arquivo...
+					else
+					{
+						// Arquivo AndroidManifest.xml
+						if ( child.getName().equals(("AndroidManifest.xml") ) )
+						{
+							return true;
+						}
+					}
+				}
+			}
+			
+			// Se o laço encerrou, o projeto não é android.
+			return false;
 		}
 	}	
 }
