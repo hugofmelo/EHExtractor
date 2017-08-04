@@ -34,7 +34,7 @@ public class Util
 		}
 		else
 		{
-			return parent.getExceptionType();
+			return parent.getType();
 		}
 	}
 	

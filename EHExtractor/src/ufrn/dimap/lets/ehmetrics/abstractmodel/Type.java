@@ -15,18 +15,18 @@ public class Type extends AbstractEHModelElement
 	
 	// Tipo da exceção: NO_EXCEPTION, CHECKED_EXCEPTION, UNCHECKED_EXCEPTION, ERROR_EXCEPTION
 	private TypeOrigin origin;
-	private ExceptionType exceptionType;
+	private ExceptionType type;
 
 	// Uma referencia direta aos signalers e handlers deste type
 	private List<Signaler> signalers;
 	private List<Handler> handlers;
 	
 	
-	public Type (Node node, String typeName, ExceptionType exceptionType, TypeOrigin origin)
+	public Type (Node node, String typeName, ExceptionType type, TypeOrigin origin)
 	{
 		super(node);
 		this.qualifiedName = typeName;
-		this.exceptionType = exceptionType;
+		this.type = type;
 		this.origin = origin;
 		
 		this.subtypes = new ArrayList<Type>();
@@ -69,9 +69,9 @@ public class Type extends AbstractEHModelElement
 		return this.qualifiedName;
 	}
 	
-	public ExceptionType getExceptionType ()
+	public ExceptionType getType ()
 	{
-		return this.exceptionType;
+		return this.type;
 	}
 	
 	public TypeOrigin getOrigin ()
@@ -111,7 +111,7 @@ public class Type extends AbstractEHModelElement
 	
 	public String toString()
 	{
-		return this.qualifiedName+"::"+ this.exceptionType +"::"+this.origin;
+		return this.qualifiedName+"::"+ this.type +"::"+this.origin;
 	}
 
 }

@@ -1,5 +1,0 @@
-PROJECT	EXCEPTIONS	HANDLERS	AUTOCOMPLETE	EMPTY
-android-async-http-master	18	50	1	1
-Android-Universal-Image-Loader-master	15	43	0	5
-AndroidUtilCode-master	15	85	31	1
-butterknife-master	13	29	0	1

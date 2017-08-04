@@ -187,8 +187,8 @@ public class MetricsModel
 		}
 	}
 	*/
-	
-	/*public SignalerEntry addSignaler (ThrowStatement throwNode)
+	/*
+	public SignalerEntry addSignaler (ThrowStatement throwNode)
 	{
 		SignalerEntry signaler = new SignalerEntry (throwNode);
 		this.signalers.add(signaler);
@@ -199,7 +199,7 @@ public class MetricsModel
 		
 		return signaler;
 	}
-
+	
 	public TryEntry addTry(TryStatement tryNode)
 	{
 		TryEntry tryEntry = new TryEntry(tryNode);
@@ -208,9 +208,9 @@ public class MetricsModel
 	}
 	*/
 	
-	public Signaler addSignaler(ThrowStmt throwStatement, Type thrownType, SignalerType type)
+	public Signaler addSignaler(ThrowStmt throwNode, Type thrownType, SignalerType type)
 	{
-		Signaler signaler = new Signaler (throwStatement, thrownType, type);
+		Signaler signaler = new Signaler (throwNode, thrownType, type);
 		
 		this.signalers.add(signaler);
 		
@@ -310,34 +310,4 @@ public class MetricsModel
 		}
 	}
 	*/
-
-	public int computeHandledTypes()
-	{
-		Set <Type> handledTypes = new HashSet <Type> ();
-		
-		for ( Handler h : this.handlers )
-		{
-			for ( Type t : h.getExceptions() )
-			{
-				handledTypes.add(t);
-			}
-		}
-		
-		return handledTypes.size();
-	}
-	
-	public int computeTotalAutoCompleteHandlers()
-	{
-		int totalAutoCompleteHandlers = 0;
-		
-		for ( Handler h : this.handlers )
-		{
-			if (h.isAutoComplete())
-			{
-				totalAutoCompleteHandlers++;
-			}
-		}
-		
-		return totalAutoCompleteHandlers;
-	}
 }

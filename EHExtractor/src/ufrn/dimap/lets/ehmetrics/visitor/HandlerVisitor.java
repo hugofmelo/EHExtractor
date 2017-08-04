@@ -21,7 +21,7 @@ import ufrn.dimap.lets.ehmetrics.abstractmodel.Handler;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.MetricsModel;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.Type;
 
-public class AutoCompleteCheckVisitor extends VoidVisitorAdapter<JavaParserFacade>
+public class HandlerVisitor extends VoidVisitorAdapter<JavaParserFacade>
 {
 	private MetricsModel model;
 	/*
@@ -30,7 +30,7 @@ public class AutoCompleteCheckVisitor extends VoidVisitorAdapter<JavaParserFacad
 	*/
 	//private int netBeansHandlers;
 	
-	public AutoCompleteCheckVisitor (MetricsModel model)
+	public HandlerVisitor (MetricsModel model)
 	{
 		/*
 		exceptionNamesStack = new Stack<SimpleName>();
@@ -41,38 +41,9 @@ public class AutoCompleteCheckVisitor extends VoidVisitorAdapter<JavaParserFacad
 
 	public void visit (CatchClause catchClause, JavaParserFacade facade)
 	{		
-		//MetricsModel model = MetricsModel.getInstance();
-
-		// CHECK CATCH TYPE
-		List<ReferenceType> referenceTypes = new ArrayList<ReferenceType>();
-
-		// Solving "regular" catch clause
-		if ( catchClause.getParameter().getType() instanceof ClassOrInterfaceType)
-		{
-			try
-			{
-				ReferenceType refType = (ReferenceType) facade.convertToUsage(catchClause.getParameter().getType());
-				referenceTypes.add(refType);
-			}
-			catch (UnsupportedOperationException e)
-			{
-				facade.getType(catchClause.getParameter());
-				  
-			}
-		}
-		// Solving multicatch clause
-		else if (catchClause.getParameter().getType() instanceof UnionType)
-		{
-			// Im trying this and getting an UnsupportedOperationException
-			UnionType multiCatch = (UnionType) catchClause.getParameter().getType();
-			Iterator<com.github.javaparser.ast.type.ReferenceType> i = multiCatch.getElements().iterator();
-			while ( i.hasNext() )
-			{
-				ReferenceType refType = (ReferenceType) facade.convertToUsage(i.next());
-				referenceTypes.add(refType);
-			}
-		}
-
+		// GET HANDLED TYPES
+		List<ReferenceType> referenceTypes = Util.getHandledTypes(catchClause, facade);
+		
 		// CREATE EXCEPTION TYPES ON MODEL
 		List <Type> types = new ArrayList <Type> ();
 		for ( ReferenceType refType : referenceTypes )
@@ -88,21 +59,9 @@ public class AutoCompleteCheckVisitor extends VoidVisitorAdapter<JavaParserFacad
 		
 		// CHECK IF EMPTY HANDLER
 		handler.setEmpty(this.isEmptyHandler(catchClause));
-		/*
-		// PUSH HANDLER TO STACK
-		SimpleName exceptionName = catchClause.getParameter().getName();
-		exceptionNamesStack.add(exceptionName);
-		handlersStack.add(handler);		
-		 */
-
+		
 		// VISIT CHILDREN
 		super.visit(catchClause,facade);
-
-		/*
-		// POP HANDLER FROM STACK
-		exceptionNamesStack.pop();
-		handlersStack.pop();
-		 */
 	}
 
 	/**

@@ -4,6 +4,8 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 import com.github.javaparser.JavaParser;
 import com.github.javaparser.ast.CompilationUnit;
@@ -16,23 +18,34 @@ import com.github.javaparser.symbolsolver.resolution.typesolvers.JavaParserTypeS
 import com.github.javaparser.symbolsolver.resolution.typesolvers.ReflectionTypeSolver;
 
 import javassist.NotFoundException;
+import ufrn.dimap.lets.ehmetrics.abstractmodel.MetricsModel;
 import ufrn.dimap.lets.ehmetrics.dependencyresolver.ProjectArtifacts;
+import ufrn.dimap.lets.ehmetrics.visitor.HandlerVisitor;
+import ufrn.dimap.lets.ehmetrics.visitor.SignalerVisitor;
 
 public class Analyzer
 {
 	// Ao encerrar este metodo, o modelo injetado no visitor terá o resultado do processamento
-	public static void analyze(ProjectArtifacts artifacts, VoidVisitorAdapter<JavaParserFacade> visitor)
+	public static MetricsModel analyze(ProjectArtifacts artifacts)
 	{
 		CombinedTypeSolver solver = Analyzer.configSolver(artifacts);
-	
+		MetricsModel model = new MetricsModel ();
+		
 		int fileCount = 1;
 		for ( File javaFile : artifacts.getJavaFiles() )
 		{
+			List <VoidVisitorAdapter<JavaParserFacade>> visitors = getVisitors(model);
+			
 			System.out.print("Parsing " + fileCount++ + "...");
 			try
 			{
 				CompilationUnit compUnit = JavaParser.parse(new FileInputStream(javaFile.getAbsolutePath()));
-				compUnit.accept(visitor, JavaParserFacade.get(solver));
+				
+				for ( VoidVisitorAdapter<JavaParserFacade> visitor : visitors )
+				{
+					compUnit.accept(visitor, JavaParserFacade.get(solver));
+				}
+				
 				System.out.println(" OK");
 			}
 			catch (UnsolvedSymbolException e)
@@ -56,6 +69,8 @@ public class Analyzer
 				ErrorLogger.addUnknownAncestral("Falha no Analyzer. " + e.getMessage() + " File: " + javaFile.getAbsolutePath());
 			}
 		}
+		
+		return model;
 	}
 
 	private static CombinedTypeSolver configSolver(ProjectArtifacts artifacts)
@@ -96,5 +111,16 @@ public class Analyzer
 		}
 		
 		return solver;
+	}
+	
+	private static List <VoidVisitorAdapter<JavaParserFacade>> getVisitors (MetricsModel model)
+	{
+		List <VoidVisitorAdapter<JavaParserFacade>> visitors = new ArrayList <VoidVisitorAdapter<JavaParserFacade>>();
+		
+		//visitors.add(new TestVisitor());
+		visitors.add(new HandlerVisitor(model));
+		visitors.add(new SignalerVisitor(model));
+		
+		return visitors;
 	}
 }

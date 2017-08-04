@@ -9,7 +9,6 @@ import ufrn.dimap.lets.ehmetrics.dependencyresolver.ArtifactResolver;
 import ufrn.dimap.lets.ehmetrics.dependencyresolver.FileFinder;
 import ufrn.dimap.lets.ehmetrics.dependencyresolver.ProjectArtifacts;
 import ufrn.dimap.lets.ehmetrics.dependencyresolver.ProjectFiles;
-import ufrn.dimap.lets.ehmetrics.visitor.AutoCompleteCheckVisitor;
 
 public class Main
 {
@@ -19,7 +18,9 @@ public class Main
 		
 		try
 		{
-			main.execute();
+			//main.execute();
+			main.checkAndroid();
+			
 		}
 		catch (IOException e)
 		{
@@ -66,6 +67,7 @@ public class Main
 
 			if ( projectFiles.getAndroidManifest() == null )
 			{
+				ErrorLogger.stop();
 				continue;
 			}
 			
@@ -77,15 +79,8 @@ public class Main
 			// Logging
 			ArtifactLogger.writeReport(project.getName(), projectFiles, projectArtifacts);
 
-			System.out.println("Criando modelo...");
-			MetricsModel model = new MetricsModel();
-
-			System.out.println("Criando visitor...");
-			//TestVisitor visitor = new TestVisitor();
-			AutoCompleteCheckVisitor visitor = new AutoCompleteCheckVisitor(model);
-
 			System.out.println("Executando análise...");
-			Analyzer.analyze(projectArtifacts, visitor);
+			MetricsModel model = Analyzer.analyze(projectArtifacts); 
 
 			System.out.println("Salvando resultados...");
 			// Logging
@@ -99,6 +94,24 @@ public class Main
 
 		ModelLogger.stop();
 
+		System.out.println("FINALIZADO");
+	}
+	
+	public void checkAndroid() throws IOException
+	{
+		System.out.println("Identificando projetos para analise...");
+		System.out.println();
+		List<File> projects = ProjectsUtil.listProjects();
+
+		for ( File project : projects )
+		{	
+			ProjectFiles projectFiles = FileFinder.find(project);
+
+			System.out.print(project.getName() + "\t");
+			System.out.println ( projectFiles.getAndroidManifest() != null );
+		}
+
+		System.out.println();
 		System.out.println("FINALIZADO");
 	}
 }

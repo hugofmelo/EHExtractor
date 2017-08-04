@@ -1,4 +1,4 @@
-package ufrn.dimap.lets.ehmetrics.test;
+package ufrn.dimap.lets.ehmetrics.test.anonymousstaticnested;
 
 public class BaseClass 
 {	

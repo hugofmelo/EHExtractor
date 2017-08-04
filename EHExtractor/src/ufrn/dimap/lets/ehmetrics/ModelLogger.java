@@ -7,6 +7,7 @@ import java.util.List;
 
 import ufrn.dimap.lets.ehmetrics.abstractmodel.Handler;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.MetricsModel;
+import ufrn.dimap.lets.ehmetrics.abstractmodel.Signaler;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.Type;
 
 //ModelLogger é um stateless logger de longa duração, mas também possui operações instantaneas. O tempo de vida dele é longo, mas ele não precisa armazenar estado (somente o arquivo).
@@ -35,7 +36,7 @@ public class ModelLogger
 			else
 			{
 				result = new FileWriter (ProjectsUtil.logsRoot + "result.txt");
-				result.write("PROJECT" + "\t" + "EXCEPTIONS" + "\t" + "HANDLERS" + "\t" + "AUTOCOMPLETE" + "\t" + "EMPTY\n" );
+				result.write("PROJECT" + "\t" + "SIGNALED EXCEPTIONS" + "\t" + "SIGNALERS" + "\t" + "HANDLED EXCEPTIONS" + "\t" + "HANDLERS" + "\t" + "AUTOCOMPLETE HANDLERS" + "\t" + "EMPTY HANDLERS\n" );
 				result.flush();
 			}
 			
@@ -61,7 +62,7 @@ public class ModelLogger
 			else
 			{
 				signalers = new FileWriter (ProjectsUtil.logsRoot + "signalers.txt");
-				signalers.write("PROJECT\tSIGNALED EXCEPTION\tEXCEPTION TYPE\tEXCEPTION ORIGIN\n");
+				signalers.write("PROJECT\tSIGNALED EXCEPTION\tEXCEPTION TYPE\tEXCEPTION ORIGIN\tSIGNALER TYPE\n");
 				signalers.flush();
 			}
 		}
@@ -86,6 +87,9 @@ public class ModelLogger
 		handlers.write(writeHandlers (projectName, model) );
 		handlers.flush();
 		
+		signalers.write(writeSignalers (projectName, model) );
+		signalers.flush();
+		
 		FileWriter output = new FileWriter (ProjectsUtil.logsRoot + projectName + "-output.txt");
 		output.write( writeHierarchy (projectName, model) ); output.write("\n\n");
 		//output.write( writeTypesCount (projectName, model) ); output.write("\n\n");
@@ -94,12 +98,13 @@ public class ModelLogger
 	}
 
 	private static String writeProjectCount (String projectName, MetricsModel model) throws IOException
-	{		
+	{
+		int distinctSignaledExceptions;
 		int distinctHandledExceptions;
-		//int distinctSignaledExceptions;
 		int autocompleteHandlers;
 		int emptyHandlers;
 
+		distinctSignaledExceptions = 0;
 		distinctHandledExceptions = 0;
 		autocompleteHandlers = 0;
 		emptyHandlers = 0;
@@ -110,7 +115,12 @@ public class ModelLogger
 		{
 			Type t = exceptions.get(i);
 
-			// Alguns tipos não tem handlers, mas são listados porque fazem parte da hierarquia
+			// Alguns tipos não tem signalers e/ou handlers, mas são listados porque fazem parte da hierarquia
+			if ( t.getSignalers().size() > 0 )
+			{
+				distinctSignaledExceptions++;
+			}
+			
 			if ( t.getHandlers().size() > 0 )
 			{
 				distinctHandledExceptions++;
@@ -130,7 +140,7 @@ public class ModelLogger
 			}			
 		}
 		
-		return projectName + "\t" + distinctHandledExceptions + "\t" + model.getHandlers().size() + "\t" + autocompleteHandlers + "\t" + emptyHandlers + "\n";
+		return projectName + "\t" + distinctSignaledExceptions + "\t" + model.getSignalers().size() + "\t" + distinctHandledExceptions + "\t" + model.getHandlers().size() + "\t" + autocompleteHandlers + "\t" + emptyHandlers + "\n";
 	}
 	
 	private static String writeHierarchy (String projectName, MetricsModel model) throws IOException
@@ -204,7 +214,15 @@ public class ModelLogger
 	
 	private static String writeSignalers (String projectName, MetricsModel model)
 	{
-		return null;
+		String result = "";
+	
+		for ( Signaler signaler : model.getSignalers() )
+		{
+			Type exception = signaler.getException();
+			result += projectName + "\t" + exception.getQualifiedName() + "\t" + exception.getType()+"\t"+exception.getOrigin()+"\t"+signaler.getType()+"\n";
+		}
+		
+		return result;
 	}
 	
 	private static String writeHandlers (String projectName, MetricsModel model) throws IOException
@@ -216,7 +234,7 @@ public class ModelLogger
 		{
 			for ( Type exception : handler.getExceptions() )
 			{
-				result += projectName + "\t" + i + "\t" + exception.getQualifiedName()+"\t"+exception.getExceptionType()+"\t"+exception.getOrigin()+"\t"+handler.isAutoComplete()+"\t"+handler.isEmpty()+"\n";
+				result += projectName + "\t" + i + "\t" + exception.getQualifiedName()+"\t"+exception.getType()+"\t"+exception.getOrigin()+"\t"+handler.isAutoComplete()+"\t"+handler.isEmpty()+"\n";
 			}
 			i++;
 		}

@@ -197,55 +197,55 @@ public class CatchVisitor extends VoidVisitorAdapter<JavaParserFacade>
 						model.addSignaler(throwStatement, thrownType, SignalerType.WRAPPING);
 					}
 					// Wrap checked > checked
-					else if ( peekExceptionType.getExceptionType() == ExceptionType.CHECKED_EXCEPTION && thrownType.getExceptionType() == ExceptionType.CHECKED_EXCEPTION )
+					else if ( peekExceptionType.getType() == ExceptionType.CHECKED_EXCEPTION && thrownType.getType() == ExceptionType.CHECKED_EXCEPTION )
 					{
 						handler.addHandlerAction(throwStatement, HandlerActionType.WRAP_CHECKED_CHECKED);
 						model.addSignaler(throwStatement, thrownType, SignalerType.WRAPPING);
 					}
 					// Wrap checked > unchecked
-					else if ( peekExceptionType.getExceptionType() == ExceptionType.CHECKED_EXCEPTION && thrownType.getExceptionType() == ExceptionType.UNCHECKED_EXCEPTION )
+					else if ( peekExceptionType.getType() == ExceptionType.CHECKED_EXCEPTION && thrownType.getType() == ExceptionType.UNCHECKED_EXCEPTION )
 					{
 						handler.addHandlerAction(throwStatement, HandlerActionType.WRAP_CHECKED_UNCHECKED);
 						model.addSignaler(throwStatement, thrownType, SignalerType.WRAPPING);
 					}
 					// Wrap checked > error
-					else if ( peekExceptionType.getExceptionType() == ExceptionType.CHECKED_EXCEPTION && thrownType.getExceptionType() == ExceptionType.ERROR_EXCEPTION )
+					else if ( peekExceptionType.getType() == ExceptionType.CHECKED_EXCEPTION && thrownType.getType() == ExceptionType.ERROR_EXCEPTION )
 					{
 						handler.addHandlerAction(throwStatement, HandlerActionType.WRAP_CHECKED_ERROR);
 						model.addSignaler(throwStatement, thrownType, SignalerType.WRAPPING);
 					}
 					// Wrap unchecked > checked
-					else if ( peekExceptionType.getExceptionType() == ExceptionType.UNCHECKED_EXCEPTION && thrownType.getExceptionType() == ExceptionType.CHECKED_EXCEPTION )
+					else if ( peekExceptionType.getType() == ExceptionType.UNCHECKED_EXCEPTION && thrownType.getType() == ExceptionType.CHECKED_EXCEPTION )
 					{
 						handler.addHandlerAction(throwStatement, HandlerActionType.WRAP_UNCHECKED_CHECKED);
 						model.addSignaler(throwStatement, thrownType, SignalerType.WRAPPING);
 					}
 					// Wrap unchecked > unchecked
-					else if ( peekExceptionType.getExceptionType() == ExceptionType.UNCHECKED_EXCEPTION && thrownType.getExceptionType() == ExceptionType.UNCHECKED_EXCEPTION )
+					else if ( peekExceptionType.getType() == ExceptionType.UNCHECKED_EXCEPTION && thrownType.getType() == ExceptionType.UNCHECKED_EXCEPTION )
 					{
 						handler.addHandlerAction(throwStatement, HandlerActionType.WRAP_UNCHECKED_UNCHECKED);
 						model.addSignaler(throwStatement, thrownType, SignalerType.WRAPPING);
 					}
 					// Wrap unchecked > error
-					else if ( peekExceptionType.getExceptionType() == ExceptionType.UNCHECKED_EXCEPTION && thrownType.getExceptionType() == ExceptionType.ERROR_EXCEPTION )
+					else if ( peekExceptionType.getType() == ExceptionType.UNCHECKED_EXCEPTION && thrownType.getType() == ExceptionType.ERROR_EXCEPTION )
 					{
 						handler.addHandlerAction(throwStatement, HandlerActionType.WRAP_UNCHECKED_ERROR);
 						model.addSignaler(throwStatement, thrownType, SignalerType.WRAPPING);
 					}
 					// Wrap error > checked
-					else if ( peekExceptionType.getExceptionType() == ExceptionType.ERROR_EXCEPTION && thrownType.getExceptionType() == ExceptionType.CHECKED_EXCEPTION )
+					else if ( peekExceptionType.getType() == ExceptionType.ERROR_EXCEPTION && thrownType.getType() == ExceptionType.CHECKED_EXCEPTION )
 					{
 						handler.addHandlerAction(throwStatement, HandlerActionType.WRAP_ERROR_CHECKED);
 						model.addSignaler(throwStatement, thrownType, SignalerType.WRAPPING);
 					}
 					// Wrap error > unchecked
-					else if ( peekExceptionType.getExceptionType() == ExceptionType.ERROR_EXCEPTION && thrownType.getExceptionType() == ExceptionType.UNCHECKED_EXCEPTION )
+					else if ( peekExceptionType.getType() == ExceptionType.ERROR_EXCEPTION && thrownType.getType() == ExceptionType.UNCHECKED_EXCEPTION )
 					{
 						handler.addHandlerAction(throwStatement, HandlerActionType.WRAP_ERROR_UNCHECKED);
 						model.addSignaler(throwStatement, thrownType, SignalerType.WRAPPING);
 					}
 					// Wrap error > error
-					else if ( peekExceptionType.getExceptionType() == ExceptionType.ERROR_EXCEPTION && thrownType.getExceptionType() == ExceptionType.ERROR_EXCEPTION )
+					else if ( peekExceptionType.getType() == ExceptionType.ERROR_EXCEPTION && thrownType.getType() == ExceptionType.ERROR_EXCEPTION )
 					{
 						handler.addHandlerAction(throwStatement, HandlerActionType.WRAP_ERROR_ERROR);
 						model.addSignaler(throwStatement, thrownType, SignalerType.WRAPPING);

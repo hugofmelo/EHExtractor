@@ -2,6 +2,9 @@ DONE Prioridade 0: Revisar loggers
 	DONE Criar um variável em logger para cada tipo de erro. Elas seriam reiniciadas junto do projeto
 	DONE Separar o logger do resultado do log de processamento
 	DONE Transferir os métodos que calculam os totais dos resultados para o logger de resultado
+
+Prioridade 0: criar SignalerVisitor e todo o que for preciso para fazer funcionar
+
 Prioridade 0: aprender a usar a api do github e implementar minha própria busca.
 	Como pegar mais que 1000 resultados
 
@@ -19,8 +22,11 @@ Prioridade 2:
 			exceção, tipo, origem
 		catches
 			exceção, tipo, origem, autocomplete, empty
+Prioridade 1: Um TypeVisitor para pegar os tipos.
 Prioridade 1: Criar exceção para centralizar falhas de Analyzer.
+Prioridade 2: Adicionar linha de código nos modelos.
 Prioridade 2: Revisar todo o código, linha a linha, removendo ou movendo classes para seus devidos lugares..
+	Decidir como chamar os casos de "get" em que há processamento.
 Prioridade 2: Baixar e extrair os projetos automaticamente
 Prioridade 2: Algumas classes android não são incluidas nas dependencias. As classes são dos projetos 'support' do android (até agora, só v4). Verificar se os existem projetos android q usam classes support e q não tem problemas. Estou pensando que esse problema é de configuração do projeto, e não do EHMetrics.
 Prioridade 3: Identificar diferentes projetos em um mesmo repositório do Github
