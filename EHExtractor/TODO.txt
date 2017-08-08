@@ -3,7 +3,12 @@ DONE Prioridade 0: Revisar loggers
 	DONE Separar o logger do resultado do log de processamento
 	DONE Transferir os métodos que calculam os totais dos resultados para o logger de resultado
 
+
 DONE Prioridade 0: criar SignalerVisitor e todo o que for preciso para fazer funcionar
+
+Prioridade -2: criar Gradle e Maven Exception, que são capturados no analyze e salvam o arquivo que deu erro. Criar entrada no ErrorLogger para isso.
+Prioridade -1: Tentar corrigir os erros e limitados.
+Prioridade 0: criar UnknownSignalerException, que é capturada no analyze e salva o arquivo. Criar entrada no ErrorLogger para isso. Rodar tudo de novo.
 
 
 

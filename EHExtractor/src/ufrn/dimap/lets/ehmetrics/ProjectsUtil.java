@@ -10,8 +10,8 @@ public class ProjectsUtil
 	private static final boolean projectsOnDemand = false;
 	
 	// Colocar endereço com barra ('/') no final
-	public static final String projectsRoot = "D:/Desenvolvimento/Projetos Github/";
-	public static final String logsRoot = "./log-android/";
+	public static final String projectsRoot = "D:/Desenvolvimento/Projetos Github/running/";
+	public static final String logsRoot = "./log/";
 	
 	public static List<File> listProjects ()
 	{

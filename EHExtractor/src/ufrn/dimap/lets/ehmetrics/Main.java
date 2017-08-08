@@ -18,8 +18,8 @@ public class Main
 		
 		try
 		{
-			//main.execute();
-			main.checkAndroid();
+			main.execute();
+			//main.checkAndroid();
 			
 		}
 		catch (IOException e)
