@@ -1,9 +1,11 @@
-package ufrn.dimap.lets.ehmetrics;
+package ufrn.dimap.lets.ehmetrics.logger;
 
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+
+import ufrn.dimap.lets.ehmetrics.ProjectsUtil;
 
 // ErrorLogger é um stateful logger instataneo. Ele armazena estado, mas o arquivo é criado e fechado na mesma chamada.
 public class ErrorLogger
@@ -15,6 +17,8 @@ public class ErrorLogger
 	private static List<String> unsolved;
 	private static List<String> unsupported;
 	private static List<String> unknownAncestral;
+	
+	private static List<String> unknownSignalers;
 	
 
 	public static void start () throws IOException
@@ -32,6 +36,8 @@ public class ErrorLogger
 			unsolved = new ArrayList<String>();
 			unsupported = new ArrayList<String>();
 			unknownAncestral = new ArrayList<String>();
+			
+			unknownSignalers = new ArrayList<String>();
 		}
 	}
 	
@@ -44,6 +50,8 @@ public class ErrorLogger
 		unsolved = null;
 		unsupported = null;
 		unknownAncestral = null;		
+		
+		unknownSignalers = null;
 	}
 
 	public static void writeReport(String projectName) throws IOException
@@ -65,7 +73,8 @@ public class ErrorLogger
 		
 		result += "Unsolved types: " + unsolved.size() + "\n";
 		result += "Unsupported errors: " + unsupported.size() + "\n";
-		result += "Unkown ancestral: " + unknownAncestral.size() + "\n";
+		result += "Unknown ancestral: " + unknownAncestral.size() + "\n";
+		result += "Unknown signaler: " + unknownSignalers.size() + "\n";
 		result += "\n";
 		
 		return result;
@@ -118,6 +127,13 @@ public class ErrorLogger
 		}
 		result += "\n";
 		
+		result += "UNKNOWN SIGNALERS\n";
+		for ( String str : unknownSignalers )
+		{
+			result += str + "\n";
+		}
+		result += "\n";
+		
 		return result;
 	}
 	
@@ -149,5 +165,10 @@ public class ErrorLogger
 	public static void addUnknownAncestral (String errorMessage)
 	{
 		unknownAncestral.add(errorMessage);
+	}
+	
+	public static void addUnknownSignaler (String errorMessage)
+	{
+		unknownSignalers.add(errorMessage);
 	}
 }

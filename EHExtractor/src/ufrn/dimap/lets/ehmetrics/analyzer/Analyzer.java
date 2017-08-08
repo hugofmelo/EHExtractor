@@ -1,4 +1,4 @@
-package ufrn.dimap.lets.ehmetrics;
+package ufrn.dimap.lets.ehmetrics.analyzer;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -20,6 +20,7 @@ import com.github.javaparser.symbolsolver.resolution.typesolvers.ReflectionTypeS
 import javassist.NotFoundException;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.MetricsModel;
 import ufrn.dimap.lets.ehmetrics.dependencyresolver.ProjectArtifacts;
+import ufrn.dimap.lets.ehmetrics.logger.ErrorLogger;
 import ufrn.dimap.lets.ehmetrics.visitor.HandlerVisitor;
 import ufrn.dimap.lets.ehmetrics.visitor.SignalerVisitor;
 
@@ -31,6 +32,7 @@ public class Analyzer
 		CombinedTypeSolver solver = Analyzer.configSolver(artifacts);
 		MetricsModel model = new MetricsModel ();
 		
+		System.out.println("Total de arquivos java: " + artifacts.getJavaFiles().size());
 		int fileCount = 1;
 		for ( File javaFile : artifacts.getJavaFiles() )
 		{
@@ -63,7 +65,12 @@ public class Analyzer
 				System.out.println(" Error - Unsupported operation.");
 				ErrorLogger.addUnsupported("Falha no Analyzer. UnsupportedOperation ao parsear arquivo. File: " + javaFile.getAbsolutePath());
 			}
-			catch (AnalyzerException e)
+			catch (UnknownSignalerException e)
+			{
+				System.out.println(" Error - Signaler não reconhecido.");
+				ErrorLogger.addUnknownSignaler("Falha no Analyzer. " + e.getMessage() + " File: " + javaFile.getAbsolutePath());
+			}
+			catch (UnknownAncestralException e)
 			{
 				System.out.println(" Error - Ancestral não resolvido.");
 				ErrorLogger.addUnknownAncestral("Falha no Analyzer. " + e.getMessage() + " File: " + javaFile.getAbsolutePath());

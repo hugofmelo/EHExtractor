@@ -160,15 +160,17 @@ public class GithubExplorer
 			repository = repositoryIte.next();
 			
 			projectDownloadURL = repository.getUrl()+"/zipball";
-			zipFile = new File (ProjectsUtil.donwloadTo+repository.getName()+".zip");
+			zipFile = new File (ProjectsUtil.projectsRoot+repository.getName()+".zip");
 			
 			GithubExplorer.downloadProjectZip(projectDownloadURL, zipFile);
-			projectRoot = GithubExplorer.unZip(zipFile, ProjectsUtil.donwloadTo, repository.getFullName().replaceAll("/", " "));
+			projectRoot = GithubExplorer.unZip(zipFile, ProjectsUtil.projectsRoot, repository.getFullName().replaceAll("/", " "));
 			
 			
 			if ( FileFinder.isAndroidProject(projectRoot) )
 			{
-				System.out.print((androidProjects+1)+"\t");
+				androidProjects++;
+				
+				System.out.print((androidProjects)+"\t");
 				/*
 				System.out.print(repository.getHtmlUrl()+"\t");
 				System.out.print(repository.getFullName()+"\t");
@@ -181,9 +183,9 @@ public class GithubExplorer
 				//System.out.print(repo.listCommits().asList().size() + "\t");
 				//System.out.print(repo.listIssues(GHIssueState.ALL).asList().size() + "\t");
 				//System.out.print(dateFormat.format(repo.getUpdatedAt())+"\t");
-				//System.out.println();
+				System.out.println();
 				
-				androidProjects++;
+				
 			}
 			else
 			{
@@ -250,7 +252,7 @@ public class GithubExplorer
 		zis.close();
 		
 		
-		File projectRootNewName = new File ( ProjectsUtil.donwloadTo + File.separator + projectRootName );
+		File projectRootNewName = new File ( ProjectsUtil.projectsRoot + File.separator + projectRootName );
 		
 		// Verificar se houve erro
 		if ( !projectRoot.renameTo(projectRootNewName) )

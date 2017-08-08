@@ -28,7 +28,6 @@ public class GradleResolver
 		GradleConnector gradleConnector = GradleConnector.newConnector();
 		//gradleConnector.useInstallation(new File ("C:/Gradle/gradle-4.0.1"));
 		gradleConnector.forProjectDirectory(gradleProjectPath.getParentFile());
-		//gradleConnector.forProjectDirectory(new File("C:/Users/hugofm/git/EHMetrics/EHMetrics/projects/JakeWharton-butterknife/butterknife"));
 
 		ProjectConnection gradleConnection = gradleConnector.connect();
 
@@ -116,6 +115,7 @@ public class GradleResolver
 		List <File> dependencies = new ArrayList<File>();
 
 		GradleConnector gradleConnector = GradleConnector.newConnector();
+		
 		//gradleConnector.useInstallation(new File ("C:/Gradle/gradle-4.0.1"));
 		gradleConnector.forProjectDirectory(gradleProjectPath.getParentFile());
 
@@ -137,7 +137,7 @@ public class GradleResolver
 			dependencies.size();
 
 			 */
-
+			//org.gradle.api.Project p = gradleConnection.getModel (Project.)
 
 			EclipseProject eclipseProject = gradleConnection.getModel(EclipseProject.class);
 			/*

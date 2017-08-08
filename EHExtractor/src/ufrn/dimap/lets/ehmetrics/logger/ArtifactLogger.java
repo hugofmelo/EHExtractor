@@ -1,9 +1,10 @@
-package ufrn.dimap.lets.ehmetrics;
+package ufrn.dimap.lets.ehmetrics.logger;
 
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
+import ufrn.dimap.lets.ehmetrics.ProjectsUtil;
 import ufrn.dimap.lets.ehmetrics.dependencyresolver.ProjectArtifacts;
 import ufrn.dimap.lets.ehmetrics.dependencyresolver.ProjectFiles;
 

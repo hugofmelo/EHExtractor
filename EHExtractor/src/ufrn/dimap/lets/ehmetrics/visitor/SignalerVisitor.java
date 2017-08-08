@@ -15,10 +15,10 @@ import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
 import com.github.javaparser.symbolsolver.javaparsermodel.JavaParserFacade;
 import com.github.javaparser.symbolsolver.model.typesystem.ReferenceType;
 
-import ufrn.dimap.lets.ehmetrics.ErrorLogger;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.MetricsModel;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.SignalerType;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.Type;
+import ufrn.dimap.lets.ehmetrics.analyzer.UnknownSignalerException;
 
 public class SignalerVisitor extends VoidVisitorAdapter<JavaParserFacade>
 {
@@ -58,8 +58,8 @@ public class SignalerVisitor extends VoidVisitorAdapter<JavaParserFacade>
 		}
 		else
 		{
-			ErrorLogger.addError("Erro em SignalerVisitor. Sinalizado um tipo que não é uma classe.");		
-			super.visit(throwStatement,facade);
+			throw new UnknownSignalerException ("Sinalizado um tipo que não é uma classe.");	
+			//super.visit(throwStatement,facade);
 
 		}
 	}
@@ -103,8 +103,9 @@ public class SignalerVisitor extends VoidVisitorAdapter<JavaParserFacade>
 				else
 				// é sinalizado um NameExpr, mas ele não está na pilha
 				{
-					ErrorLogger.addError("Erro no SignalerVisitor. É sinalizado um NameExpr, mas a exceção não está na pilha.");
-					return SignalerType.UNKNOWN;
+					throw new UnknownSignalerException ("Sinalizado um NameExpr, mas a exceção não está na pilha.");
+					//ErrorLogger.addError("Erro no SignalerVisitor. É sinalizado um NameExpr, mas a exceção não está na pilha.");
+					//return SignalerType.UNKNOWN;
 					
 				}
 			}
@@ -134,8 +135,9 @@ public class SignalerVisitor extends VoidVisitorAdapter<JavaParserFacade>
 			}
 			else
 			{
-				ErrorLogger.addError("Erro no SignalerVisitor. A sinalização não é do tipo 'throw e', 'throw new...' ou 'throw (type) e'");
-				return SignalerType.UNKNOWN;
+				throw new UnknownSignalerException ("A sinalização não é do tipo 'throw e', 'throw new...' ou 'throw (type) e'.");
+				//ErrorLogger.addError("Erro no SignalerVisitor. A sinalização não é do tipo 'throw e', 'throw new...' ou 'throw (type) e'");
+				//return SignalerType.UNKNOWN;
 				
 			}
 		}

@@ -1,4 +1,4 @@
-package ufrn.dimap.lets.ehmetrics;
+package ufrn.dimap.lets.ehmetrics.analyzer;
 
 import java.util.Stack;
 
@@ -164,7 +164,7 @@ public class Util
 			{
 				if ( e.getCause() instanceof NotFoundException )
 				{
-					throw new AnalyzerException("Os ancestrais da classe '" + typeDeclaration.getQualifiedName() + "' não foram encontrados.", e);
+					throw new UnknownAncestralException("Os ancestrais da classe '" + typeDeclaration.getQualifiedName() + "' não foram encontrados.", e);
 				}
 				else
 				{

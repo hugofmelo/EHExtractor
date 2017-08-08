@@ -12,7 +12,7 @@ import com.github.javaparser.ast.stmt.ThrowStmt;
 import com.github.javaparser.symbolsolver.model.declarations.ReferenceTypeDeclaration;
 import com.github.javaparser.symbolsolver.model.typesystem.ReferenceType;
 
-import ufrn.dimap.lets.ehmetrics.Util;
+import ufrn.dimap.lets.ehmetrics.analyzer.Util;
 
 public class MetricsModel
 {

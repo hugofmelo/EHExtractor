@@ -34,13 +34,13 @@ import com.github.javaparser.symbolsolver.model.declarations.ReferenceTypeDeclar
 import com.github.javaparser.symbolsolver.model.typesystem.ReferenceType;
 
 import ufrn.dimap.lets.ehmetrics.HandlerActionResolver;
-import ufrn.dimap.lets.ehmetrics.Util;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.ExceptionType;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.Handler;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.HandlerActionType;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.MetricsModel;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.SignalerType;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.Type;
+import ufrn.dimap.lets.ehmetrics.analyzer.Util;
 
 public class CatchVisitor extends VoidVisitorAdapter<JavaParserFacade>
 {

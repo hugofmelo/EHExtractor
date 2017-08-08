@@ -9,7 +9,7 @@ public abstract class AbstractEHModelElement
 	
 	public AbstractEHModelElement ( Node node )
 	{
-		this.node = node;
+		//this.node = node;
 	}
 	
 	public Node getNode()

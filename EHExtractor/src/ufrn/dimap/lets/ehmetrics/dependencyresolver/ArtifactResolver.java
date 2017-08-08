@@ -10,7 +10,7 @@ import com.github.javaparser.ParseProblemException;
 import com.github.javaparser.ast.CompilationUnit;
 import com.github.javaparser.ast.PackageDeclaration;
 
-import ufrn.dimap.lets.ehmetrics.ErrorLogger;
+import ufrn.dimap.lets.ehmetrics.logger.ErrorLogger;
 
 public class ArtifactResolver
 {

@@ -5,10 +5,14 @@ import java.io.IOException;
 import java.util.List;
 
 import ufrn.dimap.lets.ehmetrics.abstractmodel.MetricsModel;
+import ufrn.dimap.lets.ehmetrics.analyzer.Analyzer;
 import ufrn.dimap.lets.ehmetrics.dependencyresolver.ArtifactResolver;
 import ufrn.dimap.lets.ehmetrics.dependencyresolver.FileFinder;
 import ufrn.dimap.lets.ehmetrics.dependencyresolver.ProjectArtifacts;
 import ufrn.dimap.lets.ehmetrics.dependencyresolver.ProjectFiles;
+import ufrn.dimap.lets.ehmetrics.logger.ArtifactLogger;
+import ufrn.dimap.lets.ehmetrics.logger.ErrorLogger;
+import ufrn.dimap.lets.ehmetrics.logger.ModelLogger;
 
 public class Main
 {
