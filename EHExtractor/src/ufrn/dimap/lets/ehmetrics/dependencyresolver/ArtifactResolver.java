@@ -94,7 +94,7 @@ public class ArtifactResolver
 			}
 			catch (DependencyResolverException e)
 			{
-				ErrorLogger.addError(e.getMessage() + " Pom file: " + e.getFile().getAbsolutePath() + "\n");
+				ErrorLogger.addMavenError(e.getMessage() + " Pom file: " + e.getFile().getAbsolutePath() + "\n");
 			}
 			
 		}
@@ -117,7 +117,7 @@ public class ArtifactResolver
 						t=t.getCause();
 				}
 				
-				ErrorLogger.addError("Falha no GradleResolver. " + t.getMessage() + ". File: " + gradleFile.getAbsolutePath() + "\n");
+				ErrorLogger.addGradleError("Falha no GradleResolver. " + t.getMessage() + ". File: " + gradleFile.getAbsolutePath() + "\n");
 				//continue;
 			}
 		}

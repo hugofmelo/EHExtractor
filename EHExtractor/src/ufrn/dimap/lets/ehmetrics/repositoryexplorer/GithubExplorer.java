@@ -151,7 +151,7 @@ public class GithubExplorer
 		Iterator <GHRepository> repositoryIte = result.iterator();
 		GHRepository repository;
 		String projectDownloadURL;
-		File zipFile, projectRoot, projectRootNewName;
+		File zipFile, projectRoot;
 
 		int androidProjects = 0;
 		
@@ -160,35 +160,34 @@ public class GithubExplorer
 			repository = repositoryIte.next();
 			
 			projectDownloadURL = repository.getUrl()+"/zipball";
-			zipFile = new File (ProjectsUtil.projectsRoot+repository.getName()+".zip");
+			zipFile = new File (ProjectsUtil.donwloadTo+repository.getName()+".zip");
 			
 			GithubExplorer.downloadProjectZip(projectDownloadURL, zipFile);
-			projectRoot = GithubExplorer.unZip(zipFile, ProjectsUtil.projectsRoot);
-			projectRootNewName = new File ( ProjectsUtil.projectsRoot + File.separator + repository.getFullName().replaceAll("/", " ") );
+			projectRoot = GithubExplorer.unZip(zipFile, ProjectsUtil.donwloadTo, repository.getFullName().replaceAll("/", " "));
 			
-			// Precisa checar se deu certo?
-			projectRoot.renameTo(projectRootNewName);
 			
-			if ( FileFinder.isAndroidProject(projectRootNewName) )
+			if ( FileFinder.isAndroidProject(projectRoot) )
 			{
 				System.out.print((androidProjects+1)+"\t");
+				/*
 				System.out.print(repository.getHtmlUrl()+"\t");
 				System.out.print(repository.getFullName()+"\t");
 				System.out.print(repository.getStargazersCount()+"\t");
 				System.out.print(repository.getSize()+"\t");
 				System.out.print(dateFormat.format(repository.getCreatedAt())+"\t");
 				System.out.print(dateFormat.format(repository.getPushedAt())+"\t");
+				*/
 				//System.out.print(repo.listReleases().asList().size() + "\t");
 				//System.out.print(repo.listCommits().asList().size() + "\t");
 				//System.out.print(repo.listIssues(GHIssueState.ALL).asList().size() + "\t");
 				//System.out.print(dateFormat.format(repo.getUpdatedAt())+"\t");
-				System.out.println();
+				//System.out.println();
 				
 				androidProjects++;
 			}
 			else
 			{
-				FileUtils.deleteDirectory(projectRootNewName);
+				FileUtils.deleteDirectory(projectRoot);
 			}
 			
 			zipFile.delete();
@@ -207,8 +206,8 @@ public class GithubExplorer
 		rbc.close();
 	}
 	
-	// Dezipa o projeto e retorna a raiz do projeto dezipado
-	private static File unZip(File zipFile, String outputFolder) throws IOException
+	// Dezipa o projeto e retorna a raiz do projeto dezipado com o nome indicado
+	private static File unZip(File zipFile, String outputFolder, String projectRootName) throws IOException
 	{
 		byte[] buffer = new byte[1024];
 
@@ -251,7 +250,15 @@ public class GithubExplorer
 		zis.close();
 		
 		
-		return projectRoot;
+		File projectRootNewName = new File ( ProjectsUtil.donwloadTo + File.separator + projectRootName );
+		
+		// Verificar se houve erro
+		if ( !projectRoot.renameTo(projectRootNewName) )
+		{
+			throw new IllegalStateException ("Falha ao renomear raiz do projeto dezipado.");
+		}
+		
+		return projectRootNewName;
 	}
 
 	private void test () throws IOException

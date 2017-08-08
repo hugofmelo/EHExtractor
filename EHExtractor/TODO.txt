@@ -1,18 +1,6 @@
-DONE Prioridade 0: Revisar loggers
-	DONE Criar um variável em logger para cada tipo de erro. Elas seriam reiniciadas junto do projeto
-	DONE Separar o logger do resultado do log de processamento
-	DONE Transferir os métodos que calculam os totais dos resultados para o logger de resultado
-
-
-DONE Prioridade 0: criar SignalerVisitor e todo o que for preciso para fazer funcionar
-
-Prioridade -2: criar Gradle e Maven Exception, que são capturados no analyze e salvam o arquivo que deu erro. Criar entrada no ErrorLogger para isso.
+DONE Prioridade -2: criar entrada no ErrorLogger para erros do maven e gradle.
 Prioridade -1: Tentar corrigir os erros e limitados.
 Prioridade 0: criar UnknownSignalerException, que é capturada no analyze e salva o arquivo. Criar entrada no ErrorLogger para isso. Rodar tudo de novo.
-
-
-
-
 
 Prioridade 0:
 	Pegar 50 projetos android mais estrelados
@@ -30,9 +18,7 @@ Prioridade 2:
 			exceção, tipo, origem, autocomplete, empty
 
 Prioridade 1: criar classe que baixa e unzipa os projetos. Deixar ela mais fácil e customizável
-	A classe Repository deve ter um método para baixar o repositório. Tipo Repository#downloadTo ( File targetFile, boolean unzip, String projectRootName ).
-	O método deve usar o System.out para avisar do progresso.
-	A classe deve receber um 
+	A classe Repository deve ter um método para baixar o repositório. Tipo Repository#downloadTo ( File targetFile, boolean unzip, String projectRootName ). 
 
 Prioridade 1: Criar exceção para centralizar falhas de Analyzer.
 Prioridade 2: Adicionar linha de código nos modelos.

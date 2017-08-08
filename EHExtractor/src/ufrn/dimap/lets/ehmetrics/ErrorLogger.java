@@ -8,10 +8,14 @@ import java.util.List;
 // ErrorLogger é um stateful logger instataneo. Ele armazena estado, mas o arquivo é criado e fechado na mesma chamada.
 public class ErrorLogger
 {
+	private static List<String> maven;
+	private static List<String> gradle;
+	
 	private static List<String> errors;
 	private static List<String> unsolved;
 	private static List<String> unsupported;
 	private static List<String> unknownAncestral;
+	
 
 	public static void start () throws IOException
 	{
@@ -21,6 +25,9 @@ public class ErrorLogger
 		}
 		else
 		{	
+			maven = new ArrayList<String>();
+			gradle = new ArrayList<String>();
+			
 			errors = new ArrayList<String>();
 			unsolved = new ArrayList<String>();
 			unsupported = new ArrayList<String>();
@@ -30,10 +37,13 @@ public class ErrorLogger
 	
 	public static void stop()
 	{
+		maven = null;
+		gradle = null;
+		
 		errors = null;
 		unsolved = null;
 		unsupported = null;
-		unknownAncestral = null;
+		unknownAncestral = null;		
 	}
 
 	public static void writeReport(String projectName) throws IOException
@@ -50,6 +60,9 @@ public class ErrorLogger
 	{
 		String result = "";
 		
+		result += "Maven errors: " + maven.size() + "\n";
+		result += "Gradle errors: " + gradle.size() + "\n";
+		
 		result += "Unsolved types: " + unsolved.size() + "\n";
 		result += "Unsupported errors: " + unsupported.size() + "\n";
 		result += "Unkown ancestral: " + unknownAncestral.size() + "\n";
@@ -65,6 +78,20 @@ public class ErrorLogger
 		
 		result += "GENERAL ERRORS\n";
 		for ( String str : errors )
+		{
+			result += str + "\n";
+		}
+		result += "\n";
+		
+		result += "MAVEN ERROR FILES\n";
+		for ( String str : maven )
+		{
+			result += str + "\n";
+		}
+		result += "\n";
+		
+		result += "GRADLE ERROR FILES\n";
+		for ( String str : gradle )
 		{
 			result += str + "\n";
 		}
@@ -92,6 +119,16 @@ public class ErrorLogger
 		result += "\n";
 		
 		return result;
+	}
+	
+	public static void addMavenError (String errorMessage)
+	{
+		maven.add(errorMessage);
+	}
+	
+	public static void addGradleError (String errorMessage)
+	{
+		gradle.add(errorMessage);
 	}
 	
 	public static void addError (String errorMessage)

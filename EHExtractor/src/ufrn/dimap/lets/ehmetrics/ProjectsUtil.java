@@ -10,6 +10,7 @@ public class ProjectsUtil
 	private static final boolean projectsOnDemand = false;
 	
 	// Colocar endereço com barra ('/') no final
+	public static final String donwloadTo = "C:/Users/hugofm/Desenvolvimento/Projetos GitHub/";
 	public static final String projectsRoot = "D:/Desenvolvimento/Projetos Github/running/";
 	public static final String logsRoot = "./log/";
 	
