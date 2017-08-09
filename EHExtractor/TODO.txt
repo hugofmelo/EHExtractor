@@ -1,6 +1,6 @@
 Prioridade -2: corrigir bug da origem incorreta em algumas exceções java. Quando rodar novamente, verificar o projeto "airbnb lottie-react-native"
 Prioridade -1: Tentar corrigir os erros e limitados.
-
+Prioridade 1: Verificar se os projetos android realmente não tem dependencias externas. Ou verificar pq o gradle não tá prestando.
 
 Prioridade 0:
 	Pegar 50 projetos android mais estrelados

@@ -34,7 +34,6 @@ public class Util
 		// Solving multicatch clause
 		else if (catchClause.getParameter().getType() instanceof UnionType)
 		{
-			// Im trying this and getting an UnsupportedOperationException
 			UnionType multiCatch = (UnionType) catchClause.getParameter().getType();
 			Iterator<com.github.javaparser.ast.type.ReferenceType> i = multiCatch.getElements().iterator();
 			while ( i.hasNext() )

@@ -22,9 +22,7 @@ public class Main
 		
 		try
 		{
-			main.execute();
-			//main.checkAndroid();
-			
+			main.execute();			
 		}
 		catch (IOException e)
 		{
@@ -90,24 +88,6 @@ public class Main
 
 		ModelLogger.stop();
 
-		System.out.println("FINALIZADO");
-	}
-	
-	public void checkAndroid() throws IOException
-	{
-		System.out.println("Identificando projetos para analise...");
-		System.out.println();
-		List<File> projects = ProjectsUtil.listProjects();
-
-		for ( File project : projects )
-		{	
-			ProjectFiles projectFiles = FileFinder.find(project);
-
-			System.out.print(project.getName() + "\t");
-			System.out.println ( projectFiles.getAndroidManifest() != null );
-		}
-
-		System.out.println();
 		System.out.println("FINALIZADO");
 	}
 }

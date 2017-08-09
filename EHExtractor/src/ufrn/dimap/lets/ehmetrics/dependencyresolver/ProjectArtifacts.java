@@ -10,6 +10,7 @@ public class ProjectArtifacts
 	private List <File> sourcesDirs;
 	private List <File> testDirs;
 	private List <File> dependencies; // jars de dependencias externas ao projeto, como pom.xml e build.gradle
+	private File androidJar;
 	
 	public ProjectArtifacts ()
 	{
@@ -17,6 +18,7 @@ public class ProjectArtifacts
 		sourcesDirs = new ArrayList<File>();
 		testDirs = new ArrayList<File>();
 		dependencies = new ArrayList <File> ();
+		androidJar = null;
 	}
 	
 	public void addJavaFile (File javaFile)
@@ -52,6 +54,10 @@ public class ProjectArtifacts
 		
 	}
 	
+	public void setAndroidJar (File androidJar) {
+		this.androidJar = androidJar;
+	}
+	
 	public List<File> getJavaFiles() {
 		return this.javaFiles;
 	}
@@ -66,5 +72,9 @@ public class ProjectArtifacts
 	
 	public List<File> getDependencies() {
 		return this.dependencies;
+	}
+	
+	public File getAndroidJar () {
+		return this.androidJar;
 	}
 }

@@ -9,13 +9,18 @@ public class ProjectsUtil
 	public static boolean manualHandlerActionMode = false;
 	private static final boolean projectsOnDemand = false;
 	
+	
+	
 	// Colocar endereço com barra ('/') no final
 	// LETS
-	//public static final String projectsRoot = "C:/Users/hugofm/Desenvolvimento/Projetos GitHub/error/";
+	public static final String projectsRoot = "C:/Users/hugofm/Desenvolvimento/Projetos GitHub/running/";
+	public static final String dependenciesRoot = "./dependencies/lets/";
+	
 	// CASA
-	public static final String projectsRoot = "D:/Desenvolvimento/Projetos Github/running/";
-	public static final String dependenciesRoot = "./dependencies/";
-	public static final String logsRoot = "./log/running";
+	//public static final String projectsRoot = "D:/Desenvolvimento/Projetos Github/running/";
+	//public static final String dependenciesRoot = "./dependencies/home/";
+	
+	public static final String logsRoot = "./log/running/";
 	
 	public static List<File> listProjects ()
 	{

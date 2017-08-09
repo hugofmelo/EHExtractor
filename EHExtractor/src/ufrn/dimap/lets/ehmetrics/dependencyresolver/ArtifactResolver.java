@@ -6,7 +6,6 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
@@ -17,7 +16,6 @@ import com.github.javaparser.ast.CompilationUnit;
 import com.github.javaparser.ast.PackageDeclaration;
 import com.google.gson.Gson;
 import com.google.gson.stream.JsonReader;
-import com.google.gson.stream.JsonWriter;
 
 import ufrn.dimap.lets.ehmetrics.ProjectsUtil;
 import ufrn.dimap.lets.ehmetrics.logger.ErrorLogger;
@@ -94,7 +92,7 @@ public class ArtifactResolver
 				}
 				else
 				{
-					artifacts.addDependency(androidJar);
+					artifacts.setAndroidJar(androidJar);
 				}
 			}
 		}
@@ -205,9 +203,20 @@ public class ArtifactResolver
 			JsonReader reader = new JsonReader (new FileReader(ProjectsUtil.dependenciesRoot+File.separator+projectName+".json"));
 			String[] dependencies = gson.fromJson(reader, String[].class);
 			
-			for ( String dependency : dependencies )
+			int i;
+			if ( dependencies.length > 0 && dependencies[0].endsWith("android.jar") )
 			{
-				artifacts.addDependency(new File (dependency));
+				artifacts.setAndroidJar(new File (dependencies[0]));
+				i = 1;
+			}
+			else
+			{
+				i = 0;
+			}
+			
+			for (  ; i < dependencies.length ; i++ )
+			{
+				artifacts.addDependency(new File (dependencies[i]));
 			}
 			
 			reader.close();
@@ -230,6 +239,12 @@ public class ArtifactResolver
 		Gson gson = new Gson();
 		FileWriter jsonFile;
 		List<String> dependencies = new ArrayList<String>();
+		
+		// A primeira dependencies salva precisa ser o android.jar
+		if ( artifacts.getAndroidJar() != null )
+		{
+			dependencies.add(artifacts.getAndroidJar().getAbsolutePath());
+		}
 		
 		for ( File file : artifacts.getDependencies() )
 		{
