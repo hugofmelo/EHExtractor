@@ -1,7 +1,16 @@
 package ufrn.dimap.lets.ehmetrics.dependencyresolver;
 
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Stack;
+
+import com.google.gson.Gson;
+import com.google.gson.stream.JsonReader;
+
+import ufrn.dimap.lets.ehmetrics.ProjectsUtil;
 
 // FileFinder recebe o diretorio de um projeto e busca por arquivos relevantes, que são armazenados em um objeto ProjectFiles.
 public class FileFinder
@@ -19,7 +28,9 @@ public class FileFinder
 		}
 		else
 		{
-			ProjectFiles files = new ProjectFiles();			
+			ProjectFiles files = new ProjectFiles();
+			
+			files.setProjectName(projectRoot.getName());
 			
 			File parent;
 			Stack<File> filesStack = new Stack<File>();
@@ -32,12 +43,6 @@ public class FileFinder
 			{
 				parent = filesStack.pop();
 
-				// TODO esse if previne que se analise todos os projetos quando tiver analisando self. Resolver isso criando configuração para excluir caminhos.
-				if ( parent.getName().equals("projects") )
-				{
-					continue;
-				}
-
 				// Para cada documento na pasta
 				for (File child : parent.listFiles())
 				{
@@ -49,30 +54,31 @@ public class FileFinder
 					// É um arquivo...
 					else
 					{
-						// Arquivo build.gradle
-						if ( child.getName().equals("build.gradle") )
-						{
-							files.addGradleFile(child);
-						}
+						
 						// Arquivo *.java
-						else if ( child.getName().endsWith(".java") )
+						if ( child.getName().endsWith(".java") )
 						{
 							files.addJavaFile(child);
 						}
-						// Arquivo pom.xml.
-						else if ( child.getName().equals("pom.xml") )
+						// Arquivo AndroidManifest.xml. O projeto é android e o android.jar será adicionado como dependencia.
+						else if ( child.getName().equals(("AndroidManifest.xml") ) )
 						{
-							files.addMavenFile(child);
+							files.setAndroidManifestFile(child);
 						}
 						// Arquivo *.jar. É considerado como sendo uma dependencia do projeto
 						else if ( child.getName().endsWith((".jar") ) )
 						{
 							files.addJarFile(child);
 						}
-						// Arquivo AndroidManifest.xml. O projeto é android e o android.jar será adicionado como dependencia.
-						else if ( child.getName().equals(("AndroidManifest.xml") ) )
+						// Arquivo build.gradle
+						else if ( child.getName().equals("build.gradle") )
 						{
-							files.setAndroidManifestFile(child);
+							files.addGradleFile(child);
+						}
+						// Arquivo pom.xml.
+						else if ( child.getName().equals("pom.xml") )
+						{
+							files.addMavenFile(child);
 						}
 					}
 				}

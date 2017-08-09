@@ -1,0 +1,35 @@
+Maven errors: 0
+Gradle errors: 3
+Unsolved types: 1
+Unsupported errors: 0
+Unknown ancestral: 0
+Unknown signaler: 0
+
+GENERAL ERRORS
+
+MAVEN ERROR FILES
+
+GRADLE ERROR FILES
+Falha no GradleResolver. Could not read script 'D:\Desenvolvimento\Projetos Github\running\airbnb lottie-react-native\node_modules\react-native\react.gradle' as it does not exist.. File: D:\Desenvolvimento\Projetos Github\running\airbnb lottie-react-native\build.gradle
+
+Falha no GradleResolver. Could not read script 'D:\Desenvolvimento\Projetos Github\running\airbnb lottie-react-native\node_modules\react-native\react.gradle' as it does not exist.. File: D:\Desenvolvimento\Projetos Github\running\airbnb lottie-react-native\lib\android\build.gradle
+
+Falha no GradleResolver. startup failed:
+build file 'D:\Desenvolvimento\Projetos Github\running\airbnb lottie-react-native\example\android\app\build.gradle': 3: unable to resolve class com.android.build.OutputFile
+ @ line 3, column 1.
+   import com.android.build.OutputFile
+   ^
+
+1 error
+. File: D:\Desenvolvimento\Projetos Github\running\airbnb lottie-react-native\example\android\app\build.gradle
+
+
+UNSOLVED ERROR FILES
+Falha no Analyzer. Classe 'Unsolved symbol : SimpleViewManager' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\airbnb lottie-react-native\lib\android\src\main\java\com\airbnb\android\react\lottie\LottieAnimationViewManager.java
+
+UNSUPPORTED ERROR FILES
+
+UNKNOWN ANCESTRAL
+
+UNKNOWN SIGNALERS
+

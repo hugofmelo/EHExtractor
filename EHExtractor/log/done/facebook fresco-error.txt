@@ -1,0 +1,42 @@
+Maven errors: 1
+Gradle errors: 0
+Unsolved types: 5
+Unsupported errors: 4
+Unknown ancestral: 0
+Unknown signaler: 10
+
+GENERAL ERRORS
+
+MAVEN ERROR FILES
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\facebook fresco\fbcore\src\main\java\pom.xml
+
+
+GRADLE ERROR FILES
+
+UNSOLVED ERROR FILES
+Falha no Analyzer. Classe 'Unsolved symbol : DumperPlugin' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\facebook fresco\tools\stetho\src\main\java\com\facebook\imagepipeline\stetho\BaseFrescoStethoPlugin.java
+Falha no Analyzer. Classe 'Unsolved symbol : PreferenceFragmentCompat' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\facebook fresco\samples\showcase\src\main\java\com\facebook\fresco\samples\showcase\settings\SettingsFragment.java
+Falha no Analyzer. Classe 'Unsolved symbol : SVGParseException' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\facebook fresco\samples\showcase\src\main\java\com\facebook\fresco\samples\showcase\imageformat\svg\SvgDecoderExample.java
+Falha no Analyzer. Classe 'Unsolved symbol : Fragment' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\facebook fresco\samples\scrollperf\src\main\java\com\facebook\samples\scrollperf\fragments\MainFragment.java
+Falha no Analyzer. Classe 'Unsolved symbol : NetworkImageView' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\facebook fresco\samples\comparison\src\main\java\com\facebook\samples\comparison\instrumentation\InstrumentedNetworkImageView.java
+
+UNSUPPORTED ERROR FILES
+Falha no Analyzer. UnsupportedOperation ao parsear arquivo. File: D:\Desenvolvimento\Projetos Github\running\facebook fresco\imagepipeline-backends\imagepipeline-volley\src\main\java\com\facebook\imagepipeline\backends\volley\VolleyNetworkFetcher.java
+Falha no Analyzer. UnsupportedOperation ao parsear arquivo. File: D:\Desenvolvimento\Projetos Github\running\facebook fresco\imagepipeline-backends\imagepipeline-okhttp3\src\main\java\com\facebook\imagepipeline\backends\okhttp3\OkHttpNetworkFetcher.java
+Falha no Analyzer. UnsupportedOperation ao parsear arquivo. File: D:\Desenvolvimento\Projetos Github\running\facebook fresco\imagepipeline-backends\imagepipeline-okhttp\src\main\java\com\facebook\imagepipeline\backends\okhttp\OkHttpNetworkFetcher.java
+Falha no Analyzer. UnsupportedOperation ao parsear arquivo. File: D:\Desenvolvimento\Projetos Github\running\facebook fresco\imagepipeline\src\main\java\com\facebook\imagepipeline\producers\MediaVariationsFallbackProducer.java
+
+UNKNOWN ANCESTRAL
+
+UNKNOWN SIGNALERS
+Falha no Analyzer. A sinalização não é do tipo 'throw e', 'throw new...' ou 'throw (type) e'. File: D:\Desenvolvimento\Projetos Github\running\facebook fresco\static-webp\src\androidTest\java\com\facebook\webpsupport\WebpBitmapFactoryTest.java
+Falha no Analyzer. A sinalização não é do tipo 'throw e', 'throw new...' ou 'throw (type) e'. File: D:\Desenvolvimento\Projetos Github\running\facebook fresco\static-webp\src\androidTest\java\com\facebook\webpsupport\WebpDecodingTest.java
+Falha no Analyzer. A sinalização não é do tipo 'throw e', 'throw new...' ou 'throw (type) e'. File: D:\Desenvolvimento\Projetos Github\running\facebook fresco\imagepipeline-base\src\main\java\com\facebook\imageformat\ImageFormatChecker.java
+Falha no Analyzer. A sinalização não é do tipo 'throw e', 'throw new...' ou 'throw (type) e'. File: D:\Desenvolvimento\Projetos Github\running\facebook fresco\imagepipeline\src\main\java\com\facebook\imagepipeline\platform\DalvikPurgeableDecoder.java
+Falha no Analyzer. A sinalização não é do tipo 'throw e', 'throw new...' ou 'throw (type) e'. File: D:\Desenvolvimento\Projetos Github\running\facebook fresco\imagepipeline\src\main\java\com\facebook\imagepipeline\platform\GingerbreadPurgeableDecoder.java
+Falha no Analyzer. A sinalização não é do tipo 'throw e', 'throw new...' ou 'throw (type) e'. File: D:\Desenvolvimento\Projetos Github\running\facebook fresco\imagepipeline\src\main\java\com\facebook\imagepipeline\memory\BitmapCounter.java
+Falha no Analyzer. A sinalização não é do tipo 'throw e', 'throw new...' ou 'throw (type) e'. File: D:\Desenvolvimento\Projetos Github\running\facebook fresco\imagepipeline\src\main\java\com\facebook\imagepipeline\memory\NativePooledByteBufferFactory.java
+Falha no Analyzer. A sinalização não é do tipo 'throw e', 'throw new...' ou 'throw (type) e'. File: D:\Desenvolvimento\Projetos Github\running\facebook fresco\imagepipeline\src\main\java\com\facebook\imagepipeline\memory\SharedByteArray.java
+Falha no Analyzer. A sinalização não é do tipo 'throw e', 'throw new...' ou 'throw (type) e'. File: D:\Desenvolvimento\Projetos Github\running\facebook fresco\fbcore\src\main\java\com\facebook\common\statfs\StatFsHelper.java
+Falha no Analyzer. Sinalizado um tipo que não é uma classe. File: D:\Desenvolvimento\Projetos Github\running\facebook fresco\fbcore\src\main\java\com\facebook\common\internal\Throwables.java
+

@@ -1,0 +1,42 @@
+Maven errors: 5
+Gradle errors: 5
+Unsolved types: 1
+Unsupported errors: 0
+Unknown ancestral: 0
+Unknown signaler: 0
+
+GENERAL ERRORS
+
+MAVEN ERROR FILES
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\nhaarman ListViewAnimations\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\nhaarman ListViewAnimations\lib-manipulation\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\nhaarman ListViewAnimations\lib-core-slh\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\nhaarman ListViewAnimations\lib-core\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\nhaarman ListViewAnimations\example\pom.xml
+
+
+GRADLE ERROR FILES
+Falha no GradleResolver. repository not found: D:\git\EHExtractor\EHExtractor. File: D:\Desenvolvimento\Projetos Github\running\nhaarman ListViewAnimations\build.gradle
+
+Falha no GradleResolver. repository not found: D:\git\EHExtractor\EHExtractor. File: D:\Desenvolvimento\Projetos Github\running\nhaarman ListViewAnimations\lib-manipulation\build.gradle
+
+Falha no GradleResolver. repository not found: D:\git\EHExtractor\EHExtractor. File: D:\Desenvolvimento\Projetos Github\running\nhaarman ListViewAnimations\lib-core-slh\build.gradle
+
+Falha no GradleResolver. repository not found: D:\git\EHExtractor\EHExtractor. File: D:\Desenvolvimento\Projetos Github\running\nhaarman ListViewAnimations\lib-core\build.gradle
+
+Falha no GradleResolver. repository not found: D:\git\EHExtractor\EHExtractor. File: D:\Desenvolvimento\Projetos Github\running\nhaarman ListViewAnimations\example\build.gradle
+
+
+UNSOLVED ERROR FILES
+Falha no Analyzer. Classe 'Unsolved symbol : StickyListHeadersAdapter' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\nhaarman ListViewAnimations\lib-core-slh\src\main\java\com\nhaarman\listviewanimations\appearance\StickyListHeadersAdapterDecorator.java
+
+UNSUPPORTED ERROR FILES
+
+UNKNOWN ANCESTRAL
+
+UNKNOWN SIGNALERS
+

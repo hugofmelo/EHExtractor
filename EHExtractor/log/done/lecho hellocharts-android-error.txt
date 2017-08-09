@@ -1,0 +1,32 @@
+Maven errors: 1
+Gradle errors: 3
+Unsolved types: 3
+Unsupported errors: 0
+Unknown ancestral: 0
+Unknown signaler: 0
+
+GENERAL ERRORS
+
+MAVEN ERROR FILES
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\lecho hellocharts-android\hellocharts-library\pom.xml
+
+
+GRADLE ERROR FILES
+Falha no GradleResolver. Gradle version 2.10 is required. Current version is 2.2.1. If using the gradle wrapper, try editing the distributionUrl in D:\git\EHExtractor\EHExtractor\gradle\wrapper\gradle-wrapper.properties to gradle-2.10-all.zip. File: D:\Desenvolvimento\Projetos Github\running\lecho hellocharts-android\build.gradle
+
+Falha no GradleResolver. Gradle version 2.10 is required. Current version is 2.2.1. If using the gradle wrapper, try editing the distributionUrl in D:\git\EHExtractor\EHExtractor\gradle\wrapper\gradle-wrapper.properties to gradle-2.10-all.zip. File: D:\Desenvolvimento\Projetos Github\running\lecho hellocharts-android\hellocharts-samples\build.gradle
+
+Falha no GradleResolver. Gradle version 2.10 is required. Current version is 2.2.1. If using the gradle wrapper, try editing the distributionUrl in D:\git\EHExtractor\EHExtractor\gradle\wrapper\gradle-wrapper.properties to gradle-2.10-all.zip. File: D:\Desenvolvimento\Projetos Github\running\lecho hellocharts-android\hellocharts-library\build.gradle
+
+
+UNSOLVED ERROR FILES
+Falha no Analyzer. Classe 'Unsolved symbol : ActionBarActivity' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\lecho hellocharts-android\hellocharts-samples\src\lecho\lib\hellocharts\samples\AboutActivity.java
+Falha no Analyzer. Classe 'Unsolved symbol : DrawerLayout' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\lecho hellocharts-android\hellocharts-library\src\lecho\lib\hellocharts\view\hack\HackyDrawerLayout.java
+Falha no Analyzer. Classe 'Unsolved symbol : ViewPager' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\lecho hellocharts-android\hellocharts-library\src\lecho\lib\hellocharts\view\hack\HackyViewPager.java
+
+UNSUPPORTED ERROR FILES
+
+UNKNOWN ANCESTRAL
+
+UNKNOWN SIGNALERS
+

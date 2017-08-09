@@ -1,0 +1,129 @@
+Java files: 45
+Jar files: 1
+Maven files: 0
+Gradle files: 3
+Android file: true
+
+Analyzed java files: 45
+Source dirs: 4
+Test dirs: 0
+Dependencies files: 1
+
+JAVA FILES
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\library\src\main\java\com\github\paolorotolo\appintro\AppIntro.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\library\src\main\java\com\github\paolorotolo\appintro\AppIntro2.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\library\src\main\java\com\github\paolorotolo\appintro\AppIntro2Fragment.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\library\src\main\java\com\github\paolorotolo\appintro\AppIntroBase.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\library\src\main\java\com\github\paolorotolo\appintro\AppIntroBaseFragment.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\library\src\main\java\com\github\paolorotolo\appintro\AppIntroFragment.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\library\src\main\java\com\github\paolorotolo\appintro\AppIntroViewPager.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\library\src\main\java\com\github\paolorotolo\appintro\DefaultIndicatorController.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\library\src\main\java\com\github\paolorotolo\appintro\IndicatorController.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\library\src\main\java\com\github\paolorotolo\appintro\ISlideBackgroundColorHolder.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\library\src\main\java\com\github\paolorotolo\appintro\ISlidePolicy.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\library\src\main\java\com\github\paolorotolo\appintro\ISlideSelectionListener.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\library\src\main\java\com\github\paolorotolo\appintro\PagerAdapter.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\library\src\main\java\com\github\paolorotolo\appintro\PermissionObject.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\library\src\main\java\com\github\paolorotolo\appintro\ProgressIndicatorController.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\library\src\main\java\com\github\paolorotolo\appintro\ScrollerCustomDuration.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\library\src\main\java\com\github\paolorotolo\appintro\ViewPageTransformer.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\library\src\main\java\com\github\paolorotolo\appintro\util\CustomFontCache.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\library\src\main\java\com\github\paolorotolo\appintro\util\LayoutUtil.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\library\src\main\java\com\github\paolorotolo\appintro\util\LogHelper.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\library\src\main\java\com\github\paolorotolo\appintro\model\SliderPage.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\library\src\androidTest\java\com\github\paolorotolo\appintroexample\ApplicationTest.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\example\src\main\java\com\amqtech\opensource\appintroexample\util\FragmentStatePagerAdapter.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\example\src\main\java\com\amqtech\opensource\appintroexample\util\SampleSlide.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\example\src\main\java\com\amqtech\opensource\appintroexample\util\TabLayout.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\example\src\main\java\com\amqtech\opensource\appintroexample\util\TabStrip.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\example\src\main\java\com\amqtech\opensource\appintroexample\ui\MainActivity.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\example\src\main\java\com\amqtech\opensource\appintroexample\ui\permsTabs\PermissionsLayout1Intro.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\example\src\main\java\com\amqtech\opensource\appintroexample\ui\permsTabs\PermissionsLayout2Intro.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\example\src\main\java\com\amqtech\opensource\appintroexample\ui\permsTabs\PermsPagerAdapter.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\example\src\main\java\com\amqtech\opensource\appintroexample\ui\permsTabs\intro\PermissionsIntro1.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\example\src\main\java\com\amqtech\opensource\appintroexample\ui\permsTabs\intro\PermissionsIntro2.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\example\src\main\java\com\amqtech\opensource\appintroexample\ui\mainTabs\CustomBackgroundIntro.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\example\src\main\java\com\amqtech\opensource\appintroexample\ui\mainTabs\CustomLayoutIntro.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\example\src\main\java\com\amqtech\opensource\appintroexample\ui\mainTabs\DefaultLayout2Intro.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\example\src\main\java\com\amqtech\opensource\appintroexample\ui\mainTabs\DefaultLayoutIntro.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\example\src\main\java\com\amqtech\opensource\appintroexample\ui\mainTabs\MainPagerAdapter.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\example\src\main\java\com\amqtech\opensource\appintroexample\ui\mainTabs\intro\CustomBackgroundIntro.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\example\src\main\java\com\amqtech\opensource\appintroexample\ui\mainTabs\intro\CustomLayoutIntro.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\example\src\main\java\com\amqtech\opensource\appintroexample\ui\mainTabs\intro\DefaultIntro.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\example\src\main\java\com\amqtech\opensource\appintroexample\ui\mainTabs\intro\DefaultIntro2.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\example\src\main\java\com\amqtech\opensource\appintroexample\ui\fragment\MainTabsFragment.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\example\src\main\java\com\amqtech\opensource\appintroexample\ui\fragment\PermissionTabsFragment.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\example\src\androidTest\java\com\amqtech\opensource\appintroexample\util\OrientationChangeAction.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\example\src\androidTest\java\com\amqtech\opensource\appintroexample\util\ViewPagerIdlingResource.java
+
+JAR FILES
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\gradle\wrapper\gradle-wrapper.jar
+
+MAVEN FILES
+
+GRADLE FILES
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\build.gradle
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\library\build.gradle
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\example\build.gradle
+
+ANDROID MANIFEST FILE
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\example\src\main\AndroidManifest.xml
+
+ANALYZED JAVA FILES
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\library\src\main\java\com\github\paolorotolo\appintro\AppIntro.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\library\src\main\java\com\github\paolorotolo\appintro\AppIntro2.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\library\src\main\java\com\github\paolorotolo\appintro\AppIntro2Fragment.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\library\src\main\java\com\github\paolorotolo\appintro\AppIntroBase.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\library\src\main\java\com\github\paolorotolo\appintro\AppIntroBaseFragment.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\library\src\main\java\com\github\paolorotolo\appintro\AppIntroFragment.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\library\src\main\java\com\github\paolorotolo\appintro\AppIntroViewPager.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\library\src\main\java\com\github\paolorotolo\appintro\DefaultIndicatorController.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\library\src\main\java\com\github\paolorotolo\appintro\IndicatorController.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\library\src\main\java\com\github\paolorotolo\appintro\ISlideBackgroundColorHolder.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\library\src\main\java\com\github\paolorotolo\appintro\ISlidePolicy.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\library\src\main\java\com\github\paolorotolo\appintro\ISlideSelectionListener.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\library\src\main\java\com\github\paolorotolo\appintro\PagerAdapter.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\library\src\main\java\com\github\paolorotolo\appintro\PermissionObject.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\library\src\main\java\com\github\paolorotolo\appintro\ProgressIndicatorController.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\library\src\main\java\com\github\paolorotolo\appintro\ScrollerCustomDuration.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\library\src\main\java\com\github\paolorotolo\appintro\ViewPageTransformer.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\library\src\main\java\com\github\paolorotolo\appintro\util\CustomFontCache.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\library\src\main\java\com\github\paolorotolo\appintro\util\LayoutUtil.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\library\src\main\java\com\github\paolorotolo\appintro\util\LogHelper.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\library\src\main\java\com\github\paolorotolo\appintro\model\SliderPage.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\library\src\androidTest\java\com\github\paolorotolo\appintroexample\ApplicationTest.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\example\src\main\java\com\amqtech\opensource\appintroexample\util\FragmentStatePagerAdapter.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\example\src\main\java\com\amqtech\opensource\appintroexample\util\SampleSlide.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\example\src\main\java\com\amqtech\opensource\appintroexample\util\TabLayout.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\example\src\main\java\com\amqtech\opensource\appintroexample\util\TabStrip.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\example\src\main\java\com\amqtech\opensource\appintroexample\ui\MainActivity.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\example\src\main\java\com\amqtech\opensource\appintroexample\ui\permsTabs\PermissionsLayout1Intro.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\example\src\main\java\com\amqtech\opensource\appintroexample\ui\permsTabs\PermissionsLayout2Intro.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\example\src\main\java\com\amqtech\opensource\appintroexample\ui\permsTabs\PermsPagerAdapter.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\example\src\main\java\com\amqtech\opensource\appintroexample\ui\permsTabs\intro\PermissionsIntro1.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\example\src\main\java\com\amqtech\opensource\appintroexample\ui\permsTabs\intro\PermissionsIntro2.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\example\src\main\java\com\amqtech\opensource\appintroexample\ui\mainTabs\CustomBackgroundIntro.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\example\src\main\java\com\amqtech\opensource\appintroexample\ui\mainTabs\CustomLayoutIntro.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\example\src\main\java\com\amqtech\opensource\appintroexample\ui\mainTabs\DefaultLayout2Intro.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\example\src\main\java\com\amqtech\opensource\appintroexample\ui\mainTabs\DefaultLayoutIntro.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\example\src\main\java\com\amqtech\opensource\appintroexample\ui\mainTabs\MainPagerAdapter.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\example\src\main\java\com\amqtech\opensource\appintroexample\ui\mainTabs\intro\CustomBackgroundIntro.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\example\src\main\java\com\amqtech\opensource\appintroexample\ui\mainTabs\intro\CustomLayoutIntro.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\example\src\main\java\com\amqtech\opensource\appintroexample\ui\mainTabs\intro\DefaultIntro.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\example\src\main\java\com\amqtech\opensource\appintroexample\ui\mainTabs\intro\DefaultIntro2.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\example\src\main\java\com\amqtech\opensource\appintroexample\ui\fragment\MainTabsFragment.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\example\src\main\java\com\amqtech\opensource\appintroexample\ui\fragment\PermissionTabsFragment.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\example\src\androidTest\java\com\amqtech\opensource\appintroexample\util\OrientationChangeAction.java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\example\src\androidTest\java\com\amqtech\opensource\appintroexample\util\ViewPagerIdlingResource.java
+
+SOURCE DIRECTORIES
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\library\src\main\java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\library\src\androidTest\java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\example\src\main\java
+D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\example\src\androidTest\java
+
+TEST DIRECTORIES
+
+DEPENDENCIES
+D:\AndroidSDK\platforms\android-26\android.jar
+

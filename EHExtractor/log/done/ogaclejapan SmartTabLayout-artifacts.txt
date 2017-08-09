@@ -1,0 +1,111 @@
+Java files: 34
+Jar files: 1
+Maven files: 0
+Gradle files: 5
+Android file: true
+
+Analyzed java files: 34
+Source dirs: 6
+Test dirs: 0
+Dependencies files: 1
+
+JAVA FILES
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\utils-v4\src\main\java\com\ogaclejapan\smarttablayout\utils\PagerItem.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\utils-v4\src\main\java\com\ogaclejapan\smarttablayout\utils\PagerItems.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\utils-v4\src\main\java\com\ogaclejapan\smarttablayout\utils\ViewPagerItem.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\utils-v4\src\main\java\com\ogaclejapan\smarttablayout\utils\ViewPagerItemAdapter.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\utils-v4\src\main\java\com\ogaclejapan\smarttablayout\utils\ViewPagerItems.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\utils-v4\src\main\java\com\ogaclejapan\smarttablayout\utils\v4\Bundler.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\utils-v4\src\main\java\com\ogaclejapan\smarttablayout\utils\v4\FragmentPagerItem.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\utils-v4\src\main\java\com\ogaclejapan\smarttablayout\utils\v4\FragmentPagerItemAdapter.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\utils-v4\src\main\java\com\ogaclejapan\smarttablayout\utils\v4\FragmentPagerItems.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\utils-v4\src\main\java\com\ogaclejapan\smarttablayout\utils\v4\FragmentStatePagerItemAdapter.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\utils-v13\src\main\java\com\ogaclejapan\smarttablayout\utils\PagerItem.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\utils-v13\src\main\java\com\ogaclejapan\smarttablayout\utils\PagerItems.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\utils-v13\src\main\java\com\ogaclejapan\smarttablayout\utils\ViewPagerItem.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\utils-v13\src\main\java\com\ogaclejapan\smarttablayout\utils\ViewPagerItemAdapter.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\utils-v13\src\main\java\com\ogaclejapan\smarttablayout\utils\ViewPagerItems.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\utils-v13\src\main\java\com\ogaclejapan\smarttablayout\utils\v13\Bundler.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\utils-v13\src\main\java\com\ogaclejapan\smarttablayout\utils\v13\FragmentPagerItem.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\utils-v13\src\main\java\com\ogaclejapan\smarttablayout\utils\v13\FragmentPagerItemAdapter.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\utils-v13\src\main\java\com\ogaclejapan\smarttablayout\utils\v13\FragmentPagerItems.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\utils-v13\src\main\java\com\ogaclejapan\smarttablayout\utils\v13\FragmentStatePagerItemAdapter.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\library\src\main\java\com\ogaclejapan\smarttablayout\SmartTabIndicationInterpolator.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\library\src\main\java\com\ogaclejapan\smarttablayout\SmartTabLayout.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\library\src\main\java\com\ogaclejapan\smarttablayout\SmartTabStrip.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\library\src\main\java\com\ogaclejapan\smarttablayout\Utils.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\library\src\androidTest\java\com\ogaclejapan\smarttablayout\ApplicationTest.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\demo\src\main\java\com\ogaclejapan\smarttablayout\demo\Demo.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\demo\src\main\java\com\ogaclejapan\smarttablayout\demo\DemoActivity.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\demo\src\main\java\com\ogaclejapan\smarttablayout\demo\DemoFragment.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\demo\src\main\java\com\ogaclejapan\smarttablayout\demo\DemoLikeMediumActivity.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\demo\src\main\java\com\ogaclejapan\smarttablayout\demo\DemoRtlActivity.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\demo\src\main\java\com\ogaclejapan\smarttablayout\demo\DemoTabWithNotificationMarkActivity.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\demo\src\main\java\com\ogaclejapan\smarttablayout\demo\MainActivity.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\demo\src\main\java\com\ogaclejapan\smarttablayout\demo\TintableImageView.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\demo\src\androidTest\java\com\ogaclejapan\smarttablayout\demo\ApplicationTest.java
+
+JAR FILES
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\gradle\wrapper\gradle-wrapper.jar
+
+MAVEN FILES
+
+GRADLE FILES
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\build.gradle
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\utils-v4\build.gradle
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\utils-v13\build.gradle
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\library\build.gradle
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\demo\build.gradle
+
+ANDROID MANIFEST FILE
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\demo\src\main\AndroidManifest.xml
+
+ANALYZED JAVA FILES
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\utils-v4\src\main\java\com\ogaclejapan\smarttablayout\utils\PagerItem.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\utils-v4\src\main\java\com\ogaclejapan\smarttablayout\utils\PagerItems.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\utils-v4\src\main\java\com\ogaclejapan\smarttablayout\utils\ViewPagerItem.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\utils-v4\src\main\java\com\ogaclejapan\smarttablayout\utils\ViewPagerItemAdapter.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\utils-v4\src\main\java\com\ogaclejapan\smarttablayout\utils\ViewPagerItems.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\utils-v4\src\main\java\com\ogaclejapan\smarttablayout\utils\v4\Bundler.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\utils-v4\src\main\java\com\ogaclejapan\smarttablayout\utils\v4\FragmentPagerItem.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\utils-v4\src\main\java\com\ogaclejapan\smarttablayout\utils\v4\FragmentPagerItemAdapter.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\utils-v4\src\main\java\com\ogaclejapan\smarttablayout\utils\v4\FragmentPagerItems.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\utils-v4\src\main\java\com\ogaclejapan\smarttablayout\utils\v4\FragmentStatePagerItemAdapter.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\utils-v13\src\main\java\com\ogaclejapan\smarttablayout\utils\PagerItem.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\utils-v13\src\main\java\com\ogaclejapan\smarttablayout\utils\PagerItems.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\utils-v13\src\main\java\com\ogaclejapan\smarttablayout\utils\ViewPagerItem.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\utils-v13\src\main\java\com\ogaclejapan\smarttablayout\utils\ViewPagerItemAdapter.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\utils-v13\src\main\java\com\ogaclejapan\smarttablayout\utils\ViewPagerItems.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\utils-v13\src\main\java\com\ogaclejapan\smarttablayout\utils\v13\Bundler.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\utils-v13\src\main\java\com\ogaclejapan\smarttablayout\utils\v13\FragmentPagerItem.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\utils-v13\src\main\java\com\ogaclejapan\smarttablayout\utils\v13\FragmentPagerItemAdapter.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\utils-v13\src\main\java\com\ogaclejapan\smarttablayout\utils\v13\FragmentPagerItems.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\utils-v13\src\main\java\com\ogaclejapan\smarttablayout\utils\v13\FragmentStatePagerItemAdapter.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\library\src\main\java\com\ogaclejapan\smarttablayout\SmartTabIndicationInterpolator.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\library\src\main\java\com\ogaclejapan\smarttablayout\SmartTabLayout.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\library\src\main\java\com\ogaclejapan\smarttablayout\SmartTabStrip.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\library\src\main\java\com\ogaclejapan\smarttablayout\Utils.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\library\src\androidTest\java\com\ogaclejapan\smarttablayout\ApplicationTest.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\demo\src\main\java\com\ogaclejapan\smarttablayout\demo\Demo.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\demo\src\main\java\com\ogaclejapan\smarttablayout\demo\DemoActivity.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\demo\src\main\java\com\ogaclejapan\smarttablayout\demo\DemoFragment.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\demo\src\main\java\com\ogaclejapan\smarttablayout\demo\DemoLikeMediumActivity.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\demo\src\main\java\com\ogaclejapan\smarttablayout\demo\DemoRtlActivity.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\demo\src\main\java\com\ogaclejapan\smarttablayout\demo\DemoTabWithNotificationMarkActivity.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\demo\src\main\java\com\ogaclejapan\smarttablayout\demo\MainActivity.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\demo\src\main\java\com\ogaclejapan\smarttablayout\demo\TintableImageView.java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\demo\src\androidTest\java\com\ogaclejapan\smarttablayout\demo\ApplicationTest.java
+
+SOURCE DIRECTORIES
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\utils-v4\src\main\java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\utils-v13\src\main\java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\library\src\main\java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\library\src\androidTest\java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\demo\src\main\java
+D:\Desenvolvimento\Projetos Github\running\ogaclejapan SmartTabLayout\demo\src\androidTest\java
+
+TEST DIRECTORIES
+
+DEPENDENCIES
+D:\AndroidSDK\platforms\android-26\android.jar
+

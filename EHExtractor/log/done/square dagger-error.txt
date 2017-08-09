@@ -1,0 +1,76 @@
+Maven errors: 26
+Gradle errors: 0
+Unsolved types: 0
+Unsupported errors: 0
+Unknown ancestral: 0
+Unknown signaler: 2
+
+GENERAL ERRORS
+Falha em ArtifactResolver. O arquivo java não possui package declaration. File: D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\default-package-injected-type\src\main\java\TestApp.java
+
+MAVEN ERROR FILES
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\square dagger\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\valid-use-of-qualifiers\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\uninjectable-supertype\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\static-injected-binding-doesnt-fail-providers\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\same-provides-method-name\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\qualifiers-on-invalid-elements-warnings\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\qualifiers-on-invalid-elements-errors\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\provides-method-with-throws-clause\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\provides-method-not-in-module\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\provide-provider-or-lazy\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\private-inject\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\multiple-qualifiers\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\multiple-provides-methods\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\multiple-modules-setvalues\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\module-type-validation\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\missing-at-inject-constructor\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\method-injection\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\inner-classes-complaint-injection\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\inject-parameterized-type\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\inject-on-class\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\include-non-module\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\final-field-inject\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\extension-graph-setvalues\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\extension-graph\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\default-package-injected-type\pom.xml
+
+
+GRADLE ERROR FILES
+
+UNSOLVED ERROR FILES
+
+UNSUPPORTED ERROR FILES
+
+UNKNOWN ANCESTRAL
+
+UNKNOWN SIGNALERS
+Falha no Analyzer. A sinalização não é do tipo 'throw e', 'throw new...' ou 'throw (type) e'. File: D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\main\java\dagger\internal\loaders\ReflectiveAtInjectBinding.java
+Falha no Analyzer. Tipo sinalizado não pôde ser resolvido. File: D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\missing-at-inject-constructor\src\main\java\test\TestApp.java
+

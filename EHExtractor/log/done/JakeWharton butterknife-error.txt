@@ -1,0 +1,29 @@
+Maven errors: 0
+Gradle errors: 2
+Unsolved types: 0
+Unsupported errors: 1
+Unknown ancestral: 0
+Unknown signaler: 0
+
+GENERAL ERRORS
+Falha em ArtifactResolver. O arquivo java não é válido. File: D:\Desenvolvimento\Projetos Github\running\JakeWharton butterknife\butterknife-gradle-plugin\src\test\resources\fixtures\R.java
+Falha em ArtifactResolver. O arquivo java não é válido. File: D:\Desenvolvimento\Projetos Github\running\JakeWharton butterknife\butterknife-gradle-plugin\src\test\resources\fixtures\R2.java
+Falha em ArtifactResolver. O arquivo java não é válido. File: D:\Desenvolvimento\Projetos Github\running\JakeWharton butterknife\butterknife-gradle-plugin\src\test\resources\fixtures\RFinal.java
+
+MAVEN ERROR FILES
+
+GRADLE ERROR FILES
+Falha no GradleResolver. Could not get unknown property 'versions' for object of type org.gradle.api.internal.artifacts.dsl.dependencies.DefaultDependencyHandler.. File: D:\Desenvolvimento\Projetos Github\running\JakeWharton butterknife\sample\library\build.gradle
+
+Falha no GradleResolver. Plugin with id 'com.android.application' not found.. File: D:\Desenvolvimento\Projetos Github\running\JakeWharton butterknife\sample\app\build.gradle
+
+
+UNSOLVED ERROR FILES
+
+UNSUPPORTED ERROR FILES
+Falha no Analyzer. UnsupportedOperation ao parsear arquivo. File: D:\Desenvolvimento\Projetos Github\running\JakeWharton butterknife\butterknife\src\main\java\butterknife\ButterKnife.java
+
+UNKNOWN ANCESTRAL
+
+UNKNOWN SIGNALERS
+

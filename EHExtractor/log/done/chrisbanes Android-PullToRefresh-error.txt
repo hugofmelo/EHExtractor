@@ -1,0 +1,32 @@
+Maven errors: 5
+Gradle errors: 0
+Unsolved types: 1
+Unsupported errors: 0
+Unknown ancestral: 0
+Unknown signaler: 0
+
+GENERAL ERRORS
+
+MAVEN ERROR FILES
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\chrisbanes Android-PullToRefresh\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\chrisbanes Android-PullToRefresh\sample\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\chrisbanes Android-PullToRefresh\extras\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\chrisbanes Android-PullToRefresh\extras\PullToRefreshViewPager\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\chrisbanes Android-PullToRefresh\extras\PullToRefreshListFragment\pom.xml
+
+
+GRADLE ERROR FILES
+
+UNSOLVED ERROR FILES
+Falha no Analyzer. Classe 'Unsolved symbol : FragmentActivity' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\chrisbanes Android-PullToRefresh\sample\src\com\handmark\pulltorefresh\samples\PullToRefreshListFragmentActivity.java
+
+UNSUPPORTED ERROR FILES
+
+UNKNOWN ANCESTRAL
+
+UNKNOWN SIGNALERS
+

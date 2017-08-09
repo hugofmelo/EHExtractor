@@ -1,0 +1,27 @@
+Maven errors: 0
+Gradle errors: 0
+Unsolved types: 6
+Unsupported errors: 0
+Unknown ancestral: 0
+Unknown signaler: 0
+
+GENERAL ERRORS
+
+MAVEN ERROR FILES
+
+GRADLE ERROR FILES
+
+UNSOLVED ERROR FILES
+Falha no Analyzer. Classe 'Unsolved symbol : SSLSocketFactory' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\loopj android-async-http\sample\src\main\java\com\loopj\android\http\sample\util\SecureSocketFactory.java
+Falha no Analyzer. Classe 'Unsolved symbol : HttpEntity' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\loopj android-async-http\library\src\main\java\com\loopj\android\http\JsonStreamerEntity.java
+Falha no Analyzer. Classe 'Unsolved symbol : DefaultRedirectHandler' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\loopj android-async-http\library\src\main\java\com\loopj\android\http\MyRedirectHandler.java
+Falha no Analyzer. Classe 'Unsolved symbol : SSLSocketFactory' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\loopj android-async-http\library\src\main\java\com\loopj\android\http\MySSLSocketFactory.java
+Falha no Analyzer. Classe 'Unsolved symbol : CookieStore' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\loopj android-async-http\library\src\main\java\com\loopj\android\http\PersistentCookieStore.java
+Falha no Analyzer. Classe 'Unsolved symbol : HttpEntity' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\loopj android-async-http\library\src\main\java\com\loopj\android\http\SimpleMultipartEntity.java
+
+UNSUPPORTED ERROR FILES
+
+UNKNOWN ANCESTRAL
+
+UNKNOWN SIGNALERS
+

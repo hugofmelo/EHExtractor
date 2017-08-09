@@ -1,0 +1,26 @@
+EXCEPTION HIERARCHY
+java.lang.Throwable
+	java.lang.Exception
+		java.lang.RuntimeException
+			java.lang.IllegalArgumentException
+			java.lang.NullPointerException
+			java.lang.IllegalStateException
+				dagger.internal.codegen.Util.CodeGenerationIncompleteException
+				dagger.internal.codegen.GraphAnalysisProcessor.ModuleValidationException
+			java.util.NoSuchElementException
+			java.util.ConcurrentModificationException
+			dagger.internal.Binding.InvalidBindingException
+			java.lang.UnsupportedOperationException
+			java.lang.ClassCastException
+		java.lang.CloneNotSupportedException
+		java.lang.ReflectiveOperationException
+			java.lang.ClassNotFoundException
+			java.lang.InstantiationException
+			java.lang.IllegalAccessException
+			java.lang.reflect.InvocationTargetException
+			java.lang.NoSuchMethodException
+		java.io.IOException
+	java.lang.Error
+		java.lang.AssertionError
+
+

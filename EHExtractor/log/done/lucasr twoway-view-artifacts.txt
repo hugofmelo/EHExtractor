@@ -1,0 +1,75 @@
+Java files: 18
+Jar files: 1
+Maven files: 0
+Gradle files: 4
+Android file: true
+
+Analyzed java files: 18
+Source dirs: 3
+Test dirs: 0
+Dependencies files: 1
+
+JAVA FILES
+D:\Desenvolvimento\Projetos Github\running\lucasr twoway-view\sample\src\main\java\org\lucasr\twowayview\sample\LayoutAdapter.java
+D:\Desenvolvimento\Projetos Github\running\lucasr twoway-view\sample\src\main\java\org\lucasr\twowayview\sample\LayoutFragment.java
+D:\Desenvolvimento\Projetos Github\running\lucasr twoway-view\sample\src\main\java\org\lucasr\twowayview\sample\MainActivity.java
+D:\Desenvolvimento\Projetos Github\running\lucasr twoway-view\layouts\src\main\java\org\lucasr\twowayview\widget\BaseLayoutManager.java
+D:\Desenvolvimento\Projetos Github\running\lucasr twoway-view\layouts\src\main\java\org\lucasr\twowayview\widget\DividerItemDecoration.java
+D:\Desenvolvimento\Projetos Github\running\lucasr twoway-view\layouts\src\main\java\org\lucasr\twowayview\widget\GridLayoutManager.java
+D:\Desenvolvimento\Projetos Github\running\lucasr twoway-view\layouts\src\main\java\org\lucasr\twowayview\widget\ItemEntries.java
+D:\Desenvolvimento\Projetos Github\running\lucasr twoway-view\layouts\src\main\java\org\lucasr\twowayview\widget\ItemSpacingOffsets.java
+D:\Desenvolvimento\Projetos Github\running\lucasr twoway-view\layouts\src\main\java\org\lucasr\twowayview\widget\Lanes.java
+D:\Desenvolvimento\Projetos Github\running\lucasr twoway-view\layouts\src\main\java\org\lucasr\twowayview\widget\ListLayoutManager.java
+D:\Desenvolvimento\Projetos Github\running\lucasr twoway-view\layouts\src\main\java\org\lucasr\twowayview\widget\SpacingItemDecoration.java
+D:\Desenvolvimento\Projetos Github\running\lucasr twoway-view\layouts\src\main\java\org\lucasr\twowayview\widget\SpannableGridLayoutManager.java
+D:\Desenvolvimento\Projetos Github\running\lucasr twoway-view\layouts\src\main\java\org\lucasr\twowayview\widget\StaggeredGridLayoutManager.java
+D:\Desenvolvimento\Projetos Github\running\lucasr twoway-view\layouts\src\main\java\org\lucasr\twowayview\widget\TwoWayView.java
+D:\Desenvolvimento\Projetos Github\running\lucasr twoway-view\core\src\main\java\org\lucasr\twowayview\ClickItemTouchListener.java
+D:\Desenvolvimento\Projetos Github\running\lucasr twoway-view\core\src\main\java\org\lucasr\twowayview\ItemClickSupport.java
+D:\Desenvolvimento\Projetos Github\running\lucasr twoway-view\core\src\main\java\org\lucasr\twowayview\ItemSelectionSupport.java
+D:\Desenvolvimento\Projetos Github\running\lucasr twoway-view\core\src\main\java\org\lucasr\twowayview\TwoWayLayoutManager.java
+
+JAR FILES
+D:\Desenvolvimento\Projetos Github\running\lucasr twoway-view\gradle\wrapper\gradle-wrapper.jar
+
+MAVEN FILES
+
+GRADLE FILES
+D:\Desenvolvimento\Projetos Github\running\lucasr twoway-view\build.gradle
+D:\Desenvolvimento\Projetos Github\running\lucasr twoway-view\sample\build.gradle
+D:\Desenvolvimento\Projetos Github\running\lucasr twoway-view\layouts\build.gradle
+D:\Desenvolvimento\Projetos Github\running\lucasr twoway-view\core\build.gradle
+
+ANDROID MANIFEST FILE
+D:\Desenvolvimento\Projetos Github\running\lucasr twoway-view\core\src\main\AndroidManifest.xml
+
+ANALYZED JAVA FILES
+D:\Desenvolvimento\Projetos Github\running\lucasr twoway-view\sample\src\main\java\org\lucasr\twowayview\sample\LayoutAdapter.java
+D:\Desenvolvimento\Projetos Github\running\lucasr twoway-view\sample\src\main\java\org\lucasr\twowayview\sample\LayoutFragment.java
+D:\Desenvolvimento\Projetos Github\running\lucasr twoway-view\sample\src\main\java\org\lucasr\twowayview\sample\MainActivity.java
+D:\Desenvolvimento\Projetos Github\running\lucasr twoway-view\layouts\src\main\java\org\lucasr\twowayview\widget\BaseLayoutManager.java
+D:\Desenvolvimento\Projetos Github\running\lucasr twoway-view\layouts\src\main\java\org\lucasr\twowayview\widget\DividerItemDecoration.java
+D:\Desenvolvimento\Projetos Github\running\lucasr twoway-view\layouts\src\main\java\org\lucasr\twowayview\widget\GridLayoutManager.java
+D:\Desenvolvimento\Projetos Github\running\lucasr twoway-view\layouts\src\main\java\org\lucasr\twowayview\widget\ItemEntries.java
+D:\Desenvolvimento\Projetos Github\running\lucasr twoway-view\layouts\src\main\java\org\lucasr\twowayview\widget\ItemSpacingOffsets.java
+D:\Desenvolvimento\Projetos Github\running\lucasr twoway-view\layouts\src\main\java\org\lucasr\twowayview\widget\Lanes.java
+D:\Desenvolvimento\Projetos Github\running\lucasr twoway-view\layouts\src\main\java\org\lucasr\twowayview\widget\ListLayoutManager.java
+D:\Desenvolvimento\Projetos Github\running\lucasr twoway-view\layouts\src\main\java\org\lucasr\twowayview\widget\SpacingItemDecoration.java
+D:\Desenvolvimento\Projetos Github\running\lucasr twoway-view\layouts\src\main\java\org\lucasr\twowayview\widget\SpannableGridLayoutManager.java
+D:\Desenvolvimento\Projetos Github\running\lucasr twoway-view\layouts\src\main\java\org\lucasr\twowayview\widget\StaggeredGridLayoutManager.java
+D:\Desenvolvimento\Projetos Github\running\lucasr twoway-view\layouts\src\main\java\org\lucasr\twowayview\widget\TwoWayView.java
+D:\Desenvolvimento\Projetos Github\running\lucasr twoway-view\core\src\main\java\org\lucasr\twowayview\ClickItemTouchListener.java
+D:\Desenvolvimento\Projetos Github\running\lucasr twoway-view\core\src\main\java\org\lucasr\twowayview\ItemClickSupport.java
+D:\Desenvolvimento\Projetos Github\running\lucasr twoway-view\core\src\main\java\org\lucasr\twowayview\ItemSelectionSupport.java
+D:\Desenvolvimento\Projetos Github\running\lucasr twoway-view\core\src\main\java\org\lucasr\twowayview\TwoWayLayoutManager.java
+
+SOURCE DIRECTORIES
+D:\Desenvolvimento\Projetos Github\running\lucasr twoway-view\sample\src\main\java
+D:\Desenvolvimento\Projetos Github\running\lucasr twoway-view\layouts\src\main\java
+D:\Desenvolvimento\Projetos Github\running\lucasr twoway-view\core\src\main\java
+
+TEST DIRECTORIES
+
+DEPENDENCIES
+D:\AndroidSDK\platforms\android-26\android.jar
+

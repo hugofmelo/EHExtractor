@@ -65,12 +65,12 @@ public class Main
 			ErrorLogger.start();
 			
 			System.out.println("****** PROJETO " + project.getName() + " ******");
-
+			
 			System.out.println("Identificando arquivos...");
 			ProjectFiles projectFiles = FileFinder.find(project);
 			
 			System.out.println("Resolvendo artefatos e dependencias...");
-			ProjectArtifacts projectArtifacts = ArtifactResolver.resolve(projectFiles);
+			ProjectArtifacts projectArtifacts = ArtifactResolver.resolve(projectFiles);			
 			
 			// Logging
 			ArtifactLogger.writeReport(project.getName(), projectFiles, projectArtifacts);

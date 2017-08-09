@@ -1,0 +1,84 @@
+Maven errors: 18
+Gradle errors: 3
+Unsolved types: 4
+Unsupported errors: 0
+Unknown ancestral: 0
+Unknown signaler: 0
+
+GENERAL ERRORS
+Falha em ArtifactResolver. O arquivo java não é válido. File: D:\Desenvolvimento\Projetos Github\running\androidannotations androidannotations\AndroidAnnotations\androidannotations-core\androidannotations\src\test\resources\org\androidannotations\generation\ActivityCompat.java
+Falha em ArtifactResolver. O arquivo java não é válido. File: D:\Desenvolvimento\Projetos Github\running\androidannotations androidannotations\AndroidAnnotations\androidannotations-core\androidannotations\src\test\resources\org\androidannotations\generation\Build.java
+Falha em ArtifactResolver. O arquivo java não é válido. File: D:\Desenvolvimento\Projetos Github\running\androidannotations androidannotations\AndroidAnnotations\androidannotations-core\androidannotations\src\test\resources\org\androidannotations\generation\Context.java
+Falha em ArtifactResolver. O arquivo java não é válido. File: D:\Desenvolvimento\Projetos Github\running\androidannotations androidannotations\AndroidAnnotations\androidannotations-core\androidannotations\src\test\resources\org\androidannotations\generation\ContextCompat.java
+Falha em ArtifactResolver. O arquivo java não é válido. File: D:\Desenvolvimento\Projetos Github\running\androidannotations androidannotations\AndroidAnnotations\androidannotations-core\androidannotations\src\test\resources\org\androidannotations\generation\Fragment.java
+Falha em ArtifactResolver. O arquivo java não é válido. File: D:\Desenvolvimento\Projetos Github\running\androidannotations androidannotations\AndroidAnnotations\androidannotations-core\androidannotations\src\test\resources\org\androidannotations\generation\support\ActivityCompat.java
+Falha em ArtifactResolver. O arquivo java não é válido. File: D:\Desenvolvimento\Projetos Github\running\androidannotations androidannotations\AndroidAnnotations\androidannotations-core\androidannotations\src\test\resources\org\androidannotations\generation\support\AppCompatActivity.java
+Falha em ArtifactResolver. O arquivo java não é válido. File: D:\Desenvolvimento\Projetos Github\running\androidannotations androidannotations\AndroidAnnotations\androidannotations-core\androidannotations\src\test\resources\org\androidannotations\generation\support\Fragment.java
+Falha em ArtifactResolver. O arquivo java não é válido. File: D:\Desenvolvimento\Projetos Github\running\androidannotations androidannotations\AndroidAnnotations\androidannotations-core\androidannotations\src\test\resources\org\androidannotations\generation\support\old\ContextCompat.java
+Falha em ArtifactResolver. O arquivo java não é válido. File: D:\Desenvolvimento\Projetos Github\running\androidannotations androidannotations\AndroidAnnotations\androidannotations-core\androidannotations\src\test\resources\org\androidannotations\generation\support\old\Fragment.java
+Falha em ArtifactResolver. O arquivo java não é válido. File: D:\Desenvolvimento\Projetos Github\running\androidannotations androidannotations\AndroidAnnotations\androidannotations-core\androidannotations\src\test\resources\org\androidannotations\databinding\DataBindingUtil.java
+
+MAVEN ERROR FILES
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\androidannotations androidannotations\examples\maven\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\androidannotations androidannotations\AndroidAnnotations\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\androidannotations androidannotations\AndroidAnnotations\androidannotations-roboguice\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\androidannotations androidannotations\AndroidAnnotations\androidannotations-roboguice\roboguice-test\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\androidannotations androidannotations\AndroidAnnotations\androidannotations-roboguice\roboguice\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\androidannotations androidannotations\AndroidAnnotations\androidannotations-rest-spring\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\androidannotations androidannotations\AndroidAnnotations\androidannotations-rest-spring\rest-spring-test\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\androidannotations androidannotations\AndroidAnnotations\androidannotations-rest-spring\rest-spring-api\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\androidannotations androidannotations\AndroidAnnotations\androidannotations-rest-spring\rest-spring\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\androidannotations androidannotations\AndroidAnnotations\androidannotations-otto\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\androidannotations androidannotations\AndroidAnnotations\androidannotations-otto\otto-test\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\androidannotations androidannotations\AndroidAnnotations\androidannotations-otto\otto\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\androidannotations androidannotations\AndroidAnnotations\androidannotations-ormlite\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\androidannotations androidannotations\AndroidAnnotations\androidannotations-ormlite\ormlite-test\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\androidannotations androidannotations\AndroidAnnotations\androidannotations-ormlite\ormlite\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\androidannotations androidannotations\AndroidAnnotations\androidannotations-core\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\androidannotations androidannotations\AndroidAnnotations\androidannotations-core\androidannotations-test\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\androidannotations androidannotations\AndroidAnnotations\androidannotations-core\androidannotations\pom.xml
+
+
+GRADLE ERROR FILES
+Falha no GradleResolver. Could not find org.androidannotations:androidannotations-api:4.4.0-SNAPSHOT.
+Required by:
+    project :. File: D:\Desenvolvimento\Projetos Github\running\androidannotations androidannotations\examples\RoboGuiceExample\build.gradle
+
+Falha no GradleResolver. Could not find org.androidannotations:androidannotations-api:4.4.0-SNAPSHOT.
+Required by:
+    project :. File: D:\Desenvolvimento\Projetos Github\running\androidannotations androidannotations\examples\kotlin\build.gradle
+
+Falha no GradleResolver. Could not find org.androidannotations:androidannotations-api:4.4.0-SNAPSHOT.
+Required by:
+    project :. File: D:\Desenvolvimento\Projetos Github\running\androidannotations androidannotations\examples\gradle\build.gradle
+
+
+UNSOLVED ERROR FILES
+Falha no Analyzer. Classe 'Unsolved symbol : OrmLiteSqliteOpenHelper' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\androidannotations androidannotations\AndroidAnnotations\androidannotations-ormlite\ormlite-test\src\main\java\org\androidannotations\ormlite\test\DatabaseHelper.java
+Falha no Analyzer. Classe 'Unsolved symbol : JClassAlreadyExistsException' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\androidannotations androidannotations\AndroidAnnotations\androidannotations-core\androidannotations\src\main\java\org\androidannotations\internal\rclass\RInnerClass.java
+Falha no Analyzer. Classe 'Unsolved symbol : JClassAlreadyExistsException' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\androidannotations androidannotations\AndroidAnnotations\androidannotations-core\androidannotations\src\main\java\org\androidannotations\internal\process\ProcessHolder.java
+Falha no Analyzer. Classe 'Unsolved symbol : AbstractCodeWriter' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\androidannotations androidannotations\AndroidAnnotations\androidannotations-core\androidannotations\src\main\java\org\androidannotations\internal\generation\SourceCodeWriter.java
+
+UNSUPPORTED ERROR FILES
+
+UNKNOWN ANCESTRAL
+
+UNKNOWN SIGNALERS
+

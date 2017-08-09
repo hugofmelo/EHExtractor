@@ -1,0 +1,12 @@
+EXCEPTION HIERARCHY
+java.lang.Throwable
+	java.lang.Error
+		java.lang.AssertionError
+	java.lang.Exception
+		java.lang.RuntimeException
+			java.lang.IllegalStateException
+			java.lang.IllegalArgumentException
+			java.lang.NullPointerException
+		java.io.IOException
+
+

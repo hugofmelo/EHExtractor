@@ -1,0 +1,36 @@
+Maven errors: 0
+Gradle errors: 5
+Unsolved types: 3
+Unsupported errors: 0
+Unknown ancestral: 0
+Unknown signaler: 0
+
+GENERAL ERRORS
+Falha em ArtifactResolver. O arquivo java não é válido. File: D:\Desenvolvimento\Projetos Github\running\scwang90 SmartRefreshLayout\refresh-footer\src\test\java\com\scwang\smartrefresh\footer\ExampleUnitTest.java
+Falha em ArtifactResolver. O arquivo java não é válido. File: D:\Desenvolvimento\Projetos Github\running\scwang90 SmartRefreshLayout\refresh-footer\src\androidTest\java\com\scwang\smartrefresh\footer\ExampleInstrumentedTest.java
+
+MAVEN ERROR FILES
+
+GRADLE ERROR FILES
+Falha no GradleResolver. org.gradle.api.internal.component.Usage. File: D:\Desenvolvimento\Projetos Github\running\scwang90 SmartRefreshLayout\build.gradle
+
+Falha no GradleResolver. org.gradle.api.internal.component.Usage. File: D:\Desenvolvimento\Projetos Github\running\scwang90 SmartRefreshLayout\refresh-layout\build.gradle
+
+Falha no GradleResolver. org.gradle.api.internal.component.Usage. File: D:\Desenvolvimento\Projetos Github\running\scwang90 SmartRefreshLayout\refresh-header\build.gradle
+
+Falha no GradleResolver. org.gradle.api.internal.component.Usage. File: D:\Desenvolvimento\Projetos Github\running\scwang90 SmartRefreshLayout\refresh-footer\build.gradle
+
+Falha no GradleResolver. org.gradle.api.internal.component.Usage. File: D:\Desenvolvimento\Projetos Github\running\scwang90 SmartRefreshLayout\app\build.gradle
+
+
+UNSOLVED ERROR FILES
+Falha no Analyzer. Classe 'Unsolved symbol : OnScrollChangeListener' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\scwang90 SmartRefreshLayout\refresh-layout\src\main\java\com\scwang\smartrefresh\layout\impl\RefreshContentWrapper.java
+Falha no Analyzer. Classe 'Unsolved symbol : PagerAdapter' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\scwang90 SmartRefreshLayout\refresh-layout\src\main\java\android\support\v4\view\PagerAdapterWrapper.java
+Falha no Analyzer. Classe 'Unsolved symbol : AppCompatActivity' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\scwang90 SmartRefreshLayout\app\src\main\java\com\scwang\refreshlayout\activity\IndexMainActivity.java
+
+UNSUPPORTED ERROR FILES
+
+UNKNOWN ANCESTRAL
+
+UNKNOWN SIGNALERS
+

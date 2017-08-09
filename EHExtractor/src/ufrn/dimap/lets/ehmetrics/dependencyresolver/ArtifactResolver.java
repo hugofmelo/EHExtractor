@@ -2,6 +2,12 @@ package ufrn.dimap.lets.ehmetrics.dependencyresolver;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
@@ -9,7 +15,11 @@ import com.github.javaparser.JavaParser;
 import com.github.javaparser.ParseProblemException;
 import com.github.javaparser.ast.CompilationUnit;
 import com.github.javaparser.ast.PackageDeclaration;
+import com.google.gson.Gson;
+import com.google.gson.stream.JsonReader;
+import com.google.gson.stream.JsonWriter;
 
+import ufrn.dimap.lets.ehmetrics.ProjectsUtil;
 import ufrn.dimap.lets.ehmetrics.logger.ErrorLogger;
 
 public class ArtifactResolver
@@ -19,7 +29,14 @@ public class ArtifactResolver
 		ProjectArtifacts artifacts = new ProjectArtifacts();
 
 		findArtifacts(projectFiles, artifacts);
-		findDependencies(projectFiles, artifacts);
+		
+		boolean loadedDependencies = ArtifactResolver.loadDependencies(projectFiles.getProjectName(), artifacts);
+		
+		if ( !loadedDependencies )
+		{
+			findDependencies(projectFiles, artifacts);
+			saveDependencies(projectFiles.getProjectName(), artifacts);
+		}
 		
 		return artifacts;
 	}
@@ -180,4 +197,59 @@ public class ArtifactResolver
 		return path.indexOf("\\test\\") != -1;
 	}
 
+	private static boolean loadDependencies(String projectName, ProjectArtifacts artifacts)
+	{
+		Gson gson = new Gson();
+		try
+		{
+			JsonReader reader = new JsonReader (new FileReader(ProjectsUtil.dependenciesRoot+File.separator+projectName+".json"));
+			String[] dependencies = gson.fromJson(reader, String[].class);
+			
+			for ( String dependency : dependencies )
+			{
+				artifacts.addDependency(new File (dependency));
+			}
+			
+			reader.close();
+			
+			return true;
+		}
+		catch (FileNotFoundException e)
+		{
+			return false;
+		}
+		catch (IOException e) 
+		{
+			e.printStackTrace();
+			return false;
+		}
+	}
+	
+	private static void saveDependencies(String projectName, ProjectArtifacts artifacts)
+	{
+		Gson gson = new Gson();
+		FileWriter jsonFile;
+		List<String> dependencies = new ArrayList<String>();
+		
+		for ( File file : artifacts.getDependencies() )
+		{
+			dependencies.add(file.getAbsolutePath());
+		}
+		
+		try
+		{
+			jsonFile = new FileWriter (ProjectsUtil.dependenciesRoot + File.separator + projectName + ".json");
+			
+			String dependenciesString = gson.toJson(dependencies);
+			
+			jsonFile.write(dependenciesString);
+			jsonFile.close();
+		}
+		catch (IOException e)
+		{
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
 }

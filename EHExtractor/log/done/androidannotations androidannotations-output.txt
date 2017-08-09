@@ -1,0 +1,35 @@
+EXCEPTION HIERARCHY
+java.lang.Throwable
+	java.lang.Exception
+		java.lang.InterruptedException
+		java.lang.ReflectiveOperationException
+			java.lang.ClassNotFoundException
+			java.lang.reflect.InvocationTargetException
+			java.lang.IllegalAccessException
+			java.lang.NoSuchMethodException
+		java.lang.RuntimeException
+			java.lang.IllegalArgumentException
+				java.lang.NumberFormatException
+				java.nio.charset.UnsupportedCharsetException
+			java.lang.SecurityException
+			java.lang.IllegalStateException
+			java.lang.ClassCastException
+			java.lang.UnsupportedOperationException
+		java.io.IOException
+			java.net.MalformedURLException
+			java.io.FileNotFoundException
+			java.io.UnsupportedEncodingException
+		org.xmlpull.v1.XmlPullParserException
+		org.androidannotations.internal.exception.VersionNotFoundException
+		org.androidannotations.internal.exception.ValidationException
+		org.androidannotations.internal.exception.ProcessingException
+		org.androidannotations.internal.exception.VersionMismatchException
+		org.androidannotations.internal.exception.RClassNotFoundException
+		org.androidannotations.internal.exception.AndroidManifestNotFoundException
+		java.net.URISyntaxException
+	java.lang.Error
+		java.lang.LinkageError
+			java.lang.NoClassDefFoundError
+			java.lang.UnsatisfiedLinkError
+
+

@@ -1,0 +1,168 @@
+Java files: 60
+Jar files: 1
+Maven files: 0
+Gradle files: 6
+Android file: true
+
+Analyzed java files: 60
+Source dirs: 10
+Test dirs: 0
+Dependencies files: 1
+
+JAVA FILES
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\widgetsample\src\main\java\com\zhy\autolayout\test\widgets\MainActivity.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\widgetsample\src\main\java\com\zhy\autolayout\test\widgets\fragments\SimpleFragment.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\widgetsample\src\androidTest\java\com\zhy\autolayout\test\widgets\ApplicationTest.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\sample\src\main\java\com\zhy\sample\CategoryActivity.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\sample\src\main\java\com\zhy\sample\MainActivity.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\sample\src\main\java\com\zhy\sample\UseDeviceSizeApplication.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\sample\src\main\java\com\zhy\sample\view\AutoCardView.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\sample\src\main\java\com\zhy\sample\view\DividerItemDecoration.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\sample\src\main\java\com\zhy\sample\fragment\ListFragment.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\sample\src\main\java\com\zhy\sample\fragment\PayFragment.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\sample\src\main\java\com\zhy\sample\fragment\RecyclerViewFragment.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\sample\src\main\java\com\zhy\sample\fragment\RecyclerViewGridFragment.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\sample\src\main\java\com\zhy\sample\fragment\RegisterFragment.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\sample\src\main\java\com\zhy\sample\fragment\SimpleFragment.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\sample\src\main\java\com\zhy\sample\fragment\TestFragment.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\sample\src\androidTest\java\com\zhy\sample\ApplicationTest.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout-widget\src\main\java\com\zhy\autolayout\widget\AutoActionMenuItemView.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout-widget\src\main\java\com\zhy\autolayout\widget\AutoCardView.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout-widget\src\main\java\com\zhy\autolayout\widget\AutoLayoutWidgetActivity.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout-widget\src\main\java\com\zhy\autolayout\widget\AutoRadioGroup.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout-widget\src\main\java\com\zhy\autolayout\widget\AutoTabLayout.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout-widget\src\main\java\com\zhy\autolayout\widget\AutoTableLayout.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout-widget\src\main\java\com\zhy\autolayout\widget\AutoTableRow.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout-widget\src\main\java\com\zhy\autolayout\widget\AutoToolbar.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout-widget\src\androidTest\java\com\zhy\autolayout\widget\ApplicationTest.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\AutoFrameLayout.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\AutoLayoutActivity.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\AutoLayoutInfo.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\AutoLinearLayout.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\AutoRelativeLayout.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\widget\MetroLayout.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\utils\AutoLayoutHelper.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\utils\AutoUtils.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\utils\DimenUtils.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\utils\L.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\utils\ScreenUtils.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\config\AutoLayoutConifg.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\config\UseLandscape.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\attr\Attrs.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\attr\AutoAttr.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\attr\HeightAttr.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\attr\MarginAttr.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\attr\MarginBottomAttr.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\attr\MarginLeftAttr.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\attr\MarginRightAttr.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\attr\MarginTopAttr.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\attr\MaxHeightAttr.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\attr\MaxWidthAttr.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\attr\MinHeightAttr.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\attr\MinWidthAttr.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\attr\PaddingAttr.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\attr\PaddingBottomAttr.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\attr\PaddingLeftAttr.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\attr\PaddingRightAttr.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\attr\PaddingTopAttr.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\attr\TextSizeAttr.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\attr\WidthAttr.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\androidTest\java\zhy\com\autolayout\ApplicationTest.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\app\src\main\java\zhy\com\autolayout\MainActivity.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\app\src\androidTest\java\zhy\com\autolayout\ApplicationTest.java
+
+JAR FILES
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\gradle\wrapper\gradle-wrapper.jar
+
+MAVEN FILES
+
+GRADLE FILES
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\build.gradle
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\widgetsample\build.gradle
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\sample\build.gradle
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout-widget\build.gradle
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\build.gradle
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\app\build.gradle
+
+ANDROID MANIFEST FILE
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\app\src\main\AndroidManifest.xml
+
+ANALYZED JAVA FILES
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\widgetsample\src\main\java\com\zhy\autolayout\test\widgets\MainActivity.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\widgetsample\src\main\java\com\zhy\autolayout\test\widgets\fragments\SimpleFragment.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\widgetsample\src\androidTest\java\com\zhy\autolayout\test\widgets\ApplicationTest.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\sample\src\main\java\com\zhy\sample\CategoryActivity.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\sample\src\main\java\com\zhy\sample\MainActivity.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\sample\src\main\java\com\zhy\sample\UseDeviceSizeApplication.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\sample\src\main\java\com\zhy\sample\view\AutoCardView.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\sample\src\main\java\com\zhy\sample\view\DividerItemDecoration.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\sample\src\main\java\com\zhy\sample\fragment\ListFragment.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\sample\src\main\java\com\zhy\sample\fragment\PayFragment.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\sample\src\main\java\com\zhy\sample\fragment\RecyclerViewFragment.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\sample\src\main\java\com\zhy\sample\fragment\RecyclerViewGridFragment.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\sample\src\main\java\com\zhy\sample\fragment\RegisterFragment.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\sample\src\main\java\com\zhy\sample\fragment\SimpleFragment.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\sample\src\main\java\com\zhy\sample\fragment\TestFragment.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\sample\src\androidTest\java\com\zhy\sample\ApplicationTest.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout-widget\src\main\java\com\zhy\autolayout\widget\AutoActionMenuItemView.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout-widget\src\main\java\com\zhy\autolayout\widget\AutoCardView.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout-widget\src\main\java\com\zhy\autolayout\widget\AutoLayoutWidgetActivity.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout-widget\src\main\java\com\zhy\autolayout\widget\AutoRadioGroup.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout-widget\src\main\java\com\zhy\autolayout\widget\AutoTabLayout.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout-widget\src\main\java\com\zhy\autolayout\widget\AutoTableLayout.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout-widget\src\main\java\com\zhy\autolayout\widget\AutoTableRow.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout-widget\src\main\java\com\zhy\autolayout\widget\AutoToolbar.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout-widget\src\androidTest\java\com\zhy\autolayout\widget\ApplicationTest.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\AutoFrameLayout.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\AutoLayoutActivity.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\AutoLayoutInfo.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\AutoLinearLayout.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\AutoRelativeLayout.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\widget\MetroLayout.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\utils\AutoLayoutHelper.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\utils\AutoUtils.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\utils\DimenUtils.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\utils\L.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\utils\ScreenUtils.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\config\AutoLayoutConifg.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\config\UseLandscape.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\attr\Attrs.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\attr\AutoAttr.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\attr\HeightAttr.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\attr\MarginAttr.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\attr\MarginBottomAttr.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\attr\MarginLeftAttr.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\attr\MarginRightAttr.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\attr\MarginTopAttr.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\attr\MaxHeightAttr.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\attr\MaxWidthAttr.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\attr\MinHeightAttr.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\attr\MinWidthAttr.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\attr\PaddingAttr.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\attr\PaddingBottomAttr.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\attr\PaddingLeftAttr.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\attr\PaddingRightAttr.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\attr\PaddingTopAttr.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\attr\TextSizeAttr.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java\com\zhy\autolayout\attr\WidthAttr.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\androidTest\java\zhy\com\autolayout\ApplicationTest.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\app\src\main\java\zhy\com\autolayout\MainActivity.java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\app\src\androidTest\java\zhy\com\autolayout\ApplicationTest.java
+
+SOURCE DIRECTORIES
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\widgetsample\src\main\java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\widgetsample\src\androidTest\java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\sample\src\main\java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\sample\src\androidTest\java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout-widget\src\main\java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout-widget\src\androidTest\java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\main\java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\autolayout\src\androidTest\java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\app\src\main\java
+D:\Desenvolvimento\Projetos Github\running\hongyangAndroid AndroidAutoLayout\app\src\androidTest\java
+
+TEST DIRECTORIES
+
+DEPENDENCIES
+D:\AndroidSDK\platforms\android-26\android.jar
+

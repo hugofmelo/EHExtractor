@@ -11,10 +11,11 @@ public class ProjectsUtil
 	
 	// Colocar endereço com barra ('/') no final
 	// LETS
-	public static final String projectsRoot = "C:/Users/hugofm/Desenvolvimento/Projetos GitHub/error/";
+	//public static final String projectsRoot = "C:/Users/hugofm/Desenvolvimento/Projetos GitHub/error/";
 	// CASA
-	//public static final String projectsRoot = "D:/Desenvolvimento/Projetos Github/running/";
-	public static final String logsRoot = "./log/";
+	public static final String projectsRoot = "D:/Desenvolvimento/Projetos Github/running/";
+	public static final String dependenciesRoot = "./dependencies/";
+	public static final String logsRoot = "./log/running";
 	
 	public static List<File> listProjects ()
 	{
@@ -49,9 +50,10 @@ public class ProjectsUtil
 		List <File> projectsPaths = new ArrayList<File>();
 		
 		// Test self
-		//projectsPaths.add(new File("../EHMetrics"));
+		projectsPaths.add(new File("../EHExtractor"));
 		
 		// Github
+		/*
 		projectsPaths.add(new File(projectsRoot+"afollestad-material-dialogs"));
 		projectsPaths.add(new File(projectsRoot+"airbnb-lottie-android"));
 		projectsPaths.add(new File(projectsRoot+"alibaba-fastjson"));
@@ -84,7 +86,7 @@ public class ProjectsUtil
 		projectsPaths.add(new File(projectsRoot+"square-picasso"));
 		projectsPaths.add(new File(projectsRoot+"square-retrofit"));
 		projectsPaths.add(new File(projectsRoot+"zxing-zxing"));
-		
+		*/
 		
 		boolean stop = false;
 		for (File f : projectsPaths)

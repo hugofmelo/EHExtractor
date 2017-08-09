@@ -1,0 +1,28 @@
+Maven errors: 0
+Gradle errors: 3
+Unsolved types: 0
+Unsupported errors: 0
+Unknown ancestral: 0
+Unknown signaler: 1
+
+GENERAL ERRORS
+
+MAVEN ERROR FILES
+
+GRADLE ERROR FILES
+Falha no GradleResolver. failed to find Build Tools revision 19.1.0. File: D:\Desenvolvimento\Projetos Github\running\pedant sweet-alert-dialog\build.gradle
+
+Falha no GradleResolver. failed to find Build Tools revision 19.1.0. File: D:\Desenvolvimento\Projetos Github\running\pedant sweet-alert-dialog\sample\build.gradle
+
+Falha no GradleResolver. failed to find Build Tools revision 19.1.0. File: D:\Desenvolvimento\Projetos Github\running\pedant sweet-alert-dialog\library\build.gradle
+
+
+UNSOLVED ERROR FILES
+
+UNSUPPORTED ERROR FILES
+
+UNKNOWN ANCESTRAL
+
+UNKNOWN SIGNALERS
+Falha no Analyzer. Sinalizado um NameExpr, mas a exceção não está na pilha. File: D:\Desenvolvimento\Projetos Github\running\pedant sweet-alert-dialog\library\src\main\java\cn\pedant\SweetAlert\OptAnimationLoader.java
+

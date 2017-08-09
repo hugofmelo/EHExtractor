@@ -1,0 +1,28 @@
+Maven errors: 2
+Gradle errors: 1
+Unsolved types: 1
+Unsupported errors: 0
+Unknown ancestral: 0
+Unknown signaler: 0
+
+GENERAL ERRORS
+
+MAVEN ERROR FILES
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\library-maps-support\pom.xml
+
+
+GRADLE ERROR FILES
+Falha no GradleResolver. org.gradle.api.artifacts.result.ResolvedModuleVersionResult. File: D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\library\build.gradle
+
+
+UNSOLVED ERROR FILES
+Falha no Analyzer. Classe 'Unsolved symbol : SherlockPreferenceActivity' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\example\src\com\jeremyfeinstein\slidingmenu\example\ExampleListActivity.java
+
+UNSUPPORTED ERROR FILES
+
+UNKNOWN ANCESTRAL
+
+UNKNOWN SIGNALERS
+

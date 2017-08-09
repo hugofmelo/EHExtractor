@@ -1,0 +1,28 @@
+Maven errors: 2
+Gradle errors: 0
+Unsolved types: 1
+Unsupported errors: 2
+Unknown ancestral: 0
+Unknown signaler: 0
+
+GENERAL ERRORS
+
+MAVEN ERROR FILES
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\square otto\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\square otto\otto-sample\pom.xml
+
+
+GRADLE ERROR FILES
+
+UNSOLVED ERROR FILES
+Falha no Analyzer. Classe 'Unsolved symbol : Fragment' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\square otto\otto-sample\src\main\java\com\squareup\otto\sample\LocationMapFragment.java
+
+UNSUPPORTED ERROR FILES
+Falha no Analyzer. UnsupportedOperation ao parsear arquivo. File: D:\Desenvolvimento\Projetos Github\running\square otto\otto\src\main\java\com\squareup\otto\EventHandler.java
+Falha no Analyzer. UnsupportedOperation ao parsear arquivo. File: D:\Desenvolvimento\Projetos Github\running\square otto\otto\src\main\java\com\squareup\otto\EventProducer.java
+
+UNKNOWN ANCESTRAL
+
+UNKNOWN SIGNALERS
+

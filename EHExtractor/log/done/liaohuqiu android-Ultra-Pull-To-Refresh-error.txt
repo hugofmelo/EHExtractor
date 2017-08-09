@@ -1,0 +1,35 @@
+Maven errors: 3
+Gradle errors: 4
+Unsolved types: 0
+Unsupported errors: 0
+Unknown ancestral: 0
+Unknown signaler: 0
+
+GENERAL ERRORS
+
+MAVEN ERROR FILES
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\liaohuqiu android-Ultra-Pull-To-Refresh\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\liaohuqiu android-Ultra-Pull-To-Refresh\template\ptr-demo\pom.xml
+
+Falha no MavenResolver. Maven resultou em erro. Pom file: D:\Desenvolvimento\Projetos Github\running\liaohuqiu android-Ultra-Pull-To-Refresh\ptr-demo\pom.xml
+
+
+GRADLE ERROR FILES
+Falha no GradleResolver. failed to find target android-22 : D:\AndroidSDK. File: D:\Desenvolvimento\Projetos Github\running\liaohuqiu android-Ultra-Pull-To-Refresh\build.gradle
+
+Falha no GradleResolver. Plugin with id 'com.android.application' not found.. File: D:\Desenvolvimento\Projetos Github\running\liaohuqiu android-Ultra-Pull-To-Refresh\template\ptr-demo\build.gradle
+
+Falha no GradleResolver. failed to find target android-22 : D:\AndroidSDK. File: D:\Desenvolvimento\Projetos Github\running\liaohuqiu android-Ultra-Pull-To-Refresh\ptr-lib\build.gradle
+
+Falha no GradleResolver. failed to find target android-22 : D:\AndroidSDK. File: D:\Desenvolvimento\Projetos Github\running\liaohuqiu android-Ultra-Pull-To-Refresh\ptr-demo\build.gradle
+
+
+UNSOLVED ERROR FILES
+
+UNSUPPORTED ERROR FILES
+
+UNKNOWN ANCESTRAL
+
+UNKNOWN SIGNALERS
+

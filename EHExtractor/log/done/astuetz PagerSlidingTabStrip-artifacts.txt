@@ -1,0 +1,45 @@
+Java files: 4
+Jar files: 1
+Maven files: 0
+Gradle files: 3
+Android file: true
+
+Analyzed java files: 4
+Source dirs: 2
+Test dirs: 0
+Dependencies files: 1
+
+JAVA FILES
+D:\Desenvolvimento\Projetos Github\running\astuetz PagerSlidingTabStrip\sample\src\com\astuetz\viewpager\extensions\sample\MainActivity.java
+D:\Desenvolvimento\Projetos Github\running\astuetz PagerSlidingTabStrip\sample\src\com\astuetz\viewpager\extensions\sample\QuickContactFragment.java
+D:\Desenvolvimento\Projetos Github\running\astuetz PagerSlidingTabStrip\sample\src\com\astuetz\viewpager\extensions\sample\SuperAwesomeCardFragment.java
+D:\Desenvolvimento\Projetos Github\running\astuetz PagerSlidingTabStrip\library\src\com\astuetz\PagerSlidingTabStrip.java
+
+JAR FILES
+D:\Desenvolvimento\Projetos Github\running\astuetz PagerSlidingTabStrip\gradle\wrapper\gradle-wrapper.jar
+
+MAVEN FILES
+
+GRADLE FILES
+D:\Desenvolvimento\Projetos Github\running\astuetz PagerSlidingTabStrip\build.gradle
+D:\Desenvolvimento\Projetos Github\running\astuetz PagerSlidingTabStrip\sample\build.gradle
+D:\Desenvolvimento\Projetos Github\running\astuetz PagerSlidingTabStrip\library\build.gradle
+
+ANDROID MANIFEST FILE
+D:\Desenvolvimento\Projetos Github\running\astuetz PagerSlidingTabStrip\library\AndroidManifest.xml
+
+ANALYZED JAVA FILES
+D:\Desenvolvimento\Projetos Github\running\astuetz PagerSlidingTabStrip\sample\src\com\astuetz\viewpager\extensions\sample\MainActivity.java
+D:\Desenvolvimento\Projetos Github\running\astuetz PagerSlidingTabStrip\sample\src\com\astuetz\viewpager\extensions\sample\QuickContactFragment.java
+D:\Desenvolvimento\Projetos Github\running\astuetz PagerSlidingTabStrip\sample\src\com\astuetz\viewpager\extensions\sample\SuperAwesomeCardFragment.java
+D:\Desenvolvimento\Projetos Github\running\astuetz PagerSlidingTabStrip\library\src\com\astuetz\PagerSlidingTabStrip.java
+
+SOURCE DIRECTORIES
+D:\Desenvolvimento\Projetos Github\running\astuetz PagerSlidingTabStrip\sample\src
+D:\Desenvolvimento\Projetos Github\running\astuetz PagerSlidingTabStrip\library\src
+
+TEST DIRECTORIES
+
+DEPENDENCIES
+D:\AndroidSDK\platforms\android-26\android.jar
+

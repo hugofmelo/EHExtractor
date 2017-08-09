@@ -1,0 +1,16 @@
+EXCEPTION HIERARCHY
+java.lang.Throwable
+	java.lang.Error
+		java.lang.LinkageError
+			java.lang.IncompatibleClassChangeError
+				java.lang.IllegalAccessError
+	java.lang.Exception
+		java.lang.RuntimeException
+			java.lang.IllegalStateException
+			android.view.WindowManager.BadTokenException
+				com.afollestad.materialdialogs.MaterialDialog.DialogException
+			java.lang.IllegalArgumentException
+		java.lang.ReflectiveOperationException
+			java.lang.NoSuchFieldException
+
+

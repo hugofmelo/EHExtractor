@@ -1,0 +1,116 @@
+Java files: 40
+Jar files: 1
+Maven files: 0
+Gradle files: 2
+Android file: true
+
+Analyzed java files: 40
+Source dirs: 2
+Test dirs: 0
+Dependencies files: 1
+
+JAVA FILES
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\MainActivity.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\MyApp.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\wiring\LogAdapter.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\volley\MyVolley.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\volley\VolleyDemoFragment.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\rxbus\RxBus.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\rxbus\RxBusDemoFragment.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\rxbus\RxBusDemo_Bottom1Fragment.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\rxbus\RxBusDemo_Bottom2Fragment.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\rxbus\RxBusDemo_Bottom3Fragment.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\rxbus\RxBusDemo_TopFragment.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\retrofit\Contributor.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\retrofit\GithubApi.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\retrofit\GithubService.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\retrofit\User.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\pagination\PaginationAdapter.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\pagination\PaginationAutoAdapter.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\pagination\PaginationAutoFragment.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\pagination\PaginationFragment.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\fragments\BaseFragment.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\fragments\BufferDemoFragment.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\fragments\ConcurrencyWithSchedulersDemoFragment.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\fragments\DebounceSearchEmitterFragment.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\fragments\DoubleBindingTextViewFragment.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\fragments\ExponentialBackoffFragment.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\fragments\FormValidationCombineLatestFragment.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\fragments\MainFragment.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\fragments\NetworkDetectorFragment.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\fragments\PollingFragment.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\fragments\PseudoCacheFragment.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\fragments\PseudoCacheMergeFragment.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\fragments\RetrofitAsyncTaskDeathFragment.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\fragments\RetrofitFragment.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\fragments\RotationPersist1Fragment.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\fragments\RotationPersist1WorkerFragment.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\fragments\RotationPersist2Fragment.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\fragments\RotationPersist2WorkerFragment.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\fragments\TimeoutDemoFragment.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\fragments\TimingDemoFragment.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\androidTest\java\com\morihacky\android\rxjava\app\ApplicationTest.java
+
+JAR FILES
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\gradle\wrapper\gradle-wrapper.jar
+
+MAVEN FILES
+
+GRADLE FILES
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\build.gradle
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\build.gradle
+
+ANDROID MANIFEST FILE
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\AndroidManifest.xml
+
+ANALYZED JAVA FILES
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\MainActivity.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\MyApp.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\wiring\LogAdapter.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\volley\MyVolley.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\volley\VolleyDemoFragment.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\rxbus\RxBus.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\rxbus\RxBusDemoFragment.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\rxbus\RxBusDemo_Bottom1Fragment.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\rxbus\RxBusDemo_Bottom2Fragment.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\rxbus\RxBusDemo_Bottom3Fragment.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\rxbus\RxBusDemo_TopFragment.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\retrofit\Contributor.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\retrofit\GithubApi.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\retrofit\GithubService.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\retrofit\User.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\pagination\PaginationAdapter.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\pagination\PaginationAutoAdapter.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\pagination\PaginationAutoFragment.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\pagination\PaginationFragment.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\fragments\BaseFragment.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\fragments\BufferDemoFragment.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\fragments\ConcurrencyWithSchedulersDemoFragment.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\fragments\DebounceSearchEmitterFragment.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\fragments\DoubleBindingTextViewFragment.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\fragments\ExponentialBackoffFragment.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\fragments\FormValidationCombineLatestFragment.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\fragments\MainFragment.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\fragments\NetworkDetectorFragment.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\fragments\PollingFragment.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\fragments\PseudoCacheFragment.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\fragments\PseudoCacheMergeFragment.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\fragments\RetrofitAsyncTaskDeathFragment.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\fragments\RetrofitFragment.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\fragments\RotationPersist1Fragment.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\fragments\RotationPersist1WorkerFragment.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\fragments\RotationPersist2Fragment.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\fragments\RotationPersist2WorkerFragment.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\fragments\TimeoutDemoFragment.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java\com\morihacky\android\rxjava\fragments\TimingDemoFragment.java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\androidTest\java\com\morihacky\android\rxjava\app\ApplicationTest.java
+
+SOURCE DIRECTORIES
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\main\java
+D:\Desenvolvimento\Projetos Github\running\kaushikgopal RxJava-Android-Samples\app\src\androidTest\java
+
+TEST DIRECTORIES
+
+DEPENDENCIES
+D:\AndroidSDK\platforms\android-26\android.jar
+

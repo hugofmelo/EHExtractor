@@ -1,0 +1,167 @@
+Java files: 65
+Jar files: 1
+Maven files: 0
+Gradle files: 3
+Android file: true
+
+Analyzed java files: 65
+Source dirs: 2
+Test dirs: 0
+Dependencies files: 1
+
+JAVA FILES
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\sample\src\main\java\com\fractalwrench\androidbootstrap\sample\AwesomeTextViewExample.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\sample\src\main\java\com\fractalwrench\androidbootstrap\sample\BaseActivity.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\sample\src\main\java\com\fractalwrench\androidbootstrap\sample\BootstrapAlertExample.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\sample\src\main\java\com\fractalwrench\androidbootstrap\sample\BootstrapBadgeExample.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\sample\src\main\java\com\fractalwrench\androidbootstrap\sample\BootstrapButtonExample.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\sample\src\main\java\com\fractalwrench\androidbootstrap\sample\BootstrapButtonGroupExample.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\sample\src\main\java\com\fractalwrench\androidbootstrap\sample\BootstrapCircleThumbnailExample.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\sample\src\main\java\com\fractalwrench\androidbootstrap\sample\BootstrapDropDownExample.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\sample\src\main\java\com\fractalwrench\androidbootstrap\sample\BootstrapEditTextExample.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\sample\src\main\java\com\fractalwrench\androidbootstrap\sample\BootstrapLabelExample.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\sample\src\main\java\com\fractalwrench\androidbootstrap\sample\BootstrapProgressBarExample.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\sample\src\main\java\com\fractalwrench\androidbootstrap\sample\BootstrapProgressBarGroupExample.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\sample\src\main\java\com\fractalwrench\androidbootstrap\sample\BootstrapThumbnailExample.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\sample\src\main\java\com\fractalwrench\androidbootstrap\sample\BootstrapWellExample.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\sample\src\main\java\com\fractalwrench\androidbootstrap\sample\CustomBootstrapStyle.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\sample\src\main\java\com\fractalwrench\androidbootstrap\sample\HomeActivity.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\sample\src\main\java\com\fractalwrench\androidbootstrap\sample\SampleApplication.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\AwesomeTextView.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\BetaApi.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\BootstrapAlert.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\BootstrapBadge.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\BootstrapBaseThumbnail.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\BootstrapButton.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\BootstrapButtonGroup.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\BootstrapCircleThumbnail.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\BootstrapDrawableFactory.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\BootstrapDropDown.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\BootstrapEditText.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\BootstrapGroup.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\BootstrapLabel.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\BootstrapProgressBar.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\BootstrapProgressBarGroup.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\BootstrapText.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\BootstrapThumbnail.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\BootstrapWell.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\IconResolver.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\TypefaceProvider.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\utils\ColorUtils.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\utils\DimenUtils.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\utils\DrawableUtils.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\utils\ViewUtils.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\font\AwesomeTypefaceSpan.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\font\FontAwesome.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\font\IconSet.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\font\MaterialIcons.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\font\Typicon.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\api\view\BadgeContainerView.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\api\view\BootstrapBadgeView.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\api\view\BootstrapBrandView.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\api\view\BootstrapHeadingView.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\api\view\BootstrapSizeView.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\api\view\BootstrapTextView.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\api\view\BorderView.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\api\view\ButtonModeView.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\api\view\OutlineableView.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\api\view\ProgressView.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\api\view\RoundableView.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\api\defaults\ButtonMode.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\api\defaults\DefaultBootstrapBrand.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\api\defaults\DefaultBootstrapHeading.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\api\defaults\DefaultBootstrapSize.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\api\defaults\ExpandDirection.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\api\attributes\BootstrapBrand.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\api\attributes\BootstrapHeading.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\api\attributes\ViewGroupPosition.java
+
+JAR FILES
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\gradle\wrapper\gradle-wrapper.jar
+
+MAVEN FILES
+
+GRADLE FILES
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\build.gradle
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\sample\build.gradle
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\build.gradle
+
+ANDROID MANIFEST FILE
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\AndroidManifest.xml
+
+ANALYZED JAVA FILES
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\sample\src\main\java\com\fractalwrench\androidbootstrap\sample\AwesomeTextViewExample.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\sample\src\main\java\com\fractalwrench\androidbootstrap\sample\BaseActivity.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\sample\src\main\java\com\fractalwrench\androidbootstrap\sample\BootstrapAlertExample.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\sample\src\main\java\com\fractalwrench\androidbootstrap\sample\BootstrapBadgeExample.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\sample\src\main\java\com\fractalwrench\androidbootstrap\sample\BootstrapButtonExample.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\sample\src\main\java\com\fractalwrench\androidbootstrap\sample\BootstrapButtonGroupExample.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\sample\src\main\java\com\fractalwrench\androidbootstrap\sample\BootstrapCircleThumbnailExample.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\sample\src\main\java\com\fractalwrench\androidbootstrap\sample\BootstrapDropDownExample.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\sample\src\main\java\com\fractalwrench\androidbootstrap\sample\BootstrapEditTextExample.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\sample\src\main\java\com\fractalwrench\androidbootstrap\sample\BootstrapLabelExample.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\sample\src\main\java\com\fractalwrench\androidbootstrap\sample\BootstrapProgressBarExample.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\sample\src\main\java\com\fractalwrench\androidbootstrap\sample\BootstrapProgressBarGroupExample.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\sample\src\main\java\com\fractalwrench\androidbootstrap\sample\BootstrapThumbnailExample.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\sample\src\main\java\com\fractalwrench\androidbootstrap\sample\BootstrapWellExample.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\sample\src\main\java\com\fractalwrench\androidbootstrap\sample\CustomBootstrapStyle.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\sample\src\main\java\com\fractalwrench\androidbootstrap\sample\HomeActivity.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\sample\src\main\java\com\fractalwrench\androidbootstrap\sample\SampleApplication.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\AwesomeTextView.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\BetaApi.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\BootstrapAlert.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\BootstrapBadge.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\BootstrapBaseThumbnail.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\BootstrapButton.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\BootstrapButtonGroup.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\BootstrapCircleThumbnail.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\BootstrapDrawableFactory.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\BootstrapDropDown.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\BootstrapEditText.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\BootstrapGroup.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\BootstrapLabel.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\BootstrapProgressBar.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\BootstrapProgressBarGroup.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\BootstrapText.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\BootstrapThumbnail.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\BootstrapWell.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\IconResolver.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\TypefaceProvider.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\utils\ColorUtils.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\utils\DimenUtils.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\utils\DrawableUtils.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\utils\ViewUtils.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\font\AwesomeTypefaceSpan.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\font\FontAwesome.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\font\IconSet.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\font\MaterialIcons.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\font\Typicon.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\api\view\BadgeContainerView.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\api\view\BootstrapBadgeView.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\api\view\BootstrapBrandView.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\api\view\BootstrapHeadingView.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\api\view\BootstrapSizeView.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\api\view\BootstrapTextView.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\api\view\BorderView.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\api\view\ButtonModeView.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\api\view\OutlineableView.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\api\view\ProgressView.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\api\view\RoundableView.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\api\defaults\ButtonMode.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\api\defaults\DefaultBootstrapBrand.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\api\defaults\DefaultBootstrapHeading.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\api\defaults\DefaultBootstrapSize.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\api\defaults\ExpandDirection.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\api\attributes\BootstrapBrand.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\api\attributes\BootstrapHeading.java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java\com\beardedhen\androidbootstrap\api\attributes\ViewGroupPosition.java
+
+SOURCE DIRECTORIES
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\sample\src\main\java
+D:\Desenvolvimento\Projetos Github\running\Bearded-Hen Android-Bootstrap\AndroidBootstrap\src\main\java
+
+TEST DIRECTORIES
+
+DEPENDENCIES
+D:\AndroidSDK\platforms\android-26\android.jar
+

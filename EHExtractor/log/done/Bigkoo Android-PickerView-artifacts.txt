@@ -1,0 +1,101 @@
+Java files: 31
+Jar files: 1
+Maven files: 0
+Gradle files: 3
+Android file: true
+
+Analyzed java files: 31
+Source dirs: 4
+Test dirs: 0
+Dependencies files: 1
+
+JAVA FILES
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\pickerview\src\main\java\com\bigkoo\pickerview\OptionsPickerView.java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\pickerview\src\main\java\com\bigkoo\pickerview\TimePickerView.java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\pickerview\src\main\java\com\bigkoo\pickerview\view\BasePickerView.java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\pickerview\src\main\java\com\bigkoo\pickerview\view\WheelOptions.java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\pickerview\src\main\java\com\bigkoo\pickerview\view\WheelTime.java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\pickerview\src\main\java\com\bigkoo\pickerview\utils\ChinaDate.java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\pickerview\src\main\java\com\bigkoo\pickerview\utils\LunarCalendar.java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\pickerview\src\main\java\com\bigkoo\pickerview\utils\PickerViewAnimateUtil.java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\pickerview\src\main\java\com\bigkoo\pickerview\model\IPickerViewData.java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\pickerview\src\main\java\com\bigkoo\pickerview\listener\CustomListener.java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\pickerview\src\main\java\com\bigkoo\pickerview\listener\OnDismissListener.java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\pickerview\src\main\java\com\bigkoo\pickerview\listener\OnItemSelectedListener.java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\pickerview\src\main\java\com\bigkoo\pickerview\lib\InertiaTimerTask.java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\pickerview\src\main\java\com\bigkoo\pickerview\lib\LoopViewGestureListener.java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\pickerview\src\main\java\com\bigkoo\pickerview\lib\MessageHandler.java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\pickerview\src\main\java\com\bigkoo\pickerview\lib\OnItemSelectedRunnable.java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\pickerview\src\main\java\com\bigkoo\pickerview\lib\SmoothScrollTimerTask.java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\pickerview\src\main\java\com\bigkoo\pickerview\lib\WheelView.java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\pickerview\src\main\java\com\bigkoo\pickerview\adapter\ArrayWheelAdapter.java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\pickerview\src\main\java\com\bigkoo\pickerview\adapter\NumericWheelAdapter.java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\pickerview\src\main\java\com\bigkoo\pickerview\adapter\WheelAdapter.java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\pickerview\src\androidTest\java\com\bigkoo\pickerview\ApplicationTest.java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\app\src\main\java\com\bigkoo\pickerviewdemo\FragmentTestActivity.java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\app\src\main\java\com\bigkoo\pickerviewdemo\GetJsonDataUtil.java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\app\src\main\java\com\bigkoo\pickerviewdemo\JsonDataActivity.java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\app\src\main\java\com\bigkoo\pickerviewdemo\MainActivity.java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\app\src\main\java\com\bigkoo\pickerviewdemo\TestFragment.java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\app\src\main\java\com\bigkoo\pickerviewdemo\bean\CardBean.java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\app\src\main\java\com\bigkoo\pickerviewdemo\bean\JsonBean.java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\app\src\main\java\com\bigkoo\pickerviewdemo\bean\ProvinceBean.java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\app\src\androidTest\java\com\bigkoo\pickerviewdemo\ApplicationTest.java
+
+JAR FILES
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\gradle\wrapper\gradle-wrapper.jar
+
+MAVEN FILES
+
+GRADLE FILES
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\build.gradle
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\pickerview\build.gradle
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\app\build.gradle
+
+ANDROID MANIFEST FILE
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\app\src\main\AndroidManifest.xml
+
+ANALYZED JAVA FILES
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\pickerview\src\main\java\com\bigkoo\pickerview\OptionsPickerView.java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\pickerview\src\main\java\com\bigkoo\pickerview\TimePickerView.java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\pickerview\src\main\java\com\bigkoo\pickerview\view\BasePickerView.java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\pickerview\src\main\java\com\bigkoo\pickerview\view\WheelOptions.java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\pickerview\src\main\java\com\bigkoo\pickerview\view\WheelTime.java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\pickerview\src\main\java\com\bigkoo\pickerview\utils\ChinaDate.java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\pickerview\src\main\java\com\bigkoo\pickerview\utils\LunarCalendar.java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\pickerview\src\main\java\com\bigkoo\pickerview\utils\PickerViewAnimateUtil.java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\pickerview\src\main\java\com\bigkoo\pickerview\model\IPickerViewData.java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\pickerview\src\main\java\com\bigkoo\pickerview\listener\CustomListener.java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\pickerview\src\main\java\com\bigkoo\pickerview\listener\OnDismissListener.java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\pickerview\src\main\java\com\bigkoo\pickerview\listener\OnItemSelectedListener.java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\pickerview\src\main\java\com\bigkoo\pickerview\lib\InertiaTimerTask.java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\pickerview\src\main\java\com\bigkoo\pickerview\lib\LoopViewGestureListener.java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\pickerview\src\main\java\com\bigkoo\pickerview\lib\MessageHandler.java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\pickerview\src\main\java\com\bigkoo\pickerview\lib\OnItemSelectedRunnable.java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\pickerview\src\main\java\com\bigkoo\pickerview\lib\SmoothScrollTimerTask.java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\pickerview\src\main\java\com\bigkoo\pickerview\lib\WheelView.java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\pickerview\src\main\java\com\bigkoo\pickerview\adapter\ArrayWheelAdapter.java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\pickerview\src\main\java\com\bigkoo\pickerview\adapter\NumericWheelAdapter.java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\pickerview\src\main\java\com\bigkoo\pickerview\adapter\WheelAdapter.java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\pickerview\src\androidTest\java\com\bigkoo\pickerview\ApplicationTest.java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\app\src\main\java\com\bigkoo\pickerviewdemo\FragmentTestActivity.java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\app\src\main\java\com\bigkoo\pickerviewdemo\GetJsonDataUtil.java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\app\src\main\java\com\bigkoo\pickerviewdemo\JsonDataActivity.java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\app\src\main\java\com\bigkoo\pickerviewdemo\MainActivity.java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\app\src\main\java\com\bigkoo\pickerviewdemo\TestFragment.java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\app\src\main\java\com\bigkoo\pickerviewdemo\bean\CardBean.java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\app\src\main\java\com\bigkoo\pickerviewdemo\bean\JsonBean.java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\app\src\main\java\com\bigkoo\pickerviewdemo\bean\ProvinceBean.java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\app\src\androidTest\java\com\bigkoo\pickerviewdemo\ApplicationTest.java
+
+SOURCE DIRECTORIES
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\pickerview\src\main\java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\pickerview\src\androidTest\java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\app\src\main\java
+D:\Desenvolvimento\Projetos Github\running\Bigkoo Android-PickerView\app\src\androidTest\java
+
+TEST DIRECTORIES
+
+DEPENDENCIES
+D:\AndroidSDK\platforms\android-26\android.jar
+

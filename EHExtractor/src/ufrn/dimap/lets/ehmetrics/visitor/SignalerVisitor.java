@@ -39,7 +39,22 @@ public class SignalerVisitor extends VoidVisitorAdapter<JavaParserFacade>
 	{	
 		// PEGAR O REFERENCETYPE SINALIZADO
 		Expression thrownExpression = throwStatement.getExpression();
-		com.github.javaparser.symbolsolver.model.typesystem.Type type = facade.getType(thrownExpression);
+		com.github.javaparser.symbolsolver.model.typesystem.Type type;
+		try
+		{
+			type = facade.getType(thrownExpression);
+		}
+		catch (RuntimeException e)
+		{
+			if ( e.getMessage() != null && e.getMessage().startsWith("Method") )
+			{
+				throw new UnknownSignalerException ("Tipo sinalizado não pôde ser resolvido.");
+			}
+			else
+			{
+				throw e;
+			}
+		}
 
 		// É esperado que o tipo sinalizado seja um ReferenceType, mas já vi ocorrencia de TypeVariable, então vamos testar para garantir.
 		if (type.isReferenceType() )

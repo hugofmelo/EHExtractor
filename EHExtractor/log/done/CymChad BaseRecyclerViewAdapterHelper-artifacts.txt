@@ -1,0 +1,199 @@
+Java files: 80
+Jar files: 1
+Maven files: 0
+Gradle files: 4
+Android file: true
+
+Analyzed java files: 79
+Source dirs: 3
+Test dirs: 1
+Dependencies files: 1
+
+JAVA FILES
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\library\src\main\java\com\chad\library\adapter\base\BaseItemDraggableAdapter.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\library\src\main\java\com\chad\library\adapter\base\BaseMultiItemQuickAdapter.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\library\src\main\java\com\chad\library\adapter\base\BaseQuickAdapter.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\library\src\main\java\com\chad\library\adapter\base\BaseSectionQuickAdapter.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\library\src\main\java\com\chad\library\adapter\base\BaseViewHolder.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\library\src\main\java\com\chad\library\adapter\base\util\MultiTypeDelegate.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\library\src\main\java\com\chad\library\adapter\base\util\TouchEventUtil.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\library\src\main\java\com\chad\library\adapter\base\loadmore\LoadMoreView.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\library\src\main\java\com\chad\library\adapter\base\loadmore\SimpleLoadMoreView.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\library\src\main\java\com\chad\library\adapter\base\listener\OnItemChildClickListener.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\library\src\main\java\com\chad\library\adapter\base\listener\OnItemChildLongClickListener.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\library\src\main\java\com\chad\library\adapter\base\listener\OnItemClickListener.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\library\src\main\java\com\chad\library\adapter\base\listener\OnItemDragListener.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\library\src\main\java\com\chad\library\adapter\base\listener\OnItemLongClickListener.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\library\src\main\java\com\chad\library\adapter\base\listener\OnItemSwipeListener.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\library\src\main\java\com\chad\library\adapter\base\listener\SimpleClickListener.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\library\src\main\java\com\chad\library\adapter\base\entity\AbstractExpandableItem.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\library\src\main\java\com\chad\library\adapter\base\entity\IExpandable.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\library\src\main\java\com\chad\library\adapter\base\entity\MultiItemEntity.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\library\src\main\java\com\chad\library\adapter\base\entity\SectionEntity.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\library\src\main\java\com\chad\library\adapter\base\callback\ItemDragAndSwipeCallback.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\library\src\main\java\com\chad\library\adapter\base\animation\AlphaInAnimation.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\library\src\main\java\com\chad\library\adapter\base\animation\BaseAnimation.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\library\src\main\java\com\chad\library\adapter\base\animation\ScaleInAnimation.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\library\src\main\java\com\chad\library\adapter\base\animation\SlideInBottomAnimation.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\library\src\main\java\com\chad\library\adapter\base\animation\SlideInLeftAnimation.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\library\src\main\java\com\chad\library\adapter\base\animation\SlideInRightAnimation.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\test\java\com\chad\baserecyclerviewadapterhelper\ExampleUnitTest.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\AnimationUseActivity.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\DataBindingUseActivity.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\EmptyViewUseActivity.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\ExpandableUseActivity.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\HeaderAndFooterUseActivity.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\HomeActivity.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\ItemClickActivity.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\ItemDragAndSwipeUseActivity.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\MultipleItemUseActivity.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\MyApplication.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\PullToRefreshUseActivity.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\SectionUseActivity.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\UpFetchUseActivity.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\WelcomeActivity.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\util\ClickableMovementMethod.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\util\SpannableStringUtils.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\util\ToastUtils.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\util\Utils.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\transform\GlideCircleTransform.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\loadmore\CustomLoadMoreView.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\entity\ClickEntity.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\entity\HomeItem.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\entity\Level0Item.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\entity\Level1Item.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\entity\Movie.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\entity\MoviePresenter.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\entity\MultipleItem.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\entity\MySection.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\entity\Person.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\entity\Status.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\entity\Video.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\decoration\GridItemDecoration.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\data\DataServer.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\base\BaseActivity.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\base\BaseBindingViewHolder.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\base\BaseDataBindingAdapter.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\animation\CustomAnimation.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\adapter\AnimationAdapter.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\adapter\DataBindingUseAdapter.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\adapter\DefAdpater.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\adapter\ExpandableItemAdapter.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\adapter\HeaderAndFooterAdapter.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\adapter\HomeAdapter.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\adapter\ItemClickAdapter.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\adapter\ItemDragAdapter.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\adapter\MultipleItemQuickAdapter.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\adapter\NestAdapter.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\adapter\PullToRefreshAdapter.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\adapter\QuickAdapter.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\adapter\SectionAdapter.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\adapter\UpFetchAdapter.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\androidTest\java\com\chad\baserecyclerviewadapterhelper\ApplicationTest.java
+
+JAR FILES
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\gradle\wrapper\gradle-wrapper.jar
+
+MAVEN FILES
+
+GRADLE FILES
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\build.gradle
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\material-spinner-1.0.5\build.gradle
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\library\build.gradle
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\build.gradle
+
+ANDROID MANIFEST FILE
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\AndroidManifest.xml
+
+ANALYZED JAVA FILES
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\library\src\main\java\com\chad\library\adapter\base\BaseItemDraggableAdapter.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\library\src\main\java\com\chad\library\adapter\base\BaseMultiItemQuickAdapter.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\library\src\main\java\com\chad\library\adapter\base\BaseQuickAdapter.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\library\src\main\java\com\chad\library\adapter\base\BaseSectionQuickAdapter.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\library\src\main\java\com\chad\library\adapter\base\BaseViewHolder.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\library\src\main\java\com\chad\library\adapter\base\util\MultiTypeDelegate.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\library\src\main\java\com\chad\library\adapter\base\util\TouchEventUtil.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\library\src\main\java\com\chad\library\adapter\base\loadmore\LoadMoreView.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\library\src\main\java\com\chad\library\adapter\base\loadmore\SimpleLoadMoreView.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\library\src\main\java\com\chad\library\adapter\base\listener\OnItemChildClickListener.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\library\src\main\java\com\chad\library\adapter\base\listener\OnItemChildLongClickListener.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\library\src\main\java\com\chad\library\adapter\base\listener\OnItemClickListener.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\library\src\main\java\com\chad\library\adapter\base\listener\OnItemDragListener.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\library\src\main\java\com\chad\library\adapter\base\listener\OnItemLongClickListener.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\library\src\main\java\com\chad\library\adapter\base\listener\OnItemSwipeListener.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\library\src\main\java\com\chad\library\adapter\base\listener\SimpleClickListener.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\library\src\main\java\com\chad\library\adapter\base\entity\AbstractExpandableItem.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\library\src\main\java\com\chad\library\adapter\base\entity\IExpandable.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\library\src\main\java\com\chad\library\adapter\base\entity\MultiItemEntity.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\library\src\main\java\com\chad\library\adapter\base\entity\SectionEntity.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\library\src\main\java\com\chad\library\adapter\base\callback\ItemDragAndSwipeCallback.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\library\src\main\java\com\chad\library\adapter\base\animation\AlphaInAnimation.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\library\src\main\java\com\chad\library\adapter\base\animation\BaseAnimation.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\library\src\main\java\com\chad\library\adapter\base\animation\ScaleInAnimation.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\library\src\main\java\com\chad\library\adapter\base\animation\SlideInBottomAnimation.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\library\src\main\java\com\chad\library\adapter\base\animation\SlideInLeftAnimation.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\library\src\main\java\com\chad\library\adapter\base\animation\SlideInRightAnimation.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\AnimationUseActivity.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\DataBindingUseActivity.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\EmptyViewUseActivity.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\ExpandableUseActivity.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\HeaderAndFooterUseActivity.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\HomeActivity.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\ItemClickActivity.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\ItemDragAndSwipeUseActivity.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\MultipleItemUseActivity.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\MyApplication.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\PullToRefreshUseActivity.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\SectionUseActivity.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\UpFetchUseActivity.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\WelcomeActivity.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\util\ClickableMovementMethod.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\util\SpannableStringUtils.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\util\ToastUtils.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\util\Utils.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\transform\GlideCircleTransform.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\loadmore\CustomLoadMoreView.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\entity\ClickEntity.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\entity\HomeItem.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\entity\Level0Item.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\entity\Level1Item.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\entity\Movie.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\entity\MoviePresenter.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\entity\MultipleItem.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\entity\MySection.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\entity\Person.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\entity\Status.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\entity\Video.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\decoration\GridItemDecoration.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\data\DataServer.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\base\BaseActivity.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\base\BaseBindingViewHolder.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\base\BaseDataBindingAdapter.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\animation\CustomAnimation.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\adapter\AnimationAdapter.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\adapter\DataBindingUseAdapter.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\adapter\DefAdpater.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\adapter\ExpandableItemAdapter.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\adapter\HeaderAndFooterAdapter.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\adapter\HomeAdapter.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\adapter\ItemClickAdapter.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\adapter\ItemDragAdapter.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\adapter\MultipleItemQuickAdapter.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\adapter\NestAdapter.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\adapter\PullToRefreshAdapter.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\adapter\QuickAdapter.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\adapter\SectionAdapter.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java\com\chad\baserecyclerviewadapterhelper\adapter\UpFetchAdapter.java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\androidTest\java\com\chad\baserecyclerviewadapterhelper\ApplicationTest.java
+
+SOURCE DIRECTORIES
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\library\src\main\java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\main\java
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\androidTest\java
+
+TEST DIRECTORIES
+D:\Desenvolvimento\Projetos Github\running\CymChad BaseRecyclerViewAdapterHelper\app\src\test\java
+
+DEPENDENCIES
+D:\AndroidSDK\platforms\android-26\android.jar
+

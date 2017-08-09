@@ -1,0 +1,49 @@
+Java files: 6
+Jar files: 1
+Maven files: 0
+Gradle files: 3
+Android file: true
+
+Analyzed java files: 6
+Source dirs: 2
+Test dirs: 0
+Dependencies files: 1
+
+JAVA FILES
+D:\Desenvolvimento\Projetos Github\running\pedant sweet-alert-dialog\sample\src\main\java\cn\pedant\SweetAlert\sample\SampleActivity.java
+D:\Desenvolvimento\Projetos Github\running\pedant sweet-alert-dialog\library\src\main\java\cn\pedant\SweetAlert\OptAnimationLoader.java
+D:\Desenvolvimento\Projetos Github\running\pedant sweet-alert-dialog\library\src\main\java\cn\pedant\SweetAlert\ProgressHelper.java
+D:\Desenvolvimento\Projetos Github\running\pedant sweet-alert-dialog\library\src\main\java\cn\pedant\SweetAlert\Rotate3dAnimation.java
+D:\Desenvolvimento\Projetos Github\running\pedant sweet-alert-dialog\library\src\main\java\cn\pedant\SweetAlert\SuccessTickView.java
+D:\Desenvolvimento\Projetos Github\running\pedant sweet-alert-dialog\library\src\main\java\cn\pedant\SweetAlert\SweetAlertDialog.java
+
+JAR FILES
+D:\Desenvolvimento\Projetos Github\running\pedant sweet-alert-dialog\gradle\wrapper\gradle-wrapper.jar
+
+MAVEN FILES
+
+GRADLE FILES
+D:\Desenvolvimento\Projetos Github\running\pedant sweet-alert-dialog\build.gradle
+D:\Desenvolvimento\Projetos Github\running\pedant sweet-alert-dialog\sample\build.gradle
+D:\Desenvolvimento\Projetos Github\running\pedant sweet-alert-dialog\library\build.gradle
+
+ANDROID MANIFEST FILE
+D:\Desenvolvimento\Projetos Github\running\pedant sweet-alert-dialog\library\src\main\AndroidManifest.xml
+
+ANALYZED JAVA FILES
+D:\Desenvolvimento\Projetos Github\running\pedant sweet-alert-dialog\sample\src\main\java\cn\pedant\SweetAlert\sample\SampleActivity.java
+D:\Desenvolvimento\Projetos Github\running\pedant sweet-alert-dialog\library\src\main\java\cn\pedant\SweetAlert\OptAnimationLoader.java
+D:\Desenvolvimento\Projetos Github\running\pedant sweet-alert-dialog\library\src\main\java\cn\pedant\SweetAlert\ProgressHelper.java
+D:\Desenvolvimento\Projetos Github\running\pedant sweet-alert-dialog\library\src\main\java\cn\pedant\SweetAlert\Rotate3dAnimation.java
+D:\Desenvolvimento\Projetos Github\running\pedant sweet-alert-dialog\library\src\main\java\cn\pedant\SweetAlert\SuccessTickView.java
+D:\Desenvolvimento\Projetos Github\running\pedant sweet-alert-dialog\library\src\main\java\cn\pedant\SweetAlert\SweetAlertDialog.java
+
+SOURCE DIRECTORIES
+D:\Desenvolvimento\Projetos Github\running\pedant sweet-alert-dialog\sample\src\main\java
+D:\Desenvolvimento\Projetos Github\running\pedant sweet-alert-dialog\library\src\main\java
+
+TEST DIRECTORIES
+
+DEPENDENCIES
+D:\AndroidSDK\platforms\android-26\android.jar
+

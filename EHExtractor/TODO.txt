@@ -1,6 +1,6 @@
-DONE Prioridade -2: criar entrada no ErrorLogger para erros do maven e gradle.
+Prioridade -2: corrigir bug da origem incorreta em algumas exceções java. Quando rodar novamente, verificar o projeto "airbnb lottie-react-native"
 Prioridade -1: Tentar corrigir os erros e limitados.
-DONE Prioridade 0: criar UnknownSignalerException, que é capturada no analyze e salva o arquivo. Criar entrada no ErrorLogger para isso. Rodar tudo de novo.
+
 
 Prioridade 0:
 	Pegar 50 projetos android mais estrelados
@@ -9,6 +9,9 @@ Prioridade 0:
 			exceção, tipo, origem
 		catches
 			exceção, tipo, origem, autocomplete, empty
+
+Priorirdade 1: Verificar que vazamento de memoria é esse
+
 Prioridade 2:
 	Pegar 10 projetos com 10 releases
 		Extrair
@@ -17,9 +20,8 @@ Prioridade 2:
 		catches
 			exceção, tipo, origem, autocomplete, empty
 
-Prioridade 1: a classe Repository deve ter um método para baixar o repositório. Tipo Repository#downloadTo ( File targetFile, boolean unzip, String projectRootName ). 
+Prioridade 3: a classe Repository deve ter um método para baixar o repositório. Tipo Repository#downloadTo ( File targetFile, boolean unzip, String projectRootName ). 
 
-Prioridade 1: Criar exceção para centralizar falhas de Analyzer.
 Prioridade 2: Adicionar linha de código nos modelos.
 Prioridade 2: Revisar todo o código, linha a linha, removendo ou movendo classes para seus devidos lugares..
 	Decidir como chamar os casos de "get" em que há processamento.

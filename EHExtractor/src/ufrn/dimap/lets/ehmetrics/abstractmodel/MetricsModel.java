@@ -27,9 +27,7 @@ public class MetricsModel
 	//private int wrappings;
 	
 	public MetricsModel ()
-	{
-		this.typeRoot = new Type(null, Object.class.getCanonicalName(), ExceptionType.NO_EXCEPTION, TypeOrigin.JAVA);
-		
+	{	
 		signalers = new ArrayList<Signaler> ();
 		//tries = new ArrayList<TryEntry> ();
 		handlers = new ArrayList<Handler> ();
@@ -38,7 +36,14 @@ public class MetricsModel
 		
 		//rethrows = 0;
 		//wrappings = 0;
+		// São iniciados os tipos Object e Throwable. Object para ser a raiz da hierarquia. E Throable para tentar corrigir um bug que faz com que algumas libs o considerem como Origin.Library.
+		Type object = new Type(null, Object.class.getCanonicalName(), ExceptionType.NO_EXCEPTION, TypeOrigin.JAVA);
+		Type throwable = new Type(null, Throwable.class.getCanonicalName(), ExceptionType.CHECKED_EXCEPTION, TypeOrigin.JAVA);
 		
+		object.getSubTypes().add(throwable);
+		throwable.setSuperType(object);
+		
+		this.typeRoot = object;
 	}
 	/*
 	public static MetricsModel getInstance ()
@@ -101,7 +106,7 @@ public class MetricsModel
 				}
 			}
 			
-			// O type ja existe na hierarquia. Descer um nivel.
+			// O type não existe na hierarquia. Criar e descer um nivel.
 			if ( !found )
 			{
 				ExceptionType exceptionType = Util.resolveExceptionType(className, auxType);

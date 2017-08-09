@@ -6,10 +6,12 @@ import java.util.List;
 
 public class ProjectFiles
 {
+	private String projectName;
 	private List <File> javaFiles;
 	private List <File> jarFiles;
 	private List <File> mavenFiles;
 	private List <File> gradleFiles;
+	private List <File> dependencies;
 	private File androidManifest;
 	
 	public ProjectFiles ()
@@ -18,7 +20,12 @@ public class ProjectFiles
 		jarFiles = new ArrayList <File> ();
 		mavenFiles = new ArrayList <File> ();
 		gradleFiles = new ArrayList <File> ();
+		dependencies = new ArrayList <File> ();
 		androidManifest = null;
+	}
+	
+	public void setProjectName (String projectName) {
+		this.projectName = projectName;
 	}
 	
 	public void addJavaFile(File file){
@@ -37,10 +44,18 @@ public class ProjectFiles
 		this.gradleFiles.add(file);		
 	}
 
+	public void addDependency (File file) {
+		this.dependencies.add(file);
+	}
+	
 	public void setAndroidManifestFile(File file) {
 		this.androidManifest = file;
 	}
+		
 	
+	public String getProjectName ()	{
+		return this.projectName;
+	}
 	
 	public List<File> getJavaFiles() {
 		return this.javaFiles;
@@ -56,6 +71,10 @@ public class ProjectFiles
 	
 	public List<File> getGradleFiles() {
 		return this.gradleFiles;
+	}
+	
+	public List<File> getDependencies() {
+		return this.dependencies;
 	}
 
 	public File getAndroidManifest() {

@@ -16,7 +16,7 @@ import org.gradle.tooling.model.gradle.GradleBuild;
 
 public class GradleResolver
 {
-	
+	/*
 	public static List<File> resolveDependencies2(File gradleProjectPath)
 	{
 		// Output
@@ -96,18 +96,19 @@ public class GradleResolver
             }
             System.out.println("Associated gradle project:");
             System.out.println(project.getGradleProject());
-			 */
+			 
 
 		//System.exit(0);
 		return dependencies;
 
-		/*
+		
 		Configuration configuration = project.getConfigurations().getByName("compile");
 		for (File file : configuration) {
 			project.getLogger().lifecycle("Found project dependency @ " + file.getAbsolutePath());
 		}
-		 */
+		 
 	}
+	*/
 
 	public static List<File> resolveDependencies(File gradleProjectPath)
 	{

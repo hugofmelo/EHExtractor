@@ -1,0 +1,90 @@
+Java files: 27
+Jar files: 1
+Maven files: 0
+Gradle files: 2
+Android file: true
+
+Analyzed java files: 27
+Source dirs: 2
+Test dirs: 0
+Dependencies files: 1
+
+JAVA FILES
+D:\Desenvolvimento\Projetos Github\running\HannahMitt HomeMirror\app\src\main\java\com\morristaedt\mirror\MirrorActivity.java
+D:\Desenvolvimento\Projetos Github\running\HannahMitt HomeMirror\app\src\main\java\com\morristaedt\mirror\MirrorApplication.java
+D:\Desenvolvimento\Projetos Github\running\HannahMitt HomeMirror\app\src\main\java\com\morristaedt\mirror\SetUpActivity.java
+D:\Desenvolvimento\Projetos Github\running\HannahMitt HomeMirror\app\src\main\java\com\morristaedt\mirror\utils\WeekUtil.java
+D:\Desenvolvimento\Projetos Github\running\HannahMitt HomeMirror\app\src\main\java\com\morristaedt\mirror\requests\ForecastRequest.java
+D:\Desenvolvimento\Projetos Github\running\HannahMitt HomeMirror\app\src\main\java\com\morristaedt\mirror\requests\ForecastResponse.java
+D:\Desenvolvimento\Projetos Github\running\HannahMitt HomeMirror\app\src\main\java\com\morristaedt\mirror\requests\OpenWeatherRequest.java
+D:\Desenvolvimento\Projetos Github\running\HannahMitt HomeMirror\app\src\main\java\com\morristaedt\mirror\requests\OpenWeatherResponse.java
+D:\Desenvolvimento\Projetos Github\running\HannahMitt HomeMirror\app\src\main\java\com\morristaedt\mirror\requests\XKCDRequest.java
+D:\Desenvolvimento\Projetos Github\running\HannahMitt HomeMirror\app\src\main\java\com\morristaedt\mirror\requests\XKCDResponse.java
+D:\Desenvolvimento\Projetos Github\running\HannahMitt HomeMirror\app\src\main\java\com\morristaedt\mirror\requests\YahooFinanceRequest.java
+D:\Desenvolvimento\Projetos Github\running\HannahMitt HomeMirror\app\src\main\java\com\morristaedt\mirror\requests\YahooStockResponse.java
+D:\Desenvolvimento\Projetos Github\running\HannahMitt HomeMirror\app\src\main\java\com\morristaedt\mirror\receiver\AlarmReceiver.java
+D:\Desenvolvimento\Projetos Github\running\HannahMitt HomeMirror\app\src\main\java\com\morristaedt\mirror\modules\BirthdayModule.java
+D:\Desenvolvimento\Projetos Github\running\HannahMitt HomeMirror\app\src\main\java\com\morristaedt\mirror\modules\CalendarModule.java
+D:\Desenvolvimento\Projetos Github\running\HannahMitt HomeMirror\app\src\main\java\com\morristaedt\mirror\modules\ChoresModule.java
+D:\Desenvolvimento\Projetos Github\running\HannahMitt HomeMirror\app\src\main\java\com\morristaedt\mirror\modules\CountdownModule.java
+D:\Desenvolvimento\Projetos Github\running\HannahMitt HomeMirror\app\src\main\java\com\morristaedt\mirror\modules\DayModule.java
+D:\Desenvolvimento\Projetos Github\running\HannahMitt HomeMirror\app\src\main\java\com\morristaedt\mirror\modules\ForecastModule.java
+D:\Desenvolvimento\Projetos Github\running\HannahMitt HomeMirror\app\src\main\java\com\morristaedt\mirror\modules\MoodModule.java
+D:\Desenvolvimento\Projetos Github\running\HannahMitt HomeMirror\app\src\main\java\com\morristaedt\mirror\modules\NewsModule.java
+D:\Desenvolvimento\Projetos Github\running\HannahMitt HomeMirror\app\src\main\java\com\morristaedt\mirror\modules\TimeModule.java
+D:\Desenvolvimento\Projetos Github\running\HannahMitt HomeMirror\app\src\main\java\com\morristaedt\mirror\modules\TrainScheduleModule.java
+D:\Desenvolvimento\Projetos Github\running\HannahMitt HomeMirror\app\src\main\java\com\morristaedt\mirror\modules\XKCDModule.java
+D:\Desenvolvimento\Projetos Github\running\HannahMitt HomeMirror\app\src\main\java\com\morristaedt\mirror\modules\YahooFinanceModule.java
+D:\Desenvolvimento\Projetos Github\running\HannahMitt HomeMirror\app\src\main\java\com\morristaedt\mirror\configuration\ConfigurationSettings.java
+D:\Desenvolvimento\Projetos Github\running\HannahMitt HomeMirror\app\src\androidTest\java\com\morristaedt\mirror\ApplicationTest.java
+
+JAR FILES
+D:\Desenvolvimento\Projetos Github\running\HannahMitt HomeMirror\gradle\wrapper\gradle-wrapper.jar
+
+MAVEN FILES
+
+GRADLE FILES
+D:\Desenvolvimento\Projetos Github\running\HannahMitt HomeMirror\build.gradle
+D:\Desenvolvimento\Projetos Github\running\HannahMitt HomeMirror\app\build.gradle
+
+ANDROID MANIFEST FILE
+D:\Desenvolvimento\Projetos Github\running\HannahMitt HomeMirror\app\src\main\AndroidManifest.xml
+
+ANALYZED JAVA FILES
+D:\Desenvolvimento\Projetos Github\running\HannahMitt HomeMirror\app\src\main\java\com\morristaedt\mirror\MirrorActivity.java
+D:\Desenvolvimento\Projetos Github\running\HannahMitt HomeMirror\app\src\main\java\com\morristaedt\mirror\MirrorApplication.java
+D:\Desenvolvimento\Projetos Github\running\HannahMitt HomeMirror\app\src\main\java\com\morristaedt\mirror\SetUpActivity.java
+D:\Desenvolvimento\Projetos Github\running\HannahMitt HomeMirror\app\src\main\java\com\morristaedt\mirror\utils\WeekUtil.java
+D:\Desenvolvimento\Projetos Github\running\HannahMitt HomeMirror\app\src\main\java\com\morristaedt\mirror\requests\ForecastRequest.java
+D:\Desenvolvimento\Projetos Github\running\HannahMitt HomeMirror\app\src\main\java\com\morristaedt\mirror\requests\ForecastResponse.java
+D:\Desenvolvimento\Projetos Github\running\HannahMitt HomeMirror\app\src\main\java\com\morristaedt\mirror\requests\OpenWeatherRequest.java
+D:\Desenvolvimento\Projetos Github\running\HannahMitt HomeMirror\app\src\main\java\com\morristaedt\mirror\requests\OpenWeatherResponse.java
+D:\Desenvolvimento\Projetos Github\running\HannahMitt HomeMirror\app\src\main\java\com\morristaedt\mirror\requests\XKCDRequest.java
+D:\Desenvolvimento\Projetos Github\running\HannahMitt HomeMirror\app\src\main\java\com\morristaedt\mirror\requests\XKCDResponse.java
+D:\Desenvolvimento\Projetos Github\running\HannahMitt HomeMirror\app\src\main\java\com\morristaedt\mirror\requests\YahooFinanceRequest.java
+D:\Desenvolvimento\Projetos Github\running\HannahMitt HomeMirror\app\src\main\java\com\morristaedt\mirror\requests\YahooStockResponse.java
+D:\Desenvolvimento\Projetos Github\running\HannahMitt HomeMirror\app\src\main\java\com\morristaedt\mirror\receiver\AlarmReceiver.java
+D:\Desenvolvimento\Projetos Github\running\HannahMitt HomeMirror\app\src\main\java\com\morristaedt\mirror\modules\BirthdayModule.java
+D:\Desenvolvimento\Projetos Github\running\HannahMitt HomeMirror\app\src\main\java\com\morristaedt\mirror\modules\CalendarModule.java
+D:\Desenvolvimento\Projetos Github\running\HannahMitt HomeMirror\app\src\main\java\com\morristaedt\mirror\modules\ChoresModule.java
+D:\Desenvolvimento\Projetos Github\running\HannahMitt HomeMirror\app\src\main\java\com\morristaedt\mirror\modules\CountdownModule.java
+D:\Desenvolvimento\Projetos Github\running\HannahMitt HomeMirror\app\src\main\java\com\morristaedt\mirror\modules\DayModule.java
+D:\Desenvolvimento\Projetos Github\running\HannahMitt HomeMirror\app\src\main\java\com\morristaedt\mirror\modules\ForecastModule.java
+D:\Desenvolvimento\Projetos Github\running\HannahMitt HomeMirror\app\src\main\java\com\morristaedt\mirror\modules\MoodModule.java
+D:\Desenvolvimento\Projetos Github\running\HannahMitt HomeMirror\app\src\main\java\com\morristaedt\mirror\modules\NewsModule.java
+D:\Desenvolvimento\Projetos Github\running\HannahMitt HomeMirror\app\src\main\java\com\morristaedt\mirror\modules\TimeModule.java
+D:\Desenvolvimento\Projetos Github\running\HannahMitt HomeMirror\app\src\main\java\com\morristaedt\mirror\modules\TrainScheduleModule.java
+D:\Desenvolvimento\Projetos Github\running\HannahMitt HomeMirror\app\src\main\java\com\morristaedt\mirror\modules\XKCDModule.java
+D:\Desenvolvimento\Projetos Github\running\HannahMitt HomeMirror\app\src\main\java\com\morristaedt\mirror\modules\YahooFinanceModule.java
+D:\Desenvolvimento\Projetos Github\running\HannahMitt HomeMirror\app\src\main\java\com\morristaedt\mirror\configuration\ConfigurationSettings.java
+D:\Desenvolvimento\Projetos Github\running\HannahMitt HomeMirror\app\src\androidTest\java\com\morristaedt\mirror\ApplicationTest.java
+
+SOURCE DIRECTORIES
+D:\Desenvolvimento\Projetos Github\running\HannahMitt HomeMirror\app\src\main\java
+D:\Desenvolvimento\Projetos Github\running\HannahMitt HomeMirror\app\src\androidTest\java
+
+TEST DIRECTORIES
+
+DEPENDENCIES
+D:\AndroidSDK\platforms\android-26\android.jar
+

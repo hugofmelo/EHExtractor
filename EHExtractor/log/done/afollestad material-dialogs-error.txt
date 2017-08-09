@@ -1,0 +1,55 @@
+Maven errors: 0
+Gradle errors: 4
+Unsolved types: 5
+Unsupported errors: 1
+Unknown ancestral: 0
+Unknown signaler: 0
+
+GENERAL ERRORS
+
+MAVEN ERROR FILES
+
+GRADLE ERROR FILES
+Falha no GradleResolver. Could not find com.android.tools.build:gradle:3.0.0-alpha7.
+Searched in the following locations:
+    https://jcenter.bintray.com/com/android/tools/build/gradle/3.0.0-alpha7/gradle-3.0.0-alpha7.pom
+    https://jcenter.bintray.com/com/android/tools/build/gradle/3.0.0-alpha7/gradle-3.0.0-alpha7.jar
+Required by:
+    project :. File: D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\build.gradle
+
+Falha no GradleResolver. Could not find com.android.tools.build:gradle:3.0.0-alpha7.
+Searched in the following locations:
+    https://jcenter.bintray.com/com/android/tools/build/gradle/3.0.0-alpha7/gradle-3.0.0-alpha7.pom
+    https://jcenter.bintray.com/com/android/tools/build/gradle/3.0.0-alpha7/gradle-3.0.0-alpha7.jar
+Required by:
+    project :. File: D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\sample\build.gradle
+
+Falha no GradleResolver. Could not find com.android.tools.build:gradle:3.0.0-alpha7.
+Searched in the following locations:
+    https://jcenter.bintray.com/com/android/tools/build/gradle/3.0.0-alpha7/gradle-3.0.0-alpha7.pom
+    https://jcenter.bintray.com/com/android/tools/build/gradle/3.0.0-alpha7/gradle-3.0.0-alpha7.jar
+Required by:
+    project :. File: D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\core\build.gradle
+
+Falha no GradleResolver. Could not find com.android.tools.build:gradle:3.0.0-alpha7.
+Searched in the following locations:
+    https://jcenter.bintray.com/com/android/tools/build/gradle/3.0.0-alpha7/gradle-3.0.0-alpha7.pom
+    https://jcenter.bintray.com/com/android/tools/build/gradle/3.0.0-alpha7/gradle-3.0.0-alpha7.jar
+Required by:
+    project :. File: D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\commons\build.gradle
+
+
+UNSOLVED ERROR FILES
+Falha no Analyzer. Classe 'Unsolved symbol : DialogFragment' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\sample\src\main\java\com\afollestad\materialdialogssample\ChangelogDialog.java
+Falha no Analyzer. Classe 'Unsolved symbol : AppCompatActivity' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\sample\src\main\java\com\afollestad\materialdialogssample\MainActivity.java
+Falha no Analyzer. Classe 'Unsolved symbol : DialogFragment' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\commons\src\main\java\com\afollestad\materialdialogs\folderselector\FileChooserDialog.java
+Falha no Analyzer. Classe 'Unsolved symbol : DialogFragment' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\commons\src\main\java\com\afollestad\materialdialogs\folderselector\FolderChooserDialog.java
+Falha no Analyzer. Classe 'Unsolved symbol : DialogFragment' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\commons\src\main\java\com\afollestad\materialdialogs\color\ColorChooserDialog.java
+
+UNSUPPORTED ERROR FILES
+Falha no Analyzer. UnsupportedOperation ao parsear arquivo. File: D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\commons\src\main\java\com\afollestad\materialdialogs\prefs\MaterialListPreference.java
+
+UNKNOWN ANCESTRAL
+
+UNKNOWN SIGNALERS
+

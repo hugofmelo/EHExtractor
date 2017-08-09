@@ -1,0 +1,47 @@
+Java files: 5
+Jar files: 1
+Maven files: 0
+Gradle files: 3
+Android file: true
+
+Analyzed java files: 5
+Source dirs: 2
+Test dirs: 0
+Dependencies files: 1
+
+JAVA FILES
+D:\Desenvolvimento\Projetos Github\running\futuresimple android-floating-action-button\sample\src\main\java\com\getbase\floatingactionbutton\sample\MainActivity.java
+D:\Desenvolvimento\Projetos Github\running\futuresimple android-floating-action-button\library\src\main\java\com\getbase\floatingactionbutton\AddFloatingActionButton.java
+D:\Desenvolvimento\Projetos Github\running\futuresimple android-floating-action-button\library\src\main\java\com\getbase\floatingactionbutton\FloatingActionButton.java
+D:\Desenvolvimento\Projetos Github\running\futuresimple android-floating-action-button\library\src\main\java\com\getbase\floatingactionbutton\FloatingActionsMenu.java
+D:\Desenvolvimento\Projetos Github\running\futuresimple android-floating-action-button\library\src\main\java\com\getbase\floatingactionbutton\TouchDelegateGroup.java
+
+JAR FILES
+D:\Desenvolvimento\Projetos Github\running\futuresimple android-floating-action-button\gradle\wrapper\gradle-wrapper.jar
+
+MAVEN FILES
+
+GRADLE FILES
+D:\Desenvolvimento\Projetos Github\running\futuresimple android-floating-action-button\build.gradle
+D:\Desenvolvimento\Projetos Github\running\futuresimple android-floating-action-button\sample\build.gradle
+D:\Desenvolvimento\Projetos Github\running\futuresimple android-floating-action-button\library\build.gradle
+
+ANDROID MANIFEST FILE
+D:\Desenvolvimento\Projetos Github\running\futuresimple android-floating-action-button\library\src\main\AndroidManifest.xml
+
+ANALYZED JAVA FILES
+D:\Desenvolvimento\Projetos Github\running\futuresimple android-floating-action-button\sample\src\main\java\com\getbase\floatingactionbutton\sample\MainActivity.java
+D:\Desenvolvimento\Projetos Github\running\futuresimple android-floating-action-button\library\src\main\java\com\getbase\floatingactionbutton\AddFloatingActionButton.java
+D:\Desenvolvimento\Projetos Github\running\futuresimple android-floating-action-button\library\src\main\java\com\getbase\floatingactionbutton\FloatingActionButton.java
+D:\Desenvolvimento\Projetos Github\running\futuresimple android-floating-action-button\library\src\main\java\com\getbase\floatingactionbutton\FloatingActionsMenu.java
+D:\Desenvolvimento\Projetos Github\running\futuresimple android-floating-action-button\library\src\main\java\com\getbase\floatingactionbutton\TouchDelegateGroup.java
+
+SOURCE DIRECTORIES
+D:\Desenvolvimento\Projetos Github\running\futuresimple android-floating-action-button\sample\src\main\java
+D:\Desenvolvimento\Projetos Github\running\futuresimple android-floating-action-button\library\src\main\java
+
+TEST DIRECTORIES
+
+DEPENDENCIES
+D:\AndroidSDK\platforms\android-26\android.jar
+

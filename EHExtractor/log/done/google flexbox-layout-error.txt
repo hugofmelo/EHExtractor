@@ -1,0 +1,23 @@
+Maven errors: 0
+Gradle errors: 0
+Unsolved types: 2
+Unsupported errors: 0
+Unknown ancestral: 0
+Unknown signaler: 0
+
+GENERAL ERRORS
+
+MAVEN ERROR FILES
+
+GRADLE ERROR FILES
+
+UNSOLVED ERROR FILES
+Falha no Analyzer. Classe 'Unsolved symbol : ItemDecoration' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\google flexbox-layout\flexbox\src\main\java\com\google\android\flexbox\FlexboxItemDecoration.java
+Falha no Analyzer. Classe 'Unsolved symbol : LayoutManager' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\google flexbox-layout\flexbox\src\main\java\com\google\android\flexbox\FlexboxLayoutManager.java
+
+UNSUPPORTED ERROR FILES
+
+UNKNOWN ANCESTRAL
+
+UNKNOWN SIGNALERS
+

@@ -1,0 +1,30 @@
+Maven errors: 0
+Gradle errors: 3
+Unsolved types: 3
+Unsupported errors: 0
+Unknown ancestral: 0
+Unknown signaler: 0
+
+GENERAL ERRORS
+
+MAVEN ERROR FILES
+
+GRADLE ERROR FILES
+Falha no GradleResolver. For input string: "". File: D:\Desenvolvimento\Projetos Github\running\nickbutcher plaid\build.gradle
+
+Falha no GradleResolver. For input string: "". File: D:\Desenvolvimento\Projetos Github\running\nickbutcher plaid\third_party\bypass\build.gradle
+
+Falha no GradleResolver. For input string: "". File: D:\Desenvolvimento\Projetos Github\running\nickbutcher plaid\app\build.gradle
+
+
+UNSOLVED ERROR FILES
+Falha no Analyzer. Classe 'Unsolved symbol : PagerAdapter' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\nickbutcher plaid\app\src\main\java\io\plaidapp\ui\AboutActivity.java
+Falha no Analyzer. Classe 'Unsolved symbol : Adapter' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\nickbutcher plaid\app\src\main\java\io\plaidapp\ui\DribbbleShot.java
+Falha no Analyzer. Classe 'Unsolved symbol : Converter' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\nickbutcher plaid\app\src\main\java\io\plaidapp\data\api\dribbble\DribbbleSearchConverter.java
+
+UNSUPPORTED ERROR FILES
+
+UNKNOWN ANCESTRAL
+
+UNKNOWN SIGNALERS
+

@@ -1,0 +1,201 @@
+Java files: 77
+Jar files: 1
+Maven files: 0
+Gradle files: 6
+Android file: true
+
+Analyzed java files: 77
+Source dirs: 9
+Test dirs: 0
+Dependencies files: 1
+
+JAVA FILES
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\Sample\src\main\java\com\sample\BiliDanmukuParser.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\Sample\src\main\java\com\sample\MainActivity.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\Sample\src\main\java\com\sample\UglyViewCacheStufferSampleActivity.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\ndkbitmap-x86\src\main\java\tv\cjump\ndkbitmap_x86\Pragma.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\ndkbitmap-x86\src\androidTest\java\tv\cjump\ndkbitmap_x86\ApplicationTest.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\ndkbitmap-armv7a\src\main\java\tv\cjump\ndkbitmap_armv7a\Pragma.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\ndkbitmap-armv7a\src\androidTest\java\tv\cjump\ndkbitmap_armv7a\ApplicationTest.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\ndkbitmap-armv5\src\main\java\tv\cjump\ndkbitmap_armv5\Pragma.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\ndkbitmap-armv5\src\androidTest\java\tv\cjump\ndkbitmap_armv5\ApplicationTest.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\tv\cjump\jni\DeviceUtils.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\tv\cjump\jni\NativeBitmapFactory.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\ui\widget\DanmakuSurfaceView.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\ui\widget\DanmakuTextureView.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\ui\widget\DanmakuTouchHelper.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\ui\widget\DanmakuView.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\util\DanmakuUtils.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\util\IOUtils.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\util\SystemClock.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\renderer\IRenderer.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\renderer\Renderer.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\renderer\android\DanmakuRenderer.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\renderer\android\DanmakusRetainer.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\parser\BaseDanmakuParser.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\parser\IDataSource.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\parser\android\AndroidFileSource.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\parser\android\JSONSource.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\AbsDanmakuSync.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\AbsDisplayer.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\AlphaValue.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\BaseDanmaku.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\Danmaku.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\DanmakuTimer.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\Duration.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\FBDanmaku.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\FTDanmaku.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\GlobalFlagValues.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\ICacheManager.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\IDanmakuIterator.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\IDanmakus.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\IDisplayer.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\IDrawingCache.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\L2RDanmaku.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\R2LDanmaku.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\SpecialDanmaku.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\objectpool\FinitePool.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\objectpool\Pool.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\objectpool\Poolable.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\objectpool\PoolableManager.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\objectpool\Pools.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\objectpool\SynchronizedPool.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\android\AndroidDisplayer.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\android\BaseCacheStuffer.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\android\CachingPolicy.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\android\DanmakuContext.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\android\DanmakuFactory.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\android\Danmakus.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\android\DrawingCache.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\android\DrawingCacheHolder.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\android\DrawingCachePoolManager.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\android\SimpleTextCacheStuffer.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\android\SpannedCacheStuffer.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\android\ViewCacheStuffer.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\loader\IllegalDataException.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\loader\ILoader.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\loader\android\AcFunDanmakuLoader.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\loader\android\BiliDanmakuLoader.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\loader\android\DanmakuLoaderFactory.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\controller\CacheManagingDrawTask.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\controller\DanmakuFilters.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\controller\DrawHandler.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\controller\DrawHelper.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\controller\DrawTask.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\controller\IDanmakuView.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\controller\IDanmakuViewController.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\controller\IDrawTask.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\controller\UpdateThread.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\androidTest\java\tv\cjump\jni\NativeBitmapFactoryTest.java
+
+JAR FILES
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\gradle\wrapper\gradle-wrapper.jar
+
+MAVEN FILES
+
+GRADLE FILES
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\build.gradle
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\Sample\build.gradle
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\ndkbitmap-x86\build.gradle
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\ndkbitmap-armv7a\build.gradle
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\ndkbitmap-armv5\build.gradle
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\build.gradle
+
+ANDROID MANIFEST FILE
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\AndroidManifest.xml
+
+ANALYZED JAVA FILES
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\Sample\src\main\java\com\sample\BiliDanmukuParser.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\Sample\src\main\java\com\sample\MainActivity.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\Sample\src\main\java\com\sample\UglyViewCacheStufferSampleActivity.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\ndkbitmap-x86\src\main\java\tv\cjump\ndkbitmap_x86\Pragma.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\ndkbitmap-x86\src\androidTest\java\tv\cjump\ndkbitmap_x86\ApplicationTest.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\ndkbitmap-armv7a\src\main\java\tv\cjump\ndkbitmap_armv7a\Pragma.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\ndkbitmap-armv7a\src\androidTest\java\tv\cjump\ndkbitmap_armv7a\ApplicationTest.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\ndkbitmap-armv5\src\main\java\tv\cjump\ndkbitmap_armv5\Pragma.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\ndkbitmap-armv5\src\androidTest\java\tv\cjump\ndkbitmap_armv5\ApplicationTest.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\tv\cjump\jni\DeviceUtils.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\tv\cjump\jni\NativeBitmapFactory.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\ui\widget\DanmakuSurfaceView.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\ui\widget\DanmakuTextureView.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\ui\widget\DanmakuTouchHelper.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\ui\widget\DanmakuView.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\util\DanmakuUtils.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\util\IOUtils.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\util\SystemClock.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\renderer\IRenderer.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\renderer\Renderer.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\renderer\android\DanmakuRenderer.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\renderer\android\DanmakusRetainer.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\parser\BaseDanmakuParser.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\parser\IDataSource.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\parser\android\AndroidFileSource.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\parser\android\JSONSource.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\AbsDanmakuSync.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\AbsDisplayer.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\AlphaValue.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\BaseDanmaku.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\Danmaku.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\DanmakuTimer.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\Duration.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\FBDanmaku.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\FTDanmaku.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\GlobalFlagValues.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\ICacheManager.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\IDanmakuIterator.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\IDanmakus.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\IDisplayer.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\IDrawingCache.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\L2RDanmaku.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\R2LDanmaku.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\SpecialDanmaku.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\objectpool\FinitePool.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\objectpool\Pool.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\objectpool\Poolable.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\objectpool\PoolableManager.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\objectpool\Pools.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\objectpool\SynchronizedPool.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\android\AndroidDisplayer.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\android\BaseCacheStuffer.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\android\CachingPolicy.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\android\DanmakuContext.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\android\DanmakuFactory.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\android\Danmakus.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\android\DrawingCache.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\android\DrawingCacheHolder.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\android\DrawingCachePoolManager.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\android\SimpleTextCacheStuffer.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\android\SpannedCacheStuffer.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\model\android\ViewCacheStuffer.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\loader\IllegalDataException.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\loader\ILoader.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\loader\android\AcFunDanmakuLoader.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\loader\android\BiliDanmakuLoader.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\danmaku\loader\android\DanmakuLoaderFactory.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\controller\CacheManagingDrawTask.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\controller\DanmakuFilters.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\controller\DrawHandler.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\controller\DrawHelper.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\controller\DrawTask.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\controller\IDanmakuView.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\controller\IDanmakuViewController.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\controller\IDrawTask.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java\master\flame\danmaku\controller\UpdateThread.java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\androidTest\java\tv\cjump\jni\NativeBitmapFactoryTest.java
+
+SOURCE DIRECTORIES
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\Sample\src\main\java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\ndkbitmap-x86\src\main\java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\ndkbitmap-x86\src\androidTest\java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\ndkbitmap-armv7a\src\main\java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\ndkbitmap-armv7a\src\androidTest\java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\ndkbitmap-armv5\src\main\java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\ndkbitmap-armv5\src\androidTest\java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\main\java
+D:\Desenvolvimento\Projetos Github\running\Bilibili DanmakuFlameMaster\DanmakuFlameMaster\src\androidTest\java
+
+TEST DIRECTORIES
+
+DEPENDENCIES
+D:\AndroidSDK\platforms\android-26\android.jar
+

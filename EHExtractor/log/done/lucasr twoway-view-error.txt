@@ -1,0 +1,31 @@
+Maven errors: 0
+Gradle errors: 4
+Unsolved types: 2
+Unsupported errors: 0
+Unknown ancestral: 0
+Unknown signaler: 0
+
+GENERAL ERRORS
+
+MAVEN ERROR FILES
+
+GRADLE ERROR FILES
+Falha no GradleResolver. failed to find Build Tools revision 21.1.2. File: D:\Desenvolvimento\Projetos Github\running\lucasr twoway-view\build.gradle
+
+Falha no GradleResolver. failed to find Build Tools revision 21.1.2. File: D:\Desenvolvimento\Projetos Github\running\lucasr twoway-view\sample\build.gradle
+
+Falha no GradleResolver. failed to find Build Tools revision 21.1.2. File: D:\Desenvolvimento\Projetos Github\running\lucasr twoway-view\layouts\build.gradle
+
+Falha no GradleResolver. failed to find Build Tools revision 21.1.2. File: D:\Desenvolvimento\Projetos Github\running\lucasr twoway-view\core\build.gradle
+
+
+UNSOLVED ERROR FILES
+Falha no Analyzer. Classe 'Unsolved symbol : RecyclerView' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\lucasr twoway-view\layouts\src\main\java\org\lucasr\twowayview\widget\TwoWayView.java
+Falha no Analyzer. Classe 'Unsolved symbol : LayoutManager' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\lucasr twoway-view\core\src\main\java\org\lucasr\twowayview\TwoWayLayoutManager.java
+
+UNSUPPORTED ERROR FILES
+
+UNKNOWN ANCESTRAL
+
+UNKNOWN SIGNALERS
+

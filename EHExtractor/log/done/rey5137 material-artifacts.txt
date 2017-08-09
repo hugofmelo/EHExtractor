@@ -1,0 +1,196 @@
+Java files: 79
+Jar files: 1
+Maven files: 0
+Gradle files: 3
+Android file: true
+
+Analyzed java files: 78
+Source dirs: 3
+Test dirs: 1
+Dependencies files: 1
+
+JAVA FILES
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\test\java\com\rey\material\ExampleUnitTest.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\widget\Button.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\widget\CheckBox.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\widget\CheckedImageView.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\widget\CheckedTextView.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\widget\CircleCheckedTextView.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\widget\CompoundButton.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\widget\DatePicker.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\widget\EditText.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\widget\FloatingActionButton.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\widget\FrameLayout.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\widget\ImageButton.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\widget\ImageView.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\widget\LinearLayout.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\widget\ListPopupWindow.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\widget\ListView.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\widget\PopupWindow.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\widget\ProgressView.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\widget\RadioButton.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\widget\RelativeLayout.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\widget\RippleManager.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\widget\Slider.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\widget\SnackBar.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\widget\Spinner.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\widget\Switch.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\widget\TabIndicatorView.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\widget\TabPageIndicator.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\widget\TextView.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\widget\TimePicker.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\widget\YearPicker.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\util\ColorUtil.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\util\ThemeUtil.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\util\TypefaceUtil.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\util\ViewUtil.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\text\style\ContactChipSpan.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\drawable\ArrowDrawable.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\drawable\BlankDrawable.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\drawable\CheckBoxDrawable.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\drawable\CircleDrawable.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\drawable\CircularProgressDrawable.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\drawable\ContactChipDrawable.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\drawable\DividerDrawable.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\drawable\LinearProgressDrawable.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\drawable\LineMorphingDrawable.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\drawable\NavigationDrawerDrawable.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\drawable\OvalShadowDrawable.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\drawable\PaddingDrawable.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\drawable\RadioButtonDrawable.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\drawable\RevealDrawable.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\drawable\RippleDrawable.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\drawable\ThemeDrawable.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\drawable\ToolbarRippleDrawable.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\app\BottomSheetDialog.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\app\DatePickerDialog.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\app\Dialog.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\app\DialogFragment.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\app\SimpleDialog.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\app\ThemeManager.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\app\TimePickerDialog.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\app\ToolbarManager.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\androidTest\java\com\rey\material\ApplicationTest.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\app\src\main\java\com\rey\material\demo\ButtonFragment.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\app\src\main\java\com\rey\material\demo\CustomViewPager.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\app\src\main\java\com\rey\material\demo\DemoApplication.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\app\src\main\java\com\rey\material\demo\DialogsFragment.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\app\src\main\java\com\rey\material\demo\FabFragment.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\app\src\main\java\com\rey\material\demo\MainActivity.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\app\src\main\java\com\rey\material\demo\ProgressFragment.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\app\src\main\java\com\rey\material\demo\SliderFragment.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\app\src\main\java\com\rey\material\demo\SnackbarFragment.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\app\src\main\java\com\rey\material\demo\SpinnersFragment.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\app\src\main\java\com\rey\material\demo\SwitchesFragment.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\app\src\main\java\com\rey\material\demo\TextfieldFragment.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\app\src\main\java\com\rey\material\app\ContactEditText.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\app\src\main\java\com\rey\material\app\ContactView.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\app\src\main\java\com\rey\material\app\Recipient.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\app\src\main\java\com\rey\material\app\Recurring.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\app\src\main\java\com\rey\material\app\RecurringPickerDialog.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\app\src\main\java\com\rey\material\app\WeekView.java
+
+JAR FILES
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\gradle\wrapper\gradle-wrapper.jar
+
+MAVEN FILES
+
+GRADLE FILES
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\build.gradle
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\build.gradle
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\app\build.gradle
+
+ANDROID MANIFEST FILE
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\app\src\main\AndroidManifest.xml
+
+ANALYZED JAVA FILES
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\widget\Button.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\widget\CheckBox.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\widget\CheckedImageView.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\widget\CheckedTextView.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\widget\CircleCheckedTextView.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\widget\CompoundButton.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\widget\DatePicker.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\widget\EditText.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\widget\FloatingActionButton.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\widget\FrameLayout.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\widget\ImageButton.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\widget\ImageView.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\widget\LinearLayout.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\widget\ListPopupWindow.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\widget\ListView.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\widget\PopupWindow.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\widget\ProgressView.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\widget\RadioButton.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\widget\RelativeLayout.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\widget\RippleManager.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\widget\Slider.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\widget\SnackBar.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\widget\Spinner.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\widget\Switch.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\widget\TabIndicatorView.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\widget\TabPageIndicator.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\widget\TextView.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\widget\TimePicker.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\widget\YearPicker.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\util\ColorUtil.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\util\ThemeUtil.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\util\TypefaceUtil.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\util\ViewUtil.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\text\style\ContactChipSpan.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\drawable\ArrowDrawable.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\drawable\BlankDrawable.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\drawable\CheckBoxDrawable.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\drawable\CircleDrawable.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\drawable\CircularProgressDrawable.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\drawable\ContactChipDrawable.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\drawable\DividerDrawable.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\drawable\LinearProgressDrawable.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\drawable\LineMorphingDrawable.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\drawable\NavigationDrawerDrawable.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\drawable\OvalShadowDrawable.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\drawable\PaddingDrawable.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\drawable\RadioButtonDrawable.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\drawable\RevealDrawable.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\drawable\RippleDrawable.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\drawable\ThemeDrawable.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\drawable\ToolbarRippleDrawable.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\app\BottomSheetDialog.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\app\DatePickerDialog.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\app\Dialog.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\app\DialogFragment.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\app\SimpleDialog.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\app\ThemeManager.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\app\TimePickerDialog.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java\com\rey\material\app\ToolbarManager.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\androidTest\java\com\rey\material\ApplicationTest.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\app\src\main\java\com\rey\material\demo\ButtonFragment.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\app\src\main\java\com\rey\material\demo\CustomViewPager.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\app\src\main\java\com\rey\material\demo\DemoApplication.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\app\src\main\java\com\rey\material\demo\DialogsFragment.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\app\src\main\java\com\rey\material\demo\FabFragment.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\app\src\main\java\com\rey\material\demo\MainActivity.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\app\src\main\java\com\rey\material\demo\ProgressFragment.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\app\src\main\java\com\rey\material\demo\SliderFragment.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\app\src\main\java\com\rey\material\demo\SnackbarFragment.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\app\src\main\java\com\rey\material\demo\SpinnersFragment.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\app\src\main\java\com\rey\material\demo\SwitchesFragment.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\app\src\main\java\com\rey\material\demo\TextfieldFragment.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\app\src\main\java\com\rey\material\app\ContactEditText.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\app\src\main\java\com\rey\material\app\ContactView.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\app\src\main\java\com\rey\material\app\Recipient.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\app\src\main\java\com\rey\material\app\Recurring.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\app\src\main\java\com\rey\material\app\RecurringPickerDialog.java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\app\src\main\java\com\rey\material\app\WeekView.java
+
+SOURCE DIRECTORIES
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\main\java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\androidTest\java
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\app\src\main\java
+
+TEST DIRECTORIES
+D:\Desenvolvimento\Projetos Github\running\rey5137 material\material\src\test\java
+
+DEPENDENCIES
+D:\AndroidSDK\platforms\android-26\android.jar
+

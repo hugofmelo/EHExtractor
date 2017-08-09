@@ -1,0 +1,28 @@
+Maven errors: 0
+Gradle errors: 3
+Unsolved types: 0
+Unsupported errors: 1
+Unknown ancestral: 0
+Unknown signaler: 0
+
+GENERAL ERRORS
+
+MAVEN ERROR FILES
+
+GRADLE ERROR FILES
+Falha no GradleResolver. failed to find target with hash string 'android-22' in: D:\AndroidSDK. File: D:\Desenvolvimento\Projetos Github\running\navasmdc MaterialDesignLibrary\MaterialDesignLibrary\build.gradle
+
+Falha no GradleResolver. failed to find target with hash string 'android-22' in: D:\AndroidSDK. File: D:\Desenvolvimento\Projetos Github\running\navasmdc MaterialDesignLibrary\MaterialDesignLibrary\MaterialDesignDemo\build.gradle
+
+Falha no GradleResolver. failed to find target with hash string 'android-22' in: D:\AndroidSDK. File: D:\Desenvolvimento\Projetos Github\running\navasmdc MaterialDesignLibrary\MaterialDesignLibrary\MaterialDesign\build.gradle
+
+
+UNSOLVED ERROR FILES
+
+UNSUPPORTED ERROR FILES
+Falha no Analyzer. UnsupportedOperation ao parsear arquivo. File: D:\Desenvolvimento\Projetos Github\running\navasmdc MaterialDesignLibrary\MaterialDesignLibrary\MaterialDesign\src\main\java\com\gc\materialdesign\views\ProgressBarIndeterminate.java
+
+UNKNOWN ANCESTRAL
+
+UNKNOWN SIGNALERS
+

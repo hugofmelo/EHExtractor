@@ -1,0 +1,43 @@
+Maven errors: 0
+Gradle errors: 9
+Unsolved types: 3
+Unsupported errors: 1
+Unknown ancestral: 0
+Unknown signaler: 0
+
+GENERAL ERRORS
+
+MAVEN ERROR FILES
+
+GRADLE ERROR FILES
+Falha no GradleResolver. failed to find target android-22 : D:\AndroidSDK. File: D:\Desenvolvimento\Projetos Github\running\gabrielemariotti cardslib\build.gradle
+
+Falha no GradleResolver. failed to find target android-22 : D:\AndroidSDK. File: D:\Desenvolvimento\Projetos Github\running\gabrielemariotti cardslib\library-recyclerview\build.gradle
+
+Falha no GradleResolver. failed to find target android-22 : D:\AndroidSDK. File: D:\Desenvolvimento\Projetos Github\running\gabrielemariotti cardslib\library-core\build.gradle
+
+Falha no GradleResolver. failed to find target android-22 : D:\AndroidSDK. File: D:\Desenvolvimento\Projetos Github\running\gabrielemariotti cardslib\library-cards\build.gradle
+
+Falha no GradleResolver. failed to find target android-22 : D:\AndroidSDK. File: D:\Desenvolvimento\Projetos Github\running\gabrielemariotti cardslib\extra\extra-twoway\build.gradle
+
+Falha no GradleResolver. failed to find target android-22 : D:\AndroidSDK. File: D:\Desenvolvimento\Projetos Github\running\gabrielemariotti cardslib\extra\extra-staggeredgrid\build.gradle
+
+Falha no GradleResolver. failed to find target android-22 : D:\AndroidSDK. File: D:\Desenvolvimento\Projetos Github\running\gabrielemariotti cardslib\extra\extra-dragdrop\build.gradle
+
+Falha no GradleResolver. failed to find target android-22 : D:\AndroidSDK. File: D:\Desenvolvimento\Projetos Github\running\gabrielemariotti cardslib\demo\stock\build.gradle
+
+Falha no GradleResolver. failed to find target android-22 : D:\AndroidSDK. File: D:\Desenvolvimento\Projetos Github\running\gabrielemariotti cardslib\demo\extras\build.gradle
+
+
+UNSOLVED ERROR FILES
+Falha no Analyzer. Classe 'Unsolved symbol : CardView' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\gabrielemariotti cardslib\library-core\src\main\java\it\gmariotti\cardslib\library\view\CardViewNative.java
+Falha no Analyzer. Classe 'Unsolved symbol : Swappable' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\gabrielemariotti cardslib\extra\extra-dragdrop\src\main\java\it\gmariotti\cardslib\library\extra\dragdroplist\internal\CardDragDropArrayAdapter.java
+Falha no Analyzer. Classe 'Unsolved symbol : OnRefreshListener' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\gabrielemariotti cardslib\demo\extras\src\main\java\it\gmariotti\cardslib\demo\extras\fragment\ActionbarpullFragment.java
+
+UNSUPPORTED ERROR FILES
+Falha no Analyzer. UnsupportedOperation ao parsear arquivo. File: D:\Desenvolvimento\Projetos Github\running\gabrielemariotti cardslib\demo\stock\src\main\java\it\gmariotti\cardslib\demo\cards\GplayCardCustomSource.java
+
+UNKNOWN ANCESTRAL
+
+UNKNOWN SIGNALERS
+

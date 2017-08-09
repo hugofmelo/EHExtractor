@@ -1,0 +1,34 @@
+EXCEPTION HIERARCHY
+java.lang.Throwable
+	java.lang.Exception
+		java.lang.InterruptedException
+		java.lang.RuntimeException
+			java.lang.IllegalArgumentException
+				java.lang.NumberFormatException
+			android.database.SQLException
+			java.lang.IllegalStateException
+			android.content.ActivityNotFoundException
+			android.content.res.Resources.NotFoundException
+			android.view.InflateException
+			android.util.AndroidRuntimeException
+			java.lang.ClassCastException
+			java.lang.UnsupportedOperationException
+		java.io.IOException
+			java.io.FileNotFoundException
+		java.lang.ReflectiveOperationException
+			java.lang.NoSuchMethodException
+			java.lang.InstantiationException
+			java.lang.IllegalAccessException
+			java.lang.reflect.InvocationTargetException
+			java.lang.NoSuchFieldException
+		org.xmlpull.v1.XmlPullParserException
+		android.util.AndroidException
+			android.content.pm.PackageManager.NameNotFoundException
+		java.lang.CloneNotSupportedException
+	java.lang.Error
+		java.lang.LinkageError
+			java.lang.IncompatibleClassChangeError
+				java.lang.NoSuchFieldError
+		java.lang.AssertionError
+
+

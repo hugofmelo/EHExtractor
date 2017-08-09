@@ -1,0 +1,27 @@
+Maven errors: 0
+Gradle errors: 3
+Unsolved types: 0
+Unsupported errors: 0
+Unknown ancestral: 0
+Unknown signaler: 0
+
+GENERAL ERRORS
+
+MAVEN ERROR FILES
+
+GRADLE ERROR FILES
+Falha no GradleResolver. failed to find target android-22 : D:\AndroidSDK. File: D:\Desenvolvimento\Projetos Github\running\futuresimple android-floating-action-button\build.gradle
+
+Falha no GradleResolver. failed to find target android-22 : D:\AndroidSDK. File: D:\Desenvolvimento\Projetos Github\running\futuresimple android-floating-action-button\sample\build.gradle
+
+Falha no GradleResolver. failed to find target android-22 : D:\AndroidSDK. File: D:\Desenvolvimento\Projetos Github\running\futuresimple android-floating-action-button\library\build.gradle
+
+
+UNSOLVED ERROR FILES
+
+UNSUPPORTED ERROR FILES
+
+UNKNOWN ANCESTRAL
+
+UNKNOWN SIGNALERS
+

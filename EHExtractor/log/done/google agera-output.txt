@@ -1,0 +1,14 @@
+EXCEPTION HIERARCHY
+java.lang.Throwable
+	java.lang.Exception
+		java.lang.InterruptedException
+		java.io.IOException
+			java.io.UnsupportedEncodingException
+		java.lang.RuntimeException
+			android.database.SQLException
+			java.lang.IllegalStateException
+				com.google.android.agera.FailedResultException
+			java.lang.IllegalArgumentException
+			java.lang.NullPointerException
+
+
