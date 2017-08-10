@@ -2,18 +2,20 @@ package ufrn.dimap.lets.ehmetrics.abstractmodel;
 
 public enum TypeOrigin
 {
-	JAVA,
-	SYSTEM,
-	LIBRARY
+	JAVA ("Java"),
+	SYSTEM ("System"),
+	LIBRARY ("Library"),
+	ANDROID ("Android")
 	;
+	
+	private final String text;
+	private TypeOrigin (final String text)
+	{
+		this.text = text;
+	}
 	
 	public String toString ()
 	{
-		if ( this == JAVA )
-			return "Java";
-		else if ( this == SYSTEM )
-			return "System";
-		else //if ( this == LIBRARY )
-			return "Library";
+		return this.text;
 	}
 }

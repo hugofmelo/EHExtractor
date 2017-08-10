@@ -84,8 +84,33 @@ public class Analyzer
 	{
 		CombinedTypeSolver solver = new CombinedTypeSolver();
 
-		// Reflection solver
-		solver.add(new ReflectionTypeSolver());
+		// Reflection OR android solver
+		if ( artifacts.getAndroidJar() == null )
+		{
+			solver.add(new ReflectionTypeSolver());
+		}
+		else
+		{
+			try
+			{
+				solver.add(new JarTypeSolver(artifacts.getAndroidJar().getAbsolutePath()));
+			}
+			catch (RuntimeException e)
+			{
+				if ( e.getCause() instanceof NotFoundException )
+				{
+					ErrorLogger.addError("Falha no Analyzer. Falha ao adicionar android.jar. File: " + artifacts.getAndroidJar().getAbsolutePath());
+				}
+				else
+				{
+					throw e;
+				}
+			}
+			catch (IOException e)
+			{
+				ErrorLogger.addError("Falha no Analyzer. Falha ao adicionar android.jar. File: " + artifacts.getAndroidJar().getAbsolutePath());		
+			}
+		}
 
 		// Sources solvers
 		for ( File sourceDir : artifacts.getSourceDirs() )

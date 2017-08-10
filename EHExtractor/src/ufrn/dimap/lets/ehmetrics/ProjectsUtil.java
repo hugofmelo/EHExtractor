@@ -13,12 +13,12 @@ public class ProjectsUtil
 	
 	// Colocar endereço com barra ('/') no final
 	// LETS
-	public static final String projectsRoot = "C:/Users/hugofm/Desenvolvimento/Projetos GitHub/running/";
-	public static final String dependenciesRoot = "./dependencies/lets/";
+	//public static final String projectsRoot = "C:/Users/hugofm/Desenvolvimento/Projetos GitHub/running/";
+	//public static final String dependenciesRoot = "./dependencies/lets/";
 	
 	// CASA
-	//public static final String projectsRoot = "D:/Desenvolvimento/Projetos Github/running/";
-	//public static final String dependenciesRoot = "./dependencies/home/";
+	public static final String projectsRoot = "D:/Desenvolvimento/Projetos Github/running/";
+	public static final String dependenciesRoot = "./dependencies/home/";
 	
 	public static final String logsRoot = "./log/running/";
 	

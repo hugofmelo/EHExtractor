@@ -73,13 +73,20 @@ public class Util
 	
 	public static TypeOrigin resolveTypeOrigin(ReferenceTypeDeclaration declaration)
 	{
-		if ( declaration instanceof JavaParserClassDeclaration )
+		String className = declaration.getQualifiedName();
+		
+		// A ordem de verificação é importante.
+		if ( className.startsWith("java.") || className.startsWith("javax.") )
+		{
+			return TypeOrigin.JAVA;
+		}
+		else if ( declaration instanceof JavaParserClassDeclaration )
 		{
 			return TypeOrigin.SYSTEM;
 		}
-		else if ( declaration instanceof ReflectionClassDeclaration )
+		else if ( className.startsWith("android.") )
 		{
-			return TypeOrigin.JAVA;
+			return TypeOrigin.ANDROID;
 		}
 		else if ( declaration instanceof JavassistClassDeclaration )
 		{
