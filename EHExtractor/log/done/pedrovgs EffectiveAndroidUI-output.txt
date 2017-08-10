@@ -1,9 +1,0 @@
-EXCEPTION HIERARCHY
-java.lang.Throwable
-	java.lang.Exception
-		java.lang.RuntimeException
-			java.lang.IllegalArgumentException
-		java.lang.InterruptedException
-		com.github.pedrovgs.effectiveandroidui.domain.exception.TvShowNotFoundException
-
-

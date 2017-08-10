@@ -45,21 +45,15 @@ public class SignalerVisitor extends VoidVisitorAdapter<JavaParserFacade>
 			type = facade.getType(thrownExpression);
 		}
 		catch (RuntimeException e)
-		{
-			if ( e.getMessage() != null && e.getMessage().startsWith("Method") )
-			{
-				throw new UnknownSignalerException ("Tipo sinalizado não pôde ser resolvido.");
-			}
-			else
-			{
-				throw e;
-			}
+		{			
+			throw new UnknownSignalerException ("Tipo sinalizado não pôde ser resolvido. Sinalização: '" + throwStatement + "'.");
 		}
 
 		// É esperado que o tipo sinalizado seja um ReferenceType, mas já vi ocorrencia de TypeVariable, então vamos testar para garantir.
 		if (type.isReferenceType() )
 		{
 			ReferenceType thrownReferenceType = (ReferenceType) type;
+			
 			// VERIFICAR TIPO DE THROW
 			SignalerType signalerType = this.getSignalerType(thrownExpression);
 
@@ -118,7 +112,7 @@ public class SignalerVisitor extends VoidVisitorAdapter<JavaParserFacade>
 				else
 				// é sinalizado um NameExpr, mas ele não está na pilha
 				{
-					throw new UnknownSignalerException ("Sinalizado um NameExpr, mas a exceção não está na pilha.");
+					throw new UnknownSignalerException ("Sinalizado um NameExpr, mas a exceção não está na pilha. Expressão sinalizada: '" + thrownExpression + "'.");
 					//ErrorLogger.addError("Erro no SignalerVisitor. É sinalizado um NameExpr, mas a exceção não está na pilha.");
 					//return SignalerType.UNKNOWN;
 					
@@ -143,14 +137,22 @@ public class SignalerVisitor extends VoidVisitorAdapter<JavaParserFacade>
 			else if (thrownExpression instanceof CastExpr)
 			{
 				CastExpr castExpression = (CastExpr)thrownExpression;
-
-				throw new UnsupportedOperationException("Sinalização do tipo 'throw (Exception)e;'. Rodar o debug e verificar o que o JP resolve.");
+				
+				// Verificar os casos: 'throw (NewTypeException) e;' e 'throw (newTypeException)e.getCause();'
+				
+				// O tipo target
+				// castExpression.getType()
+				
+				// O casteado
+				// castExpression.getExpression()
+				
+				throw new UnsupportedOperationException("Sinalização do tipo 'throw (Exception)e;'.");
 
 				//return SignalerType.RETHROW;
 			}
 			else
 			{
-				throw new UnknownSignalerException ("A sinalização não é do tipo 'throw e', 'throw new...' ou 'throw (type) e'.");
+				throw new UnknownSignalerException ("A sinalização não é de um dos tipos suportados. Sinalização: '" + thrownExpression + "'.");
 				//ErrorLogger.addError("Erro no SignalerVisitor. A sinalização não é do tipo 'throw e', 'throw new...' ou 'throw (type) e'");
 				//return SignalerType.UNKNOWN;
 				

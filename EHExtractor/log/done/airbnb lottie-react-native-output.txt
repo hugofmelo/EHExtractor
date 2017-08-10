@@ -1,8 +1,0 @@
-EXCEPTION HIERARCHY
-java.lang.Throwable
-	java.lang.Exception
-		org.json.JSONException
-		java.lang.RuntimeException
-			java.lang.UnsupportedOperationException
-
-

@@ -1,8 +1,8 @@
 DONE Prioridade -2: corrigir bug da origem incorreta em algumas exceções java. Quando rodar novamente, verificar o projeto "airbnb lottie-react-native"
-Prioridade -1: Tentar corrigir os erros e limitados.
+DONE prioridade -1: Tentar corrigir os erros e limitados.
 Prioridade 1: Verificar se os projetos android realmente não tem dependencias externas. Ou verificar pq o gradle não tá prestando.
 
-Prioridade 0:
+DONE Prioridade 0:
 	Pegar 50 projetos android mais estrelados
 	Extrair
 		throws
@@ -23,15 +23,15 @@ Prioridade 2:
 Prioridade 3: a classe Repository deve ter um método para baixar o repositório. Tipo Repository#downloadTo ( File targetFile, boolean unzip, String projectRootName ). 
 
 Prioridade 2: Adicionar linha de código nos modelos.
-Prioridade 2: Revisar todo o código, linha a linha, removendo ou movendo classes para seus devidos lugares..
+Prioridade 2: Revisar todo o código, linha a linha, removendo ou movendo classes para seus devidos lugares.
 	Decidir como chamar os casos de "get" em que há processamento.
-Prioridade 2: Baixar e extrair os projetos automaticamente
+DONE Prioridade 2: Baixar e extrair os projetos automaticamente
 Prioridade 2: Algumas classes android não são incluidas nas dependencias. As classes são dos projetos 'support' do android (até agora, só v4). Verificar se os existem projetos android q usam classes support e q não tem problemas. Estou pensando que esse problema é de configuração do projeto, e não do EHMetrics.
 Prioridade 2: aprender a usar a api do github e implementar minha própria busca.
 	Como pegar mais que 1000 resultados
 Prioridade 2: publicar ferramenta que busca, baixa e descompacta para o LETS
 Prioridade 3: Um TypeVisitor para pegar os tipos.
-Prioridade 3: Identificar diferentes projetos em um mesmo repositório do Github
+CANCELADO Prioridade 3: Identificar diferentes projetos em um mesmo repositório do Github
 Prioridade 4: Verificar padrões de autocomplete do Eclipse, NetBeans e IntelliJ
 	Implementar verificação de padrões
 		OK Eclipse
