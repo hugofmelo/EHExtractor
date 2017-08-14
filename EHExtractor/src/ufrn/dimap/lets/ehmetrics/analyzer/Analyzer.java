@@ -29,6 +29,7 @@ public class Analyzer
 	// Ao encerrar este metodo, o modelo injetado no visitor terá o resultado do processamento
 	public static MetricsModel analyze(ProjectArtifacts artifacts)
 	{
+		JavaParserFacade.clearInstances();
 		CombinedTypeSolver solver = Analyzer.configSolver(artifacts);
 		MetricsModel model = new MetricsModel ();
 		

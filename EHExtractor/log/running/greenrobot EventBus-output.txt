@@ -1,0 +1,15 @@
+EXCEPTION HIERARCHY
+java.lang.Throwable
+	java.lang.Exception
+		java.lang.InterruptedException
+		java.lang.RuntimeException
+			org.greenrobot.eventbus.EventBusException
+			java.lang.IllegalStateException
+			java.lang.NullPointerException
+		java.lang.ReflectiveOperationException
+			java.lang.reflect.InvocationTargetException
+			java.lang.IllegalAccessException
+			java.lang.NoSuchMethodException
+			java.lang.InstantiationException
+
+

@@ -1,0 +1,110 @@
+Java files: 36
+Jar files: 1
+Maven files: 0
+Gradle files: 4
+Android file: true
+
+Analyzed java files: 36
+Source dirs: 3
+Test dirs: 0
+Dependencies files: 0
+
+JAVA FILES
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\sample\src\main\java\com\afollestad\materialdialogssample\AboutDialog.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\sample\src\main\java\com\afollestad\materialdialogssample\App.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\sample\src\main\java\com\afollestad\materialdialogssample\ButtonItemAdapter.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\sample\src\main\java\com\afollestad\materialdialogssample\ChangelogDialog.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\sample\src\main\java\com\afollestad\materialdialogssample\MainActivity.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\sample\src\main\java\com\afollestad\materialdialogssample\PreferenceActivity.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\core\src\main\java\com\afollestad\materialdialogs\DefaultRvAdapter.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\core\src\main\java\com\afollestad\materialdialogs\DialogAction.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\core\src\main\java\com\afollestad\materialdialogs\DialogBase.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\core\src\main\java\com\afollestad\materialdialogs\DialogInit.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\core\src\main\java\com\afollestad\materialdialogs\GravityEnum.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\core\src\main\java\com\afollestad\materialdialogs\MaterialDialog.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\core\src\main\java\com\afollestad\materialdialogs\StackingBehavior.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\core\src\main\java\com\afollestad\materialdialogs\Theme.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\core\src\main\java\com\afollestad\materialdialogs\util\DialogUtils.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\core\src\main\java\com\afollestad\materialdialogs\util\RippleHelper.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\core\src\main\java\com\afollestad\materialdialogs\util\TypefaceHelper.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\core\src\main\java\com\afollestad\materialdialogs\internal\AllCapsTransformationMethod.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\core\src\main\java\com\afollestad\materialdialogs\internal\MDAdapter.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\core\src\main\java\com\afollestad\materialdialogs\internal\MDButton.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\core\src\main\java\com\afollestad\materialdialogs\internal\MDRootLayout.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\core\src\main\java\com\afollestad\materialdialogs\internal\MDTintHelper.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\core\src\main\java\com\afollestad\materialdialogs\internal\ThemeSingleton.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\commons\src\main\java\com\afollestad\materialdialogs\simplelist\MaterialSimpleListAdapter.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\commons\src\main\java\com\afollestad\materialdialogs\simplelist\MaterialSimpleListItem.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\commons\src\main\java\com\afollestad\materialdialogs\prefs\MaterialDialogPreference.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\commons\src\main\java\com\afollestad\materialdialogs\prefs\MaterialEditTextPreference.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\commons\src\main\java\com\afollestad\materialdialogs\prefs\MaterialListPreference.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\commons\src\main\java\com\afollestad\materialdialogs\prefs\MaterialMultiSelectListPreference.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\commons\src\main\java\com\afollestad\materialdialogs\prefs\PrefUtil.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\commons\src\main\java\com\afollestad\materialdialogs\folderselector\FileChooserDialog.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\commons\src\main\java\com\afollestad\materialdialogs\folderselector\FolderChooserDialog.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\commons\src\main\java\com\afollestad\materialdialogs\color\CircleView.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\commons\src\main\java\com\afollestad\materialdialogs\color\ColorChooserDialog.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\commons\src\main\java\com\afollestad\materialdialogs\color\ColorPalette.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\commons\src\main\java\com\afollestad\materialdialogs\color\FillGridView.java
+
+JAR FILES
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\gradle\wrapper\gradle-wrapper.jar
+
+MAVEN FILES
+
+GRADLE FILES
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\build.gradle
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\sample\build.gradle
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\core\build.gradle
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\commons\build.gradle
+
+ANDROID MANIFEST FILE
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\commons\src\main\AndroidManifest.xml
+
+ANALYZED JAVA FILES
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\sample\src\main\java\com\afollestad\materialdialogssample\AboutDialog.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\sample\src\main\java\com\afollestad\materialdialogssample\App.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\sample\src\main\java\com\afollestad\materialdialogssample\ButtonItemAdapter.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\sample\src\main\java\com\afollestad\materialdialogssample\ChangelogDialog.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\sample\src\main\java\com\afollestad\materialdialogssample\MainActivity.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\sample\src\main\java\com\afollestad\materialdialogssample\PreferenceActivity.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\core\src\main\java\com\afollestad\materialdialogs\DefaultRvAdapter.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\core\src\main\java\com\afollestad\materialdialogs\DialogAction.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\core\src\main\java\com\afollestad\materialdialogs\DialogBase.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\core\src\main\java\com\afollestad\materialdialogs\DialogInit.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\core\src\main\java\com\afollestad\materialdialogs\GravityEnum.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\core\src\main\java\com\afollestad\materialdialogs\MaterialDialog.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\core\src\main\java\com\afollestad\materialdialogs\StackingBehavior.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\core\src\main\java\com\afollestad\materialdialogs\Theme.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\core\src\main\java\com\afollestad\materialdialogs\util\DialogUtils.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\core\src\main\java\com\afollestad\materialdialogs\util\RippleHelper.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\core\src\main\java\com\afollestad\materialdialogs\util\TypefaceHelper.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\core\src\main\java\com\afollestad\materialdialogs\internal\AllCapsTransformationMethod.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\core\src\main\java\com\afollestad\materialdialogs\internal\MDAdapter.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\core\src\main\java\com\afollestad\materialdialogs\internal\MDButton.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\core\src\main\java\com\afollestad\materialdialogs\internal\MDRootLayout.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\core\src\main\java\com\afollestad\materialdialogs\internal\MDTintHelper.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\core\src\main\java\com\afollestad\materialdialogs\internal\ThemeSingleton.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\commons\src\main\java\com\afollestad\materialdialogs\simplelist\MaterialSimpleListAdapter.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\commons\src\main\java\com\afollestad\materialdialogs\simplelist\MaterialSimpleListItem.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\commons\src\main\java\com\afollestad\materialdialogs\prefs\MaterialDialogPreference.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\commons\src\main\java\com\afollestad\materialdialogs\prefs\MaterialEditTextPreference.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\commons\src\main\java\com\afollestad\materialdialogs\prefs\MaterialListPreference.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\commons\src\main\java\com\afollestad\materialdialogs\prefs\MaterialMultiSelectListPreference.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\commons\src\main\java\com\afollestad\materialdialogs\prefs\PrefUtil.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\commons\src\main\java\com\afollestad\materialdialogs\folderselector\FileChooserDialog.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\commons\src\main\java\com\afollestad\materialdialogs\folderselector\FolderChooserDialog.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\commons\src\main\java\com\afollestad\materialdialogs\color\CircleView.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\commons\src\main\java\com\afollestad\materialdialogs\color\ColorChooserDialog.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\commons\src\main\java\com\afollestad\materialdialogs\color\ColorPalette.java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\commons\src\main\java\com\afollestad\materialdialogs\color\FillGridView.java
+
+SOURCE DIRECTORIES
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\sample\src\main\java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\core\src\main\java
+D:\Desenvolvimento\Projetos Github\running\afollestad material-dialogs\commons\src\main\java
+
+TEST DIRECTORIES
+
+DEPENDENCIES
+

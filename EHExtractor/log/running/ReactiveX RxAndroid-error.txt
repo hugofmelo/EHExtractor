@@ -1,0 +1,24 @@
+Maven errors: 0
+Gradle errors: 0
+Unsolved types: 1
+Unsupported errors: 0
+Unknown ancestral: 0
+Unknown signaler: 2
+
+GENERAL ERRORS
+
+MAVEN ERROR FILES
+
+GRADLE ERROR FILES
+
+UNSOLVED ERROR FILES
+Falha no Analyzer. Classe 'Unsolved symbol : Scheduler' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\ReactiveX RxAndroid\rxandroid\src\main\java\io\reactivex\android\schedulers\HandlerScheduler.java
+
+UNSUPPORTED ERROR FILES
+
+UNKNOWN ANCESTRAL
+
+UNKNOWN SIGNALERS
+Falha no Analyzer. Tipo sinalizado não pôde ser resolvido. Sinalização: 'throw new IllegalStateException("Expected to be called on the main thread but was " + Thread.currentThread().getName());'. File: D:\Desenvolvimento\Projetos Github\running\ReactiveX RxAndroid\rxandroid\src\main\java\io\reactivex\android\MainThreadDisposable.java
+Falha no Analyzer. Tipo sinalizado não pôde ser resolvido. Sinalização: 'throw Exceptions.propagate(ex);'. File: D:\Desenvolvimento\Projetos Github\running\ReactiveX RxAndroid\rxandroid\src\main\java\io\reactivex\android\plugins\RxAndroidPlugins.java
+

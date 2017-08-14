@@ -1,0 +1,7 @@
+EXCEPTION HIERARCHY
+java.lang.Throwable
+	java.lang.Exception
+		org.xmlpull.v1.XmlPullParserException
+		java.io.IOException
+
+

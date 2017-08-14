@@ -1,0 +1,44 @@
+Java files: 4
+Jar files: 1
+Maven files: 0
+Gradle files: 3
+Android file: true
+
+Analyzed java files: 4
+Source dirs: 2
+Test dirs: 0
+Dependencies files: 0
+
+JAVA FILES
+D:\Desenvolvimento\Projetos Github\running\umano AndroidSlidingUpPanel\library\src\main\java\com\sothree\slidinguppanel\ScrollableViewHelper.java
+D:\Desenvolvimento\Projetos Github\running\umano AndroidSlidingUpPanel\library\src\main\java\com\sothree\slidinguppanel\SlidingUpPanelLayout.java
+D:\Desenvolvimento\Projetos Github\running\umano AndroidSlidingUpPanel\library\src\main\java\com\sothree\slidinguppanel\ViewDragHelper.java
+D:\Desenvolvimento\Projetos Github\running\umano AndroidSlidingUpPanel\demo\src\main\java\com\sothree\slidinguppanel\demo\DemoActivity.java
+
+JAR FILES
+D:\Desenvolvimento\Projetos Github\running\umano AndroidSlidingUpPanel\gradle\wrapper\gradle-wrapper.jar
+
+MAVEN FILES
+
+GRADLE FILES
+D:\Desenvolvimento\Projetos Github\running\umano AndroidSlidingUpPanel\build.gradle
+D:\Desenvolvimento\Projetos Github\running\umano AndroidSlidingUpPanel\library\build.gradle
+D:\Desenvolvimento\Projetos Github\running\umano AndroidSlidingUpPanel\demo\build.gradle
+
+ANDROID MANIFEST FILE
+D:\Desenvolvimento\Projetos Github\running\umano AndroidSlidingUpPanel\demo\src\main\AndroidManifest.xml
+
+ANALYZED JAVA FILES
+D:\Desenvolvimento\Projetos Github\running\umano AndroidSlidingUpPanel\library\src\main\java\com\sothree\slidinguppanel\ScrollableViewHelper.java
+D:\Desenvolvimento\Projetos Github\running\umano AndroidSlidingUpPanel\library\src\main\java\com\sothree\slidinguppanel\SlidingUpPanelLayout.java
+D:\Desenvolvimento\Projetos Github\running\umano AndroidSlidingUpPanel\library\src\main\java\com\sothree\slidinguppanel\ViewDragHelper.java
+D:\Desenvolvimento\Projetos Github\running\umano AndroidSlidingUpPanel\demo\src\main\java\com\sothree\slidinguppanel\demo\DemoActivity.java
+
+SOURCE DIRECTORIES
+D:\Desenvolvimento\Projetos Github\running\umano AndroidSlidingUpPanel\library\src\main\java
+D:\Desenvolvimento\Projetos Github\running\umano AndroidSlidingUpPanel\demo\src\main\java
+
+TEST DIRECTORIES
+
+DEPENDENCIES
+

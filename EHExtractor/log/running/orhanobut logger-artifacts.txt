@@ -1,0 +1,74 @@
+Java files: 24
+Jar files: 1
+Maven files: 0
+Gradle files: 3
+Android file: true
+
+Analyzed java files: 14
+Source dirs: 2
+Test dirs: 0
+Dependencies files: 0
+
+JAVA FILES
+D:\Desenvolvimento\Projetos Github\running\orhanobut logger\sample\src\main\java\com\orhanobut\sample\MainActivity.java
+D:\Desenvolvimento\Projetos Github\running\orhanobut logger\logger\src\test\java\com.orhanobut.logger\AndroidLogAdapterTest.java
+D:\Desenvolvimento\Projetos Github\running\orhanobut logger\logger\src\test\java\com.orhanobut.logger\CsvFormatStrategyTest.java
+D:\Desenvolvimento\Projetos Github\running\orhanobut logger\logger\src\test\java\com.orhanobut.logger\DiskLogAdapterTest.java
+D:\Desenvolvimento\Projetos Github\running\orhanobut logger\logger\src\test\java\com.orhanobut.logger\DiskLogStrategyTest.java
+D:\Desenvolvimento\Projetos Github\running\orhanobut logger\logger\src\test\java\com.orhanobut.logger\LogAssert.java
+D:\Desenvolvimento\Projetos Github\running\orhanobut logger\logger\src\test\java\com.orhanobut.logger\LogcatLogStrategyTest.java
+D:\Desenvolvimento\Projetos Github\running\orhanobut logger\logger\src\test\java\com.orhanobut.logger\LoggerPrinterTest.java
+D:\Desenvolvimento\Projetos Github\running\orhanobut logger\logger\src\test\java\com.orhanobut.logger\LoggerTest.java
+D:\Desenvolvimento\Projetos Github\running\orhanobut logger\logger\src\test\java\com.orhanobut.logger\PrettyFormatStrategyTest.java
+D:\Desenvolvimento\Projetos Github\running\orhanobut logger\logger\src\test\java\com.orhanobut.logger\UtilsTest.java
+D:\Desenvolvimento\Projetos Github\running\orhanobut logger\logger\src\main\java\com\orhanobut\logger\AndroidLogAdapter.java
+D:\Desenvolvimento\Projetos Github\running\orhanobut logger\logger\src\main\java\com\orhanobut\logger\CsvFormatStrategy.java
+D:\Desenvolvimento\Projetos Github\running\orhanobut logger\logger\src\main\java\com\orhanobut\logger\DiskLogAdapter.java
+D:\Desenvolvimento\Projetos Github\running\orhanobut logger\logger\src\main\java\com\orhanobut\logger\DiskLogStrategy.java
+D:\Desenvolvimento\Projetos Github\running\orhanobut logger\logger\src\main\java\com\orhanobut\logger\FormatStrategy.java
+D:\Desenvolvimento\Projetos Github\running\orhanobut logger\logger\src\main\java\com\orhanobut\logger\LogAdapter.java
+D:\Desenvolvimento\Projetos Github\running\orhanobut logger\logger\src\main\java\com\orhanobut\logger\LogcatLogStrategy.java
+D:\Desenvolvimento\Projetos Github\running\orhanobut logger\logger\src\main\java\com\orhanobut\logger\Logger.java
+D:\Desenvolvimento\Projetos Github\running\orhanobut logger\logger\src\main\java\com\orhanobut\logger\LoggerPrinter.java
+D:\Desenvolvimento\Projetos Github\running\orhanobut logger\logger\src\main\java\com\orhanobut\logger\LogStrategy.java
+D:\Desenvolvimento\Projetos Github\running\orhanobut logger\logger\src\main\java\com\orhanobut\logger\PrettyFormatStrategy.java
+D:\Desenvolvimento\Projetos Github\running\orhanobut logger\logger\src\main\java\com\orhanobut\logger\Printer.java
+D:\Desenvolvimento\Projetos Github\running\orhanobut logger\logger\src\main\java\com\orhanobut\logger\Utils.java
+
+JAR FILES
+D:\Desenvolvimento\Projetos Github\running\orhanobut logger\gradle\wrapper\gradle-wrapper.jar
+
+MAVEN FILES
+
+GRADLE FILES
+D:\Desenvolvimento\Projetos Github\running\orhanobut logger\build.gradle
+D:\Desenvolvimento\Projetos Github\running\orhanobut logger\sample\build.gradle
+D:\Desenvolvimento\Projetos Github\running\orhanobut logger\logger\build.gradle
+
+ANDROID MANIFEST FILE
+D:\Desenvolvimento\Projetos Github\running\orhanobut logger\logger\src\main\AndroidManifest.xml
+
+ANALYZED JAVA FILES
+D:\Desenvolvimento\Projetos Github\running\orhanobut logger\sample\src\main\java\com\orhanobut\sample\MainActivity.java
+D:\Desenvolvimento\Projetos Github\running\orhanobut logger\logger\src\main\java\com\orhanobut\logger\AndroidLogAdapter.java
+D:\Desenvolvimento\Projetos Github\running\orhanobut logger\logger\src\main\java\com\orhanobut\logger\CsvFormatStrategy.java
+D:\Desenvolvimento\Projetos Github\running\orhanobut logger\logger\src\main\java\com\orhanobut\logger\DiskLogAdapter.java
+D:\Desenvolvimento\Projetos Github\running\orhanobut logger\logger\src\main\java\com\orhanobut\logger\DiskLogStrategy.java
+D:\Desenvolvimento\Projetos Github\running\orhanobut logger\logger\src\main\java\com\orhanobut\logger\FormatStrategy.java
+D:\Desenvolvimento\Projetos Github\running\orhanobut logger\logger\src\main\java\com\orhanobut\logger\LogAdapter.java
+D:\Desenvolvimento\Projetos Github\running\orhanobut logger\logger\src\main\java\com\orhanobut\logger\LogcatLogStrategy.java
+D:\Desenvolvimento\Projetos Github\running\orhanobut logger\logger\src\main\java\com\orhanobut\logger\Logger.java
+D:\Desenvolvimento\Projetos Github\running\orhanobut logger\logger\src\main\java\com\orhanobut\logger\LoggerPrinter.java
+D:\Desenvolvimento\Projetos Github\running\orhanobut logger\logger\src\main\java\com\orhanobut\logger\LogStrategy.java
+D:\Desenvolvimento\Projetos Github\running\orhanobut logger\logger\src\main\java\com\orhanobut\logger\PrettyFormatStrategy.java
+D:\Desenvolvimento\Projetos Github\running\orhanobut logger\logger\src\main\java\com\orhanobut\logger\Printer.java
+D:\Desenvolvimento\Projetos Github\running\orhanobut logger\logger\src\main\java\com\orhanobut\logger\Utils.java
+
+SOURCE DIRECTORIES
+D:\Desenvolvimento\Projetos Github\running\orhanobut logger\sample\src\main\java
+D:\Desenvolvimento\Projetos Github\running\orhanobut logger\logger\src\main\java
+
+TEST DIRECTORIES
+
+DEPENDENCIES
+

@@ -1,0 +1,96 @@
+Maven errors: 0
+Gradle errors: 0
+Unsolved types: 63
+Unsupported errors: 3
+Unknown ancestral: 0
+Unknown signaler: 8
+
+GENERAL ERRORS
+Falha em ArtifactResolver. O arquivo java não possui package declaration. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\test\androidTest\java\org\thoughtcrime\securesms\database\CanonicalAddressDatabaseTest.java
+
+MAVEN ERROR FILES
+
+GRADLE ERROR FILES
+
+UNSOLVED ERROR FILES
+Falha no Analyzer. Classe 'Unsolved symbol : MultiDexApplication' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\ApplicationContext.java
+Falha no Analyzer. Classe 'Unsolved symbol : AppCompatActivity' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\BaseActionBarActivity.java
+Falha no Analyzer. Classe 'Unsolved symbol : AlertDialog' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\ConfirmIdentityDialog.java
+Falha no Analyzer. Classe 'Unsolved symbol : OnRefreshListener' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\ContactSelectionActivity.java
+Falha no Analyzer. Classe 'Unsolved symbol : InvalidMessageException' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\ConversationActivity.java
+Falha no Analyzer. Classe 'Unsolved symbol : OnClickListener' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\DeviceActivity.java
+Falha no Analyzer. Classe 'Unsolved symbol : ListFragment' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\DeviceListFragment.java
+Falha no Analyzer. Classe 'Unsolved symbol : InvalidNumberException' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\GroupCreateActivity.java
+Falha no Analyzer. Classe 'Unsolved symbol : Fragment' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\ImportExportFragment.java
+Falha no Analyzer. Classe 'Unsolved symbol : OnLogSubmittedListener' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\LogSubmitActivity.java
+Falha no Analyzer. Classe 'Unsolved symbol : LoaderCallbacks' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\MessageDetailsActivity.java
+Falha no Analyzer. Classe 'Unsolved symbol : ExpectationFailedException' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\RegistrationProgressActivity.java
+Falha no Analyzer. Classe 'Unsolved symbol : Fragment' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\VerifyIdentityActivity.java
+Falha no Analyzer. Classe 'Unsolved symbol : GeneratedMessage' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\webrtc\WebRtcDataProtos.java
+Falha no Analyzer. Classe 'Unsolved symbol : NumberParseException' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\util\ShortCodeUtil.java
+Falha no Analyzer. Classe 'Unsolved symbol : NumberParseException' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\util\Util.java
+Falha no Analyzer. Classe 'Unsolved symbol : RequirementListener' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\service\MessageRetrievalService.java
+Falha no Analyzer. Classe 'Unsolved symbol : ExpectationFailedException' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\service\RegistrationService.java
+Falha no Analyzer. Classe 'Unsolved symbol : Observer' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\service\WebRtcCallService.java
+Falha no Analyzer. Classe 'Unsolved symbol : WriterException' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\qr\QrCode.java
+Falha no Analyzer. Classe 'Unsolved symbol : ChecksumException' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\qr\ScanningThread.java
+Falha no Analyzer. Classe 'Unsolved symbol : InvalidMessageException' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\providers\PersistentBlobProvider.java
+Falha no Analyzer. Classe 'Unsolved symbol : PreferenceFragment' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\preferences\AdvancedPreferenceFragment.java
+Falha no Analyzer. Classe 'Unsolved symbol : PreferenceFragment' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\preferences\MmsPreferencesFragment.java
+Falha no Analyzer. Classe 'Unsolved symbol : GooglePlayServicesRepairableException' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\mms\AttachmentManager.java
+Falha no Analyzer. Classe 'Unsolved symbol : DataFetcher' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\mms\AttachmentStreamLocalUriFetcher.java
+Falha no Analyzer. Classe 'Unsolved symbol : StreamLocalUriFetcher' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\mms\DecryptableStreamLocalUriFetcher.java
+Falha no Analyzer. Classe 'Unsolved symbol : InvalidHeaderValueException' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\mms\IncomingLegacyMmsConnection.java
+Falha no Analyzer. Classe 'Unsolved symbol : NonSuccessfulResponseCodeException' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\jobs\AttachmentDownloadJob.java
+Falha no Analyzer. Classe 'Unsolved symbol : NonSuccessfulResponseCodeException' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\jobs\AvatarDownloadJob.java
+Falha no Analyzer. Classe 'Unsolved symbol : InvalidKeyIdException' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\jobs\CleanPreKeysJob.java
+Falha no Analyzer. Classe 'Unsolved symbol : InvalidMessageException' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\jobs\MasterSecretDecryptJob.java
+Falha no Analyzer. Classe 'Unsolved symbol : DuplicateMessageException' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\jobs\MmsDownloadJob.java
+Falha no Analyzer. Classe 'Unsolved symbol : InvalidHeaderValueException' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\jobs\MmsSendJob.java
+Falha no Analyzer. Classe 'Unsolved symbol : InvalidNumberException' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\jobs\MultiDeviceContactUpdateJob.java
+Falha no Analyzer. Classe 'Unsolved symbol : InvalidKeyException' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\jobs\MultiDeviceVerifiedUpdateJob.java
+Falha no Analyzer. Classe 'Unsolved symbol : InvalidVersionException' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\jobs\PushContentReceiveJob.java
+Falha no Analyzer. Classe 'Unsolved symbol : InvalidVersionException' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\jobs\PushDecryptJob.java
+Falha no Analyzer. Classe 'Unsolved symbol : InvalidNumberException' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\jobs\PushGroupSendJob.java
+Falha no Analyzer. Classe 'Unsolved symbol : UntrustedIdentityException' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\jobs\PushMediaSendJob.java
+Falha no Analyzer. Classe 'Unsolved symbol : UntrustedIdentityException' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\jobs\PushTextSendJob.java
+Falha no Analyzer. Classe 'Unsolved symbol : InvalidNumberException' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\jobs\RetrieveProfileJob.java
+Falha no Analyzer. Classe 'Unsolved symbol : JobSerializer' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\jobs\persistence\EncryptingJobSerializer.java
+Falha no Analyzer. Classe 'Unsolved symbol : DataFetcher' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\glide\OkHttpStreamFetcher.java
+Falha no Analyzer. Classe 'Unsolved symbol : NumberParseException' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\database\Address.java
+Falha no Analyzer. Classe 'Unsolved symbol : InvalidMessageException' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\database\AttachmentDatabase.java
+Falha no Analyzer. Classe 'Unsolved symbol : InvalidMessageException' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\database\DatabaseFactory.java
+Falha no Analyzer. Classe 'Unsolved symbol : InvalidMessageException' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\database\DraftDatabase.java
+Falha no Analyzer. Classe 'Unsolved symbol : InvalidMessageException' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\database\EncryptingSmsDatabase.java
+Falha no Analyzer. Classe 'Unsolved symbol : InvalidKeyException' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\database\IdentityDatabase.java
+Falha no Analyzer. Classe 'Unsolved symbol : InvalidMessageException' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\database\MmsDatabase.java
+Falha no Analyzer. Classe 'Unsolved symbol : InvalidMessageException' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\database\ThreadDatabase.java
+Falha no Analyzer. Classe 'Unsolved symbol : JsonDeserializer' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\database\documents\IdentityKeyMismatch.java
+Falha no Analyzer. Classe 'Unsolved symbol : InvalidKeyException' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\crypto\AsymmetricMasterCipher.java
+Falha no Analyzer. Classe 'Unsolved symbol : InvalidKeyException' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\crypto\IdentityKeyUtil.java
+Falha no Analyzer. Classe 'Unsolved symbol : InvalidMessageException' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\crypto\MasterCipher.java
+Falha no Analyzer. Classe 'Unsolved symbol : InvalidKeyException' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\crypto\MasterSecretUtil.java
+Falha no Analyzer. Classe 'Unsolved symbol : InvalidKeyException' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\crypto\PreKeyUtil.java
+Falha no Analyzer. Classe 'Unsolved symbol : PreKeyStore' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\crypto\storage\TextSecurePreKeyStore.java
+Falha no Analyzer. Classe 'Unsolved symbol : SessionStore' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\crypto\storage\TextSecureSessionStore.java
+Falha no Analyzer. Classe 'Unsolved symbol : OnCommitContentListener' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\components\ComposeText.java
+Falha no Analyzer. Classe 'Unsolved symbol : LinearLayoutCompat' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\components\KeyboardAwareLinearLayout.java
+Falha no Analyzer. Classe 'Unsolved symbol : Job' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\components\camera\CameraView.java
+
+UNSUPPORTED ERROR FILES
+Falha no Analyzer. UnsupportedOperation ao parsear arquivo. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\crypto\IdentityKeyParcelable.java
+Falha no Analyzer. UnsupportedOperation ao parsear arquivo. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\components\PushRecipientsPanel.java
+Falha no Analyzer. UnsupportedOperation ao parsear arquivo. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\components\reminder\OutdatedBuildReminder.java
+
+UNKNOWN ANCESTRAL
+
+UNKNOWN SIGNALERS
+Falha no Analyzer. Tipo sinalizado não pôde ser resolvido. Sinalização: 'throw new AssertionError();'. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\ConversationFragment.java
+Falha no Analyzer. Tipo sinalizado não pôde ser resolvido. Sinalização: 'throw new AssertionError();'. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\webrtc\PeerConnectionWrapper.java
+Falha no Analyzer. Tipo sinalizado não pôde ser resolvido. Sinalização: 'throw new IOException("Attachment not found");'. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\video\exo\PartDataSource.java
+Falha no Analyzer. Tipo sinalizado não pôde ser resolvido. Sinalização: 'throw new IllegalStateException("this should only be called when the cursor is valid");'. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\database\CursorRecyclerViewAdapter.java
+Falha no Analyzer. Tipo sinalizado não pôde ser resolvido. Sinalização: 'throw new InvalidKeyException("Provided bytes are too short.");'. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\crypto\PublicKey.java
+Falha no Analyzer. Tipo sinalizado não pôde ser resolvido. Sinalização: 'throw new AssertionError("Unknown direction: " + direction);'. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\crypto\storage\TextSecureIdentityKeyStore.java
+Falha no Analyzer. Tipo sinalizado não pôde ser resolvido. Sinalização: 'throw new IllegalStateException("Can't decode without secret");'. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\components\subsampling\AttachmentBitmapDecoder.java
+Falha no Analyzer. Tipo sinalizado não pôde ser resolvido. Sinalização: 'throw new IllegalStateException("No master secret available...");'. File: D:\Desenvolvimento\Projetos Github\running\WhisperSystems Signal-Android\src\org\thoughtcrime\securesms\components\subsampling\AttachmentRegionDecoder.java
+

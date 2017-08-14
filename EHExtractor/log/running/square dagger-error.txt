@@ -1,0 +1,29 @@
+Maven errors: 0
+Gradle errors: 0
+Unsolved types: 4
+Unsupported errors: 0
+Unknown ancestral: 0
+Unknown signaler: 3
+
+GENERAL ERRORS
+Falha em ArtifactResolver. O arquivo java não possui package declaration. File: D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\default-package-injected-type\src\main\java\TestApp.java
+
+MAVEN ERROR FILES
+
+GRADLE ERROR FILES
+
+UNSOLVED ERROR FILES
+Falha no Analyzer. Classe 'Unsolved symbol : AbstractProcessor' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\main\java\dagger\internal\codegen\GraphAnalysisProcessor.java
+Falha no Analyzer. Classe 'Unsolved symbol : AbstractProcessor' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\main\java\dagger\internal\codegen\InjectAdapterProcessor.java
+Falha no Analyzer. Classe 'Unsolved symbol : AbstractProcessor' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\main\java\dagger\internal\codegen\ModuleAdapterProcessor.java
+Falha no Analyzer. Classe 'Unsolved symbol : AbstractProcessor' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\main\java\dagger\internal\codegen\ValidationProcessor.java
+
+UNSUPPORTED ERROR FILES
+
+UNKNOWN ANCESTRAL
+
+UNKNOWN SIGNALERS
+Falha no Analyzer. A sinalização não é de um dos tipos suportados. Sinalização: 'cause instanceof RuntimeException ? (RuntimeException) cause : new RuntimeException(cause)'. File: D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\main\java\dagger\internal\loaders\ReflectiveAtInjectBinding.java
+Falha no Analyzer. Tipo sinalizado não pôde ser resolvido. Sinalização: 'throw new CodeGenerationIncompleteException("Type reported as <any> is likely a not-yet generated parameterized type.");'. File: D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\main\java\dagger\internal\codegen\Util.java
+Falha no Analyzer. Tipo sinalizado não pôde ser resolvido. Sinalização: 'throw AssertionError();'. File: D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\missing-at-inject-constructor\src\main\java\test\TestApp.java
+

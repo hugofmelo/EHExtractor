@@ -1,0 +1,56 @@
+Java files: 9
+Jar files: 1
+Maven files: 0
+Gradle files: 3
+Android file: true
+
+Analyzed java files: 7
+Source dirs: 4
+Test dirs: 2
+Dependencies files: 0
+
+JAVA FILES
+D:\Desenvolvimento\Projetos Github\running\Curzibn Luban\library\src\test\java\top\zibin\luban\ExampleUnitTest.java
+D:\Desenvolvimento\Projetos Github\running\Curzibn Luban\library\src\main\java\top\zibin\luban\Engine.java
+D:\Desenvolvimento\Projetos Github\running\Curzibn Luban\library\src\main\java\top\zibin\luban\Luban.java
+D:\Desenvolvimento\Projetos Github\running\Curzibn Luban\library\src\main\java\top\zibin\luban\OnCompressListener.java
+D:\Desenvolvimento\Projetos Github\running\Curzibn Luban\library\src\androidTest\java\top\zibin\luban\ApplicationTest.java
+D:\Desenvolvimento\Projetos Github\running\Curzibn Luban\example\src\test\java\top\zibin\luban\example\ExampleUnitTest.java
+D:\Desenvolvimento\Projetos Github\running\Curzibn Luban\example\src\main\java\top\zibin\luban\example\MainActivity.java
+D:\Desenvolvimento\Projetos Github\running\Curzibn Luban\example\src\main\java\top\zibin\luban\example\PathUtils.java
+D:\Desenvolvimento\Projetos Github\running\Curzibn Luban\example\src\androidTest\java\top\zibin\luban\example\ApplicationTest.java
+
+JAR FILES
+D:\Desenvolvimento\Projetos Github\running\Curzibn Luban\gradle\wrapper\gradle-wrapper.jar
+
+MAVEN FILES
+
+GRADLE FILES
+D:\Desenvolvimento\Projetos Github\running\Curzibn Luban\build.gradle
+D:\Desenvolvimento\Projetos Github\running\Curzibn Luban\library\build.gradle
+D:\Desenvolvimento\Projetos Github\running\Curzibn Luban\example\build.gradle
+
+ANDROID MANIFEST FILE
+D:\Desenvolvimento\Projetos Github\running\Curzibn Luban\example\src\main\AndroidManifest.xml
+
+ANALYZED JAVA FILES
+D:\Desenvolvimento\Projetos Github\running\Curzibn Luban\library\src\main\java\top\zibin\luban\Engine.java
+D:\Desenvolvimento\Projetos Github\running\Curzibn Luban\library\src\main\java\top\zibin\luban\Luban.java
+D:\Desenvolvimento\Projetos Github\running\Curzibn Luban\library\src\main\java\top\zibin\luban\OnCompressListener.java
+D:\Desenvolvimento\Projetos Github\running\Curzibn Luban\library\src\androidTest\java\top\zibin\luban\ApplicationTest.java
+D:\Desenvolvimento\Projetos Github\running\Curzibn Luban\example\src\main\java\top\zibin\luban\example\MainActivity.java
+D:\Desenvolvimento\Projetos Github\running\Curzibn Luban\example\src\main\java\top\zibin\luban\example\PathUtils.java
+D:\Desenvolvimento\Projetos Github\running\Curzibn Luban\example\src\androidTest\java\top\zibin\luban\example\ApplicationTest.java
+
+SOURCE DIRECTORIES
+D:\Desenvolvimento\Projetos Github\running\Curzibn Luban\library\src\main\java
+D:\Desenvolvimento\Projetos Github\running\Curzibn Luban\library\src\androidTest\java
+D:\Desenvolvimento\Projetos Github\running\Curzibn Luban\example\src\main\java
+D:\Desenvolvimento\Projetos Github\running\Curzibn Luban\example\src\androidTest\java
+
+TEST DIRECTORIES
+D:\Desenvolvimento\Projetos Github\running\Curzibn Luban\library\src\test\java
+D:\Desenvolvimento\Projetos Github\running\Curzibn Luban\example\src\test\java
+
+DEPENDENCIES
+

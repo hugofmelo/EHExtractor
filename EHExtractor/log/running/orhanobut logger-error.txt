@@ -1,0 +1,31 @@
+Maven errors: 0
+Gradle errors: 0
+Unsolved types: 0
+Unsupported errors: 0
+Unknown ancestral: 0
+Unknown signaler: 0
+
+GENERAL ERRORS
+Falha em ArtifactResolver. O arquivo java não é válido. File: D:\Desenvolvimento\Projetos Github\running\orhanobut logger\logger\src\test\java\com.orhanobut.logger\AndroidLogAdapterTest.java
+Falha em ArtifactResolver. O arquivo java não é válido. File: D:\Desenvolvimento\Projetos Github\running\orhanobut logger\logger\src\test\java\com.orhanobut.logger\CsvFormatStrategyTest.java
+Falha em ArtifactResolver. O arquivo java não é válido. File: D:\Desenvolvimento\Projetos Github\running\orhanobut logger\logger\src\test\java\com.orhanobut.logger\DiskLogAdapterTest.java
+Falha em ArtifactResolver. O arquivo java não é válido. File: D:\Desenvolvimento\Projetos Github\running\orhanobut logger\logger\src\test\java\com.orhanobut.logger\DiskLogStrategyTest.java
+Falha em ArtifactResolver. O arquivo java não é válido. File: D:\Desenvolvimento\Projetos Github\running\orhanobut logger\logger\src\test\java\com.orhanobut.logger\LogAssert.java
+Falha em ArtifactResolver. O arquivo java não é válido. File: D:\Desenvolvimento\Projetos Github\running\orhanobut logger\logger\src\test\java\com.orhanobut.logger\LogcatLogStrategyTest.java
+Falha em ArtifactResolver. O arquivo java não é válido. File: D:\Desenvolvimento\Projetos Github\running\orhanobut logger\logger\src\test\java\com.orhanobut.logger\LoggerPrinterTest.java
+Falha em ArtifactResolver. O arquivo java não é válido. File: D:\Desenvolvimento\Projetos Github\running\orhanobut logger\logger\src\test\java\com.orhanobut.logger\LoggerTest.java
+Falha em ArtifactResolver. O arquivo java não é válido. File: D:\Desenvolvimento\Projetos Github\running\orhanobut logger\logger\src\test\java\com.orhanobut.logger\PrettyFormatStrategyTest.java
+Falha em ArtifactResolver. O arquivo java não é válido. File: D:\Desenvolvimento\Projetos Github\running\orhanobut logger\logger\src\test\java\com.orhanobut.logger\UtilsTest.java
+
+MAVEN ERROR FILES
+
+GRADLE ERROR FILES
+
+UNSOLVED ERROR FILES
+
+UNSUPPORTED ERROR FILES
+
+UNKNOWN ANCESTRAL
+
+UNKNOWN SIGNALERS
+

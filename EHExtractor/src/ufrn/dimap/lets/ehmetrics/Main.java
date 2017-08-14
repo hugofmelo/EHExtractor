@@ -22,7 +22,8 @@ public class Main
 		
 		try
 		{
-			main.execute();			
+			main.execute();
+			//main.generateDependenciesFiles();
 		}
 		catch (IOException e)
 		{
@@ -69,7 +70,7 @@ public class Main
 			
 			System.out.println("Resolvendo artefatos e dependencias...");
 			ProjectArtifacts projectArtifacts = ArtifactResolver.resolve(projectFiles);			
-			
+		
 			// Logging
 			ArtifactLogger.writeReport(project.getName(), projectFiles, projectArtifacts);
 
@@ -80,6 +81,7 @@ public class Main
 			// Logging
 			ModelLogger.writeReport(project.getName(), model);
 			ErrorLogger.writeReport(project.getName());
+
 			ErrorLogger.stop();
 			
 			System.out.println("Finalizada a analise do projeto " + project.getName() + ".");
@@ -87,6 +89,40 @@ public class Main
 		}
 
 		ModelLogger.stop();
+
+		System.out.println("FINALIZADO");
+	}
+	
+	public void generateDependenciesFiles() throws IOException
+	{
+		System.out.println("Identificando projetos para analise...");
+		List<File> projects = ProjectsUtil.listProjects();
+
+		for ( File project : projects )
+		{
+			System.out.println(project.getName());
+		}
+		System.out.println();
+		System.out.println();
+
+
+		for ( File project : projects )
+		{
+			ErrorLogger.start();
+			
+			System.out.println("****** PROJETO " + project.getName() + " ******");
+			
+			System.out.println("Identificando arquivos...");
+			ProjectFiles projectFiles = FileFinder.find(project);
+			
+			System.out.println("Resolvendo artefatos e dependencias...");
+			ArtifactResolver.resolve(projectFiles);			
+			
+			ErrorLogger.stop();
+			
+			System.out.println("Finalizada a analise do projeto " + project.getName() + ".");
+			System.out.println();	
+		}
 
 		System.out.println("FINALIZADO");
 	}

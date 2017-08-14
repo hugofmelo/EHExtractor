@@ -1,0 +1,316 @@
+Java files: 123
+Jar files: 0
+Maven files: 31
+Gradle files: 0
+Android file: true
+
+Analyzed java files: 86
+Source dirs: 28
+Test dirs: 3
+Dependencies files: 15
+
+JAVA FILES
+D:\Desenvolvimento\Projetos Github\running\square dagger\examples\simple\src\test\java\coffee\CoffeeMakerTest.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\examples\simple\src\main\java\coffee\CoffeeApp.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\examples\simple\src\main\java\coffee\CoffeeMaker.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\examples\simple\src\main\java\coffee\DripCoffeeModule.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\examples\simple\src\main\java\coffee\ElectricHeater.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\examples\simple\src\main\java\coffee\Heater.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\examples\simple\src\main\java\coffee\Pump.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\examples\simple\src\main\java\coffee\PumpModule.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\examples\simple\src\main\java\coffee\Thermosiphon.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\examples\android-simple\src\main\java\com\example\dagger\simple\AndroidModule.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\examples\android-simple\src\main\java\com\example\dagger\simple\DemoApplication.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\examples\android-simple\src\main\java\com\example\dagger\simple\DemoBaseActivity.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\examples\android-simple\src\main\java\com\example\dagger\simple\DemoModule.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\examples\android-simple\src\main\java\com\example\dagger\simple\ForApplication.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\examples\android-simple\src\main\java\com\example\dagger\simple\ui\HomeActivity.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\examples\android-activity-graphs\src\main\java\com\example\dagger\activitygraphs\ActivityModule.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\examples\android-activity-graphs\src\main\java\com\example\dagger\activitygraphs\AndroidModule.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\examples\android-activity-graphs\src\main\java\com\example\dagger\activitygraphs\DemoApplication.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\examples\android-activity-graphs\src\main\java\com\example\dagger\activitygraphs\DemoBaseActivity.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\examples\android-activity-graphs\src\main\java\com\example\dagger\activitygraphs\DemoBaseFragment.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\examples\android-activity-graphs\src\main\java\com\example\dagger\activitygraphs\ForActivity.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\examples\android-activity-graphs\src\main\java\com\example\dagger\activitygraphs\ForApplication.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\examples\android-activity-graphs\src\main\java\com\example\dagger\activitygraphs\ui\ActivityTitleController.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\examples\android-activity-graphs\src\main\java\com\example\dagger\activitygraphs\ui\HomeActivity.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\examples\android-activity-graphs\src\main\java\com\example\dagger\activitygraphs\ui\HomeFragment.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\test\java\dagger\ExtensionTest.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\test\java\dagger\ExtensionWithSetBindingsTest.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\test\java\dagger\ExtensionWithStateTest.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\test\java\dagger\InjectionOfLazyTest.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\test\java\dagger\InjectionTest.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\test\java\dagger\InjectStaticsTest.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\test\java\dagger\LazyInjectionTest.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\test\java\dagger\MembersInjectorTest.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\test\java\dagger\ModuleTest.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\test\java\dagger\ProblemDetectorTest.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\test\java\dagger\SetBindingTest.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\test\java\dagger\ThreadSafetyTest.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\test\java\dagger\UnusedProviderTest.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\test\java\dagger\internal\FailoverLoaderTest.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\test\java\dagger\internal\KeysTest.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\test\java\dagger\internal\SingletonBindingTest.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\test\java\dagger\internal\TestingLoader.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\test\java\dagger\internal\TestingModuleAdapter.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\main\java\dagger\Lazy.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\main\java\dagger\MembersInjector.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\main\java\dagger\Module.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\main\java\dagger\ObjectGraph.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\main\java\dagger\Provides.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\main\java\dagger\internal\ArrayQueue.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\main\java\dagger\internal\Binding.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\main\java\dagger\internal\BindingsGroup.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\main\java\dagger\internal\BuiltInBinding.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\main\java\dagger\internal\FailoverLoader.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\main\java\dagger\internal\Keys.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\main\java\dagger\internal\LazyBinding.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\main\java\dagger\internal\Linker.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\main\java\dagger\internal\Loader.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\main\java\dagger\internal\Memoizer.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\main\java\dagger\internal\ModuleAdapter.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\main\java\dagger\internal\Modules.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\main\java\dagger\internal\ProblemDetector.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\main\java\dagger\internal\ProvidesBinding.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\main\java\dagger\internal\SetBinding.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\main\java\dagger\internal\StaticInjection.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\main\java\dagger\internal\ThrowingErrorHandler.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\main\java\dagger\internal\loaders\GeneratedAdapters.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\main\java\dagger\internal\loaders\ReflectiveAtInjectBinding.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\main\java\dagger\internal\loaders\ReflectiveStaticInjection.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\test\java\dagger\tests\integration\ProcessorTestUtils.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\test\java\dagger\tests\integration\validation\CyclicDependencyTest.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\test\java\dagger\tests\integration\validation\CyclicModuleIncludesTest.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\test\java\dagger\tests\integration\validation\GeneratedTypesNotReadyTest.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\test\java\dagger\tests\integration\validation\LibraryModuleTest.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\test\java\dagger\tests\integration\validation\ScopeAnnotationUseTest.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\test\java\dagger\tests\integration\validation\SimpleMissingDependencyTest.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\test\java\dagger\tests\integration\operation\FailureModeErrorsTest.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\test\java\dagger\tests\integration\operation\PrimitiveInjectionTest.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\test\java\dagger\tests\integration\operation\SimpleInjectionTest.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\test\java\dagger\tests\integration\codegen\GenericInjectAdapterGenerationTest.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\test\java\dagger\tests\integration\codegen\InjectAdapterGenerationTest.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\test\java\dagger\tests\integration\codegen\ModuleAdapterGenerationTest.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\test\java\dagger\testing\it\BuildLogValidator.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\test\java\dagger\internal\codegen\DotWriterTest.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\test\java\dagger\internal\codegen\GraphAnalysisLoaderTest.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\test\java\dagger\internal\codegen\GraphVisualizerTest.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\main\java\dagger\internal\codegen\AdapterJavadocs.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\main\java\dagger\internal\codegen\GeneratorKeys.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\main\java\dagger\internal\codegen\GraphAnalysisErrorHandler.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\main\java\dagger\internal\codegen\GraphAnalysisInjectBinding.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\main\java\dagger\internal\codegen\GraphAnalysisLoader.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\main\java\dagger\internal\codegen\GraphAnalysisProcessor.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\main\java\dagger\internal\codegen\GraphAnalysisStaticInjection.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\main\java\dagger\internal\codegen\GraphVisualizer.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\main\java\dagger\internal\codegen\GraphVizWriter.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\main\java\dagger\internal\codegen\InjectAdapterProcessor.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\main\java\dagger\internal\codegen\ModuleAdapterProcessor.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\main\java\dagger\internal\codegen\Util.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\main\java\dagger\internal\codegen\ValidationProcessor.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\valid-use-of-qualifiers\src\main\java\test\TestApp.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\uninjectable-supertype\src\main\java\test\TestApp.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\static-injected-binding-doesnt-fail-providers\src\main\java\test\Test.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\same-provides-method-name\src\main\java\test\TestApp.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\qualifiers-on-invalid-elements-warnings\src\main\java\test\TestApp.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\qualifiers-on-invalid-elements-errors\src\main\java\test\TestApp.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\provides-method-with-throws-clause\src\main\java\test\TestApp.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\provides-method-not-in-module\src\main\java\test\TestApp.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\provide-provider-or-lazy\src\main\java\test\TestModule.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\private-inject\src\main\java\test\TestApp.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\private-inject\src\main\java\test\TestFoo.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\multiple-qualifiers\src\main\java\test\TestApp.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\multiple-provides-methods\src\main\java\test\TestApp.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\multiple-modules-setvalues\src\main\java\test\TestApp.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\module-type-validation\src\main\java\test\TestModule.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\missing-at-inject-constructor\src\main\java\test\TestApp.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\method-injection\src\main\java\test\TestApp.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\inner-classes-complaint-injection\src\main\java\test\TestApp.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\inject-parameterized-type\src\main\java\test\TestApp.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\inject-on-class\src\main\java\test\TestApp.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\include-non-module\src\main\java\test\TestApp.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\final-field-inject\src\main\java\test\TestApp.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\extension-graph-setvalues\src\main\java\test\TestApp.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\extension-graph\src\main\java\test\TestApp.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\default-package-injected-type\src\main\java\TestApp.java
+
+JAR FILES
+
+MAVEN FILES
+D:\Desenvolvimento\Projetos Github\running\square dagger\pom.xml
+D:\Desenvolvimento\Projetos Github\running\square dagger\examples\pom.xml
+D:\Desenvolvimento\Projetos Github\running\square dagger\examples\simple\pom.xml
+D:\Desenvolvimento\Projetos Github\running\square dagger\examples\android-simple\pom.xml
+D:\Desenvolvimento\Projetos Github\running\square dagger\examples\android-activity-graphs\pom.xml
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\pom.xml
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\pom.xml
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\valid-use-of-qualifiers\pom.xml
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\uninjectable-supertype\pom.xml
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\static-injected-binding-doesnt-fail-providers\pom.xml
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\same-provides-method-name\pom.xml
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\qualifiers-on-invalid-elements-warnings\pom.xml
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\qualifiers-on-invalid-elements-errors\pom.xml
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\provides-method-with-throws-clause\pom.xml
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\provides-method-not-in-module\pom.xml
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\provide-provider-or-lazy\pom.xml
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\private-inject\pom.xml
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\multiple-qualifiers\pom.xml
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\multiple-provides-methods\pom.xml
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\multiple-modules-setvalues\pom.xml
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\module-type-validation\pom.xml
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\missing-at-inject-constructor\pom.xml
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\method-injection\pom.xml
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\inner-classes-complaint-injection\pom.xml
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\inject-parameterized-type\pom.xml
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\inject-on-class\pom.xml
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\include-non-module\pom.xml
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\final-field-inject\pom.xml
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\extension-graph-setvalues\pom.xml
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\extension-graph\pom.xml
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\default-package-injected-type\pom.xml
+
+GRADLE FILES
+
+ANDROID MANIFEST FILE
+D:\Desenvolvimento\Projetos Github\running\square dagger\examples\android-activity-graphs\src\main\AndroidManifest.xml
+
+ANALYZED JAVA FILES
+D:\Desenvolvimento\Projetos Github\running\square dagger\examples\simple\src\main\java\coffee\CoffeeApp.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\examples\simple\src\main\java\coffee\CoffeeMaker.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\examples\simple\src\main\java\coffee\DripCoffeeModule.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\examples\simple\src\main\java\coffee\ElectricHeater.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\examples\simple\src\main\java\coffee\Heater.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\examples\simple\src\main\java\coffee\Pump.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\examples\simple\src\main\java\coffee\PumpModule.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\examples\simple\src\main\java\coffee\Thermosiphon.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\examples\android-simple\src\main\java\com\example\dagger\simple\AndroidModule.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\examples\android-simple\src\main\java\com\example\dagger\simple\DemoApplication.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\examples\android-simple\src\main\java\com\example\dagger\simple\DemoBaseActivity.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\examples\android-simple\src\main\java\com\example\dagger\simple\DemoModule.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\examples\android-simple\src\main\java\com\example\dagger\simple\ForApplication.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\examples\android-simple\src\main\java\com\example\dagger\simple\ui\HomeActivity.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\examples\android-activity-graphs\src\main\java\com\example\dagger\activitygraphs\ActivityModule.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\examples\android-activity-graphs\src\main\java\com\example\dagger\activitygraphs\AndroidModule.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\examples\android-activity-graphs\src\main\java\com\example\dagger\activitygraphs\DemoApplication.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\examples\android-activity-graphs\src\main\java\com\example\dagger\activitygraphs\DemoBaseActivity.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\examples\android-activity-graphs\src\main\java\com\example\dagger\activitygraphs\DemoBaseFragment.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\examples\android-activity-graphs\src\main\java\com\example\dagger\activitygraphs\ForActivity.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\examples\android-activity-graphs\src\main\java\com\example\dagger\activitygraphs\ForApplication.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\examples\android-activity-graphs\src\main\java\com\example\dagger\activitygraphs\ui\ActivityTitleController.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\examples\android-activity-graphs\src\main\java\com\example\dagger\activitygraphs\ui\HomeActivity.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\examples\android-activity-graphs\src\main\java\com\example\dagger\activitygraphs\ui\HomeFragment.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\main\java\dagger\Lazy.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\main\java\dagger\MembersInjector.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\main\java\dagger\Module.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\main\java\dagger\ObjectGraph.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\main\java\dagger\Provides.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\main\java\dagger\internal\ArrayQueue.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\main\java\dagger\internal\Binding.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\main\java\dagger\internal\BindingsGroup.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\main\java\dagger\internal\BuiltInBinding.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\main\java\dagger\internal\FailoverLoader.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\main\java\dagger\internal\Keys.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\main\java\dagger\internal\LazyBinding.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\main\java\dagger\internal\Linker.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\main\java\dagger\internal\Loader.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\main\java\dagger\internal\Memoizer.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\main\java\dagger\internal\ModuleAdapter.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\main\java\dagger\internal\Modules.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\main\java\dagger\internal\ProblemDetector.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\main\java\dagger\internal\ProvidesBinding.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\main\java\dagger\internal\SetBinding.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\main\java\dagger\internal\StaticInjection.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\main\java\dagger\internal\ThrowingErrorHandler.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\main\java\dagger\internal\loaders\GeneratedAdapters.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\main\java\dagger\internal\loaders\ReflectiveAtInjectBinding.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\main\java\dagger\internal\loaders\ReflectiveStaticInjection.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\main\java\dagger\internal\codegen\AdapterJavadocs.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\main\java\dagger\internal\codegen\GeneratorKeys.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\main\java\dagger\internal\codegen\GraphAnalysisErrorHandler.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\main\java\dagger\internal\codegen\GraphAnalysisInjectBinding.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\main\java\dagger\internal\codegen\GraphAnalysisLoader.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\main\java\dagger\internal\codegen\GraphAnalysisProcessor.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\main\java\dagger\internal\codegen\GraphAnalysisStaticInjection.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\main\java\dagger\internal\codegen\GraphVisualizer.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\main\java\dagger\internal\codegen\GraphVizWriter.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\main\java\dagger\internal\codegen\InjectAdapterProcessor.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\main\java\dagger\internal\codegen\ModuleAdapterProcessor.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\main\java\dagger\internal\codegen\Util.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\main\java\dagger\internal\codegen\ValidationProcessor.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\valid-use-of-qualifiers\src\main\java\test\TestApp.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\uninjectable-supertype\src\main\java\test\TestApp.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\static-injected-binding-doesnt-fail-providers\src\main\java\test\Test.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\same-provides-method-name\src\main\java\test\TestApp.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\qualifiers-on-invalid-elements-warnings\src\main\java\test\TestApp.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\qualifiers-on-invalid-elements-errors\src\main\java\test\TestApp.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\provides-method-with-throws-clause\src\main\java\test\TestApp.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\provides-method-not-in-module\src\main\java\test\TestApp.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\provide-provider-or-lazy\src\main\java\test\TestModule.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\private-inject\src\main\java\test\TestApp.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\private-inject\src\main\java\test\TestFoo.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\multiple-qualifiers\src\main\java\test\TestApp.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\multiple-provides-methods\src\main\java\test\TestApp.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\multiple-modules-setvalues\src\main\java\test\TestApp.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\module-type-validation\src\main\java\test\TestModule.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\missing-at-inject-constructor\src\main\java\test\TestApp.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\method-injection\src\main\java\test\TestApp.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\inner-classes-complaint-injection\src\main\java\test\TestApp.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\inject-parameterized-type\src\main\java\test\TestApp.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\inject-on-class\src\main\java\test\TestApp.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\include-non-module\src\main\java\test\TestApp.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\final-field-inject\src\main\java\test\TestApp.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\extension-graph-setvalues\src\main\java\test\TestApp.java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\extension-graph\src\main\java\test\TestApp.java
+
+SOURCE DIRECTORIES
+D:\Desenvolvimento\Projetos Github\running\square dagger\examples\simple\src\main\java
+D:\Desenvolvimento\Projetos Github\running\square dagger\examples\android-simple\src\main\java
+D:\Desenvolvimento\Projetos Github\running\square dagger\examples\android-activity-graphs\src\main\java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\main\java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\main\java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\valid-use-of-qualifiers\src\main\java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\uninjectable-supertype\src\main\java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\static-injected-binding-doesnt-fail-providers\src\main\java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\same-provides-method-name\src\main\java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\qualifiers-on-invalid-elements-warnings\src\main\java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\qualifiers-on-invalid-elements-errors\src\main\java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\provides-method-with-throws-clause\src\main\java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\provides-method-not-in-module\src\main\java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\provide-provider-or-lazy\src\main\java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\private-inject\src\main\java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\multiple-qualifiers\src\main\java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\multiple-provides-methods\src\main\java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\multiple-modules-setvalues\src\main\java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\module-type-validation\src\main\java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\missing-at-inject-constructor\src\main\java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\method-injection\src\main\java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\inner-classes-complaint-injection\src\main\java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\inject-parameterized-type\src\main\java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\inject-on-class\src\main\java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\include-non-module\src\main\java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\final-field-inject\src\main\java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\extension-graph-setvalues\src\main\java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\it\extension-graph\src\main\java
+
+TEST DIRECTORIES
+D:\Desenvolvimento\Projetos Github\running\square dagger\examples\simple\src\test\java
+D:\Desenvolvimento\Projetos Github\running\square dagger\core\src\test\java
+D:\Desenvolvimento\Projetos Github\running\square dagger\compiler\src\test\java
+
+DEPENDENCIES
+C:\Users\Hugo\.m2\repository\com\squareup\dagger\dagger\1.2.6-SNAPSHOT\dagger-1.2.6-SNAPSHOT.jar
+C:\Users\Hugo\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar
+C:\Users\Hugo\.m2\repository\org\khronos\opengl-api\gl1.1-android-2.1_r1\opengl-api-gl1.1-android-2.1_r1.jar
+C:\Users\Hugo\.m2\repository\org\json\json\20080701\json-20080701.jar
+C:\Users\Hugo\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar
+C:\Users\Hugo\.m2\repository\com\google\guava\guava\19.0\guava-19.0.jar
+C:\Users\Hugo\.m2\repository\xerces\xmlParserAPIs\2.6.2\xmlParserAPIs-2.6.2.jar
+C:\Users\Hugo\.m2\repository\com\squareup\javapoet\1.7.0\javapoet-1.7.0.jar
+C:\Users\Hugo\.m2\repository\commons-codec\commons-codec\1.3\commons-codec-1.3.jar
+C:\Users\Hugo\.m2\repository\com\squareup\dagger\dagger-compiler\1.2.6-SNAPSHOT\dagger-compiler-1.2.6-SNAPSHOT.jar
+C:\Users\Hugo\.m2\repository\org\apache\httpcomponents\httpcore\4.0.1\httpcore-4.0.1.jar
+C:\Users\Hugo\.m2\repository\com\google\android\support-v4\r7\support-v4-r7.jar
+C:\Users\Hugo\.m2\repository\xpp3\xpp3\1.1.4c\xpp3-1.1.4c.jar
+C:\Users\Hugo\.m2\repository\org\apache\httpcomponents\httpclient\4.0.1\httpclient-4.0.1.jar
+C:\Users\Hugo\.m2\repository\com\google\android\android\4.1.1.4\android-4.1.1.4.jar
+

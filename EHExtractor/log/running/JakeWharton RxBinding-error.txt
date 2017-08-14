@@ -1,0 +1,37 @@
+Maven errors: 0
+Gradle errors: 0
+Unsolved types: 14
+Unsupported errors: 0
+Unknown ancestral: 0
+Unknown signaler: 2
+
+GENERAL ERRORS
+
+MAVEN ERROR FILES
+
+GRADLE ERROR FILES
+
+UNSOLVED ERROR FILES
+Falha no Analyzer. Classe 'Unsolved symbol : DisposableObserver' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\JakeWharton RxBinding\testing-utils\src\main\java\com\jakewharton\rxbinding2\RecordingObserver.java
+Falha no Analyzer. Classe 'Unsolved symbol : Observable' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\JakeWharton RxBinding\rxbinding-support-v4\src\main\java\com\jakewharton\rxbinding2\support\v4\view\MenuItemActionViewEventObservable.java
+Falha no Analyzer. Classe 'Unsolved symbol : Observable' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\JakeWharton RxBinding\rxbinding\src\main\java\com\jakewharton\rxbinding2\widget\AdapterViewItemLongClickEventObservable.java
+Falha no Analyzer. Classe 'Unsolved symbol : Observable' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\JakeWharton RxBinding\rxbinding\src\main\java\com\jakewharton\rxbinding2\widget\AdapterViewItemLongClickObservable.java
+Falha no Analyzer. Classe 'Unsolved symbol : Observable' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\JakeWharton RxBinding\rxbinding\src\main\java\com\jakewharton\rxbinding2\widget\TextViewEditorActionEventObservable.java
+Falha no Analyzer. Classe 'Unsolved symbol : Observable' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\JakeWharton RxBinding\rxbinding\src\main\java\com\jakewharton\rxbinding2\widget\TextViewEditorActionObservable.java
+Falha no Analyzer. Classe 'Unsolved symbol : Observable' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\JakeWharton RxBinding\rxbinding\src\main\java\com\jakewharton\rxbinding2\view\MenuItemActionViewEventObservable.java
+Falha no Analyzer. Classe 'Unsolved symbol : Observable' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\JakeWharton RxBinding\rxbinding\src\main\java\com\jakewharton\rxbinding2\view\MenuItemClickOnSubscribe.java
+Falha no Analyzer. Classe 'Unsolved symbol : Observable' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\JakeWharton RxBinding\rxbinding\src\main\java\com\jakewharton\rxbinding2\view\ViewDragObservable.java
+Falha no Analyzer. Classe 'Unsolved symbol : Observable' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\JakeWharton RxBinding\rxbinding\src\main\java\com\jakewharton\rxbinding2\view\ViewHoverObservable.java
+Falha no Analyzer. Classe 'Unsolved symbol : Observable' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\JakeWharton RxBinding\rxbinding\src\main\java\com\jakewharton\rxbinding2\view\ViewKeyObservable.java
+Falha no Analyzer. Classe 'Unsolved symbol : Observable' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\JakeWharton RxBinding\rxbinding\src\main\java\com\jakewharton\rxbinding2\view\ViewLongClickObservable.java
+Falha no Analyzer. Classe 'Unsolved symbol : Observable' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\JakeWharton RxBinding\rxbinding\src\main\java\com\jakewharton\rxbinding2\view\ViewTouchObservable.java
+Falha no Analyzer. Classe 'Unsolved symbol : Observable' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\JakeWharton RxBinding\rxbinding\src\main\java\com\jakewharton\rxbinding2\view\ViewTreeObserverPreDrawObservable.java
+
+UNSUPPORTED ERROR FILES
+
+UNKNOWN ANCESTRAL
+
+UNKNOWN SIGNALERS
+Falha no Analyzer. Tipo sinalizado não pôde ser resolvido. Sinalização: 'throw new IllegalArgumentException("No tab for index " + index);'. File: D:\Desenvolvimento\Projetos Github\running\JakeWharton RxBinding\rxbinding-design\src\main\java\com\jakewharton\rxbinding2\support\design\widget\RxTabLayout.java
+Falha no Analyzer. Tipo sinalizado não pôde ser resolvido. Sinalização: 'throw new IllegalArgumentException("The view is not in a Coordinator Layout.");'. File: D:\Desenvolvimento\Projetos Github\running\JakeWharton RxBinding\rxbinding-design\src\main\java\com\jakewharton\rxbinding2\support\design\widget\SwipeDismissBehaviorObservable.java
+

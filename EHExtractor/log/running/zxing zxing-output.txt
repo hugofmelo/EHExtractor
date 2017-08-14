@@ -1,0 +1,43 @@
+EXCEPTION HIERARCHY
+java.lang.Throwable
+	java.lang.Exception
+		java.lang.RuntimeException
+			java.lang.IllegalArgumentException
+				java.lang.NumberFormatException
+			java.lang.NullPointerException
+			java.lang.IllegalStateException
+			java.lang.IndexOutOfBoundsException
+				java.lang.ArrayIndexOutOfBoundsException
+				java.lang.StringIndexOutOfBoundsException
+				android.database.CursorIndexOutOfBoundsException
+			java.lang.UnsupportedOperationException
+			java.lang.ArithmeticException
+			android.content.ActivityNotFoundException
+			java.util.concurrent.RejectedExecutionException
+			android.database.SQLException
+			java.lang.SecurityException
+		com.google.zxing.WriterException
+		java.io.IOException
+			java.net.MalformedURLException
+			java.io.UnsupportedEncodingException
+			java.io.FileNotFoundException
+		java.net.URISyntaxException
+		com.google.zxing.web.generator.client.GeneratorException
+		javax.xml.parsers.ParserConfigurationException
+		org.xml.sax.SAXException
+		java.lang.ReflectiveOperationException
+			java.lang.ClassNotFoundException
+			java.lang.InstantiationException
+			java.lang.IllegalAccessException
+			java.lang.NoSuchMethodException
+			java.lang.reflect.InvocationTargetException
+		com.google.zxing.ReaderException
+			com.google.zxing.NotFoundException
+			com.google.zxing.FormatException
+			com.google.zxing.ChecksumException
+		com.google.zxing.common.reedsolomon.ReedSolomonException
+		java.text.ParseException
+		java.lang.InterruptedException
+		org.json.JSONException
+
+

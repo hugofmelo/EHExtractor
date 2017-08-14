@@ -1,0 +1,32 @@
+Maven errors: 0
+Gradle errors: 0
+Unsolved types: 7
+Unsupported errors: 0
+Unknown ancestral: 0
+Unknown signaler: 4
+
+GENERAL ERRORS
+
+MAVEN ERROR FILES
+
+GRADLE ERROR FILES
+
+UNSOLVED ERROR FILES
+Falha no Analyzer. Classe 'Unsolved symbol : Fragment' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\wyouflf xUtils\sample\src\com\lidroid\xutils\sample\fragment\DbFragment.java
+Falha no Analyzer. Classe 'Unsolved symbol : Fragment' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\wyouflf xUtils\sample\src\com\lidroid\xutils\sample\fragment\HttpFragment.java
+Falha no Analyzer. Classe 'Unsolved symbol : CookieStore' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\wyouflf xUtils\library\src\com\lidroid\xutils\util\PreferencesCookieStore.java
+Falha no Analyzer. Classe 'Unsolved symbol : HttpRequestBase' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\wyouflf xUtils\library\src\com\lidroid\xutils\http\client\HttpRequest.java
+Falha no Analyzer. Classe 'Unsolved symbol : HttpRequestRetryHandler' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\wyouflf xUtils\library\src\com\lidroid\xutils\http\client\RetryHandler.java
+Falha no Analyzer. Classe 'Unsolved symbol : AbstractHttpEntity' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\wyouflf xUtils\library\src\com\lidroid\xutils\http\client\entity\BodyParamsEntity.java
+Falha no Analyzer. Classe 'Unsolved symbol : HttpEntityWrapper' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\wyouflf xUtils\library\src\com\lidroid\xutils\http\client\entity\DecompressingEntity.java
+
+UNSUPPORTED ERROR FILES
+
+UNKNOWN ANCESTRAL
+
+UNKNOWN SIGNALERS
+Falha no Analyzer. Tipo sinalizado não pôde ser resolvido. Sinalização: 'throw new UnsupportedOperationException("Streaming entity does not implement #consumeContent()");'. File: D:\Desenvolvimento\Projetos Github\running\wyouflf xUtils\library\src\com\lidroid\xutils\http\client\multipart\MultipartEntity.java
+Falha no Analyzer. Tipo sinalizado não pôde ser resolvido. Sinalização: 'throw new IllegalArgumentException("Output stream may not be null");'. File: D:\Desenvolvimento\Projetos Github\running\wyouflf xUtils\library\src\com\lidroid\xutils\http\client\entity\FileUploadEntity.java
+Falha no Analyzer. Tipo sinalizado não pôde ser resolvido. Sinalização: 'throw new IllegalArgumentException("Source input stream may not be null");'. File: D:\Desenvolvimento\Projetos Github\running\wyouflf xUtils\library\src\com\lidroid\xutils\http\client\entity\InputStreamUploadEntity.java
+Falha no Analyzer. A sinalização não é de um dos tipos suportados. Sinalização: 'invalidLengths(strings)'. File: D:\Desenvolvimento\Projetos Github\running\wyouflf xUtils\library\src\com\lidroid\xutils\cache\LruDiskCache.java
+

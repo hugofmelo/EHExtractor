@@ -1,0 +1,98 @@
+Java files: 31
+Jar files: 1
+Maven files: 0
+Gradle files: 3
+Android file: true
+
+Analyzed java files: 31
+Source dirs: 2
+Test dirs: 0
+Dependencies files: 0
+
+JAVA FILES
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\ucrop\src\main\java\com\yalantis\ucrop\UCrop.java
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\ucrop\src\main\java\com\yalantis\ucrop\UCropActivity.java
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\ucrop\src\main\java\com\yalantis\ucrop\view\CropImageView.java
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\ucrop\src\main\java\com\yalantis\ucrop\view\GestureCropImageView.java
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\ucrop\src\main\java\com\yalantis\ucrop\view\OverlayView.java
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\ucrop\src\main\java\com\yalantis\ucrop\view\TransformImageView.java
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\ucrop\src\main\java\com\yalantis\ucrop\view\UCropView.java
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\ucrop\src\main\java\com\yalantis\ucrop\view\widget\AspectRatioTextView.java
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\ucrop\src\main\java\com\yalantis\ucrop\view\widget\HorizontalProgressWheelView.java
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\ucrop\src\main\java\com\yalantis\ucrop\util\BitmapLoadUtils.java
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\ucrop\src\main\java\com\yalantis\ucrop\util\CubicEasing.java
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\ucrop\src\main\java\com\yalantis\ucrop\util\EglUtils.java
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\ucrop\src\main\java\com\yalantis\ucrop\util\FastBitmapDrawable.java
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\ucrop\src\main\java\com\yalantis\ucrop\util\FileUtils.java
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\ucrop\src\main\java\com\yalantis\ucrop\util\ImageHeaderParser.java
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\ucrop\src\main\java\com\yalantis\ucrop\util\RectUtils.java
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\ucrop\src\main\java\com\yalantis\ucrop\util\RotationGestureDetector.java
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\ucrop\src\main\java\com\yalantis\ucrop\util\SelectedStateListDrawable.java
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\ucrop\src\main\java\com\yalantis\ucrop\task\BitmapCropTask.java
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\ucrop\src\main\java\com\yalantis\ucrop\task\BitmapLoadTask.java
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\ucrop\src\main\java\com\yalantis\ucrop\model\AspectRatio.java
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\ucrop\src\main\java\com\yalantis\ucrop\model\CropParameters.java
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\ucrop\src\main\java\com\yalantis\ucrop\model\ExifInfo.java
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\ucrop\src\main\java\com\yalantis\ucrop\model\ImageState.java
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\ucrop\src\main\java\com\yalantis\ucrop\callback\BitmapCropCallback.java
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\ucrop\src\main\java\com\yalantis\ucrop\callback\BitmapLoadCallback.java
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\ucrop\src\main\java\com\yalantis\ucrop\callback\CropBoundsChangeListener.java
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\ucrop\src\main\java\com\yalantis\ucrop\callback\OverlayViewChangeListener.java
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\sample\src\main\java\com\yalantis\ucrop\sample\BaseActivity.java
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\sample\src\main\java\com\yalantis\ucrop\sample\ResultActivity.java
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\sample\src\main\java\com\yalantis\ucrop\sample\SampleActivity.java
+
+JAR FILES
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\gradle\wrapper\gradle-wrapper.jar
+
+MAVEN FILES
+
+GRADLE FILES
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\build.gradle
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\ucrop\build.gradle
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\sample\build.gradle
+
+ANDROID MANIFEST FILE
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\sample\src\main\AndroidManifest.xml
+
+ANALYZED JAVA FILES
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\ucrop\src\main\java\com\yalantis\ucrop\UCrop.java
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\ucrop\src\main\java\com\yalantis\ucrop\UCropActivity.java
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\ucrop\src\main\java\com\yalantis\ucrop\view\CropImageView.java
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\ucrop\src\main\java\com\yalantis\ucrop\view\GestureCropImageView.java
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\ucrop\src\main\java\com\yalantis\ucrop\view\OverlayView.java
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\ucrop\src\main\java\com\yalantis\ucrop\view\TransformImageView.java
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\ucrop\src\main\java\com\yalantis\ucrop\view\UCropView.java
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\ucrop\src\main\java\com\yalantis\ucrop\view\widget\AspectRatioTextView.java
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\ucrop\src\main\java\com\yalantis\ucrop\view\widget\HorizontalProgressWheelView.java
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\ucrop\src\main\java\com\yalantis\ucrop\util\BitmapLoadUtils.java
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\ucrop\src\main\java\com\yalantis\ucrop\util\CubicEasing.java
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\ucrop\src\main\java\com\yalantis\ucrop\util\EglUtils.java
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\ucrop\src\main\java\com\yalantis\ucrop\util\FastBitmapDrawable.java
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\ucrop\src\main\java\com\yalantis\ucrop\util\FileUtils.java
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\ucrop\src\main\java\com\yalantis\ucrop\util\ImageHeaderParser.java
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\ucrop\src\main\java\com\yalantis\ucrop\util\RectUtils.java
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\ucrop\src\main\java\com\yalantis\ucrop\util\RotationGestureDetector.java
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\ucrop\src\main\java\com\yalantis\ucrop\util\SelectedStateListDrawable.java
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\ucrop\src\main\java\com\yalantis\ucrop\task\BitmapCropTask.java
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\ucrop\src\main\java\com\yalantis\ucrop\task\BitmapLoadTask.java
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\ucrop\src\main\java\com\yalantis\ucrop\model\AspectRatio.java
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\ucrop\src\main\java\com\yalantis\ucrop\model\CropParameters.java
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\ucrop\src\main\java\com\yalantis\ucrop\model\ExifInfo.java
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\ucrop\src\main\java\com\yalantis\ucrop\model\ImageState.java
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\ucrop\src\main\java\com\yalantis\ucrop\callback\BitmapCropCallback.java
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\ucrop\src\main\java\com\yalantis\ucrop\callback\BitmapLoadCallback.java
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\ucrop\src\main\java\com\yalantis\ucrop\callback\CropBoundsChangeListener.java
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\ucrop\src\main\java\com\yalantis\ucrop\callback\OverlayViewChangeListener.java
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\sample\src\main\java\com\yalantis\ucrop\sample\BaseActivity.java
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\sample\src\main\java\com\yalantis\ucrop\sample\ResultActivity.java
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\sample\src\main\java\com\yalantis\ucrop\sample\SampleActivity.java
+
+SOURCE DIRECTORIES
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\ucrop\src\main\java
+D:\Desenvolvimento\Projetos Github\running\Yalantis uCrop\sample\src\main\java
+
+TEST DIRECTORIES
+
+DEPENDENCIES
+

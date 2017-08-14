@@ -121,88 +121,26 @@ public class GradleResolver
 		gradleConnector.forProjectDirectory(gradleProjectPath.getParentFile());
 
 		ProjectConnection gradleConnection = gradleConnector.connect();
-
-		try {
-			// Load the Eclipse model for the project
-			//gradleConnection.newBuild();
-			/*
+		
+		try
+		{
 			EclipseProject eclipseProject = gradleConnection.getModel(EclipseProject.class);
-
-
-
-			for (ExternalDependency externalDependency : eclipseProject.getClasspath())
-            {
-            	dependencies.add(externalDependency.getFile());
-            }
-
-			dependencies.size();
-
-			 */
-			//org.gradle.api.Project p = gradleConnection.getModel (Project.)
-
-			EclipseProject eclipseProject = gradleConnection.getModel(EclipseProject.class);
-			/*
-			System.out.println("Project: " + eclipseProject.getName());
-			System.out.println("Project directory: " + eclipseProject.getProjectDirectory());
-			 */
-			/*
-			for (EclipseSourceDirectory srcDir : eclipseProject.getSourceDirectories())
-			{
-				System.out.println(srcDir.getPath());
-			}
-			*/
-
+			
 			File dependencyFile;
 			for (ExternalDependency externalDependency : eclipseProject.getClasspath())
 			{
-				//System.out.println(externalDependency.getFile().getAbsolutePath());
 				dependencyFile = externalDependency.getFile();
 				if ( dependencyFile.getAbsolutePath().endsWith(".jar") )
 				{
 					dependencies.add(externalDependency.getFile());
 				}
 			}
-
-			/*
-			EclipseProject project = gradleConnection.getModel(EclipseProject.class);
-
-            System.out.println("Project: " + project.getName());
-            System.out.println("Project directory: " + project.getProjectDirectory());
-            System.out.println("Source directories:");
-
-            //if ( project.getClasspath().size() == 0 )
-
-            for (EclipseSourceDirectory srcDir : project.getSourceDirectories())
-            {
-                System.out.println(srcDir.getPath());
-            }
-
-            System.out.println("Project classpath:");
-
-            for (ExternalDependency externalDependency : project.getClasspath())
-            {
-            	dependencies.add(externalDependency.getFile());
-                System.out.println(externalDependency.getFile().getName());
-            }
-            System.out.println("Associated gradle project:");
-            System.out.println(project.getGradleProject());
-			 */
 		}
 		finally
 		{
-			// Clean up
 			gradleConnection.close();
 		}
 
-		//System.exit(0);
 		return dependencies;
-
-		/*
-		Configuration configuration = project.getConfigurations().getByName("compile");
-		for (File file : configuration) {
-			project.getLogger().lifecycle("Found project dependency @ " + file.getAbsolutePath());
-		}
-		 */
 	}
-
 }

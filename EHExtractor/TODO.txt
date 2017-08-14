@@ -1,6 +1,6 @@
 DONE Prioridade -2: corrigir bug da origem incorreta em algumas exceções java. Quando rodar novamente, verificar o projeto "airbnb lottie-react-native"
 DONE prioridade -1: Tentar corrigir os erros e limitados.
-Prioridade 1: Verificar se os projetos android realmente não tem dependencias externas. Ou verificar pq o gradle não tá prestando.
+DONE Prioridade 1: Verificar se os projetos android realmente não tem dependencias externas. Ou verificar pq o gradle não tá prestando.
 
 DONE Prioridade 0:
 	Pegar 50 projetos android mais estrelados
@@ -10,7 +10,7 @@ DONE Prioridade 0:
 		catches
 			exceção, tipo, origem, autocomplete, empty
 
-Priorirdade 1: Verificar que vazamento de memoria é esse
+DONE Priorirdade 1: Verificar que vazamento de memoria é esse
 
 Prioridade 2:
 	Pegar 10 projetos com 10 releases

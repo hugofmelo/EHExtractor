@@ -1,0 +1,30 @@
+Maven errors: 0
+Gradle errors: 0
+Unsolved types: 4
+Unsupported errors: 2
+Unknown ancestral: 0
+Unknown signaler: 3
+
+GENERAL ERRORS
+
+MAVEN ERROR FILES
+
+GRADLE ERROR FILES
+
+UNSOLVED ERROR FILES
+Falha no Analyzer. Classe 'Unsolved symbol : SVGParseException' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\bumptech glide\samples\svg\src\main\java\com\bumptech\glide\samples\svg\SvgDecoder.java
+Falha no Analyzer. Classe 'Unsolved symbol : AppCompatActivity' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\bumptech glide\samples\flickr\src\main\java\com\bumptech\glide\samples\flickr\FlickrSearchActivity.java
+Falha no Analyzer. Classe 'Unsolved symbol : Listener' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\bumptech glide\samples\flickr\src\main\java\com\bumptech\glide\samples\flickr\api\FlickrQueryResponseListener.java
+Falha no Analyzer. Classe 'Unsolved symbol : Fragment' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\bumptech glide\library\src\main\java\com\bumptech\glide\manager\SupportRequestManagerFragment.java
+
+UNSUPPORTED ERROR FILES
+Falha no Analyzer. UnsupportedOperation ao parsear arquivo. File: D:\Desenvolvimento\Projetos Github\running\bumptech glide\library\src\main\java\com\bumptech\glide\load\engine\cache\SafeKeyGenerator.java
+Falha no Analyzer. UnsupportedOperation ao parsear arquivo. File: D:\Desenvolvimento\Projetos Github\running\bumptech glide\library\src\main\java\com\bumptech\glide\load\data\mediastore\ThumbnailStreamOpener.java
+
+UNKNOWN ANCESTRAL
+
+UNKNOWN SIGNALERS
+Falha no Analyzer. Sinalizado um NameExpr, mas a exceção não está na pilha. Expressão sinalizada: 'bitmapAssertionException'. File: D:\Desenvolvimento\Projetos Github\running\bumptech glide\library\src\main\java\com\bumptech\glide\load\resource\bitmap\Downsampler.java
+Falha no Analyzer. Tipo sinalizado não pôde ser resolvido. Sinalização: 'throw new UnsupportedOperationException("Not implemented");'. File: D:\Desenvolvimento\Projetos Github\running\bumptech glide\library\src\main\java\com\bumptech\glide\load\data\DataRewinderRegistry.java
+Falha no Analyzer. Tipo sinalizado não pôde ser resolvido. Sinalização: 'throw new IllegalStateException("Cannot process annotations after writing AppGlideModule");'. File: D:\Desenvolvimento\Projetos Github\running\bumptech glide\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideAnnotationProcessor.java
+

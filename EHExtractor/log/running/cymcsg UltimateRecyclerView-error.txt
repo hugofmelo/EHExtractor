@@ -1,0 +1,30 @@
+Maven errors: 0
+Gradle errors: 0
+Unsolved types: 4
+Unsupported errors: 0
+Unknown ancestral: 0
+Unknown signaler: 5
+
+GENERAL ERRORS
+
+MAVEN ERROR FILES
+
+GRADLE ERROR FILES
+
+UNSOLVED ERROR FILES
+Falha no Analyzer. Classe 'Unsolved symbol : Adapter' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\cymcsg UltimateRecyclerView\UltimateRecyclerView\ultimaterecyclerview\src\main\java\com\marshalchen\ultimaterecyclerview\UltimateViewAdapter.java
+Falha no Analyzer. Classe 'Unsolved symbol : LinearLayoutManager' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\cymcsg UltimateRecyclerView\UltimateRecyclerView\ultimaterecyclerview\src\main\java\com\marshalchen\ultimaterecyclerview\layoutmanagers\ScrollSmoothLineaerLayoutManager.java
+Falha no Analyzer. Classe 'Unsolved symbol : Fragment' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\cymcsg UltimateRecyclerView\UltimateRecyclerView\ultimaterecyclerview\src\main\java\com\marshalchen\ultimaterecyclerview\appPaginator\v4\paginator.java
+Falha no Analyzer. Classe 'Unsolved symbol : OnSliderClickListener' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\cymcsg UltimateRecyclerView\UltimateRecyclerView\app\src\main\java\com\marshalchen\ultimaterecyclerview\demo\loadmoredemo\SliderHeader.java
+
+UNSUPPORTED ERROR FILES
+
+UNKNOWN ANCESTRAL
+
+UNKNOWN SIGNALERS
+Falha no Analyzer. Tipo sinalizado não pôde ser resolvido. Sinalização: 'throw new IllegalArgumentException("RecyclerView and Listener arguments can not be null");'. File: D:\Desenvolvimento\Projetos Github\running\cymcsg UltimateRecyclerView\UltimateRecyclerView\ultimaterecyclerview\src\main\java\com\marshalchen\ultimaterecyclerview\ItemTouchListenerAdapter.java
+Falha no Analyzer. Tipo sinalizado não pôde ser resolvido. Sinalização: 'throw new IllegalArgumentException("invalid orientation");'. File: D:\Desenvolvimento\Projetos Github\running\cymcsg UltimateRecyclerView\UltimateRecyclerView\ultimaterecyclerview\src\main\java\com\marshalchen\ultimaterecyclerview\ui\DividerItemDecoration.java
+Falha no Analyzer. Tipo sinalizado não pôde ser resolvido. Sinalização: 'throw new IllegalArgumentException("Use setColor method of Paint class to specify line color. Do not provider ColorProvider if you set PaintProvider.");'. File: D:\Desenvolvimento\Projetos Github\running\cymcsg UltimateRecyclerView\UltimateRecyclerView\ultimaterecyclerview\src\main\java\com\marshalchen\ultimaterecyclerview\ui\divideritemdecoration\FlexibleDividerDecoration.java
+Falha no Analyzer. Tipo sinalizado não pôde ser resolvido. Sinalização: 'throw new RuntimeException(String.format("You forgot the attributes swipeFrontView or swipeBackView. You can add this attributes or use '%s' and '%s' identifiers", SWIPE_DEFAULT_FRONT_VIEW, SWIPE_DEFAULT_BACK_VIEW));'. File: D:\Desenvolvimento\Projetos Github\running\cymcsg UltimateRecyclerView\UltimateRecyclerView\ultimaterecyclerview\src\main\java\com\marshalchen\ultimaterecyclerview\swipelistview\SwipeListView.java
+Falha no Analyzer. Tipo sinalizado não pôde ser resolvido. Sinalização: 'throw new IllegalStateException("A RecyclerView with " + StickyRecyclerHeadersTouchListener.class.getSimpleName() + " requires a " + StickyRecyclerHeadersAdapter.class.getSimpleName());'. File: D:\Desenvolvimento\Projetos Github\running\cymcsg UltimateRecyclerView\UltimateRecyclerView\ultimaterecyclerview\src\main\java\com\marshalchen\ultimaterecyclerview\stickyheadersrecyclerview\StickyRecyclerHeadersTouchListener.java
+

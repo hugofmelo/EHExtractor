@@ -1,0 +1,45 @@
+Maven errors: 0
+Gradle errors: 0
+Unsolved types: 13
+Unsupported errors: 4
+Unknown ancestral: 0
+Unknown signaler: 2
+
+GENERAL ERRORS
+Falha no Analyzer. Falha ao adicionar JarSolver. File: D:\Desenvolvimento\Projetos Github\running\libgdx libgdx\gdx\libs\gdx-natives.jar
+Falha no Analyzer. Falha ao adicionar JarSolver. File: D:\Desenvolvimento\Projetos Github\running\libgdx libgdx\extensions\gdx-box2d\gdx-box2d\libs\gdx-box2d-natives.jar
+Falha no Analyzer. Falha ao adicionar JarSolver. File: D:\Desenvolvimento\Projetos Github\running\libgdx libgdx\extensions\gdx-bullet\libs\gdx-bullet-natives.jar
+Falha no Analyzer. Falha ao adicionar JarSolver. File: D:\Desenvolvimento\Projetos Github\running\libgdx libgdx\extensions\gdx-controllers\gdx-controllers-desktop\libs\gdx-controllers-desktop-natives.jar
+Falha no Analyzer. Falha ao adicionar JarSolver. File: D:\Desenvolvimento\Projetos Github\running\libgdx libgdx\extensions\gdx-freetype\libs\gdx-freetype-natives.jar
+
+MAVEN ERROR FILES
+
+GRADLE ERROR FILES
+
+UNSOLVED ERROR FILES
+Falha no Analyzer. Classe 'Unsolved symbol : JPanel' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\libgdx libgdx\extensions\gdx-tools\src\com\badlogic\gdx\tools\particleeditor\EffectPanel.java
+Falha no Analyzer. Classe 'Unsolved symbol : JFrame' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\libgdx libgdx\extensions\gdx-tools\src\com\badlogic\gdx\tools\particleeditor\ParticleEditor.java
+Falha no Analyzer. Classe 'Unsolved symbol : JFrame' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\libgdx libgdx\extensions\gdx-tools\src\com\badlogic\gdx\tools\hiero\Hiero.java
+Falha no Analyzer. Classe 'Unsolved symbol : FontFormatException' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\libgdx libgdx\extensions\gdx-tools\src\com\badlogic\gdx\tools\hiero\unicodefont\UnicodeFont.java
+Falha no Analyzer. Classe 'Unsolved symbol : JFrame' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\libgdx libgdx\extensions\gdx-tools\src\com\badlogic\gdx\tools\flame\FlameMain.java
+Falha no Analyzer. Classe 'Unsolved symbol : JPanel' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\libgdx libgdx\extensions\gdx-tools\src\com\badlogic\gdx\tools\flame\ImagePanel.java
+Falha no Analyzer. Classe 'Unsolved symbol : JButton' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\libgdx libgdx\extensions\gdx-tools\src\com\badlogic\gdx\tools\flame\LoaderButton.java
+Falha no Analyzer. Classe 'Unsolved symbol : JFrame' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\libgdx libgdx\extensions\gdx-tools\src\com\badlogic\gdx\tools\flame\PreAlpha.java
+Falha no Analyzer. Classe 'Unsolved symbol : JDialog' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\libgdx libgdx\extensions\gdx-setup\src\com\badlogic\gdx\setup\ExternalExtensionsDialog.java
+Falha no Analyzer. Classe 'Unsolved symbol : JFrame' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\libgdx libgdx\extensions\gdx-setup\src\com\badlogic\gdx\setup\GdxSetupUI.java
+Falha no Analyzer. Classe 'Unsolved symbol : JDialog' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\libgdx libgdx\extensions\gdx-setup\src\com\badlogic\gdx\setup\SettingsDialog.java
+Falha no Analyzer. Classe 'Unsolved symbol : MouseMotionListener' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\libgdx libgdx\backends\gdx-backend-lwjgl\src\com\badlogic\gdx\backends\lwjgl\LwjglAWTInput.java
+Falha no Analyzer. Classe 'Unsolved symbol : ClipboardOwner' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\libgdx libgdx\backends\gdx-backend-lwjgl\src\com\badlogic\gdx\backends\lwjgl\LwjglClipboard.java
+
+UNSUPPORTED ERROR FILES
+Falha no Analyzer. UnsupportedOperation ao parsear arquivo. File: D:\Desenvolvimento\Projetos Github\running\libgdx libgdx\extensions\gdx-tools\src\com\badlogic\gdx\tools\particleeditor\ImagePanel.java
+Falha no Analyzer. UnsupportedOperation ao parsear arquivo. File: D:\Desenvolvimento\Projetos Github\running\libgdx libgdx\backends\gdx-backend-lwjgl3\src\com\badlogic\gdx\backends\lwjgl3\Lwjgl3Application.java
+Falha no Analyzer. UnsupportedOperation ao parsear arquivo. File: D:\Desenvolvimento\Projetos Github\running\libgdx libgdx\backends\gdx-backend-lwjgl\src\com\badlogic\gdx\backends\lwjgl\LwjglApplication.java
+Falha no Analyzer. UnsupportedOperation ao parsear arquivo. File: D:\Desenvolvimento\Projetos Github\running\libgdx libgdx\backends\gdx-backend-headless\src\com\badlogic\gdx\backends\headless\HeadlessApplication.java
+
+UNKNOWN ANCESTRAL
+
+UNKNOWN SIGNALERS
+Falha no Analyzer. Sinalizado um NameExpr, mas a exceção não está na pilha. Expressão sinalizada: 'ex'. File: D:\Desenvolvimento\Projetos Github\running\libgdx libgdx\gdx\src\com\badlogic\gdx\utils\Json.java
+Falha no Analyzer. Tipo sinalizado não pôde ser resolvido. Sinalização: 'throw new Error("You must override 'AndroidLiveWallpaperService.onCreateApplication' method and call 'initialize' from its body.");'. File: D:\Desenvolvimento\Projetos Github\running\libgdx libgdx\backends\gdx-backend-android\src\com\badlogic\gdx\backends\android\AndroidLiveWallpaperService.java
+
