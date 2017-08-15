@@ -1,0 +1,41 @@
+EXCEPTION HIERARCHY
+java.lang.Throwable
+	java.lang.Exception
+		java.io.IOException
+			java.net.MalformedURLException
+			com.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream.InvalidMarkException
+			java.io.FileNotFoundException
+			com.bumptech.glide.load.HttpException
+		java.lang.RuntimeException
+			java.nio.BufferUnderflowException
+			java.lang.IllegalStateException
+				java.util.concurrent.CancellationException
+			java.lang.IllegalArgumentException
+				java.lang.NumberFormatException
+				java.lang.IllegalThreadStateException
+			com.bumptech.glide.Registry.MissingComponentException
+				com.bumptech.glide.Registry.NoResultEncoderAvailableException
+				com.bumptech.glide.Registry.NoSourceEncoderAvailableException
+				com.bumptech.glide.Registry.NoModelLoaderAvailableException
+				com.bumptech.glide.Registry.NoImageHeaderParserException
+			java.lang.NullPointerException
+			java.lang.UnsupportedOperationException
+			android.content.res.Resources.NotFoundException
+		java.lang.ReflectiveOperationException
+			java.lang.ClassNotFoundException
+			java.lang.InstantiationException
+			java.lang.IllegalAccessException
+		java.lang.CloneNotSupportedException
+		android.util.AndroidException
+			android.content.pm.PackageManager.NameNotFoundException
+		java.util.concurrent.TimeoutException
+		java.util.concurrent.ExecutionException
+		java.lang.InterruptedException
+		com.bumptech.glide.load.engine.GlideException
+		java.net.URISyntaxException
+	java.lang.Error
+		java.lang.AssertionError
+		java.lang.LinkageError
+			java.lang.NoClassDefFoundError
+
+

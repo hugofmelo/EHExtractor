@@ -1,0 +1,34 @@
+Maven errors: 0
+Gradle errors: 0
+Unsolved types: 11
+Unsupported errors: 0
+Unknown ancestral: 0
+Unknown signaler: 2
+
+GENERAL ERRORS
+
+MAVEN ERROR FILES
+
+GRADLE ERROR FILES
+
+UNSOLVED ERROR FILES
+Falha no Analyzer. Classe 'Unsolved symbol : MultiDexApplication' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\google iosched\android\src\main\java\com\google\samples\apps\iosched\AppApplication.java
+Falha no Analyzer. Classe 'Unsolved symbol : UserRecoverableNotifiedException' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\google iosched\android\src\main\java\com\google\samples\apps\iosched\util\AccountUtils.java
+Falha no Analyzer. Classe 'Unsolved symbol : AppCompatActivity' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\google iosched\android\src\main\java\com\google\samples\apps\iosched\ui\BaseActivity.java
+Falha no Analyzer. Classe 'Unsolved symbol : FirebaseException' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\google iosched\android\src\main\java\com\google\samples\apps\iosched\sync\userdata\firebase\FirebaseAuthHelper.java
+Falha no Analyzer. Classe 'Unsolved symbol : FirebaseException' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\google iosched\android\src\main\java\com\google\samples\apps\iosched\sync\userdata\firebase\FirebaseDataReconciler.java
+Falha no Analyzer. Classe 'Unsolved symbol : MapFragment' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\google iosched\android\src\main\java\com\google\samples\apps\iosched\map\MapFragment.java
+Falha no Analyzer. Classe 'Unsolved symbol : TileProvider' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\google iosched\android\src\main\java\com\google\samples\apps\iosched\map\util\CachedTileProvider.java
+Falha no Analyzer. Classe 'Unsolved symbol : TileProvider' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\google iosched\android\src\main\java\com\google\samples\apps\iosched\map\util\SVGTileProvider.java
+Falha no Analyzer. Classe 'Unsolved symbol : ConnectionCallbacks' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\google iosched\android\src\main\java\com\google\samples\apps\iosched\login\LoginAndAuthWithGoogleApi.java
+Falha no Analyzer. Classe 'Unsolved symbol : ViewHolder' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\google iosched\android\src\main\java\com\google\samples\apps\iosched\explore\EventDataAdapter.java
+Falha no Analyzer. Classe 'Unsolved symbol : NoMatchingViewException' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\google iosched\android\src\androidTest\java\com\google\samples\apps\iosched\testutils\NavigationUtils.java
+
+UNSUPPORTED ERROR FILES
+
+UNKNOWN ANCESTRAL
+
+UNKNOWN SIGNALERS
+Falha no Analyzer. A sinalização não é de um dos tipos suportados. Sinalização: 'invalidLengths(strings)'. File: D:\Desenvolvimento\Projetos Github\running\google iosched\third_party\disklrucache\src\main\java\com\jakewharton\disklrucache\DiskLruCache.java
+Falha no Analyzer. Tipo sinalizado não pôde ser resolvido. Sinalização: 'throw new IllegalArgumentException("Unknown view type");'. File: D:\Desenvolvimento\Projetos Github\running\google iosched\android\src\main\java\com\google\samples\apps\iosched\explore\ExploreSessionsActivity.java
+

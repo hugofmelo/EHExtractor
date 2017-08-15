@@ -1,0 +1,6 @@
+EXCEPTION HIERARCHY
+java.lang.Throwable
+	java.lang.Exception
+		java.io.IOException
+
+

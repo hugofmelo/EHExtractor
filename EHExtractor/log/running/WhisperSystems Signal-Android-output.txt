@@ -51,6 +51,7 @@ java.lang.Throwable
 		org.thoughtcrime.securesms.mms.MmsException
 		org.thoughtcrime.securesms.transport.UndeliverableMessageException
 		org.thoughtcrime.securesms.mms.ApnUnavailableException
+		org.thoughtcrime.securesms.jobs.AttachmentDownloadJob.InvalidPartException
 		org.thoughtcrime.securesms.jobs.MasterSecretJob.RequirementNotMetException
 		org.thoughtcrime.securesms.transport.InsecureFallbackApprovalException
 		org.thoughtcrime.securesms.TextSecureExpiredException

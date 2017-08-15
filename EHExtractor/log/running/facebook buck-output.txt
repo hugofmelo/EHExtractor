@@ -56,6 +56,7 @@ java.lang.Throwable
 			java.io.EOFException
 			java.io.UnsupportedEncodingException
 			java.io.UTFDataFormatException
+			java.net.MalformedURLException
 			java.util.zip.ZipException
 			java.nio.file.FileSystemException
 				java.nio.file.NoSuchFileException
@@ -67,7 +68,6 @@ java.lang.Throwable
 				com.facebook.buck.file.RetryingDownloader.RetryingDownloaderException
 			com.facebook.buck.slb.NoHealthyServersException
 			java.net.UnknownHostException
-			java.net.MalformedURLException
 			java.nio.charset.CharacterCodingException
 			java.nio.channels.ClosedChannelException
 				java.nio.channels.AsynchronousCloseException

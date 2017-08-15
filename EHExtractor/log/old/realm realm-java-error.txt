@@ -1,0 +1,42 @@
+Maven errors: 0
+Gradle errors: 0
+Unsolved types: 3
+Unsupported errors: 10
+Unknown ancestral: 0
+Unknown signaler: 3
+
+GENERAL ERRORS
+Falha em ArtifactResolver. O arquivo java não é válido. File: D:\Desenvolvimento\Projetos Github\running\realm realm-java\realm-transformer\src\main\templates\Version.java
+Falha em ArtifactResolver. O arquivo java não é válido. File: D:\Desenvolvimento\Projetos Github\running\realm realm-java\realm\realm-annotations-processor\src\test\resources\some\test\NoAccessors.java
+Falha em ArtifactResolver. Arquivo falhou ao parsear. File: D:\Desenvolvimento\Projetos Github\running\realm realm-java\realm\realm-annotations-processor\src\test\resources\io\realm\AllTypesRealmProxy.java
+Falha em ArtifactResolver. O arquivo java não é válido. File: D:\Desenvolvimento\Projetos Github\running\realm realm-java\realm\realm-annotations-processor\src\main\templates\Version.java
+Falha em ArtifactResolver. O arquivo java não é válido. File: D:\Desenvolvimento\Projetos Github\running\realm realm-java\gradle-plugin\src\main\templates\Version.java
+
+MAVEN ERROR FILES
+
+GRADLE ERROR FILES
+
+UNSOLVED ERROR FILES
+Falha no Analyzer. Classe 'Unsolved symbol : AbstractProcessor' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\realm realm-java\realm\realm-annotations-processor\src\main\java\io\realm\processor\RealmProcessor.java
+Falha no Analyzer. Classe 'Unsolved symbol : ResultProcessor' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\realm realm-java\library-benchmarks\src\androidTest\java\io\realm\benchmarks\config\CSVResultProcessor.java
+Falha no Analyzer. Classe 'Unsolved symbol : AppCompatActivity' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\realm realm-java\examples\secureTokenAndroidKeyStore\src\main\java\io\realm\examples\securetokenandroidkeystore\MainActivity.java
+
+UNSUPPORTED ERROR FILES
+Falha no Analyzer. UnsupportedOperation ao parsear arquivo. File: D:\Desenvolvimento\Projetos Github\running\realm realm-java\realm\realm-library\src\syncIntegrationTest\java\io\realm\objectserver\AuthTests.java
+Falha no Analyzer. UnsupportedOperation ao parsear arquivo. File: D:\Desenvolvimento\Projetos Github\running\realm realm-java\realm\realm-library\src\main\java\io\realm\BaseRealm.java
+Falha no Analyzer. UnsupportedOperation ao parsear arquivo. File: D:\Desenvolvimento\Projetos Github\running\realm realm-java\realm\realm-library\src\main\java\io\realm\MutableRealmObjectSchema.java
+Falha no Analyzer. UnsupportedOperation ao parsear arquivo. File: D:\Desenvolvimento\Projetos Github\running\realm realm-java\realm\realm-library\src\androidTestObjectServer\java\io\realm\SessionTests.java
+Falha no Analyzer. UnsupportedOperation ao parsear arquivo. File: D:\Desenvolvimento\Projetos Github\running\realm realm-java\realm\realm-library\src\androidTest\java\io\realm\DynamicRealmTests.java
+Falha no Analyzer. UnsupportedOperation ao parsear arquivo. File: D:\Desenvolvimento\Projetos Github\running\realm realm-java\realm\realm-library\src\androidTest\java\io\realm\RealmCacheTests.java
+Falha no Analyzer. UnsupportedOperation ao parsear arquivo. File: D:\Desenvolvimento\Projetos Github\running\realm realm-java\realm\realm-library\src\androidTest\java\io\realm\RealmTests.java
+Falha no Analyzer. UnsupportedOperation ao parsear arquivo. File: D:\Desenvolvimento\Projetos Github\running\realm realm-java\realm\realm-library\src\androidTest\java\io\realm\TestHelper.java
+Falha no Analyzer. UnsupportedOperation ao parsear arquivo. File: D:\Desenvolvimento\Projetos Github\running\realm realm-java\realm\realm-library\src\androidTest\java\io\realm\internal\JNITableInsertTest.java
+Falha no Analyzer. UnsupportedOperation ao parsear arquivo. File: D:\Desenvolvimento\Projetos Github\running\realm realm-java\realm\realm-library\src\androidTest\java\io\realm\internal\JNITableTest.java
+
+UNKNOWN ANCESTRAL
+
+UNKNOWN SIGNALERS
+Falha no Analyzer. Tipo sinalizado não pôde ser resolvido. Sinalização: 'throw new IllegalArgumentException("Unsupported error category: " + error.getErrorCode().getCategory());'. File: D:\Desenvolvimento\Projetos Github\running\realm realm-java\realm\realm-library\src\objectServer\java\io\realm\SyncManager.java
+Falha no Analyzer. Tipo sinalizado não pôde ser resolvido. Sinalização: 'throw getStubException();'. File: D:\Desenvolvimento\Projetos Github\running\realm realm-java\realm\realm-library\src\main\java\io\realm\internal\InvalidRow.java
+Falha no Analyzer. Tipo sinalizado não pôde ser resolvido. Sinalização: 'throw runtimeException;'. File: D:\Desenvolvimento\Projetos Github\running\realm realm-java\realm\realm-library\src\androidTest\java\io\realm\RealmAsyncQueryTests.java
+

@@ -89,12 +89,13 @@ java.lang.Throwable
 			com.google.protobuf.InvalidProtocolBufferException
 				com.google.protobuf.InvalidProtocolBufferException.InvalidWireTypeException
 			com.google.protobuf.nano.InvalidProtocolBufferNanoException
+			com.google.protobuf.nano.CodedOutputByteBufferNano.OutOfSpaceException
+			java.io.UnsupportedEncodingException
 			com.google.protobuf.CodedOutputStream.OutOfSpaceException
 			com.google.protobuf.TextFormat.InvalidEscapeSequenceException
 			java.io.ObjectStreamException
 				java.io.InvalidObjectException
 			com.google.protobuf.TextFormat.ParseException
-			java.io.UnsupportedEncodingException
 			java.net.UnknownHostException
 			java.io.EOFException
 			java.io.FileNotFoundException

@@ -1,0 +1,95 @@
+Java files: 29
+Jar files: 1
+Maven files: 0
+Gradle files: 3
+Android file: true
+
+Analyzed java files: 28
+Source dirs: 3
+Test dirs: 1
+Dependencies files: 0
+
+JAVA FILES
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\bottom-bar\src\test\java\com\roughike\bottombar\ExampleUnitTest.java
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\bottom-bar\src\main\java\com\roughike\bottombar\BadgeCircle.java
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\bottom-bar\src\main\java\com\roughike\bottombar\BadgeContainer.java
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\bottom-bar\src\main\java\com\roughike\bottombar\BatchTabPropertyApplier.java
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\bottom-bar\src\main\java\com\roughike\bottombar\BottomBar.java
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\bottom-bar\src\main\java\com\roughike\bottombar\BottomBarBadge.java
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\bottom-bar\src\main\java\com\roughike\bottombar\BottomBarTab.java
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\bottom-bar\src\main\java\com\roughike\bottombar\BottomNavigationBehavior.java
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\bottom-bar\src\main\java\com\roughike\bottombar\MiscUtils.java
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\bottom-bar\src\main\java\com\roughike\bottombar\NavbarUtils.java
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\bottom-bar\src\main\java\com\roughike\bottombar\OnTabReselectListener.java
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\bottom-bar\src\main\java\com\roughike\bottombar\OnTabSelectListener.java
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\bottom-bar\src\main\java\com\roughike\bottombar\ShySettings.java
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\bottom-bar\src\main\java\com\roughike\bottombar\TabParser.java
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\bottom-bar\src\main\java\com\roughike\bottombar\TabSelectionInterceptor.java
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\bottom-bar\src\main\java\com\roughike\bottombar\VerticalScrollingBehavior.java
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\bottom-bar\src\androidTest\java\com\roughike\bottombar\BadgeTest.java
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\bottom-bar\src\androidTest\java\com\roughike\bottombar\BottomBarTabTest.java
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\bottom-bar\src\androidTest\java\com\roughike\bottombar\BottomBarTest.java
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\bottom-bar\src\androidTest\java\com\roughike\bottombar\TabParserTest.java
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\app\src\main\java\com\example\bottombar\sample\BadgeActivity.java
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\app\src\main\java\com\example\bottombar\sample\CustomColorAndFontActivity.java
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\app\src\main\java\com\example\bottombar\sample\FiveColorChangingTabsActivity.java
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\app\src\main\java\com\example\bottombar\sample\IconsOnlyActivity.java
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\app\src\main\java\com\example\bottombar\sample\MainActivity.java
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\app\src\main\java\com\example\bottombar\sample\SampleFragment.java
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\app\src\main\java\com\example\bottombar\sample\TabMessage.java
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\app\src\main\java\com\example\bottombar\sample\ThreeTabsActivity.java
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\app\src\main\java\com\example\bottombar\sample\ThreeTabsQRActivity.java
+
+JAR FILES
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\gradle\wrapper\gradle-wrapper.jar
+
+MAVEN FILES
+
+GRADLE FILES
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\build.gradle
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\bottom-bar\build.gradle
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\app\build.gradle
+
+ANDROID MANIFEST FILE
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\app\src\main\AndroidManifest.xml
+
+ANALYZED JAVA FILES
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\bottom-bar\src\main\java\com\roughike\bottombar\BadgeCircle.java
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\bottom-bar\src\main\java\com\roughike\bottombar\BadgeContainer.java
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\bottom-bar\src\main\java\com\roughike\bottombar\BatchTabPropertyApplier.java
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\bottom-bar\src\main\java\com\roughike\bottombar\BottomBar.java
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\bottom-bar\src\main\java\com\roughike\bottombar\BottomBarBadge.java
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\bottom-bar\src\main\java\com\roughike\bottombar\BottomBarTab.java
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\bottom-bar\src\main\java\com\roughike\bottombar\BottomNavigationBehavior.java
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\bottom-bar\src\main\java\com\roughike\bottombar\MiscUtils.java
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\bottom-bar\src\main\java\com\roughike\bottombar\NavbarUtils.java
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\bottom-bar\src\main\java\com\roughike\bottombar\OnTabReselectListener.java
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\bottom-bar\src\main\java\com\roughike\bottombar\OnTabSelectListener.java
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\bottom-bar\src\main\java\com\roughike\bottombar\ShySettings.java
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\bottom-bar\src\main\java\com\roughike\bottombar\TabParser.java
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\bottom-bar\src\main\java\com\roughike\bottombar\TabSelectionInterceptor.java
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\bottom-bar\src\main\java\com\roughike\bottombar\VerticalScrollingBehavior.java
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\bottom-bar\src\androidTest\java\com\roughike\bottombar\BadgeTest.java
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\bottom-bar\src\androidTest\java\com\roughike\bottombar\BottomBarTabTest.java
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\bottom-bar\src\androidTest\java\com\roughike\bottombar\BottomBarTest.java
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\bottom-bar\src\androidTest\java\com\roughike\bottombar\TabParserTest.java
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\app\src\main\java\com\example\bottombar\sample\BadgeActivity.java
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\app\src\main\java\com\example\bottombar\sample\CustomColorAndFontActivity.java
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\app\src\main\java\com\example\bottombar\sample\FiveColorChangingTabsActivity.java
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\app\src\main\java\com\example\bottombar\sample\IconsOnlyActivity.java
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\app\src\main\java\com\example\bottombar\sample\MainActivity.java
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\app\src\main\java\com\example\bottombar\sample\SampleFragment.java
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\app\src\main\java\com\example\bottombar\sample\TabMessage.java
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\app\src\main\java\com\example\bottombar\sample\ThreeTabsActivity.java
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\app\src\main\java\com\example\bottombar\sample\ThreeTabsQRActivity.java
+
+SOURCE DIRECTORIES
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\bottom-bar\src\main\java
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\bottom-bar\src\androidTest\java
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\app\src\main\java
+
+TEST DIRECTORIES
+D:\Desenvolvimento\Projetos Github\running\roughike BottomBar\bottom-bar\src\test\java
+
+DEPENDENCIES
+

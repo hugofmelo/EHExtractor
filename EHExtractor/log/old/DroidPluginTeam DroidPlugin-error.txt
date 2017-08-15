@@ -1,0 +1,33 @@
+Maven errors: 0
+Gradle errors: 0
+Unsolved types: 6
+Unsupported errors: 1
+Unknown ancestral: 0
+Unknown signaler: 5
+
+GENERAL ERRORS
+
+MAVEN ERROR FILES
+
+GRADLE ERROR FILES
+
+UNSOLVED ERROR FILES
+Falha no Analyzer. Classe 'Unsolved symbol : ListFragment' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\DroidPluginTeam DroidPlugin\project\TestPlugin\src\com\example\TestPlugin\ApkFragment.java
+Falha no Analyzer. Classe 'Unsolved symbol : ListFragment' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\DroidPluginTeam DroidPlugin\project\TestPlugin\src\com\example\TestPlugin\InstalledFragment.java
+Falha no Analyzer. Classe 'Unsolved symbol : AppCompatActivity' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\DroidPluginTeam DroidPlugin\project\TestPlugin\src\com\example\TestPlugin\MyActivity.java
+Falha no Analyzer. Classe 'Unsolved symbol : AppCompatActivity' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\DroidPluginTeam DroidPlugin\project\Test\ApiTest\src\com\example\ApiTest\MyActivity.java
+Falha no Analyzer. Classe 'Unsolved symbol : AppCompatActivity' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\DroidPluginTeam DroidPlugin\project\Test\ApiTest\src\com\example\ApiTest\ServiceTest1.java
+Falha no Analyzer. Classe 'Unsolved symbol : Stub' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\DroidPluginTeam DroidPlugin\project\Libraries\DroidPlugin\src\com\morgoo\droidplugin\pm\IPluginManagerImpl.java
+
+UNSUPPORTED ERROR FILES
+Falha no Analyzer. UnsupportedOperation ao parsear arquivo. File: D:\Desenvolvimento\Projetos Github\running\DroidPluginTeam DroidPlugin\project\Libraries\DroidPlugin\src\com\morgoo\droidplugin\pm\PluginManager.java
+
+UNKNOWN ANCESTRAL
+
+UNKNOWN SIGNALERS
+Falha no Analyzer. Sinalizado um NameExpr, mas a exceção não está na pilha. Expressão sinalizada: 'e1'. File: D:\Desenvolvimento\Projetos Github\running\DroidPluginTeam DroidPlugin\project\Libraries\DroidPlugin\src\com\morgoo\droidplugin\hook\proxy\IActivityManagerHook.java
+Falha no Analyzer. Sinalizado um NameExpr, mas a exceção não está na pilha. Expressão sinalizada: 'runtimeException'. File: D:\Desenvolvimento\Projetos Github\running\DroidPluginTeam DroidPlugin\project\Libraries\DroidPlugin\src\com\morgoo\droidplugin\hook\proxy\ProxyHook.java
+Falha no Analyzer. Sinalizado um NameExpr, mas a exceção não está na pilha. Expressão sinalizada: 'exception'. File: D:\Desenvolvimento\Projetos Github\running\DroidPluginTeam DroidPlugin\project\Libraries\DroidPlugin\src\com\morgoo\droidplugin\hook\handle\IActivityManagerHookHandle.java
+Falha no Analyzer. Sinalizado um NameExpr, mas a exceção não está na pilha. Expressão sinalizada: 'runtimeException'. File: D:\Desenvolvimento\Projetos Github\running\DroidPluginTeam DroidPlugin\project\Libraries\DroidPlugin\src\com\morgoo\droidplugin\hook\binder\BinderHook.java
+Falha no Analyzer. Sinalizado um NameExpr, mas a exceção não está na pilha. Expressão sinalizada: 'runtimeException'. File: D:\Desenvolvimento\Projetos Github\running\DroidPluginTeam DroidPlugin\project\Libraries\DroidPlugin\src\com\morgoo\droidplugin\hook\binder\ServiceManagerCacheBinderHook.java
+

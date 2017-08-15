@@ -1,0 +1,202 @@
+Java files: 83
+Jar files: 1
+Maven files: 0
+Gradle files: 3
+Android file: true
+
+Analyzed java files: 83
+Source dirs: 2
+Test dirs: 0
+Dependencies files: 0
+
+JAVA FILES
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\AccountHeader.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\AccountHeaderBuilder.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\Drawer.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\DrawerBuilder.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\DrawerUtils.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\MiniDrawer.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\view\BezelImageView.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\util\AbstractDrawerImageLoader.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\util\DrawerImageLoader.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\util\DrawerItemViewHelper.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\util\DrawerUIUtils.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\util\KeyboardUtil.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\util\PressedEffectStateListDrawable.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\AbstractBadgeableDrawerItem.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\AbstractDrawerItem.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\AbstractSwitchableDrawerItem.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\AbstractToggleableDrawerItem.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\BaseDescribeableDrawerItem.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\BaseDrawerItem.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\BaseViewHolder.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\ContainerDrawerItem.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\DividerDrawerItem.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\ExpandableBadgeDrawerItem.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\ExpandableDrawerItem.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\MiniDrawerItem.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\MiniProfileDrawerItem.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\PrimaryDrawerItem.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\ProfileDrawerItem.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\ProfileSettingDrawerItem.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\SecondaryDrawerItem.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\SecondarySwitchDrawerItem.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\SecondaryToggleDrawerItem.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\SectionDrawerItem.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\SwitchDrawerItem.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\ToggleDrawerItem.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\utils\BadgeDrawableBuilder.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\interfaces\Badgeable.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\interfaces\ColorfulBadgeable.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\interfaces\Iconable.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\interfaces\IDrawerItem.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\interfaces\IProfile.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\interfaces\Nameable.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\interfaces\OnPostBindViewListener.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\interfaces\Selectable.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\interfaces\Tagable.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\interfaces\Typefaceable.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\interfaces\ICrossfader.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\interfaces\OnCheckedChangeListener.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\icons\MaterialDrawerFont.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\holder\BadgeStyle.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\holder\ColorHolder.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\holder\DimenHolder.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\holder\ImageHolder.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\holder\StringHolder.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\app\src\main\java\com\mikepenz\materialdrawer\app\ActionBarActivity.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\app\src\main\java\com\mikepenz\materialdrawer\app\AdvancedActivity.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\app\src\main\java\com\mikepenz\materialdrawer\app\CollapsingToolbarActivity.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\app\src\main\java\com\mikepenz\materialdrawer\app\CompactHeaderDrawerActivity.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\app\src\main\java\com\mikepenz\materialdrawer\app\CrossfadeDrawerLayoutActvitiy.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\app\src\main\java\com\mikepenz\materialdrawer\app\CustomApplication.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\app\src\main\java\com\mikepenz\materialdrawer\app\CustomContainerActivity.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\app\src\main\java\com\mikepenz\materialdrawer\app\DrawerActivity.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\app\src\main\java\com\mikepenz\materialdrawer\app\EmbeddedDrawerActivity.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\app\src\main\java\com\mikepenz\materialdrawer\app\FragmentActivity.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\app\src\main\java\com\mikepenz\materialdrawer\app\FullscreenDrawerActivity.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\app\src\main\java\com\mikepenz\materialdrawer\app\MenuDrawerActivity.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\app\src\main\java\com\mikepenz\materialdrawer\app\MiniDrawerActivity.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\app\src\main\java\com\mikepenz\materialdrawer\app\MultiDrawerActivity.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\app\src\main\java\com\mikepenz\materialdrawer\app\NonTranslucentDrawerActivity.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\app\src\main\java\com\mikepenz\materialdrawer\app\PersistentDrawerActivity.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\app\src\main\java\com\mikepenz\materialdrawer\app\utils\CrossfadeWrapper.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\app\src\main\java\com\mikepenz\materialdrawer\app\utils\SystemUtils.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\app\src\main\java\com\mikepenz\materialdrawer\app\fragment\DemoFragment.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\app\src\main\java\com\mikepenz\materialdrawer\app\fragment\DrawerFragment.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\app\src\main\java\com\mikepenz\materialdrawer\app\fragment\SecondDrawerFragment.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\app\src\main\java\com\mikepenz\materialdrawer\app\drawerItems\AccountDividerDrawerItem.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\app\src\main\java\com\mikepenz\materialdrawer\app\drawerItems\CustomBaseViewHolder.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\app\src\main\java\com\mikepenz\materialdrawer\app\drawerItems\CustomCenteredPrimaryDrawerItem.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\app\src\main\java\com\mikepenz\materialdrawer\app\drawerItems\CustomPrimaryDrawerItem.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\app\src\main\java\com\mikepenz\materialdrawer\app\drawerItems\CustomUrlBasePrimaryDrawerItem.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\app\src\main\java\com\mikepenz\materialdrawer\app\drawerItems\CustomUrlPrimaryDrawerItem.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\app\src\main\java\com\mikepenz\materialdrawer\app\drawerItems\IconDrawerItem.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\app\src\main\java\com\mikepenz\materialdrawer\app\drawerItems\OverflowMenuDrawerItem.java
+
+JAR FILES
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\gradle\wrapper\gradle-wrapper.jar
+
+MAVEN FILES
+
+GRADLE FILES
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\build.gradle
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\build.gradle
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\app\build.gradle
+
+ANDROID MANIFEST FILE
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\app\src\main\AndroidManifest.xml
+
+ANALYZED JAVA FILES
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\AccountHeader.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\AccountHeaderBuilder.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\Drawer.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\DrawerBuilder.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\DrawerUtils.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\MiniDrawer.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\view\BezelImageView.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\util\AbstractDrawerImageLoader.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\util\DrawerImageLoader.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\util\DrawerItemViewHelper.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\util\DrawerUIUtils.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\util\KeyboardUtil.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\util\PressedEffectStateListDrawable.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\AbstractBadgeableDrawerItem.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\AbstractDrawerItem.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\AbstractSwitchableDrawerItem.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\AbstractToggleableDrawerItem.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\BaseDescribeableDrawerItem.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\BaseDrawerItem.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\BaseViewHolder.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\ContainerDrawerItem.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\DividerDrawerItem.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\ExpandableBadgeDrawerItem.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\ExpandableDrawerItem.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\MiniDrawerItem.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\MiniProfileDrawerItem.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\PrimaryDrawerItem.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\ProfileDrawerItem.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\ProfileSettingDrawerItem.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\SecondaryDrawerItem.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\SecondarySwitchDrawerItem.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\SecondaryToggleDrawerItem.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\SectionDrawerItem.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\SwitchDrawerItem.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\ToggleDrawerItem.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\utils\BadgeDrawableBuilder.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\interfaces\Badgeable.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\interfaces\ColorfulBadgeable.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\interfaces\Iconable.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\interfaces\IDrawerItem.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\interfaces\IProfile.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\interfaces\Nameable.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\interfaces\OnPostBindViewListener.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\interfaces\Selectable.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\interfaces\Tagable.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\model\interfaces\Typefaceable.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\interfaces\ICrossfader.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\interfaces\OnCheckedChangeListener.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\icons\MaterialDrawerFont.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\holder\BadgeStyle.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\holder\ColorHolder.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\holder\DimenHolder.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\holder\ImageHolder.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java\com\mikepenz\materialdrawer\holder\StringHolder.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\app\src\main\java\com\mikepenz\materialdrawer\app\ActionBarActivity.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\app\src\main\java\com\mikepenz\materialdrawer\app\AdvancedActivity.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\app\src\main\java\com\mikepenz\materialdrawer\app\CollapsingToolbarActivity.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\app\src\main\java\com\mikepenz\materialdrawer\app\CompactHeaderDrawerActivity.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\app\src\main\java\com\mikepenz\materialdrawer\app\CrossfadeDrawerLayoutActvitiy.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\app\src\main\java\com\mikepenz\materialdrawer\app\CustomApplication.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\app\src\main\java\com\mikepenz\materialdrawer\app\CustomContainerActivity.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\app\src\main\java\com\mikepenz\materialdrawer\app\DrawerActivity.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\app\src\main\java\com\mikepenz\materialdrawer\app\EmbeddedDrawerActivity.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\app\src\main\java\com\mikepenz\materialdrawer\app\FragmentActivity.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\app\src\main\java\com\mikepenz\materialdrawer\app\FullscreenDrawerActivity.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\app\src\main\java\com\mikepenz\materialdrawer\app\MenuDrawerActivity.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\app\src\main\java\com\mikepenz\materialdrawer\app\MiniDrawerActivity.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\app\src\main\java\com\mikepenz\materialdrawer\app\MultiDrawerActivity.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\app\src\main\java\com\mikepenz\materialdrawer\app\NonTranslucentDrawerActivity.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\app\src\main\java\com\mikepenz\materialdrawer\app\PersistentDrawerActivity.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\app\src\main\java\com\mikepenz\materialdrawer\app\utils\CrossfadeWrapper.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\app\src\main\java\com\mikepenz\materialdrawer\app\utils\SystemUtils.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\app\src\main\java\com\mikepenz\materialdrawer\app\fragment\DemoFragment.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\app\src\main\java\com\mikepenz\materialdrawer\app\fragment\DrawerFragment.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\app\src\main\java\com\mikepenz\materialdrawer\app\fragment\SecondDrawerFragment.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\app\src\main\java\com\mikepenz\materialdrawer\app\drawerItems\AccountDividerDrawerItem.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\app\src\main\java\com\mikepenz\materialdrawer\app\drawerItems\CustomBaseViewHolder.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\app\src\main\java\com\mikepenz\materialdrawer\app\drawerItems\CustomCenteredPrimaryDrawerItem.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\app\src\main\java\com\mikepenz\materialdrawer\app\drawerItems\CustomPrimaryDrawerItem.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\app\src\main\java\com\mikepenz\materialdrawer\app\drawerItems\CustomUrlBasePrimaryDrawerItem.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\app\src\main\java\com\mikepenz\materialdrawer\app\drawerItems\CustomUrlPrimaryDrawerItem.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\app\src\main\java\com\mikepenz\materialdrawer\app\drawerItems\IconDrawerItem.java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\app\src\main\java\com\mikepenz\materialdrawer\app\drawerItems\OverflowMenuDrawerItem.java
+
+SOURCE DIRECTORIES
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\library\src\main\java
+D:\Desenvolvimento\Projetos Github\running\mikepenz MaterialDrawer\app\src\main\java
+
+TEST DIRECTORIES
+
+DEPENDENCIES
+

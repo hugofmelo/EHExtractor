@@ -1,0 +1,10 @@
+EXCEPTION HIERARCHY
+java.lang.Throwable
+	java.lang.Exception
+		android.util.AndroidException
+			android.os.RemoteException
+		android.content.OperationApplicationException
+		java.io.IOException
+		java.lang.RuntimeException
+
+

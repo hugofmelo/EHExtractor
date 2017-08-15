@@ -42,14 +42,7 @@ public class HandlerVisitor extends VoidVisitorAdapter<JavaParserFacade>
 	public void visit (CatchClause catchClause, JavaParserFacade facade)
 	{		
 		// GET HANDLED TYPES
-		List<ReferenceType> referenceTypes = Util.getHandledTypes(catchClause, facade);
-		
-		// CREATE EXCEPTION TYPES ON MODEL
-		List <Type> types = new ArrayList <Type> ();
-		for ( ReferenceType refType : referenceTypes )
-		{
-			types.add( model.findOrCreate(null, refType) );
-		}
+		List<Type> types = this.getHandledTypes(catchClause, facade);
 
 		// SAVE HANDLER TO MODEL
 		Handler handler = model.addHandler(catchClause, types);
@@ -79,6 +72,33 @@ public class HandlerVisitor extends VoidVisitorAdapter<JavaParserFacade>
 	 * @return
 	 */
 
+	private List<Type> getHandledTypes ( CatchClause catchClause, JavaParserFacade facade  )
+	{
+		// output 
+		List<Type> types = new ArrayList<Type>();
+
+		// CHECK CATCH TYPE
+		// Solving "regular" catch clause
+		if ( catchClause.getParameter().getType() instanceof ClassOrInterfaceType)
+		{
+			ReferenceType refType = (ReferenceType) facade.convertToUsage(catchClause.getParameter().getType());
+			types.add(this.model.findOrCreate(null, refType));			
+		}
+		// Solving multicatch clause
+		else if (catchClause.getParameter().getType() instanceof UnionType)
+		{
+			UnionType multiCatch = (UnionType) catchClause.getParameter().getType();
+			Iterator<com.github.javaparser.ast.type.ReferenceType> i = multiCatch.getElements().iterator();
+			while ( i.hasNext() )
+			{
+				ReferenceType refType = (ReferenceType) facade.convertToUsage(i.next());
+				types.add(this.model.findOrCreate(null, refType));
+			}
+		}
+		
+		return types;
+	}
+	
 	private boolean isAutoCompleteHandler (CatchClause catchClause)
 	{
 		if ( catchClause.getBody().getStatements().size() == 1 )

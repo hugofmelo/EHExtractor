@@ -30,6 +30,7 @@ java.lang.Throwable
 			com.taobao.android.dx.command.dexer.Main.StopProcessing
 			java.io.UncheckedIOException
 			android.content.ActivityNotFoundException
+			android.taobao.atlas.framework.bundlestorage.BundleArchiveRevision.DexLoadException
 			android.taobao.atlas.runtime.LowDiskException
 			android.taobao.atlas.framework.bundlestorage.BundleArchive.MisMatchException
 		java.io.IOException

@@ -1,0 +1,115 @@
+Java files: 33
+Jar files: 2
+Maven files: 3
+Gradle files: 1
+Android file: true
+
+Analyzed java files: 33
+Source dirs: 3
+Test dirs: 0
+Dependencies files: 10
+
+JAVA FILES
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\library-maps-support\src\com\jeremyfeinstein\slidingmenu\lib\app\SlidingMapActivity.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\library\src\com\jeremyfeinstein\slidingmenu\lib\CanvasTransformerBuilder.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\library\src\com\jeremyfeinstein\slidingmenu\lib\CustomViewAbove.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\library\src\com\jeremyfeinstein\slidingmenu\lib\CustomViewBehind.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\library\src\com\jeremyfeinstein\slidingmenu\lib\MenuInterface.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\library\src\com\jeremyfeinstein\slidingmenu\lib\SlidingMenu.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\library\src\com\jeremyfeinstein\slidingmenu\lib\app\SlidingActivity.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\library\src\com\jeremyfeinstein\slidingmenu\lib\app\SlidingActivityBase.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\library\src\com\jeremyfeinstein\slidingmenu\lib\app\SlidingActivityHelper.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\library\src\com\jeremyfeinstein\slidingmenu\lib\app\SlidingFragmentActivity.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\library\src\com\jeremyfeinstein\slidingmenu\lib\app\SlidingListActivity.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\library\src\com\jeremyfeinstein\slidingmenu\lib\app\SlidingPreferenceActivity.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\example\src\com\jeremyfeinstein\slidingmenu\example\AttachExample.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\example\src\com\jeremyfeinstein\slidingmenu\example\BaseActivity.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\example\src\com\jeremyfeinstein\slidingmenu\example\ExampleListActivity.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\example\src\com\jeremyfeinstein\slidingmenu\example\LeftAndRightActivity.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\example\src\com\jeremyfeinstein\slidingmenu\example\PropertiesActivity.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\example\src\com\jeremyfeinstein\slidingmenu\example\SampleListFragment.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\example\src\com\jeremyfeinstein\slidingmenu\example\SlidingContent.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\example\src\com\jeremyfeinstein\slidingmenu\example\SlidingTitleBar.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\example\src\com\jeremyfeinstein\slidingmenu\example\Util.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\example\src\com\jeremyfeinstein\slidingmenu\example\ViewPagerActivity.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\example\src\com\jeremyfeinstein\slidingmenu\example\fragments\BirdActivity.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\example\src\com\jeremyfeinstein\slidingmenu\example\fragments\BirdGridFragment.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\example\src\com\jeremyfeinstein\slidingmenu\example\fragments\BirdMenuFragment.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\example\src\com\jeremyfeinstein\slidingmenu\example\fragments\ColorFragment.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\example\src\com\jeremyfeinstein\slidingmenu\example\fragments\ColorMenuFragment.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\example\src\com\jeremyfeinstein\slidingmenu\example\fragments\FragmentChangeActivity.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\example\src\com\jeremyfeinstein\slidingmenu\example\fragments\ResponsiveUIActivity.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\example\src\com\jeremyfeinstein\slidingmenu\example\anim\CustomAnimation.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\example\src\com\jeremyfeinstein\slidingmenu\example\anim\CustomScaleAnimation.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\example\src\com\jeremyfeinstein\slidingmenu\example\anim\CustomSlideAnimation.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\example\src\com\jeremyfeinstein\slidingmenu\example\anim\CustomZoomAnimation.java
+
+JAR FILES
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\library\libs\android-support-v4.jar
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\example\libs\crittercism_v3_0_3_sdkonly.jar
+
+MAVEN FILES
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\pom.xml
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\library-maps-support\pom.xml
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\library\pom.xml
+
+GRADLE FILES
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\library\build.gradle
+
+ANDROID MANIFEST FILE
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\example\AndroidManifest.xml
+
+ANALYZED JAVA FILES
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\library-maps-support\src\com\jeremyfeinstein\slidingmenu\lib\app\SlidingMapActivity.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\library\src\com\jeremyfeinstein\slidingmenu\lib\CanvasTransformerBuilder.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\library\src\com\jeremyfeinstein\slidingmenu\lib\CustomViewAbove.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\library\src\com\jeremyfeinstein\slidingmenu\lib\CustomViewBehind.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\library\src\com\jeremyfeinstein\slidingmenu\lib\MenuInterface.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\library\src\com\jeremyfeinstein\slidingmenu\lib\SlidingMenu.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\library\src\com\jeremyfeinstein\slidingmenu\lib\app\SlidingActivity.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\library\src\com\jeremyfeinstein\slidingmenu\lib\app\SlidingActivityBase.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\library\src\com\jeremyfeinstein\slidingmenu\lib\app\SlidingActivityHelper.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\library\src\com\jeremyfeinstein\slidingmenu\lib\app\SlidingFragmentActivity.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\library\src\com\jeremyfeinstein\slidingmenu\lib\app\SlidingListActivity.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\library\src\com\jeremyfeinstein\slidingmenu\lib\app\SlidingPreferenceActivity.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\example\src\com\jeremyfeinstein\slidingmenu\example\AttachExample.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\example\src\com\jeremyfeinstein\slidingmenu\example\BaseActivity.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\example\src\com\jeremyfeinstein\slidingmenu\example\ExampleListActivity.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\example\src\com\jeremyfeinstein\slidingmenu\example\LeftAndRightActivity.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\example\src\com\jeremyfeinstein\slidingmenu\example\PropertiesActivity.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\example\src\com\jeremyfeinstein\slidingmenu\example\SampleListFragment.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\example\src\com\jeremyfeinstein\slidingmenu\example\SlidingContent.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\example\src\com\jeremyfeinstein\slidingmenu\example\SlidingTitleBar.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\example\src\com\jeremyfeinstein\slidingmenu\example\Util.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\example\src\com\jeremyfeinstein\slidingmenu\example\ViewPagerActivity.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\example\src\com\jeremyfeinstein\slidingmenu\example\fragments\BirdActivity.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\example\src\com\jeremyfeinstein\slidingmenu\example\fragments\BirdGridFragment.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\example\src\com\jeremyfeinstein\slidingmenu\example\fragments\BirdMenuFragment.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\example\src\com\jeremyfeinstein\slidingmenu\example\fragments\ColorFragment.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\example\src\com\jeremyfeinstein\slidingmenu\example\fragments\ColorMenuFragment.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\example\src\com\jeremyfeinstein\slidingmenu\example\fragments\FragmentChangeActivity.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\example\src\com\jeremyfeinstein\slidingmenu\example\fragments\ResponsiveUIActivity.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\example\src\com\jeremyfeinstein\slidingmenu\example\anim\CustomAnimation.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\example\src\com\jeremyfeinstein\slidingmenu\example\anim\CustomScaleAnimation.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\example\src\com\jeremyfeinstein\slidingmenu\example\anim\CustomSlideAnimation.java
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\example\src\com\jeremyfeinstein\slidingmenu\example\anim\CustomZoomAnimation.java
+
+SOURCE DIRECTORIES
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\library-maps-support\src
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\library\src
+D:\Desenvolvimento\Projetos Github\running\jfeinstein10 SlidingMenu\example\src
+
+TEST DIRECTORIES
+
+DEPENDENCIES
+C:\Users\Hugo\.m2\repository\org\apache\httpcomponents\httpcore\4.0.1\httpcore-4.0.1.jar
+C:\Users\Hugo\.m2\repository\com\google\android\support-v4\r7\support-v4-r7.jar
+C:\Users\Hugo\.m2\repository\org\khronos\opengl-api\gl1.1-android-2.1_r1\opengl-api-gl1.1-android-2.1_r1.jar
+C:\Users\Hugo\.m2\repository\org\json\json\20080701\json-20080701.jar
+C:\Users\Hugo\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar
+C:\Users\Hugo\.m2\repository\xerces\xmlParserAPIs\2.6.2\xmlParserAPIs-2.6.2.jar
+C:\Users\Hugo\.m2\repository\commons-codec\commons-codec\1.3\commons-codec-1.3.jar
+C:\Users\Hugo\.m2\repository\xpp3\xpp3\1.1.4c\xpp3-1.1.4c.jar
+C:\Users\Hugo\.m2\repository\org\apache\httpcomponents\httpclient\4.0.1\httpclient-4.0.1.jar
+C:\Users\Hugo\.m2\repository\com\google\android\android\4.1.1.4\android-4.1.1.4.jar
+

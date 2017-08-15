@@ -1,0 +1,80 @@
+Java files: 22
+Jar files: 1
+Maven files: 0
+Gradle files: 3
+Android file: true
+
+Analyzed java files: 22
+Source dirs: 2
+Test dirs: 0
+Dependencies files: 0
+
+JAVA FILES
+D:\Desenvolvimento\Projetos Github\running\daimajia AndroidSwipeLayout\library\src\main\java\com\daimajia\swipe\SimpleSwipeListener.java
+D:\Desenvolvimento\Projetos Github\running\daimajia AndroidSwipeLayout\library\src\main\java\com\daimajia\swipe\SwipeLayout.java
+D:\Desenvolvimento\Projetos Github\running\daimajia AndroidSwipeLayout\library\src\main\java\com\daimajia\swipe\util\Attributes.java
+D:\Desenvolvimento\Projetos Github\running\daimajia AndroidSwipeLayout\library\src\main\java\com\daimajia\swipe\interfaces\SwipeAdapterInterface.java
+D:\Desenvolvimento\Projetos Github\running\daimajia AndroidSwipeLayout\library\src\main\java\com\daimajia\swipe\interfaces\SwipeItemMangerInterface.java
+D:\Desenvolvimento\Projetos Github\running\daimajia AndroidSwipeLayout\library\src\main\java\com\daimajia\swipe\implments\SwipeItemMangerImpl.java
+D:\Desenvolvimento\Projetos Github\running\daimajia AndroidSwipeLayout\library\src\main\java\com\daimajia\swipe\adapters\ArraySwipeAdapter.java
+D:\Desenvolvimento\Projetos Github\running\daimajia AndroidSwipeLayout\library\src\main\java\com\daimajia\swipe\adapters\BaseSwipeAdapter.java
+D:\Desenvolvimento\Projetos Github\running\daimajia AndroidSwipeLayout\library\src\main\java\com\daimajia\swipe\adapters\CursorSwipeAdapter.java
+D:\Desenvolvimento\Projetos Github\running\daimajia AndroidSwipeLayout\library\src\main\java\com\daimajia\swipe\adapters\RecyclerSwipeAdapter.java
+D:\Desenvolvimento\Projetos Github\running\daimajia AndroidSwipeLayout\library\src\main\java\com\daimajia\swipe\adapters\SimpleCursorSwipeAdapter.java
+D:\Desenvolvimento\Projetos Github\running\daimajia AndroidSwipeLayout\demo\src\main\java\com\daimajia\swipedemo\GridViewExample.java
+D:\Desenvolvimento\Projetos Github\running\daimajia AndroidSwipeLayout\demo\src\main\java\com\daimajia\swipedemo\ListViewExample.java
+D:\Desenvolvimento\Projetos Github\running\daimajia AndroidSwipeLayout\demo\src\main\java\com\daimajia\swipedemo\MyActivity.java
+D:\Desenvolvimento\Projetos Github\running\daimajia AndroidSwipeLayout\demo\src\main\java\com\daimajia\swipedemo\NestedExample.java
+D:\Desenvolvimento\Projetos Github\running\daimajia AndroidSwipeLayout\demo\src\main\java\com\daimajia\swipedemo\RecyclerViewExample.java
+D:\Desenvolvimento\Projetos Github\running\daimajia AndroidSwipeLayout\demo\src\main\java\com\daimajia\swipedemo\adapter\ArraySwipeAdapterSample.java
+D:\Desenvolvimento\Projetos Github\running\daimajia AndroidSwipeLayout\demo\src\main\java\com\daimajia\swipedemo\adapter\GridViewAdapter.java
+D:\Desenvolvimento\Projetos Github\running\daimajia AndroidSwipeLayout\demo\src\main\java\com\daimajia\swipedemo\adapter\ListViewAdapter.java
+D:\Desenvolvimento\Projetos Github\running\daimajia AndroidSwipeLayout\demo\src\main\java\com\daimajia\swipedemo\adapter\RecyclerViewAdapter.java
+D:\Desenvolvimento\Projetos Github\running\daimajia AndroidSwipeLayout\demo\src\main\java\com\daimajia\swipedemo\adapter\util\DividerItemDecoration.java
+D:\Desenvolvimento\Projetos Github\running\daimajia AndroidSwipeLayout\demo\src\main\java\com\daimajia\swipedemo\adapter\util\RecyclerItemClickListener.java
+
+JAR FILES
+D:\Desenvolvimento\Projetos Github\running\daimajia AndroidSwipeLayout\gradle\wrapper\gradle-wrapper.jar
+
+MAVEN FILES
+
+GRADLE FILES
+D:\Desenvolvimento\Projetos Github\running\daimajia AndroidSwipeLayout\build.gradle
+D:\Desenvolvimento\Projetos Github\running\daimajia AndroidSwipeLayout\library\build.gradle
+D:\Desenvolvimento\Projetos Github\running\daimajia AndroidSwipeLayout\demo\build.gradle
+
+ANDROID MANIFEST FILE
+D:\Desenvolvimento\Projetos Github\running\daimajia AndroidSwipeLayout\demo\src\main\AndroidManifest.xml
+
+ANALYZED JAVA FILES
+D:\Desenvolvimento\Projetos Github\running\daimajia AndroidSwipeLayout\library\src\main\java\com\daimajia\swipe\SimpleSwipeListener.java
+D:\Desenvolvimento\Projetos Github\running\daimajia AndroidSwipeLayout\library\src\main\java\com\daimajia\swipe\SwipeLayout.java
+D:\Desenvolvimento\Projetos Github\running\daimajia AndroidSwipeLayout\library\src\main\java\com\daimajia\swipe\util\Attributes.java
+D:\Desenvolvimento\Projetos Github\running\daimajia AndroidSwipeLayout\library\src\main\java\com\daimajia\swipe\interfaces\SwipeAdapterInterface.java
+D:\Desenvolvimento\Projetos Github\running\daimajia AndroidSwipeLayout\library\src\main\java\com\daimajia\swipe\interfaces\SwipeItemMangerInterface.java
+D:\Desenvolvimento\Projetos Github\running\daimajia AndroidSwipeLayout\library\src\main\java\com\daimajia\swipe\implments\SwipeItemMangerImpl.java
+D:\Desenvolvimento\Projetos Github\running\daimajia AndroidSwipeLayout\library\src\main\java\com\daimajia\swipe\adapters\ArraySwipeAdapter.java
+D:\Desenvolvimento\Projetos Github\running\daimajia AndroidSwipeLayout\library\src\main\java\com\daimajia\swipe\adapters\BaseSwipeAdapter.java
+D:\Desenvolvimento\Projetos Github\running\daimajia AndroidSwipeLayout\library\src\main\java\com\daimajia\swipe\adapters\CursorSwipeAdapter.java
+D:\Desenvolvimento\Projetos Github\running\daimajia AndroidSwipeLayout\library\src\main\java\com\daimajia\swipe\adapters\RecyclerSwipeAdapter.java
+D:\Desenvolvimento\Projetos Github\running\daimajia AndroidSwipeLayout\library\src\main\java\com\daimajia\swipe\adapters\SimpleCursorSwipeAdapter.java
+D:\Desenvolvimento\Projetos Github\running\daimajia AndroidSwipeLayout\demo\src\main\java\com\daimajia\swipedemo\GridViewExample.java
+D:\Desenvolvimento\Projetos Github\running\daimajia AndroidSwipeLayout\demo\src\main\java\com\daimajia\swipedemo\ListViewExample.java
+D:\Desenvolvimento\Projetos Github\running\daimajia AndroidSwipeLayout\demo\src\main\java\com\daimajia\swipedemo\MyActivity.java
+D:\Desenvolvimento\Projetos Github\running\daimajia AndroidSwipeLayout\demo\src\main\java\com\daimajia\swipedemo\NestedExample.java
+D:\Desenvolvimento\Projetos Github\running\daimajia AndroidSwipeLayout\demo\src\main\java\com\daimajia\swipedemo\RecyclerViewExample.java
+D:\Desenvolvimento\Projetos Github\running\daimajia AndroidSwipeLayout\demo\src\main\java\com\daimajia\swipedemo\adapter\ArraySwipeAdapterSample.java
+D:\Desenvolvimento\Projetos Github\running\daimajia AndroidSwipeLayout\demo\src\main\java\com\daimajia\swipedemo\adapter\GridViewAdapter.java
+D:\Desenvolvimento\Projetos Github\running\daimajia AndroidSwipeLayout\demo\src\main\java\com\daimajia\swipedemo\adapter\ListViewAdapter.java
+D:\Desenvolvimento\Projetos Github\running\daimajia AndroidSwipeLayout\demo\src\main\java\com\daimajia\swipedemo\adapter\RecyclerViewAdapter.java
+D:\Desenvolvimento\Projetos Github\running\daimajia AndroidSwipeLayout\demo\src\main\java\com\daimajia\swipedemo\adapter\util\DividerItemDecoration.java
+D:\Desenvolvimento\Projetos Github\running\daimajia AndroidSwipeLayout\demo\src\main\java\com\daimajia\swipedemo\adapter\util\RecyclerItemClickListener.java
+
+SOURCE DIRECTORIES
+D:\Desenvolvimento\Projetos Github\running\daimajia AndroidSwipeLayout\library\src\main\java
+D:\Desenvolvimento\Projetos Github\running\daimajia AndroidSwipeLayout\demo\src\main\java
+
+TEST DIRECTORIES
+
+DEPENDENCIES
+

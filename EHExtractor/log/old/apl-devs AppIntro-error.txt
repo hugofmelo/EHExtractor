@@ -1,0 +1,25 @@
+Maven errors: 0
+Gradle errors: 0
+Unsolved types: 2
+Unsupported errors: 0
+Unknown ancestral: 0
+Unknown signaler: 2
+
+GENERAL ERRORS
+
+MAVEN ERROR FILES
+
+GRADLE ERROR FILES
+
+UNSOLVED ERROR FILES
+Falha no Analyzer. Classe 'Unsolved symbol : ViewPager' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\library\src\main\java\com\github\paolorotolo\appintro\AppIntroViewPager.java
+Falha no Analyzer. Classe 'Unsolved symbol : ViewAction' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\example\src\androidTest\java\com\amqtech\opensource\appintroexample\util\OrientationChangeAction.java
+
+UNSUPPORTED ERROR FILES
+
+UNKNOWN ANCESTRAL
+
+UNKNOWN SIGNALERS
+Falha no Analyzer. Tipo sinalizado não pôde ser resolvido. Sinalização: 'throw new IllegalStateException("Color transitions are only available if all slides implement ISlideBackgroundColorHolder.");'. File: D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\library\src\main\java\com\github\paolorotolo\appintro\AppIntroBase.java
+Falha no Analyzer. Tipo sinalizado não pôde ser resolvido. Sinalização: 'throw new IllegalStateException("ViewPager with adapter " + this + " requires a view id");'. File: D:\Desenvolvimento\Projetos Github\running\apl-devs AppIntro\example\src\main\java\com\amqtech\opensource\appintroexample\util\FragmentStatePagerAdapter.java
+

@@ -1,0 +1,39 @@
+Maven errors: 0
+Gradle errors: 0
+Unsolved types: 3
+Unsupported errors: 4
+Unknown ancestral: 0
+Unknown signaler: 11
+
+GENERAL ERRORS
+
+MAVEN ERROR FILES
+
+GRADLE ERROR FILES
+
+UNSOLVED ERROR FILES
+Falha no Analyzer. Classe 'Unsolved symbol : DumperPlugin' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\facebook fresco\tools\stetho\src\main\java\com\facebook\imagepipeline\stetho\BaseFrescoStethoPlugin.java
+Falha no Analyzer. Classe 'Unsolved symbol : PreferenceFragmentCompat' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\facebook fresco\samples\showcase\src\main\java\com\facebook\fresco\samples\showcase\settings\SettingsFragment.java
+Falha no Analyzer. Classe 'Unsolved symbol : SVGParseException' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\facebook fresco\samples\showcase\src\main\java\com\facebook\fresco\samples\showcase\imageformat\svg\SvgDecoderExample.java
+
+UNSUPPORTED ERROR FILES
+Falha no Analyzer. UnsupportedOperation ao parsear arquivo. File: D:\Desenvolvimento\Projetos Github\running\facebook fresco\imagepipeline-backends\imagepipeline-volley\src\main\java\com\facebook\imagepipeline\backends\volley\VolleyNetworkFetcher.java
+Falha no Analyzer. UnsupportedOperation ao parsear arquivo. File: D:\Desenvolvimento\Projetos Github\running\facebook fresco\imagepipeline-backends\imagepipeline-okhttp3\src\main\java\com\facebook\imagepipeline\backends\okhttp3\OkHttpNetworkFetcher.java
+Falha no Analyzer. UnsupportedOperation ao parsear arquivo. File: D:\Desenvolvimento\Projetos Github\running\facebook fresco\imagepipeline-backends\imagepipeline-okhttp\src\main\java\com\facebook\imagepipeline\backends\okhttp\OkHttpNetworkFetcher.java
+Falha no Analyzer. UnsupportedOperation ao parsear arquivo. File: D:\Desenvolvimento\Projetos Github\running\facebook fresco\imagepipeline\src\main\java\com\facebook\imagepipeline\producers\MediaVariationsFallbackProducer.java
+
+UNKNOWN ANCESTRAL
+
+UNKNOWN SIGNALERS
+Falha no Analyzer. A sinalização não é de um dos tipos suportados. Sinalização: 'Throwables.propagate(e)'. File: D:\Desenvolvimento\Projetos Github\running\facebook fresco\static-webp\src\androidTest\java\com\facebook\webpsupport\WebpBitmapFactoryTest.java
+Falha no Analyzer. A sinalização não é de um dos tipos suportados. Sinalização: 'Throwables.propagate(e)'. File: D:\Desenvolvimento\Projetos Github\running\facebook fresco\static-webp\src\androidTest\java\com\facebook\webpsupport\WebpDecodingTest.java
+Falha no Analyzer. Tipo sinalizado não pôde ser resolvido. Sinalização: 'throw new IllegalStateException("Recycler Layout not supported");'. File: D:\Desenvolvimento\Projetos Github\running\facebook fresco\samples\scrollperf\src\main\java\com\facebook\samples\scrollperf\fragments\MainFragment.java
+Falha no Analyzer. Tipo sinalizado não pôde ser resolvido. Sinalização: 'throw new IllegalArgumentException("Unrecognized resourceId");'. File: D:\Desenvolvimento\Projetos Github\running\facebook fresco\samples\comparison\src\main\java\com\facebook\samples\comparison\instrumentation\InstrumentedNetworkImageView.java
+Falha no Analyzer. A sinalização não é de um dos tipos suportados. Sinalização: 'Throwables.propagate(ioe)'. File: D:\Desenvolvimento\Projetos Github\running\facebook fresco\imagepipeline-base\src\main\java\com\facebook\imageformat\ImageFormatChecker.java
+Falha no Analyzer. A sinalização não é de um dos tipos suportados. Sinalização: 'Throwables.propagate(e)'. File: D:\Desenvolvimento\Projetos Github\running\facebook fresco\imagepipeline\src\main\java\com\facebook\imagepipeline\platform\DalvikPurgeableDecoder.java
+Falha no Analyzer. A sinalização não é de um dos tipos suportados. Sinalização: 'Throwables.propagate(e)'. File: D:\Desenvolvimento\Projetos Github\running\facebook fresco\imagepipeline\src\main\java\com\facebook\imagepipeline\platform\GingerbreadPurgeableDecoder.java
+Falha no Analyzer. A sinalização não é de um dos tipos suportados. Sinalização: 'Throwables.propagate(exception)'. File: D:\Desenvolvimento\Projetos Github\running\facebook fresco\imagepipeline\src\main\java\com\facebook\imagepipeline\memory\BitmapCounter.java
+Falha no Analyzer. A sinalização não é de um dos tipos suportados. Sinalização: 'Throwables.propagate(ioe)'. File: D:\Desenvolvimento\Projetos Github\running\facebook fresco\imagepipeline\src\main\java\com\facebook\imagepipeline\memory\NativePooledByteBufferFactory.java
+Falha no Analyzer. A sinalização não é de um dos tipos suportados. Sinalização: 'Throwables.propagate(t)'. File: D:\Desenvolvimento\Projetos Github\running\facebook fresco\imagepipeline\src\main\java\com\facebook\imagepipeline\memory\SharedByteArray.java
+Falha no Analyzer. A sinalização não é de um dos tipos suportados. Sinalização: 'Throwables.propagate(ex)'. File: D:\Desenvolvimento\Projetos Github\running\facebook fresco\fbcore\src\main\java\com\facebook\common\statfs\StatFsHelper.java
+

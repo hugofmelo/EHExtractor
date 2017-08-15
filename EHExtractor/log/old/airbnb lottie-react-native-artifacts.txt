@@ -1,0 +1,50 @@
+Java files: 6
+Jar files: 3
+Maven files: 0
+Gradle files: 3
+Android file: true
+
+Analyzed java files: 6
+Source dirs: 2
+Test dirs: 0
+Dependencies files: 0
+
+JAVA FILES
+D:\Desenvolvimento\Projetos Github\running\airbnb lottie-react-native\lib\android\src\main\java\com\airbnb\android\react\lottie\JSONReadableArray.java
+D:\Desenvolvimento\Projetos Github\running\airbnb lottie-react-native\lib\android\src\main\java\com\airbnb\android\react\lottie\JSONReadableMap.java
+D:\Desenvolvimento\Projetos Github\running\airbnb lottie-react-native\lib\android\src\main\java\com\airbnb\android\react\lottie\LottieAnimationViewManager.java
+D:\Desenvolvimento\Projetos Github\running\airbnb lottie-react-native\lib\android\src\main\java\com\airbnb\android\react\lottie\LottiePackage.java
+D:\Desenvolvimento\Projetos Github\running\airbnb lottie-react-native\example\android\app\src\main\java\com\example\MainActivity.java
+D:\Desenvolvimento\Projetos Github\running\airbnb lottie-react-native\example\android\app\src\main\java\com\example\MainApplication.java
+
+JAR FILES
+D:\Desenvolvimento\Projetos Github\running\airbnb lottie-react-native\lib\android\gradle\wrapper\gradle-wrapper.jar
+D:\Desenvolvimento\Projetos Github\running\airbnb lottie-react-native\gradle\wrapper\gradle-wrapper.jar
+D:\Desenvolvimento\Projetos Github\running\airbnb lottie-react-native\example\android\gradle\wrapper\gradle-wrapper.jar
+
+MAVEN FILES
+
+GRADLE FILES
+D:\Desenvolvimento\Projetos Github\running\airbnb lottie-react-native\build.gradle
+D:\Desenvolvimento\Projetos Github\running\airbnb lottie-react-native\lib\android\build.gradle
+D:\Desenvolvimento\Projetos Github\running\airbnb lottie-react-native\example\android\app\build.gradle
+
+ANDROID MANIFEST FILE
+D:\Desenvolvimento\Projetos Github\running\airbnb lottie-react-native\example\android\app\src\main\AndroidManifest.xml
+
+ANALYZED JAVA FILES
+D:\Desenvolvimento\Projetos Github\running\airbnb lottie-react-native\lib\android\src\main\java\com\airbnb\android\react\lottie\JSONReadableArray.java
+D:\Desenvolvimento\Projetos Github\running\airbnb lottie-react-native\lib\android\src\main\java\com\airbnb\android\react\lottie\JSONReadableMap.java
+D:\Desenvolvimento\Projetos Github\running\airbnb lottie-react-native\lib\android\src\main\java\com\airbnb\android\react\lottie\LottieAnimationViewManager.java
+D:\Desenvolvimento\Projetos Github\running\airbnb lottie-react-native\lib\android\src\main\java\com\airbnb\android\react\lottie\LottiePackage.java
+D:\Desenvolvimento\Projetos Github\running\airbnb lottie-react-native\example\android\app\src\main\java\com\example\MainActivity.java
+D:\Desenvolvimento\Projetos Github\running\airbnb lottie-react-native\example\android\app\src\main\java\com\example\MainApplication.java
+
+SOURCE DIRECTORIES
+D:\Desenvolvimento\Projetos Github\running\airbnb lottie-react-native\lib\android\src\main\java
+D:\Desenvolvimento\Projetos Github\running\airbnb lottie-react-native\example\android\app\src\main\java
+
+TEST DIRECTORIES
+
+DEPENDENCIES
+

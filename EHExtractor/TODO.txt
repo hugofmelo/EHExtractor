@@ -12,6 +12,10 @@ DONE Prioridade 0:
 
 DONE Priorirdade 1: Verificar que vazamento de memoria é esse
 
+Priorirdade 1: Implementar crosstype analysis de wrappings
+	Conclui que só vale a pena fazer essa análise se tivermos o cálculo dos fluxos.
+	Um dos motivos é o multicatch. Não tem como saber qual dos tipos foi capturado com análise estática.
+
 Prioridade 2:
 	Pegar 10 projetos com 10 releases
 		Extrair
@@ -46,6 +50,14 @@ Nota: o JavaParser não resolve anonymous inner nested classes. Quando ocorrem em
 Nota: É preciso instalar o maven, gradle, android studio, etc, a depender do que o sistema analisado precisa.
 Nota: É considerado que qualquer dependencia em jars é externa ao sistema (library).
 
+PESQUISA
+DONE Prioridade 0: na planilha, implementar queries para cada item marcado
+DONE Prioridade 1: fazer análise de quais projetos possuem catches de runtime vazios
+	Os projetos grandes tem um impacto muito forte no resultado.
+		Ou exclui eles e ficamos somente com apps
+		Ou ponderamos a análise com o tamanho do projeto
+DONE Prioridade 1: Analisar crosstype wrappings
+	Sem análise de fluxo, fica bem limitado
 
 OLD
 Prioridade 3: Mudar todo processamento para diferentes visitors. Como o HandlerActionVisitor

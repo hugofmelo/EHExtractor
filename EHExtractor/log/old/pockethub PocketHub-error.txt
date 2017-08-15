@@ -1,0 +1,24 @@
+Maven errors: 0
+Gradle errors: 0
+Unsolved types: 1
+Unsupported errors: 0
+Unknown ancestral: 0
+Unknown signaler: 2
+
+GENERAL ERRORS
+
+MAVEN ERROR FILES
+
+GRADLE ERROR FILES
+
+UNSOLVED ERROR FILES
+Falha no Analyzer. Classe 'Unsolved symbol : AsyncLoader' não encontrada. File: D:\Desenvolvimento\Projetos Github\running\pockethub PocketHub\app\src\main\java\com\github\pockethub\android\accounts\AuthenticatedUserLoader.java
+
+UNSUPPORTED ERROR FILES
+
+UNKNOWN ANCESTRAL
+
+UNKNOWN SIGNALERS
+Falha no Analyzer. Tipo sinalizado não pôde ser resolvido. Sinalização: 'throw new IllegalStateException("Menu item " + organizationContainer + " should have a submenu");'. File: D:\Desenvolvimento\Projetos Github\running\pockethub PocketHub\app\src\main\java\com\github\pockethub\android\ui\MainActivity.java
+Falha no Analyzer. Tipo sinalizado não pôde ser resolvido. Sinalização: 'throw new IllegalStateException("Incorrect view type");'. File: D:\Desenvolvimento\Projetos Github\running\pockethub PocketHub\app\src\main\java\com\github\pockethub\android\ui\notification\NotificationListAdapter.java
+
