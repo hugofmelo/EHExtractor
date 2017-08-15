@@ -1,20 +1,9 @@
-DONE Prioridade -2: corrigir bug da origem incorreta em algumas exceções java. Quando rodar novamente, verificar o projeto "airbnb lottie-react-native"
-DONE prioridade -1: Tentar corrigir os erros e limitados.
-DONE Prioridade 1: Verificar se os projetos android realmente não tem dependencias externas. Ou verificar pq o gradle não tá prestando.
+Prioridade 1: investigar o alto número de Unsolved types.
 
-DONE Prioridade 0:
-	Pegar 50 projetos android mais estrelados
-	Extrair
-		throws
-			exceção, tipo, origem
-		catches
-			exceção, tipo, origem, autocomplete, empty
-
-DONE Priorirdade 1: Verificar que vazamento de memoria é esse
-
-Priorirdade 1: Implementar crosstype analysis de wrappings
+DONE Priorirdade 1: Implementar crosstype analysis de wrappings
 	Conclui que só vale a pena fazer essa análise se tivermos o cálculo dos fluxos.
-	Um dos motivos é o multicatch. Não tem como saber qual dos tipos foi capturado com análise estática.
+		Porque usando o JP, essa análise exige MUITO trabalho.
+		E outro motivo é o suporte ao multicatch. Não tem como saber qual dos tipos foi capturado com análise estática.
 
 Prioridade 2:
 	Pegar 10 projetos com 10 releases
@@ -24,16 +13,14 @@ Prioridade 2:
 		catches
 			exceção, tipo, origem, autocomplete, empty
 
-Prioridade 3: a classe Repository deve ter um método para baixar o repositório. Tipo Repository#downloadTo ( File targetFile, boolean unzip, String projectRootName ). 
-
 Prioridade 2: Adicionar linha de código nos modelos.
 Prioridade 2: Revisar todo o código, linha a linha, removendo ou movendo classes para seus devidos lugares.
 	Decidir como chamar os casos de "get" em que há processamento.
-DONE Prioridade 2: Baixar e extrair os projetos automaticamente
 Prioridade 2: Algumas classes android não são incluidas nas dependencias. As classes são dos projetos 'support' do android (até agora, só v4). Verificar se os existem projetos android q usam classes support e q não tem problemas. Estou pensando que esse problema é de configuração do projeto, e não do EHMetrics.
 Prioridade 2: aprender a usar a api do github e implementar minha própria busca.
 	Como pegar mais que 1000 resultados
-Prioridade 2: publicar ferramenta que busca, baixa e descompacta para o LETS
+Prioridade 2: a classe Repository deve ter um método para baixar o repositório. Tipo Repository#downloadTo ( File targetFile, boolean unzip, String projectRootName ).
+Prioridade 3: publicar ferramenta que busca, baixa e descompacta para o LETS
 Prioridade 3: Um TypeVisitor para pegar os tipos.
 CANCELADO Prioridade 3: Identificar diferentes projetos em um mesmo repositório do Github
 Prioridade 4: Verificar padrões de autocomplete do Eclipse, NetBeans e IntelliJ
@@ -57,7 +44,7 @@ DONE Prioridade 1: fazer análise de quais projetos possuem catches de runtime va
 		Ou exclui eles e ficamos somente com apps
 		Ou ponderamos a análise com o tamanho do projeto
 DONE Prioridade 1: Analisar crosstype wrappings
-	Sem análise de fluxo, fica bem limitado
+	Sem análise de fluxo, fica trabalhoso e limitado
 
 OLD
 Prioridade 3: Mudar todo processamento para diferentes visitors. Como o HandlerActionVisitor
