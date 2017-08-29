@@ -1,9 +1,9 @@
 Maven errors: 0
 Gradle errors: 0
 Unsolved types: 4
-Unsupported errors: 2
+Unsupported errors: 1
 Unknown ancestral: 0
-Unknown signaler: 3
+Unknown signaler: 4
 
 GENERAL ERRORS
 
@@ -19,12 +19,12 @@ Falha no Analyzer. Classe 'Unsolved symbol : Fragment' não encontrada. File: D:\
 
 UNSUPPORTED ERROR FILES
 Falha no Analyzer. UnsupportedOperation ao parsear arquivo. File: D:\Desenvolvimento\Projetos Github\running\bumptech glide\library\src\main\java\com\bumptech\glide\load\engine\cache\SafeKeyGenerator.java
-Falha no Analyzer. UnsupportedOperation ao parsear arquivo. File: D:\Desenvolvimento\Projetos Github\running\bumptech glide\library\src\main\java\com\bumptech\glide\load\data\mediastore\ThumbnailStreamOpener.java
 
 UNKNOWN ANCESTRAL
 
 UNKNOWN SIGNALERS
 Falha no Analyzer. Sinalizado um NameExpr, mas a exceção não está na pilha. Expressão sinalizada: 'bitmapAssertionException'. File: D:\Desenvolvimento\Projetos Github\running\bumptech glide\library\src\main\java\com\bumptech\glide\load\resource\bitmap\Downsampler.java
 Falha no Analyzer. Tipo sinalizado não pôde ser resolvido. Sinalização: 'throw new UnsupportedOperationException("Not implemented");'. File: D:\Desenvolvimento\Projetos Github\running\bumptech glide\library\src\main\java\com\bumptech\glide\load\data\DataRewinderRegistry.java
+Falha no Analyzer. Sinalização com cast. Sinalização: '(FileNotFoundException) new FileNotFoundException("NPE opening uri: " + thumbnailUri).initCause(e)'. File: D:\Desenvolvimento\Projetos Github\running\bumptech glide\library\src\main\java\com\bumptech\glide\load\data\mediastore\ThumbnailStreamOpener.java
 Falha no Analyzer. Tipo sinalizado não pôde ser resolvido. Sinalização: 'throw new IllegalStateException("Cannot process annotations after writing AppGlideModule");'. File: D:\Desenvolvimento\Projetos Github\running\bumptech glide\annotation\compiler\src\main\java\com\bumptech\glide\annotation\compiler\GlideAnnotationProcessor.java
 

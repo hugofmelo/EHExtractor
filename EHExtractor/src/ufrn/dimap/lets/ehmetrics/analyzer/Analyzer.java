@@ -37,7 +37,7 @@ public class Analyzer
 		int fileCount = 1;
 		for ( File javaFile : artifacts.getJavaFiles() )
 		{
-			List <VoidVisitorAdapter<JavaParserFacade>> visitors = getVisitors(model);
+			List <VoidVisitorAdapter<JavaParserFacade>> visitors = getVisitors(javaFile, model);
 			
 			System.out.print("Parsing " + fileCount++ + "...");
 			try
@@ -146,13 +146,13 @@ public class Analyzer
 		return solver;
 	}
 	
-	private static List <VoidVisitorAdapter<JavaParserFacade>> getVisitors (MetricsModel model)
+	private static List <VoidVisitorAdapter<JavaParserFacade>> getVisitors (File javaFile, MetricsModel model)
 	{
 		List <VoidVisitorAdapter<JavaParserFacade>> visitors = new ArrayList <VoidVisitorAdapter<JavaParserFacade>>();
 		
 		//visitors.add(new TestVisitor());
-		visitors.add(new HandlerVisitor(model));
-		visitors.add(new SignalerVisitor(model));
+		visitors.add(new HandlerVisitor(javaFile.getAbsolutePath(), model));
+		visitors.add(new SignalerVisitor(javaFile.getAbsolutePath(), model));
 		
 		return visitors;
 	}

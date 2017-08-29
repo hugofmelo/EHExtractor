@@ -1,8 +1,0 @@
-EXCEPTION HIERARCHY
-java.lang.Throwable
-	java.lang.Exception
-		java.io.IOException
-		org.json.JSONException
-		javax.xml.transform.TransformerException
-
-

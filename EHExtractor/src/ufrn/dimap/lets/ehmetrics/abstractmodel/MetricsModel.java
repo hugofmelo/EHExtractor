@@ -37,8 +37,8 @@ public class MetricsModel
 		//rethrows = 0;
 		//wrappings = 0;
 		// São iniciados os tipos Object e Throwable. Object para ser a raiz da hierarquia. E Throable para tentar corrigir um bug que faz com que algumas libs o considerem como Origin.Library.
-		Type object = new Type(null, Object.class.getCanonicalName(), ExceptionType.NO_EXCEPTION, TypeOrigin.JAVA);
-		Type throwable = new Type(null, Throwable.class.getCanonicalName(), ExceptionType.CHECKED_EXCEPTION, TypeOrigin.JAVA);
+		Type object = new Type(null, null, Object.class.getCanonicalName(), ExceptionType.NO_EXCEPTION, TypeOrigin.JAVA);
+		Type throwable = new Type(null, null, Throwable.class.getCanonicalName(), ExceptionType.CHECKED_EXCEPTION, TypeOrigin.JAVA);
 		
 		object.getSubTypes().add(throwable);
 		throwable.setSuperType(object);
@@ -112,7 +112,7 @@ public class MetricsModel
 				ExceptionType exceptionType = Util.resolveExceptionType(className, auxType);
 				TypeOrigin typeOrigin = Util.resolveTypeOrigin(classesStack.peek());
 				
-				Type newType = new Type(null, className, exceptionType, typeOrigin);
+				Type newType = new Type(null, null, className, exceptionType, typeOrigin);
 				
 				auxType.getSubTypes().add(newType);
 				newType.setSuperType(auxType);
@@ -213,18 +213,18 @@ public class MetricsModel
 	}
 	*/
 	
-	public Signaler addSignaler(ThrowStmt throwNode, Type thrownType, SignalerType type)
+	public Signaler addSignaler(String filePath, ThrowStmt throwNode, Type thrownType, Type catchedType, SignalerType type)
 	{
-		Signaler signaler = new Signaler (throwNode, thrownType, type);
+		Signaler signaler = new Signaler (filePath, throwNode, thrownType, catchedType, type);
 		
 		this.signalers.add(signaler);
 		
 		return signaler;
 	}
 	
-	public Handler addHandler(CatchClause catchNode, List<Type> types)
+	public Handler addHandler(String filePath, CatchClause catchNode, List<Type> types)
 	{
-		Handler handler = new Handler (catchNode, types);
+		Handler handler = new Handler (filePath, catchNode, types);
 		
 		this.handlers.add(handler);
 		

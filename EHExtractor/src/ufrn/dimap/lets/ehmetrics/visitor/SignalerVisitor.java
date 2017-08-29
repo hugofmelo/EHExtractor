@@ -28,13 +28,14 @@ import ufrn.dimap.lets.ehmetrics.analyzer.UnknownSignalerException;
 public class SignalerVisitor extends VoidVisitorAdapter<JavaParserFacade>
 {
 	private MetricsModel model;
-
+	private String filePath;
+	
 	private Stack<NamedHandler> handlersStack;
 
-	public SignalerVisitor (MetricsModel model)
+	public SignalerVisitor (String filePath, MetricsModel model)
 	{			
 		this.model = model;
-
+		this.filePath = filePath;
 		handlersStack = new Stack<NamedHandler>();
 	}
 
@@ -62,8 +63,19 @@ public class SignalerVisitor extends VoidVisitorAdapter<JavaParserFacade>
 			// VERIFICAR TIPO DE THROW
 			SignalerType signalerType = this.getSignalerType(thrownExpression, thrownType);
 
+			// Se o signalertype for wrapping, unwrapping ou inner throw, o tipo capturado também é salvo
+			Type catchedType;
+			if ( signalerType == SignalerType.WRAPPING ||
+				 signalerType == SignalerType.UNWRAPPING ||
+				 signalerType == SignalerType.INNER_SIMPLE)
+			{
+				catchedType = this.handlersStack.peek().getTypes().get(0);
+			}
+			else
+				catchedType = null;
+			
 			// ADICIONAR SIGNALER NO MODELO
-			model.addSignaler(throwStatement, thrownType, signalerType);
+			model.addSignaler(filePath, throwStatement, thrownType, catchedType, signalerType);
 
 			super.visit(throwStatement,facade);
 		}
@@ -105,8 +117,8 @@ public class SignalerVisitor extends VoidVisitorAdapter<JavaParserFacade>
 				String thrownExceptionName = ((NameExpr) thrownExpression).getNameAsString();
 
 				// Rethrow simples
-				Type rethrowType = this.wasHandled(thrownExceptionName);
-				if ( rethrowType != null )
+				boolean rethrow = this.wasHandled(thrownExceptionName);
+				if ( rethrow )
 				{
 					return SignalerType.RETHROW;
 				}
@@ -124,55 +136,16 @@ public class SignalerVisitor extends VoidVisitorAdapter<JavaParserFacade>
 			{
 				ObjectCreationExpr objectCreationExp = (ObjectCreationExpr) thrownExpression;
 
-				Type wrappedType = this.wasHandled(objectCreationExp.getArguments()); 
-				if ( wrappedType != null )
+				boolean wrapping = this.wasHandled(objectCreationExp.getArguments()); 
+				if ( wrapping )
 					// Houve wrapping da exceção. "throw new ... (..., e)"
 				{
-					if ( wrappedType.getType() == ExceptionType.CHECKED_EXCEPTION && thrownType.getType() == ExceptionType.CHECKED_EXCEPTION )
-					{
-						return SignalerType.WRAPPING_CHECKED_CHECKED;
-					}
-					else if ( wrappedType.getType() == ExceptionType.CHECKED_EXCEPTION && thrownType.getType() == ExceptionType.UNCHECKED_EXCEPTION )
-					{
-						return SignalerType.WRAPPING_CHECKED_UNCHECKED;
-					}
-					else if ( wrappedType.getType() == ExceptionType.CHECKED_EXCEPTION && thrownType.getType() == ExceptionType.ERROR_EXCEPTION)
-					{
-						return SignalerType.WRAPPING_CHECKED_ERROR;
-					}
-					else if ( wrappedType.getType() == ExceptionType.UNCHECKED_EXCEPTION && thrownType.getType() == ExceptionType.CHECKED_EXCEPTION )
-					{
-						return SignalerType.WRAPPING_UNCHECKED_CHECKED;
-					}
-					else if ( wrappedType.getType() == ExceptionType.UNCHECKED_EXCEPTION && thrownType.getType() == ExceptionType.UNCHECKED_EXCEPTION )
-					{
-						return SignalerType.WRAPPING_UNCHECKED_UNCHECKED;
-					}
-					else if ( wrappedType.getType() == ExceptionType.UNCHECKED_EXCEPTION && thrownType.getType() == ExceptionType.ERROR_EXCEPTION )
-					{
-						return SignalerType.WRAPPING_UNCHECKED_ERROR;
-					}
-					else if ( wrappedType.getType() == ExceptionType.ERROR_EXCEPTION && thrownType.getType() == ExceptionType.CHECKED_EXCEPTION )
-					{
-						return SignalerType.WRAPPING_ERROR_CHECKED;
-					}
-					else if ( wrappedType.getType() == ExceptionType.ERROR_EXCEPTION && thrownType.getType() == ExceptionType.UNCHECKED_EXCEPTION )
-					{
-						return SignalerType.WRAPPING_ERROR_UNCHECKED;
-					}
-					else if ( wrappedType.getType() == ExceptionType.ERROR_EXCEPTION && thrownType.getType() == ExceptionType.ERROR_EXCEPTION )
-					{
-						return SignalerType.WRAPPING_ERROR_ERROR;
-					}
-					else 
-					{
-						throw new UnknownSignalerException ("Um wrapping de tipo desconhecido. Sinalização: '" + thrownExpression + "'.");
-					}
+					return SignalerType.WRAPPING;
 				}
 				else
 					// Sem wrapping, um novo fluxo é iniciado e o atual é suprimido.
 				{
-					return SignalerType.SIMPLE;
+					return SignalerType.INNER_SIMPLE;
 				}
 			}
 			else if (thrownExpression instanceof CastExpr)
@@ -187,7 +160,7 @@ public class SignalerVisitor extends VoidVisitorAdapter<JavaParserFacade>
 				// O casteado
 				// castExpression.getExpression()
 				
-				throw new UnsupportedOperationException("Sinalização do tipo 'throw (Exception)e;'.");
+				throw new UnknownSignalerException("Sinalização com cast. Sinalização: '" + thrownExpression + "'.");
 
 				//return SignalerType.RETHROW;
 			}
@@ -228,9 +201,18 @@ public class SignalerVisitor extends VoidVisitorAdapter<JavaParserFacade>
 		return types;
 	}
 	
-	// Verifica se o nome de uma exceção (o nome da variável) está na pilha de handlers. Se estiver, retorna o tipo do handler associado àquele nome. Se não estiver, retorna null.
-	private Type wasHandled (String exceptionName)
+	// Verifica se o nome de uma exceção (o nome da variável) está na no topo da pilha de handlers. Se estiver, retorna o tipo do handler associado àquele nome. Se não estiver, retorna null.
+	private boolean wasHandled (String exceptionName)
 	{
+		if ( !this.handlersStack.isEmpty() )
+		{
+			if ( this.handlersStack.peek().getName().equals(exceptionName) )
+			{
+				return true;
+			}
+		}
+		
+		/*
 		for ( NamedHandler handler : this.handlersStack )
 		{
 			if ( handler.getName().equals(exceptionName) )
@@ -238,12 +220,12 @@ public class SignalerVisitor extends VoidVisitorAdapter<JavaParserFacade>
 				return handler.getTypes().get(0);
 			}
 		}
-
-		return null;
+		*/
+		return false;
 	}
 
 	// Verifica se em uma lista de argumentos existe uma exceção (nome da instancia) que está na pilha de handlers
-	private Type wasHandled (NodeList<Expression> arguments)
+	private boolean wasHandled (NodeList<Expression> arguments)
 	{
 		Iterator<Expression> argumentIte = arguments.iterator();
 
@@ -255,14 +237,15 @@ public class SignalerVisitor extends VoidVisitorAdapter<JavaParserFacade>
 			{
 				String argumentName = ((NameExpr) argument).getNameAsString();
 
-				Type t = this.wasHandled(argumentName); 
-				if ( t != null )
+				boolean handled = this.wasHandled(argumentName); 
+				
+				if ( handled )
 				{
-					return t;
+					return true;
 				}
 			}
 		}
 
-		return null;
+		return false;
 	}
 }

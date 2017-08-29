@@ -24,18 +24,20 @@ import ufrn.dimap.lets.ehmetrics.abstractmodel.Type;
 public class HandlerVisitor extends VoidVisitorAdapter<JavaParserFacade>
 {
 	private MetricsModel model;
+	private String filePath;
 	/*
 	private Stack<SimpleName> exceptionNamesStack;
 	private Stack<Handler> handlersStack;
 	*/
 	//private int netBeansHandlers;
 	
-	public HandlerVisitor (MetricsModel model)
+	public HandlerVisitor (String filePath, MetricsModel model)
 	{
 		/*
 		exceptionNamesStack = new Stack<SimpleName>();
 		handlersStack = new Stack<Handler>();
 		*/
+		this.filePath = filePath;
 		this.model = model;
 	}
 
@@ -45,7 +47,7 @@ public class HandlerVisitor extends VoidVisitorAdapter<JavaParserFacade>
 		List<Type> types = this.getHandledTypes(catchClause, facade);
 
 		// SAVE HANDLER TO MODEL
-		Handler handler = model.addHandler(catchClause, types);
+		Handler handler = model.addHandler(filePath, catchClause, types);
 
 		// CHECK IF AUTOCOMPLETE HANDLER
 		handler.setAutoComplete(this.isAutoCompleteHandler(catchClause));

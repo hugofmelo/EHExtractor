@@ -4,8 +4,10 @@ public enum SignalerType
 {
 	SIMPLE ("Simple"),
 	RETHROW ("Rethrow"),
-	//WRAPPING ("Wrapping"),
-
+	WRAPPING ("Wrapping"),
+	UNWRAPPING ("Unwrapping"),
+	INNER_SIMPLE ("Inner simple"),
+	/*
 	WRAPPING_CHECKED_CHECKED ("Wrapping checked-checked"),
 	WRAPPING_CHECKED_UNCHECKED ("Wrapping checked-unchecked"),
 	WRAPPING_CHECKED_ERROR ("Wrapping checked-error"),
@@ -16,7 +18,7 @@ public enum SignalerType
 	WRAPPING_ERROR_UNCHECKED ("Wrapping error-unchecked"),
 	WRAPPING_ERROR_ERROR ("Wrapping error-error"),
 	WRAPPING_UNKNOWN ("Wrapping unknown"),
-	
+	*/
 	/*
 	SIMPLE ("Simple"),
 	RETHROW_LAST ("Rethrow last"),

@@ -22,9 +22,9 @@ public class Type extends AbstractEHModelElement
 	private List<Handler> handlers;
 	
 	
-	public Type (Node node, String typeName, ExceptionType type, TypeOrigin origin)
+	public Type (String filePath, Node node, String typeName, ExceptionType type, TypeOrigin origin)
 	{
-		super(node);
+		super(filePath, node);
 		this.qualifiedName = typeName;
 		this.type = type;
 		this.origin = origin;

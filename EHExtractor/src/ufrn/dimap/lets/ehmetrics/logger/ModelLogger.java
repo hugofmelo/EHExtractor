@@ -50,7 +50,7 @@ public class ModelLogger
 			else
 			{
 				handlers = new FileWriter (ProjectsUtil.logsRoot + "handlers.txt");
-				handlers.write("PROJECT\tHANDLER ID\tHANDLED EXCEPTION\tEXCEPTION TYPE\tEXCEPTION ORIGIN\tAUTOCOMPLETE\tEMPTY\n");
+				handlers.write("PROJECT\tFILE\tLINE NUMBER\tHANDLER ID\tHANDLED EXCEPTION\tEXCEPTION TYPE\tEXCEPTION ORIGIN\tAUTOCOMPLETE\tEMPTY\n");
 				handlers.flush();
 			}
 			
@@ -63,7 +63,7 @@ public class ModelLogger
 			else
 			{
 				signalers = new FileWriter (ProjectsUtil.logsRoot + "signalers.txt");
-				signalers.write("PROJECT\tSIGNALED EXCEPTION\tEXCEPTION TYPE\tEXCEPTION ORIGIN\tSIGNALER TYPE\n");
+				signalers.write("PROJECT\tFILE\tLINE NUMBER\tSIGNALED EXCEPTION\tTYPE\tORIGIN\tSIGNALER TYPE\tHANDLED EXCEPTION\tTYPE\tORIGIN\n");
 				signalers.flush();
 			}
 		}
@@ -219,8 +219,16 @@ public class ModelLogger
 	
 		for ( Signaler signaler : model.getSignalers() )
 		{
-			Type exception = signaler.getException();
-			result += projectName + "\t" + exception.getQualifiedName() + "\t" + exception.getType()+"\t"+exception.getOrigin()+"\t"+signaler.getType()+"\n";
+			Type thrownException = signaler.getThrownException();
+			result += projectName + "\t" + signaler.getFilePath() + "\t" + signaler.getInitFileNumber() + "\t" + thrownException.getQualifiedName() + "\t" + thrownException.getType()+"\t"+thrownException.getOrigin()+"\t"+signaler.getType();
+			
+			Type catchedException = signaler.getCatchedException();
+			if ( catchedException != null )
+			{
+				result += "\t" + catchedException.getQualifiedName() + "\t" + catchedException.getType() + "\t" + catchedException.getOrigin();
+			}
+			
+			result += "\n";
 		}
 		
 		return result;
@@ -235,7 +243,7 @@ public class ModelLogger
 		{
 			for ( Type exception : handler.getExceptions() )
 			{
-				result += projectName + "\t" + i + "\t" + exception.getQualifiedName()+"\t"+exception.getType()+"\t"+exception.getOrigin()+"\t"+handler.isAutoComplete()+"\t"+handler.isEmpty()+"\n";
+				result += projectName + "\t" + handler.getFilePath() + "\t" + handler.getInitFileNumber() + "\t" + i + "\t" + exception.getQualifiedName()+"\t"+exception.getType()+"\t"+exception.getOrigin()+"\t"+handler.isAutoComplete()+"\t"+handler.isEmpty()+"\n";
 			}
 			i++;
 		}

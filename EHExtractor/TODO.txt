@@ -1,25 +1,12 @@
-Prioridade 1: investigar o alto número de Unsolved types.
-
-DONE Priorirdade 1: Implementar crosstype analysis de wrappings
-	Conclui que só vale a pena fazer essa análise se tivermos o cálculo dos fluxos.
-		Porque usando o JP, essa análise exige MUITO trabalho.
-		E outro motivo é o suporte ao multicatch. Não tem como saber qual dos tipos foi capturado com análise estática.
-
-Prioridade 2:
-	Pegar 10 projetos com 10 releases
-		Extrair
-		throws
-			exceção, tipo, origem
-		catches
-			exceção, tipo, origem, autocomplete, empty
-
-Prioridade 2: Adicionar linha de código nos modelos.
+DONE Prioridade 0: identificar caso de destructive wrapping
+DONE Prioridade 1: Adicionar linha de código nos modelos.
 Prioridade 2: Revisar todo o código, linha a linha, removendo ou movendo classes para seus devidos lugares.
 	Decidir como chamar os casos de "get" em que há processamento.
 Prioridade 2: Algumas classes android não são incluidas nas dependencias. As classes são dos projetos 'support' do android (até agora, só v4). Verificar se os existem projetos android q usam classes support e q não tem problemas. Estou pensando que esse problema é de configuração do projeto, e não do EHMetrics.
 Prioridade 2: aprender a usar a api do github e implementar minha própria busca.
 	Como pegar mais que 1000 resultados
 Prioridade 2: a classe Repository deve ter um método para baixar o repositório. Tipo Repository#downloadTo ( File targetFile, boolean unzip, String projectRootName ).
+Prioridade 2: investigar o alto número de Unsolved types.
 Prioridade 3: publicar ferramenta que busca, baixa e descompacta para o LETS
 Prioridade 3: Um TypeVisitor para pegar os tipos.
 CANCELADO Prioridade 3: Identificar diferentes projetos em um mesmo repositório do Github
@@ -30,7 +17,8 @@ Prioridade 4: Verificar padrões de autocomplete do Eclipse, NetBeans e IntelliJ
 		OK AndroidStudio
 		NetBeans
 
-
+Nota: somente o handler no topo da pilha é considerado para verificar rethrows e wrappings
+Nota: o multicatch é suportado apenas nos handlers. QUando determinando o tipo de wrapping, somente o prmeiro tipo é considerado.
 Nota: as classes de modelo que vão ser populadas pelo GitHub precisam ter os atributos iguais as tags do JSON (ver documentação), mas não precisam de getters e setters. Então a recomendação é trocar o nome dos getters para criar uma API mais amigável.
 Nota: o EHMetrics não suporta arquivos java sem pacote. A ferramenta descarta esses arquivos java.
 Nota: o JavaParser não resolve anonymous inner nested classes. Quando ocorrem em um arquivo, o arquivo é removido da análise.

@@ -14,9 +14,9 @@ public class Handler extends AbstractEHModelElement
 	private boolean isAutoComplete;
 	private boolean isEmpty;
 	
-	public Handler( CatchClause node, List<Type> handledExceptions )
+	public Handler( String filePath, CatchClause node, List<Type> handledExceptions )
 	{
-		super(node);
+		super(filePath, node);
 		this.exceptions = handledExceptions;
 		
 		for ( Type type : handledExceptions )
