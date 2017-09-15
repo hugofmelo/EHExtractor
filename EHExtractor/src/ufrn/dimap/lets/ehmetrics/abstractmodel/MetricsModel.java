@@ -1,9 +1,7 @@
 package ufrn.dimap.lets.ehmetrics.abstractmodel;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 import java.util.Stack;
 
 import com.github.javaparser.ast.Node;
@@ -16,26 +14,15 @@ import ufrn.dimap.lets.ehmetrics.analyzer.Util;
 
 public class MetricsModel
 {
-	//private static MetricsModel instance = null;
-	
 	private Type typeRoot;
 	private List<Signaler> signalers;
-	//private List<TryEntry> tries;
 	private List<Handler> handlers;
-	//private List<FinallyEntry> finallies;
-	//private int rethrows;
-	//private int wrappings;
 	
 	public MetricsModel ()
 	{	
-		signalers = new ArrayList<Signaler> ();
-		//tries = new ArrayList<TryEntry> ();
-		handlers = new ArrayList<Handler> ();
-		//finallies = new ArrayList<FinallyEntry> ();
+		signalers = new ArrayList<> ();
+		handlers = new ArrayList<> ();
 
-		
-		//rethrows = 0;
-		//wrappings = 0;
 		// São iniciados os tipos Object e Throwable. Object para ser a raiz da hierarquia. E Throable para tentar corrigir um bug que faz com que algumas libs o considerem como Origin.Library.
 		Type object = new Type(null, null, Object.class.getCanonicalName(), ExceptionType.NO_EXCEPTION, TypeOrigin.JAVA);
 		Type throwable = new Type(null, null, Throwable.class.getCanonicalName(), ExceptionType.CHECKED_EXCEPTION, TypeOrigin.JAVA);
@@ -45,23 +32,7 @@ public class MetricsModel
 		
 		this.typeRoot = object;
 	}
-	/*
-	public static MetricsModel getInstance ()
-	{
-		if ( instance == null )
-		{
-			instance = new MetricsModel();
-		}
-		
-		return instance;
-	}
-	*/
-	/*
-	public static void clearInstance ()
-	{
-		instance = new MetricsModel(); 
-	}
-	*/
+	
 	// Os tipos são armazenados em um estrutura hierarquica, tendo java.lang.Object como raiz.
 	public Type getRoot()
 	{
@@ -91,7 +62,7 @@ public class MetricsModel
 		classesStack.pop();
 		
 		auxType = this.typeRoot;
-		while ( classesStack.isEmpty() == false )
+		while ( !classesStack.isEmpty() )
 		{
 			className = classesStack.peek().getQualifiedName();
 			
@@ -127,91 +98,8 @@ public class MetricsModel
 			auxType.setNode(node);
 		}
 			
-		
 		return auxType;
 	}
-	
-	/*
-	public void findOrCreateR(Node node, ReferenceType referenceType)
-	{
-		List<ReferenceType> ancestors = referenceType.getAllClassesAncestors();
-		Stack<ReferenceType> typesStack = new Stack<ReferenceType>();
-		
-		// Os types estão em ordem contrária. Usar a pilha para inverter.
-		typesStack.push(referenceType);
-		for ( ReferenceType t : ancestors )
-		{
-			typesStack.push(t);
-		}
-		
-		addTypeRR (node, this.typeRoot, typesStack);
-	}
-	
-	private void addTypeRR(Node node, Type type, Stack<ReferenceType> typesStack)
-	{
-		ReferenceType peek;
-				
-		// O primeiro type da pilha é sempre Object. Ele é processado somente se root for null.
-		if ( typesStack.isEmpty() == false )
-		{
-			peek = typesStack.pop(); 
-			
-			if ( this.typeRoot == null)
-			{
-				this.typeRoot = new Type ( null, peek.getQualifiedName(), Util.getExceptionType(peek), null);
-				addTypeRR(node, this.typeRoot, typesStack);
-			}
-			else
-			{
-				boolean found = false;
-				for ( Type child : type.getSubTypes() )
-				{
-					if ( child.getQualifiedName().equals(peek.getQualifiedName()) )
-					{
-						type = child;
-						found = true;
-						break;
-					}
-				}
-				
-				// O type ja existe na hierarquia. Descer um nivel.
-				if ( !found )
-				{
-					Type newType = new Type(null, peek.getQualifiedName(), Util.getExceptionType(peek), null);
-					type.getSubTypes().add(newType);
-					newType.setSuperType(type);
-					type = newType;
-				}
-				
-				addTypeRR(node, type, typesStack);
-			}
-		}
-		else
-		{
-			type.setNode(node);
-		}
-	}
-	*/
-	/*
-	public SignalerEntry addSignaler (ThrowStatement throwNode)
-	{
-		SignalerEntry signaler = new SignalerEntry (throwNode);
-		this.signalers.add(signaler);
-		
-		// Associação as entidades entre si
-		//TypeEntry signaledType = this.findOrCreateType(signaler.signaledException);
-		//signaledType.signalers.add(signaler);
-		
-		return signaler;
-	}
-	
-	public TryEntry addTry(TryStatement tryNode)
-	{
-		TryEntry tryEntry = new TryEntry(tryNode);
-		this.tries.add(tryEntry);
-		return tryEntry;
-	}
-	*/
 	
 	public Signaler addSignaler(String filePath, ThrowStmt throwNode, Type thrownType, Type catchedType, SignalerType type)
 	{
@@ -235,84 +123,21 @@ public class MetricsModel
 	
 	public List<Type> listTypes ()
 	{
-		List<Type> types = new ArrayList<Type>();
+		List<Type> types = new ArrayList<>();
 		
 		types.add(this.typeRoot);
 		types.addAll(this.typeRoot.getAllSubTypes());
 		
 		return types;
 	}
-
-	/*
-	public FinallyEntry addFinally(Block finallyBlock)
-	{
-		FinallyEntry finallyEntry = new FinallyEntry (finallyBlock);
-		this.finallies.add(finallyEntry);
-		return finallyEntry;
-	}
-	*/
 	
 	public List<Signaler> getSignalers()
 	{
 		return this.signalers;
 	}
-	/*
-	public List<TryEntry> getTries()
-	{
-		return this.tries;
-	}
-	*/
+
 	public List<Handler> getHandlers()
 	{
 		return this.handlers;
 	}
-	/*
-	public List<FinallyEntry> getFinallies()
-	{
-		return this.finallies;
-	}
-
-	public int getRethrows ()
-	{
-		return this.rethrows;
-	}
-	
-	public void incrementRethrows ()
-	{
-		this.rethrows++;
-	}
-
-	public int getWrappings ()
-	{
-		return this.wrappings;
-	}
-	
-	public void incrementWrappings ()
-	{
-		this.wrappings++;
-	}
-	
-
-	// Esse método lança IllegalArgumentException se type não for uma classe.
-	private static Stack<ITypeBinding> createTypeHierarchy (ITypeBinding type)
-	{		
-		if ( type.isClass() )
-		{
-			Stack<ITypeBinding> typesStack = new Stack <ITypeBinding> ();
-			
-			while ( !type.getQualifiedName().equals("java.lang.Object") )
-			{
-				typesStack.push(type);
-				type = type.getSuperclass();
-			}
-			typesStack.push(type);
-			
-			return typesStack;
-		}
-		else
-		{
-			throw new IllegalArgumentException ("É esperada uma classe.\n\nARGUMENT: type\nVALUE: " + type.toString());
-		}
-	}
-	*/
 }

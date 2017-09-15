@@ -20,8 +20,12 @@ public class ErrorLogger
 	
 	private static List<String> unknownSignalers;
 	
-
-	public static void start () throws IOException
+	private ErrorLogger ()
+	{
+		
+	}
+	
+	public static void start ()
 	{
 		if (errors != null)
 		{
@@ -29,15 +33,15 @@ public class ErrorLogger
 		}
 		else
 		{	
-			maven = new ArrayList<String>();
-			gradle = new ArrayList<String>();
+			maven = new ArrayList<>();
+			gradle = new ArrayList<>();
 			
-			errors = new ArrayList<String>();
-			unsolved = new ArrayList<String>();
-			unsupported = new ArrayList<String>();
-			unknownAncestral = new ArrayList<String>();
+			errors = new ArrayList<>();
+			unsolved = new ArrayList<>();
+			unsupported = new ArrayList<>();
+			unknownAncestral = new ArrayList<>();
 			
-			unknownSignalers = new ArrayList<String>();
+			unknownSignalers = new ArrayList<>();
 		}
 	}
 	
@@ -58,83 +62,88 @@ public class ErrorLogger
 	{
 		FileWriter errorFile = new FileWriter (ProjectsUtil.logsRoot + projectName + "-error.txt");
 		
-		errorFile.write( writeReportCount() );
-		errorFile.write( writeReportDetails() );
-		
-		errorFile.close();
+		try
+		{
+			errorFile.write( writeReportCount() );
+			errorFile.write( writeReportDetails() );
+		}
+		finally
+		{
+			errorFile.close();
+		}
 	}
 
-	private static String writeReportCount() throws IOException
+	private static String writeReportCount()
 	{
-		String result = "";
+		StringBuilder result = new StringBuilder();
 		
-		result += "Maven errors: " + maven.size() + "\n";
-		result += "Gradle errors: " + gradle.size() + "\n";
+		result.append("Maven errors: " + maven.size() + "\n");
+		result.append("Gradle errors: " + gradle.size() + "\n");
 		
-		result += "Unsolved types: " + unsolved.size() + "\n";
-		result += "Unsupported errors: " + unsupported.size() + "\n";
-		result += "Unknown ancestral: " + unknownAncestral.size() + "\n";
-		result += "Unknown signaler: " + unknownSignalers.size() + "\n";
-		result += "\n";
+		result.append("Unsolved types: " + unsolved.size() + "\n");
+		result.append("Unsupported errors: " + unsupported.size() + "\n");
+		result.append("Unknown ancestral: " + unknownAncestral.size() + "\n");
+		result.append("Unknown signaler: " + unknownSignalers.size() + "\n");
+		result.append("\n");
 		
-		return result;
+		return result.toString();
 	
 	}
 
-	private static String writeReportDetails() throws IOException
+	private static String writeReportDetails()
 	{
-		String result = "";
+		StringBuilder result = new StringBuilder();
 		
-		result += "GENERAL ERRORS\n";
+		result.append("GENERAL ERRORS\n");
 		for ( String str : errors )
 		{
-			result += str + "\n";
+			result.append(str + "\n");
 		}
-		result += "\n";
+		result.append("\n");
 		
-		result += "MAVEN ERROR FILES\n";
+		result.append("MAVEN ERROR FILES\n");
 		for ( String str : maven )
 		{
-			result += str + "\n";
+			result.append(str + "\n");
 		}
-		result += "\n";
+		result.append("\n");
 		
-		result += "GRADLE ERROR FILES\n";
+		result.append("GRADLE ERROR FILES\n");
 		for ( String str : gradle )
 		{
-			result += str + "\n";
+			result.append(str + "\n");
 		}
-		result += "\n";
+		result.append("\n");
 		
-		result += "UNSOLVED ERROR FILES\n";
+		result.append("UNSOLVED ERROR FILES\n");
 		for ( String str : unsolved )
 		{
-			result += str + "\n";
+			result.append(str + "\n");
 		}
-		result += "\n";
+		result.append("\n");
 
-		result += "UNSUPPORTED ERROR FILES\n";
+		result.append("UNSUPPORTED ERROR FILES\n");
 		for ( String str : unsupported )
 		{
-			result += str + "\n";
+			result.append(str + "\n");
 		}
-		result += "\n";
+		result.append("\n");
 
-		result += "UNKNOWN ANCESTRAL\n";
+		result.append("UNKNOWN ANCESTRAL\n");
 		for ( String str : unknownAncestral )
 		{
-			result += str + "\n";
+			result.append(str + "\n");
 		}
-		result += "\n";
+		result.append("\n");
 		
-		result += "UNKNOWN SIGNALERS\n";
+		result.append("UNKNOWN SIGNALERS\n");
 		for ( String str : unknownSignalers )
 		{
-			result += str + "\n";
+			result.append(str + "\n");
 		}
-		result += "\n";
+		result.append("\n");
 		
-		return result;
+		return result.toString();
 	}
 	
 	public static void addMavenError (String errorMessage)

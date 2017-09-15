@@ -7,12 +7,7 @@ import java.util.List;
 import org.gradle.tooling.GradleConnector;
 import org.gradle.tooling.ProjectConnection;
 import org.gradle.tooling.model.ExternalDependency;
-import org.gradle.tooling.model.GradleProject;
 import org.gradle.tooling.model.eclipse.EclipseProject;
-import org.gradle.tooling.model.eclipse.EclipseSourceDirectory;
-import org.gradle.tooling.model.eclipse.HierarchicalEclipseProject;
-import org.gradle.tooling.model.gradle.BasicGradleProject;
-import org.gradle.tooling.model.gradle.GradleBuild;
 
 public class GradleResolver
 {

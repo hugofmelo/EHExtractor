@@ -3,7 +3,6 @@ package ufrn.dimap.lets.ehmetrics.visitor;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import java.util.Optional;
 import java.util.Stack;
 
 import com.github.javaparser.ast.NodeList;
@@ -19,7 +18,6 @@ import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
 import com.github.javaparser.symbolsolver.javaparsermodel.JavaParserFacade;
 import com.github.javaparser.symbolsolver.model.typesystem.ReferenceType;
 
-import ufrn.dimap.lets.ehmetrics.abstractmodel.ExceptionType;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.MetricsModel;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.SignalerType;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.Type;

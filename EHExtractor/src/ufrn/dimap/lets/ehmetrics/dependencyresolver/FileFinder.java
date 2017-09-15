@@ -1,28 +1,24 @@
 package ufrn.dimap.lets.ehmetrics.dependencyresolver;
 
 import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.util.Arrays;
-import java.util.List;
 import java.util.Stack;
-
-import com.google.gson.Gson;
-import com.google.gson.stream.JsonReader;
-
-import ufrn.dimap.lets.ehmetrics.ProjectsUtil;
 
 // FileFinder recebe o diretorio de um projeto e busca por arquivos relevantes, que são armazenados em um objeto ProjectFiles.
 public class FileFinder
 {
+	private FileFinder ()
+	{
+		
+	}
+	
 	public static ProjectFiles find (File projectRoot)
 	{
 		// Verificar se o caminho existe e é uma pasta
-		if ( projectRoot.exists() == false )
+		if ( !projectRoot.exists() )
 		{
 			throw new IllegalStateException ("Caminho do projeto não existe: " + projectRoot);
 		}
-		else if ( projectRoot.isDirectory() == false )
+		else if ( !projectRoot.isDirectory() )
 		{
 			throw new IllegalStateException ("Caminho do projeto não é uma pasta: " + projectRoot);
 		}
@@ -39,7 +35,7 @@ public class FileFinder
 
 			// Percorre os arquivos do projeto (varredura em profundidade). Os tipos procurados são java, jars, AndroidManifest.xml, pom.xml e build.gradle 
 			filesStack.add(parent);
-			while (filesStack.isEmpty() == false)
+			while ( !filesStack.isEmpty() )
 			{
 				parent = filesStack.pop();
 
@@ -92,24 +88,24 @@ public class FileFinder
 	public static boolean isAndroidProject (File projectRoot)
 	{
 		// Verificar se o caminho existe e é uma pasta
-		if ( projectRoot.exists() == false )
+		if ( !projectRoot.exists() )
 		{
 			throw new IllegalStateException ("Caminho do projeto não existe: " + projectRoot);
 		}
-		else if ( projectRoot.isDirectory() == false )
+		else if ( !projectRoot.isDirectory() )
 		{
 			throw new IllegalStateException ("Caminho do projeto não é uma pasta: " + projectRoot);
 		}
 		else
 		{
 			File parent;
-			Stack<File> filesStack = new Stack<File>();
+			Stack<File> filesStack = new Stack<>();
 
 			parent = projectRoot;
 
 			// Percorre os arquivos do projeto (varredura em profundidade). O arquivo procurado é p AndroidManifest.xml
 			filesStack.add(parent);
-			while (filesStack.isEmpty() == false)
+			while ( !filesStack.isEmpty() )
 			{
 				parent = filesStack.pop();
 

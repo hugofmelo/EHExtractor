@@ -11,103 +11,113 @@ import ufrn.dimap.lets.ehmetrics.dependencyresolver.ProjectFiles;
 // ArtifactLogger é um stateless logger instantaneo. Ele não precisa armazenar estado e suas chamadas são autocontidas.
 public class ArtifactLogger
 {
+	private ArtifactLogger ()
+	{
+		throw new UnsupportedOperationException();
+	}
+	
 	public static void writeReport(String projectName, ProjectFiles files, ProjectArtifacts artifacts) throws IOException
 	{
 		FileWriter logFile = new FileWriter (ProjectsUtil.logsRoot + projectName + "-artifacts.txt");
 		
-		logFile.write( writeArtifactsCount(files, artifacts) );
-		logFile.write( writeArtifactsDetails(files, artifacts) );
-		
-		logFile.close();
+		try
+		{
+			logFile.write( writeArtifactsCount(files, artifacts) );
+			logFile.write( writeArtifactsDetails(files, artifacts) );
+		}
+		finally
+		{
+			logFile.close();
+		}
 	}
 
-	private static String writeArtifactsCount(ProjectFiles files, ProjectArtifacts artifacts) throws IOException
+	private static String writeArtifactsCount(ProjectFiles files, ProjectArtifacts artifacts)
 	{
-		String result = "";
+		StringBuilder result = new StringBuilder();
 		
-		result += "Java files: " + files.getJavaFiles().size() + "\n";
-		result += "Jar files: " + files.getJarFiles().size() + "\n";
-		result += "Maven files: " + files.getMavenFiles().size() + "\n";
-		result += "Gradle files: " + files.getGradleFiles().size() + "\n";
-		result += "Android file: " + (files.getAndroidManifest() == null ? "false":"true") + "\n";
-		result += "\n";
+		result.append("Java files: " + files.getJavaFiles().size() + "\n");
+		result.append("Jar files: " + files.getJarFiles().size() + "\n");
+		result.append("Maven files: " + files.getMavenFiles().size() + "\n");
+		result.append("Gradle files: " + files.getGradleFiles().size() + "\n");
+		result.append("Android file: " + (files.getAndroidManifest() == null ? "false":"true") + "\n");
+		result.append("\n");
 
-		result += "Analyzed java files: " + artifacts.getJavaFiles().size() + "\n";
-		result += "Source dirs: " + artifacts.getSourceDirs().size() + "\n";
-		result += "Test dirs: " + artifacts.getTestDirs().size() + "\n";
-		result += "Dependencies files: " + artifacts.getDependencies().size() + "\n";
-		result += "\n";
+		result.append("Analyzed java files: " + artifacts.getJavaFiles().size() + "\n");
+		result.append("Source dirs: " + artifacts.getSourceDirs().size() + "\n");
+		result.append("Test dirs: " + artifacts.getTestDirs().size() + "\n");
+		result.append("Dependencies files: " + artifacts.getDependencies().size() + "\n");
+		result.append("\n");
 		
-		return result;
+		return result.toString();
 	}
 
-	private static String writeArtifactsDetails(ProjectFiles files, ProjectArtifacts artifacts) throws IOException
+	private static String writeArtifactsDetails(ProjectFiles files, ProjectArtifacts artifacts)
 	{
-		String result = "";
+		StringBuilder result = new StringBuilder();
 		
-		result += "JAVA FILES\n";
+		result.append("JAVA FILES\n");
 		for ( File f : files.getJavaFiles() )
 		{
-			result += f.getAbsolutePath()+"\n";
+			result.append(f.getAbsolutePath()+"\n");
 		}
-		result += "\n";
+		result.append("\n");
 
-		result += "JAR FILES\n";
+		result.append("JAR FILES\n");
 		for ( File f : files.getJarFiles() )
 		{
-			result += f.getAbsolutePath()+"\n";
+			result.append(f.getAbsolutePath()+"\n");
 		}
-		result += "\n";
+		result.append("\n");
 
-		result += "MAVEN FILES\n";
+		result.append("MAVEN FILES\n");
 		for ( File f : files.getMavenFiles() )
 		{
-			result += f.getAbsolutePath()+"\n";
+			result.append(f.getAbsolutePath()+"\n");
 		}
-		result += "\n";
-
-		result += "GRADLE FILES\n";
+		result.append("\n");
+		
+		result.append("GRADLE FILES\n");
 		for ( File f : files.getGradleFiles() )
 		{
-			result += f.getAbsolutePath()+"\n";
+			result.append(f.getAbsolutePath()+"\n");
 		}
-		result += "\n";
+		result.append("\n");
 
-		result += "ANDROID MANIFEST FILE\n";
+		result.append("ANDROID MANIFEST FILE\n");
 		if ( files.getAndroidManifest() != null )
 		{
-			result += files.getAndroidManifest().getAbsolutePath()+"\n";
+			result.append(files.getAndroidManifest().getAbsolutePath()+"\n");
 		}
-		result += "\n";
+		result.append("\n");
 
-		result += "ANALYZED JAVA FILES\n";
+		result.append("ANALYZED JAVA FILES\n");
 		for ( File f : artifacts.getJavaFiles() )
 		{
-			result += f.getAbsolutePath()+"\n";
+			result.append(f.getAbsolutePath()+"\n");
 		}
-		result += "\n";
+		result.append("\n");
 
-		result += "SOURCE DIRECTORIES\n";
+		result.append("SOURCE DIRECTORIES\n");
 		for ( File f : artifacts.getSourceDirs() )
 		{
-			result += f.getAbsolutePath()+"\n";
+			result.append(f.getAbsolutePath()+"\n");
 		}
-		result += "\n";
+		result.append("\n");
 
-		result += "TEST DIRECTORIES\n";
+		result.append("TEST DIRECTORIES\n");
 		for ( File f : artifacts.getTestDirs() )
 		{
-			result += f.getAbsolutePath()+"\n";
+			result.append(f.getAbsolutePath()+"\n");
 		}
-		result += "\n";
+		result.append("\n");
 
-		result += "DEPENDENCIES\n";
+		result.append("DEPENDENCIES\n");
 		for ( File f : artifacts.getDependencies() )
 		{
-			result += f.getAbsolutePath()+"\n";
+			result.append(f.getAbsolutePath()+"\n");
 		}
-		result += "\n";
+		result.append("\n");
 		
-		return result;
+		return result.toString();
 	}
 }

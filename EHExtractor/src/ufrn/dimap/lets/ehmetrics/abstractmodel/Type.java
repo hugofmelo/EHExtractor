@@ -2,7 +2,6 @@ package ufrn.dimap.lets.ehmetrics.abstractmodel;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Stack;
 
 import com.github.javaparser.ast.Node;
 

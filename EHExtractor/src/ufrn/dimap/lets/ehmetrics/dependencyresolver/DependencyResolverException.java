@@ -2,11 +2,11 @@ package ufrn.dimap.lets.ehmetrics.dependencyresolver;
 
 import java.io.File;
 
-import org.apache.maven.shared.invoker.MavenInvocationException;
-
 public class DependencyResolverException extends Exception
 {
-	private File file;
+	private static final long serialVersionUID = 1L;
+	
+	private final File file;
 	
 	public DependencyResolverException (String message, File file)
 	{

@@ -12,6 +12,7 @@ import com.github.javaparser.ast.CompilationUnit;
 import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
 import com.github.javaparser.symbolsolver.javaparsermodel.JavaParserFacade;
 import com.github.javaparser.symbolsolver.javaparsermodel.UnsolvedSymbolException;
+import com.github.javaparser.symbolsolver.model.resolution.TypeSolver;
 import com.github.javaparser.symbolsolver.resolution.typesolvers.CombinedTypeSolver;
 import com.github.javaparser.symbolsolver.resolution.typesolvers.JarTypeSolver;
 import com.github.javaparser.symbolsolver.resolution.typesolvers.JavaParserTypeSolver;
@@ -26,6 +27,11 @@ import ufrn.dimap.lets.ehmetrics.visitor.SignalerVisitor;
 
 public class Analyzer
 {
+	private Analyzer ()
+	{
+		throw new UnsupportedOperationException();
+	}
+	
 	// Ao encerrar este metodo, o modelo injetado no visitor terá o resultado do processamento
 	public static MetricsModel analyze(ProjectArtifacts artifacts)
 	{
@@ -86,33 +92,8 @@ public class Analyzer
 		CombinedTypeSolver solver = new CombinedTypeSolver();
 
 		// Reflection OR android solver
-		if ( artifacts.getAndroidJar() == null )
-		{
-			solver.add(new ReflectionTypeSolver());
-		}
-		else
-		{
-			try
-			{
-				solver.add(new JarTypeSolver(artifacts.getAndroidJar().getAbsolutePath()));
-			}
-			catch (RuntimeException e)
-			{
-				if ( e.getCause() instanceof NotFoundException )
-				{
-					ErrorLogger.addError("Falha no Analyzer. Falha ao adicionar android.jar. File: " + artifacts.getAndroidJar().getAbsolutePath());
-				}
-				else
-				{
-					throw e;
-				}
-			}
-			catch (IOException e)
-			{
-				ErrorLogger.addError("Falha no Analyzer. Falha ao adicionar android.jar. File: " + artifacts.getAndroidJar().getAbsolutePath());		
-			}
-		}
-
+		solver.add(Analyzer.getAndroidOrReflectionSolver(artifacts));
+		
 		// Sources solvers
 		for ( File sourceDir : artifacts.getSourceDirs() )
 		{
@@ -146,9 +127,43 @@ public class Analyzer
 		return solver;
 	}
 	
+	private static TypeSolver getAndroidOrReflectionSolver (ProjectArtifacts artifacts)
+	{
+		TypeSolver solver = null;
+		
+		if ( artifacts.getAndroidJar() == null )
+		{
+			solver = new ReflectionTypeSolver();
+		}
+		else
+		{
+			try
+			{
+				solver = new JarTypeSolver(artifacts.getAndroidJar().getAbsolutePath());
+			}
+			catch (RuntimeException e)
+			{
+				if ( e.getCause() instanceof NotFoundException )
+				{
+					ErrorLogger.addError("Falha no Analyzer. Falha ao adicionar android.jar. File: " + artifacts.getAndroidJar().getAbsolutePath());
+				}
+				else
+				{
+					throw e;
+				}
+			}
+			catch (IOException e)
+			{
+				ErrorLogger.addError("Falha no Analyzer. Falha ao adicionar android.jar. File: " + artifacts.getAndroidJar().getAbsolutePath());		
+			}
+		}
+		
+		return solver;
+	}
+	
 	private static List <VoidVisitorAdapter<JavaParserFacade>> getVisitors (File javaFile, MetricsModel model)
 	{
-		List <VoidVisitorAdapter<JavaParserFacade>> visitors = new ArrayList <VoidVisitorAdapter<JavaParserFacade>>();
+		List <VoidVisitorAdapter<JavaParserFacade>> visitors = new ArrayList <>();
 		
 		//visitors.add(new TestVisitor());
 		visitors.add(new HandlerVisitor(javaFile.getAbsolutePath(), model));

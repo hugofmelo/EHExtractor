@@ -25,11 +25,8 @@ public class MavenResolver
 	// É necessário ter um maven instalado e o home setado.
 	// obs.: Podem haver vários arquivos pom.xml em um mesmo projeto.
 	
-	//private static int i = 1;
-	
 	public static List<File> resolveDependencies(File pomFile) throws DependencyResolverException
 	{
-		
 		File outputFile;		
 		
 		// Executar o maven de fato, baixando as dependencias do pom.xml para o repositório local
@@ -65,7 +62,7 @@ public class MavenResolver
 			}
 			else // ocorreu tudo bem. Processar arquivo e retornar.
 			{
-				List <File> dependencies = new ArrayList<File>();
+				List <File> dependencies = new ArrayList<>();
 				Pattern pattern = Pattern.compile("(?<=:compile:|:provided:)(.*)");
 				try (BufferedReader reader = Files.newBufferedReader(outputFile.toPath()))
 				{

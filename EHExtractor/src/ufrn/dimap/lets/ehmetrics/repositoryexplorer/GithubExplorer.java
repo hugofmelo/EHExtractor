@@ -2,7 +2,6 @@ package ufrn.dimap.lets.ehmetrics.repositoryexplorer;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.net.URL;
@@ -14,7 +13,6 @@ import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.commons.io.filefilter.FileFileFilter;
 import org.kohsuke.github.GHDirection;
 import org.kohsuke.github.GHRepository;
 import org.kohsuke.github.GHRepositorySearchBuilder;
@@ -151,7 +149,8 @@ public class GithubExplorer
 		Iterator <GHRepository> repositoryIte = result.iterator();
 		GHRepository repository;
 		String projectDownloadURL;
-		File zipFile, projectRoot;
+		File zipFile;
+		File projectRoot;
 
 		int androidProjects = 0;
 		

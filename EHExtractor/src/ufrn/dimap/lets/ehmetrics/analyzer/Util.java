@@ -6,7 +6,6 @@ import com.github.javaparser.symbolsolver.javaparsermodel.declarations.JavaParse
 import com.github.javaparser.symbolsolver.javassistmodel.JavassistClassDeclaration;
 import com.github.javaparser.symbolsolver.model.declarations.ReferenceTypeDeclaration;
 import com.github.javaparser.symbolsolver.model.typesystem.ReferenceType;
-import com.github.javaparser.symbolsolver.reflectionmodel.ReflectionClassDeclaration;
 
 import javassist.NotFoundException;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.ExceptionType;

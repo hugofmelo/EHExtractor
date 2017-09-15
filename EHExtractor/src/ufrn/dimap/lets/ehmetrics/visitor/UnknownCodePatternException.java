@@ -1,10 +1,11 @@
 package ufrn.dimap.lets.ehmetrics.visitor;
 
-import com.github.javaparser.ast.CompilationUnit;
 import com.github.javaparser.ast.Node;
 
 public abstract class UnknownCodePatternException extends RuntimeException
 {
+	private static final long serialVersionUID = 1L;
+	
 	private Node node;
 	
 	public UnknownCodePatternException (String msg, Node node)

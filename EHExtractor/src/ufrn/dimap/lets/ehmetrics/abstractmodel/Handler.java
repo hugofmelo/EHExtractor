@@ -1,15 +1,12 @@
 package ufrn.dimap.lets.ehmetrics.abstractmodel;
 
-import java.util.ArrayList;
 import java.util.List;
 
-import com.github.javaparser.ast.Node;
 import com.github.javaparser.ast.stmt.CatchClause;
 
 public class Handler extends AbstractEHModelElement
 {
 	private List<Type> exceptions;
-	private List<HandlerAction> actions;
 	
 	private boolean isAutoComplete;
 	private boolean isEmpty;
@@ -25,22 +22,11 @@ public class Handler extends AbstractEHModelElement
 		}
 		
 		this.isAutoComplete = false;
-		actions = new ArrayList<HandlerAction> ();
-	}
-	
-	public void addHandlerAction (Node node, HandlerActionType handlerActionType)
-	{
-		this.actions.add(new HandlerAction(node, handlerActionType));
 	}
 	
 	public List<Type> getExceptions()
 	{
 		return this.exceptions;
-	}
-	
-	public List<HandlerAction> getActions()
-	{
-		return this.actions;
 	}
 	
 	public String toString()

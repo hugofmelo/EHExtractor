@@ -2,8 +2,6 @@ package ufrn.dimap.lets.ehmetrics.test.anonymousstaticnested;
 
 import java.io.IOException;
 
-import com.github.javaparser.ParseException;
-
 public class Test
 {
 	private void methodA ()

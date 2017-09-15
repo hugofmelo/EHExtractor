@@ -11,8 +11,6 @@ public abstract class AbstractEHModelElement
 
 	public AbstractEHModelElement ( String filePath, Node node )
 	{
-		//this.node = node;
-
 		this.filePath = filePath;
 
 		if ( node != null )

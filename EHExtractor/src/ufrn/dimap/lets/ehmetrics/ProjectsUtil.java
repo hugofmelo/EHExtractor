@@ -6,7 +6,6 @@ import java.util.List;
 
 public class ProjectsUtil
 {
-	public static boolean manualHandlerActionMode = false;
 	private static final boolean projectsOnDemand = false;
 	
 	
@@ -17,7 +16,7 @@ public class ProjectsUtil
 	//public static final String dependenciesRoot = "./dependencies/lets/";
 	
 	// CASA
-	public static final String projectsRoot = "D:/Desenvolvimento/Projetos Github/running/";
+	public static final String projectsRoot = "D:/Desenvolvimento/Projetos Github/Library/";
 	public static final String dependenciesRoot = "./dependencies/home/";
 	
 	public static final String logsRoot = "./log/running/";

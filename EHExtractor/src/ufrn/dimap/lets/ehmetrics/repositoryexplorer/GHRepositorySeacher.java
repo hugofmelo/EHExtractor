@@ -1,17 +1,11 @@
 package ufrn.dimap.lets.ehmetrics.repositoryexplorer;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.net.MalformedURLException;
-import java.net.URL;
-import java.net.URLConnection;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-
-import org.kohsuke.github.GHRepositorySearchBuilder.Sort;
 
 import com.google.gson.Gson;
 
@@ -46,7 +40,7 @@ public class GHRepositorySeacher
 	
 	public RepositorySearchResult doIt () throws MalformedURLException, IOException, RepositoryExplorerException
 	{
-		List<String> criteria = new ArrayList<String>();
+		List<String> criteria = new ArrayList<>();
 		
 		if ( this.language != null )		criteria.add(this.language);
 		if ( this.size != null )			criteria.add(this.size);

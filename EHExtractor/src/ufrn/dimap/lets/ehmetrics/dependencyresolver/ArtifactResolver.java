@@ -238,7 +238,7 @@ public class ArtifactResolver
 	{
 		Gson gson = new Gson();
 		FileWriter jsonFile;
-		List<String> dependencies = new ArrayList<String>();
+		List<String> dependencies = new ArrayList<>();
 		
 		// A primeira dependencies salva precisa ser o android.jar
 		if ( artifacts.getAndroidJar() != null )
@@ -264,6 +264,10 @@ public class ArtifactResolver
 		{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		}
+		finally
+		{
+			
 		}
 	}
 	
