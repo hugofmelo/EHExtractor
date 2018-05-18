@@ -139,7 +139,7 @@ public class HandlerVisitor extends VoidVisitorAdapter<JavaParserFacade>
 							// Testar se chamada é "e.printStacktrace()"
 							if (nameExpression.getNameAsString().equals("e") )
 							{
-								// Testar se comentário é "// TODO Auto-generated catch block"
+								// Testar se comentário é "// TOD O Auto-generated catch block"
 								if (statement.getComment().isPresent())
 								{
 									Comment comment = statement.getComment().get();
