@@ -38,6 +38,14 @@ public class ArtifactResolver
 		
 		return artifacts;
 	}
+	
+	public static ProjectArtifacts resolveWithoutDependencies(ProjectFiles projectFiles) {
+		ProjectArtifacts artifacts = new ProjectArtifacts();
+
+		findArtifacts(projectFiles, artifacts);
+		
+		return artifacts;
+	}
 
 	// artifacts é output do método
 	private static void findArtifacts(ProjectFiles files, ProjectArtifacts artifacts)
@@ -270,5 +278,7 @@ public class ArtifactResolver
 			
 		}
 	}
+
+	
 	
 }

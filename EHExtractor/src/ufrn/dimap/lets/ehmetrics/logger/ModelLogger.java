@@ -97,6 +97,14 @@ public class ModelLogger
 		//output.write(writeSignalers (projectName, model) ); output.write("\n\n");
 		output.close();
 	}
+	
+	public static void writeQuickMetrics(String projectName, MetricsModel model) throws IOException
+	{
+		String string = projectName + "\t" + model.totalThrows + "\t" + model.genericThrows + "\t" + model.totalCatches + "\t" + model.genericCatch + "\t" + model.emptyHandlers + "\n";
+		
+		result.write( string );
+		result.flush();
+	}
 
 	private static String writeProjectCount (String projectName, MetricsModel model) throws IOException
 	{

@@ -12,7 +12,7 @@ public class ProjectsUtil
 	
 	// Colocar endereço com barra ('/') no final
 	// LETS
-	public static final String projectsRoot = "C:/Users/mafeu_000/Google Drive/Doutorado/Pesquisa/Guidelines para o tratamento de exceções de aplicações Java - uma visão da indústria/GitHub data/";
+	public static final String projectsRoot = "C:/Users/mafeu_000/Projetos GitHub/running/";
 	public static final String dependenciesRoot = "./dependencies/lets/";
 	
 	// CASA

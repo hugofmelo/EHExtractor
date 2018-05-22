@@ -18,6 +18,13 @@ public class MetricsModel
 	private List<Signaler> signalers;
 	private List<Handler> handlers;
 	
+	public int totalCatches;
+	public int emptyHandlers;
+	public int genericCatch;
+
+	public int totalThrows;
+	public int genericThrows;
+	
 	public MetricsModel ()
 	{	
 		signalers = new ArrayList<> ();

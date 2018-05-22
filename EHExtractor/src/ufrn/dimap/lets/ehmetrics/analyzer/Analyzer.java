@@ -23,6 +23,7 @@ import ufrn.dimap.lets.ehmetrics.abstractmodel.MetricsModel;
 import ufrn.dimap.lets.ehmetrics.dependencyresolver.ProjectArtifacts;
 import ufrn.dimap.lets.ehmetrics.logger.ErrorLogger;
 import ufrn.dimap.lets.ehmetrics.visitor.HandlerVisitor;
+import ufrn.dimap.lets.ehmetrics.visitor.QuickMetricsVisitor;
 import ufrn.dimap.lets.ehmetrics.visitor.SignalerVisitor;
 
 public class Analyzer
@@ -38,23 +39,28 @@ public class Analyzer
 		JavaParserFacade.clearInstances();
 		CombinedTypeSolver solver = Analyzer.configSolver(artifacts);
 		MetricsModel model = new MetricsModel ();
-		
+		VoidVisitorAdapter <Void> visitor = new QuickMetricsVisitor(model); 
+				
 		System.out.println("Total de arquivos java: " + artifacts.getJavaFiles().size());
 		int fileCount = 1;
 		for ( File javaFile : artifacts.getJavaFiles() )
 		{
-			List <VoidVisitorAdapter<JavaParserFacade>> visitors = getVisitors(javaFile, model);
+			//List <VoidVisitorAdapter<JavaParserFacade>> visitors = getVisitors(javaFile, model);
 			
 			System.out.print("Parsing " + fileCount++ + "...");
 			try
 			{
 				CompilationUnit compUnit = JavaParser.parse(new FileInputStream(javaFile.getAbsolutePath()));
 				
+				
+				compUnit.accept(visitor, null);
+				
+				/*
 				for ( VoidVisitorAdapter<JavaParserFacade> visitor : visitors )
 				{
 					compUnit.accept(visitor, JavaParserFacade.get(solver));
 				}
-				
+				*/
 				System.out.println(" OK");
 			}
 			catch (UnsolvedSymbolException e)

@@ -66,8 +66,6 @@ public class GithubExplorer
 	{	
 		try(BufferedWriter writer = Files.newBufferedWriter (Paths.get(ProjectsUtil.projectsRoot+"aaalog.txt")))
 		{
-
-
 			GitHub gitHub = GitHub.connectAnonymously();
 
 			GHRepositorySearchBuilder search = gitHub.searchRepositories();
