@@ -2,10 +2,10 @@ package ufrn.dimap.lets.ehmetrics.analyzer;
 
 import java.util.Stack;
 
+import com.github.javaparser.resolution.declarations.ResolvedTypeDeclaration;
+import com.github.javaparser.resolution.types.ResolvedReferenceType;
 import com.github.javaparser.symbolsolver.javaparsermodel.declarations.JavaParserClassDeclaration;
 import com.github.javaparser.symbolsolver.javassistmodel.JavassistClassDeclaration;
-import com.github.javaparser.symbolsolver.model.declarations.ReferenceTypeDeclaration;
-import com.github.javaparser.symbolsolver.model.typesystem.ReferenceType;
 
 import javassist.NotFoundException;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.ExceptionType;
@@ -37,9 +37,9 @@ public class Util
 		}
 	}
 	
-	public static ExceptionType resolveExceptionType(ReferenceTypeDeclaration referenceTypeDeclaration)
+	public static ExceptionType resolveExceptionType(ResolvedTypeDeclaration referenceTypeDeclaration)
 	{
-		Stack<ReferenceTypeDeclaration> classesStack = Util.getClassAncestorsNames(referenceTypeDeclaration);
+		Stack<ResolvedTypeDeclaration> classesStack = Util.getClassAncestorsNames(referenceTypeDeclaration);
 		
 		if ( classesStack.peek().getQualifiedName().equals(Object.class.getCanonicalName()) )
 		{
@@ -70,7 +70,7 @@ public class Util
 		return ExceptionType.NO_EXCEPTION;
 	}
 	
-	public static TypeOrigin resolveTypeOrigin(ReferenceTypeDeclaration declaration)
+	public static TypeOrigin resolveTypeOrigin(ResolvedTypeDeclaration declaration)
 	{
 		String className = declaration.getQualifiedName();
 		
@@ -97,7 +97,7 @@ public class Util
 		}
 	}
 	
-	public static Stack<ReferenceTypeDeclaration> getClassAncestorsNames (ReferenceType type)
+	public static Stack<ResolvedTypeDeclaration> getClassAncestorsNames (ResolvedReferenceType type)
 	{	
 		return Util.getClassAncestorsNames(type.getTypeDeclaration());
 		/*
@@ -122,7 +122,7 @@ public class Util
 		*/
 	}
 	
-	public static Stack<ReferenceTypeDeclaration> getClassAncestorsNames (ReferenceTypeDeclaration typeDeclaration)
+	public static Stack<ResolvedTypeDeclaration> getClassAncestorsNames (ResolvedTypeDeclaration typeDeclaration)
 	{
 		if ( typeDeclaration.isClass() == false )
 		{
@@ -149,13 +149,13 @@ public class Util
 			}
 			*/
 			
-			Stack<ReferenceTypeDeclaration> types = new Stack<ReferenceTypeDeclaration>();
+			Stack<ResolvedTypeDeclaration> types = new Stack<ResolvedTypeDeclaration>();
 			
 			types.push(typeDeclaration);
 			
 			try
 			{
-				for ( ReferenceType t : typeDeclaration.getAllAncestors())
+				for ( ResolvedReferenceType t : typeDeclaration.containerType().get().getAllAncestors())
 				{
 					if (t.getTypeDeclaration().isClass())
 					{
@@ -180,9 +180,9 @@ public class Util
 		}
 	}
 	
-	private static Stack<ReferenceTypeDeclaration> reverseStack( Stack<ReferenceTypeDeclaration> input)
+	private static Stack<ResolvedTypeDeclaration> reverseStack( Stack<ResolvedTypeDeclaration> input)
 	{
-		Stack<ReferenceTypeDeclaration> output = new Stack<ReferenceTypeDeclaration>();
+		Stack<ResolvedTypeDeclaration> output = new Stack<>();
 		
 		while ( input.isEmpty() == false )
 		{

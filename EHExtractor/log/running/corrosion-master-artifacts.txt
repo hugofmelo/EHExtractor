@@ -1,0 +1,145 @@
+Java files: 54
+Jar files: 0
+Maven files: 6
+Gradle files: 0
+Android file: false
+
+Analyzed java files: 54
+Source dirs: 2
+Test dirs: 0
+Dependencies files: 0
+
+JAVA FILES
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion.tests\src\org\eclipse\corrosion\tests\AbstractCorrosionTest.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion.tests\src\org\eclipse\corrosion\tests\AllTests.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion.tests\src\org\eclipse\corrosion\tests\TestExportCargoProjectWizard.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion.tests\src\org\eclipse\corrosion\tests\TestIDEIntegration.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion.tests\src\org\eclipse\corrosion\tests\TestLSPExtensions.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion.tests\src\org\eclipse\corrosion\tests\TestLSPIntegration.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion.tests\src\org\eclipse\corrosion\tests\TestNewCargoProjectWizard.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion.tests\src\org\eclipse\corrosion\tests\TestPerspective.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion.tests\src\org\eclipse\corrosion\tests\TestRunConfiguration.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion.tests\src\org\eclipse\corrosion\tests\TestSnippetContentAssistProcessor.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion.tests\src\org\eclipse\corrosion\tests\TestSyntaxHighlighting.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\CommandJob.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\CorrosionPlugin.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\CorrosionPreferenceInitializer.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\CorrosionPreferencePage.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\Messages.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\RustManager.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\RustPerspective.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\wizards\newproject\NewCargoProjectWizard.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\wizards\newproject\NewCargoProjectWizardPage.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\wizards\importexisting\ImportPage.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\wizards\importexisting\ImportWizard.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\wizards\export\CargoExportWizard.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\wizards\export\CargoExportWizardPage.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\test\CargoTestDelegate.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\test\CargoTestTab.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\test\CargoTestTabGroup.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\snippet\Snippet.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\snippet\SnippetContentAssistProcessor.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\run\CargoRunDelegate.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\run\CargoRunTab.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\run\CargoRunTabGroup.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\launch\RustLaunchDelegateTools.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\extensions\Implementations.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\extensions\ImplementationsSearchQuery.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\extensions\ProgressIndicatorJob.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\extensions\ProgressParams.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\edit\RLSClientImplementation.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\edit\RLSServerInterface.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\edit\RLSStreamConnectionProvider.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\edit\TextEditorPreferencePage.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\debug\DebugPreferencePage.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\debug\RustDebugDelegate.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\debug\RustDebugTab.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\debug\RustDebugTabGroup.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\debug\RustGDBLaunchWrapper.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\debug\SourceLookupDirector.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\debug\ToggleBreakpointAdapter.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\debug\ToggleBreakpointsTargetFactory.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\cargo\ui\OptionLabelProvider.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\cargo\ui\OptionSelector.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\cargo\core\CargoProjectTester.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\cargo\core\CargoTools.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\cargo\core\CLIOption.java
+
+JAR FILES
+
+MAVEN FILES
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\pom.xml
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\target-platform\pom.xml
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\repository\pom.xml
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion.tests\pom.xml
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion.feature\pom.xml
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\pom.xml
+
+GRADLE FILES
+
+ANDROID MANIFEST FILE
+
+ANALYZED JAVA FILES
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion.tests\src\org\eclipse\corrosion\tests\AbstractCorrosionTest.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion.tests\src\org\eclipse\corrosion\tests\AllTests.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion.tests\src\org\eclipse\corrosion\tests\TestExportCargoProjectWizard.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion.tests\src\org\eclipse\corrosion\tests\TestIDEIntegration.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion.tests\src\org\eclipse\corrosion\tests\TestLSPExtensions.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion.tests\src\org\eclipse\corrosion\tests\TestLSPIntegration.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion.tests\src\org\eclipse\corrosion\tests\TestNewCargoProjectWizard.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion.tests\src\org\eclipse\corrosion\tests\TestPerspective.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion.tests\src\org\eclipse\corrosion\tests\TestRunConfiguration.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion.tests\src\org\eclipse\corrosion\tests\TestSnippetContentAssistProcessor.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion.tests\src\org\eclipse\corrosion\tests\TestSyntaxHighlighting.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\CommandJob.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\CorrosionPlugin.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\CorrosionPreferenceInitializer.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\CorrosionPreferencePage.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\Messages.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\RustManager.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\RustPerspective.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\wizards\newproject\NewCargoProjectWizard.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\wizards\newproject\NewCargoProjectWizardPage.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\wizards\importexisting\ImportPage.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\wizards\importexisting\ImportWizard.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\wizards\export\CargoExportWizard.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\wizards\export\CargoExportWizardPage.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\test\CargoTestDelegate.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\test\CargoTestTab.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\test\CargoTestTabGroup.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\snippet\Snippet.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\snippet\SnippetContentAssistProcessor.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\run\CargoRunDelegate.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\run\CargoRunTab.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\run\CargoRunTabGroup.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\launch\RustLaunchDelegateTools.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\extensions\Implementations.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\extensions\ImplementationsSearchQuery.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\extensions\ProgressIndicatorJob.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\extensions\ProgressParams.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\edit\RLSClientImplementation.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\edit\RLSServerInterface.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\edit\RLSStreamConnectionProvider.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\edit\TextEditorPreferencePage.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\debug\DebugPreferencePage.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\debug\RustDebugDelegate.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\debug\RustDebugTab.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\debug\RustDebugTabGroup.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\debug\RustGDBLaunchWrapper.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\debug\SourceLookupDirector.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\debug\ToggleBreakpointAdapter.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\debug\ToggleBreakpointsTargetFactory.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\cargo\ui\OptionLabelProvider.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\cargo\ui\OptionSelector.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\cargo\core\CargoProjectTester.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\cargo\core\CargoTools.java
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src\org\eclipse\corrosion\cargo\core\CLIOption.java
+
+SOURCE DIRECTORIES
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion.tests\src
+D:\Desenvolvimento\Projetos Github\Smells\corrosion-master\org.eclipse.corrosion\src
+
+TEST DIRECTORIES
+
+DEPENDENCIES
+

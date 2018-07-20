@@ -1,0 +1,10 @@
+Projects	Protected mains	Unprotected mains	
+batfish-master	0	4	
+Projects	Protected mains	Unprotected mains	
+corrosion-master	0	0	
+Projects	Protected mains	Unprotected mains	
+github-api-master	0	0	
+Projects	Protected mains	Unprotected mains	
+JSqlParser-master	0	0	
+Projects	Protected mains	Unprotected mains	
+Payara-master	9	52	
