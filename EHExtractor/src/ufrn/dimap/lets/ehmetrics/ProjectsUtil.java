@@ -1,6 +1,11 @@
 package ufrn.dimap.lets.ehmetrics;
 
 import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,14 +17,22 @@ public class ProjectsUtil
 	
 	// Colocar endereço com barra ('/') no final
 	// LETS
+<<<<<<< HEAD
 	public static final String projectsRoot = "C:/Users/mafeu_000/Projetos GitHub/analysis/";
 	public static final String dependenciesRoot = "./dependencies/lets/";
+=======
+	//public static final String projectsRoot = "C:/Users/mafeu_000/Projetos GitHub/running/";
+	//public static final String dependenciesRoot = "./dependencies/lets/";
+>>>>>>> refs/remotes/origin/updateJSS
 	
 	// CASA
-	//public static final String projectsRoot = "D:/Desenvolvimento/Projetos Github/Library/";
-	//public static final String dependenciesRoot = "./dependencies/home/";
+	public static final String projectsRoot = "D:/Desenvolvimento/Projetos Github/Smells/";
+	public static final String dependenciesRoot = "./dependencies/home/";
 	
 	public static final String logsRoot = "C:/Users/mafeu_000/Projetos GitHub/log/";
+	
+	public static StringBuilder smellsBuilder;
+	private static final String smellsLog = "./log/smells/log.txt";
 	
 	public static List<File> listProjects ()
 	{
@@ -120,6 +133,27 @@ public class ProjectsUtil
 		return projectsPaths;
 	}
 	
+	public static void startSmellsLog()
+	{
+		smellsBuilder = new StringBuilder();
+	}
 	
-			
+	public static void writeSmellsLog(String content)
+	{
+		smellsBuilder.append(content);
+	}
+	
+	public static void saveAndCloseSmellsLog ()
+	{
+		Path path = Paths.get(ProjectsUtil.smellsLog);
+		
+		try
+		{
+			Files.write(path, smellsBuilder.toString().getBytes());
+		}
+		catch (IOException e)
+		{
+			throw new ThinkLaterException(e);
+		}
+	}
 }

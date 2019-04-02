@@ -200,7 +200,7 @@ public class ArtifactResolver
 	// Verifica, de maneira bem fraca, se o source dir é de classes de teste. No caso considera-se que é source de teste se houver uma pasta chamada "test" no caminho.
 	private static boolean isTestDir(String path)
 	{
-		return path.indexOf("\\test\\") != -1;
+		return path.indexOf("\\test\\") != -1 || path.indexOf("\\tests\\") != -1;
 	}
 
 	private static boolean loadDependencies(String projectName, ProjectArtifacts artifacts)

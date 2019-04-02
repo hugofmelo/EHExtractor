@@ -31,7 +31,8 @@ public class Main
 
 		try
 		{
-			main.execute();
+			main.findBadSmells();
+			//main.execute();
 			//main.generateDependenciesFiles();
 			//main.runSonarLint();
 			//main.readSonarLintReport();
@@ -55,6 +56,58 @@ public class Main
 	write report
 	 */	
 
+	public void findBadSmells() throws IOException
+	{
+		//ModelLogger.start();
+		
+		
+		System.out.println("Identificando projetos para analise...");
+		List<File> projects = ProjectsUtil.listProjects();
+
+		for ( File project : projects )
+		{
+			System.out.println(project.getName());
+		}
+		System.out.println();
+		System.out.println();
+
+		ProjectsUtil.startSmellsLog();
+		for ( File project : projects )
+		{
+			ErrorLogger.start();
+
+			System.out.println("****** PROJETO " + project.getName() + " ******");
+
+			System.out.println("Identificando arquivos...");
+			ProjectFiles projectFiles = FileFinder.find(project);
+
+			System.out.println("Resolvendo artefatos...");			
+			ProjectArtifacts projectArtifacts = ArtifactResolver.resolveWithoutDependencies(projectFiles);
+			
+			// Logging
+			ArtifactLogger.writeReport(project.getName(), projectFiles, projectArtifacts);
+
+			System.out.println("Executando análise...");
+			Analyzer.analyze2(project.getName(), projectArtifacts); 
+
+			System.out.println("Salvando resultados...");
+			// Logging
+			////ModelLogger.writeReport(project.getName(), model);
+			//ModelLogger.writeQuickMetrics(project.getName(), model);
+			ErrorLogger.writeReport(project.getName());
+
+			ErrorLogger.stop();
+
+			System.out.println("Finalizada a analise do projeto " + project.getName() + ".");
+			System.out.println();	
+		}
+		ProjectsUtil.saveAndCloseSmellsLog();
+
+		//ModelLogger.stop();
+
+		System.out.println("FINALIZADO");
+	}
+	
 	public void execute() throws IOException
 	{
 		ModelLogger.start();

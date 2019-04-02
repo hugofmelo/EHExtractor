@@ -19,12 +19,16 @@ import com.github.javaparser.symbolsolver.resolution.typesolvers.JavaParserTypeS
 import com.github.javaparser.symbolsolver.resolution.typesolvers.ReflectionTypeSolver;
 
 import javassist.NotFoundException;
+import ufrn.dimap.lets.ehmetrics.ProjectsUtil;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.MetricsModel;
 import ufrn.dimap.lets.ehmetrics.dependencyresolver.ProjectArtifacts;
 import ufrn.dimap.lets.ehmetrics.logger.ErrorLogger;
 import ufrn.dimap.lets.ehmetrics.visitor.HandlerVisitor;
 import ufrn.dimap.lets.ehmetrics.visitor.QuickMetricsVisitor;
 import ufrn.dimap.lets.ehmetrics.visitor.SignalerVisitor;
+import ufrn.dimap.lets.ehmetrics.visitor.SimpleVisitor;
+import ufrn.dimap.lets.ehmetrics.visitor.smells.HandlingCodingErrorVisitor;
+import ufrn.dimap.lets.ehmetrics.visitor.smells.UnprotectedMainVisitor;
 
 public class Analyzer
 {
@@ -32,7 +36,7 @@ public class Analyzer
 	{
 		throw new UnsupportedOperationException();
 	}
-	
+
 	// Ao encerrar este metodo, o modelo injetado no visitor terá o resultado do processamento
 	public static MetricsModel analyze(ProjectArtifacts artifacts)
 	{
@@ -40,27 +44,27 @@ public class Analyzer
 		CombinedTypeSolver solver = Analyzer.configSolver(artifacts);
 		MetricsModel model = new MetricsModel ();
 		VoidVisitorAdapter <Void> visitor = new QuickMetricsVisitor(model); 
-				
+
 		System.out.println("Total de arquivos java: " + artifacts.getJavaFiles().size());
 		int fileCount = 1;
 		for ( File javaFile : artifacts.getJavaFiles() )
 		{
 			//List <VoidVisitorAdapter<JavaParserFacade>> visitors = getVisitors(javaFile, model);
-			
+
 			System.out.print("Parsing " + fileCount++ + "...");
 			try
 			{
 				CompilationUnit compUnit = JavaParser.parse(new FileInputStream(javaFile.getAbsolutePath()));
-				
-				
+
+
 				compUnit.accept(visitor, null);
-				
+
 				/*
 				for ( VoidVisitorAdapter<JavaParserFacade> visitor : visitors )
 				{
 					compUnit.accept(visitor, JavaParserFacade.get(solver));
 				}
-				*/
+				 */
 				System.out.println(" OK");
 			}
 			catch (UnsolvedSymbolException e)
@@ -89,8 +93,63 @@ public class Analyzer
 				ErrorLogger.addUnknownAncestral("Falha no Analyzer. " + e.getMessage() + " File: " + javaFile.getAbsolutePath());
 			}
 		}
-		
+
 		return model;
+	}
+
+
+	public static void analyze2(String projectName, ProjectArtifacts artifacts)
+	{
+		List <SimpleVisitor> visitors = getVisitors2(); 
+
+		// Criando cabeçalho do log
+		ProjectsUtil.writeSmellsLog("Projects\t");
+		for ( SimpleVisitor visitor : visitors )
+		{
+			ProjectsUtil.writeSmellsLog(visitor.printHeader());
+		}
+		ProjectsUtil.writeSmellsLog("\n");
+		
+		System.out.println("Total de arquivos java: " + artifacts.getJavaFiles().size());
+		
+		int fileCount = 1;
+		for ( File javaFile : artifacts.getJavaFiles() )
+		{
+			System.out.print("Parsing " + fileCount++ + "...");
+			try
+			{
+				CompilationUnit compUnit = JavaParser.parse(new FileInputStream(javaFile.getAbsolutePath()));
+
+				for ( VoidVisitorAdapter<Void> visitor : visitors )
+				{
+					compUnit.accept(visitor, null);
+				}
+
+				System.out.println(" OK");
+			}
+			catch (FileNotFoundException e)
+			{
+				System.out.println(" Error - File not found.");
+				ErrorLogger.addError("Falha no Analyzer. Arquivo não encontrado. File:" + javaFile.getAbsolutePath());
+			}
+			catch (UnsupportedOperationException e)
+			{
+				System.out.println(" Error - Unsupported operation.");
+				ErrorLogger.addUnsupported("Falha no Analyzer. UnsupportedOperation ao parsear arquivo. File: " + javaFile.getAbsolutePath());
+			}
+			catch (UnknownSignalerException e)
+			{
+				System.out.println(" Error - Signaler não reconhecido.");
+				ErrorLogger.addUnknownSignaler("Falha no Analyzer. " + e.getMessage() + " File: " + javaFile.getAbsolutePath());
+			}
+		}
+		
+		ProjectsUtil.writeSmellsLog(projectName + "\t");
+		for ( SimpleVisitor visitor : visitors )
+		{
+			ProjectsUtil.writeSmellsLog(visitor.printOutput());
+		}
+		ProjectsUtil.writeSmellsLog("\n");
 	}
 
 	private static CombinedTypeSolver configSolver(ProjectArtifacts artifacts)
@@ -99,13 +158,13 @@ public class Analyzer
 
 		// Reflection OR android solver
 		solver.add(Analyzer.getAndroidOrReflectionSolver(artifacts));
-		
+
 		// Sources solvers
 		for ( File sourceDir : artifacts.getSourceDirs() )
 		{
 			solver.add( new JavaParserTypeSolver(sourceDir) );
 		}
-		
+
 		// Dependencies solvers
 		for ( File dependencyFile : artifacts.getDependencies() )
 		{
@@ -129,14 +188,14 @@ public class Analyzer
 				ErrorLogger.addError("Falha no Analyzer. Falha ao adicionar JarSolver. File: " + dependencyFile.getAbsolutePath());		
 			}
 		}
-		
+
 		return solver;
 	}
-	
+
 	private static TypeSolver getAndroidOrReflectionSolver (ProjectArtifacts artifacts)
 	{
 		TypeSolver solver = null;
-		
+
 		if ( artifacts.getAndroidJar() == null )
 		{
 			solver = new ReflectionTypeSolver();
@@ -163,18 +222,29 @@ public class Analyzer
 				ErrorLogger.addError("Falha no Analyzer. Falha ao adicionar android.jar. File: " + artifacts.getAndroidJar().getAbsolutePath());		
 			}
 		}
-		
+
 		return solver;
 	}
-	
+
 	private static List <VoidVisitorAdapter<JavaParserFacade>> getVisitors (File javaFile, MetricsModel model)
 	{
 		List <VoidVisitorAdapter<JavaParserFacade>> visitors = new ArrayList <>();
-		
+
 		//visitors.add(new TestVisitor());
 		visitors.add(new HandlerVisitor(javaFile.getAbsolutePath(), model));
 		visitors.add(new SignalerVisitor(javaFile.getAbsolutePath(), model));
-		
+
+		return visitors;
+	}
+	
+	private static List <SimpleVisitor> getVisitors2 ()
+	{
+		List <SimpleVisitor> visitors = new ArrayList <>();
+
+		//visitors.add(new TestVisitor());
+		//visitors.add(new HandlingCodingErrorVisitor());
+		visitors.add(new UnprotectedMainVisitor());
+
 		return visitors;
 	}
 }

@@ -7,8 +7,10 @@ import java.util.Stack;
 import com.github.javaparser.ast.Node;
 import com.github.javaparser.ast.stmt.CatchClause;
 import com.github.javaparser.ast.stmt.ThrowStmt;
+import com.github.javaparser.ast.type.ReferenceType;
+import com.github.javaparser.resolution.declarations.ResolvedTypeDeclaration;
+import com.github.javaparser.resolution.types.ResolvedReferenceType;
 import com.github.javaparser.symbolsolver.model.declarations.ReferenceTypeDeclaration;
-import com.github.javaparser.symbolsolver.model.typesystem.ReferenceType;
 
 import ufrn.dimap.lets.ehmetrics.analyzer.Util;
 
@@ -46,14 +48,14 @@ public class MetricsModel
 		return this.typeRoot;
 	}	
 	
-	public Type findOrCreate(Node node, ReferenceType referenceType)
+	public Type findOrCreate(Node node, ResolvedReferenceType referenceType)
 	{
 		return this.findOrCreate(node, referenceType.getTypeDeclaration());
 	}
 	
-	public Type findOrCreate(Node node, ReferenceTypeDeclaration referenceTypeDeclaration)
+	public Type findOrCreate(Node node, ResolvedTypeDeclaration referenceTypeDeclaration)
 	{
-		Stack<ReferenceTypeDeclaration> classesStack = Util.getClassAncestorsNames(referenceTypeDeclaration);
+		Stack<ResolvedTypeDeclaration> classesStack = Util.getClassAncestorsNames(referenceTypeDeclaration);
 		
 		return this.findOrCreate(node, classesStack);
 	}
