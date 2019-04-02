@@ -24,6 +24,7 @@ public class QuickMetricsVisitor extends VoidVisitorAdapter<Void> {
 		this.model = model;
 	}
 
+	@Override
 	public void visit (CatchClause catchClause, Void arg)
 	{		
 		this.model.totalCatches++;
@@ -50,7 +51,7 @@ public class QuickMetricsVisitor extends VoidVisitorAdapter<Void> {
 	private List<ClassOrInterfaceType> getHandledTypes ( CatchClause catchClause )
 	{
 		// output 
-		List<ClassOrInterfaceType> types = new ArrayList<ClassOrInterfaceType>();
+		List<ClassOrInterfaceType> types = new ArrayList<>();
 
 		try {
 			// CHECK CATCH TYPE

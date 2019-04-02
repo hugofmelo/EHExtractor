@@ -6,20 +6,20 @@ import java.util.List;
 
 public class ProjectsUtil
 {
-	private static final boolean projectsOnDemand = false;
+	private static final boolean projectsOnDemand = true;
 	
 	
 	
 	// Colocar endereço com barra ('/') no final
 	// LETS
-	public static final String projectsRoot = "C:/Users/mafeu_000/Projetos GitHub/running/";
+	public static final String projectsRoot = "C:/Users/mafeu_000/Projetos GitHub/analysis/";
 	public static final String dependenciesRoot = "./dependencies/lets/";
 	
 	// CASA
 	//public static final String projectsRoot = "D:/Desenvolvimento/Projetos Github/Library/";
 	//public static final String dependenciesRoot = "./dependencies/home/";
 	
-	public static final String logsRoot = "./log/running/";
+	public static final String logsRoot = "C:/Users/mafeu_000/Projetos GitHub/log/";
 	
 	public static List<File> listProjects ()
 	{
@@ -54,8 +54,19 @@ public class ProjectsUtil
 		List <File> projectsPaths = new ArrayList<File>();
 		
 		// Test self
-		projectsPaths.add(new File("../EHExtractor"));
+		//projectsPaths.add(new File("../EHExtractor"));
 		
+		projectsPaths.add(new File(projectsRoot+"elasticsearch/server/src/main"));
+		projectsPaths.add(new File(projectsRoot+"netty/handler/src"));
+		projectsPaths.add(new File(projectsRoot+"vert.x/src/main/java/io"));
+		projectsPaths.add(new File(projectsRoot+"mybatis-3/src/main/java"));
+		projectsPaths.add(new File(projectsRoot+"presto/presto-accumulo/src/main/java"));
+		projectsPaths.add(new File(projectsRoot+"presto/presto-main/src/main/java"));
+		projectsPaths.add(new File(projectsRoot+"hadoop/hadoop-yarn-project/hadoop-yarn"));
+		projectsPaths.add(new File(projectsRoot+"hadoop/hadoop-hdfs-project/hadoop-hdfs/src/main/java"));
+		projectsPaths.add(new File(projectsRoot+"druid/common/src/main/java"));
+		projectsPaths.add(new File(projectsRoot+"pinpoint/bootstrap-core/src/main/java"));
+				
 		// Github
 		/*
 		projectsPaths.add(new File(projectsRoot+"afollestad-material-dialogs"));
@@ -98,7 +109,7 @@ public class ProjectsUtil
 			
 			if ( !f.exists() )
 			{
-				System.err.println("Baixar projeto " + f.getName());
+				System.err.println("Baixar projeto " + f.getAbsolutePath());
 				stop = true;
 			}
 		}

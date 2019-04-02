@@ -15,6 +15,7 @@ import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.ZoneId;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
@@ -48,9 +49,9 @@ import ufrn.dimap.lets.ehmetrics.repositoryexplorer.model.RepositorySearchResult
 
 public class GithubExplorer
 {
-	private static final String created = "<2017-12-10";
-	private static final String lastCommit = ">=2018-04-10";
-	private static final String stars = "<=197";
+	private static final String created = "<2018-01-01";
+	private static final String lastCommit = ">=2018-05-19";
+	private static final String stars = "<=35";
 	private static final int minimumActiveContributors = 2;
 	private static final int minimumRecentCommits = 20;
 	private static final int minimumContributorCommits = 5;
@@ -67,6 +68,7 @@ public class GithubExplorer
 		try(BufferedWriter writer = Files.newBufferedWriter (Paths.get(ProjectsUtil.projectsRoot+"aaalog.txt")))
 		{
 			GitHub gitHub = GitHub.connectAnonymously();
+			
 
 			GHRepositorySearchBuilder search = gitHub.searchRepositories();
 			search.sort(Sort.STARS);
@@ -99,78 +101,147 @@ public class GithubExplorer
 			int repositoryCounter = 0;
 			int repositoryTotal = repositories.getTotalCount();
 
-			Map<GHUser, Integer> activeContributors;
+			Map<GHUser, List<GHCommit>> activeContributors;
 
 			for ( GHRepository repository : repositories )
 			{
 				repositoryCounter++;
 				System.out.println("Repository " + repositoryCounter + " from " + repositoryTotal);
-
-				StringBuilder repositoryInfo = new StringBuilder();
-				repositoryInfo.append(repository.getStargazersCount() + "\t");
-				repositoryInfo.append(repository.getHtmlUrl() + "\t");
-
-
-				StringBuilder contributorInfo = new StringBuilder();
-				activeContributors = new HashMap<>();
-
-				PagedIterable<GHCommit> commits = repository.queryCommits().since(DateUtils.asDate(lastCommitWindow)).list(); 
-
-				for ( GHCommit commit : commits )
+				
+				int tentativas = 0;
+				do
 				{
-					GHUser user = commit.getAuthor();
-					if (user != null)
+					tentativas++;
+					
+					try
 					{
-						Integer commitsN = activeContributors.get(user);
-
-						if ( commitsN == null )
+						StringBuilder repositoryInfo = new StringBuilder();
+						repositoryInfo.append(repository.getStargazersCount() + "\t");
+						repositoryInfo.append(repository.getHtmlUrl() + "\t");
+	
+	
+						
+						// Pegando autores ativos
+						activeContributors = new HashMap<>();
+						PagedIterable<GHCommit> commits = repository.queryCommits().since(DateUtils.asDate(lastCommitWindow)).list(); 
+	
+						for ( GHCommit commit : commits )
 						{
-							commitsN = 1;
+							
+							
+							GHUser user = commit.getAuthor();
+							
+							if (user != null)
+							{
+								List<GHCommit> userCommits = activeContributors.get(user);
+	
+								if ( userCommits == null )
+								{
+									userCommits = new ArrayList<>();
+									activeContributors.put(user, userCommits);
+								}
+								
+								userCommits.add(commit);
+							}
+						}
+	
+						// Lendo informações de autores e seus commits
+						StringBuilder contributorInfo = new StringBuilder();
+						boolean first = true;
+						for ( GHUser user : activeContributors.keySet() )
+						{
+							if (!first)
+							{
+								contributorInfo.append("\t\t\t");
+							}
+							first = false;
+							
+							contributorInfo.append(activeContributors.get(user).size()+"\t");
+							contributorInfo.append(user.getEmail()+"\t");
+							contributorInfo.append(user.getCompany()+"\t");
+							contributorInfo.append(user.getLogin()+"\t");
+							contributorInfo.append(user.getName()+"\t");
+							
+							boolean javaCommitter = false;
+							for ( GHCommit commit : activeContributors.get(user) )
+							{
+								for ( GHCommit.File file : commit.getFiles() )
+								{
+									if ( file.getFileName().endsWith(".java") )
+									{
+										javaCommitter = true;
+										break;
+									}
+								}
+								
+								if ( javaCommitter )
+								{
+									break;
+								}
+							}
+							
+							if ( javaCommitter )
+							{
+								contributorInfo.append("Java committer"+"\t");
+							}
+							else
+							{
+								contributorInfo.append("non-Java committer"+"\t");
+							}
+							
+							String separator = "";
+							for ( GHCommit commit : activeContributors.get(user) )
+							{
+								contributorInfo.append(separator+commit.getHtmlUrl());
+								separator = ";";
+							}
+							contributorInfo.append("\t");
+							contributorInfo.append("\n");
+						}
+	
+						if ( contributorInfo.length() == 0 )
+						{
+							contributorInfo.append("\n");
+						}
+						
+						//if ( activeContributors >= minimumActiveContributors &&
+						//		recentCommits >= minimumRecentCommits)
+						//{
+						// TODO verificar se tem licença?
+						// TODO Verificar se tem issues?
+	
+						// Verificar se é android
+						if ( isAndroidProject (repository) )
+						{
+							repositoryInfo.append("Android\t");
 						}
 						else
 						{
-							commitsN++;
+							repositoryInfo.append("Non Android\t");
 						}
-
-						activeContributors.put(user, commitsN);
+	
+						writer.write(repositoryInfo.toString());
+						writer.write(contributorInfo.toString());
+						writer.flush();
+						tentativas = 100; // Gambiarra maravilhosa
+					} 
+					catch (Throwable e)
+					{
+						System.out.println("Falha enquanto processava repositorio '" + repository.getHtmlUrl() + "'. Mensagem da exceção: " + e.getMessage());
+						
+						try 
+						{
+							System.out.println("Dormindo 5 minutos antes de tentar novamente...");
+							TimeUnit.MINUTES.sleep(5);
+						} 
+						catch (InterruptedException ignore)
+						{
+							System.out.println("Falha ao tentar dormir.....");
+						}
+						
+						System.out.println("Tentando novamente...");
 					}
-				}
-
-				//if ( contributorCommits >= minimumContributorCommits )
-				//{
-				//activeContributors++;
-				for ( GHUser user : activeContributors.keySet() )
-				{
-					contributorInfo.append("\t\t\t");
-					contributorInfo.append(activeContributors.get(user)+"\t");
-					contributorInfo.append(user.getEmail()+"\t");
-					contributorInfo.append(user.getBlog()+"\t");
-					contributorInfo.append(user.getCompany()+"\t");
-					contributorInfo.append(user.getLogin()+"\t");
-					contributorInfo.append(user.getName()+"\n");
-				}
-
-
-				//if ( activeContributors >= minimumActiveContributors &&
-				//		recentCommits >= minimumRecentCommits)
-				//{
-				// TODO verificar se tem licença?
-				// TODO Verificar se tem issues?
-
-				// Verificar se é android
-				if ( isAndroidProject (repository) )
-				{
-					repositoryInfo.append("Android\n");
-				}
-				else
-				{
-					repositoryInfo.append("Non Android\n");
-				}
-
-				writer.write(repositoryInfo.toString());
-				writer.write(contributorInfo.toString());
-				writer.flush();
-				//}
+				} while (tentativas < 3);
 			}
 		}
 	}
