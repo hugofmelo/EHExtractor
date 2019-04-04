@@ -17,16 +17,11 @@ public class ProjectsUtil
 	
 	// Colocar endereço com barra ('/') no final
 	// LETS
-<<<<<<< HEAD
-	public static final String projectsRoot = "C:/Users/mafeu_000/Projetos GitHub/analysis/";
-	public static final String dependenciesRoot = "./dependencies/lets/";
-=======
-	//public static final String projectsRoot = "C:/Users/mafeu_000/Projetos GitHub/running/";
+	//public static final String projectsRoot = "C:/Users/mafeu_000/Projetos GitHub/analysis/";
 	//public static final String dependenciesRoot = "./dependencies/lets/";
->>>>>>> refs/remotes/origin/updateJSS
 	
 	// CASA
-	public static final String projectsRoot = "D:/Desenvolvimento/Projetos Github/Smells/";
+	public static final String projectsRoot = "D:/Desenvolvimento/Projetos Github/New survey/";
 	public static final String dependenciesRoot = "./dependencies/home/";
 	
 	public static final String logsRoot = "C:/Users/mafeu_000/Projetos GitHub/log/";
