@@ -4,6 +4,11 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Classe que armazena os artefatos de um projeto Java.
+ * 
+ * Os artefatos armazenados são armezandos são .java, source dirs, test dirs e dependencias (jars)
+ * */
 public class ProjectArtifacts
 {
 	private List <File> javaFiles;
@@ -14,10 +19,10 @@ public class ProjectArtifacts
 	
 	public ProjectArtifacts ()
 	{
-		javaFiles = new ArrayList<File>();
-		sourcesDirs = new ArrayList<File>();
-		testDirs = new ArrayList<File>();
-		dependencies = new ArrayList <File> ();
+		javaFiles = new ArrayList<>();
+		sourcesDirs = new ArrayList<>();
+		testDirs = new ArrayList<>();
+		dependencies = new ArrayList <> ();
 		androidJar = null;
 	}
 	

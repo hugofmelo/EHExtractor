@@ -29,40 +29,40 @@ public class ModelLogger
 			File file; 
 			
 			// Result
-			file = new File (ProjectsUtil.logsRoot + "result.txt");
+			file = new File (ProjectsUtil.loggersRoot + "result.txt");
 			if ( file.exists() )
 			{
-				result = new FileWriter (ProjectsUtil.logsRoot + "result.txt", true);
+				result = new FileWriter (ProjectsUtil.loggersRoot + "result.txt", true);
 			}
 			else
 			{
-				result = new FileWriter (ProjectsUtil.logsRoot + "result.txt");
+				result = new FileWriter (ProjectsUtil.loggersRoot + "result.txt");
 				result.write("PROJECT" + "\t" + "SIGNALED EXCEPTIONS" + "\t" + "SIGNALERS" + "\t" + "HANDLED EXCEPTIONS" + "\t" + "HANDLERS" + "\t" + "AUTOCOMPLETE HANDLERS" + "\t" + "EMPTY HANDLERS\n" );
 				result.flush();
 			}
 			
 			// Handlers
-			file = new File (ProjectsUtil.logsRoot + "handlers.txt");
+			file = new File (ProjectsUtil.loggersRoot + "handlers.txt");
 			if ( file.exists() )
 			{
-				handlers = new FileWriter (ProjectsUtil.logsRoot + "handlers.txt", true);
+				handlers = new FileWriter (ProjectsUtil.loggersRoot + "handlers.txt", true);
 			}
 			else
 			{
-				handlers = new FileWriter (ProjectsUtil.logsRoot + "handlers.txt");
+				handlers = new FileWriter (ProjectsUtil.loggersRoot + "handlers.txt");
 				handlers.write("PROJECT\tFILE\tLINE NUMBER\tHANDLER ID\tHANDLED EXCEPTION\tEXCEPTION TYPE\tEXCEPTION ORIGIN\tAUTOCOMPLETE\tEMPTY\n");
 				handlers.flush();
 			}
 			
 			// Signalers
-			file = new File (ProjectsUtil.logsRoot + "signalers.txt");
+			file = new File (ProjectsUtil.loggersRoot + "signalers.txt");
 			if ( file.exists() )
 			{
-				signalers = new FileWriter (ProjectsUtil.logsRoot + "signalers.txt", true);
+				signalers = new FileWriter (ProjectsUtil.loggersRoot + "signalers.txt", true);
 			}
 			else
 			{
-				signalers = new FileWriter (ProjectsUtil.logsRoot + "signalers.txt");
+				signalers = new FileWriter (ProjectsUtil.loggersRoot + "signalers.txt");
 				signalers.write("PROJECT\tFILE\tLINE NUMBER\tSIGNALED EXCEPTION\tTYPE\tORIGIN\tSIGNALER TYPE\tHANDLED EXCEPTION\tTYPE\tORIGIN\n");
 				signalers.flush();
 			}
@@ -91,7 +91,7 @@ public class ModelLogger
 		signalers.write(writeSignalers (projectName, model) );
 		signalers.flush();
 		
-		FileWriter output = new FileWriter (ProjectsUtil.logsRoot + projectName + "-output.txt");
+		FileWriter output = new FileWriter (ProjectsUtil.loggersRoot + projectName + "-output.txt");
 		output.write( writeHierarchy (projectName, model) ); output.write("\n\n");
 		//output.write( writeTypesCount (projectName, model) ); output.write("\n\n");
 		//output.write(writeSignalers (projectName, model) ); output.write("\n\n");

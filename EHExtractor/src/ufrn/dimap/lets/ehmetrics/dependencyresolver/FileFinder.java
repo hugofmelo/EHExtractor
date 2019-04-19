@@ -3,7 +3,9 @@ package ufrn.dimap.lets.ehmetrics.dependencyresolver;
 import java.io.File;
 import java.util.Stack;
 
-// FileFinder recebe o diretorio de um projeto e busca por arquivos relevantes, que são armazenados em um objeto ProjectFiles.
+/** FileFinder recebe o diretorio de um projeto e busca por arquivos relevantes, que são armazenados em um objeto ProjectFiles.
+ * 
+ */
 public class FileFinder
 {
 	private FileFinder ()
@@ -11,7 +13,7 @@ public class FileFinder
 		
 	}
 	
-	public static ProjectFiles find (File projectRoot)
+	public static ProjectFiles find (File projectRoot, boolean findJava, boolean findAndroid, boolean findJar, boolean findBuildGradle, boolean findPomXml)
 	{
 		// Verificar se o caminho existe e é uma pasta
 		if ( !projectRoot.exists() )
@@ -29,7 +31,7 @@ public class FileFinder
 			files.setProjectName(projectRoot.getName());
 			
 			File parent;
-			Stack<File> filesStack = new Stack<File>();
+			Stack<File> filesStack = new Stack<>();
 
 			parent = projectRoot;
 
@@ -52,27 +54,27 @@ public class FileFinder
 					{
 						
 						// Arquivo *.java
-						if ( child.getName().endsWith(".java") )
+						if ( findJava && child.getName().endsWith(".java") )
 						{
 							files.addJavaFile(child);
 						}
 						// Arquivo AndroidManifest.xml. O projeto é android e o android.jar será adicionado como dependencia.
-						else if ( child.getName().equals(("AndroidManifest.xml") ) )
+						else if ( findAndroid && child.getName().equals(("AndroidManifest.xml") ) )
 						{
 							files.setAndroidManifestFile(child);
 						}
 						// Arquivo *.jar. É considerado como sendo uma dependencia do projeto
-						else if ( child.getName().endsWith((".jar") ) )
+						else if ( findJar && child.getName().endsWith((".jar") ) )
 						{
 							files.addJarFile(child);
 						}
 						// Arquivo build.gradle
-						else if ( child.getName().equals("build.gradle") )
+						else if ( findBuildGradle && child.getName().equals("build.gradle") )
 						{
 							files.addGradleFile(child);
 						}
 						// Arquivo pom.xml.
-						else if ( child.getName().equals("pom.xml") )
+						else if ( findPomXml && child.getName().equals("pom.xml") )
 						{
 							files.addMavenFile(child);
 						}

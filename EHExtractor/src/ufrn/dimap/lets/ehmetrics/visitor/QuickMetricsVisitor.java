@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+import com.github.javaparser.ast.body.ClassOrInterfaceDeclaration;
 import com.github.javaparser.ast.expr.Expression;
 import com.github.javaparser.ast.expr.ObjectCreationExpr;
 import com.github.javaparser.ast.stmt.CatchClause;
@@ -12,6 +13,8 @@ import com.github.javaparser.ast.type.ClassOrInterfaceType;
 import com.github.javaparser.ast.type.ReferenceType;
 import com.github.javaparser.ast.type.UnionType;
 import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
+import com.github.javaparser.resolution.declarations.ResolvedReferenceTypeDeclaration;
+import com.github.javaparser.resolution.types.ResolvedReferenceType;
 
 import ufrn.dimap.lets.ehmetrics.abstractmodel.MetricsModel;
 
@@ -24,6 +27,26 @@ public class QuickMetricsVisitor extends VoidVisitorAdapter<Void> {
 		this.model = model;
 	}
 
+	@Override
+	public void visit (ClassOrInterfaceDeclaration classDeclaration, Void arg)
+	{		
+		ResolvedReferenceTypeDeclaration rtd = classDeclaration.resolve();
+		
+		if ( rtd.isClass() )
+		{
+			System.out.println(rtd.getQualifiedName());
+			for ( ResolvedReferenceType rt : rtd.getAncestors() )
+			{
+				System.out.println(rt.getQualifiedName());
+			}
+		}
+		
+		System.out.println("\n\n");
+
+				// VISIT CHILDREN
+		super.visit(classDeclaration, arg);
+	}
+	
 	@Override
 	public void visit (CatchClause catchClause, Void arg)
 	{		
@@ -53,25 +76,21 @@ public class QuickMetricsVisitor extends VoidVisitorAdapter<Void> {
 		// output 
 		List<ClassOrInterfaceType> types = new ArrayList<>();
 
-		try {
-			// CHECK CATCH TYPE
-			// Solving "regular" catch clause
-			if ( catchClause.getParameter().getType() instanceof ClassOrInterfaceType)
+		// CHECK CATCH TYPE
+		// Solving "regular" catch clause
+		if ( catchClause.getParameter().getType() instanceof ClassOrInterfaceType)
+		{
+			types.add((ClassOrInterfaceType)catchClause.getParameter().getType());			
+		}
+		// Solving multicatch clause
+		else if (catchClause.getParameter().getType() instanceof UnionType)
+		{
+			UnionType multiCatch = (UnionType) catchClause.getParameter().getType();
+			Iterator<ReferenceType> i = multiCatch.getElements().iterator();
+			while ( i.hasNext() )
 			{
-				types.add((ClassOrInterfaceType)catchClause.getParameter().getType());			
+				types.add((ClassOrInterfaceType)i.next());
 			}
-			// Solving multicatch clause
-			else if (catchClause.getParameter().getType() instanceof UnionType)
-			{
-				UnionType multiCatch = (UnionType) catchClause.getParameter().getType();
-				Iterator<ReferenceType> i = multiCatch.getElements().iterator();
-				while ( i.hasNext() )
-				{
-					types.add((ClassOrInterfaceType)i.next());
-				}
-			}
-		} catch (Exception e) {
-			e.printStackTrace();
 		}
 
 		return types;
@@ -80,16 +99,16 @@ public class QuickMetricsVisitor extends VoidVisitorAdapter<Void> {
 	private boolean isGenericType (ClassOrInterfaceType type)
 	{
 		String typeName = type.getNameAsString();
-		
-		if ( typeName.equals(Exception.class.getSimpleName()))
+
+		if ( typeName.equals(Exception.class.getSimpleName()) || typeName.equals(Exception.class.getCanonicalName()) )
 		{
 			return true;
 		}
-		else if (typeName.equals(Throwable.class.getSimpleName()))
+		else if (typeName.equals(Throwable.class.getSimpleName()) || typeName.equals(Throwable.class.getCanonicalName()))
 		{
 			return true;
 		}
-		else if (typeName.equals(RuntimeException.class.getSimpleName()))
+		else if (typeName.equals(RuntimeException.class.getSimpleName()) || typeName.equals(RuntimeException.class.getCanonicalName()))
 		{
 			return true;
 		}
@@ -112,6 +131,7 @@ public class QuickMetricsVisitor extends VoidVisitorAdapter<Void> {
 		}
 	}
 
+	@Override
 	public void visit (ThrowStmt throwStatement, Void arg)
 	{		
 		Expression thrownExpression = throwStatement.getExpression();

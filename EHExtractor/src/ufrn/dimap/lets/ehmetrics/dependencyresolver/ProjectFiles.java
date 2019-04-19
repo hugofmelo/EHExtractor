@@ -4,6 +4,11 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Classe que armazena os arquivos de um projeto Java.
+ * 
+ * Os arquivos que são armezandos são .java, .jar, AndroidManifest.xml, pom.xml, build.grade e jars de dependencias
+ * */
 public class ProjectFiles
 {
 	private String projectName;
@@ -16,11 +21,11 @@ public class ProjectFiles
 	
 	public ProjectFiles ()
 	{
-		javaFiles = new ArrayList <File> ();
-		jarFiles = new ArrayList <File> ();
-		mavenFiles = new ArrayList <File> ();
-		gradleFiles = new ArrayList <File> ();
-		dependencies = new ArrayList <File> ();
+		javaFiles = new ArrayList <> ();
+		jarFiles = new ArrayList <> ();
+		mavenFiles = new ArrayList <> ();
+		gradleFiles = new ArrayList <> ();
+		dependencies = new ArrayList <> ();
 		androidManifest = null;
 	}
 	
