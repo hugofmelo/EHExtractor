@@ -1,22 +1,26 @@
 package ufrn.dimap.lets.ehmetrics.abstractmodel;
 
+import java.io.File;
+
 import com.github.javaparser.ast.Node;
 
 public abstract class AbstractEHModelElement
 {
-	// TODO remover a referencia a Node para ter um modelo mais leve e desacoplado
-	private 	Node				node;
-	private String filePath;
-	private int initLineNumber;
-
-	public AbstractEHModelElement ( String filePath, Node node )
+	private File file;
+	private Node node;
+	
+	public AbstractEHModelElement ()
 	{
-		this.filePath = filePath;
-
-		if ( node != null )
-		{
-			this.initLineNumber = node.getBegin().get().line;
-		}
+		this.file = null;
+		this.node = null;
+	}
+	
+	/**
+	 * Por causa da ordem em que os arquivos java são parseados, um elemento pode não ter sido ainda resolvido. A resolução ocorre somente quando o source code daquele elemento é parseado, o que seta o arquivo e node para not null.
+	 * */
+	public boolean isFullyResolved()
+	{
+		return this.file != null && this.node != null;
 	}
 
 	public Node getNode()
@@ -29,14 +33,19 @@ public abstract class AbstractEHModelElement
 		this.node = node;
 	}
 
-	public String getFilePath ()
+	public void setFile (File javaFile)
 	{
-		return this.filePath;
+		this.file = javaFile;
+	}
+	
+	public File getFile ()
+	{
+		return this.file;
 	}
 
 	public int getInitFileNumber ()
 	{
-		return this.initLineNumber;
+		return this.node.getBegin().get().line;
 	}
 
 	public String toString ()

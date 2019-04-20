@@ -7,4 +7,9 @@ public class ThinkLaterException extends RuntimeException {
 		super (e);
 	}
 
+	public ThinkLaterException(String message)
+	{
+		super (message);
+	}
+
 }

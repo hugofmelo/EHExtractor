@@ -5,7 +5,8 @@ public enum TypeOrigin
 	JAVA ("Java"),
 	SYSTEM ("System"),
 	LIBRARY ("Library"),
-	ANDROID ("Android")
+	ANDROID ("Android"),
+	UNRESOLVED ("Unresolved")
 	;
 	
 	private final String text;

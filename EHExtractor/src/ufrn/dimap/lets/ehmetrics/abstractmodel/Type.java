@@ -1,5 +1,6 @@
 package ufrn.dimap.lets.ehmetrics.abstractmodel;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,33 +13,47 @@ public class Type extends AbstractEHModelElement
 	private Type superType;
 	private List<Type> subtypes;
 	
-	// Tipo da exceção: NO_EXCEPTION, CHECKED_EXCEPTION, UNCHECKED_EXCEPTION, ERROR_EXCEPTION
 	private TypeOrigin origin;
-	private ExceptionType type;
+	private ClassType classType;
 
 	// Uma referencia direta aos signalers e handlers deste type
 	private List<Signaler> signalers;
 	private List<Handler> handlers;
 	
-	
-	public Type (String filePath, Node node, String typeName, ExceptionType type, TypeOrigin origin)
+	/**
+	 * Create a new type empty. The attributes must be set.
+	 * */
+	public Type ()
 	{
-		super(filePath, node);
-		this.qualifiedName = typeName;
-		this.type = type;
-		this.origin = origin;
+		super();
 		
-		this.subtypes = new ArrayList<Type>();
+		this.subtypes = new ArrayList<>();
 		this.superType = null;
 		
-		this.signalers = new ArrayList<Signaler>();
-		this.handlers = new ArrayList<Handler>();
+		this.signalers = new ArrayList<>();
+		this.handlers = new ArrayList<>();
+	}
+	
+	/**
+	 * Returns the subtype with specified qualified name. Or null if don't exist.
+	 * */
+	public Type getSubTypeWithName(String qualifiedName)
+	{
+		for ( Type type : this.subtypes )
+		{
+			if ( type.getQualifiedName().equals(qualifiedName) )
+			{
+				return type;
+			}
+		}
+		
+		return null;
 	}
 	
 	// Retorna todos os subtipos de this, em DFS order
 	public List<Type> getAllSubTypes()
 	{
-		List<Type> result = new ArrayList<Type>();
+		List<Type> result = new ArrayList<>();
 		
 		for ( Type type : this.subtypes )
 		{
@@ -51,7 +66,7 @@ public class Type extends AbstractEHModelElement
 	
 	public List<Type> getAllAncestors()
 	{
-		List <Type> types = new ArrayList<Type>();
+		List <Type> types = new ArrayList<>();
 		Type aux = this;
 		
 		while ( aux.superType != null )
@@ -63,19 +78,32 @@ public class Type extends AbstractEHModelElement
 		return types;
 	}
 	
+	public void setQualifiedName(String qualifiedName) {
+		this.qualifiedName = qualifiedName;	
+	}
+	
 	public String getQualifiedName()
 	{
 		return this.qualifiedName;
 	}
 	
-	public ExceptionType getType ()
+	public ClassType getClassType ()
 	{
-		return this.type;
+		return this.classType;
+	}
+	
+	public void setClassType( ClassType classType )
+	{
+		this.classType = classType;
 	}
 	
 	public TypeOrigin getOrigin ()
 	{
 		return this.origin;
+	}
+	
+	public void setOrigin(TypeOrigin origin) {
+		this.origin = origin;	
 	}
 	
 	public List<Type> getSubTypes()
@@ -110,8 +138,9 @@ public class Type extends AbstractEHModelElement
 	
 	public String toString()
 	{
-		return this.qualifiedName+"::"+ this.type +"::"+this.origin;
+		return this.qualifiedName+"::"+ this.classType +"::"+this.origin;
 	}
+
 
 }
 

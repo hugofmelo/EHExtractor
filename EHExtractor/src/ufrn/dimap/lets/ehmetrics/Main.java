@@ -32,8 +32,8 @@ public class Main
 		try
 		{
 			//main.findBadSmells();
-			//main.execute();
-			main.executeCallGraph();
+			main.execute();
+			//main.executeCallGraph();
 			//main.generateDependenciesFiles();
 			//main.runSonarLint();
 			//main.readSonarLintReport();
@@ -133,11 +133,11 @@ public class Main
 			System.out.println("****** PROJETO " + project.getName() + " ******");
 
 			System.out.println("Identificando arquivos...");
-			ProjectFiles projectFiles = FileFinder.find(project, true, false, false, false, true );
+			ProjectFiles projectFiles = FileFinder.find(project, true, false, false, false, false );
 
 			System.out.println("Resolvendo artefatos e dependencias...");
-			ProjectArtifacts projectArtifacts = ArtifactResolver.resolve(projectFiles);			
-			//ProjectArtifacts projectArtifacts = ArtifactResolver.resolveWithoutDependencies(projectFiles);
+			//ProjectArtifacts projectArtifacts = ArtifactResolver.resolve(projectFiles);			
+			ProjectArtifacts projectArtifacts = ArtifactResolver.resolveWithoutDependencies(projectFiles);
 			
 			// Logging
 			ArtifactLogger.writeReport(project.getName(), projectFiles, projectArtifacts);

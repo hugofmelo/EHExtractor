@@ -30,6 +30,7 @@ import ufrn.dimap.lets.ehmetrics.ProjectsUtil;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.MetricsModel;
 import ufrn.dimap.lets.ehmetrics.dependencyresolver.ProjectArtifacts;
 import ufrn.dimap.lets.ehmetrics.logger.ErrorLogger;
+import ufrn.dimap.lets.ehmetrics.visitor.DefineSuperTypeVisitor;
 import ufrn.dimap.lets.ehmetrics.visitor.HandlerVisitor;
 import ufrn.dimap.lets.ehmetrics.visitor.MainMethodVisitor;
 import ufrn.dimap.lets.ehmetrics.visitor.QuickMetricsVisitor;
@@ -53,7 +54,7 @@ public class Analyzer
 		JavaParser parser = new JavaParser();
 		parser.getParserConfiguration().setSymbolResolver(symbolSolver);
 		MetricsModel model = new MetricsModel ();
-		VoidVisitorAdapter <Void> visitor = new QuickMetricsVisitor(model); 
+		DefineSuperTypeVisitor visitor = new DefineSuperTypeVisitor(); 
 
 		System.out.println("Total de arquivos java: " + artifacts.getJavaFiles().size());
 		int fileCount = 1;
@@ -66,6 +67,7 @@ public class Analyzer
 			{
 				CompilationUnit compUnit = parser.parse(javaFile).getResult().get();
 
+				visitor.setJavaFile (javaFile);
 
 				compUnit.accept(visitor, null);
 
@@ -104,6 +106,8 @@ public class Analyzer
 			}
 		}
 
+		System.out.println(visitor.typeHierarchy.toString());
+		
 		return model;
 	}
 	
