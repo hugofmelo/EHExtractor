@@ -246,4 +246,26 @@ public class SignalerVisitor extends VoidVisitorAdapter<JavaParserFacade>
 
 		return false;
 	}
+	
+	private boolean isGenericType (ClassOrInterfaceType type)
+	{
+		String typeName = type.getNameAsString();
+
+		if ( typeName.equals(Exception.class.getSimpleName()) || typeName.equals(Exception.class.getCanonicalName()) )
+		{
+			return true;
+		}
+		else if (typeName.equals(Throwable.class.getSimpleName()) || typeName.equals(Throwable.class.getCanonicalName()))
+		{
+			return true;
+		}
+		else if (typeName.equals(RuntimeException.class.getSimpleName()) || typeName.equals(RuntimeException.class.getCanonicalName()))
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}		
+	}
 }

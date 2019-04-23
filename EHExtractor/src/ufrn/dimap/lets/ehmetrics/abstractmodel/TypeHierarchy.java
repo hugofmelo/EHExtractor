@@ -1,12 +1,16 @@
 package ufrn.dimap.lets.ehmetrics.abstractmodel;
 
 import java.io.File;
+import java.nio.channels.NetworkChannel;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
+import org.gradle.tooling.exceptions.UnsupportedOperationConfigurationException;
+
 import com.github.javaparser.ast.Node;
 import com.github.javaparser.ast.body.ClassOrInterfaceDeclaration;
+import com.github.javaparser.ast.type.ClassOrInterfaceType;
 import com.github.javaparser.resolution.UnsolvedSymbolException;
 import com.github.javaparser.resolution.declarations.ResolvedClassDeclaration;
 import com.github.javaparser.resolution.declarations.ResolvedReferenceTypeDeclaration;
@@ -51,82 +55,140 @@ public class TypeHierarchy {
 		this.typeRoot = object;
 	}
 
-	public Type getRoot()
+	/**
+	 * Find or create a resolved type in this hierarchy.
+	 * */
+	public Type findOrCreateResolvedType(ResolvedClassDeclaration classDeclaration)
 	{
-		return this.typeRoot;
+		Type type = this.findTypeByName (classDeclaration.getQualifiedName());
+		
+		if (type == null)
+		{
+			type = this.createResolvedType(classDeclaration, null);
+		}
+	
+		return type;
 	}
 
 	/**
-	 * Create and return a new type in this hierarchy. If parent is not provided, the ancestors of referenceType must be 
-	 * resolved. If the resolution is not possible, the new type is created as Object subtype.
+	 * Create a resolved type in this hierarchy. If the ancestors of this type could not be 
+	 * resolved, the new type is created as subtype of Object was a UNRESOLVED ClassType.
 	 * */
-	private Type createType(ResolvedReferenceType referenceType, Type parent)
+	private Type createResolvedType(ResolvedClassDeclaration classDeclaration, Type parent)
 	{
 		Type newType;
-
-		if (referenceType.getTypeDeclaration() != null)
+	
+		newType = initResolvedType(classDeclaration);
+	
+		if ( parent != null )
 		{
-			newType = createOrUpdateTypeFromTypeDeclaration(referenceType.getTypeDeclaration(), parent);
+			newType.setClassType (ClassType.resolveClassType (newType.getQualifiedName(), parent));
+			parent.getSubTypes().add(newType);
+			newType.setSuperType(parent);
 		}
 		else
 		{
-			throw new ThinkLaterException("Is this even possible?");
-			/*
-			newType = createUnresolvedType ();
-			this.setTypePositionInHierarchy(newType, this.typeRoot);
-			 */
+			List<ResolvedReferenceType> classAncestors;
+			try
+			{
+				classAncestors = classDeclaration.getAllSuperClasses();
+				newType.setClassType (ClassType.resolveClassType (newType.getQualifiedName(), classAncestors));
+				this.setTypePositionInHierarchy(newType, classAncestors);
+			}
+			catch (UnsolvedSymbolException e)
+			{
+				newType.setClassType(ClassType.UNRESOLVED);
+				this.setTypePositionInHierarchy(newType, this.typeRoot);			
+			}
 		}
-
+		
 		return newType;
 	}
 
 	/**
-	 * Create or update a type in this hierarchy. If parent is not provided, the ancestors of referenceType must be 
-	 * resolved. If the resolution is not possible, the new type is created as subtype of Object.
+	 * Init a Type which node was resolved. A resolved node is guaranteed to have qualified name and origin.
 	 * */
-	public Type createOrUpdateTypeFromTypeDeclaration(ResolvedReferenceTypeDeclaration referenceTypeDeclaration, Type parent)
-	{
-		/*
-		TODO
-		PROCURA O TIPO NA HIERARQUIA
-		SE ACHAR, UPDATE FILE, NODE, CLASSTYPE E ORIGIN?
-		SENÃO ACHAR, CRIA
-		 */
-
-
-		Type newType;
-
-		ResolvedClassDeclaration classDeclaration = referenceTypeDeclaration.asClass();
-
-		newType = initTypeFromClassDeclaration(classDeclaration);
-
-		List<ResolvedReferenceType> classAncestors;
-		try
-		{
-			classAncestors = classDeclaration.getAllSuperClasses();
-			newType.setClassType (resolveClassType (newType.getQualifiedName(), classAncestors));
-			this.setTypePositionInHierarchy(newType, classAncestors);
-		}
-		catch (UnsolvedSymbolException e)
-		{
-			newType.setClassType (ClassType.UNRESOLVED);
-			this.setTypePositionInHierarchy(newType, this.typeRoot);			
-		}
-
-		return newType;
-	}
-
-	/**
-	 * Adding a type from class declaration is guaranteed to have node and origin.
-	 * */
-	private Type initTypeFromClassDeclaration(ResolvedClassDeclaration classDeclaration)
+	private Type initResolvedType(ResolvedClassDeclaration classDeclaration)
 	{		
 		Type newType = new Type ();
-
+	
 		newType.setQualifiedName (classDeclaration.getQualifiedName());
-		newType.setOrigin (resolveTypeOrigin(classDeclaration));
-
+		newType.setOrigin (TypeOrigin.resolveTypeOrigin(classDeclaration));
+	
 		return newType;
+	}
+
+	/**
+	 * Find or create an unresolved type in this hierarchy.
+	 * */
+	public Type findOrCreateUnresolvedType(ClassOrInterfaceType classOrInterfaceType)
+	{
+		Type type = this.findTypeByName (classOrInterfaceType.getNameAsString());
+		
+		if (type == null)
+		{
+			type = this.createUnresolvedType(classOrInterfaceType);
+		}
+	
+		return type;
+	}
+
+	/**
+	 * Create an unresolved type. The ancestors of this type, the qualified name and origin can not
+	 * be resolved. The new type is put as subtype of Object and has a UNRESOLVED_EXCEPTION ClassType
+	 * because this type was referenced in a throw or catch.
+	 * */
+	private Type createUnresolvedType(ClassOrInterfaceType classOrInterfaceType)
+	{
+		Type newType;
+	
+		newType = initUnresolvedType(classOrInterfaceType);
+		
+		this.setTypePositionInHierarchy(newType, this.typeRoot);
+	
+		return newType;
+	}
+
+	/**
+	 * Init a unresolved type.
+	 * */
+	private Type initUnresolvedType(ClassOrInterfaceType classOrInterfaceType)
+	{
+		Type newType = new Type ();
+	
+		newType.setQualifiedName (classOrInterfaceType.getNameAsString());
+		newType.setOrigin (TypeOrigin.UNRESOLVED);
+		newType.setClassType(ClassType.UNRESOLVED_EXCEPTION);
+	
+		return newType;
+	}
+
+	/**
+	 * Find a type in the hierarchy in DFS.
+	 * */
+	private Type findTypeByName(String qualifiedName)
+	{
+		Stack <Type> types = new Stack<>();
+		Type auxType;
+		
+		types.push(this.typeRoot);
+		
+		while ( !types.isEmpty() )
+		{
+			auxType = types.pop();
+			
+			if ( auxType.getQualifiedName().equals(qualifiedName) )
+				return auxType;
+			else
+			{
+				for ( Type t : auxType.getSubTypes() )
+				{
+					types.push(t);
+				}
+			}
+		}
+		
+		return null;
 	}
 
 	private void setTypePositionInHierarchy (Type newType, List<ResolvedReferenceType> ancestors)
@@ -145,7 +207,7 @@ public class TypeHierarchy {
 
 			if ( subtype == null )
 			{
-				subtype = createType(ancestor, superType);
+				subtype = createResolvedType(ancestor.getTypeDeclaration().asClass(), superType);
 			}
 
 			superType = subtype;
@@ -171,91 +233,16 @@ public class TypeHierarchy {
 		return types;
 	}
 
-	private static ClassType resolveClassType (String className)
+	
+
+	
+
+
+	
+
+	public Type getRoot()
 	{
-		if ( className.equals(Throwable.class.getCanonicalName()) ||
-				className.equals(Exception.class.getCanonicalName())	)
-		{
-			return ClassType.CHECKED_EXCEPTION;
-		}
-		else if ( className.equals(RuntimeException.class.getCanonicalName()) )
-		{
-			return ClassType.UNCHECKED_EXCEPTION;
-		}
-		else if ( className.equals(Error.class.getCanonicalName()) )
-		{
-			return ClassType.ERROR_EXCEPTION;
-		}
-		else
-		{
-			return ClassType.UNRESOLVED;
-		}
-	}
-
-	private static ClassType resolveClassType (String className, Type parent)
-	{
-		ClassType classType = resolveClassType (className);
-
-		if ( classType != ClassType.UNRESOLVED )
-		{
-			return classType;
-		}
-		else
-		{
-			return resolveClassType (parent.getQualifiedName());
-		}
-	}
-
-	private static ClassType resolveClassType(String classQualifiedName, List<ResolvedReferenceType> ancestors)
-	{
-		ClassType classType = resolveClassType (classQualifiedName);
-
-		if ( classType != ClassType.UNRESOLVED )
-		{
-			return classType;
-		}
-		else
-		{
-			// The last position has Object type
-			for ( int i = 0 ; i < ancestors.size() - 1 ; i++)
-			{
-				classType = resolveClassType (ancestors.get(i).getQualifiedName());
-				if ( classType != ClassType.UNRESOLVED )
-				{
-					return classType;
-				}
-			}
-		}
-		
-		return ClassType.NO_EXCEPTION;
-	}
-
-
-	private static TypeOrigin resolveTypeOrigin(ResolvedClassDeclaration declaration)
-	{
-		String className = declaration.getQualifiedName();
-
-		// A ordem de verificação é importante.
-		if ( declaration instanceof ReflectionClassDeclaration )
-		{
-			return TypeOrigin.JAVA;
-		}
-		else if ( declaration instanceof JavaParserClassDeclaration )
-		{
-			return TypeOrigin.SYSTEM;
-		}
-		else if ( className.startsWith("android.") )
-		{
-			return TypeOrigin.ANDROID;
-		}
-		else if ( declaration instanceof JavassistClassDeclaration )
-		{
-			return TypeOrigin.LIBRARY;
-		}
-		else
-		{
-			throw new IllegalStateException("Um tipo indefinido encontrado.");
-		}
+		return this.typeRoot;
 	}
 
 	@Override

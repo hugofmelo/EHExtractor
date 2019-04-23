@@ -141,6 +141,11 @@ public class Type extends AbstractEHModelElement
 		return this.qualifiedName+"::"+ this.classType +"::"+this.origin;
 	}
 
+	public Type getSuperType()
+	{
+		return this.superType;
+	}
+
 
 }
 

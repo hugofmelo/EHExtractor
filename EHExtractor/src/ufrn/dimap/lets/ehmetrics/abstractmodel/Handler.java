@@ -1,5 +1,7 @@
 package ufrn.dimap.lets.ehmetrics.abstractmodel;
 
+import java.io.File;
+import java.util.ArrayList;
 import java.util.List;
 
 import com.github.javaparser.ast.stmt.CatchClause;
@@ -11,17 +13,11 @@ public class Handler extends AbstractEHModelElement
 	private boolean isAutoComplete;
 	private boolean isEmpty;
 	
-	public Handler( String filePath, CatchClause node, List<Type> handledExceptions )
+	public Handler()
 	{
-		super(filePath, node);
-		this.exceptions = handledExceptions;
+		super();
 		
-		for ( Type type : handledExceptions )
-		{
-			type.addHandler (this);
-		}
-		
-		this.isAutoComplete = false;
+		exceptions = new ArrayList<>();
 	}
 	
 	public List<Type> getExceptions()

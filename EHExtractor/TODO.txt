@@ -1,3 +1,5 @@
+Verificar novamente a geração de call graph
+------------------------------------------
 Prioridade 0: resolver o alto número de arquivos descartados
 Prioridade 1: adotar a minha metodologia para EH
 Prioridade 1: Rodar novamente a análise com a nova versão do JSS e verificar o resultado

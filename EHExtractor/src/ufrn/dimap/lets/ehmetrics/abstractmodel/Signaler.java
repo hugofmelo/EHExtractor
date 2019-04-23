@@ -4,36 +4,37 @@ import com.github.javaparser.ast.stmt.ThrowStmt;
 
 public class Signaler extends AbstractEHModelElement
 {
-	private Type thrownException;
-	private Type catchedException;
-	private SignalerType type;
+	private Type thrownType;
+	//private Type caughtType;
+	private SignalerType signalerType;
 	
-	public Signaler (String filePath, ThrowStmt throwStatement, Type thrownException, Type catchedException, SignalerType type)
+	public Signaler ()
 	{
-		super(filePath, throwStatement);
-		this.thrownException = thrownException;
-		this.catchedException = catchedException;
-		this.type = type;
-		thrownException.addSignaler (this);
+		super();
 	}
 
-	public Type getThrownException()
+	public Type getThrownType()
 	{
-		return this.thrownException;
+		return this.thrownType;
 	}
 	
-	public Type getCatchedException()
+	public Type getCaughtException()
 	{
-		return this.catchedException;
+		throw new UnsupportedOperationException();
 	}
 	
-	public SignalerType getType ()
+	public SignalerType getSignalerType ()
 	{
-		return this.type;
+		return this.signalerType;
 	}
 
 	public String toString()
 	{
-		return this.thrownException.getQualifiedName();
+		return this.thrownType.getQualifiedName();
+	}
+
+	public void setThrownType(Type thrownType)
+	{
+		this.thrownType = thrownType;
 	}
 }

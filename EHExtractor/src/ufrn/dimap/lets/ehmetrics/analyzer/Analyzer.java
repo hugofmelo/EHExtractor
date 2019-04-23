@@ -108,6 +108,8 @@ public class Analyzer
 
 		System.out.println(visitor.typeHierarchy.toString());
 		
+		visitor.checkGuidelineConformance();
+		
 		return model;
 	}
 	
