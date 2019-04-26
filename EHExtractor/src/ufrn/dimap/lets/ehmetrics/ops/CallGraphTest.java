@@ -8,17 +8,73 @@ public class CallGraphTest {
 
 	public static void main (String args[])
 	{
-		A a = new B();
+		CallGraphTest cgt = new CallGraphTest();
+		
+		
+		
+		
+	}
+	
+	private void method1 ()
+	{
+		B a = new B();
 		try
 		{
 			a.m(new UnsolvedSymbolException("sdfsdf"));
 		}
-		catch (ThinkLaterException e)
+		catch (ThinkLaterException e1)
 		{
-			throw e;
+			try
+			{
+				a.m();
+			}
+			catch (Exception e2)
+			{
+				throw e1;
+			}
 		}
-		
-		
+	}
+	
+	private void method2 ()
+	{
+		B a = new B();
+		try
+		{
+			a.m(new UnsolvedSymbolException("sdfsdf"));
+		}
+		catch (ThinkLaterException e1)
+		{
+			try
+			{
+				a.m();
+			}
+			catch (Exception e2)
+			{
+				throw new IllegalArgumentException (e1);
+			}
+		}
+	}
+	
+	private void method3 ()
+	{
+		B a = new B();
+		try
+		{
+			a.m(new UnsolvedSymbolException("sdfsdf"));
+		}
+		catch (ThinkLaterException e1)
+		{
+			try
+			{
+				a.m();
+			}
+			catch (Exception e2)
+			{
+				IllegalArgumentException e3 = new IllegalArgumentException(e1);  
+				
+				throw e3;
+			}
+		}
 	}
 
 	/*
