@@ -2,19 +2,14 @@ package ufrn.dimap.lets.ehmetrics.visitor;
 
 import java.io.File;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
-import java.util.Objects;
-import java.util.Optional;
 import java.util.function.Function;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 import com.github.javaparser.ast.Node;
 import com.github.javaparser.ast.body.ClassOrInterfaceDeclaration;
@@ -53,19 +48,21 @@ import ufrn.dimap.lets.ehmetrics.abstractmodel.TypeOrigin;
 import ufrn.dimap.lets.ehmetrics.analyzer.UnknownSignalerException;
 
 /**
- * Visitor para verificar o guideline "Define a super type".
+ * Visitor para verificar o guideline "Define a single exception".
  * 
  * Para confirmar o guideline a seguinte heurística é usada:
- * 95% de todas as exceções definidas pela aplicação possuem um mesmo supertipo
+ * 95% de todas as sinalizações de exceções da aplicação são de uma mesma exceção
  * */
-public class DefineSuperTypeVisitor extends VoidVisitorAdapter<Void> {
+public class DefineSingleExceptionVisitor extends VoidVisitorAdapter<Void> {
 
 	public TypeHierarchy typeHierarchy;
+	private List<Signaler> signalers;
 	private File javaFile; // Java file being parsed
 
-	public DefineSuperTypeVisitor ()
+	public DefineSingleExceptionVisitor ()
 	{
 		this.typeHierarchy = new TypeHierarchy();
+		this.signalers = new ArrayList<>();
 		this.javaFile = null;
 	}
 
@@ -167,6 +164,8 @@ public class DefineSuperTypeVisitor extends VoidVisitorAdapter<Void> {
 			thrownType.addSignaler(newSignaler);
 		}
 
+		this.signalers.add(newSignaler);
+		
 		// VISIT CHILDREN
 		super.visit(throwStatement, arg);
 	}
@@ -264,30 +263,23 @@ public class DefineSuperTypeVisitor extends VoidVisitorAdapter<Void> {
 	 * Para entender as condições do guideline, ver Javadoc da classe
 	 * */
 	public void checkGuidelineConformance ()
-	{	
-		long numberOfSystemExceptionTypes = this.typeHierarchy.listTypes().stream()
-				.filter(Type::isSystemExceptionType)
-				.count();
-		System.out.println("Number of custom exceptions: " + numberOfSystemExceptionTypes);
+	{
+		Map <Type, Long> systemExceptionSignalersToOccurrences = this.signalers.stream()
+				.filter(s -> s.getThrownType().isSystemExceptionType())
+				.collect (Collectors.groupingBy(Signaler::getThrownType, Collectors.counting()));
 		
 		
-		Optional<Long> mostSubtypedSystemException = this.typeHierarchy.listTypes().stream()
-			.filter(Type::isSystemExceptionType)
-			.map(Type::getSystemExceptionRootType)
-			.filter(Objects::nonNull)
-			.collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
-			.values()
-			.stream()
-			.max(Comparator.naturalOrder());
+		Long sumOfSystemExceptionSignalersOccurrences = systemExceptionSignalersToOccurrences.values().stream()
+				.mapToLong(Long::longValue)
+				.sum();
+		System.out.println("Number of system signalers: " + sumOfSystemExceptionSignalersOccurrences);
+		
+		Long mostSignaledSystemExceptionOccurrences = systemExceptionSignalersToOccurrences.values().stream()
+				.max(Comparator.naturalOrder())
+				.get();
+		System.out.println("Number of signalers of the most signaled exception: " + mostSignaledSystemExceptionOccurrences);
 		
 		
-		if ( numberOfSystemExceptionTypes!= 0 && mostSubtypedSystemException.isPresent() )
-		{
-			System.out.println("'Define a super type' conformance: " + 1.0*mostSubtypedSystemException.get()/numberOfSystemExceptionTypes);
-		}
-		else
-		{
-			System.out.println("'Define a super type' conformance: 0.0");
-		}	
-	}
+		System.out.println("'Define a single exception' conformance: " + 1.0*mostSignaledSystemExceptionOccurrences/sumOfSystemExceptionSignalersOccurrences);
+	}	
 }
