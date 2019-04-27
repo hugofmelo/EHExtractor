@@ -2,11 +2,17 @@ package ufrn.dimap.lets.ehmetrics.abstractmodel;
 
 public enum SignalerType
 {
+	SIMPLE_NAME ("Simple name"),
+	OBJECT_CREATION ("Object creation"),
+	GET_CAUSE ("Get cause"),
+	CAST ("Cast"),
+	/*
 	SIMPLE ("Simple"),
 	RETHROW ("Rethrow"),
 	WRAPPING ("Wrapping"),
 	UNWRAPPING ("Unwrapping"),
 	INNER_SIMPLE ("Inner simple"),
+	*/
 	/*
 	WRAPPING_CHECKED_CHECKED ("Wrapping checked-checked"),
 	WRAPPING_CHECKED_UNCHECKED ("Wrapping checked-unchecked"),
@@ -36,7 +42,7 @@ public enum SignalerType
 	WRAP_ERROR_ERROR ("Wrapping error-error"),
 	UNWRAP ("Unwrap"), 
 	 */
-	UNKNOWN ("Unknown")
+	UNKNOWN ("Unknown"),
 	;
 
 	private final String text;

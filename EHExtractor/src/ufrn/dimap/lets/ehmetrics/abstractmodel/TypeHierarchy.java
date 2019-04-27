@@ -56,30 +56,51 @@ public class TypeHierarchy {
 	}
 
 	/**
-	 * Find or create a resolved type in this hierarchy.
+	 * Find or create a type in the hierarchy.
+	 * 
+	 * If the ClassOrInterfaceType can be resolved, create a resolved (with declaration) type.
+	 * */
+	public Type findOrCreateType(ClassOrInterfaceType classOrInterfaceType)
+	{
+		Type type = null;
+
+		try
+		{
+			type = this.findOrCreateResolvedType(classOrInterfaceType.resolve().getTypeDeclaration().asClass());
+		}
+		catch ( UnsolvedSymbolException e )
+		{
+			type = this.findOrCreateUnresolvedType (classOrInterfaceType);
+		}
+		
+		return type;
+	}
+
+	/**
+	 * Find or create a type in this hierarchy from its declaration.
 	 * */
 	public Type findOrCreateResolvedType(ResolvedClassDeclaration classDeclaration)
 	{
 		Type type = this.findTypeByName (classDeclaration.getQualifiedName());
-		
+
 		if (type == null)
 		{
 			type = this.createResolvedType(classDeclaration, null);
 		}
-	
+
 		return type;
 	}
 
 	/**
 	 * Create a resolved type in this hierarchy. If the ancestors of this type could not be 
-	 * resolved, the new type is created as subtype of Object was a UNRESOLVED ClassType.
+	 * resolved, the new type is created as subtype of Object with a UNRESOLVED ClassType.
 	 * */
 	private Type createResolvedType(ResolvedClassDeclaration classDeclaration, Type parent)
 	{
 		Type newType;
-	
+
 		newType = initResolvedType(classDeclaration);
-	
+
 		if ( parent != null )
 		{
 			newType.setClassType (ClassType.resolveClassType (newType.getQualifiedName(), parent));
@@ -101,7 +122,7 @@ public class TypeHierarchy {
 				this.setTypePositionInHierarchy(newType, this.typeRoot);			
 			}
 		}
-		
+
 		return newType;
 	}
 
@@ -111,41 +132,42 @@ public class TypeHierarchy {
 	private Type initResolvedType(ResolvedClassDeclaration classDeclaration)
 	{		
 		Type newType = new Type ();
-	
+
 		newType.setQualifiedName (classDeclaration.getQualifiedName());
 		newType.setOrigin (TypeOrigin.resolveTypeOrigin(classDeclaration));
-	
+
 		return newType;
 	}
 
 	/**
-	 * Find or create an unresolved type in this hierarchy.
+	 * Find or create a type in this hierarchy from its ClassOrInterfaceType.
 	 * */
-	public Type findOrCreateUnresolvedType(ClassOrInterfaceType classOrInterfaceType)
+	private Type findOrCreateUnresolvedType(ClassOrInterfaceType classOrInterfaceType)
 	{
 		Type type = this.findTypeByName (classOrInterfaceType.getNameAsString());
-		
+
 		if (type == null)
 		{
 			type = this.createUnresolvedType(classOrInterfaceType);
 		}
-	
+
 		return type;
 	}
 
 	/**
 	 * Create an unresolved type. The ancestors of this type, the qualified name and origin can not
 	 * be resolved. The new type is put as subtype of Object and has a UNRESOLVED_EXCEPTION ClassType
-	 * because this type was referenced in a throw or catch.
+	 * because this type was referenced in a throw or catch (create a type from its declaration always
+	 * result in a resolved type).
 	 * */
 	private Type createUnresolvedType(ClassOrInterfaceType classOrInterfaceType)
 	{
 		Type newType;
-	
+
 		newType = initUnresolvedType(classOrInterfaceType);
-		
+
 		this.setTypePositionInHierarchy(newType, this.typeRoot);
-	
+
 		return newType;
 	}
 
@@ -155,11 +177,11 @@ public class TypeHierarchy {
 	private Type initUnresolvedType(ClassOrInterfaceType classOrInterfaceType)
 	{
 		Type newType = new Type ();
-	
+
 		newType.setQualifiedName (classOrInterfaceType.getNameAsString());
 		newType.setOrigin (TypeOrigin.UNRESOLVED);
 		newType.setClassType(ClassType.UNRESOLVED_EXCEPTION);
-	
+
 		return newType;
 	}
 
@@ -170,13 +192,13 @@ public class TypeHierarchy {
 	{
 		Stack <Type> types = new Stack<>();
 		Type auxType;
-		
+
 		types.push(this.typeRoot);
-		
+
 		while ( !types.isEmpty() )
 		{
 			auxType = types.pop();
-			
+
 			if ( auxType.getQualifiedName().equals(qualifiedName) )
 				return auxType;
 			else
@@ -187,7 +209,7 @@ public class TypeHierarchy {
 				}
 			}
 		}
-		
+
 		return null;
 	}
 
@@ -233,17 +255,6 @@ public class TypeHierarchy {
 		return types;
 	}
 
-	
-
-	
-
-
-	
-
-	public Type getRoot()
-	{
-		return this.typeRoot;
-	}
 
 	@Override
 	public String toString()
