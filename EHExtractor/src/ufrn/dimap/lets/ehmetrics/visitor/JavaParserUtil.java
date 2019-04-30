@@ -10,6 +10,7 @@ import com.github.javaparser.ast.body.Parameter;
 import com.github.javaparser.ast.body.VariableDeclarator;
 import com.github.javaparser.ast.expr.CastExpr;
 import com.github.javaparser.ast.expr.Expression;
+import com.github.javaparser.ast.expr.MethodCallExpr;
 import com.github.javaparser.ast.expr.NameExpr;
 import com.github.javaparser.ast.expr.ObjectCreationExpr;
 import com.github.javaparser.ast.stmt.CatchClause;
@@ -19,7 +20,9 @@ import com.github.javaparser.ast.type.ReferenceType;
 import com.github.javaparser.ast.type.UnionType;
 import com.github.javaparser.resolution.UnsolvedSymbolException;
 import com.github.javaparser.resolution.declarations.ResolvedClassDeclaration;
+import com.github.javaparser.resolution.declarations.ResolvedMethodDeclaration;
 import com.github.javaparser.resolution.declarations.ResolvedValueDeclaration;
+import com.github.javaparser.resolution.types.ResolvedType;
 import com.github.javaparser.symbolsolver.javaparsermodel.declarations.JavaParserFieldDeclaration;
 import com.github.javaparser.symbolsolver.javaparsermodel.declarations.JavaParserParameterDeclaration;
 import com.github.javaparser.symbolsolver.javaparsermodel.declarations.JavaParserSymbolDeclaration;
@@ -65,11 +68,26 @@ public class JavaParserUtil {
 		{
 			return Optional.of(throwStatement.getExpression().calculateResolvedType().asReferenceType().getTypeDeclaration().asClass());
 		}
-		
 		catch ( UnsolvedSymbolException e )
 		{
 			return Optional.empty();
 		}
+		/* TODO Reportar isso como uma sugestão no projeto do JavaParser no GitHub.
+		 * 
+		 * Como reproduzir: tentar resolver uma chamada de um método que é definido em uma super classe que não é resolvida.
+		 * 
+		 * Exemplo: Dada uma classe A não resolvida, criar uma classe vazia B que herda de A. No main,
+		 * instanciar B e chamar toString().
+		 * 
+		 * O que deveria acontecer: UnsolvedSymbolException
+		 * 
+		 * O que acontece: RuntimeException
+		 */
+		catch (RuntimeException e)
+		{
+			return Optional.empty();
+		}
+		
 	}
 	
 	/**
@@ -81,8 +99,16 @@ public class JavaParserUtil {
 	 * */
 	public static ClassOrInterfaceType getThrownClassOrInterfaceType (ThrowStmt throwStatement)
 	{
-		Expression throwExpression = throwStatement.getExpression(); 
-		
+		return getThrownClassOrInterfaceType(throwStatement.getExpression());
+	}
+	
+	/**
+	 * Auxiliar method to process the thrown Expression.
+	 * 
+	 * @throws UnknownSignalerException when the signaled type could not be resolved.
+	 * */
+	private static ClassOrInterfaceType getThrownClassOrInterfaceType (Expression throwExpression)
+	{
 		// o statement é um "throw e". Provavelmente é um rethrow, mas é possível que a exceção tenha sido instanciada previamente e agora está sendo lançada.
 		if ( throwExpression instanceof NameExpr )
 		{
@@ -114,8 +140,12 @@ public class JavaParserUtil {
 			}
 			else
 			{
-				throw new UnknownSignalerException("Sinalização com cast não suportada. Sinalização:\n\n'" + throwExpression + "'.\n\n");
+				throw new UnknownSignalerException("Sinalização com cast cujo tipo não foi resolvido. Sinalização:\n\n'" + throwExpression + "'.\n\n");
 			}
+		}
+		else if ( throwExpression instanceof MethodCallExpr )
+		{
+			throw new UnknownSignalerException ("Sinalização de uma chamada de método que não pôde ter seu tipo resolvido. Sinalização: '" + throwExpression + "'.");
 		}
 		else
 		{

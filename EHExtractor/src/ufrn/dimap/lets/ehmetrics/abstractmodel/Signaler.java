@@ -12,24 +12,19 @@ public class Signaler extends AbstractEHModelElement
 	private boolean isRethrow;
 	private boolean isWrapping;
 	//private boolean isUnwrapping;
-	private List<Type> caughtTypes; // In case of wrapping, the type caught 
+	private Handler resignaledHandler; // In case of rethrow or wrapping, the associated handler 
 	public Signaler ()
 	{
 		super();
 		this.thrownType = null;
 		this.isRethrow = false;
 		this.isWrapping = false;
-		this.caughtTypes = null;
+		this.resignaledHandler = null;
 	}
 
 	public Type getThrownType()
 	{
 		return this.thrownType;
-	}
-	
-	public Type getCaughtException()
-	{
-		throw new UnsupportedOperationException();
 	}
 	
 	/*
@@ -65,11 +60,11 @@ public class Signaler extends AbstractEHModelElement
 		this.thrownType = thrownType;
 	}
 
-	public List<Type> getCaughtTypes() {
-		return caughtTypes;
+	public Handler getResignaledHandler() {
+		return resignaledHandler;
 	}
 
-	public void setCaughtTypes(List<Type> caughtTypes) {
-		this.caughtTypes = caughtTypes;
+	public void setResignaledHandler(Handler resignaledHandler) {
+		this.resignaledHandler = resignaledHandler;
 	}
 }

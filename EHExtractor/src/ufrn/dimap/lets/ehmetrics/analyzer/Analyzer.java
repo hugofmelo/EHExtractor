@@ -14,6 +14,7 @@ import com.github.javaparser.StaticJavaParser;
 import com.github.javaparser.ast.CompilationUnit;
 import com.github.javaparser.ast.body.MethodDeclaration;
 import com.github.javaparser.ast.expr.MethodCallExpr;
+import com.github.javaparser.ast.stmt.CatchClause;
 import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
 import com.github.javaparser.resolution.UnsolvedSymbolException;
 import com.github.javaparser.resolution.declarations.ResolvedMethodDeclaration;
@@ -30,6 +31,7 @@ import ufrn.dimap.lets.ehmetrics.ProjectsUtil;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.MetricsModel;
 import ufrn.dimap.lets.ehmetrics.dependencyresolver.ProjectArtifacts;
 import ufrn.dimap.lets.ehmetrics.logger.ErrorLogger;
+import ufrn.dimap.lets.ehmetrics.visitor.ConvertLibraryExceptionsVisitor;
 import ufrn.dimap.lets.ehmetrics.visitor.DefineSingleExceptionVisitor;
 import ufrn.dimap.lets.ehmetrics.visitor.DefineSuperTypeVisitor;
 import ufrn.dimap.lets.ehmetrics.visitor.HandlerVisitor;
@@ -55,8 +57,9 @@ public class Analyzer
 		JavaParser parser = new JavaParser();
 		parser.getParserConfiguration().setSymbolResolver(symbolSolver);
 		MetricsModel model = new MetricsModel ();
-		DefineSuperTypeVisitor visitor = new DefineSuperTypeVisitor(); 
+		//DefineSuperTypeVisitor visitor = new DefineSuperTypeVisitor(); 
 		//DefineSingleExceptionVisitor visitor = new DefineSingleExceptionVisitor();
+		ConvertLibraryExceptionsVisitor visitor = new ConvertLibraryExceptionsVisitor();
 		
 		System.out.println("Total de arquivos java: " + artifacts.getJavaFiles().size());
 		int fileCount = 1;
@@ -81,39 +84,73 @@ public class Analyzer
 				 */
 				System.out.println(" OK");
 			}
-			catch (UnsolvedSymbolException e)
-			{
-				System.out.println(" Error - Unsolved Symbol");
-				ErrorLogger.addUnsolved("Falha no Analyzer. Classe '" + e.getMessage() + "' não encontrada. File: " + javaFile.getAbsolutePath());
-			}
 			catch (FileNotFoundException e)
 			{
 				System.out.println(" Error - File not found.");
+				e.printStackTrace();
 				ErrorLogger.addError("Falha no Analyzer. Arquivo não encontrado. File:" + javaFile.getAbsolutePath());
-			}
-			catch (UnsupportedOperationException e)
-			{
-				System.out.println(" Error - Unsupported operation.");
-				ErrorLogger.addUnsupported("Falha no Analyzer. UnsupportedOperation ao parsear arquivo. File: " + javaFile.getAbsolutePath());
 			}
 			catch (UnknownSignalerException e)
 			{
-				System.out.println(" Error - Signaler não reconhecido.");
+				System.out.println(" Error - " + e.getMessage() + " - " + javaFile.getAbsolutePath() + ".");
+				e.printStackTrace();
 				ErrorLogger.addUnknownSignaler("Falha no Analyzer. " + e.getMessage() + " File: " + javaFile.getAbsolutePath());
-			}
-			catch (UnknownAncestralException e)
-			{
-				System.out.println(" Error - Ancestral não resolvido.");
-				ErrorLogger.addUnknownAncestral("Falha no Analyzer. " + e.getMessage() + " File: " + javaFile.getAbsolutePath());
 			}
 		}
 
+		System.out.println("Project type hierarchy:");
 		System.out.println(visitor.typeHierarchy.toString());
 		
 		visitor.checkGuidelineConformance();
 		
 		return model;
 	}
+	
+	// Ao encerrar este metodo, o modelo injetado no visitor terá o resultado do processamento
+		public static void quickAnalyze(ProjectArtifacts artifacts)
+		{
+			JavaParserFacade.clearInstances();
+			CombinedTypeSolver typeSolver = Analyzer.configSolver(artifacts);
+			JavaSymbolSolver symbolSolver = new JavaSymbolSolver(typeSolver);
+			JavaParser parser = new JavaParser();
+			parser.getParserConfiguration().setSymbolResolver(symbolSolver);
+			
+			VoidVisitorAdapter<Void> visitor = new VoidVisitorAdapter<Void> ()
+			{
+				@Override
+				public void visit (MethodCallExpr callExpression, Void arg)
+				{
+					callExpression.resolve();
+				}
+			};
+		
+			System.out.println("Total de arquivos java: " + artifacts.getJavaFiles().size());
+			int fileCount = 1;
+			for ( File javaFile : artifacts.getJavaFiles() )
+			{
+				System.out.print("Parsing " + fileCount++ + "... " + javaFile.getAbsolutePath() + " ...");
+				try
+				{
+					CompilationUnit compUnit = parser.parse(javaFile).getResult().get();
+
+					compUnit.accept(visitor, null);
+
+					/*
+					for ( VoidVisitorAdapter<JavaParserFacade> visitor : visitors )
+					{
+						compUnit.accept(visitor, JavaParserFacade.get(solver));
+					}
+					 */
+					System.out.println(" OK");
+				}
+				catch (FileNotFoundException e)
+				{
+					System.out.println(" Error - File not found.");
+					e.printStackTrace();
+					ErrorLogger.addError("Falha no Analyzer. Arquivo não encontrado. File:" + javaFile.getAbsolutePath());
+				}
+			}
+		}
 	
 	// Ao encerrar este metodo, o modelo injetado no visitor terá o resultado do processamento
 		public static void callgraph(ProjectArtifacts artifacts)

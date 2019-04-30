@@ -64,6 +64,8 @@ public class ProjectsUtil
 		// Test self
 		projectsPaths.add(new File("../EHExtractor"));
 		
+		//projectsPaths.add(new File("D:/Desenvolvimento/Workspace/TestJavaParser"));
+		
 		
 		boolean projectDoesntExist = false;
 		for (File f : projectsPaths)

@@ -17,6 +17,7 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+import com.github.javaparser.ast.CompilationUnit;
 import com.github.javaparser.ast.Node;
 import com.github.javaparser.ast.NodeList;
 import com.github.javaparser.ast.body.ClassOrInterfaceDeclaration;
@@ -33,6 +34,7 @@ import com.github.javaparser.ast.stmt.ThrowStmt;
 import com.github.javaparser.ast.type.ClassOrInterfaceType;
 import com.github.javaparser.ast.type.ReferenceType;
 import com.github.javaparser.ast.type.UnionType;
+import com.github.javaparser.ast.visitor.VoidVisitor;
 import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
 import com.github.javaparser.resolution.UnsolvedSymbolException;
 import com.github.javaparser.resolution.declarations.ResolvedClassDeclaration;
@@ -59,20 +61,33 @@ import ufrn.dimap.lets.ehmetrics.analyzer.UnknownSignalerException;
  * Visitor para verificar o guideline "Convert library exceptions".
  * 
  * Para confirmar o guideline a seguinte heurística é usada:
- * 95% de todas as exceções externas que são re-sinalizadas sofrem uma conversão antes.
+ * De todas as capturas de exceções externas em que aquele tratador re-signaliza
+ * uma exceção, a re-sinalização não é de uma exceção externa em pelo menos 95% dos tratadores.
  * */
 public class ConvertLibraryExceptionsVisitor extends VoidVisitorAdapter<Void> {
 
 	public TypeHierarchy typeHierarchy;
 	private File javaFile; // Java file being parsed
-	private Stack <CatchClause> catchClauses;
-	
+	private Stack <Handler> handlersInContext;
+
+	private List<Signaler> signalersOfProject;
+	private List<Handler> handlersOfProject;
+
 	public ConvertLibraryExceptionsVisitor ()
 	{
 		this.typeHierarchy = new TypeHierarchy();
-		this.javaFile = null;
-		this.catchClauses = new Stack<>();
+
+		this.signalersOfProject = new ArrayList<>();
+		this.handlersOfProject = new ArrayList<>();
 	}
+	
+	@Override
+	public void visit (CompilationUnit compilationUnit, Void arg)
+	{
+		this.handlersInContext = new Stack<>(); 
+		
+        super.visit(compilationUnit, arg);
+    }
 
 	/*
 	@Override
@@ -91,53 +106,40 @@ public class ConvertLibraryExceptionsVisitor extends VoidVisitorAdapter<Void> {
 		//VISIT CHILDREN
 		super.visit(classOrInterfaceDeclaration, arg);
 	}
-	*/
+	 */
 
 	@Override
 	public void visit (CatchClause catchClause, Void arg)
 	{		
-		VisitorsUtil.processCatchClause(catchClause, this.typeHierarchy, new Handler(), javaFile);		
-		
-		this.catchClauses.push(catchClause);
+		Handler newHandler = new Handler();
+
+		VisitorsUtil.processCatchClause(catchClause, this.typeHierarchy, newHandler, javaFile);		
+
+		this.handlersOfProject.add(newHandler);
+
+		this.handlersInContext.push(newHandler);
 
 		// VISIT CHILDREN
 		super.visit(catchClause, arg);
-		
-		this.catchClauses.pop();
+
+		this.handlersInContext.pop();
 	}
-	
+
 	@Override
 	public void visit (ThrowStmt throwStatement, Void arg)
 	{		
 		Signaler newSignaler = new Signaler();
-		
-		VisitorsUtil.processThrowStatement(throwStatement, this.typeHierarchy, newSignaler, javaFile);
-		
 
-		SignalerParser signalerParser = new SignalerParser(throwStatement);
-		signalerParser.parse();
-				
-		if ( signalerParser.getType() == SignalerType.SIMPLE_NAME )
-		{
-			SimpleName signaledName = signalerParser.getSimpleName();
-			
-			this.catchClauses.stream()
-				.filter(clause -> clause.getParameter().getName().equals(signaledName))
-				.findAny()
-				.ifPresent( clause -> newSignaler.setRethrow(true));
-		}
-		else if ( signalerParser.getType() == SignalerType.OBJECT_CREATION )
-		{
-			List<SimpleName> simpleNamesInObjectCreation = signalerParser.getArgumentsInObjectCreation().stream()
-				.filter(Expression::isNameExpr)
-				.map(expression -> expression.asNameExpr().getName())
-				.collect(Collectors.toList());
-			
-			this.catchClauses.stream()
-				.filter (clause -> simpleNamesInObjectCreation.contains(clause.getParameter().getName()))
-				.findAny()
-				.ifPresent(x -> newSignaler.setWrapping(true));
-		}
+		VisitorsUtil.processThrowStatement(throwStatement, this.typeHierarchy, newSignaler, javaFile);
+
+		this.signalersOfProject.add(newSignaler);
+
+		// All handlers in context have this signaler as escaping exception
+		this.handlersInContext.stream().forEach(handler -> handler.getEscapingSignalers().add(newSignaler));
+
+		
+		// VISIT CHILDREN
+		super.visit(throwStatement, arg);
 	}	
 
 	public void setJavaFile (File javaFile)
@@ -145,37 +147,50 @@ public class ConvertLibraryExceptionsVisitor extends VoidVisitorAdapter<Void> {
 		this.javaFile = javaFile;
 	}
 
-	
+
 	/**
 	 * Verifica se o projeto adota o guideline referenciado neste visitor.
 	 * 
 	 * Para entender as condições do guideline, ver Javadoc da classe
 	 * */
+
+	/*De todas as capturas de exceções externas em que aquele tratador re-signaliza
+	 * uma exceção, a re-sinalização não é de uma exceção externa em pelo menos 95% dos tratadores.
+	 * */
 	public void checkGuidelineConformance ()
 	{	
-		long numberOfSystemExceptionTypes = this.typeHierarchy.listTypes().stream()
-				.filter(Type::isSystemExceptionType)
-				.count();
-		System.out.println("Number of custom exceptions: " + numberOfSystemExceptionTypes);
+		List<Handler> handlersOfExternalExceptions = this.handlersOfProject.stream()
+			.filter ( handler -> // check if there are external exception being handled
+				handler.getExceptions().stream()
+					.anyMatch(type ->
+						type.getOrigin() == TypeOrigin.UNRESOLVED ||
+						type.getOrigin() == TypeOrigin.LIBRARY))
+			.collect (Collectors.toList());
+		
+		int numberOfHandlersOfExternalExceptions = handlersOfExternalExceptions.size();
+		System.out.println("Number of handlers of external exceptions: " + numberOfHandlersOfExternalExceptions);
 		
 		
-		Optional<Long> mostSubtypedSystemException = this.typeHierarchy.listTypes().stream()
-			.filter(Type::isSystemExceptionType)
-			.map(Type::getSystemExceptionRootType)
-			.filter(Objects::nonNull)
-			.collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
-			.values()
-			.stream()
-			.max(Comparator.naturalOrder());
+		List<Handler> handlersOfExternalExceptionsWhichResignalSomething = handlersOfExternalExceptions.stream()
+				.filter ( handler -> !handler.getEscapingSignalers().isEmpty()) // check if there are resignaled
+				.collect (Collectors.toList());
+
+		int numberOfHandlersOfExternalExceptionsWhichResignalSomething = handlersOfExternalExceptionsWhichResignalSomething.size();
+		System.out.println("Number of handlers of external exceptions which resignal somethings: " + numberOfHandlersOfExternalExceptionsWhichResignalSomething);
+
 		
+		List<Handler> handlersOfExternalExceptionsWhichResignalExternalExceptions = handlersOfExternalExceptionsWhichResignalSomething.stream()
+				.filter ( handler -> 
+					handler.getEscapingSignalers().stream()
+						.anyMatch(signaler -> 
+							signaler.getThrownType().getOrigin() == TypeOrigin.UNRESOLVED ||
+							signaler.getThrownType().getOrigin() == TypeOrigin.LIBRARY))
+				.collect(Collectors.toList());
+
+		int numberOfHandlersOfExternalExceptionsWhichResignalExternalExceptions = handlersOfExternalExceptionsWhichResignalExternalExceptions.size();
+		System.out.println("Number of handlers of external exceptions which resignal external exceptions: " + numberOfHandlersOfExternalExceptionsWhichResignalExternalExceptions);
+
 		
-		if ( numberOfSystemExceptionTypes!= 0 && mostSubtypedSystemException.isPresent() )
-		{
-			System.out.println("'Define a super type' conformance: " + 1.0*mostSubtypedSystemException.get()/numberOfSystemExceptionTypes);
-		}
-		else
-		{
-			System.out.println("'Define a super type' conformance: 0.0");
-		}	
+		System.out.println("'Convert library exceptions' conformance: " + (1.0-(1.0*numberOfHandlersOfExternalExceptionsWhichResignalExternalExceptions/numberOfHandlersOfExternalExceptionsWhichResignalSomething)));
 	}
 }

@@ -19,6 +19,9 @@ import ufrn.dimap.lets.ehmetrics.abstractmodel.TypeHierarchy;
 
 public class VisitorsUtil {
 
+	/**
+	 * Auxiliar method to process the ClassDeclaration and create a new type in the hierarchy.
+	 * */
 	public static void processClassDeclaration(ClassOrInterfaceDeclaration classOrInterfaceDeclaration,
 			TypeHierarchy typeHierarchy, File javaFile)
 	{
@@ -32,13 +35,16 @@ public class VisitorsUtil {
 		}
 	}
 
+	/**
+	 * Auxiliar method to process a CatchClause, adding the caught types in the hierarchy and creating a new Handler in the model.
+	 * */
 	public static void processCatchClause(CatchClause catchClause, TypeHierarchy typeHierarchy, Handler handler, File javaFile)
 	{
 		handler.setFile(javaFile);
 		handler.setNode(catchClause);
 
 		List<Type> types = JavaParserUtil.getHandledTypes(catchClause).stream()
-			.map(t -> typeHierarchy.findOrCreateType (t))
+			.map(typeHierarchy::findOrCreateType)
 			.collect (Collectors.toList());
 		
 		
@@ -58,6 +64,9 @@ public class VisitorsUtil {
 			});
 	}
 
+	/**
+	 * Auxiliar method to process the ThrowStatement, adding the thrown type in the hierarchy and creating a new Signaler in the model.
+	 * */
 	public static void processThrowStatement(ThrowStmt throwStatement, TypeHierarchy typeHierarchy, Signaler signaler,
 			File javaFile)
 	{
@@ -89,4 +98,13 @@ public class VisitorsUtil {
 		thrownType.addSignaler(signaler);
 	}
 
+	/**
+	 * Convenient method to "convert" Handlers to CatchClauses.
+	 * */
+	public static List<CatchClause> getCatchClausesFromHandlers( List<Handler> handlers )
+	{
+		return handlers.stream()
+			.map(handler -> (CatchClause) handler.getNode())
+			.collect(Collectors.toList());
+	}
 }

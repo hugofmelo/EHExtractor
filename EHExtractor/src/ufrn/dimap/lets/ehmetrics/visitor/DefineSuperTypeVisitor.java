@@ -127,10 +127,14 @@ public class DefineSuperTypeVisitor extends VoidVisitorAdapter<Void> {
 		
 		if ( numberOfSystemExceptionTypes!= 0 && mostSubtypedSystemException.isPresent() )
 		{
+			System.out.println("Number of subtypes of the most subtyped system exception: " + mostSubtypedSystemException.get());
+			
 			System.out.println("'Define a super type' conformance: " + 1.0*mostSubtypedSystemException.get()/numberOfSystemExceptionTypes);
 		}
 		else
 		{
+			System.out.println("None of the system exceptions has subtypes");
+			
 			System.out.println("'Define a super type' conformance: 0.0");
 		}	
 	}

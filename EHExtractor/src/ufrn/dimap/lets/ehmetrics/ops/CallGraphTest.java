@@ -1,5 +1,7 @@
 package ufrn.dimap.lets.ehmetrics.ops;
 
+import org.apache.maven.shared.invoker.MavenInvocationException;
+
 import com.github.javaparser.resolution.UnsolvedSymbolException;
 
 import ufrn.dimap.lets.ehmetrics.ThinkLaterException;
@@ -15,14 +17,14 @@ public class CallGraphTest {
 		
 	}
 	
-	private void method1 ()
+	private void method1 () throws Throwable
 	{
 		B a = new B();
 		try
 		{
 			a.m(new UnsolvedSymbolException("sdfsdf"));
 		}
-		catch (ThinkLaterException e1)
+		catch (UnsolvedSymbolException e1)
 		{
 			try
 			{
@@ -30,19 +32,19 @@ public class CallGraphTest {
 			}
 			catch (Exception e2)
 			{
-				throw e1;
+				throw e2.getCause();
 			}
 		}
 	}
 	
-	private void method2 ()
+	private void method2 () throws MavenInvocationException
 	{
 		B a = new B();
 		try
 		{
 			a.m(new UnsolvedSymbolException("sdfsdf"));
 		}
-		catch (ThinkLaterException e1)
+		catch (UnsolvedSymbolException e1)
 		{
 			try
 			{
@@ -50,19 +52,19 @@ public class CallGraphTest {
 			}
 			catch (Exception e2)
 			{
-				throw new IllegalArgumentException (e1);
+				throw new MavenInvocationException("dsf");
 			}
 		}
 	}
 	
-	private void method3 ()
+	private void method3 () throws MavenInvocationException
 	{
 		B a = new B();
 		try
 		{
 			a.m(new UnsolvedSymbolException("sdfsdf"));
 		}
-		catch (ThinkLaterException e1)
+		catch (UnsolvedSymbolException e1)
 		{
 			try
 			{
@@ -70,9 +72,9 @@ public class CallGraphTest {
 			}
 			catch (Exception e2)
 			{
-				IllegalArgumentException e3 = new IllegalArgumentException(e1);  
+				//MavenInvocationException e3 = new MavenInvocationException("",e1);  
 				
-				throw e3;
+				//throw e3;
 			}
 		}
 	}
