@@ -14,10 +14,9 @@ public class ErrorLogger
 	private static List<String> gradle;
 	
 	private static List<String> errors;
-	private static List<String> unsolved;
 	private static List<String> unsupported;
+	private static List<String> unknownTypes;
 	private static List<String> unknownAncestral;
-	
 	private static List<String> unknownSignalers;
 	
 	private ErrorLogger ()
@@ -37,10 +36,9 @@ public class ErrorLogger
 			gradle = new ArrayList<>();
 			
 			errors = new ArrayList<>();
-			unsolved = new ArrayList<>();
 			unsupported = new ArrayList<>();
+			unknownTypes = new ArrayList<>();
 			unknownAncestral = new ArrayList<>();
-			
 			unknownSignalers = new ArrayList<>();
 		}
 	}
@@ -51,10 +49,9 @@ public class ErrorLogger
 		gradle = null;
 		
 		errors = null;
-		unsolved = null;
 		unsupported = null;
+		unknownTypes = null;
 		unknownAncestral = null;		
-		
 		unknownSignalers = null;
 	}
 
@@ -80,9 +77,9 @@ public class ErrorLogger
 		result.append("Maven errors: " + maven.size() + "\n");
 		result.append("Gradle errors: " + gradle.size() + "\n");
 		
-		result.append("Unsolved types: " + unsolved.size() + "\n");
 		result.append("Unsupported errors: " + unsupported.size() + "\n");
 		result.append("Unknown ancestral: " + unknownAncestral.size() + "\n");
+		result.append("Unknown types: " + unknownTypes.size() + "\n");
 		result.append("Unknown signaler: " + unknownSignalers.size() + "\n");
 		result.append("\n");
 		
@@ -114,13 +111,6 @@ public class ErrorLogger
 			result.append(str + "\n");
 		}
 		result.append("\n");
-		
-		result.append("UNSOLVED ERROR FILES\n");
-		for ( String str : unsolved )
-		{
-			result.append(str + "\n");
-		}
-		result.append("\n");
 
 		result.append("UNSUPPORTED ERROR FILES\n");
 		for ( String str : unsupported )
@@ -129,6 +119,13 @@ public class ErrorLogger
 		}
 		result.append("\n");
 
+		result.append("UNKNOWN TYPES\n");
+		for ( String str : unknownTypes )
+		{
+			result.append(str + "\n");
+		}
+		result.append("\n");
+		
 		result.append("UNKNOWN ANCESTRAL\n");
 		for ( String str : unknownAncestral )
 		{
@@ -161,14 +158,14 @@ public class ErrorLogger
 		errors.add(errorMessage);
 	}
 	
-	public static void addUnsolved (String errorMessage)
-	{
-		unsolved.add(errorMessage);
-	}
-	
 	public static void addUnsupported (String errorMessage)
 	{
 		unsupported.add(errorMessage);
+	}
+	
+	public static void addUnknownType (String errorMessage)
+	{
+		unknownTypes.add(errorMessage);
 	}
 	
 	public static void addUnknownAncestral (String errorMessage)

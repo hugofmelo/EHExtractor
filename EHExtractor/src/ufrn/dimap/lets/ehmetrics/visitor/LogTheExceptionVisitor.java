@@ -1,5 +1,7 @@
 package ufrn.dimap.lets.ehmetrics.visitor;
 
+import java.io.File;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 import java.util.stream.Collectors;
@@ -7,41 +9,77 @@ import java.util.stream.Collectors;
 import com.github.javaparser.ast.CompilationUnit;
 import com.github.javaparser.ast.stmt.CatchClause;
 import com.github.javaparser.ast.stmt.ThrowStmt;
+import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
 
 import ufrn.dimap.lets.ehmetrics.abstractmodel.Handler;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.Signaler;
+import ufrn.dimap.lets.ehmetrics.abstractmodel.TypeHierarchy;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.TypeOrigin;
 
 /**
- * Visitor para verificar o guideline "Convert library exceptions".
+ * Visitor para verificar o guideline "Log the exception".
  * 
  * Para confirmar o guideline a seguinte heurística é usada:
- * De todas as capturas de exceções externas em que aquele tratador re-signaliza
- * uma exceção, a re-sinalização não é de uma exceção externa em pelo menos 95% dos tratadores.
+ * 95% de todos os tratadores que não-resinalizam uma exceção realizam o log da mesma.
+ * O log é definido a partir da chamada dos métodos: 
+ * e.printStackTrace
+ * System.out.print*(..., e, ...)
+ * System.err.print*(..., e, ...)
+ * 
  * */
-public class ConvertLibraryExceptionsVisitor extends GuidelineCheckerVisitor {
+public class LogTheExceptionVisitor extends VoidVisitorAdapter<Void> {
 
+	public TypeHierarchy typeHierarchy;
+	private File javaFile; // Java file being parsed
 	private Stack <Handler> handlersInContext;
 
-	public ConvertLibraryExceptionsVisitor (boolean allowUnresolved)
+	private List<Signaler> signalersOfProject;
+	private List<Handler> handlersOfProject;
+
+	public LogTheExceptionVisitor ()
 	{
-		super (allowUnresolved);
+		this.typeHierarchy = new TypeHierarchy();
+
+		this.signalersOfProject = new ArrayList<>();
+		this.handlersOfProject = new ArrayList<>();
 	}
 	
 	@Override
 	public void visit (CompilationUnit compilationUnit, Void arg)
 	{
-		// Forces the stack to reset. Sometimes um error when parsing precious java files could finish the visitor without reseting the stack.
 		this.handlersInContext = new Stack<>(); 
 		
         super.visit(compilationUnit, arg);
     }
 
+	/*
+	@Override
+	public void visit (ClassOrInterfaceDeclaration classOrInterfaceDeclaration, Void arg)
+	{		
+		ResolvedReferenceTypeDeclaration referenceTypeDeclaration = classOrInterfaceDeclaration.resolve();
+
+		if ( referenceTypeDeclaration.isClass() )
+		{	
+			Type type = this.typeHierarchy.findOrCreateResolvedType(referenceTypeDeclaration.asClass());
+			type.setFile(javaFile);
+			type.setNode(classOrInterfaceDeclaration);
+		}
+
+
+		//VISIT CHILDREN
+		super.visit(classOrInterfaceDeclaration, arg);
+	}
+	 */
+
 	@Override
 	public void visit (CatchClause catchClause, Void arg)
 	{		
-		Handler newHandler = createHandler(catchClause);	
-		
+		Handler newHandler = new Handler();
+
+		VisitorsUtil.processCatchClause(catchClause, this.typeHierarchy, newHandler, javaFile);		
+
+		this.handlersOfProject.add(newHandler);
+
 		this.handlersInContext.push(newHandler);
 
 		// VISIT CHILDREN
@@ -53,7 +91,11 @@ public class ConvertLibraryExceptionsVisitor extends GuidelineCheckerVisitor {
 	@Override
 	public void visit (ThrowStmt throwStatement, Void arg)
 	{		
-		Signaler newSignaler = createSignaler(throwStatement);
+		Signaler newSignaler = new Signaler();
+
+		VisitorsUtil.processThrowStatement(throwStatement, this.typeHierarchy, newSignaler, javaFile);
+
+		this.signalersOfProject.add(newSignaler);
 
 		// All handlers in context have this signaler as escaping exception
 		this.handlersInContext.stream().forEach(handler -> handler.getEscapingSignalers().add(newSignaler));
@@ -63,10 +105,15 @@ public class ConvertLibraryExceptionsVisitor extends GuidelineCheckerVisitor {
 		super.visit(throwStatement, arg);
 	}	
 
+
 	/**
 	 * Verifica se o projeto adota o guideline referenciado neste visitor.
 	 * 
 	 * Para entender as condições do guideline, ver Javadoc da classe
+	 * */
+
+	/*De todas as capturas de exceções externas em que aquele tratador re-signaliza
+	 * uma exceção, a re-sinalização não é de uma exceção externa em pelo menos 95% dos tratadores.
 	 * */
 	public void checkGuidelineConformance ()
 	{	

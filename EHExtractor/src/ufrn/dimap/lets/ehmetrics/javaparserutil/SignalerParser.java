@@ -1,4 +1,4 @@
-package ufrn.dimap.lets.ehmetrics.visitor;
+package ufrn.dimap.lets.ehmetrics.javaparserutil;
 
 import java.util.List;
 import java.util.Optional;
@@ -14,16 +14,17 @@ import com.github.javaparser.ast.expr.SimpleName;
 import com.github.javaparser.ast.stmt.CatchClause;
 import com.github.javaparser.ast.stmt.ThrowStmt;
 import com.github.javaparser.ast.type.ClassOrInterfaceType;
-import com.github.javaparser.resolution.UnsolvedSymbolException;
-import com.github.javaparser.resolution.declarations.ResolvedClassDeclaration;
 
-import ufrn.dimap.lets.ehmetrics.abstractmodel.Handler;
-import ufrn.dimap.lets.ehmetrics.abstractmodel.SignalerType;
 import ufrn.dimap.lets.ehmetrics.analyzer.UnknownSignalerException;
 
+
 /**
- * Parses a ThrowStmt, stores relevant data for consumption e define methods to check rethrown,
- * wrapping and unwrapping. Must call "parse" method before accessing any data.
+ * Classe utilitária para processar e resolver um ThrowStmt.
+ * 
+ * This class stores relevant data for consumption e define methods to check rethrown,
+ * wrapping and unwrapping.
+ * 
+ * Must call "parse" method before accessing any data.
  * 
  * Supported signalers patterns:
  * throw e
@@ -38,11 +39,11 @@ public class SignalerParser
 	
 	private boolean parsed;
 	
-	private SignalerType type;
+	private SignalerType signalerType;
 
 	// Throw types. If the type can be resolved, the optional is present
-	private Optional<ResolvedClassDeclaration> thrownClassDeclaration;
-	private ClassOrInterfaceType thrownClassType;
+	//private Optional<ResolvedClassDeclaration> thrownClassDeclaration;
+	//private ClassOrInterfaceType thrownClassType;
 	
 	// For "throw e" signalers
 	private SimpleName simpleName;
@@ -53,6 +54,9 @@ public class SignalerParser
 	// For "e.getCause" and other calls
 	private MethodCallExpr methodCallExpression;
 	
+	// For "(Exception) e"
+	private ClassOrInterfaceType castedType;
+	
 	private Optional<CatchClause> relatedCatchClause; // is present in a rethrow, wrapping or unwrapping
 	
 	public SignalerParser(ThrowStmt throwStatement, List<CatchClause> catchesInContext)
@@ -62,22 +66,22 @@ public class SignalerParser
 		
 		this.parsed = false;
 		
-		type = null;
-		thrownClassDeclaration = null;
-		thrownClassType = null;
+		signalerType = null;
+		//thrownClassDeclaration = null;
+		//thrownClassType = null;
 		simpleName = null;
 		argumentsInObjectCreation = null;
 		methodCallExpression = null;
+		castedType = null;
 		relatedCatchClause = null;
 	}
 	
 	/**
 	 * Parsear o código de um sinalizar e salva, no objeto, informações úteis para consumo.
 	 * */
+	// TODO unir parse com resolve e resolver logo a sinalização sem ter q testar 2x as mesmas coisas..
 	private void parse ()
 	{
-		this.resolveClassDeclaration();
-		
 		Expression throwExpression = this.throwStatement.getExpression();
 		
 		/* o statement é um "throw e". Provavelmente é um rethrow, mas é possível que a exceção tenha
@@ -113,16 +117,16 @@ public class SignalerParser
 
 			if ( castExpression.getType() instanceof ClassOrInterfaceType )
 			{
-				this.thrownClassType = castExpression.getType().asClassOrInterfaceType();
+				this.castedType = castExpression.getType().asClassOrInterfaceType();
 			}
 			else
 			{
-				throw new UnknownSignalerException("Sinalização com cast não suportada. Sinalização:\n\n'" + throwExpression + "'.\n\n");
+				throw new UnknownSignalerException("Sinalização com cast não suportada.", throwStatement);
 			}
 		}
 		else
 		{
-			throw new UnknownSignalerException ("A sinalização não é de um dos tipos suportados. Sinalização: '" + throwExpression + "'.");
+			throw new UnknownSignalerException ("A sinalização não é de um dos tipos suportados.", throwStatement);
 		}
 		
 		parsed = true;
@@ -145,11 +149,11 @@ public class SignalerParser
 			// O SimpleName é de uma exceção capturada no contexto do sinalizar. Houve um rethrow.
 			if (this.relatedCatchClause.isPresent())
 			{
-				this.type = SignalerType.RETHROW;
+				this.signalerType = SignalerType.RETHROW;
 			}
 			else
 			{
-				throw new UnknownSignalerException ("Sinalizado um SimpleName que não é rethrow. Sinalização: '" + this.throwStatement + "'.");
+				throw new UnknownSignalerException ("Sinalizado um SimpleName que não é rethrow.", this.throwStatement);
 			}
 		}
 		// throw new <Exception> (args)
@@ -169,16 +173,16 @@ public class SignalerParser
 	
 				if ( this.relatedCatchClause.isPresent() )
 				{
-					this.type = SignalerType.WRAPPING;
+					this.signalerType = SignalerType.WRAPPING;
 				}
 				else
 				{
-					this.type = SignalerType.DESTRUCTIVE_SIMPLE_THROW;
+					this.signalerType = SignalerType.DESTRUCTIVE_SIMPLE_THROW;
 				}
 			}
 			else
 			{
-				this.type = SignalerType.SIMPLE_THROW; 
+				this.signalerType = SignalerType.SIMPLE_THROW; 
 			}
 		}
 		// e.getCause, 
@@ -196,38 +200,21 @@ public class SignalerParser
 				
 				if ( this.relatedCatchClause.isPresent() )
 				{
-					this.type = SignalerType.UNWRAPPING;
+					this.signalerType = SignalerType.UNWRAPPING;
 				}
 				else
 				{
-					throw new UnknownSignalerException ("Sinalizado um 'e.getCause()' cujo contexto não foi resolvido. Sinalização: '" + this.throwStatement + "'.");
+					throw new UnknownSignalerException ("Sinalizado um 'e.getCause()' cujo contexto não foi resolvido.", this.throwStatement);
 				}
 			}
 			else
 			{
-				throw new UnknownSignalerException ("Sinalizado uma chamada de método que não é reconhecida. Sinalização: '" + this.throwStatement + "'.");
+				throw new UnknownSignalerException ("Sinalizado uma chamada de método que não é reconhecida.", this.throwStatement);
 			}
 		}
 		else
 		{
-			throw new UnknownSignalerException ("Sinalizado uma chamada de método que não é reconhecida. Sinalização: '" + this.throwStatement + "'.");
-		}
-	}
-	
-	/**
-	 * Tries to resolve the thrown class declaration.
-	 * 
-	 * This resolution is optional, so the failure can be ignored because the ReferenceType will be used instead.
-	 * */
-	private void resolveClassDeclaration ()
-	{
-		try
-		{
-			this.thrownClassDeclaration = Optional.of(throwStatement.getExpression().calculateResolvedType().asReferenceType().getTypeDeclaration().asClass());
-		}
-		catch ( UnsolvedSymbolException e )
-		{
-			this.thrownClassDeclaration = Optional.empty();
+			throw new UnknownSignalerException ("A sinalização é de um padrão desconhecido.", this.throwStatement);
 		}
 	}
 	
@@ -235,37 +222,6 @@ public class SignalerParser
 		if ( !parsed )
 			throw new IllegalStateException("Call 'parse' method first.");
 		else
-			return type;
-	}
-
-	public Optional<ResolvedClassDeclaration> getThrownClassDeclaration()
-	{
-		if ( !parsed )
-			throw new IllegalStateException("Call 'parse' method first.");
-		else
-			return this.thrownClassDeclaration;
-	}
-
-	private ClassOrInterfaceType getThrownClassType() {
-		if ( !parsed )
-			throw new IllegalStateException("Call 'parse' method first.");
-		else if ( this.thrownClassDeclaration != null )
-			throw new IllegalStateException("The thrown type was resolved. Use 'getThrownClassDeclaration' method instead.");
-		else
-			return this.thrownClassType;
-	}
-
-	private NodeList<Expression> getArgumentsInObjectCreation()
-	{
-		if ( !parsed )
-			throw new IllegalStateException("Call 'parse' method first.");
-		else
-			return argumentsInObjectCreation;
-	}
-
-	private SimpleName getSimpleName() {
-		if ( !parsed )
-			throw new IllegalStateException("Call 'parse' method first.");
-		return this.simpleName;
+			return signalerType;
 	}
 }

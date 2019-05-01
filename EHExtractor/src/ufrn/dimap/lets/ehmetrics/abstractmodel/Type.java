@@ -1,10 +1,7 @@
 package ufrn.dimap.lets.ehmetrics.abstractmodel;
 
-import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
-
-import com.github.javaparser.ast.Node;
 
 public class Type extends AbstractEHModelElement
 {
@@ -21,7 +18,7 @@ public class Type extends AbstractEHModelElement
 	private List<Handler> handlers;
 
 	/**
-	 * Create a new type empty. The attributes must be set.
+	 * Create a new empty type.
 	 * */
 	public Type ()
 	{
@@ -34,8 +31,30 @@ public class Type extends AbstractEHModelElement
 		this.handlers = new ArrayList<>();
 	}
 
+	
+	
+	
+	
+	// UTIL METHODS **********************************
+
 	/**
-	 * Returns the subtype with specified qualified name. Or null if don't exist.
+	 * Returns all subtypes of this in DFS order.
+	 * */
+	public List<Type> getAllSubTypes()
+	{
+		List<Type> result = new ArrayList<>();
+
+		for ( Type type : this.subtypes )
+		{
+			result.add(type);
+			result.addAll(type.getAllSubTypes());
+		}
+
+		return result;
+	}
+
+	/**
+	 * Returns the direct subtype with specified qualified name. Or null if don't exist.
 	 * */
 	public Type getSubTypeWithName(String qualifiedName)
 	{
@@ -50,20 +69,9 @@ public class Type extends AbstractEHModelElement
 		return null;
 	}
 
-	// Retorna todos os subtipos de this, em DFS order
-	public List<Type> getAllSubTypes()
-	{
-		List<Type> result = new ArrayList<>();
-
-		for ( Type type : this.subtypes )
-		{
-			result.add(type);
-			result.addAll(type.getAllSubTypes());
-		}
-
-		return result;
-	}
-
+	/**
+	 * Returns all ancestors of this. Direct super type first.
+	 * */
 	public List<Type> getAllAncestors()
 	{
 		List <Type> types = new ArrayList<>();
@@ -78,13 +86,61 @@ public class Type extends AbstractEHModelElement
 		return types;
 	}
 
-	public void setQualifiedName(String qualifiedName) {
-		this.qualifiedName = qualifiedName;	
+	/**
+	 * Check if this is a system defined exception type.
+	 * 
+	 * Util method.
+	 * */
+	public boolean isSystemExceptionType ()
+	{
+		return this.origin == TypeOrigin.SYSTEM &&
+				(this.classType == ClassType.CHECKED_EXCEPTION ||
+				this.classType == ClassType.UNCHECKED_EXCEPTION ||
+				this.classType == ClassType.ERROR_EXCEPTION ||
+				this.classType == ClassType.UNRESOLVED_EXCEPTION);
 	}
 
+	/**
+	 * Returns the more distant super type which are still a system type.
+	 * 
+	 * Return null if the type already is the root system type.
+	 * 
+	 * @throws IllegalArgumentException if the type is not a exception or is not a system type.
+	 * */
+	public Type getSystemExceptionRootType()
+	{
+		if ( this.isSystemExceptionType() )
+		{
+			Type auxType = this;
+
+			while ( auxType.getSuperType().isSystemExceptionType() )
+			{
+				auxType = auxType.getSuperType();
+			}
+
+			if ( auxType != this )
+				return auxType;
+			else
+				return null;
+		}
+		else
+		{
+			throw new IllegalArgumentException ("Type is not a system exception.");
+		}
+	}
+
+	
+	
+	
+	// GETTERS AND SETTERS ******************************************
+	
 	public String getQualifiedName()
 	{
 		return this.qualifiedName;
+	}
+
+	public void setQualifiedName(String qualifiedName) {
+		this.qualifiedName = qualifiedName;	
 	}
 
 	public ClassType getClassType ()
@@ -116,11 +172,17 @@ public class Type extends AbstractEHModelElement
 		this.superType = superType;
 	}
 
+	/**
+	 * Alias no getSignalers.add()
+	 * */
 	public void addSignaler(Signaler signaler)
 	{
 		this.signalers.add(signaler);
 	}
 
+	/**
+	 * Alias no getHandlers.add()
+	 * */
 	public void addHandler(Handler handler)
 	{
 		this.handlers.add(handler);
@@ -136,50 +198,17 @@ public class Type extends AbstractEHModelElement
 		return this.handlers;
 	}
 
-	public String toString()
-	{
-		return this.qualifiedName+"::"+ this.classType +"::"+this.origin;
-	}
-
 	public Type getSuperType()
 	{
 		return this.superType;
 	}
 
-	public boolean isSystemExceptionType ()
+
+
+	@Override
+	public String toString()
 	{
-		return this.origin == TypeOrigin.SYSTEM &&
-				(this.classType == ClassType.CHECKED_EXCEPTION ||
-				this.classType == ClassType.UNCHECKED_EXCEPTION ||
-				this.classType == ClassType.ERROR_EXCEPTION ||
-				this.classType == ClassType.UNRESOLVED_EXCEPTION);
-	}
-
-	/**
-	 * Returns the more distant super type which are still a system type.
-	 * 
-	 * Return null if the type already is the root system type.
-	 * 
-	 * @throws IllegalArgumentException if the type is not a exception or is not a system type.
-	 * */
-	public Type getSystemExceptionRootType()
-	{
-		if ( this.isSystemExceptionType() )
-		{
-			Type auxType = this;
-
-			while ( auxType.getSuperType().isSystemExceptionType() )
-			{
-				auxType = auxType.getSuperType();
-			}
-			
-			if ( auxType != this )
-				return auxType;
-			else
-				return null;
-		}
-
-		throw new IllegalArgumentException ("Type is not a system exception.");
+		return this.qualifiedName+"::"+ this.classType +"::"+this.origin;
 	}
 
 

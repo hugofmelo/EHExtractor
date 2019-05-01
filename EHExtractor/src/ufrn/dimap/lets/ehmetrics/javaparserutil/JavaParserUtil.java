@@ -1,10 +1,11 @@
-package ufrn.dimap.lets.ehmetrics.visitor;
+package ufrn.dimap.lets.ehmetrics.javaparserutil;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Optional;
 
+import com.github.javaparser.ast.Node;
 import com.github.javaparser.ast.body.FieldDeclaration;
 import com.github.javaparser.ast.body.Parameter;
 import com.github.javaparser.ast.body.VariableDeclarator;
@@ -20,19 +21,22 @@ import com.github.javaparser.ast.type.ReferenceType;
 import com.github.javaparser.ast.type.UnionType;
 import com.github.javaparser.resolution.UnsolvedSymbolException;
 import com.github.javaparser.resolution.declarations.ResolvedClassDeclaration;
-import com.github.javaparser.resolution.declarations.ResolvedMethodDeclaration;
 import com.github.javaparser.resolution.declarations.ResolvedValueDeclaration;
-import com.github.javaparser.resolution.types.ResolvedType;
 import com.github.javaparser.symbolsolver.javaparsermodel.declarations.JavaParserFieldDeclaration;
 import com.github.javaparser.symbolsolver.javaparsermodel.declarations.JavaParserParameterDeclaration;
 import com.github.javaparser.symbolsolver.javaparsermodel.declarations.JavaParserSymbolDeclaration;
 
 import ufrn.dimap.lets.ehmetrics.analyzer.UnknownSignalerException;
 
+/**
+ * Classe utilitária para resolver tipos de ThrowStmt's and CatchClause's.
+ * */
 public class JavaParserUtil {
 
+	private JavaParserUtil() {}
+	
 	/**
-	 * Returns a list of unresolved ClassOrInterfaceType's from a CatchClause.
+	 * Returns a list of ClassOrInterfaceType's from a CatchClause. The resolving of the types were not yet tried.
 	 * */
 	public static List<ClassOrInterfaceType> getHandledTypes ( CatchClause catchClause )
 	{
@@ -109,7 +113,6 @@ public class JavaParserUtil {
 	 * */
 	private static ClassOrInterfaceType getThrownClassOrInterfaceType (Expression throwExpression)
 	{
-		// o statement é um "throw e". Provavelmente é um rethrow, mas é possível que a exceção tenha sido instanciada previamente e agora está sendo lançada.
 		if ( throwExpression instanceof NameExpr )
 		{
 			try
@@ -120,10 +123,9 @@ public class JavaParserUtil {
 			}
 			catch (UnsolvedSymbolException e)
 			{
-				throw new UnknownSignalerException ("Sinalização de NameExpr cuja declaração não foi encontrada. Sinalização:\n\n'" + throwExpression + "'.\n\n", e);
+				throw new UnknownSignalerException ("Sinalização de NameExpr cuja declaração não foi encontrada.", getEnclosingThrowStatement(throwExpression) , e);
 			}
 		}
-		// O statement é um "throw new...".
 		else if ( throwExpression instanceof ObjectCreationExpr )
 		{
 			ObjectCreationExpr objectCreationExp = throwExpression.asObjectCreationExpr();
@@ -140,17 +142,36 @@ public class JavaParserUtil {
 			}
 			else
 			{
-				throw new UnknownSignalerException("Sinalização com cast cujo tipo não foi resolvido. Sinalização:\n\n'" + throwExpression + "'.\n\n");
+				throw new UnknownSignalerException("Sinalização com cast cujo tipo não foi resolvido.", getEnclosingThrowStatement(throwExpression));
 			}
 		}
 		else if ( throwExpression instanceof MethodCallExpr )
 		{
-			throw new UnknownSignalerException ("Sinalização de uma chamada de método que não pôde ter seu tipo resolvido. Sinalização: '" + throwExpression + "'.");
+			throw new UnknownSignalerException ("Sinalização de uma chamada de método que não pôde ter seu tipo resolvido.", getEnclosingThrowStatement(throwExpression));
 		}
 		else
 		{
-			throw new UnknownSignalerException ("A sinalização não é de um dos tipos suportados. Sinalização: '" + throwExpression + "'.");
+			throw new UnknownSignalerException ("A sinalização não é de um dos padrões suportados.", getEnclosingThrowStatement(throwExpression));
 		}
+	}
+	
+	private static ThrowStmt getEnclosingThrowStatement (Expression expression)
+	{
+		Optional<Node> auxNode = expression.getParentNode();
+		
+		while ( auxNode.isPresent() )
+		{
+			if ( auxNode.get() instanceof ThrowStmt )
+			{
+				return (ThrowStmt) auxNode.get();
+			}
+			else
+			{
+				auxNode = auxNode.get().getParentNode();
+			}
+		}
+		
+		throw new IllegalStateException ("A expressão não está no escopo de um ThrowStmt");
 	}
 	
 	/**

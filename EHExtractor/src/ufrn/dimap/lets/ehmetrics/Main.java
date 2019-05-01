@@ -1,18 +1,9 @@
 package ufrn.dimap.lets.ehmetrics;
 
-import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
 import java.util.List;
 
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
-
-import ufrn.dimap.lets.ehmetrics.abstractmodel.MetricsModel;
 import ufrn.dimap.lets.ehmetrics.analyzer.Analyzer;
 import ufrn.dimap.lets.ehmetrics.dependencyresolver.ArtifactResolver;
 import ufrn.dimap.lets.ehmetrics.dependencyresolver.FileFinder;
@@ -21,7 +12,6 @@ import ufrn.dimap.lets.ehmetrics.dependencyresolver.ProjectFiles;
 import ufrn.dimap.lets.ehmetrics.logger.ArtifactLogger;
 import ufrn.dimap.lets.ehmetrics.logger.ErrorLogger;
 import ufrn.dimap.lets.ehmetrics.logger.ModelLogger;
-import ufrn.dimap.lets.ehmetrics.logger.StatelessPersistentLogger;
 
 public class Main
 {
@@ -114,7 +104,7 @@ public class Main
 	
 	public void execute() throws IOException
 	{
-		ModelLogger.start();
+		//ModelLogger.start();
 
 		System.out.println("Identificando projetos para analise...");
 		List<File> projects = ProjectsUtil.listProjects();
@@ -144,12 +134,12 @@ public class Main
 			ArtifactLogger.writeReport(project.getName(), projectFiles, projectArtifacts);
 
 			System.out.println("Executando análise...");
-			MetricsModel model = Analyzer.analyze(projectArtifacts); 
+			Analyzer.analyze(projectArtifacts, true); 
 
 			System.out.println("Salvando resultados...");
 			// Logging
 			//ModelLogger.writeReport(project.getName(), model);
-			ModelLogger.writeQuickMetrics(project.getName(), model);
+			//ModelLogger.writeQuickMetrics(project.getName(), model);
 			ErrorLogger.writeReport(project.getName());
 
 			ErrorLogger.stop();
@@ -158,7 +148,7 @@ public class Main
 			System.out.println();	
 		}
 
-		ModelLogger.stop();
+		//ModelLogger.stop();
 
 		System.out.println("FINALIZADO");
 	}

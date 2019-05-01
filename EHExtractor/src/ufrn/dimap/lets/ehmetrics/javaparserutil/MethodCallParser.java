@@ -1,4 +1,4 @@
-package ufrn.dimap.lets.ehmetrics.visitor;
+package ufrn.dimap.lets.ehmetrics.javaparserutil;
 
 import java.util.Optional;
 
@@ -6,6 +6,17 @@ import com.github.javaparser.ast.expr.Expression;
 import com.github.javaparser.ast.expr.MethodCallExpr;
 import com.github.javaparser.ast.expr.SimpleName;
 
+/**
+ * Classe utilitária para processar e resolver uma chamada de método.
+ * 
+ * This class stores relevant data for consumption e define methods to check which
+ * method was call.
+ * 
+ * Must call "parse" method before accessing any data.
+ * 
+ * Supported methods:
+ * e.getCause
+ * */
 public class MethodCallParser
 {
 	private MethodCallExpr methodCallExpression;

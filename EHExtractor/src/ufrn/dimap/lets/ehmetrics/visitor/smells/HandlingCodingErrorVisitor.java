@@ -1,6 +1,5 @@
 package ufrn.dimap.lets.ehmetrics.visitor.smells;
 
-import java.io.IOException;
 import java.util.Iterator;
 
 import com.github.javaparser.ast.stmt.CatchClause;
@@ -8,7 +7,6 @@ import com.github.javaparser.ast.type.ClassOrInterfaceType;
 import com.github.javaparser.ast.type.ReferenceType;
 import com.github.javaparser.ast.type.Type;
 import com.github.javaparser.ast.type.UnionType;
-import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
 
 import ufrn.dimap.lets.ehmetrics.visitor.SimpleVisitor;
 

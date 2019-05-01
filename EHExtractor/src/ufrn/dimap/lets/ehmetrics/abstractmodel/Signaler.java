@@ -1,39 +1,32 @@
 package ufrn.dimap.lets.ehmetrics.abstractmodel;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import com.github.javaparser.ast.stmt.ThrowStmt;
-
 public class Signaler extends AbstractEHModelElement
 {
 	private Type thrownType;
-	//private SignalerType signalerType;
+
 	private boolean isRethrow;
 	private boolean isWrapping;
-	//private boolean isUnwrapping;
-	private Handler resignaledHandler; // In case of rethrow or wrapping, the associated handler 
+	private boolean isUnwrapping;
+	private Handler relatedHandler; // In case of rethrow, wrapping or unwrapping, the associated handler 
 	public Signaler ()
 	{
 		super();
 		this.thrownType = null;
 		this.isRethrow = false;
 		this.isWrapping = false;
-		this.resignaledHandler = null;
+		this.relatedHandler = null;
 	}
 
 	public Type getThrownType()
 	{
 		return this.thrownType;
 	}
-	
-	/*
-	public SignalerType getSignalerType ()
-	{
-		return this.signalerType;
-	}
-	*/
 
+	public void setThrownType(Type thrownType)
+	{
+		this.thrownType = thrownType;
+	}
+	
 	public boolean isRethrow() {
 		return isRethrow;
 	}
@@ -50,21 +43,25 @@ public class Signaler extends AbstractEHModelElement
 		this.isWrapping = isWrapping;
 	}
 	
-	public String toString()
-	{
-		return this.thrownType.getQualifiedName();
+	public boolean isUnwrapping() {
+		return isUnwrapping;
 	}
 
-	public void setThrownType(Type thrownType)
-	{
-		this.thrownType = thrownType;
+	public void setUnwrapping(boolean isUnwrapping) {
+		this.isUnwrapping = isUnwrapping;
 	}
-
+	
 	public Handler getResignaledHandler() {
-		return resignaledHandler;
+		return relatedHandler;
 	}
 
 	public void setResignaledHandler(Handler resignaledHandler) {
-		this.resignaledHandler = resignaledHandler;
+		this.relatedHandler = resignaledHandler;
+	}
+	
+	@Override
+	public String toString()
+	{
+		return this.thrownType.getQualifiedName();
 	}
 }

@@ -1,42 +1,33 @@
 package ufrn.dimap.lets.ehmetrics.abstractmodel;
 
-import java.io.File;
-import java.nio.channels.NetworkChannel;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
-import org.gradle.tooling.exceptions.UnsupportedOperationConfigurationException;
-
-import com.github.javaparser.ast.Node;
-import com.github.javaparser.ast.body.ClassOrInterfaceDeclaration;
 import com.github.javaparser.ast.type.ClassOrInterfaceType;
 import com.github.javaparser.resolution.UnsolvedSymbolException;
 import com.github.javaparser.resolution.declarations.ResolvedClassDeclaration;
-import com.github.javaparser.resolution.declarations.ResolvedReferenceTypeDeclaration;
-import com.github.javaparser.resolution.declarations.ResolvedTypeDeclaration;
 import com.github.javaparser.resolution.types.ResolvedReferenceType;
-import com.github.javaparser.symbolsolver.javaparsermodel.declarations.JavaParserClassDeclaration;
-import com.github.javaparser.symbolsolver.javassistmodel.JavassistClassDeclaration;
-import com.github.javaparser.symbolsolver.reflectionmodel.ReflectionClassDeclaration;
 
-import ufrn.dimap.lets.ehmetrics.ThinkLaterException;
-import ufrn.dimap.lets.ehmetrics.analyzer.Util;
+import ufrn.dimap.lets.ehmetrics.analyzer.UnresolvedAncestorsException;
+import ufrn.dimap.lets.ehmetrics.analyzer.UnresolvedTypeException;
 
 /**
  * Uma hierarquia de classes que é gerada duranter o parser de arquivos Java de um projeto.
  * Tipos que não conseguem ser resolvidos pelo SymbolSolver entram na hierarquia como subtipos
- * de java.lang.Object e apresentam informações de Origin e ClassType incompletas.
+ * de java.lang.Object caso allowUnresolved é true. Nesse caso, os tipos apresentam informações de Origin e ClassType incompletas.
  * 
  * A ordem em que os arquivos são parseados influencia a hierarquia. Se o source de uma exceção que herda de
  * uma exceção não resolvida for parseado antes de qualquer referencia a ela (em um throw ou catch), o tipo não
- * será reconhecido como uma exceção.
+ * será reconhecido como uma exceção. Se mais tarde esse tipo for usado em um throw ou catch, a hierarquia pode ser
+ * externamente atualizada.
  * */
 public class TypeHierarchy {
 
 	private Type typeRoot;
+	private boolean allowUnresolvedTypes;
 
-	public TypeHierarchy ()
+	public TypeHierarchy (boolean allowUnresolved)
 	{
 		// São iniciados os tipos Object e Throwable. Object para ser a raiz da hierarquia. E Throwable para tentar corrigir um bug que faz com que algumas libs o considerem como Origin.Library.
 		Type object = new Type();
@@ -53,12 +44,16 @@ public class TypeHierarchy {
 		throwable.setSuperType(object);
 
 		this.typeRoot = object;
+		this.allowUnresolvedTypes = allowUnresolved;
 	}
 
 	/**
 	 * Find or create a type in the hierarchy.
 	 * 
-	 * If the ClassOrInterfaceType can be resolved, create a resolved (with declaration) type.
+	 * If the ClassOrInterfaceType can be resolved, create a resolved (with declaration) Type.
+	 * If the ClassOrInterfaceType cant be resolved, and if unresolved types are allowed, create a unresolved Type.
+	 * 
+	 * @throws UnresolvedTypeException if the declaration was not resolved and allowUnresolved is false
 	 * */
 	public Type findOrCreateType(ClassOrInterfaceType classOrInterfaceType)
 	{
@@ -70,7 +65,14 @@ public class TypeHierarchy {
 		}
 		catch ( UnsolvedSymbolException e )
 		{
-			type = this.findOrCreateUnresolvedType (classOrInterfaceType);
+			if ( allowUnresolvedTypes )
+			{
+				type = this.findOrCreateUnresolvedType (classOrInterfaceType);
+			}
+			else
+			{
+				throw new UnresolvedTypeException ("Referencia a um tipo que não pôde ser resolvido: " + classOrInterfaceType + ".", classOrInterfaceType, e);
+			}
 		}
 		
 		return type;
@@ -92,8 +94,27 @@ public class TypeHierarchy {
 	}
 
 	/**
-	 * Create a resolved type in this hierarchy. If the ancestors of this type could not be 
-	 * resolved, the new type is created as subtype of Object with a UNRESOLVED ClassType.
+	 * Find or create a type in this hierarchy from its ClassOrInterfaceType.
+	 * */
+	private Type findOrCreateUnresolvedType(ClassOrInterfaceType classOrInterfaceType)
+	{
+		Type type = this.findTypeByName (classOrInterfaceType.getNameAsString());
+	
+		if (type == null)
+		{
+			type = this.createUnresolvedType(classOrInterfaceType);
+		}
+	
+		return type;
+	}
+
+	/**
+	 * Create a resolved type in this hierarchy.
+	 * 
+	 * If the ancestors of this type could not be resolved, and if allowedUnresolved, the new type is
+	 * created as subtype of Object with a UNRESOLVED ClassType.
+	 * 
+	 * @throws UnresolvedTypeException if the ancestors could not be resolved and AllowUnresolved is false
 	 * */
 	private Type createResolvedType(ResolvedClassDeclaration classDeclaration, Type parent)
 	{
@@ -118,40 +139,19 @@ public class TypeHierarchy {
 			}
 			catch (UnsolvedSymbolException e)
 			{
-				newType.setClassType(ClassType.UNRESOLVED);
-				this.setTypePositionInHierarchy(newType, this.typeRoot);			
+				if ( allowUnresolvedTypes )
+				{
+					newType.setClassType(ClassType.UNRESOLVED);
+					this.setTypePositionInHierarchy(newType, this.typeRoot);
+				}
+				else
+				{
+					throw new UnresolvedAncestorsException ("Ancestrais não encontrados.", classDeclaration , e);
+				}
 			}
 		}
 
 		return newType;
-	}
-
-	/**
-	 * Init a Type which node was resolved. A resolved node is guaranteed to have qualified name and origin.
-	 * */
-	private Type initResolvedType(ResolvedClassDeclaration classDeclaration)
-	{		
-		Type newType = new Type ();
-
-		newType.setQualifiedName (classDeclaration.getQualifiedName());
-		newType.setOrigin (TypeOrigin.resolveTypeOrigin(classDeclaration));
-
-		return newType;
-	}
-
-	/**
-	 * Find or create a type in this hierarchy from its ClassOrInterfaceType.
-	 * */
-	private Type findOrCreateUnresolvedType(ClassOrInterfaceType classOrInterfaceType)
-	{
-		Type type = this.findTypeByName (classOrInterfaceType.getNameAsString());
-
-		if (type == null)
-		{
-			type = this.createUnresolvedType(classOrInterfaceType);
-		}
-
-		return type;
 	}
 
 	/**
@@ -168,6 +168,19 @@ public class TypeHierarchy {
 
 		this.setTypePositionInHierarchy(newType, this.typeRoot);
 
+		return newType;
+	}
+
+	/**
+	 * Init a Type which node was resolved. A resolved node is guaranteed to have qualified name and origin.
+	 * */
+	private Type initResolvedType(ResolvedClassDeclaration classDeclaration)
+	{		
+		Type newType = new Type ();
+	
+		newType.setQualifiedName (classDeclaration.getQualifiedName());
+		newType.setOrigin (TypeOrigin.resolveTypeOrigin(classDeclaration));
+	
 		return newType;
 	}
 
@@ -213,6 +226,11 @@ public class TypeHierarchy {
 		return null;
 	}
 
+	/**
+	 * Set a new Type in the hierarchy in the right position.
+	 * 
+	 * To navigate to there, the ancestors must be resolved.
+	 * */
 	private void setTypePositionInHierarchy (Type newType, List<ResolvedReferenceType> ancestors)
 	{
 		Type superType;
@@ -239,12 +257,18 @@ public class TypeHierarchy {
 		newType.setSuperType(superType);
 	}
 
+	/**
+	 * Set a new Type in the hierarchy from knowing his direct parent Type.
+	 * */
 	private void setTypePositionInHierarchy (Type newType, Type parent)
 	{
 		parent.getSubTypes().add(newType);
 		newType.setSuperType(parent);
 	}
 
+	/**
+	 * List of all Types in this hierarchy in FDS order.
+	 * */
 	public List<Type> listTypes ()
 	{
 		List<Type> types = new ArrayList<>();
@@ -254,8 +278,10 @@ public class TypeHierarchy {
 
 		return types;
 	}
-
-
+	
+	/**
+	 * Return all Types in DFS order and with identation.
+	 * */
 	@Override
 	public String toString()
 	{

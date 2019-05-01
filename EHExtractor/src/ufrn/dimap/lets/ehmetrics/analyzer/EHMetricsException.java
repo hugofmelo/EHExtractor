@@ -1,15 +1,15 @@
 package ufrn.dimap.lets.ehmetrics.analyzer;
 
-public abstract class AnalyzerException extends RuntimeException
+public abstract class EHMetricsException extends RuntimeException
 {
 	private static final long serialVersionUID = 1L;
 
-	public AnalyzerException(String msg)
+	public EHMetricsException(String msg)
 	{
 		super (msg);
 	}
 	
-	public AnalyzerException (String msg, Throwable cause)
+	public EHMetricsException (String msg, Throwable cause)
 	{
 		super(msg, cause);
 	}

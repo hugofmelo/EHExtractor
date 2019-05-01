@@ -1,4 +1,4 @@
-package ufrn.dimap.lets.ehmetrics.abstractmodel;
+package ufrn.dimap.lets.ehmetrics.javaparserutil;
 
 public enum SignalerType
 {

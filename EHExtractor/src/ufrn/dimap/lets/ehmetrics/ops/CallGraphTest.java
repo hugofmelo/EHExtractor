@@ -4,8 +4,6 @@ import org.apache.maven.shared.invoker.MavenInvocationException;
 
 import com.github.javaparser.resolution.UnsolvedSymbolException;
 
-import ufrn.dimap.lets.ehmetrics.ThinkLaterException;
-
 public class CallGraphTest {
 
 	public static void main (String args[])

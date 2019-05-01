@@ -11,7 +11,6 @@ import java.util.Map;
 import java.util.Optional;
 
 import com.github.javaparser.JavaParser;
-import com.github.javaparser.ParseProblemException;
 import com.github.javaparser.ParseResult;
 import com.github.javaparser.ast.CompilationUnit;
 import com.github.javaparser.ast.PackageDeclaration;
