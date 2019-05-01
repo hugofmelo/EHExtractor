@@ -20,6 +20,9 @@ import ufrn.dimap.lets.ehmetrics.abstractmodel.Type;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.TypeHierarchy;
 import ufrn.dimap.lets.ehmetrics.javaparserutil.JavaParserUtil;
 
+/**
+ * Generic visitor to parse exceptional types, signalers and handlers.
+ * */
 public abstract class GuidelineCheckerVisitor extends VoidVisitorAdapter<Void>
 {
 	protected boolean allowUnresolved;

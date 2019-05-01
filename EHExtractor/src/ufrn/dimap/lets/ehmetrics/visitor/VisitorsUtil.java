@@ -9,6 +9,8 @@ import ufrn.dimap.lets.ehmetrics.abstractmodel.Handler;
 
 public class VisitorsUtil {
 
+	private VisitorsUtil ()	{}
+	
 	/**
 	 * Convenient method to "convert" Handlers to CatchClauses.
 	 * */

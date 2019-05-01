@@ -12,7 +12,6 @@ public class A {
 	}
 
 	public void m2() {
-		// TODO Auto-generated method stub
 		
 	}
 }
