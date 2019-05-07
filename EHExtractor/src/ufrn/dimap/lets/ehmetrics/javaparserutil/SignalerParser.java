@@ -73,14 +73,13 @@ public class SignalerParser
 		argumentsInObjectCreation = null;
 		methodCallExpression = null;
 		castedType = null;
-		relatedCatchClause = null;
+		relatedCatchClause = Optional.empty();
 	}
 	
 	/**
 	 * Parsear o código de um sinalizar e salva, no objeto, informações úteis para consumo.
 	 * */
-	// TODO unir parse com resolve e resolver logo a sinalização sem ter q testar 2x as mesmas coisas..
-	private void parse ()
+	public void parse ()
 	{
 		Expression throwExpression = this.throwStatement.getExpression();
 		
@@ -91,8 +90,7 @@ public class SignalerParser
 		{
 			this.simpleName = throwExpression.asNameExpr().getName();
 			
-			//ResolvedValueDeclaration declaration = throwExpression.asNameExpr().resolve();
-			//this.thrownClassType = findVariableType (declaration);
+			this.testForRethrow();
 		}
 		// O statement é um "throw new...".
 		else if ( throwExpression instanceof ObjectCreationExpr )
@@ -100,19 +98,30 @@ public class SignalerParser
 			ObjectCreationExpr objectCreationExp = throwExpression.asObjectCreationExpr();
 			
 			this.argumentsInObjectCreation = objectCreationExp.getArguments();
+			
+			this.testForWrappingOrSimpleThrow();
 		}
 		// O statement é uma chamada de método.
 		else if (throwExpression instanceof MethodCallExpr)
 		{
 			this.methodCallExpression = throwExpression.asMethodCallExpr();
 			
-			// if e.getCause
-			// this.type = SignalerType.GET_CAUSE
-			// senão, throw exceção
+			MethodCallParser methodCallParser = new MethodCallParser(methodCallExpression);
+			
+			if ( methodCallParser.isGetCause() )
+			{
+				this.testForUnwrapping(methodCallParser);
+			}
+			else
+			{
+				throw new UnknownSignalerException ("A sinalização contem uma chamada de metodo não suportada.", throwStatement);
+			}
 		}
 		// O statement é um (Exception) e
 		else if (throwExpression instanceof CastExpr)
 		{
+			throw new UnknownSignalerException("Sinalização com cast não suportada.", throwStatement);
+			/*
 			CastExpr castExpression = throwExpression.asCastExpr();
 
 			if ( castExpression.getType() instanceof ClassOrInterfaceType )
@@ -123,6 +132,7 @@ public class SignalerParser
 			{
 				throw new UnknownSignalerException("Sinalização com cast não suportada.", throwStatement);
 			}
+			*/
 		}
 		else
 		{
@@ -132,35 +142,38 @@ public class SignalerParser
 		parsed = true;
 	}
 
-	/**
-	 * Tenta identificar que tipo de sinalização está ocorrendo. Os tipos suportados são os da Enum SignalerType.
-	 * */
-	public void resolve()
+	// METHODS TO CHECK EACH SIGNALER TYPE
+	
+	private void testForRethrow()
 	{
-		parse();
-		
-		// throw e
-		if ( this.simpleName != null )
-		{
-			this.relatedCatchClause = this.catchesInContext.stream()
-				.filter(catchClause -> catchClause.getParameter().getName().equals(this.simpleName))
-				.findAny();
+		this.relatedCatchClause = this.catchesInContext.stream()
+			.filter(catchClause -> catchClause.getParameter().getName().equals(this.simpleName))
+			.findAny();
 			
-			// O SimpleName é de uma exceção capturada no contexto do sinalizar. Houve um rethrow.
-			if (this.relatedCatchClause.isPresent())
+		// O SimpleName é de uma exceção capturada no contexto do sinalizar. Houve um rethrow.
+		if (this.relatedCatchClause.isPresent())
+		{
+			this.signalerType = SignalerType.RETHROW;
+		}
+		else
+		{
+			throw new UnknownSignalerException ("Sinalizado um SimpleName que não é rethrow.", this.throwStatement);
+		}
+	}
+	
+	private void testForWrappingOrSimpleThrow ()
+	{
+		if ( this.argumentsInObjectCreation.isEmpty() )
+		{
+			this.signalerType = SignalerType.SIMPLE_THROW;
+		}
+		else
+		{
+			if ( catchesInContext.isEmpty() )
 			{
-				this.signalerType = SignalerType.RETHROW;
+				this.signalerType = SignalerType.SIMPLE_THROW; 
 			}
 			else
-			{
-				throw new UnknownSignalerException ("Sinalizado um SimpleName que não é rethrow.", this.throwStatement);
-			}
-		}
-		// throw new <Exception> (args)
-		else if ( this.argumentsInObjectCreation != null )
-		{
-			// Check if wrapping
-			if ( !catchesInContext.isEmpty() )
 			{
 				List<SimpleName> simpleNamesInObjectCreation = argumentsInObjectCreation.stream()
 						.filter(Expression::isNameExpr)
@@ -180,41 +193,30 @@ public class SignalerParser
 					this.signalerType = SignalerType.DESTRUCTIVE_SIMPLE_THROW;
 				}
 			}
-			else
-			{
-				this.signalerType = SignalerType.SIMPLE_THROW; 
-			}
 		}
-		// e.getCause, 
-		else if ( this.methodCallExpression != null )
+	}
+	
+	private void testForUnwrapping (MethodCallParser methodCallParser)
+	{
+		// e.getCause
+		if ( methodCallParser.isGetCause() )
 		{
-			MethodCallParser methodCallParser = new MethodCallParser(this.methodCallExpression);
-			methodCallParser.parse();
+			this.relatedCatchClause = this.catchesInContext.stream()
+					.filter(catchClause -> catchClause.getParameter().getName().equals(methodCallParser.getGetCauseScope()))
+					.findAny();
 			
-			// e.getCause
-			if ( methodCallParser.isGetCause() )
+			if ( this.relatedCatchClause.isPresent() )
 			{
-				this.relatedCatchClause = this.catchesInContext.stream()
-						.filter(catchClause -> catchClause.getParameter().getName().equals(methodCallParser.getGetCauseScope()))
-						.findAny();
-				
-				if ( this.relatedCatchClause.isPresent() )
-				{
-					this.signalerType = SignalerType.UNWRAPPING;
-				}
-				else
-				{
-					throw new UnknownSignalerException ("Sinalizado um 'e.getCause()' cujo contexto não foi resolvido.", this.throwStatement);
-				}
+				this.signalerType = SignalerType.UNWRAPPING;
 			}
 			else
 			{
-				throw new UnknownSignalerException ("Sinalizado uma chamada de método que não é reconhecida.", this.throwStatement);
+				throw new UnknownSignalerException ("Sinalizado um 'e.getCause()' cujo contexto não foi resolvido.", this.throwStatement);
 			}
 		}
 		else
 		{
-			throw new UnknownSignalerException ("A sinalização é de um padrão desconhecido.", this.throwStatement);
+			throw new IllegalStateException ("Call to '" + this.getClass().getName() + "#" + this.getClass().getEnclosingMethod().getName() + "', but the call is not to getCause method.");
 		}
 	}
 	

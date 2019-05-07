@@ -5,4 +5,9 @@ public class B extends A {
 	{
 		System.out.println("bbbbbbbb");
 	}
+	
+	public void log()
+	{
+		System.out.println("log");
+	}
 }

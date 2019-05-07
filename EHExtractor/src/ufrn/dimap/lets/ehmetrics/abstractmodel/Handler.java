@@ -9,8 +9,6 @@ public class Handler extends AbstractEHModelElement
 	
 	private List<Signaler> escapingSignalers; // Every signaler in the context of this handler
 	
-	private boolean isEmpty;
-	
 	public Handler()
 	{
 		super();
@@ -38,16 +36,6 @@ public class Handler extends AbstractEHModelElement
 		}
 		
 		return result.toString();
-	}
-	
-	public void setEmpty(boolean isEmpty)
-	{
-		this.isEmpty = isEmpty;
-	}
-	
-	public boolean isEmpty()
-	{
-		return this.isEmpty;
 	}
 
 	public List<Signaler> getEscapingSignalers() {

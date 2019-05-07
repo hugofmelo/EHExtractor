@@ -20,32 +20,9 @@ Prioridade 4: Verificar padrões de autocomplete do Eclipse, NetBeans e IntelliJ
 		OK AndroidStudio
 		NetBeans
 
-Nota: somente o handler no topo da pilha é considerado para verificar rethrows e wrappings
-Nota: o multicatch é suportado apenas nos handlers. Quando determinando o tipo de wrapping, somente o prmeiro tipo é considerado.
+
 Nota: as classes de modelo que vão ser populadas pelo GitHub precisam ter os atributos iguais as tags do JSON (ver documentação), mas não precisam de getters e setters. Então a recomendação é trocar o nome dos getters para criar uma API mais amigável.
 Nota: o EHExtractor não suporta arquivos java sem pacote. A ferramenta descarta esses arquivos java.
 Nota: o JavaParser não resolve anonymous inner nested classes. Quando ocorrem em um arquivo, o arquivo é removido da análise.
 Nota: É preciso instalar o maven, gradle, android studio, etc, a depender do que o sistema analisado precisa.
-Nota: É considerado que qualquer dependencia em jars é externa ao sistema (library).
-
-PESQUISA
-DONE Prioridade 0: na planilha, implementar queries para cada item marcado
-DONE Prioridade 1: fazer análise de quais projetos possuem catches de runtime vazios
-	Os projetos grandes tem um impacto muito forte no resultado.
-		Ou exclui eles e ficamos somente com apps
-		Ou ponderamos a análise com o tamanho do projeto
-DONE Prioridade 1: Analisar crosstype wrappings
-	Sem análise de fluxo, fica trabalhoso e limitado
-
-OLD
-Prioridade 3: Mudar todo processamento para diferentes visitors. Como o HandlerActionVisitor
-Prioridade 4: procurar com mais afinco pela exceção sinalizada quando não é o mesmo nome da capturada
-Prioridade 4: Mudar a forma de determinar as ações. Exibir o try-catch completo e algumas opções em check boxes (log, recover, terminate, etc).
-Prioridade 4: Remover referencia a Node em AbstractEHModelElement para ter um modelo mais leve.
-Prioridade 4: Resolver a parte dos comentários do relatório
-Prioridade 5: Trocar gerenciamento de dependencia de maven para gradle
-
-OLD
-Nota: É olhado somente o nome dos métodos na hora de inferir algumas ações de tratamento
-Nota: se houverem catches aninhados, as ações de tratamento serão associadas ao catch mais interno, e não aos dois.
 Nota: É considerado que qualquer dependencia em jars é externa ao sistema (library).

@@ -1,11 +1,16 @@
 package ufrn.dimap.lets.ehmetrics.ops;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 import org.apache.maven.shared.invoker.MavenInvocationException;
 
 import com.github.javaparser.resolution.UnsolvedSymbolException;
 
 public class CallGraphTest {
 
+	private Logger logger = Logger.getLogger("sdfdsfdsf");
+	
 	public static void main (String args[])
 	{
 		CallGraphTest cgt = new CallGraphTest();
@@ -22,7 +27,7 @@ public class CallGraphTest {
 		{
 			a.m(new UnsolvedSymbolException("sdfsdf"));
 		}
-		catch (UnsolvedSymbolException e1)
+		catch (UnsolvedSymbolException eee)
 		{
 			try
 			{
@@ -30,7 +35,8 @@ public class CallGraphTest {
 			}
 			catch (Exception e2)
 			{
-				throw e2.getCause();
+				e2.printStackTrace();
+				//throw new IllegalArgumentException(e1);
 			}
 		}
 	}
@@ -64,16 +70,7 @@ public class CallGraphTest {
 		}
 		catch (UnsolvedSymbolException e1)
 		{
-			try
-			{
-				a.m();
-			}
-			catch (Exception e2)
-			{
-				//MavenInvocationException e3 = new MavenInvocationException("",e1);  
-				
-				//throw e3;
-			}
+			
 		}
 	}
 

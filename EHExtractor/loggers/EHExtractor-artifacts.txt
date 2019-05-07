@@ -1,10 +1,10 @@
-Java files: 65
+Java files: 64
 Jar files: 0
 Maven files: 0
 Gradle files: 0
 Android file: false
 
-Analyzed java files: 65
+Analyzed java files: 64
 Source dirs: 1
 Test dirs: 0
 Dependencies files: 0
@@ -23,9 +23,6 @@ D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visi
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\QuickMetricsVisitor.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\SignalerVisitor.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\SimpleVisitor.java
-D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\TestVisitor.java
-D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\UnknownCodePatternException.java
-D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\UnknownSignalerPatternException.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\VisitorsUtil.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\smells\HandlingCodingErrorVisitor.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\smells\UnprotectedMainVisitor.java
@@ -64,9 +61,11 @@ D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\depe
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\dependencyresolver\ProjectArtifacts.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\dependencyresolver\ProjectFiles.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\analyzer\Analyzer.java
-D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\analyzer\AnalyzerException.java
+D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\analyzer\EHMetricsException.java
+D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\analyzer\UnknownCodePatternException.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\analyzer\UnknownSignalerException.java
-D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\analyzer\UnknownTypeException.java
+D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\analyzer\UnresolvedAncestorsException.java
+D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\analyzer\UnresolvedTypeException.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\abstractmodel\AbstractEHModelElement.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\abstractmodel\ClassType.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\abstractmodel\Handler.java
@@ -98,9 +97,6 @@ D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visi
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\QuickMetricsVisitor.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\SignalerVisitor.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\SimpleVisitor.java
-D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\TestVisitor.java
-D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\UnknownCodePatternException.java
-D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\UnknownSignalerPatternException.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\VisitorsUtil.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\smells\HandlingCodingErrorVisitor.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\smells\UnprotectedMainVisitor.java
@@ -139,9 +135,11 @@ D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\depe
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\dependencyresolver\ProjectArtifacts.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\dependencyresolver\ProjectFiles.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\analyzer\Analyzer.java
-D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\analyzer\AnalyzerException.java
+D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\analyzer\EHMetricsException.java
+D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\analyzer\UnknownCodePatternException.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\analyzer\UnknownSignalerException.java
-D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\analyzer\UnknownTypeException.java
+D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\analyzer\UnresolvedAncestorsException.java
+D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\analyzer\UnresolvedTypeException.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\abstractmodel\AbstractEHModelElement.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\abstractmodel\ClassType.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\abstractmodel\Handler.java
