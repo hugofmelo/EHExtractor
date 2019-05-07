@@ -1,10 +1,10 @@
-Java files: 64
+Java files: 66
 Jar files: 0
 Maven files: 0
 Gradle files: 0
 Android file: false
 
-Analyzed java files: 64
+Analyzed java files: 66
 Source dirs: 1
 Test dirs: 0
 Dependencies files: 0
@@ -23,6 +23,8 @@ D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visi
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\QuickMetricsVisitor.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\SignalerVisitor.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\SimpleVisitor.java
+D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\ThrowSpecificExceptionsVisitor.java
+D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\UseJavaBuiltinExceptionsVisitor.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\VisitorsUtil.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\smells\HandlingCodingErrorVisitor.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\smells\UnprotectedMainVisitor.java
@@ -97,6 +99,8 @@ D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visi
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\QuickMetricsVisitor.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\SignalerVisitor.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\SimpleVisitor.java
+D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\ThrowSpecificExceptionsVisitor.java
+D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\UseJavaBuiltinExceptionsVisitor.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\VisitorsUtil.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\smells\HandlingCodingErrorVisitor.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\smells\UnprotectedMainVisitor.java

@@ -29,6 +29,8 @@ import ufrn.dimap.lets.ehmetrics.visitor.DefineSuperTypeVisitor;
 import ufrn.dimap.lets.ehmetrics.visitor.GuidelineCheckerVisitor;
 import ufrn.dimap.lets.ehmetrics.visitor.LogTheExceptionVisitor;
 import ufrn.dimap.lets.ehmetrics.visitor.MainMethodVisitor;
+import ufrn.dimap.lets.ehmetrics.visitor.ThrowSpecificExceptionsVisitor;
+import ufrn.dimap.lets.ehmetrics.visitor.UseJavaBuiltinExceptionsVisitor;
 
 public class Analyzer
 {
@@ -103,7 +105,9 @@ public class Analyzer
 		//visitors.add(new DefineSuperTypeVisitor(allowUnresolved));
 		//visitors.add(new DefineSingleExceptionVisitor(allowUnresolved));
 		//visitors.add(new ConvertLibraryExceptionsVisitor(allowUnresolved));
-		visitors.add(new LogTheExceptionVisitor(allowUnresolved));
+		//visitors.add(new LogTheExceptionVisitor(allowUnresolved));
+		//visitors.add(new UseJavaBuiltinExceptionsVisitor(allowUnresolved));
+		visitors.add(new ThrowSpecificExceptionsVisitor(allowUnresolved));
 
 		return visitors;
 	}

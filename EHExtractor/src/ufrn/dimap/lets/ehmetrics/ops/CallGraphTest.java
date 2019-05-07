@@ -1,5 +1,6 @@
 package ufrn.dimap.lets.ehmetrics.ops;
 
+import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -35,8 +36,8 @@ public class CallGraphTest {
 			}
 			catch (Exception e2)
 			{
-				e2.printStackTrace();
-				//throw new IllegalArgumentException(e1);
+				//e2.printStackTrace();
+				throw new Mariama2();
 			}
 		}
 	}
@@ -84,3 +85,6 @@ public class CallGraphTest {
 	}
 	
 }
+
+class Mariama extends SQLException {}
+class Mariama2 extends Mariama {}
