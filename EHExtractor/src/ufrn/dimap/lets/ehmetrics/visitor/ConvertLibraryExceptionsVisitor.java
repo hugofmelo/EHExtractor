@@ -56,7 +56,8 @@ public class ConvertLibraryExceptionsVisitor extends GuidelineCheckerVisitor {
 		Signaler newSignaler = createSignaler(throwStatement);
 
 		// All handlers in context have this signaler as escaping exception
-		this.handlersInContext.stream().forEach(handler -> handler.getEscapingSignalers().add(newSignaler));
+		this.handlersInContext.stream()
+			.forEach(handler -> handler.getEscapingSignalers().add(newSignaler));
 
 		
 		// VISIT CHILDREN

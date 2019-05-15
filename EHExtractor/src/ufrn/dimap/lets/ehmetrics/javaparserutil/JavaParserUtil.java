@@ -123,7 +123,7 @@ public class JavaParserUtil {
 			}
 			catch (UnsolvedSymbolException e)
 			{
-				throw new UnknownSignalerException ("Sinalização de NameExpr cuja declaração não foi encontrada.", getEnclosingThrowStatement(throwExpression) , e);
+				throw new UnknownSignalerException ("Sinalização de NameExpr cuja declaração não foi encontrada.", throwExpression.findAncestor(ThrowStmt.class).get(), e);
 			}
 		}
 		else if ( throwExpression instanceof ObjectCreationExpr )
@@ -142,36 +142,17 @@ public class JavaParserUtil {
 			}
 			else
 			{
-				throw new UnknownSignalerException("Sinalização com cast cujo tipo não foi resolvido.", getEnclosingThrowStatement(throwExpression));
+				throw new UnknownSignalerException("Sinalização com cast cujo tipo não foi resolvido.", throwExpression.findAncestor(ThrowStmt.class).get());
 			}
 		}
 		else if ( throwExpression instanceof MethodCallExpr )
 		{
-			throw new UnknownSignalerException ("Sinalização de uma chamada de método que não pôde ter seu tipo resolvido.", getEnclosingThrowStatement(throwExpression));
+			throw new UnknownSignalerException ("Sinalização de uma chamada de método que não pôde ter seu tipo resolvido.", throwExpression.findAncestor(ThrowStmt.class).get());
 		}
 		else
 		{
-			throw new UnknownSignalerException ("A sinalização não é de um dos padrões suportados.", getEnclosingThrowStatement(throwExpression));
+			throw new UnknownSignalerException ("A sinalização não é de um dos padrões suportados.", throwExpression.findAncestor(ThrowStmt.class).get());
 		}
-	}
-	
-	private static ThrowStmt getEnclosingThrowStatement (Expression expression)
-	{
-		Optional<Node> auxNode = expression.getParentNode();
-		
-		while ( auxNode.isPresent() )
-		{
-			if ( auxNode.get() instanceof ThrowStmt )
-			{
-				return (ThrowStmt) auxNode.get();
-			}
-			else
-			{
-				auxNode = auxNode.get().getParentNode();
-			}
-		}
-		
-		throw new IllegalStateException ("A expressão não está no escopo de um ThrowStmt");
 	}
 	
 	/**

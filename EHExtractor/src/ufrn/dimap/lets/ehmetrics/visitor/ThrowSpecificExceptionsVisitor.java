@@ -12,9 +12,8 @@ import ufrn.dimap.lets.ehmetrics.abstractmodel.TypeOrigin;
  * Para confirmar o guideline a seguinte heurística é usada:
  * 90% de todas as sinalizações são feitas com um tipo folha na hierarquia.
  * */
-public class ThrowSpecificExceptionsVisitor extends GuidelineCheckerVisitor {
-
-	//private Stack <Handler> handlersInContext;
+public class ThrowSpecificExceptionsVisitor extends GuidelineCheckerVisitor
+{
 
 	public ThrowSpecificExceptionsVisitor (boolean allowUnresolved)
 	{

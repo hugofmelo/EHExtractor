@@ -10,6 +10,7 @@ import com.github.javaparser.ast.stmt.CatchClause;
 import com.github.javaparser.ast.stmt.ThrowStmt;
 import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
 
+import ufrn.dimap.lets.ehmetrics.abstractmodel.Handler;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.Type;
 import ufrn.dimap.lets.ehmetrics.javaparserutil.MethodCallParser;
 import ufrn.dimap.lets.ehmetrics.javaparserutil.SignalerParser;
@@ -23,9 +24,9 @@ import ufrn.dimap.lets.ehmetrics.javaparserutil.SignalerType;
  * */
 public class LogTheExceptionVisitor extends GuidelineCheckerVisitor
 {
-	private List <CatchClause> handlersWithResignalers;
-	private List <CatchClause> handlersWithLog;
-	private List <CatchClause> handlersWithoutLog;
+	private List <Handler> handlersWithResignalers;
+	private List <Handler> handlersWithLog;
+	private List <Handler> handlersWithoutLog;
 	
 	public LogTheExceptionVisitor (boolean allowUnresolved)
 	{
@@ -49,15 +50,15 @@ public class LogTheExceptionVisitor extends GuidelineCheckerVisitor
 		{
 			if ( visitor.hasResignaler() )
 			{
-				this.handlersWithResignalers.add(visitor.getRootCatchClause());
+				this.handlersWithResignalers.add(this.createHandler(visitor.getRootCatchClause()));
 			}
 			else if ( visitor.hasLoggingAction() )
 			{
-				this.handlersWithLog.add( visitor.getRootCatchClause() );
+				this.handlersWithLog.add( this.createHandler(visitor.getRootCatchClause() ) );
 			}
 			else
 			{
-				this.handlersWithoutLog.add( visitor.getRootCatchClause() );
+				this.handlersWithoutLog.add( this.createHandler(visitor.getRootCatchClause() ) );
 			}
 		}
 	}	

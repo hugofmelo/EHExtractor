@@ -1,10 +1,10 @@
-Java files: 66
+Java files: 69
 Jar files: 0
 Maven files: 0
 Gradle files: 0
 Android file: false
 
-Analyzed java files: 66
+Analyzed java files: 69
 Source dirs: 1
 Test dirs: 0
 Dependencies files: 0
@@ -13,14 +13,17 @@ JAVA FILES
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\Main.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\ProjectsUtil.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\ThinkLaterException.java
+D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\AddContextualInformationVisitor.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\ConvertLibraryExceptionsVisitor.java
+D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\ConvertToRuntimeExceptionsVisitor.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\DefineSingleExceptionVisitor.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\DefineSuperTypeVisitor.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\GuidelineCheckerVisitor.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\LogTheExceptionVisitor.java
-D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\MainMethodVisitor.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\NamedHandler.java
+D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\ProtectEntryPointVisitor.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\QuickMetricsVisitor.java
+D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\SaveTheCauseVisitor.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\SignalerVisitor.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\SimpleVisitor.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\ThrowSpecificExceptionsVisitor.java
@@ -89,14 +92,17 @@ ANALYZED JAVA FILES
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\Main.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\ProjectsUtil.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\ThinkLaterException.java
+D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\AddContextualInformationVisitor.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\ConvertLibraryExceptionsVisitor.java
+D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\ConvertToRuntimeExceptionsVisitor.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\DefineSingleExceptionVisitor.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\DefineSuperTypeVisitor.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\GuidelineCheckerVisitor.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\LogTheExceptionVisitor.java
-D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\MainMethodVisitor.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\NamedHandler.java
+D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\ProtectEntryPointVisitor.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\QuickMetricsVisitor.java
+D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\SaveTheCauseVisitor.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\SignalerVisitor.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\SimpleVisitor.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\ThrowSpecificExceptionsVisitor.java

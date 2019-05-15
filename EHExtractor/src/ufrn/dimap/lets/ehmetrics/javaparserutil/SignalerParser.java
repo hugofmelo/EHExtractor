@@ -21,7 +21,7 @@ import ufrn.dimap.lets.ehmetrics.analyzer.UnknownSignalerException;
 /**
  * Classe utilitária para processar e resolver um ThrowStmt.
  * 
- * This class stores relevant data for consumption e define methods to check rethrown,
+ * This class stores relevant data for consumption and define methods to check rethrown,
  * wrapping and unwrapping.
  * 
  * Must call "parse" method before accessing any data.
@@ -86,14 +86,14 @@ public class SignalerParser
 		/* o statement é um "throw e". Provavelmente é um rethrow, mas é possível que a exceção tenha
 		 * sido instanciada previamente e agora está sendo lançada. Isso não faz diferença neste momento
 		 */
-		if ( throwExpression instanceof NameExpr )
+		if ( throwExpression.isNameExpr() )
 		{
 			this.simpleName = throwExpression.asNameExpr().getName();
 			
 			this.testForRethrow();
 		}
 		// O statement é um "throw new...".
-		else if ( throwExpression instanceof ObjectCreationExpr )
+		else if ( throwExpression.isObjectCreationExpr() )
 		{
 			ObjectCreationExpr objectCreationExp = throwExpression.asObjectCreationExpr();
 			
@@ -102,7 +102,7 @@ public class SignalerParser
 			this.testForWrappingOrSimpleThrow();
 		}
 		// O statement é uma chamada de método.
-		else if (throwExpression instanceof MethodCallExpr)
+		else if (throwExpression.isMethodCallExpr() )
 		{
 			this.methodCallExpression = throwExpression.asMethodCallExpr();
 			
@@ -118,7 +118,7 @@ public class SignalerParser
 			}
 		}
 		// O statement é um (Exception) e
-		else if (throwExpression instanceof CastExpr)
+		else if (throwExpression.isCastExpr())
 		{
 			throw new UnknownSignalerException("Sinalização com cast não suportada.", throwStatement);
 			/*
@@ -225,5 +225,10 @@ public class SignalerParser
 			throw new IllegalStateException("Call 'parse' method first.");
 		else
 			return signalerType;
+	}
+	
+	public Optional<CatchClause> getRelatedCatchClause ()
+	{
+		return this.relatedCatchClause;
 	}
 }

@@ -23,12 +23,15 @@ import com.github.javaparser.symbolsolver.resolution.typesolvers.ReflectionTypeS
 import javassist.NotFoundException;
 import ufrn.dimap.lets.ehmetrics.dependencyresolver.ProjectArtifacts;
 import ufrn.dimap.lets.ehmetrics.logger.ErrorLogger;
+import ufrn.dimap.lets.ehmetrics.visitor.AddContextualInformationVisitor;
 import ufrn.dimap.lets.ehmetrics.visitor.ConvertLibraryExceptionsVisitor;
+import ufrn.dimap.lets.ehmetrics.visitor.ConvertToRuntimeExceptionsVisitor;
 import ufrn.dimap.lets.ehmetrics.visitor.DefineSingleExceptionVisitor;
 import ufrn.dimap.lets.ehmetrics.visitor.DefineSuperTypeVisitor;
 import ufrn.dimap.lets.ehmetrics.visitor.GuidelineCheckerVisitor;
 import ufrn.dimap.lets.ehmetrics.visitor.LogTheExceptionVisitor;
-import ufrn.dimap.lets.ehmetrics.visitor.MainMethodVisitor;
+import ufrn.dimap.lets.ehmetrics.visitor.ProtectEntryPointVisitor;
+import ufrn.dimap.lets.ehmetrics.visitor.SaveTheCauseVisitor;
 import ufrn.dimap.lets.ehmetrics.visitor.ThrowSpecificExceptionsVisitor;
 import ufrn.dimap.lets.ehmetrics.visitor.UseJavaBuiltinExceptionsVisitor;
 
@@ -107,7 +110,12 @@ public class Analyzer
 		//visitors.add(new ConvertLibraryExceptionsVisitor(allowUnresolved));
 		//visitors.add(new LogTheExceptionVisitor(allowUnresolved));
 		//visitors.add(new UseJavaBuiltinExceptionsVisitor(allowUnresolved));
-		visitors.add(new ThrowSpecificExceptionsVisitor(allowUnresolved));
+		//visitors.add(new ThrowSpecificExceptionsVisitor(allowUnresolved));
+		//visitors.add(new ProtectEntryPointVisitor(allowUnresolved));
+		//visitors.add(new SaveTheCauseVisitor(allowUnresolved));
+		//visitors.add(new ConvertToRuntimeExceptionsVisitor(allowUnresolved));
+		visitors.add(new AddContextualInformationVisitor(allowUnresolved));
+		
 
 		return visitors;
 	}
@@ -154,78 +162,6 @@ public class Analyzer
 				System.out.println(" Error - File not found.");
 				e.printStackTrace();
 				ErrorLogger.addError("Falha no Analyzer. Arquivo não encontrado. File:" + javaFile.getAbsolutePath());
-			}
-		}
-	}
-
-	// Ao encerrar este metodo, o modelo injetado no visitor terá o resultado do processamento
-	public static void callgraph(ProjectArtifacts artifacts)
-	{
-		JavaParserFacade.clearInstances();
-		CombinedTypeSolver typeSolver = Analyzer.configSolver(artifacts);
-		JavaSymbolSolver symbolSolver = new JavaSymbolSolver(typeSolver);
-		JavaParser parser = new JavaParser();
-		parser.getParserConfiguration().setSymbolResolver(symbolSolver);
-		MainMethodVisitor <Void> visitor = new MainMethodVisitor<>(); 
-
-		//System.out.println("Total de arquivos java: " + artifacts.getJavaFiles().size());
-		//int fileCount = 1;
-		for ( File javaFile : artifacts.getJavaFiles() )
-		{
-			//List <VoidVisitorAdapter<JavaParserFacade>> visitors = getVisitors(javaFile, model);
-
-			//System.out.print("Parsing " + fileCount++ + "...");
-			try
-			{
-				CompilationUnit compUnit = parser.parse(javaFile).getResult().get();
-
-
-				compUnit.accept(visitor, null);
-
-				/*
-					for ( VoidVisitorAdapter<JavaParserFacade> visitor : visitors )
-					{
-						compUnit.accept(visitor, JavaParserFacade.get(solver));
-					}
-				 */
-				System.out.println(" OK");
-			}
-			catch (UnresolvedTypeException e)
-			{
-				System.out.println(" Error - " + e.getMessage() + " - " + javaFile.getAbsolutePath() + ".");
-				e.printStackTrace();
-				ErrorLogger.addUnknownType("Falha no Analyzer. " + e.getMessage() + " File: " + javaFile.getAbsolutePath());
-			}
-			catch (FileNotFoundException e)
-			{
-				System.out.println(" Error - File not found.");
-				ErrorLogger.addError("Falha no Analyzer. Arquivo não encontrado. File:" + javaFile.getAbsolutePath());
-			}
-			catch (UnsupportedOperationException e)
-			{
-				System.out.println(" Error - Unsupported operation.");
-				ErrorLogger.addUnsupported("Falha no Analyzer. UnsupportedOperation ao parsear arquivo. File: " + javaFile.getAbsolutePath());
-			}
-			catch (UnknownSignalerException e)
-			{
-				System.out.println(" Error - Signaler não reconhecido.");
-				ErrorLogger.addUnknownSignaler("Falha no Analyzer. " + e.getMessage() + " File: " + javaFile.getAbsolutePath());
-			}
-		}
-
-		for ( MethodDeclaration mainMethod : visitor.getMainMethods() )
-		{
-			List<MethodCallExpr> calls = mainMethod.findAll(MethodCallExpr.class);
-
-			for ( MethodCallExpr call : calls )
-			{
-				ResolvedMethodDeclaration decla = call.resolve();
-				System.out.println(decla.getName());
-				//decla.toAst().get().findAll(MethodCallExpr.class);
-
-				//List<MethodCallExpr> calls2 = decla.toAst().get().findAll(MethodCallExpr.class);
-
-
 			}
 		}
 	}

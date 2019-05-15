@@ -1,14 +1,8 @@
 package ufrn.dimap.lets.ehmetrics.visitor;
 
-import java.util.List;
-import java.util.Stack;
-import java.util.stream.Collectors;
-
 import com.github.javaparser.ast.CompilationUnit;
-import com.github.javaparser.ast.stmt.CatchClause;
 import com.github.javaparser.ast.stmt.ThrowStmt;
 
-import ufrn.dimap.lets.ehmetrics.abstractmodel.Handler;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.Signaler;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.Type;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.TypeOrigin;
@@ -28,8 +22,6 @@ import ufrn.dimap.lets.ehmetrics.abstractmodel.TypeOrigin;
  * */
 public class UseJavaBuiltinExceptionsVisitor extends GuidelineCheckerVisitor {
 
-	//private Stack <Handler> handlersInContext;
-
 	public UseJavaBuiltinExceptionsVisitor (boolean allowUnresolved)
 	{
 		super (allowUnresolved);
@@ -44,7 +36,7 @@ public class UseJavaBuiltinExceptionsVisitor extends GuidelineCheckerVisitor {
 	@Override
 	public void visit (ThrowStmt throwStatement, Void arg)
 	{		
-		Signaler newSignaler = createSignaler(throwStatement);
+		createSignaler(throwStatement);
 		
 		// VISIT CHILDREN
 		super.visit(throwStatement, arg);

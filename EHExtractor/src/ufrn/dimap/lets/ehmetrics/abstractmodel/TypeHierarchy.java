@@ -1,7 +1,10 @@
 package ufrn.dimap.lets.ehmetrics.abstractmodel;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
+import java.util.NoSuchElementException;
+import java.util.Optional;
 import java.util.Stack;
 
 import com.github.javaparser.ast.type.ClassOrInterfaceType;
@@ -22,7 +25,7 @@ import ufrn.dimap.lets.ehmetrics.analyzer.UnresolvedTypeException;
  * será reconhecido como uma exceção. Se mais tarde esse tipo for usado em um throw ou catch, a hierarquia pode ser
  * externamente atualizada.
  * */
-public class TypeHierarchy {
+public class TypeHierarchy implements Iterable<Type> {
 
 	private Type typeRoot;
 	private boolean allowUnresolvedTypes;
@@ -83,14 +86,8 @@ public class TypeHierarchy {
 	 * */
 	public Type findOrCreateResolvedType(ResolvedClassDeclaration classDeclaration)
 	{
-		Type type = this.findTypeByName (classDeclaration.getQualifiedName());
-
-		if (type == null)
-		{
-			type = this.createResolvedType(classDeclaration, null);
-		}
-
-		return type;
+		return findTypeByName (classDeclaration.getQualifiedName())
+				.orElseGet(() -> createResolvedType(classDeclaration, null));
 	}
 
 	/**
@@ -98,14 +95,8 @@ public class TypeHierarchy {
 	 * */
 	private Type findOrCreateUnresolvedType(ClassOrInterfaceType classOrInterfaceType)
 	{
-		Type type = this.findTypeByName (classOrInterfaceType.getNameAsString());
-	
-		if (type == null)
-		{
-			type = this.createUnresolvedType(classOrInterfaceType);
-		}
-	
-		return type;
+		return findTypeByName (classOrInterfaceType.getNameAsString())
+				.orElseGet(() -> createUnresolvedType(classOrInterfaceType));
 	}
 
 	/**
@@ -201,29 +192,17 @@ public class TypeHierarchy {
 	/**
 	 * Find a type in the hierarchy in DFS.
 	 * */
-	private Type findTypeByName(String qualifiedName)
+	public Optional<Type> findTypeByName(String typeName)
 	{
-		Stack <Type> types = new Stack<>();
-		Type auxType;
-
-		types.push(this.typeRoot);
-
-		while ( !types.isEmpty() )
+		for ( Type type : this )
 		{
-			auxType = types.pop();
-
-			if ( auxType.getQualifiedName().equals(qualifiedName) )
-				return auxType;
-			else
+			if ( type.getQualifiedName().equals(typeName))
 			{
-				for ( Type t : auxType.getSubTypes() )
-				{
-					types.push(t);
-				}
+				return Optional.of(type);
 			}
 		}
-
-		return null;
+		
+		return Optional.empty();
 	}
 
 	/**
@@ -272,9 +251,8 @@ public class TypeHierarchy {
 	public List<Type> listTypes ()
 	{
 		List<Type> types = new ArrayList<>();
-
-		types.add(this.typeRoot);
-		types.addAll(this.typeRoot.getAllSubTypes());
+		
+		this.iterator().forEachRemaining(types::add);
 
 		return types;
 	}
@@ -301,4 +279,49 @@ public class TypeHierarchy {
 			toString (subtype, level+"\t", stringBuilder);
 		}
 	}
+
+	@Override
+	public Iterator<Type> iterator()
+	{
+		return new TypeHierarchyIterator();
+	}
+	
+	/**
+	 * Navigates in the TypeHierarchy in DFS order.
+	 * */
+	private class TypeHierarchyIterator implements Iterator<Type>
+	{
+		private Stack <Type> typesStack;
+		
+		public TypeHierarchyIterator()
+		{
+			this.typesStack = new Stack<>();
+			
+			this.typesStack.push(TypeHierarchy.this.typeRoot);
+		}
+		
+		@Override
+		public boolean hasNext()
+		{
+			return !typesStack.isEmpty();
+		}
+
+		@Override
+		public Type next()
+		{
+			if ( this.hasNext() )
+			{
+				Type next = this.typesStack.pop();
+				
+				this.typesStack.addAll(next.getSubTypes());
+				
+				return next;
+			}
+			
+			throw new NoSuchElementException();
+		}
+
+	}
 }
+
+

@@ -87,6 +87,19 @@ public class Type extends AbstractEHModelElement
 	}
 
 	/**
+	 * Check if this is an exception type.
+	 * 
+	 * Util method.
+	 * */
+	public boolean isException()
+	{
+		return classType == ClassType.CHECKED_EXCEPTION ||
+			   classType == ClassType.UNCHECKED_EXCEPTION ||
+			   classType == ClassType.ERROR_EXCEPTION ||
+			   classType == ClassType.UNRESOLVED_EXCEPTION;
+	}
+	
+	/**
 	 * Check if this is a system defined exception type.
 	 * 
 	 * Util method.
@@ -210,6 +223,12 @@ public class Type extends AbstractEHModelElement
 	{
 		return this.qualifiedName+"::"+ this.classType +"::"+this.origin;
 	}
+
+
+
+
+
+	
 
 
 }
