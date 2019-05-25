@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 import com.github.javaparser.ast.Node;
 import com.github.javaparser.ast.body.FieldDeclaration;
@@ -14,6 +15,7 @@ import com.github.javaparser.ast.expr.Expression;
 import com.github.javaparser.ast.expr.MethodCallExpr;
 import com.github.javaparser.ast.expr.NameExpr;
 import com.github.javaparser.ast.expr.ObjectCreationExpr;
+import com.github.javaparser.ast.expr.SimpleName;
 import com.github.javaparser.ast.stmt.CatchClause;
 import com.github.javaparser.ast.stmt.ThrowStmt;
 import com.github.javaparser.ast.type.ClassOrInterfaceType;
@@ -187,5 +189,16 @@ public class JavaParserUtil {
 		{
 			throw new UnsupportedOperationException("Formato não suportado - vê o stack trace ai");
 		}
+	}
+	
+	/**
+	 * Extract SimpleNames from arguments in a MethodCallExpr.
+	 * */
+	public static List<SimpleName> filterSimpleNames (MethodCallExpr callExpression)
+	{
+		return callExpression.getArguments().stream()
+				.filter(Expression::isNameExpr)
+				.map(exp -> exp.asNameExpr().getName())
+				.collect (Collectors.toList());
 	}
 }

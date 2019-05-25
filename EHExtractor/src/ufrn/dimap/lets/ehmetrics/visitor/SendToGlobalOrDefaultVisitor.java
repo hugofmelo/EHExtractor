@@ -1,43 +1,56 @@
 package ufrn.dimap.lets.ehmetrics.visitor;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
+import java.util.Stack;
+import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 import com.github.javaparser.ast.CompilationUnit;
 import com.github.javaparser.ast.expr.MethodCallExpr;
 import com.github.javaparser.ast.stmt.CatchClause;
 import com.github.javaparser.ast.stmt.ThrowStmt;
+import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
+import com.github.javaparser.resolution.UnsolvedSymbolException;
+import com.github.javaparser.resolution.declarations.ResolvedMethodDeclaration;
 
 import ufrn.dimap.lets.ehmetrics.abstractmodel.Handler;
-import ufrn.dimap.lets.ehmetrics.abstractmodel.Signaler;
+import ufrn.dimap.lets.ehmetrics.abstractmodel.HandlingAction;
+import ufrn.dimap.lets.ehmetrics.abstractmodel.Type;
+import ufrn.dimap.lets.ehmetrics.javaparserutil.MethodCallParser;
+import ufrn.dimap.lets.ehmetrics.javaparserutil.SignalerParser;
+import ufrn.dimap.lets.ehmetrics.javaparserutil.SignalerType;
 
 /**
- * Visitor para verificar o guideline "Log the exception".
+ * Visitor para verificar o guideline "Send to a global or default handler".
  * 
  * Para confirmar o guideline a seguinte heurística é usada:
  * ???????????????????????????
  * */
-public class LogTheExceptionVisitor extends GuidelineCheckerVisitor
+public class SendToGlobalOrDefaultVisitor extends GuidelineCheckerVisitor
 {
 	private Optional<Handler> handlerInScopeOptional;
-
-	public LogTheExceptionVisitor (boolean allowUnresolved)
+	
+	public SendToGlobalOrDefaultVisitor (boolean allowUnresolved)
 	{
 		super(allowUnresolved);
 	}
 
 	@Override
 	public void visit (CompilationUnit compilationUnit, Void arg)
-	{		
+	{				
 		handlerInScopeOptional = Optional.empty();
 
 		super.visit(compilationUnit, arg);
-	}	
-
+	}
+	
 	@Override
 	public void visit (CatchClause catchClause, Void arg)
-	{		
+	{				
 		Handler newHandler = createHandler(catchClause);
 
 		this.handlerInScopeOptional.ifPresent(handler ->
@@ -54,35 +67,21 @@ public class LogTheExceptionVisitor extends GuidelineCheckerVisitor
 
 		this.handlerInScopeOptional = this.handlerInScopeOptional.get().getParentHandler();
 	}	
-
+	
 	@Override
-	public void visit (ThrowStmt throwStatement, Void arg)
-	{		
-		Signaler newSignaler = createSignaler(throwStatement);
-
-		// All handlers in context have this signaler as escaping exception
-		if (handlerInScopeOptional.isPresent())
-		{
-			handlerInScopeOptional.get().getAllHandlersInContext()
-				.forEach(handler -> handler.getEscapingSignalers().add(newSignaler));
-		}
-
-		// VISIT CHILDREN
-		super.visit(throwStatement, arg);
-	}
-
-	@Override
-	public void visit ( MethodCallExpr methodCallExpression, Void arg )
+	public void visit (MethodCallExpr methodCallExpression, Void arg)
 	{
 		if ( this.handlerInScopeOptional.isPresent() )
 		{
-			VisitorsUtil.checkForLogAction (methodCallExpression, this.handlerInScopeOptional.get());
+			if ( !VisitorsUtil.checkForLogAction (methodCallExpression, this.handlerInScopeOptional.get()) )
+			{
+				this.handlerInScopeOptional.get().createHandlerAction(methodCallExpression);
+			}
 		}
-
-		// VISIT CHILDREN
+		
 		super.visit(methodCallExpression, arg);
 	}
-
+	
 	/**
 	 * Verifica se o projeto adota o guideline referenciado neste visitor.
 	 * 
@@ -90,22 +89,13 @@ public class LogTheExceptionVisitor extends GuidelineCheckerVisitor
 	 * */
 	public void checkGuidelineConformance ()
 	{
-		List<Handler> handlersWithResignalers = this.handlersOfProject.stream()
-				.filter(handler -> !handler.getEscapingSignalers().isEmpty())
-				.collect(Collectors.toList());
-
-		List<Handler> handlersWithoutResignalersWithLogHandlingActions = this.handlersOfProject.stream()
+		Map<String, Long> methodsOccurrences = this.handlersOfProject.stream()
 				.filter(handler -> handler.getEscapingSignalers().isEmpty())
-				.filter(Handler::hasLoggingActions)
-				.collect(Collectors.toList());
-
-		System.out.println("Number of handlers: " + this.handlersOfProject.size());
-
-		System.out.println("Number of handlers which resignal: " + handlersWithResignalers.size());
-
-		System.out.println("Number of handlers which doesn't resignal and has loggin actions: " + handlersWithoutResignalersWithLogHandlingActions.size());
-
-
-	}
-
+				.filter(handler -> !handler.hasLoggingActions())
+				.flatMap(handler -> handler.getHandlingActions().stream())
+				.collect(Collectors.groupingBy(HandlingAction::getMethodName, Collectors.counting()));
+		
+		System.out.println("Methods calls in handlers:");
+		methodsOccurrences.forEach((name, occurrences) -> System.out.println (name + " : " + occurrences));
+	}	
 }

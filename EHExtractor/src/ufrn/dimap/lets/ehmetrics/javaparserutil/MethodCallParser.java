@@ -8,8 +8,6 @@ import com.github.javaparser.ast.expr.MethodCallExpr;
 import com.github.javaparser.ast.expr.SimpleName;
 
 /**
- * Classe utilitária para processar e resolver uma chamada de método.
- * 
  * This class stores relevant data for consumption e define methods to check which
  * method was call.
  * 
@@ -32,7 +30,8 @@ public class MethodCallParser
 	private boolean isPrintln;
 
 	private boolean isJavaLogger;
-	private Object javaLoggerScope;
+	private boolean isExternalLogger;
+	private Object loggerScope;
 
 	private boolean isGenericLog;
 
@@ -48,8 +47,9 @@ public class MethodCallParser
 		
 		isPrintln = false;
 
-		isJavaLogger = false;
-		javaLoggerScope = null;
+		isJavaLogger = false;		
+		isExternalLogger = false;
+		loggerScope = null;
 
 		isGenericLog = false;
 	}
@@ -101,7 +101,16 @@ public class MethodCallParser
 					this.isPrintln = true;
 				}
 			}
-		}		
+		}
+		else if ( 	methodName.asString().equals("fatal") ||
+					methodName.asString().equals("error") ||
+					methodName.asString().equals("warn") ||
+					methodName.asString().equals("debug") ||
+					methodName.asString().equals("trace") )
+		{
+			this.isExternalLogger = true;
+			this.loggerScope = this.methodCallExpression.getScope();
+		}	
 		else if ( methodName.asString().equals("log") )
 		{
 			Optional<Expression> logScopeOptional = this.methodCallExpression.getScope();
@@ -109,13 +118,14 @@ public class MethodCallParser
 			// Test for java Logger usage - LOGGER.log(...)
 			if ( logScopeOptional.isPresent() )
 			{
-				Expression getLogScopeExpression = logScopeOptional.get();
+				Expression logScopeExpression = logScopeOptional.get();
 
 				try
 				{
-					if (getLogScopeExpression.calculateResolvedType().asReferenceType().getQualifiedName().equals(Logger.class.getCanonicalName()))
+					if (logScopeExpression.calculateResolvedType().asReferenceType().getQualifiedName().equals(Logger.class.getCanonicalName()))
 					{
 						this.isJavaLogger = true;
+						this.loggerScope = logScopeExpression;
 					}
 					else
 					{
@@ -161,9 +171,13 @@ public class MethodCallParser
 	public boolean isJavaLogger() {
 		return this.isJavaLogger;
 	}
+	
+	public boolean isExternalLogger() {
+		return this.isExternalLogger;
+	}
 
-	public Object getJavaLoggerScope ()	{
-		return this.javaLoggerScope;
+	public Object getLoggerScope ()	{
+		return this.loggerScope;
 	}
 
 	public boolean isGenericLog() {

@@ -32,6 +32,7 @@ import ufrn.dimap.lets.ehmetrics.visitor.GuidelineCheckerVisitor;
 import ufrn.dimap.lets.ehmetrics.visitor.LogTheExceptionVisitor;
 import ufrn.dimap.lets.ehmetrics.visitor.ProtectEntryPointVisitor;
 import ufrn.dimap.lets.ehmetrics.visitor.SaveTheCauseVisitor;
+import ufrn.dimap.lets.ehmetrics.visitor.SendToGlobalOrDefaultVisitor;
 import ufrn.dimap.lets.ehmetrics.visitor.ThrowSpecificExceptionsVisitor;
 import ufrn.dimap.lets.ehmetrics.visitor.UseJavaBuiltinExceptionsVisitor;
 
@@ -114,7 +115,8 @@ public class Analyzer
 		//visitors.add(new ProtectEntryPointVisitor(allowUnresolved));
 		//visitors.add(new SaveTheCauseVisitor(allowUnresolved));
 		//visitors.add(new ConvertToRuntimeExceptionsVisitor(allowUnresolved));
-		visitors.add(new AddContextualInformationVisitor(allowUnresolved));
+		//visitors.add(new AddContextualInformationVisitor(allowUnresolved));
+		visitors.add(new SendToGlobalOrDefaultVisitor(allowUnresolved));
 		
 
 		return visitors;

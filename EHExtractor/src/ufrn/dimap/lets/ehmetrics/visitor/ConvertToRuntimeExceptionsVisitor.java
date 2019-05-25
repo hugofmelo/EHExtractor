@@ -1,6 +1,7 @@
 package ufrn.dimap.lets.ehmetrics.visitor;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.Stack;
 import java.util.stream.Collectors;
 
@@ -23,8 +24,8 @@ import ufrn.dimap.lets.ehmetrics.javaparserutil.SignalerType;
  * */
 public class ConvertToRuntimeExceptionsVisitor extends GuidelineCheckerVisitor {
 
-	private Stack <Handler> handlersInContext;
-
+	private Optional<Handler> handlerInScopeOptional;
+	
 	public ConvertToRuntimeExceptionsVisitor (boolean allowUnresolved)
 	{
 		super (allowUnresolved);
@@ -34,7 +35,7 @@ public class ConvertToRuntimeExceptionsVisitor extends GuidelineCheckerVisitor {
 	public void visit (CompilationUnit compilationUnit, Void arg)
 	{
 		// Forces the stack to reset. Sometimes um error when parsing precious java files could finish the visitor without reseting the stack.
-		this.handlersInContext = new Stack<>(); 
+		handlerInScopeOptional = Optional.empty();  
 		
         super.visit(compilationUnit, arg);
     }
@@ -44,12 +45,13 @@ public class ConvertToRuntimeExceptionsVisitor extends GuidelineCheckerVisitor {
 	{		
 		Handler newHandler = createHandler(catchClause);	
 		
-		this.handlersInContext.push(newHandler);
-
+		this.handlerInScopeOptional.ifPresent( handler -> handler.getNestedHandlers().add(newHandler) );
+		this.handlerInScopeOptional = Optional.of(newHandler);
+		
 		// VISIT CHILDREN
 		super.visit(catchClause, arg);
 
-		this.handlersInContext.pop();
+		this.handlerInScopeOptional = this.handlerInScopeOptional.get().getParentHandler();
 	}
 
 	@Override
@@ -57,8 +59,12 @@ public class ConvertToRuntimeExceptionsVisitor extends GuidelineCheckerVisitor {
 	{		
 		Signaler newSignaler = createSignaler(throwStatement);
 
-		this.handlersInContext
-			.forEach(handler -> handler.getEscapingSignalers().add(newSignaler));
+		// All handlers in context have this signaler as escaping exception
+		if (handlerInScopeOptional.isPresent())
+		{
+			handlerInScopeOptional.get().getAllHandlersInContext()
+				.forEach(handler -> handler.getEscapingSignalers().add(newSignaler));
+		}
 		
 		// VISIT CHILDREN
 		super.visit(throwStatement, arg);
