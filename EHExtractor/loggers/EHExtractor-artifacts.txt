@@ -1,10 +1,10 @@
-Java files: 71
+Java files: 72
 Jar files: 0
 Maven files: 0
 Gradle files: 0
 Android file: false
 
-Analyzed java files: 71
+Analyzed java files: 72
 Source dirs: 1
 Test dirs: 0
 Dependencies files: 0
@@ -14,6 +14,7 @@ D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\Main
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\ProjectsUtil.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\ThinkLaterException.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\AddContextualInformationVisitor.java
+D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\CatchInSpecificLayerVisitor.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\ConvertLibraryExceptionsVisitor.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\ConvertToRuntimeExceptionsVisitor.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\DefineSingleExceptionVisitor.java
@@ -95,6 +96,7 @@ D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\Main
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\ProjectsUtil.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\ThinkLaterException.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\AddContextualInformationVisitor.java
+D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\CatchInSpecificLayerVisitor.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\ConvertLibraryExceptionsVisitor.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\ConvertToRuntimeExceptionsVisitor.java
 D:\git\EHExtractor\EHExtractor\..\EHExtractor\src\ufrn\dimap\lets\ehmetrics\visitor\DefineSingleExceptionVisitor.java

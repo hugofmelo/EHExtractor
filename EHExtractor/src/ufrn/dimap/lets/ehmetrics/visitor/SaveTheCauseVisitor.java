@@ -23,6 +23,7 @@ import ufrn.dimap.lets.ehmetrics.javaparserutil.SignalerType;
  * */
 public class SaveTheCauseVisitor extends GuidelineCheckerVisitor {
 
+	@Deprecated
 	private Stack <Handler> handlersInContext;
 
 	public SaveTheCauseVisitor (boolean allowUnresolved)

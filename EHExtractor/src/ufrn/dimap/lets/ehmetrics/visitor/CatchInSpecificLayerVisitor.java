@@ -1,11 +1,15 @@
 package ufrn.dimap.lets.ehmetrics.visitor;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 import java.util.Stack;
 import java.util.stream.Collectors;
 
 import com.github.javaparser.ast.CompilationUnit;
+import com.github.javaparser.ast.PackageDeclaration;
 import com.github.javaparser.ast.stmt.CatchClause;
 import com.github.javaparser.ast.stmt.ThrowStmt;
 
@@ -17,34 +21,53 @@ import ufrn.dimap.lets.ehmetrics.javaparserutil.SignalerParser;
 import ufrn.dimap.lets.ehmetrics.javaparserutil.SignalerType;
 
 /**
- * Visitor para verificar o guideline "Convert to runtime exceptions".
+ * Visitor para verificar o guideline "Catch in a specific layer".
  * 
  * Para confirmar o guideline a seguinte heurística é usada:
- * De todas as exceções que são lançadas no contexto de um handler, 95% são não-checadas.
+ * ???????????????????????????????????????
  * */
-public class ConvertToRuntimeExceptionsVisitor extends GuidelineCheckerVisitor {
+public class CatchInSpecificLayerVisitor extends GuidelineCheckerVisitor {
 
 	private Optional<Handler> handlerInScopeOptional;
 	
-	public ConvertToRuntimeExceptionsVisitor (boolean allowUnresolved)
+	private String packageDeclarationName;
+	private Map<String, List<Handler>> handlersPerPackage;
+	
+	
+	public CatchInSpecificLayerVisitor (boolean allowUnresolved)
 	{
 		super (allowUnresolved);
+		
+		this.handlersPerPackage = new HashMap<>();
 	}
 	
+	@Override
+	public void visit (PackageDeclaration packageDeclaration, Void arg)
+	{
+		this.packageDeclarationName = packageDeclaration.getNameAsString();
+		
+		this.handlersPerPackage.computeIfAbsent(packageDeclarationName, k -> new ArrayList<>());
+		
+        super.visit(packageDeclaration, arg);
+    }
+
 	@Override
 	public void visit (CompilationUnit compilationUnit, Void arg)
 	{
 		// Forces the stack to reset. Sometimes um error when parsing precious java files could finish the visitor without reseting the stack.
-		handlerInScopeOptional = Optional.empty();  
+		handlerInScopeOptional = Optional.empty(); 
 		
         super.visit(compilationUnit, arg);
     }
-
+	
 	@Override
 	public void visit (CatchClause catchClause, Void arg)
 	{		
 		Handler newHandler = createHandler(catchClause);
 
+		this.handlersPerPackage.get(packageDeclarationName).add(newHandler);
+		
+		
 		this.handlerInScopeOptional.ifPresent(handler ->
 		{
 			handler.getNestedHandlers().add(newHandler);
@@ -83,17 +106,17 @@ public class ConvertToRuntimeExceptionsVisitor extends GuidelineCheckerVisitor {
 	 * */
 	public void checkGuidelineConformance ()
 	{	
-		List<Signaler> signalersInHandlersContext = this.handlersOfProject.stream()
-			.flatMap ( handler -> handler.getEscapingSignalers().stream() )
-			.collect (Collectors.toList());
-		
-		List<Signaler> signalersInHandlersContextWhichThrowRuntimeExceptions = signalersInHandlersContext.stream()
-			.filter(signaler -> signaler.getThrownType().getClassType() == ClassType.UNCHECKED_EXCEPTION)
-			.collect(Collectors.toList());
-		
-		System.out.println("Number of signalers in handlers context: " + signalersInHandlersContext.size());
-		System.out.println("Number of signalers in handlers context which throw runtime exceptions: " + signalersInHandlersContextWhichThrowRuntimeExceptions.size());
-		
-		System.out.println("'Convert to runtime exception' conformance: " + 1.0*signalersInHandlersContextWhichThrowRuntimeExceptions.size() / signalersInHandlersContext.size());
+		for ( String packageDeclaration : this.handlersPerPackage.keySet() )
+		{
+			System.out.println(packageDeclaration);
+			for ( Handler handler : this.handlersPerPackage.get(packageDeclaration) )
+			{
+				if ( handler.getEscapingSignalers().isEmpty() )
+				{
+					System.out.println("\t" + handler + ":" + handler.getFile());
+				}
+				
+			}
+		}
 	}
 }

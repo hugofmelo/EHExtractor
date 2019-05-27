@@ -42,10 +42,16 @@ public class ConvertLibraryExceptionsVisitor extends GuidelineCheckerVisitor {
 	public void visit (CatchClause catchClause, Void arg)
 	{		
 		Handler newHandler = createHandler(catchClause);
-		
-		this.handlerInScopeOptional.ifPresent( handler -> handler.getNestedHandlers().add(newHandler) );
+
+		this.handlerInScopeOptional.ifPresent(handler ->
+		{
+			handler.getNestedHandlers().add(newHandler);
+			newHandler.setParentHandler(handler);
+		});
+
 		this.handlerInScopeOptional = Optional.of(newHandler);
-		
+
+
 		// VISIT CHILDREN
 		super.visit(catchClause, arg);
 

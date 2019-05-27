@@ -30,6 +30,7 @@ import ufrn.dimap.lets.ehmetrics.javaparserutil.SignalerType;
  * */
 public class AddContextualInformationVisitor extends GuidelineCheckerVisitor
 {
+	@Deprecated
 	private Stack<Handler> handlersInContext;
 	
 	private List<ObjectCreationExpr> exceptionsWithAdditionalContextualInformation;

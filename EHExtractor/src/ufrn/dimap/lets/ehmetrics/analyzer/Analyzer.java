@@ -24,6 +24,7 @@ import javassist.NotFoundException;
 import ufrn.dimap.lets.ehmetrics.dependencyresolver.ProjectArtifacts;
 import ufrn.dimap.lets.ehmetrics.logger.ErrorLogger;
 import ufrn.dimap.lets.ehmetrics.visitor.AddContextualInformationVisitor;
+import ufrn.dimap.lets.ehmetrics.visitor.CatchInSpecificLayerVisitor;
 import ufrn.dimap.lets.ehmetrics.visitor.ConvertLibraryExceptionsVisitor;
 import ufrn.dimap.lets.ehmetrics.visitor.ConvertToRuntimeExceptionsVisitor;
 import ufrn.dimap.lets.ehmetrics.visitor.DefineSingleExceptionVisitor;
@@ -116,7 +117,8 @@ public class Analyzer
 		//visitors.add(new SaveTheCauseVisitor(allowUnresolved));
 		//visitors.add(new ConvertToRuntimeExceptionsVisitor(allowUnresolved));
 		//visitors.add(new AddContextualInformationVisitor(allowUnresolved));
-		visitors.add(new SendToGlobalOrDefaultVisitor(allowUnresolved));
+		//visitors.add(new SendToGlobalOrDefaultVisitor(allowUnresolved));
+		visitors.add(new CatchInSpecificLayerVisitor(allowUnresolved));
 		
 
 		return visitors;
