@@ -3,6 +3,8 @@ package ufrn.dimap.lets.ehmetrics;
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import ufrn.dimap.lets.ehmetrics.analyzer.Analyzer;
 import ufrn.dimap.lets.ehmetrics.dependencyresolver.ArtifactResolver;
@@ -11,10 +13,12 @@ import ufrn.dimap.lets.ehmetrics.dependencyresolver.ProjectArtifacts;
 import ufrn.dimap.lets.ehmetrics.dependencyresolver.ProjectFiles;
 import ufrn.dimap.lets.ehmetrics.logger.ArtifactLogger;
 import ufrn.dimap.lets.ehmetrics.logger.ErrorLogger;
-import ufrn.dimap.lets.ehmetrics.logger.ModelLogger;
+import ufrn.dimap.lets.ehmetrics.logger.LoggerUtil;
 
 public class Main
 {
+	private static final Logger LOGGER = Logger.getLogger(Main.class.getName());
+	
 	public static void main(String[] args)
 	{
 		try
@@ -29,9 +33,9 @@ public class Main
 			//main.runSonarLint();
 			//main.readSonarLintReport();
 		}
-		catch (IOException e)
+		catch (Exception e)
 		{
-			e.printStackTrace();
+			LOGGER.log(Level.SEVERE, "", e);
 		}
 	}
 
@@ -104,58 +108,39 @@ public class Main
 	
 	public void execute() throws IOException
 	{
-		//ModelLogger.start();
 
-		System.out.println("Identificando projetos para analise...");
+		LOGGER.info("Identificando projetos para analise...");
 		List<File> projects = ProjectsUtil.listProjects();
 
+		LOGGER.info("Projetos a serem analisados...");
 		for ( File project : projects )
 		{
-			System.out.println(project.getName());
+			LOGGER.info(project.getName());
 		}
-		System.out.println();
-		System.out.println();
-
-
-		for ( File project : projects )
+		
+		for ( int i = 1 ; i <= projects.size() ; i++ )
 		{
-			ErrorLogger.start();
+			LOGGER.info("Processando projeto " + i + " de " + projects.size() + ": " + projects.get(i).getName());
 
-			System.out.println("****** PROJETO " + project.getName() + " ******");
+			LOGGER.info("Identificando arquivos .java...");
+			ProjectFiles projectFiles = FileFinder.find(projects.get(i), true, false, false, false, false );
 
-			System.out.println("Identificando arquivos...");
-			ProjectFiles projectFiles = FileFinder.find(project, true, false, false, false, false );
-
-			System.out.println("Resolvendo artefatos e dependencias...");
-			//ProjectArtifacts projectArtifacts = ArtifactResolver.resolve(projectFiles);			
+			LOGGER.info("Resolvendo artefatos (e ignorando dependencias)...");			
 			ProjectArtifacts projectArtifacts = ArtifactResolver.resolveWithoutDependencies(projectFiles);
 			
-			// Logging
-			ArtifactLogger.writeReport(project.getName(), projectFiles, projectArtifacts);
+			LoggerUtil.logFilesAndArtifacts (LOGGER, projects.get(i).getName(), projectFiles, projectArtifacts);
 
-			System.out.println("Executando análise...");
+			LOGGER.info("Executando análise...");
 			Analyzer.analyze(projectArtifacts, true); 
 
-			System.out.println("Salvando resultados...");
-			// Logging
-			//ModelLogger.writeReport(project.getName(), model);
-			//ModelLogger.writeQuickMetrics(project.getName(), model);
-			ErrorLogger.writeReport(project.getName());
-
-			ErrorLogger.stop();
-
-			System.out.println("Finalizada a analise do projeto " + project.getName() + ".");
-			System.out.println();	
+			LOGGER.info("Finalizada a analise do projeto " + projects.get(i).getName() + ".");
 		}
 
-		//ModelLogger.stop();
-
-		System.out.println("FINALIZADO");
+		LOGGER.info("Finalizada a aplicação!!");
 	}
 
 	public void quickJavaParserTest() throws IOException
 	{
-		ModelLogger.start();
 
 		System.out.println("Identificando projetos para analise...");
 		List<File> projects = ProjectsUtil.listProjects();
@@ -198,12 +183,10 @@ public class Main
 			System.out.println();	
 		}
 
-		ModelLogger.stop();
-
 		System.out.println("FINALIZADO");
 	}
 	
-	public void generateDependenciesFiles() throws IOException
+	public void generateDependenciesFiles()
 	{
 		System.out.println("Identificando projetos para analise...");
 		List<File> projects = ProjectsUtil.listProjects();

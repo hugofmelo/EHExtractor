@@ -18,7 +18,7 @@ public class ArtifactLogger
 	
 	public static void writeReport(String projectName, ProjectFiles files, ProjectArtifacts artifacts) throws IOException
 	{
-		FileWriter logFile = new FileWriter (ProjectsUtil.loggersRoot + projectName + "-artifacts.txt");
+		FileWriter logFile = new FileWriter (ProjectsUtil.LOGGERS_ROOT + projectName + "-artifacts.txt");
 		
 		try
 		{

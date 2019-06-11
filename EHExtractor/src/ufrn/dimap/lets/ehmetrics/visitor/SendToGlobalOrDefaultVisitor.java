@@ -1,29 +1,15 @@
 package ufrn.dimap.lets.ehmetrics.visitor;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.Optional;
-import java.util.Stack;
-import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 import com.github.javaparser.ast.CompilationUnit;
 import com.github.javaparser.ast.expr.MethodCallExpr;
 import com.github.javaparser.ast.stmt.CatchClause;
-import com.github.javaparser.ast.stmt.ThrowStmt;
-import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
-import com.github.javaparser.resolution.UnsolvedSymbolException;
-import com.github.javaparser.resolution.declarations.ResolvedMethodDeclaration;
 
 import ufrn.dimap.lets.ehmetrics.abstractmodel.Handler;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.HandlingAction;
-import ufrn.dimap.lets.ehmetrics.abstractmodel.Type;
-import ufrn.dimap.lets.ehmetrics.javaparserutil.MethodCallParser;
-import ufrn.dimap.lets.ehmetrics.javaparserutil.SignalerParser;
-import ufrn.dimap.lets.ehmetrics.javaparserutil.SignalerType;
 
 /**
  * Visitor para verificar o guideline "Send to a global or default handler".

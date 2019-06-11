@@ -3,24 +3,18 @@ package ufrn.dimap.lets.ehmetrics.visitor;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-import java.util.Stack;
-import java.util.stream.Collectors;
 
 import com.github.javaparser.ast.CompilationUnit;
 import com.github.javaparser.ast.NodeList;
 import com.github.javaparser.ast.expr.Expression;
 import com.github.javaparser.ast.expr.ObjectCreationExpr;
-import com.github.javaparser.ast.expr.SimpleName;
 import com.github.javaparser.ast.stmt.CatchClause;
 import com.github.javaparser.ast.stmt.ThrowStmt;
 import com.github.javaparser.ast.type.ClassOrInterfaceType;
 import com.github.javaparser.resolution.UnsolvedSymbolException;
 
 import ufrn.dimap.lets.ehmetrics.abstractmodel.Handler;
-import ufrn.dimap.lets.ehmetrics.abstractmodel.Signaler;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.Type;
-import ufrn.dimap.lets.ehmetrics.abstractmodel.TypeOrigin;
-import ufrn.dimap.lets.ehmetrics.javaparserutil.SignalerType;
 
 /**
  * Visitor para verificar o guideline "Add Contextual Information".
@@ -30,8 +24,7 @@ import ufrn.dimap.lets.ehmetrics.javaparserutil.SignalerType;
  * */
 public class AddContextualInformationVisitor extends GuidelineCheckerVisitor
 {
-	@Deprecated
-	private Stack<Handler> handlersInContext;
+	private Optional<Handler> handlerInScopeOptional;
 	
 	private List<ObjectCreationExpr> exceptionsWithAdditionalContextualInformation;
 	private List<ObjectCreationExpr> exceptionsWithoutAdditionalContextualInformation;
@@ -48,7 +41,7 @@ public class AddContextualInformationVisitor extends GuidelineCheckerVisitor
 	public void visit (CompilationUnit compilationUnit, Void arg)
 	{
 		// Forces the stack to reset. Sometimes um error when parsing precious java files could finish the visitor without reseting the stack.
-		this.handlersInContext = new Stack<>(); 
+		handlerInScopeOptional = Optional.empty();
 		
         super.visit(compilationUnit, arg);
     }
@@ -56,14 +49,21 @@ public class AddContextualInformationVisitor extends GuidelineCheckerVisitor
 	@Override
 	public void visit (CatchClause catchClause, Void arg)
 	{		
-		Handler newHandler = createHandler(catchClause);	
+		Handler newHandler = createHandler(catchClause);		
 		
-		this.handlersInContext.push(newHandler);
+		this.handlerInScopeOptional.ifPresent(handler ->
+		{
+			handler.getNestedHandlers().add(newHandler);
+			newHandler.setParentHandler(handler);
+		});
+
+		
+		this.handlerInScopeOptional = Optional.of(newHandler);
 		
 		// VISIT CHILDREN
 		super.visit(catchClause, arg);
-		
-		this.handlersInContext.pop();
+
+		this.handlerInScopeOptional = this.handlerInScopeOptional.get().getParentHandler();
 	}
 
 	@Override

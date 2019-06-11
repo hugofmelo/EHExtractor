@@ -1,7 +1,7 @@
 package ufrn.dimap.lets.ehmetrics.visitor;
 
 import java.util.List;
-import java.util.Stack;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 import com.github.javaparser.ast.CompilationUnit;
@@ -10,7 +10,6 @@ import com.github.javaparser.ast.stmt.ThrowStmt;
 
 import ufrn.dimap.lets.ehmetrics.abstractmodel.Handler;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.Signaler;
-import ufrn.dimap.lets.ehmetrics.abstractmodel.TypeOrigin;
 import ufrn.dimap.lets.ehmetrics.javaparserutil.SignalerParser;
 import ufrn.dimap.lets.ehmetrics.javaparserutil.SignalerType;
 
@@ -23,8 +22,7 @@ import ufrn.dimap.lets.ehmetrics.javaparserutil.SignalerType;
  * */
 public class SaveTheCauseVisitor extends GuidelineCheckerVisitor {
 
-	@Deprecated
-	private Stack <Handler> handlersInContext;
+	private Optional<Handler> handlerInScopeOptional;
 
 	public SaveTheCauseVisitor (boolean allowUnresolved)
 	{
@@ -35,7 +33,7 @@ public class SaveTheCauseVisitor extends GuidelineCheckerVisitor {
 	public void visit (CompilationUnit compilationUnit, Void arg)
 	{
 		// Forces the stack to reset. Sometimes um error when parsing precious java files could finish the visitor without reseting the stack.
-		this.handlersInContext = new Stack<>(); 
+		handlerInScopeOptional = Optional.empty(); 
 		
         super.visit(compilationUnit, arg);
     }
@@ -43,14 +41,21 @@ public class SaveTheCauseVisitor extends GuidelineCheckerVisitor {
 	@Override
 	public void visit (CatchClause catchClause, Void arg)
 	{		
-		Handler newHandler = createHandler(catchClause);	
+		Handler newHandler = createHandler(catchClause);
 		
-		this.handlersInContext.push(newHandler);
+		this.handlerInScopeOptional.ifPresent(handler ->
+		{
+			handler.getNestedHandlers().add(newHandler);
+			newHandler.setParentHandler(handler);
+		});
+
+		this.handlerInScopeOptional = Optional.of(newHandler);
+
 
 		// VISIT CHILDREN
 		super.visit(catchClause, arg);
 
-		this.handlersInContext.pop();
+		this.handlerInScopeOptional = this.handlerInScopeOptional.get().getParentHandler();
 	}
 
 	@Override
@@ -58,7 +63,7 @@ public class SaveTheCauseVisitor extends GuidelineCheckerVisitor {
 	{		
 		Signaler newSignaler = createSignaler(throwStatement);
 
-		SignalerParser signalerParser = new SignalerParser(throwStatement, VisitorsUtil.getCatchClausesFromHandlers(handlersInContext));
+		SignalerParser signalerParser = new SignalerParser(throwStatement, VisitorsUtil.getCatchClausesFromHandler(handlerInScopeOptional));
 		signalerParser.parse();
 		
 		newSignaler.setSignalerType (signalerParser.getType());

@@ -59,7 +59,7 @@ public class TraceabilityExample
 
 
 		// Renomear a raiz para o nome dado pelo argumento
-		File projectRootNewName = new File ( ProjectsUtil.projectsRoot + File.separator + projectRootName );
+		File projectRootNewName = new File ( ProjectsUtil.PROJECTS_ROOT + File.separator + projectRootName );
 
 		// Verificar se houve erro
 		if ( !projectRoot.renameTo(projectRootNewName) )
@@ -120,7 +120,7 @@ public class TraceabilityExample
 
 
 		// Renomear a raiz para o nome dado pelo argumento
-		File projectRootNewName = new File ( ProjectsUtil.projectsRoot + File.separator + projectRootName );
+		File projectRootNewName = new File ( ProjectsUtil.PROJECTS_ROOT + File.separator + projectRootName );
 
 		// Verificar se houve erro
 		if ( !projectRoot.renameTo(projectRootNewName) )

@@ -53,6 +53,7 @@ public enum SignalerType
 		this.text = text;
 	}
 
+	@Override
 	public String toString ()
 	{
 		return this.text;

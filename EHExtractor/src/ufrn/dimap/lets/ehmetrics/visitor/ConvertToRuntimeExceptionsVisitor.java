@@ -2,7 +2,6 @@ package ufrn.dimap.lets.ehmetrics.visitor;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.Stack;
 import java.util.stream.Collectors;
 
 import com.github.javaparser.ast.CompilationUnit;
@@ -12,9 +11,6 @@ import com.github.javaparser.ast.stmt.ThrowStmt;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.ClassType;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.Handler;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.Signaler;
-import ufrn.dimap.lets.ehmetrics.abstractmodel.TypeOrigin;
-import ufrn.dimap.lets.ehmetrics.javaparserutil.SignalerParser;
-import ufrn.dimap.lets.ehmetrics.javaparserutil.SignalerType;
 
 /**
  * Visitor para verificar o guideline "Convert to runtime exceptions".

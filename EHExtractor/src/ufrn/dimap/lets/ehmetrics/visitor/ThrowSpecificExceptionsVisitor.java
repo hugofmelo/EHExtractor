@@ -55,12 +55,7 @@ public class ThrowSpecificExceptionsVisitor extends GuidelineCheckerVisitor
 	
 	private static boolean isSpecificException (Type type)
 	{
-		if ( isNonGenericJavaException(type) && type.getSubTypes().isEmpty() )
-		{
-			return true;
-		}
-		
-		return false;
+		return isNonGenericJavaException(type) && type.getSubTypes().isEmpty();
 	}
 	
 	private static boolean isNonGenericJavaException (Type type)

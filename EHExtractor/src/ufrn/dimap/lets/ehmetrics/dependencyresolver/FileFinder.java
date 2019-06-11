@@ -1,6 +1,9 @@
 package ufrn.dimap.lets.ehmetrics.dependencyresolver;
 
 import java.io.File;
+import java.util.ArrayDeque;
+import java.util.Deque;
+import java.util.Queue;
 import java.util.Stack;
 
 /** FileFinder recebe o diretorio de um projeto e busca por arquivos relevantes, que são armazenados em um objeto ProjectFiles.
@@ -31,7 +34,7 @@ public class FileFinder
 			files.setProjectName(projectRoot.getName());
 			
 			File parent;
-			Stack<File> filesStack = new Stack<>();
+			Deque<File> filesStack = new ArrayDeque<>();
 
 			parent = projectRoot;
 
@@ -101,7 +104,7 @@ public class FileFinder
 		else
 		{
 			File parent;
-			Stack<File> filesStack = new Stack<>();
+			Deque<File> filesStack = new ArrayDeque<>();
 
 			parent = projectRoot;
 

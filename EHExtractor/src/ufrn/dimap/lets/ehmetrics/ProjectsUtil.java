@@ -7,10 +7,13 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Logger;
 
 public class ProjectsUtil
 {
-	private static final boolean projectsOnDemand = true;
+	private static final Logger LOGGER = Logger.getLogger(ProjectsUtil.class.getName());
+	
+	private static final boolean PROJECTS_ON_DEMAND = true;
 	
 	
 	
@@ -20,29 +23,33 @@ public class ProjectsUtil
 	//public static final String dependenciesRoot = "./dependencies/lets/";
 	
 	// CASA
-	public static final String projectsRoot = "D:/Desenvolvimento/Projetos Github/New survey/";
-	public static final String dependenciesRoot = "./dependencies/home/";
+	public static final String PROJECTS_ROOT = "D:/Desenvolvimento/Projetos Github/New survey/";
+	public static final String DEPENDENCIES_ROOT = "./dependencies/home/";
 	
-	public static final String loggersRoot = "./loggers/";
+	public static final String LOGGERS_ROOT = "./loggers/";
 	
-	public static StringBuilder smellsBuilder;
-	private static final String smellsLog = "./log/smells/log.txt";
+	private static StringBuilder smellsBuilder;
+	private static final String SMELLS_LOG = "./log/smells/log.txt";
+	
+	private ProjectsUtil () {}
 	
 	public static List<File> listProjects ()
 	{
-		if ( projectsOnDemand )
+		if ( PROJECTS_ON_DEMAND )
 		{
+			LOGGER.info("Using projects on demand");
 			return ProjectsUtil.projectsOnDemand();
 		}
 		else
 		{
-			return ProjectsUtil.projectsOn(new File (projectsRoot));
+			LOGGER.info("Using projects in " + PROJECTS_ROOT);
+			return ProjectsUtil.projectsOn(new File (PROJECTS_ROOT));
 		}
 	}
 	
 	public static List <File> projectsOn (File rootDir)
 	{
-		List <File> projectsPaths = new ArrayList<File>();
+		List <File> projectsPaths = new ArrayList<>();
 		
 		for (File project : rootDir.listFiles())
 		{
@@ -94,7 +101,7 @@ public class ProjectsUtil
 	
 	public static void saveAndCloseSmellsLog ()
 	{
-		Path path = Paths.get(ProjectsUtil.smellsLog);
+		Path path = Paths.get(ProjectsUtil.SMELLS_LOG);
 		
 		try
 		{

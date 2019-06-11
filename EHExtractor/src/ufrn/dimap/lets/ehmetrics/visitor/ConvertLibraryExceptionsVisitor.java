@@ -2,7 +2,6 @@ package ufrn.dimap.lets.ehmetrics.visitor;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.Stack;
 import java.util.stream.Collectors;
 
 import com.github.javaparser.ast.CompilationUnit;

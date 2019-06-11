@@ -1,7 +1,6 @@
 package ufrn.dimap.lets.ehmetrics.analyzer;
 
 import com.github.javaparser.ast.stmt.ThrowStmt;
-import com.github.javaparser.resolution.UnsolvedSymbolException;
 
 public class UnknownSignalerException extends UnknownCodePatternException
 {

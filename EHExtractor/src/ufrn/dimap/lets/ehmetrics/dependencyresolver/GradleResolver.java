@@ -11,6 +11,8 @@ import org.gradle.tooling.model.eclipse.EclipseProject;
 
 public class GradleResolver
 {
+	private GradleResolver (){}
+	
 	/*
 	public static List<File> resolveDependencies2(File gradleProjectPath)
 	{
@@ -108,7 +110,7 @@ public class GradleResolver
 	public static List<File> resolveDependencies(File gradleProjectPath)
 	{
 		// Output
-		List <File> dependencies = new ArrayList<File>();
+		List <File> dependencies = new ArrayList<>();
 
 		GradleConnector gradleConnector = GradleConnector.newConnector();
 		

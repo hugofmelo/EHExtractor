@@ -110,7 +110,7 @@ public class ArtifactResolver
 	private static boolean loadDependenciesFromJson(String projectName, ProjectArtifacts artifacts)
 	{
 		Gson gson = new Gson();
-		try ( JsonReader reader = new JsonReader (new FileReader(ProjectsUtil.dependenciesRoot+File.separator+projectName+".json")) )
+		try ( JsonReader reader = new JsonReader (new FileReader(ProjectsUtil.DEPENDENCIES_ROOT+File.separator+projectName+".json")) )
 		{
 
 			String[] dependencies = gson.fromJson(reader, String[].class);
@@ -215,7 +215,6 @@ public class ArtifactResolver
 
 	private static void saveDependencies(String projectName, ProjectArtifacts artifacts)
 	{
-		Gson gson = new Gson();
 		List<String> dependencies = new ArrayList<>();
 	
 		// A primeira dependencies salva precisa ser o android.jar
@@ -229,9 +228,10 @@ public class ArtifactResolver
 			dependencies.add(file.getAbsolutePath());
 		}
 	
-	
-		try (FileWriter jsonFile = new FileWriter (ProjectsUtil.dependenciesRoot + File.separator + projectName + ".json"))
-		{			
+
+		try (FileWriter jsonFile = new FileWriter (ProjectsUtil.DEPENDENCIES_ROOT + File.separator + projectName + ".json"))
+		{	
+			Gson gson = new Gson();
 			String dependenciesString = gson.toJson(dependencies);
 	
 			jsonFile.write(dependenciesString);

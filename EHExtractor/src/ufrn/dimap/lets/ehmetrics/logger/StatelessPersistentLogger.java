@@ -27,7 +27,7 @@ public class StatelessPersistentLogger
 			File file; 
 			
 			// Result
-			file = new File (ProjectsUtil.loggersRoot + fileName);
+			file = new File (ProjectsUtil.LOGGERS_ROOT + fileName);
 			if ( file.exists() )
 			{
 				output = new FileWriter (file, true);

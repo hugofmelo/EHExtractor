@@ -85,4 +85,30 @@ public class ProjectFiles
 	public File getAndroidManifest() {
 		return this.androidManifest;
 	}
+	
+	@Override
+	public String toString ()
+	{
+		StringBuilder result = new StringBuilder ();
+		
+		result.append(this.projectName + " files...\n");
+		
+		result.append("-- Java files\n");
+		this.javaFiles.forEach(file -> result.append(file.getAbsolutePath()+"\n"));
+		
+		/*
+		result.append("-- Jar files\n");
+		this.jarFiles.forEach(file -> result.append(file.getAbsolutePath()+"\n"));
+		
+		result.append("-- Maven files\n");
+		this.mavenFiles.forEach(file -> result.append(file.getAbsolutePath()+"\n"));
+		
+		result.append("-- Gradle files\n");
+		this.gradleFiles.forEach(file -> result.append(file.getAbsolutePath()+"\n"));
+		
+		result.append("-- Dependencies\n");
+		this.dependencies.forEach(file -> result.append(file.getAbsolutePath()+"\n"));
+		*/
+		return result.toString();
+	}
 }

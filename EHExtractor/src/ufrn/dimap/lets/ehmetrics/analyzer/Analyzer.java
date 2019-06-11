@@ -5,13 +5,13 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import com.github.javaparser.JavaParser;
 import com.github.javaparser.ast.CompilationUnit;
-import com.github.javaparser.ast.body.MethodDeclaration;
 import com.github.javaparser.ast.expr.MethodCallExpr;
 import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
-import com.github.javaparser.resolution.declarations.ResolvedMethodDeclaration;
 import com.github.javaparser.symbolsolver.JavaSymbolSolver;
 import com.github.javaparser.symbolsolver.javaparsermodel.JavaParserFacade;
 import com.github.javaparser.symbolsolver.model.resolution.TypeSolver;
@@ -23,29 +23,19 @@ import com.github.javaparser.symbolsolver.resolution.typesolvers.ReflectionTypeS
 import javassist.NotFoundException;
 import ufrn.dimap.lets.ehmetrics.dependencyresolver.ProjectArtifacts;
 import ufrn.dimap.lets.ehmetrics.logger.ErrorLogger;
-import ufrn.dimap.lets.ehmetrics.visitor.AddContextualInformationVisitor;
 import ufrn.dimap.lets.ehmetrics.visitor.CatchInSpecificLayerVisitor;
-import ufrn.dimap.lets.ehmetrics.visitor.ConvertLibraryExceptionsVisitor;
-import ufrn.dimap.lets.ehmetrics.visitor.ConvertToRuntimeExceptionsVisitor;
-import ufrn.dimap.lets.ehmetrics.visitor.DefineSingleExceptionVisitor;
-import ufrn.dimap.lets.ehmetrics.visitor.DefineSuperTypeVisitor;
 import ufrn.dimap.lets.ehmetrics.visitor.GuidelineCheckerVisitor;
-import ufrn.dimap.lets.ehmetrics.visitor.LogTheExceptionVisitor;
-import ufrn.dimap.lets.ehmetrics.visitor.ProtectEntryPointVisitor;
-import ufrn.dimap.lets.ehmetrics.visitor.SaveTheCauseVisitor;
-import ufrn.dimap.lets.ehmetrics.visitor.SendToGlobalOrDefaultVisitor;
-import ufrn.dimap.lets.ehmetrics.visitor.ThrowSpecificExceptionsVisitor;
-import ufrn.dimap.lets.ehmetrics.visitor.UseJavaBuiltinExceptionsVisitor;
 
 public class Analyzer
 {
+	private static final Logger LOGGER = Logger.getLogger(Analyzer.class.getName());
+	
 	private Analyzer ()
 	{
 		throw new UnsupportedOperationException();
 	}
 
-	// Ao encerrar este metodo, o modelo injetado no visitor terá o resultado do processamento
-	public static void analyze(ProjectArtifacts artifacts, boolean allowUnresolved)
+	public static void analyze(ProjectArtifacts artifacts, boolean allowUnresolved) throws FileNotFoundException
 	{
 		JavaParserFacade.clearInstances();
 		CombinedTypeSolver typeSolver = Analyzer.configSolver(artifacts);
@@ -55,13 +45,12 @@ public class Analyzer
 
 		List <GuidelineCheckerVisitor> guidelinesVisitors = getGuidelineVisitors( allowUnresolved );
 		
-		System.out.println("Total de arquivos java: " + artifacts.getJavaFiles().size());
+		LOGGER.info("Total de arquivos java: " + artifacts.getJavaFiles().size());
 		int fileCount = 1;
 		for ( File javaFile : artifacts.getJavaFiles() )
 		{
+			LOGGER.info("Parsing " + fileCount++ + "...");
 			
-
-			System.out.print("Parsing " + fileCount++ + "...");
 			try
 			{
 				CompilationUnit compUnit = parser.parse(javaFile).getResult().get();
@@ -72,32 +61,19 @@ public class Analyzer
 					compUnit.accept(visitor, null);
 				}
 
-				System.out.println(" OK");
-			}
-			catch (FileNotFoundException e)
-			{
-				System.out.println(" Error - File not found.");
-				e.printStackTrace();
-				ErrorLogger.addError("Falha no Analyzer. Arquivo não encontrado. File:" + javaFile.getAbsolutePath());
+				LOGGER.info(" Done.");
 			}
 			catch (UnknownSignalerException e)
 			{
-				System.out.println(" Error - " + e.getMessage() + " - " + javaFile.getAbsolutePath() + ".");
-				e.printStackTrace();
-				ErrorLogger.addUnknownSignaler("Falha no Analyzer. " + e.getMessage() + " File: " + javaFile.getAbsolutePath());
-			}
-			catch (UnresolvedTypeException e)
-			{
-				System.out.println(" Error - " + e.getMessage() + " - " + javaFile.getAbsolutePath() + ".");
-				e.printStackTrace();
-				ErrorLogger.addUnknownType("Falha no Analyzer. " + e.getMessage() + " File: " + javaFile.getAbsolutePath());
+				LOGGER.log(Level.SEVERE, "Exception occurred when processing '" + javaFile.getAbsolutePath() + "' file.", e);
 			}
 		}
 
+		LOGGER.info("Guidelines results...");
 		for ( GuidelineCheckerVisitor visitor : guidelinesVisitors )
 		{
-			System.out.println("Project type hierarchy:");
-			System.out.println(visitor.getTypeHierarchy().toString());
+			//System.out.println("Project type hierarchy:");
+			//System.out.println(visitor.getTypeHierarchy().toString());
 			
 			visitor.checkGuidelineConformance();
 		}
@@ -120,7 +96,9 @@ public class Analyzer
 		//visitors.add(new SendToGlobalOrDefaultVisitor(allowUnresolved));
 		visitors.add(new CatchInSpecificLayerVisitor(allowUnresolved));
 		
-
+		LOGGER.info("Visitors carregados: ");
+		visitors.forEach( visitor -> LOGGER.info(visitor.getClass().getName()));
+		
 		return visitors;
 	}
 

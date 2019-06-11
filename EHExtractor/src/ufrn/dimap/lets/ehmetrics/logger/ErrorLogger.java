@@ -57,7 +57,7 @@ public class ErrorLogger
 
 	public static void writeReport(String projectName) throws IOException
 	{
-		FileWriter errorFile = new FileWriter (ProjectsUtil.loggersRoot + projectName + "-error.txt");
+		FileWriter errorFile = new FileWriter (ProjectsUtil.LOGGERS_ROOT + projectName + "-error.txt");
 		
 		try
 		{

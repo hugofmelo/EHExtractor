@@ -1,9 +1,9 @@
 package ufrn.dimap.lets.ehmetrics.visitor;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.logging.Logger;
-import java.util.stream.Collectors;
 
 import com.github.javaparser.ast.expr.Expression;
 import com.github.javaparser.ast.expr.MethodCallExpr;
@@ -18,13 +18,20 @@ public class VisitorsUtil {
 	private VisitorsUtil ()	{}
 	
 	/**
-	 * Extract CatchClauses from Handlers
+	 * Extract CatchClauses from given Handler e from nested handlers.
 	 * */
-	public static List<CatchClause> getCatchClausesFromHandlers( List<Handler> handlers )
+	public static List<CatchClause> getCatchClausesFromHandler( Optional<Handler> handlerMaybe )
 	{
-		return handlers.stream()
-			.map(handler -> (CatchClause) handler.getNode())
-			.collect(Collectors.toList());
+		List <CatchClause> catchClauses = new ArrayList<>();
+		Optional <Handler> auxHandlerMaybe = handlerMaybe;
+		
+		while ( auxHandlerMaybe.isPresent() )
+		{
+			catchClauses.add((CatchClause) handlerMaybe.get().getNode());
+			auxHandlerMaybe = auxHandlerMaybe.get().getParentHandler();
+		}
+		
+		return catchClauses;
 	}
 	
 	/**

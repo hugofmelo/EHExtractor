@@ -15,7 +15,7 @@ public class Agenda {
     public List<Address> findAddressesOfPersons(String personName) {
         return persons.stream().
                 filter(p -> p.getName().equals(personName)).
-                map(p -> p.getAddress()).
+                map(Person::getAddress).
                 collect(Collectors.toList());
     }
 

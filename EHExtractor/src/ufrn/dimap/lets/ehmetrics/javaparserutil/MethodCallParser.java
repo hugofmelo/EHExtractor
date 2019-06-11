@@ -181,7 +181,6 @@ public class MethodCallParser
 	}
 
 	public boolean isGenericLog() {
-		// TODO Auto-generated method stub
 		return false;
 	}
 }

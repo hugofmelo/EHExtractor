@@ -7,18 +7,20 @@ import java.util.List;
 /**
  * Classe que armazena os artefatos de um projeto Java.
  * 
- * Os artefatos armazenados são armezandos são .java, source dirs, test dirs e dependencias (jars)
+ * Os artefatos armazenados são .java, source dirs, test dirs e dependencias (jars)
  * */
 public class ProjectArtifacts
 {
+	private String projectName;
 	private List <File> javaFiles;
 	private List <File> sourcesDirs;
 	private List <File> testDirs;
 	private List <File> dependencies; // jars de dependencias externas ao projeto, como pom.xml e build.gradle
 	private File androidJar;
 	
-	public ProjectArtifacts ()
+	public ProjectArtifacts (String projectName)
 	{
+		this.projectName = projectName;
 		javaFiles = new ArrayList<>();
 		sourcesDirs = new ArrayList<>();
 		testDirs = new ArrayList<>();
@@ -81,5 +83,29 @@ public class ProjectArtifacts
 	
 	public File getAndroidJar () {
 		return this.androidJar;
+	}
+	
+	@Override
+	public String toString ()
+	{
+		StringBuilder result = new StringBuilder ();
+		
+		result.append(this.projectName + " artifacts...\n");
+		
+		result.append("-- Java files\n");
+		this.javaFiles.forEach(file -> result.append(file.getAbsolutePath()+"\n"));
+		
+		result.append("-- Source dirs\n");
+		this.sourcesDirs.forEach(file -> result.append(file.getAbsolutePath()+"\n"));
+		
+		result.append("-- Test dirs\n");
+		this.testDirs.forEach(file -> result.append(file.getAbsolutePath()+"\n"));
+		
+		/*
+		result.append("-- Dependencies\n");
+		this.dependencies.forEach(file -> result.append(file.getAbsolutePath()+"\n"));
+		*/
+		
+		return result.toString();
 	}
 }

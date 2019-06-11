@@ -1,6 +1,8 @@
 package ufrn.dimap.lets.ehmetrics.abstractmodel;
 
+import java.util.ArrayDeque;
 import java.util.ArrayList;
+import java.util.Deque;
 import java.util.Iterator;
 import java.util.List;
 import java.util.NoSuchElementException;
@@ -291,11 +293,11 @@ public class TypeHierarchy implements Iterable<Type> {
 	 * */
 	private class TypeHierarchyIterator implements Iterator<Type>
 	{
-		private Stack <Type> typesStack;
+		private Deque <Type> typesStack;
 		
 		public TypeHierarchyIterator()
 		{
-			this.typesStack = new Stack<>();
+			this.typesStack = new ArrayDeque<>();
 			
 			this.typesStack.push(TypeHierarchy.this.typeRoot);
 		}

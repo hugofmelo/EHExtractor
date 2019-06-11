@@ -3,7 +3,6 @@ package ufrn.dimap.lets.ehmetrics.visitor;
 import com.github.javaparser.ast.CompilationUnit;
 import com.github.javaparser.ast.stmt.ThrowStmt;
 
-import ufrn.dimap.lets.ehmetrics.abstractmodel.Signaler;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.Type;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.TypeOrigin;
 

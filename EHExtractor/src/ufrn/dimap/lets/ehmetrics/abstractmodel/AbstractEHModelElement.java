@@ -45,7 +45,14 @@ public abstract class AbstractEHModelElement
 
 	public int getInitFileNumber ()
 	{
-		return this.node.getBegin().get().line;
+		if ( this.node.getBegin().isPresent() )
+		{
+			return this.node.getBegin().get().line;
+		}
+		else
+		{
+			throw new IllegalStateException ();
+		}
 	}
 
 	public String toString ()
