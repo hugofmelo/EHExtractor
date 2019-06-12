@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-06-11T23:29:41</date>
+  <millis>1560306581601</millis>
+  <sequence>149</sequence>
+  <logger>Guidelineufrn.dimap.lets.ehmetrics.visitor.DefineSuperTypeVisitor</logger>
+  <level>INFO</level>
+  <class>ufrn.dimap.lets.ehmetrics.visitor.DefineSuperTypeVisitor</class>
+  <method>checkGuidelineConformance</method>
+  <thread>1</thread>
+  <message>Number of custom exceptions: 9</message>
+</record>
+<record>
+  <date>2019-06-11T23:29:41</date>
+  <millis>1560306581607</millis>
+  <sequence>150</sequence>
+  <logger>Guidelineufrn.dimap.lets.ehmetrics.visitor.DefineSuperTypeVisitor</logger>
+  <level>INFO</level>
+  <class>ufrn.dimap.lets.ehmetrics.visitor.DefineSuperTypeVisitor</class>
+  <method>checkGuidelineConformance</method>
+  <thread>1</thread>
+  <message>Number of subtypes of the most subtyped system exception: 2</message>
+</record>
+<record>
+  <date>2019-06-11T23:29:41</date>
+  <millis>1560306581608</millis>
+  <sequence>151</sequence>
+  <logger>Guidelineufrn.dimap.lets.ehmetrics.visitor.DefineSuperTypeVisitor</logger>
+  <level>INFO</level>
+  <class>ufrn.dimap.lets.ehmetrics.visitor.DefineSuperTypeVisitor</class>
+  <method>checkGuidelineConformance</method>
+  <thread>1</thread>
+  <message>'Define a super type' conformance: 0.2222222222222222</message>
+</record>
+</log>

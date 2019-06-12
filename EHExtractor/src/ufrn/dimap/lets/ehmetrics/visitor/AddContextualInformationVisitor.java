@@ -3,6 +3,7 @@ package ufrn.dimap.lets.ehmetrics.visitor;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.logging.Logger;
 
 import com.github.javaparser.ast.CompilationUnit;
 import com.github.javaparser.ast.NodeList;
@@ -15,6 +16,7 @@ import com.github.javaparser.resolution.UnsolvedSymbolException;
 
 import ufrn.dimap.lets.ehmetrics.abstractmodel.Handler;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.Type;
+import ufrn.dimap.lets.ehmetrics.logger.LoggerFacade;
 
 /**
  * Visitor para verificar o guideline "Add Contextual Information".
@@ -24,6 +26,8 @@ import ufrn.dimap.lets.ehmetrics.abstractmodel.Type;
  * */
 public class AddContextualInformationVisitor extends GuidelineCheckerVisitor
 {
+	private static final Logger GUIDELINE_LOGGER = LoggerFacade.getGuidelinesLogger(AddContextualInformationVisitor.class);
+	
 	private Optional<Handler> handlerInScopeOptional;
 	
 	private List<ObjectCreationExpr> exceptionsWithAdditionalContextualInformation;
@@ -149,9 +153,9 @@ public class AddContextualInformationVisitor extends GuidelineCheckerVisitor
 	 * */
 	public void checkGuidelineConformance ()
 	{	
-		System.out.println("Number of exception instantiations with additional information: " + this.exceptionsWithAdditionalContextualInformation.size());
-		System.out.println("Number of exception instantiations without additional information: " + this.exceptionsWithoutAdditionalContextualInformation.size());
+		GUIDELINE_LOGGER.info("Number of exception instantiations with additional information: " + this.exceptionsWithAdditionalContextualInformation.size());
+		GUIDELINE_LOGGER.info("Number of exception instantiations without additional information: " + this.exceptionsWithoutAdditionalContextualInformation.size());
 		
-		System.out.println("'Add contextual information' conformance: " + 1.0*this.exceptionsWithAdditionalContextualInformation.size()/(this.exceptionsWithAdditionalContextualInformation.size()+this.exceptionsWithoutAdditionalContextualInformation.size()));
+		GUIDELINE_LOGGER.info("'Add contextual information' conformance: " + 1.0*this.exceptionsWithAdditionalContextualInformation.size()/(this.exceptionsWithAdditionalContextualInformation.size()+this.exceptionsWithoutAdditionalContextualInformation.size()));
 	}
 }

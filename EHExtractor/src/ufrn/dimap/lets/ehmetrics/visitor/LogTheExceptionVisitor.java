@@ -2,6 +2,7 @@ package ufrn.dimap.lets.ehmetrics.visitor;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.logging.Logger;
 import java.util.stream.Collectors;
 
 import com.github.javaparser.ast.CompilationUnit;
@@ -11,6 +12,7 @@ import com.github.javaparser.ast.stmt.ThrowStmt;
 
 import ufrn.dimap.lets.ehmetrics.abstractmodel.Handler;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.Signaler;
+import ufrn.dimap.lets.ehmetrics.logger.LoggerFacade;
 
 /**
  * Visitor para verificar o guideline "Log the exception".
@@ -20,6 +22,8 @@ import ufrn.dimap.lets.ehmetrics.abstractmodel.Signaler;
  * */
 public class LogTheExceptionVisitor extends GuidelineCheckerVisitor
 {
+	private static final Logger GUIDELINE_LOGGER = LoggerFacade.getGuidelinesLogger(LogTheExceptionVisitor.class);
+	
 	private Optional<Handler> handlerInScopeOptional;
 
 	public LogTheExceptionVisitor (boolean allowUnresolved)
@@ -99,11 +103,11 @@ public class LogTheExceptionVisitor extends GuidelineCheckerVisitor
 				.filter(Handler::hasLoggingActions)
 				.collect(Collectors.toList());
 
-		System.out.println("Number of handlers: " + this.handlersOfProject.size());
+		GUIDELINE_LOGGER.info("Number of handlers: " + this.handlersOfProject.size());
 
-		System.out.println("Number of handlers which resignal: " + handlersWithResignalers.size());
+		GUIDELINE_LOGGER.info("Number of handlers which resignal: " + handlersWithResignalers.size());
 
-		System.out.println("Number of handlers which doesn't resignal and has loggin actions: " + handlersWithoutResignalersWithLogHandlingActions.size());
+		GUIDELINE_LOGGER.info("Number of handlers which doesn't resignal and has loggin actions: " + handlersWithoutResignalersWithLogHandlingActions.size());
 
 
 	}

@@ -1,10 +1,13 @@
 package ufrn.dimap.lets.ehmetrics.visitor;
 
+import java.util.logging.Logger;
+
 import com.github.javaparser.ast.CompilationUnit;
 import com.github.javaparser.ast.stmt.ThrowStmt;
 
 import ufrn.dimap.lets.ehmetrics.abstractmodel.Type;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.TypeOrigin;
+import ufrn.dimap.lets.ehmetrics.logger.LoggerFacade;
 
 /**
  * Visitor para verificar o guideline "Throw specific exceptions".
@@ -14,6 +17,7 @@ import ufrn.dimap.lets.ehmetrics.abstractmodel.TypeOrigin;
  * */
 public class ThrowSpecificExceptionsVisitor extends GuidelineCheckerVisitor
 {
+	private static final Logger GUIDELINE_LOGGER = LoggerFacade.getGuidelinesLogger(ThrowSpecificExceptionsVisitor.class);
 
 	public ThrowSpecificExceptionsVisitor (boolean allowUnresolved)
 	{
@@ -43,14 +47,14 @@ public class ThrowSpecificExceptionsVisitor extends GuidelineCheckerVisitor
 	public void checkGuidelineConformance ()
 	{	
 		int numberOfSignalers = this.signalersOfProject.size();
-		System.out.println("Total of signalers: " + numberOfSignalers);
+		GUIDELINE_LOGGER.info("Total of signalers: " + numberOfSignalers);
 		
 		long numberOfSignalersOfSpecificExceptions = this.signalersOfProject.stream()
 				.filter(signaler -> isSpecificException(signaler.getThrownType()))
 				.count();
-		System.out.println("Total of signalers of specific exceptions: " + numberOfSignalersOfSpecificExceptions);
+		GUIDELINE_LOGGER.info("Total of signalers of specific exceptions: " + numberOfSignalersOfSpecificExceptions);
 		
-		System.out.println("'Throw specific exceptions' conformance: " + 1.0*numberOfSignalersOfSpecificExceptions/numberOfSignalers);
+		GUIDELINE_LOGGER.info("'Throw specific exceptions' conformance: " + 1.0*numberOfSignalersOfSpecificExceptions/numberOfSignalers);
 	}
 	
 	private static boolean isSpecificException (Type type)

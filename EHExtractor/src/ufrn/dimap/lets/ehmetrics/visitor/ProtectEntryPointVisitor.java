@@ -2,6 +2,7 @@ package ufrn.dimap.lets.ehmetrics.visitor;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Logger;
 
 import com.github.javaparser.ast.NodeList;
 import com.github.javaparser.ast.body.MethodDeclaration;
@@ -14,6 +15,7 @@ import com.github.javaparser.ast.type.Type;
 import com.github.javaparser.resolution.UnsolvedSymbolException;
 
 import ufrn.dimap.lets.ehmetrics.javaparserutil.JavaParserUtil;
+import ufrn.dimap.lets.ehmetrics.logger.LoggerFacade;
 
 /**
  * Visitor para verificar o guideline "Protect entrypoint ".
@@ -26,6 +28,8 @@ import ufrn.dimap.lets.ehmetrics.javaparserutil.JavaParserUtil;
  * */
 public class ProtectEntryPointVisitor extends GuidelineCheckerVisitor
 {
+	private static final Logger GUIDELINE_LOGGER = LoggerFacade.getGuidelinesLogger(ProtectEntryPointVisitor.class);
+	
 	private List<MethodDeclaration> protectedEntryPoints;
 	private List<MethodDeclaration> unProtectedEntryPoints;
 	
@@ -169,10 +173,10 @@ public class ProtectEntryPointVisitor extends GuidelineCheckerVisitor
 	@Override
 	public void checkGuidelineConformance()
 	{
-		System.out.println("Number of protected entrypoints: " + this.protectedEntryPoints.size());
-		System.out.println("Number of unprotected entrypoints: " + this.unProtectedEntryPoints.size());
+		GUIDELINE_LOGGER.info("Number of protected entrypoints: " + this.protectedEntryPoints.size());
+		GUIDELINE_LOGGER.info("Number of unprotected entrypoints: " + this.unProtectedEntryPoints.size());
 
 		
-		System.out.println("'Protect entrypoints' conformance: " + 1.0*protectedEntryPoints.size()/(protectedEntryPoints.size() + this.unProtectedEntryPoints.size()) );
+		GUIDELINE_LOGGER.info("'Protect entrypoints' conformance: " + 1.0*protectedEntryPoints.size()/(protectedEntryPoints.size() + this.unProtectedEntryPoints.size()) );
 	}
 }

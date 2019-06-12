@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
+import java.util.logging.Logger;
 
 import com.github.javaparser.ast.CompilationUnit;
 import com.github.javaparser.ast.PackageDeclaration;
@@ -13,6 +14,7 @@ import com.github.javaparser.ast.stmt.ThrowStmt;
 
 import ufrn.dimap.lets.ehmetrics.abstractmodel.Handler;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.Signaler;
+import ufrn.dimap.lets.ehmetrics.logger.LoggerFacade;
 
 /**
  * Visitor para verificar o guideline "Catch in a specific layer".
@@ -20,8 +22,10 @@ import ufrn.dimap.lets.ehmetrics.abstractmodel.Signaler;
  * Para confirmar o guideline a seguinte heurística é usada:
  * ???????????????????????????????????????
  * */
-public class CatchInSpecificLayerVisitor extends GuidelineCheckerVisitor {
-
+public class CatchInSpecificLayerVisitor extends GuidelineCheckerVisitor
+{
+	private static final Logger GUIDELINE_LOGGER = LoggerFacade.getGuidelinesLogger(CatchInSpecificLayerVisitor.class);
+	
 	private Optional<Handler> handlerInScopeOptional;
 	
 	private String packageDeclarationName;
@@ -103,12 +107,12 @@ public class CatchInSpecificLayerVisitor extends GuidelineCheckerVisitor {
 		// TODO Organizar essa saída
 		for ( String packageDeclaration : this.handlersPerPackage.keySet() )
 		{
-			System.out.println(packageDeclaration);
+			GUIDELINE_LOGGER.info(packageDeclaration);
 			for ( Handler handler : this.handlersPerPackage.get(packageDeclaration) )
 			{
 				if ( handler.getEscapingSignalers().isEmpty() )
 				{
-					System.out.println("\t" + handler + ":" + handler.getFile());
+					GUIDELINE_LOGGER.info("\t" + handler + ":" + handler.getFile());
 				}
 				
 			}

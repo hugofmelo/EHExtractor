@@ -2,6 +2,7 @@ package ufrn.dimap.lets.ehmetrics.visitor;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.logging.Logger;
 import java.util.stream.Collectors;
 
 import com.github.javaparser.ast.CompilationUnit;
@@ -12,6 +13,7 @@ import ufrn.dimap.lets.ehmetrics.abstractmodel.Handler;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.Signaler;
 import ufrn.dimap.lets.ehmetrics.javaparserutil.SignalerParser;
 import ufrn.dimap.lets.ehmetrics.javaparserutil.SignalerType;
+import ufrn.dimap.lets.ehmetrics.logger.LoggerFacade;
 
 /**
  * Visitor para verificar o guideline "Save the cause".
@@ -20,8 +22,10 @@ import ufrn.dimap.lets.ehmetrics.javaparserutil.SignalerType;
  * 95% de todos os signalers que lançam uma exceção no contexto de algum bloco catch
  * são do tipo wrapping.
  * */
-public class SaveTheCauseVisitor extends GuidelineCheckerVisitor {
-
+public class SaveTheCauseVisitor extends GuidelineCheckerVisitor
+{
+	private static final Logger GUIDELINE_LOGGER = LoggerFacade.getGuidelinesLogger(SaveTheCauseVisitor.class);
+	
 	private Optional<Handler> handlerInScopeOptional;
 
 	public SaveTheCauseVisitor (boolean allowUnresolved)
@@ -87,9 +91,9 @@ public class SaveTheCauseVisitor extends GuidelineCheckerVisitor {
 				.filter ( signaler -> signaler.getSignalerType() == SignalerType.DESTRUCTIVE_SIMPLE_THROW)
 				.collect (Collectors.toList());
 		
-		System.out.println("Number of re-signalers of wrapping type: " + wrappersSignalers.size());
-		System.out.println("Number of destructive re-signalers: " + destructiveSignalers.size());
+		GUIDELINE_LOGGER.info("Number of re-signalers of wrapping type: " + wrappersSignalers.size());
+		GUIDELINE_LOGGER.info("Number of destructive re-signalers: " + destructiveSignalers.size());
 		
-		System.out.println("'Save the cause' conformance: " + 1.0*wrappersSignalers.size() / (wrappersSignalers.size()+destructiveSignalers.size()));
+		GUIDELINE_LOGGER.info("'Save the cause' conformance: " + 1.0*wrappersSignalers.size() / (wrappersSignalers.size()+destructiveSignalers.size()));
 	}
 }

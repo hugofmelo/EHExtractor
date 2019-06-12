@@ -1,10 +1,13 @@
 package ufrn.dimap.lets.ehmetrics.visitor;
 
+import java.util.logging.Logger;
+
 import com.github.javaparser.ast.CompilationUnit;
 import com.github.javaparser.ast.stmt.ThrowStmt;
 
 import ufrn.dimap.lets.ehmetrics.abstractmodel.Type;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.TypeOrigin;
+import ufrn.dimap.lets.ehmetrics.logger.LoggerFacade;
 
 /**
  * Visitor para verificar o guideline "Use Java Built-in exceptions".
@@ -19,7 +22,9 @@ import ufrn.dimap.lets.ehmetrics.abstractmodel.TypeOrigin;
  * Quantidade de sinalizadores de exceções que herdam de uma exceção não-genérica Java
  * Total de sinalizadores
  * */
-public class UseJavaBuiltinExceptionsVisitor extends GuidelineCheckerVisitor {
+public class UseJavaBuiltinExceptionsVisitor extends GuidelineCheckerVisitor
+{
+	private static final Logger GUIDELINE_LOGGER = LoggerFacade.getGuidelinesLogger(UseJavaBuiltinExceptionsVisitor.class);
 
 	public UseJavaBuiltinExceptionsVisitor (boolean allowUnresolved)
 	{
@@ -46,24 +51,23 @@ public class UseJavaBuiltinExceptionsVisitor extends GuidelineCheckerVisitor {
 	 * 
 	 * Para entender as condições do guideline, ver Javadoc da classe
 	 * */
-	
 	 // Quantidade de sinalizadores de exceções não-genéricas Java
 	 // Quantidade de sinalizadores de exceções que herdam (direta ou indiretamente) de uma exceção não-genérica Java
 	 // Total de sinalizadores
 	public void checkGuidelineConformance ()
 	{	
 		int numberOfSignalers = this.signalersOfProject.size();
-		System.out.println("Total of signalers: " + numberOfSignalers);
+		GUIDELINE_LOGGER.info("Total of signalers: " + numberOfSignalers);
 		
 		long numberOfSignalersOfNonGenericJavaExceptions = this.signalersOfProject.stream()
 				.filter(signaler -> isNonGenericJavaException(signaler.getThrownType()))
 				.count();
-		System.out.println("Total of signalers of non generic Java exceptions: " + numberOfSignalersOfNonGenericJavaExceptions);
+		GUIDELINE_LOGGER.info("Total of signalers of non generic Java exceptions: " + numberOfSignalersOfNonGenericJavaExceptions);
 		
 		long numberOfSignalersOfSubtypesOfNonGenericJavaExceptions = this.signalersOfProject.stream()
 				.filter(signaler -> isSubTypeOfNonGenericJavaException(signaler.getThrownType()))
 				.count();
-		System.out.println("Total of signalers of subtypes of non generic Java exceptions: " + numberOfSignalersOfSubtypesOfNonGenericJavaExceptions);
+		GUIDELINE_LOGGER.info("Total of signalers of subtypes of non generic Java exceptions: " + numberOfSignalersOfSubtypesOfNonGenericJavaExceptions);
 	}
 	
 	private static boolean isNonGenericJavaException (Type type)

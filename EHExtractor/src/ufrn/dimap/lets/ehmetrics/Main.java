@@ -3,6 +3,7 @@ package ufrn.dimap.lets.ehmetrics;
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
+import java.util.logging.FileHandler;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -11,16 +12,27 @@ import ufrn.dimap.lets.ehmetrics.dependencyresolver.ArtifactResolver;
 import ufrn.dimap.lets.ehmetrics.dependencyresolver.FileFinder;
 import ufrn.dimap.lets.ehmetrics.dependencyresolver.ProjectArtifacts;
 import ufrn.dimap.lets.ehmetrics.dependencyresolver.ProjectFiles;
-import ufrn.dimap.lets.ehmetrics.logger.ArtifactLogger;
-import ufrn.dimap.lets.ehmetrics.logger.ErrorLogger;
-import ufrn.dimap.lets.ehmetrics.logger.LoggerUtil;
+import ufrn.dimap.lets.ehmetrics.logger.LoggerFacade;
 
 public class Main
 {
-	private static final Logger LOGGER = Logger.getLogger(Main.class.getName());
+	static 
+	{
+		try
+		{
+			LoggerFacade.configLogging();
+		}
+		catch (Exception e)
+		{
+			System.exit(1);
+		}
+	}
+	
+	private static final Logger PROCESSING_LOGGER = LoggerFacade.getProcessingLogger();
+	private static final Logger ERROR_LOGGER = LoggerFacade.getProcessingLogger();
 	
 	public static void main(String[] args)
-	{
+	{	
 		try
 		{
 			Main main = new Main();
@@ -35,7 +47,7 @@ public class Main
 		}
 		catch (Exception e)
 		{
-			LOGGER.log(Level.SEVERE, "", e);
+			ERROR_LOGGER.log(Level.SEVERE, e.getMessage(), e);
 		}
 	}
 
@@ -108,115 +120,70 @@ public class Main
 	
 	public void execute() throws IOException
 	{
-
-		LOGGER.info("Identificando projetos para analise...");
+		PROCESSING_LOGGER.fine("Identificando projetos para analise...");
 		List<File> projects = ProjectsUtil.listProjects();
 
-		LOGGER.info("Projetos a serem analisados...");
+		PROCESSING_LOGGER.fine("Projetos a serem analisados...");
 		for ( File project : projects )
 		{
-			LOGGER.info(project.getName());
+			PROCESSING_LOGGER.fine(project.getName());
 		}
 		
-		for ( int i = 1 ; i <= projects.size() ; i++ )
+		for ( int i = 0 ; i < projects.size() ; i++ )
 		{
-			LOGGER.info("Processando projeto " + i + " de " + projects.size() + ": " + projects.get(i).getName());
+			PROCESSING_LOGGER.fine("Processando projeto " + (i+1) + " de " + projects.size() + ": " + projects.get(i).getName());
 
-			LOGGER.info("Identificando arquivos .java...");
+			PROCESSING_LOGGER.fine("Identificando arquivos .java...");
 			ProjectFiles projectFiles = FileFinder.find(projects.get(i), true, false, false, false, false );
 
-			LOGGER.info("Resolvendo artefatos (e ignorando dependencias)...");			
+			PROCESSING_LOGGER.fine("Resolvendo artefatos (e ignorando dependencias)...");			
 			ProjectArtifacts projectArtifacts = ArtifactResolver.resolveWithoutDependencies(projectFiles);
 			
-			LoggerUtil.logFilesAndArtifacts (LOGGER, projects.get(i).getName(), projectFiles, projectArtifacts);
+			logFilesAndArtifacts (projects.get(i).getName(), projectFiles, projectArtifacts);
 
-			LOGGER.info("Executando análise...");
+			PROCESSING_LOGGER.fine("Executando análise...");
 			Analyzer.analyze(projectArtifacts, true); 
 
-			LOGGER.info("Finalizada a analise do projeto " + projects.get(i).getName() + ".");
+			PROCESSING_LOGGER.fine("Finalizada a analise do projeto " + projects.get(i).getName() + ".");
 		}
 
-		LOGGER.info("Finalizada a aplicação!!");
-	}
-
-	public void quickJavaParserTest() throws IOException
-	{
-
-		System.out.println("Identificando projetos para analise...");
-		List<File> projects = ProjectsUtil.listProjects();
-
-		for ( File project : projects )
-		{
-			System.out.println(project.getName());
-		}
-		System.out.println();
-		System.out.println();
-
-
-		for ( File project : projects )
-		{
-			ErrorLogger.start();
-
-			System.out.println("****** PROJETO " + project.getName() + " ******");
-
-			System.out.println("Identificando arquivos...");
-			ProjectFiles projectFiles = FileFinder.find(project, true, false, false, false, false );
-
-			System.out.println("Resolvendo artefatos e dependencias...");
-			//ProjectArtifacts projectArtifacts = ArtifactResolver.resolve(projectFiles);			
-			ProjectArtifacts projectArtifacts = ArtifactResolver.resolveWithoutDependencies(projectFiles);
-			
-			// Logging
-			ArtifactLogger.writeReport(project.getName(), projectFiles, projectArtifacts);
-
-			System.out.println("Executando análise...");
-			Analyzer.quickAnalyze(projectArtifacts); 
-
-			System.out.println("Salvando resultados...");
-			// Logging
-			//ModelLogger.writeReport(project.getName(), model);
-			ErrorLogger.writeReport(project.getName());
-
-			ErrorLogger.stop();
-
-			System.out.println("Finalizada a analise do projeto " + project.getName() + ".");
-			System.out.println();	
-		}
-
-		System.out.println("FINALIZADO");
+		PROCESSING_LOGGER.fine("Finalizada a aplicação!!");
 	}
 	
 	public void generateDependenciesFiles()
 	{
-		System.out.println("Identificando projetos para analise...");
+		PROCESSING_LOGGER.fine("Gerando arquivos com dependencias");
+		
+		PROCESSING_LOGGER.fine("Identificando projetos para analise...");
 		List<File> projects = ProjectsUtil.listProjects();
 
+		PROCESSING_LOGGER.fine("Projetos a serem analisados...");
 		for ( File project : projects )
 		{
-			System.out.println(project.getName());
+			PROCESSING_LOGGER.fine(project.getName());
 		}
-		System.out.println();
-		System.out.println();
 
-
-		for ( File project : projects )
+		for ( int i = 1 ; i <= projects.size() ; i++ )
 		{
-			ErrorLogger.start();
+			PROCESSING_LOGGER.fine("Processando projeto " + i + " de " + projects.size() + ": " + projects.get(i).getName());
 
-			System.out.println("****** PROJETO " + project.getName() + " ******");
+			PROCESSING_LOGGER.fine("Identificando arquivos .java, .jar, pom.xml e gradle.properties...");
+			ProjectFiles projectFiles = FileFinder.find(projects.get(i), true, false, true, true, true);
 
-			System.out.println("Identificando arquivos...");
-			ProjectFiles projectFiles = FileFinder.find(project, true, false, true, true, true);
-
-			System.out.println("Resolvendo artefatos e dependencias...");
+			PROCESSING_LOGGER.fine("Resolvendo artefatos (e ignorando dependencias)...");
 			ArtifactResolver.resolve(projectFiles);			
 
-			ErrorLogger.stop();
-
-			System.out.println("Finalizada a analise do projeto " + project.getName() + ".");
-			System.out.println();	
+			PROCESSING_LOGGER.fine("Finalizada a analise do projeto " + projects.get(i).getName() + ".");
 		}
 
-		System.out.println("FINALIZADO");
+		PROCESSING_LOGGER.fine("Finalizada a aplicação!!");
+	}
+	
+	private static void logFilesAndArtifacts (String projectName, ProjectFiles files, ProjectArtifacts artifacts) throws IOException
+	{
+		Logger projectLogger = LoggerFacade.getProjectLogger(Main.class, projectName);
+		
+		projectLogger.info(files.toString());
+		projectLogger.info(artifacts.toString());		
 	}
 }

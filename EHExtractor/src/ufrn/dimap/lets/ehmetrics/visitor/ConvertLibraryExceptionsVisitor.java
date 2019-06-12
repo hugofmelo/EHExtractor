@@ -2,6 +2,7 @@ package ufrn.dimap.lets.ehmetrics.visitor;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.logging.Logger;
 import java.util.stream.Collectors;
 
 import com.github.javaparser.ast.CompilationUnit;
@@ -11,6 +12,7 @@ import com.github.javaparser.ast.stmt.ThrowStmt;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.Handler;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.Signaler;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.TypeOrigin;
+import ufrn.dimap.lets.ehmetrics.logger.LoggerFacade;
 
 /**
  * Visitor para verificar o guideline "Convert library exceptions".
@@ -19,8 +21,10 @@ import ufrn.dimap.lets.ehmetrics.abstractmodel.TypeOrigin;
  * De todas as capturas de exceções externas em que aquele tratador re-signaliza
  * uma exceção, a re-sinalização não é de uma exceção externa em pelo menos 95% dos tratadores.
  * */
-public class ConvertLibraryExceptionsVisitor extends GuidelineCheckerVisitor {
-
+public class ConvertLibraryExceptionsVisitor extends GuidelineCheckerVisitor
+{
+	private static final Logger GUIDELINE_LOGGER = LoggerFacade.getGuidelinesLogger(ConvertLibraryExceptionsVisitor.class);
+	
 	private Optional<Handler> handlerInScopeOptional;
 
 	public ConvertLibraryExceptionsVisitor (boolean allowUnresolved)
@@ -89,7 +93,7 @@ public class ConvertLibraryExceptionsVisitor extends GuidelineCheckerVisitor {
 			.collect (Collectors.toList());
 		
 		int numberOfHandlersOfExternalExceptions = handlersOfExternalExceptions.size();
-		System.out.println("Number of handlers of external exceptions: " + numberOfHandlersOfExternalExceptions);
+		GUIDELINE_LOGGER.info("Number of handlers of external exceptions: " + numberOfHandlersOfExternalExceptions);
 		
 		
 		List<Handler> handlersOfExternalExceptionsWhichResignalSomething = handlersOfExternalExceptions.stream()
@@ -97,7 +101,7 @@ public class ConvertLibraryExceptionsVisitor extends GuidelineCheckerVisitor {
 				.collect (Collectors.toList());
 
 		int numberOfHandlersOfExternalExceptionsWhichResignalSomething = handlersOfExternalExceptionsWhichResignalSomething.size();
-		System.out.println("Number of handlers of external exceptions which resignal somethings: " + numberOfHandlersOfExternalExceptionsWhichResignalSomething);
+		GUIDELINE_LOGGER.info("Number of handlers of external exceptions which resignal somethings: " + numberOfHandlersOfExternalExceptionsWhichResignalSomething);
 
 		
 		List<Handler> handlersOfExternalExceptionsWhichResignalExternalExceptions = handlersOfExternalExceptionsWhichResignalSomething.stream()
@@ -109,9 +113,9 @@ public class ConvertLibraryExceptionsVisitor extends GuidelineCheckerVisitor {
 				.collect(Collectors.toList());
 
 		int numberOfHandlersOfExternalExceptionsWhichResignalExternalExceptions = handlersOfExternalExceptionsWhichResignalExternalExceptions.size();
-		System.out.println("Number of handlers of external exceptions which resignal external exceptions: " + numberOfHandlersOfExternalExceptionsWhichResignalExternalExceptions);
+		GUIDELINE_LOGGER.info("Number of handlers of external exceptions which resignal external exceptions: " + numberOfHandlersOfExternalExceptionsWhichResignalExternalExceptions);
 
 		
-		System.out.println("'Convert library exceptions' conformance: " + (1.0-(1.0*numberOfHandlersOfExternalExceptionsWhichResignalExternalExceptions/numberOfHandlersOfExternalExceptionsWhichResignalSomething)));
+		GUIDELINE_LOGGER.info("'Convert library exceptions' conformance: " + (1.0-(1.0*numberOfHandlersOfExternalExceptionsWhichResignalExternalExceptions/numberOfHandlersOfExternalExceptionsWhichResignalSomething)));
 	}
 }

@@ -36,7 +36,7 @@ public class ArtifactResolver
 	 * */ 
 	public static ProjectArtifacts resolve (ProjectFiles projectFiles)
 	{
-		ProjectArtifacts artifacts = new ProjectArtifacts();
+		ProjectArtifacts artifacts = new ProjectArtifacts(projectFiles.getProjectName());
 
 		findArtifacts(projectFiles, artifacts);
 
@@ -46,7 +46,7 @@ public class ArtifactResolver
 	}
 
 	public static ProjectArtifacts resolveWithoutDependencies(ProjectFiles projectFiles) {
-		ProjectArtifacts artifacts = new ProjectArtifacts();
+		ProjectArtifacts artifacts = new ProjectArtifacts(projectFiles.getProjectName());
 
 		findArtifacts(projectFiles, artifacts);
 
@@ -102,9 +102,6 @@ public class ArtifactResolver
 			findDependencies(projectFiles, artifacts);
 			saveDependencies(projectFiles.getProjectName(), artifacts);
 		}
-	
-	
-	
 	}
 
 	private static boolean loadDependenciesFromJson(String projectName, ProjectArtifacts artifacts)
@@ -112,7 +109,6 @@ public class ArtifactResolver
 		Gson gson = new Gson();
 		try ( JsonReader reader = new JsonReader (new FileReader(ProjectsUtil.DEPENDENCIES_ROOT+File.separator+projectName+".json")) )
 		{
-
 			String[] dependencies = gson.fromJson(reader, String[].class);
 
 			int i;

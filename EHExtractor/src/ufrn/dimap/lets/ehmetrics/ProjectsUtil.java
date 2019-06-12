@@ -37,12 +37,12 @@ public class ProjectsUtil
 	{
 		if ( PROJECTS_ON_DEMAND )
 		{
-			LOGGER.info("Using projects on demand");
+			LOGGER.fine("Using projects on demand");
 			return ProjectsUtil.projectsOnDemand();
 		}
 		else
 		{
-			LOGGER.info("Using projects in " + PROJECTS_ROOT);
+			LOGGER.fine("Using projects in " + PROJECTS_ROOT);
 			return ProjectsUtil.projectsOn(new File (PROJECTS_ROOT));
 		}
 	}
@@ -70,15 +70,13 @@ public class ProjectsUtil
 		// Test self
 		projectsPaths.add(new File("../EHExtractor"));
 		
-		//projectsPaths.add(new File("D:/git/bugsnag-java"));
-		
 		
 		boolean projectDoesntExist = false;
 		for (File f : projectsPaths)
 		{
 			if ( !f.exists() )
 			{
-				System.err.println("Baixar projeto " + f.getAbsolutePath());
+				LOGGER.severe("Baixar projeto " + f.getAbsolutePath());
 				projectDoesntExist = true;
 			}
 		}

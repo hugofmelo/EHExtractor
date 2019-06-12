@@ -4,6 +4,7 @@ import java.util.Comparator;
 import java.util.Objects;
 import java.util.Optional;
 import java.util.function.Function;
+import java.util.logging.Logger;
 import java.util.stream.Collectors;
 
 import com.github.javaparser.ast.body.ClassOrInterfaceDeclaration;
@@ -11,6 +12,7 @@ import com.github.javaparser.ast.stmt.CatchClause;
 import com.github.javaparser.ast.stmt.ThrowStmt;
 
 import ufrn.dimap.lets.ehmetrics.abstractmodel.Type;
+import ufrn.dimap.lets.ehmetrics.logger.LoggerFacade;
 
 /**
  * Visitor para verificar o guideline "Define a super type".
@@ -18,8 +20,10 @@ import ufrn.dimap.lets.ehmetrics.abstractmodel.Type;
  * Para confirmar o guideline a seguinte heurística é usada:
  * 95% de todas as exceções definidas pela aplicação possuem um mesmo supertipo
  * */
-public class DefineSuperTypeVisitor extends GuidelineCheckerVisitor {
-
+public class DefineSuperTypeVisitor extends GuidelineCheckerVisitor
+{
+	private static final Logger GUIDELINE_LOGGER = LoggerFacade.getGuidelinesLogger(DefineSuperTypeVisitor.class);
+	
 	public DefineSuperTypeVisitor (boolean allowUnresolved)
 	{
 		super(allowUnresolved);
@@ -62,7 +66,7 @@ public class DefineSuperTypeVisitor extends GuidelineCheckerVisitor {
 		long numberOfSystemExceptionTypes = this.typeHierarchy.listTypes().stream()
 				.filter(Type::isSystemExceptionType)
 				.count();
-		System.out.println("Number of custom exceptions: " + numberOfSystemExceptionTypes);
+		GUIDELINE_LOGGER.info("Number of custom exceptions: " + numberOfSystemExceptionTypes);
 		
 		
 		Optional<Long> mostSubtypedSystemException = this.typeHierarchy.listTypes().stream()
@@ -77,15 +81,15 @@ public class DefineSuperTypeVisitor extends GuidelineCheckerVisitor {
 		
 		if ( numberOfSystemExceptionTypes != 0 && mostSubtypedSystemException.isPresent() )
 		{
-			System.out.println("Number of subtypes of the most subtyped system exception: " + mostSubtypedSystemException.get());
+			GUIDELINE_LOGGER.info("Number of subtypes of the most subtyped system exception: " + mostSubtypedSystemException.get());
 			
-			System.out.println("'Define a super type' conformance: " + 1.0*mostSubtypedSystemException.get()/numberOfSystemExceptionTypes);
+			GUIDELINE_LOGGER.info("'Define a super type' conformance: " + 1.0*mostSubtypedSystemException.get()/numberOfSystemExceptionTypes);
 		}
 		else
 		{
-			System.out.println("None of the system exceptions has subtypes");
+			GUIDELINE_LOGGER.info("None of the system exceptions has subtypes");
 			
-			System.out.println("'Define a super type' conformance: 0.0");
+			GUIDELINE_LOGGER.info("'Define a super type' conformance: 0.0");
 		}	
 	}
 }

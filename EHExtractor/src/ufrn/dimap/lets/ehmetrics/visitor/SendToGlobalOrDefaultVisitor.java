@@ -2,6 +2,7 @@ package ufrn.dimap.lets.ehmetrics.visitor;
 
 import java.util.Map;
 import java.util.Optional;
+import java.util.logging.Logger;
 import java.util.stream.Collectors;
 
 import com.github.javaparser.ast.CompilationUnit;
@@ -10,6 +11,7 @@ import com.github.javaparser.ast.stmt.CatchClause;
 
 import ufrn.dimap.lets.ehmetrics.abstractmodel.Handler;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.HandlingAction;
+import ufrn.dimap.lets.ehmetrics.logger.LoggerFacade;
 
 /**
  * Visitor para verificar o guideline "Send to a global or default handler".
@@ -19,6 +21,8 @@ import ufrn.dimap.lets.ehmetrics.abstractmodel.HandlingAction;
  * */
 public class SendToGlobalOrDefaultVisitor extends GuidelineCheckerVisitor
 {
+	private static final Logger GUIDELINE_LOGGER = LoggerFacade.getGuidelinesLogger(SendToGlobalOrDefaultVisitor.class);
+	
 	private Optional<Handler> handlerInScopeOptional;
 	
 	public SendToGlobalOrDefaultVisitor (boolean allowUnresolved)
@@ -81,7 +85,7 @@ public class SendToGlobalOrDefaultVisitor extends GuidelineCheckerVisitor
 				.flatMap(handler -> handler.getHandlingActions().stream())
 				.collect(Collectors.groupingBy(HandlingAction::getMethodName, Collectors.counting()));
 		
-		System.out.println("Methods calls in handlers:");
-		methodsOccurrences.forEach((name, occurrences) -> System.out.println (name + " : " + occurrences));
+		GUIDELINE_LOGGER.info("Methods calls in handlers:");
+		methodsOccurrences.forEach((name, occurrences) -> GUIDELINE_LOGGER.info(name + " : " + occurrences));
 	}	
 }

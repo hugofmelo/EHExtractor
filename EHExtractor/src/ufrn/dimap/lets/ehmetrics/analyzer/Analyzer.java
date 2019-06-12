@@ -23,12 +23,25 @@ import com.github.javaparser.symbolsolver.resolution.typesolvers.ReflectionTypeS
 import javassist.NotFoundException;
 import ufrn.dimap.lets.ehmetrics.dependencyresolver.ProjectArtifacts;
 import ufrn.dimap.lets.ehmetrics.logger.ErrorLogger;
+import ufrn.dimap.lets.ehmetrics.logger.LoggerFacade;
+import ufrn.dimap.lets.ehmetrics.visitor.AddContextualInformationVisitor;
 import ufrn.dimap.lets.ehmetrics.visitor.CatchInSpecificLayerVisitor;
+import ufrn.dimap.lets.ehmetrics.visitor.ConvertLibraryExceptionsVisitor;
+import ufrn.dimap.lets.ehmetrics.visitor.ConvertToRuntimeExceptionsVisitor;
+import ufrn.dimap.lets.ehmetrics.visitor.DefineSingleExceptionVisitor;
+import ufrn.dimap.lets.ehmetrics.visitor.DefineSuperTypeVisitor;
 import ufrn.dimap.lets.ehmetrics.visitor.GuidelineCheckerVisitor;
+import ufrn.dimap.lets.ehmetrics.visitor.LogTheExceptionVisitor;
+import ufrn.dimap.lets.ehmetrics.visitor.ProtectEntryPointVisitor;
+import ufrn.dimap.lets.ehmetrics.visitor.SaveTheCauseVisitor;
+import ufrn.dimap.lets.ehmetrics.visitor.SendToGlobalOrDefaultVisitor;
+import ufrn.dimap.lets.ehmetrics.visitor.ThrowSpecificExceptionsVisitor;
+import ufrn.dimap.lets.ehmetrics.visitor.UseJavaBuiltinExceptionsVisitor;
 
 public class Analyzer
 {
-	private static final Logger LOGGER = Logger.getLogger(Analyzer.class.getName());
+	private static final Logger PROCESSING_LOGGER = LoggerFacade.getProcessingLogger();
+	private static final Logger ERROR_LOGGER = LoggerFacade.getErrorLogger(Analyzer.class);
 	
 	private Analyzer ()
 	{
@@ -45,11 +58,11 @@ public class Analyzer
 
 		List <GuidelineCheckerVisitor> guidelinesVisitors = getGuidelineVisitors( allowUnresolved );
 		
-		LOGGER.info("Total de arquivos java: " + artifacts.getJavaFiles().size());
+		PROCESSING_LOGGER.fine("Total de arquivos java: " + artifacts.getJavaFiles().size());
 		int fileCount = 1;
 		for ( File javaFile : artifacts.getJavaFiles() )
 		{
-			LOGGER.info("Parsing " + fileCount++ + "...");
+			PROCESSING_LOGGER.fine("Parsing " + fileCount++ + "...");
 			
 			try
 			{
@@ -61,15 +74,15 @@ public class Analyzer
 					compUnit.accept(visitor, null);
 				}
 
-				LOGGER.info(" Done.");
+				PROCESSING_LOGGER.fine(" Done.");
 			}
 			catch (UnknownSignalerException e)
 			{
-				LOGGER.log(Level.SEVERE, "Exception occurred when processing '" + javaFile.getAbsolutePath() + "' file.", e);
+				ERROR_LOGGER.log(Level.SEVERE, "Exception occurred when processing '" + javaFile.getAbsolutePath() + "' file.", e);
 			}
 		}
 
-		LOGGER.info("Guidelines results...");
+		PROCESSING_LOGGER.fine("Guidelines results...");
 		for ( GuidelineCheckerVisitor visitor : guidelinesVisitors )
 		{
 			//System.out.println("Project type hierarchy:");
@@ -83,7 +96,7 @@ public class Analyzer
 	{
 		List<GuidelineCheckerVisitor> visitors = new ArrayList<>();
 		
-		//visitors.add(new DefineSuperTypeVisitor(allowUnresolved));
+		visitors.add(new DefineSuperTypeVisitor(allowUnresolved));
 		//visitors.add(new DefineSingleExceptionVisitor(allowUnresolved));
 		//visitors.add(new ConvertLibraryExceptionsVisitor(allowUnresolved));
 		//visitors.add(new LogTheExceptionVisitor(allowUnresolved));
@@ -94,10 +107,10 @@ public class Analyzer
 		//visitors.add(new ConvertToRuntimeExceptionsVisitor(allowUnresolved));
 		//visitors.add(new AddContextualInformationVisitor(allowUnresolved));
 		//visitors.add(new SendToGlobalOrDefaultVisitor(allowUnresolved));
-		visitors.add(new CatchInSpecificLayerVisitor(allowUnresolved));
+		//visitors.add(new CatchInSpecificLayerVisitor(allowUnresolved));
 		
-		LOGGER.info("Visitors carregados: ");
-		visitors.forEach( visitor -> LOGGER.info(visitor.getClass().getName()));
+		PROCESSING_LOGGER.fine("Visitors carregados: ");
+		visitors.forEach( visitor -> PROCESSING_LOGGER.fine(visitor.getClass().getName()));
 		
 		return visitors;
 	}
@@ -173,7 +186,7 @@ public class Analyzer
 			{
 				if ( e.getCause() instanceof NotFoundException )
 				{
-					ErrorLogger.addError("Falha no Analyzer. Falha ao adicionar JarSolver. File: " + dependencyFile.getAbsolutePath());
+					ERROR_LOGGER.severe("Falha no Analyzer. Falha ao adicionar JarSolver. File: " + dependencyFile.getAbsolutePath());
 				}
 				else
 				{
@@ -182,7 +195,7 @@ public class Analyzer
 			}
 			catch (IOException e)
 			{
-				ErrorLogger.addError("Falha no Analyzer. Falha ao adicionar JarSolver. File: " + dependencyFile.getAbsolutePath());		
+				ERROR_LOGGER.severe("Falha no Analyzer. Falha ao adicionar JarSolver. File: " + dependencyFile.getAbsolutePath());		
 			}
 		}
 
@@ -207,7 +220,7 @@ public class Analyzer
 			{
 				if ( e.getCause() instanceof NotFoundException )
 				{
-					ErrorLogger.addError("Falha no Analyzer. Falha ao adicionar android.jar. File: " + artifacts.getAndroidJar().getAbsolutePath());
+					ERROR_LOGGER.severe("Falha no Analyzer. Falha ao adicionar android.jar. File: " + artifacts.getAndroidJar().getAbsolutePath());
 				}
 				else
 				{
@@ -216,7 +229,7 @@ public class Analyzer
 			}
 			catch (IOException e)
 			{
-				ErrorLogger.addError("Falha no Analyzer. Falha ao adicionar android.jar. File: " + artifacts.getAndroidJar().getAbsolutePath());		
+				ERROR_LOGGER.severe("Falha no Analyzer. Falha ao adicionar android.jar. File: " + artifacts.getAndroidJar().getAbsolutePath());		
 			}
 		}
 

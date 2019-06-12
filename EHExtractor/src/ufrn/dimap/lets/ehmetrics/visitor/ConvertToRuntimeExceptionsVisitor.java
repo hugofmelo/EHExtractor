@@ -2,6 +2,7 @@ package ufrn.dimap.lets.ehmetrics.visitor;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.logging.Logger;
 import java.util.stream.Collectors;
 
 import com.github.javaparser.ast.CompilationUnit;
@@ -11,6 +12,7 @@ import com.github.javaparser.ast.stmt.ThrowStmt;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.ClassType;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.Handler;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.Signaler;
+import ufrn.dimap.lets.ehmetrics.logger.LoggerFacade;
 
 /**
  * Visitor para verificar o guideline "Convert to runtime exceptions".
@@ -18,7 +20,9 @@ import ufrn.dimap.lets.ehmetrics.abstractmodel.Signaler;
  * Para confirmar o guideline a seguinte heurística é usada:
  * De todas as exceções que são lançadas no contexto de um handler, 95% são não-checadas.
  * */
-public class ConvertToRuntimeExceptionsVisitor extends GuidelineCheckerVisitor {
+public class ConvertToRuntimeExceptionsVisitor extends GuidelineCheckerVisitor
+{
+	private static final Logger GUIDELINE_LOGGER = LoggerFacade.getGuidelinesLogger(ConvertToRuntimeExceptionsVisitor.class);
 
 	private Optional<Handler> handlerInScopeOptional;
 	
@@ -87,9 +91,9 @@ public class ConvertToRuntimeExceptionsVisitor extends GuidelineCheckerVisitor {
 			.filter(signaler -> signaler.getThrownType().getClassType() == ClassType.UNCHECKED_EXCEPTION)
 			.collect(Collectors.toList());
 		
-		System.out.println("Number of signalers in handlers context: " + signalersInHandlersContext.size());
-		System.out.println("Number of signalers in handlers context which throw runtime exceptions: " + signalersInHandlersContextWhichThrowRuntimeExceptions.size());
+		GUIDELINE_LOGGER.info("Number of signalers in handlers context: " + signalersInHandlersContext.size());
+		GUIDELINE_LOGGER.info("Number of signalers in handlers context which throw runtime exceptions: " + signalersInHandlersContextWhichThrowRuntimeExceptions.size());
 		
-		System.out.println("'Convert to runtime exception' conformance: " + 1.0*signalersInHandlersContextWhichThrowRuntimeExceptions.size() / signalersInHandlersContext.size());
+		GUIDELINE_LOGGER.info("'Convert to runtime exception' conformance: " + 1.0*signalersInHandlersContextWhichThrowRuntimeExceptions.size() / signalersInHandlersContext.size());
 	}
 }
