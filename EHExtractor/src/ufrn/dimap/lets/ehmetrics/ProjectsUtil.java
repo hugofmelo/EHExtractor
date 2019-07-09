@@ -13,7 +13,7 @@ public class ProjectsUtil
 {
 	private static final Logger LOGGER = Logger.getLogger(ProjectsUtil.class.getName());
 	
-	private static final boolean PROJECTS_ON_DEMAND = true;
+	private static final boolean PROJECTS_ON_DEMAND = false;
 	
 	
 	
@@ -23,7 +23,7 @@ public class ProjectsUtil
 	//public static final String dependenciesRoot = "./dependencies/lets/";
 	
 	// CASA
-	public static final String PROJECTS_ROOT = "D:/Desenvolvimento/Projetos Github/New survey/";
+	public static final String PROJECTS_ROOT = "D:/Desenvolvimento/Projetos Github/";
 	public static final String DEPENDENCIES_ROOT = "./dependencies/home/";
 	
 	public static final String LOGGERS_ROOT = "./loggers/";
@@ -33,7 +33,7 @@ public class ProjectsUtil
 	
 	private ProjectsUtil () {}
 	
-	public static List<File> listProjects ()
+	public static List<File> findProjects ()
 	{
 		if ( PROJECTS_ON_DEMAND )
 		{

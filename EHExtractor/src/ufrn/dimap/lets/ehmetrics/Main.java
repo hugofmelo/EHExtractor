@@ -121,7 +121,7 @@ public class Main
 	public void execute() throws IOException
 	{
 		PROCESSING_LOGGER.fine("Identificando projetos para analise...");
-		List<File> projects = ProjectsUtil.listProjects();
+		List<File> projects = ProjectsUtil.findProjects();
 
 		PROCESSING_LOGGER.fine("Projetos a serem analisados...");
 		for ( File project : projects )
@@ -155,7 +155,7 @@ public class Main
 		PROCESSING_LOGGER.fine("Gerando arquivos com dependencias");
 		
 		PROCESSING_LOGGER.fine("Identificando projetos para analise...");
-		List<File> projects = ProjectsUtil.listProjects();
+		List<File> projects = ProjectsUtil.findProjects();
 
 		PROCESSING_LOGGER.fine("Projetos a serem analisados...");
 		for ( File project : projects )

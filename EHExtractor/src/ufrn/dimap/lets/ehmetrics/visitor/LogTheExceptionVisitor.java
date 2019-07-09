@@ -94,20 +94,20 @@ public class LogTheExceptionVisitor extends GuidelineCheckerVisitor
 	 * */
 	public void checkGuidelineConformance ()
 	{
-		List<Handler> handlersWithResignalers = this.handlersOfProject.stream()
-				.filter(handler -> !handler.getEscapingSignalers().isEmpty())
+		List<Handler> finalHandlers = this.handlersOfProject.stream()
+				.filter(Handler::isFinalHandler)
 				.collect(Collectors.toList());
 
-		List<Handler> handlersWithoutResignalersWithLogHandlingActions = this.handlersOfProject.stream()
-				.filter(handler -> handler.getEscapingSignalers().isEmpty())
+		List<Handler> finalHandlersWithLogHandlingActions = this.handlersOfProject.stream()
+				.filter(Handler::isFinalHandler)
 				.filter(Handler::hasLoggingActions)
 				.collect(Collectors.toList());
 
 		GUIDELINE_LOGGER.info("Number of handlers: " + this.handlersOfProject.size());
 
-		GUIDELINE_LOGGER.info("Number of handlers which resignal: " + handlersWithResignalers.size());
+		GUIDELINE_LOGGER.info("Number of handlers which resignal: " + finalHandlers.size());
 
-		GUIDELINE_LOGGER.info("Number of handlers which doesn't resignal and has loggin actions: " + handlersWithoutResignalersWithLogHandlingActions.size());
+		GUIDELINE_LOGGER.info("Number of final handlers which has logging actions: " + finalHandlersWithLogHandlingActions.size());
 
 
 	}

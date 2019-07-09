@@ -2,36 +2,36 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2019-06-11T23:29:41</date>
-  <millis>1560306581601</millis>
-  <sequence>149</sequence>
-  <logger>Guidelineufrn.dimap.lets.ehmetrics.visitor.DefineSuperTypeVisitor</logger>
+  <date>2019-07-08T23:00:42</date>
+  <millis>1562637642124</millis>
+  <sequence>251</sequence>
+  <logger>Guidelineufrn.dimap.lets.ehmetrics.visitor.LogTheExceptionVisitor</logger>
   <level>INFO</level>
-  <class>ufrn.dimap.lets.ehmetrics.visitor.DefineSuperTypeVisitor</class>
+  <class>ufrn.dimap.lets.ehmetrics.visitor.LogTheExceptionVisitor</class>
   <method>checkGuidelineConformance</method>
   <thread>1</thread>
-  <message>Number of custom exceptions: 9</message>
+  <message>Number of handlers: 211</message>
 </record>
 <record>
-  <date>2019-06-11T23:29:41</date>
-  <millis>1560306581607</millis>
-  <sequence>150</sequence>
-  <logger>Guidelineufrn.dimap.lets.ehmetrics.visitor.DefineSuperTypeVisitor</logger>
+  <date>2019-07-08T23:00:42</date>
+  <millis>1562637642124</millis>
+  <sequence>252</sequence>
+  <logger>Guidelineufrn.dimap.lets.ehmetrics.visitor.LogTheExceptionVisitor</logger>
   <level>INFO</level>
-  <class>ufrn.dimap.lets.ehmetrics.visitor.DefineSuperTypeVisitor</class>
+  <class>ufrn.dimap.lets.ehmetrics.visitor.LogTheExceptionVisitor</class>
   <method>checkGuidelineConformance</method>
   <thread>1</thread>
-  <message>Number of subtypes of the most subtyped system exception: 2</message>
+  <message>Number of handlers which resignal: 53</message>
 </record>
 <record>
-  <date>2019-06-11T23:29:41</date>
-  <millis>1560306581608</millis>
-  <sequence>151</sequence>
-  <logger>Guidelineufrn.dimap.lets.ehmetrics.visitor.DefineSuperTypeVisitor</logger>
+  <date>2019-07-08T23:00:42</date>
+  <millis>1562637642124</millis>
+  <sequence>253</sequence>
+  <logger>Guidelineufrn.dimap.lets.ehmetrics.visitor.LogTheExceptionVisitor</logger>
   <level>INFO</level>
-  <class>ufrn.dimap.lets.ehmetrics.visitor.DefineSuperTypeVisitor</class>
+  <class>ufrn.dimap.lets.ehmetrics.visitor.LogTheExceptionVisitor</class>
   <method>checkGuidelineConformance</method>
   <thread>1</thread>
-  <message>'Define a super type' conformance: 0.2222222222222222</message>
+  <message>Number of handlers which doesn't resignal and has loggin actions: 18</message>
 </record>
 </log>

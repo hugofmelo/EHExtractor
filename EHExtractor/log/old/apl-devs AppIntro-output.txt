@@ -1,5 +1,0 @@
-EXCEPTION HIERARCHY
-java.lang.Throwable
-	java.lang.Exception
-
-

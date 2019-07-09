@@ -1,6 +1,7 @@
+Prioridade 0: criar um objeto de saída de cada guideline
 Prioridade 0: rodar guidelines em projetos do primeiro survey
-Prioridade 1: usar loggers 
-Prioridade 2: Revisar todo o código, linha a linha, verificando como usar optional e streams
+Prioridade 1: organizar os outputs dos guidelines
+Prioridade 2: Revisar todo o código, linha a linha, verificando como usar optional (abolir uso de null) e streams
 Prioridade 3: Revisar todo o código, linha a linha, verificando como usar parallelstreams
 DONE Prioridade 4: Mudar o Handler para ter handlers nested?
 Priodade 4: Procurar usos de map para usar putifabsent ou computeifabsent

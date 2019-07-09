@@ -100,15 +100,6 @@ public class VisitorsUtil {
 			return true;
 		}
 
-
-		loggedHandlerOptional = checkForExternalLogger(callExpression, handlerInContext);
-		if ( loggedHandlerOptional.isPresent() )
-		{
-			loggedHandlerOptional.get().createLogHandlerAction ( callExpression );
-			return true;
-		}
-
-
 		loggedHandlerOptional = checkForJavaLogger(callExpression, handlerInContext);
 		if ( loggedHandlerOptional.isPresent() )
 		{
@@ -116,6 +107,12 @@ public class VisitorsUtil {
 			return true;
 		}
 
+		loggedHandlerOptional = checkForExternalLogger(callExpression, handlerInContext);
+		if ( loggedHandlerOptional.isPresent() )
+		{
+			loggedHandlerOptional.get().createLogHandlerAction ( callExpression );
+			return true;
+		}
 
 		loggedHandlerOptional = checkForGenericLogAction(callExpression, handlerInContext);
 		if ( loggedHandlerOptional.isPresent() )
@@ -160,42 +157,24 @@ public class VisitorsUtil {
 	 * */
 	private static Optional<Handler> checkForPrintLn (MethodCallExpr callExpression, Handler handlerInContext)
 	{
-		Optional<Expression> printlnScopeOptional = callExpression.getScope();
-
-		if ( printlnScopeOptional.isPresent() )
+		if (callExpression.getNameAsString().equals("print") ||
+			callExpression.getNameAsString().equals("println"))
 		{
-			if ( printlnScopeOptional.get().toString().equals("System.out") ||
-					printlnScopeOptional.get().toString().equals("System.err") )
+			Optional<Expression> printlnScopeOptional = callExpression.getScope();
+			
+			if ( printlnScopeOptional.isPresent() )
 			{
-				return VisitorsUtil.findHandler(handlerInContext, JavaParserUtil.filterSimpleNames(callExpression));
+				if ( printlnScopeOptional.get().toString().equals("System.out") ||
+						printlnScopeOptional.get().toString().equals("System.err") )
+				{
+					return VisitorsUtil.findHandler(handlerInContext, JavaParserUtil.filterSimpleNames(callExpression));
+				}
 			}
 		}
+		
 
 		return Optional.empty();
 	}
-
-	/**
-	 * Check if the called method is from an external Logger and returns the handler
-	 * which exception is being logged.
-	 * 
-	 * Return Optional.empty otherwise.
-	 * */
-	private static Optional<Handler> checkForExternalLogger (MethodCallExpr callExpression, Handler handlerInContext)
-	{
-		String methodName = callExpression.getNameAsString();
-
-		if ( 	methodName.equals("fatal") ||
-				methodName.equals("error") ||
-				methodName.equals("warn") ||
-				methodName.equals("debug") ||
-				methodName.equals("trace") )
-		{
-			return VisitorsUtil.findHandler(handlerInContext, JavaParserUtil.filterSimpleNames(callExpression));
-		}
-
-		return Optional.empty();
-	}
-
 
 	/**
 	 * Check if the called method is from a JavaLogger and returns the handler
@@ -224,6 +203,33 @@ public class VisitorsUtil {
 	
 		return Optional.empty();
 	}
+
+	/**
+	 * Check if the called method is from an external Logger and returns the handler
+	 * which exception is being logged.
+	 * 
+	 * Supported loggers frameworks: Log4J, Apache Commons Logging, SLF4J, tinylog, LogBack
+	 * 
+	 * Return Optional.empty otherwise.
+	 * */
+	private static Optional<Handler> checkForExternalLogger (MethodCallExpr callExpression, Handler handlerInContext)
+	{
+		String methodName = callExpression.getNameAsString();
+
+		if ( 	methodName.equals("fatal") ||
+				methodName.equals("error") ||
+				methodName.equals("warn") ||
+				methodName.equals("warning") ||
+				methodName.equals("info") ||
+				methodName.equals("debug") ||
+				methodName.equals("trace") )
+		{
+			return VisitorsUtil.findHandler(handlerInContext, JavaParserUtil.filterSimpleNames(callExpression));
+		}
+
+		return Optional.empty();
+	}
+
 
 	/**
 	 * Check if the called method is from a generic log call and returns the handler

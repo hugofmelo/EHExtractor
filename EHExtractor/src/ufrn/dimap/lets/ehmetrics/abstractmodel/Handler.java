@@ -137,4 +137,14 @@ public class Handler extends AbstractEHModelElement
 			.findAny()
 			.isPresent();
 	}
+	
+	/**
+	 * A final handler is a handler which has not escaping signalers.
+	 * 
+	 * Utility method.
+	 * */
+	public boolean isFinalHandler ()
+	{
+		return this.escapingSignalers.isEmpty();
+	}
 }

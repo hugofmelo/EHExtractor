@@ -148,6 +148,7 @@ public class JavaParserUtil {
 		}
 		else if ( throwExpression instanceof MethodCallExpr )
 		{
+			// TODO Tentar resolver quando é chamada de método? Pega o tipo do retorno?
 			throw new UnknownSignalerException ("Sinalização de uma chamada de método que não pôde ter seu tipo resolvido.", throwExpression.findAncestor(ThrowStmt.class).get());
 		}
 		else

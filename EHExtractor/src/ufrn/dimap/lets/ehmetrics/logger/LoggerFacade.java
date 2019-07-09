@@ -89,6 +89,7 @@ public class LoggerFacade
 		
 		guidelinesHandler = new FileHandler ("guidelines.log");
 		guidelinesHandler.setLevel(Level.INFO);
+		guidelinesHandler.setFormatter(new SingleLineFormatter());
 	}
 	
 	

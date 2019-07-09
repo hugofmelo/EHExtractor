@@ -96,10 +96,10 @@ public class Analyzer
 	{
 		List<GuidelineCheckerVisitor> visitors = new ArrayList<>();
 		
-		visitors.add(new DefineSuperTypeVisitor(allowUnresolved));
+		//visitors.add(new DefineSuperTypeVisitor(allowUnresolved));
 		//visitors.add(new DefineSingleExceptionVisitor(allowUnresolved));
 		//visitors.add(new ConvertLibraryExceptionsVisitor(allowUnresolved));
-		//visitors.add(new LogTheExceptionVisitor(allowUnresolved));
+		visitors.add(new LogTheExceptionVisitor(allowUnresolved));
 		//visitors.add(new UseJavaBuiltinExceptionsVisitor(allowUnresolved));
 		//visitors.add(new ThrowSpecificExceptionsVisitor(allowUnresolved));
 		//visitors.add(new ProtectEntryPointVisitor(allowUnresolved));
