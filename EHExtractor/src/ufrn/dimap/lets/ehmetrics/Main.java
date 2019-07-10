@@ -28,7 +28,6 @@ public class Main
 	}
 	
 	private static final Logger PROCESSING_LOGGER = LoggerFacade.getProcessingLogger();
-	private static final Logger ERROR_LOGGER = LoggerFacade.getProcessingLogger();
 	
 	public static void main(String[] args)
 	{	
@@ -46,7 +45,7 @@ public class Main
 		}
 		catch (Exception e)
 		{
-			ERROR_LOGGER.log(Level.SEVERE, e.getMessage(), e);
+			LoggerFacade.logError(e);
 		}
 	}
 	
@@ -58,16 +57,8 @@ public class Main
 		// Load guidelines visitors
 		List<GuidelineCheckerVisitor> guidelinesVisitors = GuidelinesFactory.loadVisitors(Guidelines.allowUnresolvedTypes);
 
-		
 		PROCESSING_LOGGER.fine("Preparando cabeçalho do arquivo de resultados...");
-		StringBuilder builder = new StringBuilder ();
-		builder.append("\t");
-		for ( GuidelineCheckerVisitor visitor : guidelinesVisitors )
-		{
-			visitor.getGuidelineHeader();
-			builder.append("\t");
-		}
-		builder.append("\n");
+		writeGuidelinesHeader(guidelinesVisitors);
 		
 		// Running the analysis - The guidelines visitors are just cleared between each project
 		for ( int i = 0 ; i < projects.size() ; i++ )
@@ -76,13 +67,35 @@ public class Main
 			Analyzer.analyze(projects.get(i), guidelinesVisitors); 
 
 			PROCESSING_LOGGER.fine("Writing guidelines results...");
+			LoggerFacade.logGuideline(projects.get(i).getProjectName() + "\t");
 			for ( GuidelineCheckerVisitor visitor : guidelinesVisitors )
 			{
-				PROCESSING_LOGGER.fine(visitor.getGuidelineData());
+				LoggerFacade.logGuideline(visitor.getGuidelineData() + "\t");
 			}
+			
+			LoggerFacade.logGuideline("\n");
+			
+			Logger projectLogger = LoggerFacade.getProjectLogger(projects.get(i).getProjectName());
+			projectLogger.info("\n"+guidelinesVisitors.get(0).getTypeHierarchy().toString());
 		}
 
 		PROCESSING_LOGGER.fine("Finalizada a aplicação!!");
+	}
+
+	private void writeGuidelinesHeader(List<GuidelineCheckerVisitor> guidelinesVisitors)
+	{
+		StringBuilder guidelinesHeaderBuilder = new StringBuilder ();
+		guidelinesHeaderBuilder.append("\t");
+		
+		for ( GuidelineCheckerVisitor visitor : guidelinesVisitors )
+		{
+			guidelinesHeaderBuilder.append(visitor.getGuidelineHeader());
+			guidelinesHeaderBuilder.append("\t");
+		}
+		
+		guidelinesHeaderBuilder.append("\n");
+		
+		LoggerFacade.logGuideline(guidelinesHeaderBuilder.toString());
 	}
 	
 	public void generateDependenciesFiles() throws IOException

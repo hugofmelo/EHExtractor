@@ -85,6 +85,10 @@ public class ProjectArtifacts
 		return this.androidJar;
 	}
 	
+	public String getProjectName () {
+		return this.projectName;
+	}
+	
 	@Override
 	public String toString ()
 	{

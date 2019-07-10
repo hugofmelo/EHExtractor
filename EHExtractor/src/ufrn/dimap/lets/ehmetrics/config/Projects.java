@@ -10,7 +10,7 @@ public class Projects
 {
 	// DIRECTORIES *****************************
 	
-	public static final boolean PROJECTS_ON_DEMAND = true; // if true, edit method projectsOnDemand
+	public static final boolean PROJECTS_ON_DEMAND = false;
 	
 	// if PROJECT_ON_DEMAND is false, set
 	public static final String PROJECTS_ROOT = "D:/Desenvolvimento/Projetos Github/";
@@ -18,7 +18,8 @@ public class Projects
 	// if PROJECT_ON_DEMAND is true, set
 	public static final List<String> PROJECTS = Arrays.asList(
 			//"../EHExtractor"
-			"D:/Desenvolvimento/Projetos Github/openhab-openhab2-addons/"
+			"D:/Desenvolvimento/Projetos Github/allegro-hermes/"
+			//"D:/Desenvolvimento/Projetos Github/openhab-openhab2-addons/"
 			);
 			
 	public static final String DEPENDENCIES_ROOT = "./dependencies/home/";

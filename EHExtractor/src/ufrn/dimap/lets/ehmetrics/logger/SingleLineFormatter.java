@@ -1,4 +1,4 @@
-package ufrn.dimap.lets.ehmetrics;
+package ufrn.dimap.lets.ehmetrics.logger;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;
@@ -7,7 +7,7 @@ import java.util.Date;
 import java.util.logging.Formatter;
 import java.util.logging.LogRecord;
 
-public class ProjectFormatter extends Formatter {
+public class SingleLineFormatter extends Formatter {
 
   Date dat = new Date();
   private final static String format = "{0,date} {0,time}";
@@ -51,23 +51,21 @@ public class ProjectFormatter extends Formatter {
       sb.append(record.getLoggerName());
     }
 
-    
-    
     // Method name 
     if (record.getSourceMethodName() != null) {
-    	sb.append("#");
-    	sb.append(record.getSourceMethodName());
+      sb.append("#");
+      sb.append(record.getSourceMethodName());
     }
-
-    sb.append("\n"); // lineSeparator
-
+    sb.append(" - "); // lineSeparator
+    
+    
     // Level
-    //sb.append(record.getLevel().getName());
-    //sb.append(": ");
+    sb.append(record.getLevel().getName());
+    sb.append(": ");
 
     String message = formatMessage(record);
     sb.append(message);
-    sb.append("\n\n");
+    sb.append(lineSeparator);
     if (record.getThrown() != null) {
       try {
         StringWriter sw = new StringWriter();

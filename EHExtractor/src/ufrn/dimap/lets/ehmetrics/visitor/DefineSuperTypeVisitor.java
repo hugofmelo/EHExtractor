@@ -10,8 +10,10 @@ import java.util.stream.Collectors;
 import com.github.javaparser.ast.body.ClassOrInterfaceDeclaration;
 import com.github.javaparser.ast.stmt.CatchClause;
 import com.github.javaparser.ast.stmt.ThrowStmt;
+import com.google.common.base.Predicate;
 
 import ufrn.dimap.lets.ehmetrics.abstractmodel.Type;
+import ufrn.dimap.lets.ehmetrics.abstractmodel.TypeOrigin;
 import ufrn.dimap.lets.ehmetrics.logger.LoggerFacade;
 
 /**
@@ -22,8 +24,6 @@ import ufrn.dimap.lets.ehmetrics.logger.LoggerFacade;
  * */
 public class DefineSuperTypeVisitor extends GuidelineCheckerVisitor
 {
-	private static final Logger GUIDELINE_LOGGER = LoggerFacade.getGuidelinesLogger(DefineSuperTypeVisitor.class);
-	
 	public DefineSuperTypeVisitor (boolean allowUnresolved)
 	{
 		super(allowUnresolved);
@@ -55,20 +55,32 @@ public class DefineSuperTypeVisitor extends GuidelineCheckerVisitor
 		// VISIT CHILDREN
 		super.visit(throwStatement, arg);
 	}
-	
+
 	/**
-	 * Verifica se o projeto adota o guideline referenciado neste visitor.
-	 * 
-	 * Para entender as condições do guideline, ver Javadoc da classe
+	 * Returns the guideline columns names
 	 * */
 	@Override
-	public void checkGuidelineConformance ()
+	public String getGuidelineHeader ()
+	{
+		StringBuilder builder = new StringBuilder();
+		
+		builder.append("# project exceptions");
+		builder.append("\t");
+		builder.append("# subtypes of most subtyped project exception");
+		builder.append("\t");
+		
+		return builder.toString();
+	}
+	
+	/**
+	 * Returns the guideline data
+	 * */
+	@Override
+	public String getGuidelineData ()
 	{	
 		long numberOfSystemExceptionTypes = this.typeHierarchy.listTypes().stream()
 				.filter(Type::isSystemExceptionType)
 				.count();
-		GUIDELINE_LOGGER.info("Number of custom exceptions: " + numberOfSystemExceptionTypes);
-		
 		
 		Optional<Long> mostSubtypedSystemException = this.typeHierarchy.listTypes().stream()
 			.filter(Type::isSystemExceptionType)
@@ -79,18 +91,23 @@ public class DefineSuperTypeVisitor extends GuidelineCheckerVisitor
 			.stream()
 			.max(Comparator.naturalOrder());
 		
+		StringBuilder builder = new StringBuilder();
 		
 		if ( numberOfSystemExceptionTypes != 0 && mostSubtypedSystemException.isPresent() )
 		{
-			GUIDELINE_LOGGER.info("Number of subtypes of the most subtyped system exception: " + mostSubtypedSystemException.get());
-			
-			GUIDELINE_LOGGER.info("'Define a super type' conformance: " + 1.0*mostSubtypedSystemException.get()/numberOfSystemExceptionTypes);
+			builder.append(numberOfSystemExceptionTypes);
+			builder.append("\t");
+			builder.append(mostSubtypedSystemException.get());
+			builder.append("\t");
 		}
 		else
 		{
-			GUIDELINE_LOGGER.info("None of the system exceptions has subtypes");
-			
-			GUIDELINE_LOGGER.info("'Define a super type' conformance: 0.0");
+			builder.append(numberOfSystemExceptionTypes);
+			builder.append("\t");
+			builder.append("0");
+			builder.append("\t");
 		}	
+		
+		return builder.toString();
 	}
 }

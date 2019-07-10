@@ -1,17 +1,15 @@
 package ufrn.dimap.lets.ehmetrics.visitor;
 
 import java.util.Comparator;
-import java.util.Map;
-import java.util.logging.Logger;
+import java.util.List;
 import java.util.stream.Collectors;
 
 import com.github.javaparser.ast.body.ClassOrInterfaceDeclaration;
 import com.github.javaparser.ast.stmt.CatchClause;
 import com.github.javaparser.ast.stmt.ThrowStmt;
 
-import ufrn.dimap.lets.ehmetrics.abstractmodel.Signaler;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.Type;
-import ufrn.dimap.lets.ehmetrics.logger.LoggerFacade;
+import ufrn.dimap.lets.ehmetrics.abstractmodel.TypeOrigin;
 
 /**
  * Visitor para verificar o guideline "Define a single exception".
@@ -21,8 +19,6 @@ import ufrn.dimap.lets.ehmetrics.logger.LoggerFacade;
  * */
 public class DefineSingleExceptionVisitor extends GuidelineCheckerVisitor
 {
-	private static final Logger GUIDELINE_LOGGER = LoggerFacade.getGuidelinesLogger(DefineSingleExceptionVisitor.class);
-	
 	public DefineSingleExceptionVisitor (boolean allowUnresolved)
 	{
 		super(allowUnresolved);
@@ -56,29 +52,62 @@ public class DefineSingleExceptionVisitor extends GuidelineCheckerVisitor
 	}
 	
 	/**
-	 * Verifica se o projeto adota o guideline referenciado neste visitor.
-	 * 
-	 * Para entender as condições do guideline, ver Javadoc da classe
+	 * Returns the guideline columns names
 	 * */
 	@Override
-	public void checkGuidelineConformance ()
+	public String getGuidelineHeader ()
 	{
-		Map <Type, Long> systemExceptionSignalersToOccurrences = this.signalersOfProject.stream()
-				.filter(s -> s.getThrownType().isSystemExceptionType())
-				.collect (Collectors.groupingBy(Signaler::getThrownType, Collectors.counting()));
+		StringBuilder builder = new StringBuilder();
 		
+		builder.append("# project exceptions");
+		builder.append("\t");
+		builder.append("# signalers of project exception");
+		builder.append("\t");
+		builder.append("# exceptions which signal 90% of signalers");
+		builder.append("\t");
 		
-		Long sumOfSystemExceptionSignalersOccurrences = systemExceptionSignalersToOccurrences.values().stream()
-				.mapToLong(Long::longValue)
+		return builder.toString();
+	}
+	
+	/**
+	 * Returns the guideline data
+	 * */
+	@Override
+	public String getGuidelineData ()
+	{	
+		Comparator <Type> comparatorOfTypes_signalersSizeDesc = (t1, t2) -> t2.getSignalers().size() - t1.getSignalers().size();
+		
+		List<Type> systemExceptions = this.typeHierarchy.listTypes().stream()
+				.filter(type -> type.getOrigin() == TypeOrigin.SYSTEM)
+				.filter(Type::isException)
+				.sorted(comparatorOfTypes_signalersSizeDesc)
+				.collect(Collectors.toList());
+		
+		long totalSignalersOfSystemExceptions = systemExceptions.stream()
+				.map(type -> type.getSignalers().size())
+				.mapToInt(Integer::intValue)
 				.sum();
-		GUIDELINE_LOGGER.info("Number of system signalers: " + sumOfSystemExceptionSignalersOccurrences);
+				
+		double threshold = totalSignalersOfSystemExceptions * 0.9;
+		double signalersSum = 0;
+		int typesCount = 0;
 		
-		Long mostSignaledSystemExceptionOccurrences = systemExceptionSignalersToOccurrences.values().stream()
-				.max(Comparator.naturalOrder())
-				.get();
-		GUIDELINE_LOGGER.info("Number of signalers of the most signaled exception: " + mostSignaledSystemExceptionOccurrences);
+		while ( signalersSum < threshold )
+		{
+			signalersSum += systemExceptions.get(typesCount).getSignalers().size();
+			typesCount++;
+		}
 		
 		
-		GUIDELINE_LOGGER.info("'Define a single exception' conformance: " + 1.0*mostSignaledSystemExceptionOccurrences/sumOfSystemExceptionSignalersOccurrences);
-	}	
+		StringBuilder builder = new StringBuilder();
+		
+		builder.append(systemExceptions.size());
+		builder.append("\t");
+		builder.append(totalSignalersOfSystemExceptions);
+		builder.append("\t");
+		builder.append(typesCount);
+		builder.append("\t");
+		
+		return builder.toString();
+	}
 }

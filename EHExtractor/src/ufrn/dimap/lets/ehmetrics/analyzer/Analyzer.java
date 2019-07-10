@@ -27,7 +27,7 @@ import ufrn.dimap.lets.ehmetrics.visitor.VisitorException;
 public class Analyzer
 {
 	private static final Logger PROCESSING_LOGGER = LoggerFacade.getProcessingLogger();
-	private static final Logger ERROR_LOGGER = LoggerFacade.getErrorLogger(Analyzer.class);
+	
 	
 	private Analyzer ()
 	{
@@ -44,12 +44,11 @@ public class Analyzer
 		JavaSymbolSolver symbolSolver = new JavaSymbolSolver(typeSolver);
 		JavaParser parser = new JavaParser();
 		parser.getParserConfiguration().setSymbolResolver(symbolSolver);
-		
-		PROCESSING_LOGGER.fine("Total de arquivos java: " + artifacts.getJavaFiles().size());
-		int fileCount = 1;
+
+		int fileCount = 1, totalFiles = artifacts.getJavaFiles().size();
 		for ( File javaFile : artifacts.getJavaFiles() )
 		{
-			PROCESSING_LOGGER.fine("Parsing " + fileCount++ + "...");
+			PROCESSING_LOGGER.fine(artifacts.getProjectName() + " " + "[" + fileCount++ + " of " + totalFiles + "] - " + javaFile.getAbsolutePath());
 			
 			try
 			{
@@ -60,16 +59,14 @@ public class Analyzer
 					visitor.setJavaFile (javaFile);
 					compUnit.accept(visitor, null);
 				}
-
-				PROCESSING_LOGGER.fine(" Done.");
 			}
 			catch (UnsupportedSignalerException e)
 			{
-				ERROR_LOGGER.log(Level.SEVERE, "Exception occurred when processing '" + javaFile.getAbsolutePath() + "' file.", e);
+				LoggerFacade.logAnalysisError(artifacts.getProjectName(), javaFile, e);
 			}
 			catch (VisitorException e)
 			{
-				ERROR_LOGGER.log(Level.SEVERE, "Exception occurred when processing '" + javaFile.getAbsolutePath() + "' file.", e);
+				LoggerFacade.logAnalysisError(artifacts.getProjectName(), javaFile, e);
 			}
 		}
 	}
@@ -98,7 +95,7 @@ public class Analyzer
 			{
 				if ( e.getCause() instanceof NotFoundException )
 				{
-					ERROR_LOGGER.severe("Falha no Analyzer. Falha ao adicionar JarSolver. File: " + dependencyFile.getAbsolutePath());
+					LoggerFacade.logAnalysisError(artifacts.getProjectName(), dependencyFile, e);
 				}
 				else
 				{
@@ -107,7 +104,7 @@ public class Analyzer
 			}
 			catch (IOException e)
 			{
-				ERROR_LOGGER.severe("Falha no Analyzer. Falha ao adicionar JarSolver. File: " + dependencyFile.getAbsolutePath());		
+				LoggerFacade.logAnalysisError(artifacts.getProjectName(), dependencyFile, e);		
 			}
 		}
 
@@ -132,7 +129,7 @@ public class Analyzer
 			{
 				if ( e.getCause() instanceof NotFoundException )
 				{
-					ERROR_LOGGER.severe("Falha no Analyzer. Falha ao adicionar android.jar. File: " + artifacts.getAndroidJar().getAbsolutePath());
+					LoggerFacade.logAnalysisError(artifacts.getProjectName(), artifacts.getAndroidJar(), e);
 				}
 				else
 				{
@@ -141,7 +138,7 @@ public class Analyzer
 			}
 			catch (IOException e)
 			{
-				ERROR_LOGGER.severe("Falha no Analyzer. Falha ao adicionar android.jar. File: " + artifacts.getAndroidJar().getAbsolutePath());		
+				LoggerFacade.logAnalysisError(artifacts.getProjectName(), artifacts.getAndroidJar(), e);		
 			}
 		}
 

@@ -21,9 +21,7 @@ import ufrn.dimap.lets.ehmetrics.logger.LoggerFacade;
  * ???????????????????????????
  * */
 public class LogTheExceptionVisitor extends GuidelineCheckerVisitor implements GuidelineMetrics
-{
-	private static final Logger GUIDELINE_LOGGER = LoggerFacade.getGuidelinesLogger(LogTheExceptionVisitor.class);
-	
+{	
 	private Optional<Handler> handlerInScopeOptional;
 
 	public LogTheExceptionVisitor (boolean allowUnresolved)

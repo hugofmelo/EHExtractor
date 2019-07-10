@@ -71,7 +71,7 @@ public class ProjectsResolver
 	
 	private static void logFilesAndArtifacts (String projectName, ProjectFiles files, ProjectArtifacts artifacts) throws IOException
 	{
-		Logger projectLogger = LoggerFacade.getProjectLogger(Main.class, projectName);
+		Logger projectLogger = LoggerFacade.getProjectLogger(projectName);
 		
 		projectLogger.info(files.toString());
 		projectLogger.info(artifacts.toString());		

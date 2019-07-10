@@ -229,7 +229,7 @@ public class ArtifactResolver
 		}
 		catch (IOException e)
 		{
-			throw new ThinkLaterException(e);
+			throw new ThinkLaterException("Falha ao salvar dependencias", e);
 		}
 	}
 
