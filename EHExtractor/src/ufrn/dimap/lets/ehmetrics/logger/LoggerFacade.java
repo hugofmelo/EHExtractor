@@ -9,8 +9,8 @@ import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
 
 import ufrn.dimap.lets.ehmetrics.SingleLineFormatter;
-import ufrn.dimap.lets.ehmetrics.dependencyresolver.ProjectArtifacts;
-import ufrn.dimap.lets.ehmetrics.dependencyresolver.ProjectFiles;
+import ufrn.dimap.lets.ehmetrics.projectresolver.ProjectArtifacts;
+import ufrn.dimap.lets.ehmetrics.projectresolver.ProjectFiles;
 
 public class LoggerFacade
 {

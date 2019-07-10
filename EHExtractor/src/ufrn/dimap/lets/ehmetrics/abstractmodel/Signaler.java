@@ -1,10 +1,14 @@
 package ufrn.dimap.lets.ehmetrics.abstractmodel;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+
 import ufrn.dimap.lets.ehmetrics.javaparserutil.SignalerType;
 
 public class Signaler extends AbstractEHModelElement
 {
-	private Type thrownType;
+	private List<Type> thrownTypes;
 
 	private SignalerType signalerType;
 	private Handler relatedHandler; // In case of rethrow, wrapping or unwrapping, the associated handler
@@ -12,20 +16,20 @@ public class Signaler extends AbstractEHModelElement
 	public Signaler ()
 	{
 		super();
-		this.thrownType = null;
+		this.thrownTypes = new ArrayList<>();
 		this.signalerType = null;
 		
 		this.relatedHandler = null;
 	}
 
-	public Type getThrownType()
+	public List<Type> getThrownTypes()
 	{
-		return this.thrownType;
+		return this.thrownTypes;
 	}
 
-	public void setThrownType(Type thrownType)
+	public void setThrownTypes(List<Type> thrownTypes)
 	{
-		this.thrownType = thrownType;
+		this.thrownTypes = thrownTypes;
 	}
 	
 	public SignalerType getSignalerType()
@@ -49,8 +53,8 @@ public class Signaler extends AbstractEHModelElement
 	@Override
 	public String toString()
 	{
-		return this.thrownType.getQualifiedName();
+		return this.thrownTypes.stream()
+			.map(Type::getQualifiedName)
+			.collect(Collectors.joining("|"));
 	}
-
-	
 }

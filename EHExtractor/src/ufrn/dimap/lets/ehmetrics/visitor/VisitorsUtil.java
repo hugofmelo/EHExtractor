@@ -13,9 +13,14 @@ import com.github.javaparser.ast.stmt.CatchClause;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.Handler;
 import ufrn.dimap.lets.ehmetrics.javaparserutil.JavaParserUtil;
 
+/**
+ * List of auxiliar methods used by visitors.
+ * */
 public class VisitorsUtil {
 
 	private VisitorsUtil ()	{}
+	
+	
 	
 	/**
 	 * Extract CatchClauses from given Handler e from nested handlers.

@@ -81,6 +81,7 @@ public class SaveTheCauseVisitor extends GuidelineCheckerVisitor
 	 * 
 	 * Para entender as condições do guideline, ver Javadoc da classe
 	 * */
+	@Override
 	public void checkGuidelineConformance ()
 	{	
 		List<Signaler> wrappersSignalers = this.signalersOfProject.stream()

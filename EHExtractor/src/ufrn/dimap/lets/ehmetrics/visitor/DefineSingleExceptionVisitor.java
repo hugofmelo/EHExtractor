@@ -60,6 +60,7 @@ public class DefineSingleExceptionVisitor extends GuidelineCheckerVisitor
 	 * 
 	 * Para entender as condições do guideline, ver Javadoc da classe
 	 * */
+	@Override
 	public void checkGuidelineConformance ()
 	{
 		Map <Type, Long> systemExceptionSignalersToOccurrences = this.signalersOfProject.stream()

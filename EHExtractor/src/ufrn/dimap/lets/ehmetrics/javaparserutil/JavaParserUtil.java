@@ -1,7 +1,6 @@
 package ufrn.dimap.lets.ehmetrics.javaparserutil;
 
-import java.util.ArrayList;
-import java.util.Iterator;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -27,7 +26,7 @@ import com.github.javaparser.symbolsolver.javaparsermodel.declarations.JavaParse
 import com.github.javaparser.symbolsolver.javaparsermodel.declarations.JavaParserParameterDeclaration;
 import com.github.javaparser.symbolsolver.javaparsermodel.declarations.JavaParserSymbolDeclaration;
 
-import ufrn.dimap.lets.ehmetrics.analyzer.UnknownSignalerException;
+import ufrn.dimap.lets.ehmetrics.visitor.UnsupportedSignalerException;
 
 /**
  * Classe utilitária para resolver tipos de ThrowStmt's and CatchClause's.
@@ -37,31 +36,34 @@ public class JavaParserUtil {
 	private JavaParserUtil() {}
 	
 	/**
-	 * Returns a list of ClassOrInterfaceType's from a CatchClause. The resolving of the types were not yet tried.
+	 * Returns a list of ClassOrInterfaceType's from a CatchClause.
 	 * */
 	public static List<ClassOrInterfaceType> getHandledTypes ( CatchClause catchClause )
 	{
-		// output 
-		List<ClassOrInterfaceType> types = new ArrayList<>();
-		
-		// CHECK CATCH TYPE
-		// Solving "regular" catch clause
-		if ( catchClause.getParameter().getType() instanceof ClassOrInterfaceType)
+		return getClassOrInterfaceTypesFrom (catchClause.getParameter());
+	}
+	
+	/**
+	 * Returns a list of ClassOrInterfaceType's from a Parameter declaration.
+	 * */
+	public static List<ClassOrInterfaceType> getClassOrInterfaceTypesFrom ( Parameter parameter )
+	{
+		if ( parameter.getType() instanceof ClassOrInterfaceType)
 		{
-			types.add((ClassOrInterfaceType)catchClause.getParameter().getType());			
+			return Arrays.asList( parameter.getType().asClassOrInterfaceType() );			
 		}
-		// Solving multicatch clause
-		else if (catchClause.getParameter().getType() instanceof UnionType)
+		else if (parameter.getType() instanceof UnionType)
 		{
-			UnionType multiCatch = (UnionType) catchClause.getParameter().getType();
-			Iterator<ReferenceType> i = multiCatch.getElements().iterator();
-			while ( i.hasNext() )
-			{
-				types.add((ClassOrInterfaceType)i.next());
-			}
+			UnionType multiCatch = parameter.getType().asUnionType();
+			
+			return multiCatch.getElements().stream()
+				.map(ReferenceType::asClassOrInterfaceType)
+				.collect(Collectors.toList());
 		}
-
-		return types;
+		else
+		{
+			throw new IllegalStateException ("Parameter type is invalid. Run debug.");
+		}
 	}
 	
 	/**
@@ -102,17 +104,18 @@ public class JavaParserUtil {
 	 * 
 	 * @throws UnknownSignalerException when the signaled type could not be resolved.
 	 * */
-	public static ClassOrInterfaceType getThrownClassOrInterfaceType (ThrowStmt throwStatement)
+	public static List<ClassOrInterfaceType> getThrownClassOrInterfaceTypes (ThrowStmt throwStatement)
 	{
-		return getThrownClassOrInterfaceType(throwStatement.getExpression());
+		return getThrownClassOrInterfaceTypes(throwStatement.getExpression());
 	}
 	
 	/**
-	 * Auxiliar method to process the thrown Expression.
+	 * Auxiliar method to process the thrown Expression. This method is used when a Expression type could
+	 * not be resolved by JavaParser.
 	 * 
 	 * @throws UnknownSignalerException when the signaled type could not be resolved.
 	 * */
-	private static ClassOrInterfaceType getThrownClassOrInterfaceType (Expression throwExpression)
+	private static List<ClassOrInterfaceType> getThrownClassOrInterfaceTypes (Expression throwExpression)
 	{
 		if ( throwExpression instanceof NameExpr )
 		{
@@ -120,18 +123,18 @@ public class JavaParserUtil {
 			{
 				ResolvedValueDeclaration declaration = throwExpression.asNameExpr().resolve();
 
-				return findVariableType (declaration);
+				return findVariableTypes (declaration);
 			}
 			catch (UnsolvedSymbolException e)
 			{
-				throw new UnknownSignalerException ("Sinalização de NameExpr cuja declaração não foi encontrada.", throwExpression.findAncestor(ThrowStmt.class).get(), e);
+				throw new UnsupportedSignalerException("Sinalização de NameExpr cuja declaração não foi encontrada.", throwExpression.findAncestor(ThrowStmt.class).get(), e);
 			}
 		}
 		else if ( throwExpression instanceof ObjectCreationExpr )
 		{
 			ObjectCreationExpr objectCreationExp = throwExpression.asObjectCreationExpr();
 
-			return objectCreationExp.getType();
+			return Arrays.asList(objectCreationExp.getType());
 		}
 		else if (throwExpression instanceof CastExpr)
 		{
@@ -139,51 +142,50 @@ public class JavaParserUtil {
 
 			if ( castExpression.getType() instanceof ClassOrInterfaceType )
 			{
-				return castExpression.getType().asClassOrInterfaceType();
+				return Arrays.asList(castExpression.getType().asClassOrInterfaceType());
 			}
 			else
 			{
-				throw new UnknownSignalerException("Sinalização com cast cujo tipo não foi resolvido.", throwExpression.findAncestor(ThrowStmt.class).get());
+				throw new UnsupportedSignalerException("Sinalização com cast cujo tipo não foi resolvido.", throwExpression.findAncestor(ThrowStmt.class).get());
 			}
 		}
 		else if ( throwExpression instanceof MethodCallExpr )
 		{
-			// TODO Tentar resolver quando é chamada de método? Pega o tipo do retorno?
-			throw new UnknownSignalerException ("Sinalização de uma chamada de método que não pôde ter seu tipo resolvido.", throwExpression.findAncestor(ThrowStmt.class).get());
+			throw new UnsupportedSignalerException ("Sinalização de uma chamada de método que não pôde ter seu tipo resolvido.", throwExpression.findAncestor(ThrowStmt.class).get());
 		}
 		else
 		{
-			throw new UnknownSignalerException ("A sinalização não é de um dos padrões suportados.", throwExpression.findAncestor(ThrowStmt.class).get());
+			throw new UnsupportedSignalerException ("A sinalização não é de um dos padrões suportados.", throwExpression.findAncestor(ThrowStmt.class).get());
 		}
 	}
 	
 	/**
-	 * Dada uma variável no código, tenta resolver o seu tipo.
+	 * Dada uma variável no código, tenta resolver o seu tipo. Esse método é chamado quando o JP falhou na resolução.
 	 * 
 	 * Suporta variáveis de métodos, atributos de classes, parametros de métodos e parametros de catch block.
 	 * */
-	private static ClassOrInterfaceType findVariableType (ResolvedValueDeclaration resolvedValueDeclaration)
+	private static List<ClassOrInterfaceType> findVariableTypes (ResolvedValueDeclaration resolvedValueDeclaration)
 	{		
 		// Uma variável declarada no corpo de um método
 		if ( resolvedValueDeclaration instanceof JavaParserSymbolDeclaration )
 		{
 			VariableDeclarator declarator = (VariableDeclarator) ((JavaParserSymbolDeclaration)resolvedValueDeclaration).getWrappedNode();
 
-			return declarator.getType().asClassOrInterfaceType();
+			return Arrays.asList(declarator.getType().asClassOrInterfaceType());
 		}
-		// Uma variável que é parametro de um método ou em um catch block
+		// Uma variável que é parametro de um método ou de um catch block
 		else if ( resolvedValueDeclaration instanceof JavaParserParameterDeclaration )
 		{
 			Parameter parameter = ((JavaParserParameterDeclaration)resolvedValueDeclaration).getWrappedNode();
 
-			return parameter.getType().asClassOrInterfaceType();
+			return getClassOrInterfaceTypesFrom(parameter);
 		}
 		// Uma variável que é atributo da classe
 		else if ( resolvedValueDeclaration instanceof JavaParserFieldDeclaration )
 		{
 			FieldDeclaration fieldDeclaration = ((JavaParserFieldDeclaration)resolvedValueDeclaration).getWrappedNode();
 
-			return fieldDeclaration.getVariable(0).getType().asClassOrInterfaceType();
+			return Arrays.asList(fieldDeclaration.getVariable(0).getType().asClassOrInterfaceType());
 		}
 		else
 		{

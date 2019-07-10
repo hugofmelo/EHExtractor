@@ -13,7 +13,7 @@ import com.github.javaparser.ast.stmt.CatchClause;
 import com.github.javaparser.ast.stmt.ThrowStmt;
 import com.github.javaparser.ast.type.ClassOrInterfaceType;
 
-import ufrn.dimap.lets.ehmetrics.analyzer.UnknownSignalerException;
+import ufrn.dimap.lets.ehmetrics.visitor.UnsupportedSignalerException;
 
 
 /**
@@ -112,13 +112,13 @@ public class SignalerParser
 			}
 			else
 			{
-				throw new UnknownSignalerException ("A sinalização contem uma chamada de metodo não suportada.", throwStatement);
+				throw new UnsupportedSignalerException ("A sinalização contem uma chamada de metodo não suportada.", throwStatement);
 			}
 		}
 		// O statement é um (Exception) e
 		else if (throwExpression.isCastExpr())
 		{
-			throw new UnknownSignalerException("Sinalização com cast não suportada.", throwStatement);
+			throw new UnsupportedSignalerException("Sinalização com cast não suportada.", throwStatement);
 			/*
 			CastExpr castExpression = throwExpression.asCastExpr();
 
@@ -134,7 +134,7 @@ public class SignalerParser
 		}
 		else
 		{
-			throw new UnknownSignalerException ("A sinalização não é de um dos tipos suportados.", throwStatement);
+			throw new UnsupportedSignalerException ("A sinalização não é de um dos tipos suportados.", throwStatement);
 		}
 		
 		parsed = true;
@@ -155,7 +155,7 @@ public class SignalerParser
 		}
 		else
 		{
-			throw new UnknownSignalerException ("Sinalizado um SimpleName que não é rethrow.", this.throwStatement);
+			throw new UnsupportedSignalerException ("Sinalizado um SimpleName que não é rethrow.", this.throwStatement);
 		}
 	}
 	
@@ -209,7 +209,7 @@ public class SignalerParser
 			}
 			else
 			{
-				throw new UnknownSignalerException ("Sinalizado um 'e.getCause()' cujo contexto não foi resolvido.", this.throwStatement);
+				throw new UnsupportedSignalerException ("Sinalizado um 'e.getCause()' cujo contexto não foi resolvido.", this.throwStatement);
 			}
 		}
 		else

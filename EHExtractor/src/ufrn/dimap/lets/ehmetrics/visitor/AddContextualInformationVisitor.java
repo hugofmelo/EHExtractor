@@ -151,6 +151,7 @@ public class AddContextualInformationVisitor extends GuidelineCheckerVisitor
 	 * 
 	 * Para entender as condições do guideline, ver Javadoc da classe
 	 * */
+	@Override
 	public void checkGuidelineConformance ()
 	{	
 		GUIDELINE_LOGGER.info("Number of exception instantiations with additional information: " + this.exceptionsWithAdditionalContextualInformation.size());

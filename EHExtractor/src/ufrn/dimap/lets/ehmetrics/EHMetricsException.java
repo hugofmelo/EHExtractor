@@ -1,5 +1,8 @@
-package ufrn.dimap.lets.ehmetrics.analyzer;
+package ufrn.dimap.lets.ehmetrics;
 
+/**
+ * Root of all project exceptions.
+ * */
 public abstract class EHMetricsException extends RuntimeException
 {
 	private static final long serialVersionUID = 1L;

@@ -44,6 +44,7 @@ public class ThrowSpecificExceptionsVisitor extends GuidelineCheckerVisitor
 	 * 
 	 * Para entender as condições do guideline, ver Javadoc da classe
 	 * */
+	@Override
 	public void checkGuidelineConformance ()
 	{	
 		int numberOfSignalers = this.signalersOfProject.size();

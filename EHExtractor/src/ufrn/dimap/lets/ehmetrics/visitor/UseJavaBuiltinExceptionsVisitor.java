@@ -54,6 +54,7 @@ public class UseJavaBuiltinExceptionsVisitor extends GuidelineCheckerVisitor
 	 // Quantidade de sinalizadores de exceções não-genéricas Java
 	 // Quantidade de sinalizadores de exceções que herdam (direta ou indiretamente) de uma exceção não-genérica Java
 	 // Total de sinalizadores
+	@Override
 	public void checkGuidelineConformance ()
 	{	
 		int numberOfSignalers = this.signalersOfProject.size();

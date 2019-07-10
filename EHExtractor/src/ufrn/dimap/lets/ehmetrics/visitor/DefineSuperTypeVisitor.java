@@ -61,6 +61,7 @@ public class DefineSuperTypeVisitor extends GuidelineCheckerVisitor
 	 * 
 	 * Para entender as condições do guideline, ver Javadoc da classe
 	 * */
+	@Override
 	public void checkGuidelineConformance ()
 	{	
 		long numberOfSystemExceptionTypes = this.typeHierarchy.listTypes().stream()

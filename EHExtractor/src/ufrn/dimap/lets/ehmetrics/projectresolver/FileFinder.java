@@ -1,4 +1,4 @@
-package ufrn.dimap.lets.ehmetrics.dependencyresolver;
+package ufrn.dimap.lets.ehmetrics.projectresolver;
 
 import java.io.File;
 import java.util.ArrayDeque;

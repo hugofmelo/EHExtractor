@@ -113,6 +113,11 @@ public class Handler extends AbstractEHModelElement
 		{
 			newHandlingAction.setMethodName( callExpression.getNameAsString() );
 		}
+		catch (RuntimeException e)
+		{
+			newHandlingAction.setMethodName( callExpression.getNameAsString() );
+		}
+		
 		
 		return newHandlingAction;
 	}

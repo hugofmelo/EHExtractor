@@ -20,7 +20,7 @@ import ufrn.dimap.lets.ehmetrics.logger.LoggerFacade;
  * Para confirmar o guideline a seguinte heurística é usada:
  * ???????????????????????????
  * */
-public class LogTheExceptionVisitor extends GuidelineCheckerVisitor
+public class LogTheExceptionVisitor extends GuidelineCheckerVisitor implements GuidelineMetrics
 {
 	private static final Logger GUIDELINE_LOGGER = LoggerFacade.getGuidelinesLogger(LogTheExceptionVisitor.class);
 	
@@ -88,11 +88,28 @@ public class LogTheExceptionVisitor extends GuidelineCheckerVisitor
 	}
 
 	/**
-	 * Verifica se o projeto adota o guideline referenciado neste visitor.
-	 * 
-	 * Para entender as condições do guideline, ver Javadoc da classe
+	 * Returns the guideline columns names
 	 * */
-	public void checkGuidelineConformance ()
+	@Override
+	public String getGuidelineHeader ()
+	{
+		StringBuilder builder = new StringBuilder();
+		
+		builder.append("# handlers");
+		builder.append("\t");
+		builder.append("# final handlers");
+		builder.append("\t");
+		builder.append("# final handlers with logging actions");
+		builder.append("\t");
+		
+		return builder.toString();
+	}
+	
+	/**
+	 * Returns the guideline data
+	 * */
+	@Override
+	public String getGuidelineData ()
 	{
 		List<Handler> finalHandlers = this.handlersOfProject.stream()
 				.filter(Handler::isFinalHandler)
@@ -103,13 +120,24 @@ public class LogTheExceptionVisitor extends GuidelineCheckerVisitor
 				.filter(Handler::hasLoggingActions)
 				.collect(Collectors.toList());
 
+		/*
 		GUIDELINE_LOGGER.info("Number of handlers: " + this.handlersOfProject.size());
 
-		GUIDELINE_LOGGER.info("Number of handlers which resignal: " + finalHandlers.size());
+		GUIDELINE_LOGGER.info("Number of final handlers: " + finalHandlers.size());
 
 		GUIDELINE_LOGGER.info("Number of final handlers which has logging actions: " + finalHandlersWithLogHandlingActions.size());
+		*/
 
-
+		StringBuilder builder = new StringBuilder();
+		
+		builder.append(this.handlersOfProject.size());
+		builder.append("\t");
+		builder.append(finalHandlers.size());
+		builder.append("\t");
+		builder.append(finalHandlersWithLogHandlingActions.size());
+		builder.append("\t");
+		
+		return builder.toString();
 	}
 
 }

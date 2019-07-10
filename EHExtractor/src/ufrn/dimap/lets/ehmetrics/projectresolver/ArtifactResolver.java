@@ -1,4 +1,4 @@
-package ufrn.dimap.lets.ehmetrics.dependencyresolver;
+package ufrn.dimap.lets.ehmetrics.projectresolver;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -17,8 +17,8 @@ import com.github.javaparser.ast.PackageDeclaration;
 import com.google.gson.Gson;
 import com.google.gson.stream.JsonReader;
 
-import ufrn.dimap.lets.ehmetrics.ProjectsUtil;
 import ufrn.dimap.lets.ehmetrics.ThinkLaterException;
+import ufrn.dimap.lets.ehmetrics.config.Projects;
 import ufrn.dimap.lets.ehmetrics.logger.ErrorLogger;
 
 /**
@@ -34,21 +34,16 @@ public class ArtifactResolver
 	 * Processa os arquivos java para identificar os source e test dirs. E processa os arquivos jars, pom.xml e build.grade para identificar dependencias.
 	 * 
 	 * */ 
-	public static ProjectArtifacts resolve (ProjectFiles projectFiles)
+	public static ProjectArtifacts resolve (ProjectFiles projectFiles, boolean resolveDependencies)
 	{
 		ProjectArtifacts artifacts = new ProjectArtifacts(projectFiles.getProjectName());
 
 		findArtifacts(projectFiles, artifacts);
 
-		resolveDependencies(projectFiles, artifacts);
-
-		return artifacts;
-	}
-
-	public static ProjectArtifacts resolveWithoutDependencies(ProjectFiles projectFiles) {
-		ProjectArtifacts artifacts = new ProjectArtifacts(projectFiles.getProjectName());
-
-		findArtifacts(projectFiles, artifacts);
+		if (resolveDependencies)
+		{
+			resolveDependencies(projectFiles, artifacts);
+		}
 
 		return artifacts;
 	}
@@ -107,7 +102,7 @@ public class ArtifactResolver
 	private static boolean loadDependenciesFromJson(String projectName, ProjectArtifacts artifacts)
 	{
 		Gson gson = new Gson();
-		try ( JsonReader reader = new JsonReader (new FileReader(ProjectsUtil.DEPENDENCIES_ROOT+File.separator+projectName+".json")) )
+		try ( JsonReader reader = new JsonReader (new FileReader(Projects.DEPENDENCIES_ROOT+File.separator+projectName+".json")) )
 		{
 			String[] dependencies = gson.fromJson(reader, String[].class);
 
@@ -225,7 +220,7 @@ public class ArtifactResolver
 		}
 	
 
-		try (FileWriter jsonFile = new FileWriter (ProjectsUtil.DEPENDENCIES_ROOT + File.separator + projectName + ".json"))
+		try (FileWriter jsonFile = new FileWriter (Projects.DEPENDENCIES_ROOT + File.separator + projectName + ".json"))
 		{	
 			Gson gson = new Gson();
 			String dependenciesString = gson.toJson(dependencies);

@@ -77,6 +77,7 @@ public class SendToGlobalOrDefaultVisitor extends GuidelineCheckerVisitor
 	 * 
 	 * Para entender as condições do guideline, ver Javadoc da classe
 	 * */
+	@Override
 	public void checkGuidelineConformance ()
 	{
 		Map<String, Long> methodsOccurrences = this.handlersOfProject.stream()

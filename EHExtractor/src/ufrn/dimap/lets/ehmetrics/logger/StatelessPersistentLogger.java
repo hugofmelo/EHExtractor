@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
-import ufrn.dimap.lets.ehmetrics.ProjectsUtil;
+import ufrn.dimap.lets.ehmetrics.config.ProjectsUtil;
 
 // Logger sem estado de longa duração: não guarda estado E se invocado com o mesmo nome, vai fazer append dos dados.
 public class StatelessPersistentLogger

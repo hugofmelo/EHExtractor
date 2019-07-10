@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import ufrn.dimap.lets.ehmetrics.ProjectsUtil;
+import ufrn.dimap.lets.ehmetrics.config.ProjectsUtil;
 
 // ErrorLogger é um stateful logger instataneo. Ele armazena estado, mas o arquivo é criado e fechado na mesma chamada.
 public class ErrorLogger

@@ -1,11 +1,11 @@
-package ufrn.dimap.lets.ehmetrics.dependencyresolver;
+package ufrn.dimap.lets.ehmetrics.projectresolver;
 
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Classe que armazena os artefatos de um projeto Java.
+ * Cada ProjectArtifacts armazena artefatos de um projeto Java.
  * 
  * Os artefatos armazenados são .java, source dirs, test dirs e dependencias (jars)
  * */

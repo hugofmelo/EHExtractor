@@ -82,6 +82,7 @@ public class ConvertLibraryExceptionsVisitor extends GuidelineCheckerVisitor
 	 * 
 	 * Para entender as condições do guideline, ver Javadoc da classe
 	 * */
+	@Override
 	public void checkGuidelineConformance ()
 	{	
 		List<Handler> handlersOfExternalExceptions = this.handlersOfProject.stream()

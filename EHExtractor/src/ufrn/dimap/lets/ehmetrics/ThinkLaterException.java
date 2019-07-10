@@ -1,10 +1,10 @@
 package ufrn.dimap.lets.ehmetrics;
 
-public class ThinkLaterException extends RuntimeException {
+public class ThinkLaterException extends EHMetricsException {
 	
-	public ThinkLaterException (Throwable e)
+	public ThinkLaterException (String message, Throwable e)
 	{
-		super (e);
+		super (message, e);
 	}
 
 	public ThinkLaterException(String message)

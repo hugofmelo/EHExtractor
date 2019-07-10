@@ -9,6 +9,7 @@ import java.util.stream.Collectors;
 import com.github.javaparser.ast.body.ClassOrInterfaceDeclaration;
 import com.github.javaparser.ast.stmt.CatchClause;
 import com.github.javaparser.ast.stmt.ThrowStmt;
+import com.github.javaparser.ast.type.ClassOrInterfaceType;
 import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
 import com.github.javaparser.resolution.declarations.ResolvedClassDeclaration;
 import com.github.javaparser.resolution.declarations.ResolvedReferenceTypeDeclaration;
@@ -23,23 +24,19 @@ import ufrn.dimap.lets.ehmetrics.javaparserutil.JavaParserUtil;
 /**
  * Generic visitor to parse exceptional types, signalers and handlers.
  * */
-public abstract class GuidelineCheckerVisitor extends VoidVisitorAdapter<Void>
+public abstract class GuidelineCheckerVisitor extends VoidVisitorAdapter<Void> implements GuidelineMetrics
 {
+	protected File javaFile; // Java file being parsed
 	protected boolean allowUnresolved;
+	
 	protected TypeHierarchy typeHierarchy;
-
 	protected List<Signaler> signalersOfProject;
 	protected List<Handler> handlersOfProject;
-
-	protected File javaFile; // Java file being parsed
 
 	public GuidelineCheckerVisitor (boolean allowUnresolved)
 	{
 		this.allowUnresolved = allowUnresolved;
-		this.typeHierarchy = new TypeHierarchy(allowUnresolved);
-
-		this.signalersOfProject = new ArrayList<>();
-		this.handlersOfProject = new ArrayList<>();
+		this.clear();
 	}
 
 	/**
@@ -114,14 +111,17 @@ public abstract class GuidelineCheckerVisitor extends VoidVisitorAdapter<Void>
 
 		Optional <ResolvedClassDeclaration> classDeclaration = JavaParserUtil.getThrownClassDeclaration(throwStatement);
 
-		Type thrownType = null;
+		List<Type> thrownTypes = new ArrayList<>();
 		if (classDeclaration.isPresent())
 		{
-			thrownType = typeHierarchy.findOrCreateResolvedType(classDeclaration.get());
+			thrownTypes.add(typeHierarchy.findOrCreateResolvedType(classDeclaration.get()));
 		}
 		else
 		{
-			thrownType = typeHierarchy.findOrCreateType(JavaParserUtil.getThrownClassOrInterfaceType(throwStatement));
+			for ( ClassOrInterfaceType classOrInterfaceType : JavaParserUtil.getThrownClassOrInterfaceTypes(throwStatement) )
+			{
+				thrownTypes.add(typeHierarchy.findOrCreateType(classOrInterfaceType));
+			}
 		}
 
 		/* If this type already exists in the hierarchy, and it was create by its declaration, and it
@@ -130,23 +130,26 @@ public abstract class GuidelineCheckerVisitor extends VoidVisitorAdapter<Void>
 		 */
 		if (allowUnresolved)
 		{
-			if (thrownType.getClassType() == ClassType.UNRESOLVED)
-			{
-				thrownType.setClassType(ClassType.UNRESOLVED_EXCEPTION);
-			} 
+			thrownTypes.stream()
+				.filter(type -> type.getClassType() == ClassType.UNRESOLVED)
+				.forEach(type -> type.setClassType(ClassType.UNRESOLVED_EXCEPTION)); 
 		}
 		
 		// Update signaler references 
-		newSignaler.setThrownType( thrownType );
-		thrownType.addSignaler(newSignaler);
+		newSignaler.setThrownTypes( thrownTypes );
+		thrownTypes.forEach( type -> type.addSignaler(newSignaler));
 		
 		this.signalersOfProject.add(newSignaler);
 		
 		return newSignaler;
 	}
 
-	public abstract void checkGuidelineConformance ();
-
+	protected void clear ()
+	{
+		this.typeHierarchy = new TypeHierarchy(allowUnresolved);
+		this.signalersOfProject = new ArrayList<>();
+		this.handlersOfProject = new ArrayList<>();
+	}
 	
 	// GETTERS AND SETTERS **************************************
 	

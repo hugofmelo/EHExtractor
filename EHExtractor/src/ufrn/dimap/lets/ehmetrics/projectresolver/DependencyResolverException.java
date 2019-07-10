@@ -1,8 +1,10 @@
-package ufrn.dimap.lets.ehmetrics.dependencyresolver;
+package ufrn.dimap.lets.ehmetrics.projectresolver;
 
 import java.io.File;
 
-public class DependencyResolverException extends Exception
+import ufrn.dimap.lets.ehmetrics.EHMetricsException;
+
+public class DependencyResolverException extends EHMetricsException
 {
 	private static final long serialVersionUID = 1L;
 	

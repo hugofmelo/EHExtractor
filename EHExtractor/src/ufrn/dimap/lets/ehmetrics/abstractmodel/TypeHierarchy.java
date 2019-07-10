@@ -7,15 +7,14 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Optional;
-import java.util.Stack;
 
 import com.github.javaparser.ast.type.ClassOrInterfaceType;
 import com.github.javaparser.resolution.UnsolvedSymbolException;
 import com.github.javaparser.resolution.declarations.ResolvedClassDeclaration;
 import com.github.javaparser.resolution.types.ResolvedReferenceType;
 
-import ufrn.dimap.lets.ehmetrics.analyzer.UnresolvedAncestorsException;
-import ufrn.dimap.lets.ehmetrics.analyzer.UnresolvedTypeException;
+import ufrn.dimap.lets.ehmetrics.ThinkLaterException;
+import ufrn.dimap.lets.ehmetrics.visitor.UnresolvedTypeException;
 
 /**
  * Uma hierarquia de classes que é gerada duranter o parser de arquivos Java de um projeto.
@@ -68,7 +67,7 @@ public class TypeHierarchy implements Iterable<Type> {
 		{
 			type = this.findOrCreateResolvedType(classOrInterfaceType.resolve().getTypeDeclaration().asClass());
 		}
-		catch ( UnsolvedSymbolException e )
+		catch ( UnsolvedSymbolException | UnsupportedOperationException e )
 		{
 			if ( allowUnresolvedTypes )
 			{
@@ -139,7 +138,7 @@ public class TypeHierarchy implements Iterable<Type> {
 				}
 				else
 				{
-					throw new UnresolvedAncestorsException ("Ancestrais não encontrados.", classDeclaration , e);
+					throw new ThinkLaterException("Ancestrais de um tipo não encontrados.", e);
 				}
 			}
 		}

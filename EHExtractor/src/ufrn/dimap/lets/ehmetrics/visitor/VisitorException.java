@@ -1,20 +1,25 @@
-package ufrn.dimap.lets.ehmetrics.analyzer;
+package ufrn.dimap.lets.ehmetrics.visitor;
 
 import com.github.javaparser.ast.Node;
 
-public abstract class UnknownCodePatternException extends RuntimeException
+import ufrn.dimap.lets.ehmetrics.EHMetricsException;
+
+/**
+ * Type root of exceptions which happens during visiting.
+ * */
+public abstract class VisitorException extends EHMetricsException
 {
 	private static final long serialVersionUID = 1L;
 	
-	private Node node;
+	protected Node node;
 	
-	public UnknownCodePatternException (String msg, Node node)
+	public VisitorException (String msg, Node node)
 	{
 		super (msg);
 		this.node = node;
 	}
 	
-	public UnknownCodePatternException (String msg, Node node, Throwable e)
+	public VisitorException (String msg, Node node, Throwable e)
 	{
 		super (msg, e);
 		this.node = node;

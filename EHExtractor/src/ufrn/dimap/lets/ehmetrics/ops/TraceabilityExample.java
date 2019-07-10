@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
-import ufrn.dimap.lets.ehmetrics.ProjectsUtil;
+import ufrn.dimap.lets.ehmetrics.config.ProjectsUtil;
 
 public class TraceabilityExample
 {

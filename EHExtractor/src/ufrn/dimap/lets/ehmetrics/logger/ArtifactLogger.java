@@ -4,9 +4,9 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
-import ufrn.dimap.lets.ehmetrics.ProjectsUtil;
-import ufrn.dimap.lets.ehmetrics.dependencyresolver.ProjectArtifacts;
-import ufrn.dimap.lets.ehmetrics.dependencyresolver.ProjectFiles;
+import ufrn.dimap.lets.ehmetrics.config.ProjectsUtil;
+import ufrn.dimap.lets.ehmetrics.projectresolver.ProjectArtifacts;
+import ufrn.dimap.lets.ehmetrics.projectresolver.ProjectFiles;
 
 // ArtifactLogger é um stateless logger instantaneo. Ele não precisa armazenar estado e suas chamadas são autocontidas.
 public class ArtifactLogger

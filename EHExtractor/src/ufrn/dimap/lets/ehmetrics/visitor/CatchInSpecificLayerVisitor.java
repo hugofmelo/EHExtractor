@@ -102,6 +102,7 @@ public class CatchInSpecificLayerVisitor extends GuidelineCheckerVisitor
 	 * 
 	 * Para entender as condições do guideline, ver Javadoc da classe
 	 * */
+	@Override
 	public void checkGuidelineConformance ()
 	{	
 		// TODO Organizar essa saída
