@@ -11,7 +11,7 @@ public class Signaler extends AbstractEHModelElement
 	private List<Type> thrownTypes;
 
 	private SignalerType signalerType;
-	private Handler relatedHandler; // In case of rethrow, wrapping or unwrapping, the associated handler
+	private Handler relatedHandler; // In case this signaler occurs in the context of a handler
 	
 	public Signaler ()
 	{

@@ -2,13 +2,12 @@ package ufrn.dimap.lets.ehmetrics;
 
 import java.io.IOException;
 import java.util.List;
-import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import ufrn.dimap.lets.ehmetrics.analyzer.Analyzer;
 import ufrn.dimap.lets.ehmetrics.config.Guidelines;
 import ufrn.dimap.lets.ehmetrics.logger.LoggerFacade;
-import ufrn.dimap.lets.ehmetrics.projectresolver.ProjectArtifacts;
+import ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject;
 import ufrn.dimap.lets.ehmetrics.projectresolver.ProjectsResolver;
 import ufrn.dimap.lets.ehmetrics.visitor.GuidelineCheckerVisitor;
 import ufrn.dimap.lets.ehmetrics.visitor.GuidelinesFactory;
@@ -45,14 +44,16 @@ public class Main
 		}
 		catch (Exception e)
 		{
+			PROCESSING_LOGGER.fine("Aplicação encerrada com uma exceção. Ver log de erros.");
 			LoggerFacade.logError(e);
 		}
 	}
 	
 	public void executeCompleteAnalysis() throws IOException
 	{
-		// Idetifying projects paths and resolve all artifacts
-		List<ProjectArtifacts> projects = ProjectsResolver.resolveProjects();
+		// Idetifying projects paths
+		PROCESSING_LOGGER.fine("Identificando projetos para analise...");
+		List<JavaProject> projects = ProjectsResolver.findProjects();
 		
 		// Load guidelines visitors
 		List<GuidelineCheckerVisitor> guidelinesVisitors = GuidelinesFactory.loadVisitors(Guidelines.allowUnresolvedTypes);
@@ -60,14 +61,19 @@ public class Main
 		PROCESSING_LOGGER.fine("Preparando cabeçalho do arquivo de resultados...");
 		writeGuidelinesHeader(guidelinesVisitors);
 		
-		// Running the analysis - The guidelines visitors are just cleared between each project
+		// Running the analysis
 		for ( int i = 0 ; i < projects.size() ; i++ )
 		{
+			PROCESSING_LOGGER.fine("\n\n\n\n\nProcessando project [" + (i+1) + " of " + projects.size() + "]");
+			PROCESSING_LOGGER.fine("Identificando arquivos e resolvendo artefatos...");
+			projects.get(i).findFiles();
+			projects.get(i).resolveArtifacts();
+			
 			PROCESSING_LOGGER.fine("Executando análise...");
 			Analyzer.analyze(projects.get(i), guidelinesVisitors); 
 
 			PROCESSING_LOGGER.fine("Writing guidelines results...");
-			LoggerFacade.logGuideline(projects.get(i).getProjectName() + "\t");
+			LoggerFacade.logGuideline(projects.get(i).getName() + "\t");
 			for ( GuidelineCheckerVisitor visitor : guidelinesVisitors )
 			{
 				LoggerFacade.logGuideline(visitor.getGuidelineData() + "\t");
@@ -75,11 +81,13 @@ public class Main
 			
 			LoggerFacade.logGuideline("\n");
 			
-			Logger projectLogger = LoggerFacade.getProjectLogger(projects.get(i).getProjectName());
+			Logger projectLogger = LoggerFacade.getProjectLogger(projects.get(i).getName());
 			projectLogger.info("\n"+guidelinesVisitors.get(0).getTypeHierarchy().toString());
+			
+			GuidelinesFactory.clearVisitors();
 		}
 
-		PROCESSING_LOGGER.fine("Finalizada a aplicação!!");
+		PROCESSING_LOGGER.fine("\n\n\nFinalizada a aplicação!!");
 	}
 
 	private void writeGuidelinesHeader(List<GuidelineCheckerVisitor> guidelinesVisitors)
@@ -98,10 +106,14 @@ public class Main
 		LoggerFacade.logGuideline(guidelinesHeaderBuilder.toString());
 	}
 	
-	public void generateDependenciesFiles() throws IOException
+	public void generateDependenciesFiles() throws IOException, SecurityException
 	{
-		ProjectsResolver.resolveProjects();
-
-		PROCESSING_LOGGER.fine("Finalizada a aplicação!!");
+		List<JavaProject> projects = ProjectsResolver.findProjects();
+		
+		for ( JavaProject project : projects )
+		{
+			project.findFiles();
+			project.resolveArtifacts();
+		}
 	}
 }

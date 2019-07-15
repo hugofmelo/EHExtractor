@@ -1,11 +1,16 @@
-package ufrn.dimap.lets.ehmetrics.visitor;
+package ufrn.dimap.lets.ehmetrics.visitor.guideline;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
+import java.util.TreeMap;
 import java.util.logging.Logger;
+import java.util.stream.Collectors;
 
 import com.github.javaparser.ast.CompilationUnit;
 import com.github.javaparser.ast.PackageDeclaration;
@@ -14,7 +19,10 @@ import com.github.javaparser.ast.stmt.ThrowStmt;
 
 import ufrn.dimap.lets.ehmetrics.abstractmodel.Handler;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.Signaler;
+import ufrn.dimap.lets.ehmetrics.abstractmodel.Type;
+import ufrn.dimap.lets.ehmetrics.abstractmodel.TypeOrigin;
 import ufrn.dimap.lets.ehmetrics.logger.LoggerFacade;
+import ufrn.dimap.lets.ehmetrics.visitor.GuidelineCheckerVisitor;
 
 /**
  * Visitor para verificar o guideline "Catch in a specific layer".
@@ -24,8 +32,6 @@ import ufrn.dimap.lets.ehmetrics.logger.LoggerFacade;
  * */
 public class CatchInSpecificLayerVisitor extends GuidelineCheckerVisitor
 {
-	private static final Logger GUIDELINE_LOGGER = LoggerFacade.getGuidelinesLogger(CatchInSpecificLayerVisitor.class);
-	
 	private Optional<Handler> handlerInScopeOptional;
 	
 	private String packageDeclarationName;
@@ -35,8 +41,7 @@ public class CatchInSpecificLayerVisitor extends GuidelineCheckerVisitor
 	public CatchInSpecificLayerVisitor (boolean allowUnresolved)
 	{
 		super (allowUnresolved);
-		
-		this.handlersPerPackage = new HashMap<>();
+		clear();
 	}
 	
 	@Override
@@ -98,25 +103,78 @@ public class CatchInSpecificLayerVisitor extends GuidelineCheckerVisitor
 	}	
 
 	/**
-	 * Verifica se o projeto adota o guideline referenciado neste visitor.
-	 * 
-	 * Para entender as condições do guideline, ver Javadoc da classe
+	 * Returns the guideline columns names
 	 * */
 	@Override
-	public void checkGuidelineConformance ()
+	public String getGuidelineHeader ()
+	{
+		StringBuilder builder = new StringBuilder();
+		
+		builder.append("# handlers");
+		builder.append("\t");
+		builder.append("# handlers finais");
+		builder.append("\t");
+		builder.append("# pacotes");
+		builder.append("\t");
+		builder.append("# pacotes que correspondem a 90% of handlers finais");
+		builder.append("\t");
+		
+		return builder.toString();
+	}
+	
+	/**
+	 * Returns the guideline data
+	 * */
+	@Override
+	public String getGuidelineData ()
 	{	
-		// TODO Organizar essa saída
-		for ( String packageDeclaration : this.handlersPerPackage.keySet() )
-		{
-			GUIDELINE_LOGGER.info(packageDeclaration);
-			for ( Handler handler : this.handlersPerPackage.get(packageDeclaration) )
-			{
-				if ( handler.getEscapingSignalers().isEmpty() )
-				{
-					GUIDELINE_LOGGER.info("\t" + handler + ":" + handler.getFile());
-				}
+		Map <String, List<Handler>> copyMap = new HashMap<>(this.handlersPerPackage);
+		
+		copyMap.entrySet().stream()
+			.forEach( entry -> entry.getValue().removeIf(handler -> 
+				!handler.isFinalHandler()));
+		
+		Comparator <Map.Entry<String, List<Handler>>> comparator = (t1, t2) -> t2.getValue().size() - t1.getValue().size();
 				
-			}
+		// Deus sabe que tentei usar um map que ordena com custom comparator sem ser somente pela key, mas desisti
+		List<Map.Entry<String, List<Handler>>> sortedPackages = copyMap.entrySet().stream()
+				.sorted(comparator)
+				.collect(Collectors.toList());
+		
+		long totalFinalHandlers = this.handlersOfProject.stream()
+				.filter(Handler::isFinalHandler)
+				.count();
+				
+		double threshold = totalFinalHandlers * 0.9;
+		double packagesSum = 0;
+		int packageCount = 0;
+		
+		Iterator<Map.Entry<String, List<Handler>>> entriesIterator = sortedPackages.iterator();
+		
+		while ( packagesSum < threshold )
+		{
+			packagesSum += entriesIterator.next().getValue().size();
+			packageCount++;
 		}
+		
+		StringBuilder builder = new StringBuilder();
+		
+		builder.append(this.handlersOfProject.size());
+		builder.append("\t");
+		builder.append(totalFinalHandlers);
+		builder.append("\t");
+		builder.append(this.handlersPerPackage.keySet().size());
+		builder.append("\t");
+		builder.append(packageCount);
+		builder.append("\t");
+		
+		return builder.toString();
+	}
+	
+	@Override
+	protected void clear ()
+	{
+		super.clear();
+		this.handlersPerPackage = new HashMap<>();
 	}
 }

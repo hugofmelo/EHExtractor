@@ -4,6 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 import ufrn.dimap.lets.ehmetrics.config.Guidelines;
+import ufrn.dimap.lets.ehmetrics.visitor.guideline.CatchInSpecificLayerVisitor;
+import ufrn.dimap.lets.ehmetrics.visitor.guideline.ConvertLibraryExceptionsVisitor;
+import ufrn.dimap.lets.ehmetrics.visitor.guideline.ConvertToRuntimeExceptionsVisitor;
+import ufrn.dimap.lets.ehmetrics.visitor.guideline.DefineSingleExceptionVisitor;
+import ufrn.dimap.lets.ehmetrics.visitor.guideline.DefineSuperTypeVisitor;
+import ufrn.dimap.lets.ehmetrics.visitor.guideline.LogTheExceptionVisitor;
+import ufrn.dimap.lets.ehmetrics.visitor.guideline.SendToGlobalOrDefaultVisitor;
 
 public class GuidelinesFactory
 {

@@ -1,4 +1,4 @@
-package ufrn.dimap.lets.ehmetrics.visitor;
+package ufrn.dimap.lets.ehmetrics.visitor.guideline;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,6 +16,7 @@ import com.github.javaparser.resolution.UnsolvedSymbolException;
 
 import ufrn.dimap.lets.ehmetrics.javaparserutil.JavaParserUtil;
 import ufrn.dimap.lets.ehmetrics.logger.LoggerFacade;
+import ufrn.dimap.lets.ehmetrics.visitor.GuidelineCheckerVisitor;
 
 /**
  * Visitor para verificar o guideline "Protect entrypoint ".

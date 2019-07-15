@@ -1,4 +1,4 @@
-package ufrn.dimap.lets.ehmetrics.visitor;
+package ufrn.dimap.lets.ehmetrics.visitor.guideline;
 
 import java.util.List;
 import java.util.Optional;
@@ -13,6 +13,9 @@ import com.github.javaparser.ast.stmt.ThrowStmt;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.Handler;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.Signaler;
 import ufrn.dimap.lets.ehmetrics.logger.LoggerFacade;
+import ufrn.dimap.lets.ehmetrics.visitor.GuidelineCheckerVisitor;
+import ufrn.dimap.lets.ehmetrics.visitor.GuidelineMetrics;
+import ufrn.dimap.lets.ehmetrics.visitor.VisitorsUtil;
 
 /**
  * Visitor para verificar o guideline "Log the exception".

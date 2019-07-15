@@ -27,7 +27,7 @@ public class MavenResolver
 	// É necessário ter um maven instalado e o home setado.
 	// obs.: Podem haver vários arquivos pom.xml em um mesmo projeto.
 	
-	public static List<File> resolveDependencies(File pomFile) throws DependencyResolverException
+	public static List<File> resolveDependencies(File pomFile) throws ProjectResolverException
 	{
 		// Generate file where the dependency list will be downloaded
 		File outputFile;		
@@ -37,7 +37,7 @@ public class MavenResolver
 		}
 		catch (IOException e)
 		{
-			throw new DependencyResolverException("Falha no MavenResolver. Falha ao criar arquivo temporário", pomFile, e);
+			throw new ProjectResolverException("Falha no MavenResolver. Falha ao criar arquivo temporário", pomFile, e);
 		}
 		outputFile.deleteOnExit();
 		
@@ -51,7 +51,7 @@ public class MavenResolver
 		}
 		catch (IOException e)
 		{
-			throw new DependencyResolverException("Falha no MavenResolver. Falha ao processar arquivo com dependencias.", pomFile, e);
+			throw new ProjectResolverException("Falha no MavenResolver. Falha ao processar arquivo com dependencias.", pomFile, e);
 		}
 	}
 	
@@ -60,7 +60,7 @@ public class MavenResolver
 	 * 
 	 * @throws DependencyResolverException se o Maven não pôde ser executado ou se a execução resultou em erros.
 	 * */
-	private static void downloadDependencies ( File pomFile, File outputFile ) throws DependencyResolverException
+	private static void downloadDependencies ( File pomFile, File outputFile ) throws ProjectResolverException
 	{
 		InvocationRequest request = new DefaultInvocationRequest();
 		request.setPomFile( pomFile );
@@ -87,13 +87,13 @@ public class MavenResolver
 		}
 		catch (MavenInvocationException e)
 		{
-			throw new DependencyResolverException("Falha no MavenResolver. Falha ao executar maven.", pomFile, e);
+			throw new ProjectResolverException("Falha no MavenResolver. Falha ao executar maven.", pomFile, e);
 		}	
 		
 		// Verificar se houve erro
 		if (result.getExitCode() != 0)
 		{
-			throw new DependencyResolverException("Falha no MavenResolver. Maven resultou em erro.", pomFile);
+			throw new ProjectResolverException("Falha no MavenResolver. Maven resultou em erro.", pomFile);
 		}
 	}
 	

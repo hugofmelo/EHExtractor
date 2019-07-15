@@ -13,12 +13,12 @@ public class Projects
 	public static final boolean PROJECTS_ON_DEMAND = false;
 	
 	// if PROJECT_ON_DEMAND is false, set
-	public static final String PROJECTS_ROOT = "D:/Desenvolvimento/Projetos Github/";
+	public static final String PROJECTS_ROOT = "D:/Desenvolvimento/Projetos Github/A executar/";
 	
 	// if PROJECT_ON_DEMAND is true, set
 	public static final List<String> PROJECTS = Arrays.asList(
-			//"../EHExtractor"
-			"D:/Desenvolvimento/Projetos Github/allegro-hermes/"
+			"../EHExtractor"
+			//"D:/Desenvolvimento/Projetos Github/allegro-hermes/"
 			//"D:/Desenvolvimento/Projetos Github/openhab-openhab2-addons/"
 			);
 			

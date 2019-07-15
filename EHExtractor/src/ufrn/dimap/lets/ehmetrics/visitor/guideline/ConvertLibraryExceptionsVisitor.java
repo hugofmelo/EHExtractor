@@ -1,7 +1,8 @@
-package ufrn.dimap.lets.ehmetrics.visitor;
+package ufrn.dimap.lets.ehmetrics.visitor.guideline;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.function.Predicate;
 import java.util.logging.Logger;
 import java.util.stream.Collectors;
 
@@ -9,10 +10,13 @@ import com.github.javaparser.ast.CompilationUnit;
 import com.github.javaparser.ast.stmt.CatchClause;
 import com.github.javaparser.ast.stmt.ThrowStmt;
 
+import ufrn.dimap.lets.ehmetrics.abstractmodel.ClassType;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.Handler;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.Signaler;
+import ufrn.dimap.lets.ehmetrics.abstractmodel.Type;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.TypeOrigin;
 import ufrn.dimap.lets.ehmetrics.logger.LoggerFacade;
+import ufrn.dimap.lets.ehmetrics.visitor.GuidelineCheckerVisitor;
 
 /**
  * Visitor para verificar o guideline "Convert library exceptions".
@@ -23,8 +27,6 @@ import ufrn.dimap.lets.ehmetrics.logger.LoggerFacade;
  * */
 public class ConvertLibraryExceptionsVisitor extends GuidelineCheckerVisitor
 {
-	private static final Logger GUIDELINE_LOGGER = LoggerFacade.getGuidelinesLogger(ConvertLibraryExceptionsVisitor.class);
-	
 	private Optional<Handler> handlerInScopeOptional;
 
 	public ConvertLibraryExceptionsVisitor (boolean allowUnresolved)
@@ -78,45 +80,62 @@ public class ConvertLibraryExceptionsVisitor extends GuidelineCheckerVisitor
 	}	
 
 	/**
-	 * Verifica se o projeto adota o guideline referenciado neste visitor.
-	 * 
-	 * Para entender as condições do guideline, ver Javadoc da classe
+	 * Returns the guideline columns names
 	 * */
 	@Override
-	public void checkGuidelineConformance ()
+	public String getGuidelineHeader ()
+	{
+		StringBuilder builder = new StringBuilder();
+		
+		builder.append("# handlers");
+		builder.append("\t");
+		builder.append("# resignalers handlers");
+		builder.append("\t");
+		builder.append("# resignaler handlers of external exceptions");
+		builder.append("\t");
+		builder.append("# resignaler handlers of external exceptions which signal project exceptions");
+		builder.append("\t");
+		
+		return builder.toString();
+	}
+	
+	/**
+	 * Returns the guideline data
+	 * */
+	@Override
+	public String getGuidelineData ()
 	{	
-		List<Handler> handlersOfExternalExceptions = this.handlersOfProject.stream()
-			.filter ( handler -> // check if there are external exception being handled
-				handler.getExceptions().stream()
-					.anyMatch(type ->
-						type.getOrigin() == TypeOrigin.UNRESOLVED ||
-						type.getOrigin() == TypeOrigin.LIBRARY))
-			.collect (Collectors.toList());
-		
-		int numberOfHandlersOfExternalExceptions = handlersOfExternalExceptions.size();
-		GUIDELINE_LOGGER.info("Number of handlers of external exceptions: " + numberOfHandlersOfExternalExceptions);
-		
-		
-		List<Handler> handlersOfExternalExceptionsWhichResignalSomething = handlersOfExternalExceptions.stream()
-				.filter ( handler -> !handler.getEscapingSignalers().isEmpty()) // check if there are resignaled
+		List<Handler> resignalerHandlers = this.handlersOfProject.stream()
+				.filter( handler -> !handler.isFinalHandler() )
 				.collect (Collectors.toList());
-
-		int numberOfHandlersOfExternalExceptionsWhichResignalSomething = handlersOfExternalExceptionsWhichResignalSomething.size();
-		GUIDELINE_LOGGER.info("Number of handlers of external exceptions which resignal somethings: " + numberOfHandlersOfExternalExceptionsWhichResignalSomething);
-
 		
-		List<Handler> handlersOfExternalExceptionsWhichResignalExternalExceptions = handlersOfExternalExceptionsWhichResignalSomething.stream()
-				.filter ( handler -> 
-					handler.getEscapingSignalers().stream()
-						.anyMatch(signaler -> 
-							signaler.getThrownType().getOrigin() == TypeOrigin.UNRESOLVED ||
-							signaler.getThrownType().getOrigin() == TypeOrigin.LIBRARY))
-				.collect(Collectors.toList());
-
-		int numberOfHandlersOfExternalExceptionsWhichResignalExternalExceptions = handlersOfExternalExceptionsWhichResignalExternalExceptions.size();
-		GUIDELINE_LOGGER.info("Number of handlers of external exceptions which resignal external exceptions: " + numberOfHandlersOfExternalExceptionsWhichResignalExternalExceptions);
-
+		Predicate <Handler> handleExternalExceptions = handler -> handler.getExceptions().stream()
+				.anyMatch(type -> type.getOrigin() == TypeOrigin.LIBRARY || type.getOrigin() == TypeOrigin.UNRESOLVED);
 		
-		GUIDELINE_LOGGER.info("'Convert library exceptions' conformance: " + (1.0-(1.0*numberOfHandlersOfExternalExceptionsWhichResignalExternalExceptions/numberOfHandlersOfExternalExceptionsWhichResignalSomething)));
+		List<Handler> resignalerHandlersOfExternalExceptions = resignalerHandlers.stream()
+				.filter ( handleExternalExceptions )
+				.collect (Collectors.toList());
+		
+		Predicate <Signaler> throwExternalException = signaler -> 
+			signaler.getThrownTypes().stream()
+				.anyMatch(type -> type.getOrigin() == TypeOrigin.LIBRARY || type.getOrigin() == TypeOrigin.UNRESOLVED);
+		
+		List<Handler> resignalerHandlersOfExternalExceptionsWhichResignalNonExternalExceptions = resignalerHandlersOfExternalExceptions.stream()
+				.filter ( handler -> handler.getEscapingSignalers().stream()
+						.anyMatch(throwExternalException.negate() ))
+				.collect (Collectors.toList());
+				
+		StringBuilder builder = new StringBuilder();
+		
+		builder.append(this.handlersOfProject.size());
+		builder.append("\t");
+		builder.append(resignalerHandlers.size());
+		builder.append("\t");
+		builder.append(resignalerHandlersOfExternalExceptions.size());
+		builder.append("\t");
+		builder.append(resignalerHandlersOfExternalExceptionsWhichResignalNonExternalExceptions.size());
+		builder.append("\t");
+		
+		return builder.toString();
 	}
 }

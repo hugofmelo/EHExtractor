@@ -19,7 +19,7 @@ import com.google.gson.stream.JsonReader;
 
 import ufrn.dimap.lets.ehmetrics.ThinkLaterException;
 import ufrn.dimap.lets.ehmetrics.config.Projects;
-import ufrn.dimap.lets.ehmetrics.logger.ErrorLogger;
+import ufrn.dimap.lets.ehmetrics.logger.LoggerFacade;
 
 /**
  * Esta classe possui método para, a partir de um ProjectFiles, resolver os artefatos de um projeto, gerando um ProjectArtifacts.
@@ -74,9 +74,9 @@ public class ArtifactResolver
 				}
 	
 			}
-			catch ( DependencyResolverException e )
+			catch ( ProjectResolverException e )
 			{
-				ErrorLogger.addError(e.getMessage() + " File: " + e.getFile().getAbsolutePath());
+				LoggerFacade.logError(e);
 			}
 		}	
 	}
@@ -144,7 +144,7 @@ public class ArtifactResolver
 
 			if ( androidHomePath == null )
 			{
-				ErrorLogger.addError("Falha no DependencyResolver. ANDROID_HOME não foi encontrado.");
+				throw new ProjectResolverException("ANDROID_HOME não foi encontrado nas variáveis de ambiente.", projectFiles.getAndroidManifest());
 			}
 			else
 			{
@@ -154,7 +154,7 @@ public class ArtifactResolver
 				File androidJar = new File (androidHomePath + "/platforms/android-26/android.jar");
 				if ( !androidJar.exists() )
 				{
-					ErrorLogger.addError("Falha no DependencyResolver. android.jar não encontrado.");
+					throw new ProjectResolverException("Falha no DependencyResolver. android.jar não encontrado.", androidJar);
 				}
 				else
 				{
@@ -173,9 +173,9 @@ public class ArtifactResolver
 					artifacts.addDependency(dependency);
 				}
 			}
-			catch (DependencyResolverException e)
+			catch (ProjectResolverException e)
 			{
-				ErrorLogger.addMavenError(e.getMessage() + " Pom file: " + e.getFile().getAbsolutePath() + "\n");
+				LoggerFacade.logError(e);
 			}
 
 		}
@@ -198,7 +198,7 @@ public class ArtifactResolver
 					t=t.getCause();
 				}
 
-				ErrorLogger.addGradleError("Falha no GradleResolver. " + t.getMessage() + ". File: " + gradleFile.getAbsolutePath() + "\n");
+				LoggerFacade.logError(e);
 				//continue;
 			}
 		}
@@ -238,7 +238,7 @@ public class ArtifactResolver
 	 * 
 	 * Para verificar se o arquivo é valido, ele é iniciado no JavaParser. Se não for valido, o parse dará uma exceção.
 	 */
-	private static String getSourceDir(File javaFile) throws DependencyResolverException
+	private static String getSourceDir(File javaFile) throws ProjectResolverException
 	{
 		String parentDirPath = javaFile.getParent();
 		String sourceDirPath;
@@ -268,12 +268,12 @@ public class ArtifactResolver
 					}
 					else
 					{
-						throw new DependencyResolverException ("Falha em ArtifactResolver. O arquivo java não é válido.", javaFile);
+						throw new ProjectResolverException ("Falha em ArtifactResolver. O arquivo java não é válido.", javaFile);
 					}
 				}
 				else
 				{
-					throw new DependencyResolverException ("Falha em ArtifactResolver. O arquivo java não possui package declaration.", javaFile);
+					throw new ProjectResolverException ("Falha em ArtifactResolver. O arquivo java não possui package declaration.", javaFile);
 					// sourceDirPath = parentDirPath + "\\";
 				}
 
@@ -281,12 +281,12 @@ public class ArtifactResolver
 			}
 			else
 			{
-				throw new DependencyResolverException ("Falha em ArtifactResolver. O arquivo java não é válido.", javaFile);
+				throw new ProjectResolverException ("Falha em ArtifactResolver. O arquivo java não é válido.", javaFile);
 			}
 		}
 		catch (FileNotFoundException e)
 		{
-			throw new DependencyResolverException ("Falha em ArtifactResolver. Arquivo não encontrado.", javaFile, e);
+			throw new ProjectResolverException ("Falha em ArtifactResolver. Arquivo não encontrado.", javaFile, e);
 		}
 	}
 

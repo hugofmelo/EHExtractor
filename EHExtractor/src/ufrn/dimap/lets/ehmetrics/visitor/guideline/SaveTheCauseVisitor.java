@@ -1,4 +1,4 @@
-package ufrn.dimap.lets.ehmetrics.visitor;
+package ufrn.dimap.lets.ehmetrics.visitor.guideline;
 
 import java.util.List;
 import java.util.Optional;
@@ -9,24 +9,28 @@ import com.github.javaparser.ast.CompilationUnit;
 import com.github.javaparser.ast.stmt.CatchClause;
 import com.github.javaparser.ast.stmt.ThrowStmt;
 
-import ufrn.dimap.lets.ehmetrics.abstractmodel.ClassType;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.Handler;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.Signaler;
+import ufrn.dimap.lets.ehmetrics.javaparserutil.SignalerParser;
+import ufrn.dimap.lets.ehmetrics.javaparserutil.SignalerType;
 import ufrn.dimap.lets.ehmetrics.logger.LoggerFacade;
+import ufrn.dimap.lets.ehmetrics.visitor.GuidelineCheckerVisitor;
+import ufrn.dimap.lets.ehmetrics.visitor.VisitorsUtil;
 
 /**
- * Visitor para verificar o guideline "Convert to runtime exceptions".
+ * Visitor para verificar o guideline "Save the cause".
  * 
  * Para confirmar o guideline a seguinte heurística é usada:
- * De todas as exceções que são lançadas no contexto de um handler, 95% são não-checadas.
+ * 95% de todos os signalers que lançam uma exceção no contexto de algum bloco catch
+ * são do tipo wrapping.
  * */
-public class ConvertToRuntimeExceptionsVisitor extends GuidelineCheckerVisitor
+public class SaveTheCauseVisitor extends GuidelineCheckerVisitor
 {
-	private static final Logger GUIDELINE_LOGGER = LoggerFacade.getGuidelinesLogger(ConvertToRuntimeExceptionsVisitor.class);
-
-	private Optional<Handler> handlerInScopeOptional;
+	private static final Logger GUIDELINE_LOGGER = LoggerFacade.getGuidelinesLogger(SaveTheCauseVisitor.class);
 	
-	public ConvertToRuntimeExceptionsVisitor (boolean allowUnresolved)
+	private Optional<Handler> handlerInScopeOptional;
+
+	public SaveTheCauseVisitor (boolean allowUnresolved)
 	{
 		super (allowUnresolved);
 	}
@@ -35,7 +39,7 @@ public class ConvertToRuntimeExceptionsVisitor extends GuidelineCheckerVisitor
 	public void visit (CompilationUnit compilationUnit, Void arg)
 	{
 		// Forces the stack to reset. Sometimes um error when parsing precious java files could finish the visitor without reseting the stack.
-		handlerInScopeOptional = Optional.empty();  
+		handlerInScopeOptional = Optional.empty(); 
 		
         super.visit(compilationUnit, arg);
     }
@@ -44,7 +48,7 @@ public class ConvertToRuntimeExceptionsVisitor extends GuidelineCheckerVisitor
 	public void visit (CatchClause catchClause, Void arg)
 	{		
 		Handler newHandler = createHandler(catchClause);
-
+		
 		this.handlerInScopeOptional.ifPresent(handler ->
 		{
 			handler.getNestedHandlers().add(newHandler);
@@ -65,12 +69,10 @@ public class ConvertToRuntimeExceptionsVisitor extends GuidelineCheckerVisitor
 	{		
 		Signaler newSignaler = createSignaler(throwStatement);
 
-		// All handlers in context have this signaler as escaping exception
-		if (handlerInScopeOptional.isPresent())
-		{
-			handlerInScopeOptional.get().getAllHandlersInContext()
-				.forEach(handler -> handler.getEscapingSignalers().add(newSignaler));
-		}
+		SignalerParser signalerParser = new SignalerParser(throwStatement, VisitorsUtil.getCatchClausesFromHandler(handlerInScopeOptional));
+		signalerParser.parse();
+		
+		newSignaler.setSignalerType (signalerParser.getType());
 		
 		// VISIT CHILDREN
 		super.visit(throwStatement, arg);
@@ -84,17 +86,17 @@ public class ConvertToRuntimeExceptionsVisitor extends GuidelineCheckerVisitor
 	@Override
 	public void checkGuidelineConformance ()
 	{	
-		List<Signaler> signalersInHandlersContext = this.handlersOfProject.stream()
-			.flatMap ( handler -> handler.getEscapingSignalers().stream() )
+		List<Signaler> wrappersSignalers = this.signalersOfProject.stream()
+			.filter ( signaler -> signaler.getSignalerType() == SignalerType.WRAPPING)
 			.collect (Collectors.toList());
 		
-		List<Signaler> signalersInHandlersContextWhichThrowRuntimeExceptions = signalersInHandlersContext.stream()
-			.filter(signaler -> signaler.getThrownType().getClassType() == ClassType.UNCHECKED_EXCEPTION)
-			.collect(Collectors.toList());
+		List<Signaler> destructiveSignalers = this.signalersOfProject.stream()
+				.filter ( signaler -> signaler.getSignalerType() == SignalerType.DESTRUCTIVE_SIMPLE_THROW)
+				.collect (Collectors.toList());
 		
-		GUIDELINE_LOGGER.info("Number of signalers in handlers context: " + signalersInHandlersContext.size());
-		GUIDELINE_LOGGER.info("Number of signalers in handlers context which throw runtime exceptions: " + signalersInHandlersContextWhichThrowRuntimeExceptions.size());
+		GUIDELINE_LOGGER.info("Number of re-signalers of wrapping type: " + wrappersSignalers.size());
+		GUIDELINE_LOGGER.info("Number of destructive re-signalers: " + destructiveSignalers.size());
 		
-		GUIDELINE_LOGGER.info("'Convert to runtime exception' conformance: " + 1.0*signalersInHandlersContextWhichThrowRuntimeExceptions.size() / signalersInHandlersContext.size());
+		GUIDELINE_LOGGER.info("'Save the cause' conformance: " + 1.0*wrappersSignalers.size() / (wrappersSignalers.size()+destructiveSignalers.size()));
 	}
 }

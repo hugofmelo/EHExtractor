@@ -44,7 +44,7 @@ public class LoggerFacade
 			return projectLogger;
 		}
 		
-		projectHandler = new FileHandler (projectName + ".log");
+		projectHandler = new FileHandler ("log/"+projectName + ".log");
 		projectHandler.setLevel(Level.INFO);
 		projectHandler.setFormatter(new SingleLineFormatter());
 		projectLogger = Logger.getLogger(projectName);

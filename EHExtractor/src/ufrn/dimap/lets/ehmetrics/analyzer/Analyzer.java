@@ -4,7 +4,6 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.List;
-import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import com.github.javaparser.JavaParser;
@@ -19,7 +18,7 @@ import com.github.javaparser.symbolsolver.resolution.typesolvers.ReflectionTypeS
 
 import javassist.NotFoundException;
 import ufrn.dimap.lets.ehmetrics.logger.LoggerFacade;
-import ufrn.dimap.lets.ehmetrics.projectresolver.ProjectArtifacts;
+import ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject;
 import ufrn.dimap.lets.ehmetrics.visitor.GuidelineCheckerVisitor;
 import ufrn.dimap.lets.ehmetrics.visitor.UnsupportedSignalerException;
 import ufrn.dimap.lets.ehmetrics.visitor.VisitorException;
@@ -37,18 +36,18 @@ public class Analyzer
 	/**
 	 * Analyze one Java project using the given visitors. The visitors stores the results.
 	 * */
-	public static void analyze(ProjectArtifacts artifacts, List <GuidelineCheckerVisitor> visitors) throws FileNotFoundException
+	public static void analyze(JavaProject javaProject, List <GuidelineCheckerVisitor> visitors) throws FileNotFoundException
 	{
 		JavaParserFacade.clearInstances();
-		CombinedTypeSolver typeSolver = Analyzer.configSolver(artifacts);
+		CombinedTypeSolver typeSolver = Analyzer.configSolver(javaProject);
 		JavaSymbolSolver symbolSolver = new JavaSymbolSolver(typeSolver);
 		JavaParser parser = new JavaParser();
 		parser.getParserConfiguration().setSymbolResolver(symbolSolver);
 
-		int fileCount = 1, totalFiles = artifacts.getJavaFiles().size();
-		for ( File javaFile : artifacts.getJavaFiles() )
+		int fileCount = 1, totalFiles = javaProject.getFilesToParse().size();
+		for ( File javaFile : javaProject.getFilesToParse() )
 		{
-			PROCESSING_LOGGER.fine(artifacts.getProjectName() + " " + "[" + fileCount++ + " of " + totalFiles + "] - " + javaFile.getAbsolutePath());
+			PROCESSING_LOGGER.fine(javaProject.getName() + " " + "[" + fileCount++ + " of " + totalFiles + "] - " + javaFile.getAbsolutePath());
 			
 			try
 			{
@@ -62,30 +61,30 @@ public class Analyzer
 			}
 			catch (UnsupportedSignalerException e)
 			{
-				LoggerFacade.logAnalysisError(artifacts.getProjectName(), javaFile, e);
+				LoggerFacade.logAnalysisError(javaProject.getName(), javaFile, e);
 			}
 			catch (VisitorException e)
 			{
-				LoggerFacade.logAnalysisError(artifacts.getProjectName(), javaFile, e);
+				LoggerFacade.logAnalysisError(javaProject.getName(), javaFile, e);
 			}
 		}
 	}
 
-	private static CombinedTypeSolver configSolver(ProjectArtifacts artifacts)
+	private static CombinedTypeSolver configSolver(JavaProject javaProject)
 	{
 		CombinedTypeSolver solver = new CombinedTypeSolver();
 
 		// Reflection OR android solver
-		solver.add(Analyzer.getAndroidOrReflectionSolver(artifacts));
+		solver.add(Analyzer.getAndroidOrReflectionSolver(javaProject));
 
 		// Sources solvers
-		for ( File sourceDir : artifacts.getSourceDirs() )
+		for ( File sourceDir : javaProject.getSourceDirs() )
 		{
 			solver.add( new JavaParserTypeSolver(sourceDir) );
 		}
 
 		// Dependencies solvers
-		for ( File dependencyFile : artifacts.getDependencies() )
+		for ( File dependencyFile : javaProject.getDependencies() )
 		{
 			try
 			{
@@ -95,7 +94,7 @@ public class Analyzer
 			{
 				if ( e.getCause() instanceof NotFoundException )
 				{
-					LoggerFacade.logAnalysisError(artifacts.getProjectName(), dependencyFile, e);
+					LoggerFacade.logAnalysisError(javaProject.getName(), dependencyFile, e);
 				}
 				else
 				{
@@ -104,18 +103,18 @@ public class Analyzer
 			}
 			catch (IOException e)
 			{
-				LoggerFacade.logAnalysisError(artifacts.getProjectName(), dependencyFile, e);		
+				LoggerFacade.logAnalysisError(javaProject.getName(), dependencyFile, e);		
 			}
 		}
 
 		return solver;
 	}
 
-	private static TypeSolver getAndroidOrReflectionSolver (ProjectArtifacts artifacts)
+	private static TypeSolver getAndroidOrReflectionSolver (JavaProject javaProject)
 	{
 		TypeSolver solver = null;
 
-		if ( artifacts.getAndroidJar() == null )
+		if ( !javaProject.isAndroidProject() )
 		{
 			solver = new ReflectionTypeSolver();
 		}
@@ -123,13 +122,13 @@ public class Analyzer
 		{
 			try
 			{
-				solver = new JarTypeSolver(artifacts.getAndroidJar().getAbsolutePath());
+				solver = new JarTypeSolver(javaProject.getAndroidJar().getAbsolutePath());
 			}
 			catch (RuntimeException e)
 			{
 				if ( e.getCause() instanceof NotFoundException )
 				{
-					LoggerFacade.logAnalysisError(artifacts.getProjectName(), artifacts.getAndroidJar(), e);
+					LoggerFacade.logAnalysisError(javaProject.getName(), javaProject.getAndroidJar(), e);
 				}
 				else
 				{
@@ -138,7 +137,7 @@ public class Analyzer
 			}
 			catch (IOException e)
 			{
-				LoggerFacade.logAnalysisError(artifacts.getProjectName(), artifacts.getAndroidJar(), e);		
+				LoggerFacade.logAnalysisError(javaProject.getName(), javaProject.getAndroidJar(), e);		
 			}
 		}
 

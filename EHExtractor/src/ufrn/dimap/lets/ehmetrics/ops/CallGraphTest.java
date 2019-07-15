@@ -29,18 +29,37 @@ public class CallGraphTest {
 		}
 		catch (UnsolvedSymbolException eee)
 		{
+			//resolveException2 (eee);
 			try
 			{
 				a.m();
 			}
 			catch (Exception e2)
 			{
-				//e2.printStackTrace();
-				throw new Mariama2();
+				UnsolvedSymbolException e = (UnsolvedSymbolException) e2;
+				resolveException2 (e);
+				resolveException2 (e);
+				resolveException2 (e);
+				resolveException2 (e);
+				resolveException2 (e);
+				resolveException (e2);
+				resolveException (e2);
+				resolveException (e2);
+				
 			}
 		}
 	}
 	
+	private void resolveException2(UnsolvedSymbolException eee) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private void resolveException(Exception e2) {
+		// TODO Auto-generated method stub
+		
+	}
+
 	private void method2 () throws MavenInvocationException
 	{
 		B a = new B();

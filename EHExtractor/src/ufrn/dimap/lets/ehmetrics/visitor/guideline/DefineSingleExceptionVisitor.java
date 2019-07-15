@@ -1,4 +1,4 @@
-package ufrn.dimap.lets.ehmetrics.visitor;
+package ufrn.dimap.lets.ehmetrics.visitor.guideline;
 
 import java.util.Comparator;
 import java.util.List;
@@ -10,6 +10,7 @@ import com.github.javaparser.ast.stmt.ThrowStmt;
 
 import ufrn.dimap.lets.ehmetrics.abstractmodel.Type;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.TypeOrigin;
+import ufrn.dimap.lets.ehmetrics.visitor.GuidelineCheckerVisitor;
 
 /**
  * Visitor para verificar o guideline "Define a single exception".

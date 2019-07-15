@@ -1,6 +1,6 @@
-Prioridade 0: criar um objeto de saída de cada guideline
-Prioridade 0: rodar guidelines em projetos do primeiro survey
-Prioridade 1: organizar os outputs dos guidelines
+Prioridade 0: Criar issue no JP perguntando se tem como resolver a classe de um método sem resolver todos os argumentos.
+Prioridade 0: Ajustar comentários das classes guidelines visitors para se adequar à pesquisa
+Prioridade 1: resolver os TODOs no código
 Prioridade 2: Revisar todo o código, linha a linha, verificando como usar optional (abolir uso de null) e streams
 Prioridade 3: Revisar todo o código, linha a linha, verificando como usar parallelstreams
 DONE Prioridade 4: Mudar o Handler para ter handlers nested?
@@ -13,3 +13,4 @@ Nota: o EHExtractor não suporta arquivos java sem pacote. A ferramenta descarta 
 Nota: o JavaParser não resolve anonymous inner nested classes. Quando ocorrem em um arquivo, o arquivo é removido da análise.
 Nota: É preciso instalar o maven, gradle, android studio, etc, a depender do que o sistema analisado precisa.
 Nota: É considerado que qualquer dependencia em jars é externa ao sistema (library).
+Nota: Na resolução de tipos em chamadas de método, se qualquer argumento não for resolvido, o JP não identifica a classe, mesmo que ela seja do projeto.
