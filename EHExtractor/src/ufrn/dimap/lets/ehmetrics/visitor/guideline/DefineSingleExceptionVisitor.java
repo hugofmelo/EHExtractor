@@ -52,14 +52,15 @@ public class DefineSingleExceptionVisitor extends AbstractGuidelineVisitor
 				.sorted(comparatorOfTypes_signalersSizeDesc)
 				.collect(Collectors.toList());
 		
-		long totalSystemSignalers = systemExceptions.stream()
-				.flatMap( type -> type.getSignalers().stream() )
-				.count();
-		
 		String exceptionsPerSignalersCount = systemExceptions.stream()
 				.map(type -> type.getSignalers().size())
 				.map(Object::toString)
 				.collect(Collectors.joining(" "));
+		
+		if (exceptionsPerSignalersCount.equals(""))
+		{
+			exceptionsPerSignalersCount = "0";
+		}
 		
 		StringBuilder builder = new StringBuilder();
 		

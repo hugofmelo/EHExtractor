@@ -103,6 +103,11 @@ public class CatchInSpecificLayerVisitor extends AbstractGuidelineVisitor
 			.map(Object::toString)
 			.collect(Collectors.joining(" "));
 		
+		if (finalHandlersPerPackageCount.equals(""))
+		{
+			finalHandlersPerPackageCount = "0";
+		}
+		
 		builder.append(this.baseVisitor.getHandlers().size());
 		builder.append("\t");
 		builder.append(totalFinalHandlers);

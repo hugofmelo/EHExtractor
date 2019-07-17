@@ -179,6 +179,11 @@ public class SendToGlobalOrDefaultVisitor extends AbstractGuidelineVisitor
 				.map(Object::toString)
 				.collect(Collectors.joining(" "));
 		
+		if (handlersPerDedicatedHandlersCount.equals(""))
+		{
+			handlersPerDedicatedHandlersCount = "0";
+		}
+		
 		StringBuilder builder = new StringBuilder();
 		
 		builder.append(this.baseVisitor.getHandlers().size());

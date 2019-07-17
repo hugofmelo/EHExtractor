@@ -57,6 +57,11 @@ public class DefineSuperTypeVisitor extends AbstractGuidelineVisitor
 				.map(Object::toString)
 				.collect(Collectors.joining(" "));
 		
+		if (typesPerSubtypesCount.equals(""))
+		{
+			typesPerSubtypesCount = "0";
+		}
+		
 		builder.append(projectTypes.size());
 		builder.append("\t");
 		builder.append(typesPerSubtypesCount);
