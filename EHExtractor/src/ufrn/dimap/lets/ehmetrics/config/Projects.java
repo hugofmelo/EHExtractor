@@ -10,7 +10,7 @@ public class Projects
 {
 	// DIRECTORIES *****************************
 	
-	public static final boolean PROJECTS_ON_DEMAND = false;
+	public static final boolean PROJECTS_ON_DEMAND = true;
 	
 	// if PROJECT_ON_DEMAND is false, set
 	public static final String PROJECTS_ROOT = "D:/Desenvolvimento/Projetos Github/A executar/";

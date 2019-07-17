@@ -8,6 +8,7 @@ import java.util.logging.Logger;
 
 import com.github.javaparser.JavaParser;
 import com.github.javaparser.ast.CompilationUnit;
+import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
 import com.github.javaparser.symbolsolver.JavaSymbolSolver;
 import com.github.javaparser.symbolsolver.javaparsermodel.JavaParserFacade;
 import com.github.javaparser.symbolsolver.model.resolution.TypeSolver;
@@ -19,7 +20,6 @@ import com.github.javaparser.symbolsolver.resolution.typesolvers.ReflectionTypeS
 import javassist.NotFoundException;
 import ufrn.dimap.lets.ehmetrics.logger.LoggerFacade;
 import ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject;
-import ufrn.dimap.lets.ehmetrics.visitor.GuidelineCheckerVisitor;
 import ufrn.dimap.lets.ehmetrics.visitor.UnsupportedSignalerException;
 import ufrn.dimap.lets.ehmetrics.visitor.VisitorException;
 
@@ -36,7 +36,7 @@ public class Analyzer
 	/**
 	 * Analyze one Java project using the given visitors. The visitors stores the results.
 	 * */
-	public static void analyze(JavaProject javaProject, List <GuidelineCheckerVisitor> visitors) throws FileNotFoundException
+	public static void analyze(JavaProject javaProject, List <VoidVisitorAdapter<Void>> visitors) throws FileNotFoundException
 	{
 		JavaParserFacade.clearInstances();
 		CombinedTypeSolver typeSolver = Analyzer.configSolver(javaProject);
@@ -53,9 +53,9 @@ public class Analyzer
 			{
 				CompilationUnit compUnit = parser.parse(javaFile).getResult().get();
 
-				for ( GuidelineCheckerVisitor visitor : visitors )
+				for ( VoidVisitorAdapter<Void> visitor : visitors )
 				{
-					visitor.setJavaFile (javaFile);
+					//visitor.setJavaFile (javaFile);
 					compUnit.accept(visitor, null);
 				}
 			}

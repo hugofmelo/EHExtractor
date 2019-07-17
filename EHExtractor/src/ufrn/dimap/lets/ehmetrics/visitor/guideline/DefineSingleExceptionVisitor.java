@@ -4,13 +4,10 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import com.github.javaparser.ast.body.ClassOrInterfaceDeclaration;
-import com.github.javaparser.ast.stmt.CatchClause;
-import com.github.javaparser.ast.stmt.ThrowStmt;
-
 import ufrn.dimap.lets.ehmetrics.abstractmodel.Type;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.TypeOrigin;
-import ufrn.dimap.lets.ehmetrics.visitor.GuidelineCheckerVisitor;
+import ufrn.dimap.lets.ehmetrics.visitor.AbstractGuidelineVisitor;
+import ufrn.dimap.lets.ehmetrics.visitor.BaseGuidelineVisitor;
 
 /**
  * Visitor para verificar o guideline "Define a single exception".
@@ -18,38 +15,11 @@ import ufrn.dimap.lets.ehmetrics.visitor.GuidelineCheckerVisitor;
  * Para confirmar o guideline a seguinte heurística é usada:
  * 95% de todas as sinalizações de exceções da aplicação são de uma mesma exceção
  * */
-public class DefineSingleExceptionVisitor extends GuidelineCheckerVisitor
+public class DefineSingleExceptionVisitor extends AbstractGuidelineVisitor
 {
-	public DefineSingleExceptionVisitor (boolean allowUnresolved)
+	public DefineSingleExceptionVisitor (BaseGuidelineVisitor baseVisitor, boolean allowUnresolved)
 	{
-		super(allowUnresolved);
-	}
-
-	@Override
-	public void visit (ClassOrInterfaceDeclaration classOrInterfaceDeclaration, Void arg)
-	{		
-		this.createTypeFromClassDeclaration(classOrInterfaceDeclaration);
-		
-		//VISIT CHILDREN
-		super.visit(classOrInterfaceDeclaration, arg);
-	}
-
-	@Override
-	public void visit (CatchClause catchClause, Void arg)
-	{		
-		this.createHandler(catchClause);
-		
-		// VISIT CHILDREN
-		super.visit(catchClause, arg);
-	}
-
-	@Override
-	public void visit (ThrowStmt throwStatement, Void arg)
-	{		
-		this.createSignaler(throwStatement);
-		
-		// VISIT CHILDREN
-		super.visit(throwStatement, arg);
+		super(baseVisitor, allowUnresolved);
 	}
 	
 	/**
@@ -62,9 +32,7 @@ public class DefineSingleExceptionVisitor extends GuidelineCheckerVisitor
 		
 		builder.append("# project exceptions");
 		builder.append("\t");
-		builder.append("# signalers of project exception");
-		builder.append("\t");
-		builder.append("# exceptions which signal 90% of signalers");
+		builder.append("# signalers of project exceptions");
 		builder.append("\t");
 		
 		return builder.toString();
@@ -78,35 +46,26 @@ public class DefineSingleExceptionVisitor extends GuidelineCheckerVisitor
 	{	
 		Comparator <Type> comparatorOfTypes_signalersSizeDesc = (t1, t2) -> t2.getSignalers().size() - t1.getSignalers().size();
 		
-		List<Type> systemExceptions = this.typeHierarchy.listTypes().stream()
+		List<Type> systemExceptions = this.baseVisitor.getTypes().stream()
 				.filter(type -> type.getOrigin() == TypeOrigin.SYSTEM)
 				.filter(Type::isException)
 				.sorted(comparatorOfTypes_signalersSizeDesc)
 				.collect(Collectors.toList());
 		
-		long totalSignalersOfSystemExceptions = systemExceptions.stream()
+		long totalSystemSignalers = systemExceptions.stream()
+				.flatMap( type -> type.getSignalers().stream() )
+				.count();
+		
+		String exceptionsPerSignalersCount = systemExceptions.stream()
 				.map(type -> type.getSignalers().size())
-				.mapToInt(Integer::intValue)
-				.sum();
-				
-		double threshold = totalSignalersOfSystemExceptions * 0.9;
-		double signalersSum = 0;
-		int typesCount = 0;
-		
-		while ( signalersSum < threshold )
-		{
-			signalersSum += systemExceptions.get(typesCount).getSignalers().size();
-			typesCount++;
-		}
-		
+				.map(Object::toString)
+				.collect(Collectors.joining(" "));
 		
 		StringBuilder builder = new StringBuilder();
 		
 		builder.append(systemExceptions.size());
 		builder.append("\t");
-		builder.append(totalSignalersOfSystemExceptions);
-		builder.append("\t");
-		builder.append(typesCount);
+		builder.append(exceptionsPerSignalersCount);
 		builder.append("\t");
 		
 		return builder.toString();

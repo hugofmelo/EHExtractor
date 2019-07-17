@@ -2,6 +2,7 @@ package ufrn.dimap.lets.ehmetrics.abstractmodel;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 import ufrn.dimap.lets.ehmetrics.javaparserutil.SignalerType;
@@ -11,7 +12,7 @@ public class Signaler extends AbstractEHModelElement
 	private List<Type> thrownTypes;
 
 	private SignalerType signalerType;
-	private Handler relatedHandler; // In case this signaler occurs in the context of a handler
+	private Optional<Handler> relatedHandler; // In case this signaler occurs in the context of a handler
 	
 	public Signaler ()
 	{
@@ -19,7 +20,7 @@ public class Signaler extends AbstractEHModelElement
 		this.thrownTypes = new ArrayList<>();
 		this.signalerType = null;
 		
-		this.relatedHandler = null;
+		this.relatedHandler = Optional.empty();
 	}
 
 	public List<Type> getThrownTypes()
@@ -42,11 +43,11 @@ public class Signaler extends AbstractEHModelElement
 		this.signalerType = signalerType;
 	}
 	
-	public Handler getRelatedHandler() {
+	public Optional<Handler> getRelatedHandler() {
 		return relatedHandler;
 	}
 
-	public void setRelatedHandler(Handler relatedHandler) {
+	public void setRelatedHandler(Optional<Handler> relatedHandler) {
 		this.relatedHandler = relatedHandler;
 	}
 	

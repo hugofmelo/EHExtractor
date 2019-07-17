@@ -6,13 +6,17 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
+import com.github.javaparser.ast.CompilationUnit;
 import com.github.javaparser.ast.body.ClassOrInterfaceDeclaration;
 import com.github.javaparser.ast.stmt.CatchClause;
 import com.github.javaparser.ast.stmt.ThrowStmt;
 import com.github.javaparser.ast.type.ClassOrInterfaceType;
+import com.github.javaparser.ast.visitor.ObjectIdentityEqualsVisitor;
+import com.github.javaparser.ast.visitor.ObjectIdentityHashCodeVisitor;
 import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
 import com.github.javaparser.resolution.declarations.ResolvedClassDeclaration;
 import com.github.javaparser.resolution.declarations.ResolvedReferenceTypeDeclaration;
+import com.github.javaparser.utils.VisitorList;
 
 import ufrn.dimap.lets.ehmetrics.abstractmodel.ClassType;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.Handler;
@@ -24,28 +28,111 @@ import ufrn.dimap.lets.ehmetrics.javaparserutil.JavaParserUtil;
 /**
  * Generic visitor to parse exceptional types, signalers and handlers.
  * */
-public abstract class GuidelineCheckerVisitor extends VoidVisitorAdapter<Void> implements GuidelineMetrics
+public class BaseGuidelineVisitor extends VoidVisitorAdapter<Void>
 {
 	protected File javaFile; // Java file being parsed
 	protected boolean allowUnresolved;
 	
 	protected TypeHierarchy typeHierarchy;
+	
+	// Lista auxiliar para controlar os throws que existem na lista de signalers.
+	private VisitorList<ThrowStmt> throwsOfProject; 
 	protected List<Signaler> signalersOfProject;
+	
+	// Lista auxiliar para controlar os catch clauses que existem na lista de handlers.
+	private VisitorList<CatchClause> catchesOfProject; 
 	protected List<Handler> handlersOfProject;
 
-	public GuidelineCheckerVisitor (boolean allowUnresolved)
+	private Optional<Handler> handlerInScopeOptional;
+	
+	public BaseGuidelineVisitor (boolean allowUnresolved)
 	{
 		this.allowUnresolved = allowUnresolved;
-		this.clear();
+		
+		this.typeHierarchy = new TypeHierarchy(allowUnresolved);
+		
+		this.throwsOfProject = new VisitorList<>(new ObjectIdentityHashCodeVisitor(), new ObjectIdentityEqualsVisitor());
+		this.signalersOfProject = new ArrayList<>();
+		
+		this.catchesOfProject = new VisitorList<>(new ObjectIdentityHashCodeVisitor(), new ObjectIdentityEqualsVisitor());
+		this.handlersOfProject = new ArrayList<>();
+		
+		this.handlerInScopeOptional = Optional.empty();
 	}
 
+	@Override
+	public void visit (CompilationUnit compilationUnit, Void arg)
+	{		
+		handlerInScopeOptional = Optional.empty();
+
+		super.visit(compilationUnit, arg);
+	}	
+	
+	@Override
+	public void visit (ClassOrInterfaceDeclaration classOrInterfaceDeclaration, Void arg)
+	{		
+		this.createTypeFromClassDeclaration(classOrInterfaceDeclaration);
+		
+		//VISIT CHILDREN
+		super.visit(classOrInterfaceDeclaration, arg);
+	}
+
+	@Override
+	public void visit (CatchClause catchClause, Void arg)
+	{		
+		Handler newHandler = this.createHandler(catchClause);
+		this.catchesOfProject.add(catchClause);
+		
+		this.handlerInScopeOptional.ifPresent(handler ->
+		{
+			handler.getNestedHandlers().add(newHandler);
+			newHandler.setParentHandler(handler);
+		});
+
+		this.handlerInScopeOptional = Optional.of(newHandler);
+
+
+		// VISIT CHILDREN
+		super.visit(catchClause, arg);
+
+		this.handlerInScopeOptional = this.handlerInScopeOptional.get().getParentHandler();
+	}
+
+	@Override
+	public void visit (ThrowStmt throwStatement, Void arg)
+	{		
+		try
+		{
+			Signaler newSignaler = this.createSignaler(throwStatement);
+			this.throwsOfProject.add(throwStatement);
+			
+			// All handlers in context have this signaler as escaping exception
+			if (handlerInScopeOptional.isPresent())
+			{
+				handlerInScopeOptional.get().getAllHandlersInContext()
+						.forEach(handler -> handler.getEscapingSignalers().add(newSignaler));
+
+				newSignaler.setRelatedHandler(handlerInScopeOptional);
+			}
+			
+			// VISIT CHILDREN
+			super.visit(throwStatement, arg);
+		}
+		catch (UnsupportedSignalerException e)
+		{
+			// Dont visit further
+			// TODO log? Rethrow?
+			return;
+		}		
+	}
+	
 	/**
 	 * Auxiliar method to process the a ClassOrInterfaceDeclaration and create a new type in the hierarchy
 	 * if its a class (not a interface).
 	 * 
 	 * @return a type if the input declaration is a class declaration, or an empty optional otherwise
 	 * */
-	protected Optional<Type> createTypeFromClassDeclaration(ClassOrInterfaceDeclaration classOrInterfaceDeclaration)
+	private Optional<Type> createTypeFromClassDeclaration(ClassOrInterfaceDeclaration classOrInterfaceDeclaration)
 	{
 		ResolvedReferenceTypeDeclaration referenceTypeDeclaration = classOrInterfaceDeclaration.resolve();
 
@@ -66,12 +153,11 @@ public abstract class GuidelineCheckerVisitor extends VoidVisitorAdapter<Void> i
 	/**
 	 * Auxiliar method to process a CatchClause, adding the caught types in the hierarchy and creating a new Handler in the visitor.
 	 * */
-	protected Handler createHandler(CatchClause catchClause)
+	private Handler createHandler(CatchClause catchClause)
 	{
 		Handler newHandler = new Handler();
 		newHandler.setFile(javaFile);
 		newHandler.setNode(catchClause);
-
 
 		List<Type> types = JavaParserUtil.getHandledTypes(catchClause).stream()
 				.map(typeHierarchy::findOrCreateType)
@@ -103,7 +189,7 @@ public abstract class GuidelineCheckerVisitor extends VoidVisitorAdapter<Void> i
 	/**
 	 * Auxiliar method to process the ThrowStatement, adding the thrown type in the hierarchy and creating a new Signaler in the model.
 	 * */
-	protected Signaler createSignaler(ThrowStmt throwStatement)
+	private Signaler createSignaler(ThrowStmt throwStatement)
 	{
 		Signaler newSignaler = new Signaler();
 		newSignaler.setFile(javaFile);
@@ -143,13 +229,6 @@ public abstract class GuidelineCheckerVisitor extends VoidVisitorAdapter<Void> i
 		
 		return newSignaler;
 	}
-
-	protected void clear ()
-	{
-		this.typeHierarchy = new TypeHierarchy(allowUnresolved);
-		this.signalersOfProject = new ArrayList<>();
-		this.handlersOfProject = new ArrayList<>();
-	}
 	
 	// GETTERS AND SETTERS **************************************
 	
@@ -161,5 +240,44 @@ public abstract class GuidelineCheckerVisitor extends VoidVisitorAdapter<Void> i
 	public void setJavaFile (File javaFile)
 	{
 		this.javaFile = javaFile;
+	}
+
+	public Handler findHandler(CatchClause catchClause)
+	{
+		return this.handlersOfProject.get(this.catchesOfProject.indexOf(catchClause));
+	}
+	
+	/**
+	 * Retorna um signaler que já deve ter sido parseado. Pode retornar Optional.empty caso o Signaler
+	 * para este throwStatement não tenha sido adicionado, o que acontece quando ele é de um padrão não
+	 * suportado.
+	 * */
+	public Optional<Signaler> findSignaler(ThrowStmt throwStatement)
+	{
+		int index = this.throwsOfProject.indexOf(throwStatement);
+		
+		if (index != -1)
+		{
+			return Optional.of(this.signalersOfProject.get(index));
+		}
+		else
+		{
+			return Optional.empty();
+		}
+	}
+
+	public List<Type> getTypes()
+	{
+		return this.typeHierarchy.listTypes();
+	}
+	
+	public List<Handler> getHandlers()
+	{
+		return this.handlersOfProject;
+	}
+	
+	public List<Signaler> getSignalers()
+	{
+		return this.signalersOfProject;
 	}
 }

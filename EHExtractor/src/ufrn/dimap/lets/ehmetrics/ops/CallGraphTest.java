@@ -5,7 +5,10 @@ import java.util.logging.Logger;
 
 import org.apache.maven.shared.invoker.MavenInvocationException;
 
+import com.github.javaparser.ast.Node;
+import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
 import com.github.javaparser.resolution.UnsolvedSymbolException;
+import com.github.javaparser.symbolsolver.JavaSymbolSolver;
 
 public class CallGraphTest {
 
@@ -25,38 +28,27 @@ public class CallGraphTest {
 		B a = new B();
 		try
 		{
-			a.m(new UnsolvedSymbolException("sdfsdf"));
+			System.out.println("");
 		}
-		catch (UnsolvedSymbolException eee)
+		catch (Exception eee)
 		{
-			//resolveException2 (eee);
-			try
-			{
-				a.m();
-			}
-			catch (Exception e2)
-			{
-				UnsolvedSymbolException e = (UnsolvedSymbolException) e2;
-				resolveException2 (e);
-				resolveException2 (e);
-				resolveException2 (e);
-				resolveException2 (e);
-				resolveException2 (e);
-				resolveException (e2);
-				resolveException (e2);
-				resolveException (e2);
-				
-			}
+			JavaSymbolSolver jss = new JavaSymbolSolver(null); 
+			method(eee, jss);
 		}
 	}
 	
-	private void resolveException2(UnsolvedSymbolException eee) {
+	
+	
+	private void method(Exception eee, JavaSymbolSolver javaSymbolSolver) {
 		// TODO Auto-generated method stub
 		
 	}
 
+	private void resolveException2(UnsolvedSymbolException eee) {
+		
+	}
+
 	private void resolveException(Exception e2) {
-		// TODO Auto-generated method stub
 		
 	}
 

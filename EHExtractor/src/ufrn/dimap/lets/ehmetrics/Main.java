@@ -9,8 +9,8 @@ import ufrn.dimap.lets.ehmetrics.config.Guidelines;
 import ufrn.dimap.lets.ehmetrics.logger.LoggerFacade;
 import ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject;
 import ufrn.dimap.lets.ehmetrics.projectresolver.ProjectsResolver;
-import ufrn.dimap.lets.ehmetrics.visitor.GuidelineCheckerVisitor;
-import ufrn.dimap.lets.ehmetrics.visitor.GuidelinesFactory;
+import ufrn.dimap.lets.ehmetrics.visitor.AbstractGuidelineVisitor;
+import ufrn.dimap.lets.ehmetrics.visitor.guideline.GuidelinesFactory;
 
 public class Main
 {
@@ -45,6 +45,7 @@ public class Main
 		catch (Exception e)
 		{
 			PROCESSING_LOGGER.fine("Aplicação encerrada com uma exceção. Ver log de erros.");
+			e.printStackTrace();
 			LoggerFacade.logError(e);
 		}
 	}
@@ -55,10 +56,8 @@ public class Main
 		PROCESSING_LOGGER.fine("Identificando projetos para analise...");
 		List<JavaProject> projects = ProjectsResolver.findProjects();
 		
-		// Load guidelines visitors
-		List<GuidelineCheckerVisitor> guidelinesVisitors = GuidelinesFactory.loadVisitors(Guidelines.allowUnresolvedTypes);
-
 		PROCESSING_LOGGER.fine("Preparando cabeçalho do arquivo de resultados...");
+		List<AbstractGuidelineVisitor> guidelinesVisitors = GuidelinesFactory.createGuidelineVisitors(Guidelines.allowUnresolvedTypes);
 		writeGuidelinesHeader(guidelinesVisitors);
 		
 		// Running the analysis
@@ -69,33 +68,34 @@ public class Main
 			projects.get(i).findFiles();
 			projects.get(i).resolveArtifacts();
 			
+			PROCESSING_LOGGER.fine("Loading visitors...");
+			guidelinesVisitors = GuidelinesFactory.createGuidelineVisitors(Guidelines.allowUnresolvedTypes);
+			
 			PROCESSING_LOGGER.fine("Executando análise...");
-			Analyzer.analyze(projects.get(i), guidelinesVisitors); 
+			Analyzer.analyze(projects.get(i), GuidelinesFactory.getAllVisitors()); 
 
 			PROCESSING_LOGGER.fine("Writing guidelines results...");
 			LoggerFacade.logGuideline(projects.get(i).getName() + "\t");
-			for ( GuidelineCheckerVisitor visitor : guidelinesVisitors )
+			for ( AbstractGuidelineVisitor visitor : guidelinesVisitors )
 			{
 				LoggerFacade.logGuideline(visitor.getGuidelineData() + "\t");
 			}
 			
 			LoggerFacade.logGuideline("\n");
 			
-			Logger projectLogger = LoggerFacade.getProjectLogger(projects.get(i).getName());
-			projectLogger.info("\n"+guidelinesVisitors.get(0).getTypeHierarchy().toString());
-			
-			GuidelinesFactory.clearVisitors();
+			//Logger projectLogger = LoggerFacade.getProjectLogger(projects.get(i).getName());
+			//projectLogger.info("\n"+guidelinesVisitors.get(0).getTypeHierarchy().toString());
 		}
 
 		PROCESSING_LOGGER.fine("\n\n\nFinalizada a aplicação!!");
 	}
 
-	private void writeGuidelinesHeader(List<GuidelineCheckerVisitor> guidelinesVisitors)
+	private void writeGuidelinesHeader(List<AbstractGuidelineVisitor> guidelinesVisitors)
 	{
 		StringBuilder guidelinesHeaderBuilder = new StringBuilder ();
 		guidelinesHeaderBuilder.append("\t");
 		
-		for ( GuidelineCheckerVisitor visitor : guidelinesVisitors )
+		for ( AbstractGuidelineVisitor visitor : guidelinesVisitors )
 		{
 			guidelinesHeaderBuilder.append(visitor.getGuidelineHeader());
 			guidelinesHeaderBuilder.append("\t");

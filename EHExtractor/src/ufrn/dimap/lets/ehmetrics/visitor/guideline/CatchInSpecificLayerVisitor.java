@@ -3,26 +3,16 @@ package ufrn.dimap.lets.ehmetrics.visitor.guideline;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.HashMap;
-import java.util.Iterator;
-import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Optional;
-import java.util.TreeMap;
-import java.util.logging.Logger;
 import java.util.stream.Collectors;
 
-import com.github.javaparser.ast.CompilationUnit;
 import com.github.javaparser.ast.PackageDeclaration;
 import com.github.javaparser.ast.stmt.CatchClause;
-import com.github.javaparser.ast.stmt.ThrowStmt;
 
 import ufrn.dimap.lets.ehmetrics.abstractmodel.Handler;
-import ufrn.dimap.lets.ehmetrics.abstractmodel.Signaler;
-import ufrn.dimap.lets.ehmetrics.abstractmodel.Type;
-import ufrn.dimap.lets.ehmetrics.abstractmodel.TypeOrigin;
-import ufrn.dimap.lets.ehmetrics.logger.LoggerFacade;
-import ufrn.dimap.lets.ehmetrics.visitor.GuidelineCheckerVisitor;
+import ufrn.dimap.lets.ehmetrics.visitor.AbstractGuidelineVisitor;
+import ufrn.dimap.lets.ehmetrics.visitor.BaseGuidelineVisitor;
 
 /**
  * Visitor para verificar o guideline "Catch in a specific layer".
@@ -30,18 +20,16 @@ import ufrn.dimap.lets.ehmetrics.visitor.GuidelineCheckerVisitor;
  * Para confirmar o guideline a seguinte heurística é usada:
  * ???????????????????????????????????????
  * */
-public class CatchInSpecificLayerVisitor extends GuidelineCheckerVisitor
+public class CatchInSpecificLayerVisitor extends AbstractGuidelineVisitor
 {
-	private Optional<Handler> handlerInScopeOptional;
-	
 	private String packageDeclarationName;
 	private Map<String, List<Handler>> handlersPerPackage;
 	
 	
-	public CatchInSpecificLayerVisitor (boolean allowUnresolved)
+	public CatchInSpecificLayerVisitor (BaseGuidelineVisitor baseGuidelineVisitor, boolean allowUnresolved)
 	{
-		super (allowUnresolved);
-		clear();
+		super (baseGuidelineVisitor, allowUnresolved);
+		this.handlersPerPackage = new HashMap<>();
 	}
 	
 	@Override
@@ -53,54 +41,17 @@ public class CatchInSpecificLayerVisitor extends GuidelineCheckerVisitor
 		
         super.visit(packageDeclaration, arg);
     }
-
-	@Override
-	public void visit (CompilationUnit compilationUnit, Void arg)
-	{
-		// Forces the stack to reset. Sometimes um error when parsing precious java files could finish the visitor without reseting the stack.
-		handlerInScopeOptional = Optional.empty(); 
-		
-        super.visit(compilationUnit, arg);
-    }
 	
 	@Override
 	public void visit (CatchClause catchClause, Void arg)
 	{		
-		Handler newHandler = createHandler(catchClause);
+		Handler newHandler = this.baseVisitor.findHandler (catchClause);
 
 		this.handlersPerPackage.get(packageDeclarationName).add(newHandler);
-		
-		
-		this.handlerInScopeOptional.ifPresent(handler ->
-		{
-			handler.getNestedHandlers().add(newHandler);
-			newHandler.setParentHandler(handler);
-		});
-
-		this.handlerInScopeOptional = Optional.of(newHandler);
-
 
 		// VISIT CHILDREN
 		super.visit(catchClause, arg);
-
-		this.handlerInScopeOptional = this.handlerInScopeOptional.get().getParentHandler();
 	}
-
-	@Override
-	public void visit (ThrowStmt throwStatement, Void arg)
-	{		
-		Signaler newSignaler = createSignaler(throwStatement);
-
-		// All handlers in context have this signaler as escaping exception
-		if (handlerInScopeOptional.isPresent())
-		{
-			handlerInScopeOptional.get().getAllHandlersInContext()
-				.forEach(handler -> handler.getEscapingSignalers().add(newSignaler));
-		}
-		
-		// VISIT CHILDREN
-		super.visit(throwStatement, arg);
-	}	
 
 	/**
 	 * Returns the guideline columns names
@@ -116,7 +67,7 @@ public class CatchInSpecificLayerVisitor extends GuidelineCheckerVisitor
 		builder.append("\t");
 		builder.append("# pacotes");
 		builder.append("\t");
-		builder.append("# pacotes que correspondem a 90% of handlers finais");
+		builder.append("# final handlers por pacotes");
 		builder.append("\t");
 		
 		return builder.toString();
@@ -131,8 +82,8 @@ public class CatchInSpecificLayerVisitor extends GuidelineCheckerVisitor
 		Map <String, List<Handler>> copyMap = new HashMap<>(this.handlersPerPackage);
 		
 		copyMap.entrySet().stream()
-			.forEach( entry -> entry.getValue().removeIf(handler -> 
-				!handler.isFinalHandler()));
+			.forEach( entry -> entry.getValue()
+					.removeIf(handler -> !handler.isFinalHandler()));
 		
 		Comparator <Map.Entry<String, List<Handler>>> comparator = (t1, t2) -> t2.getValue().size() - t1.getValue().size();
 				
@@ -141,40 +92,26 @@ public class CatchInSpecificLayerVisitor extends GuidelineCheckerVisitor
 				.sorted(comparator)
 				.collect(Collectors.toList());
 		
-		long totalFinalHandlers = this.handlersOfProject.stream()
-				.filter(Handler::isFinalHandler)
+		long totalFinalHandlers = copyMap.values().stream()
+				.flatMap (List::stream)
 				.count();
-				
-		double threshold = totalFinalHandlers * 0.9;
-		double packagesSum = 0;
-		int packageCount = 0;
-		
-		Iterator<Map.Entry<String, List<Handler>>> entriesIterator = sortedPackages.iterator();
-		
-		while ( packagesSum < threshold )
-		{
-			packagesSum += entriesIterator.next().getValue().size();
-			packageCount++;
-		}
 		
 		StringBuilder builder = new StringBuilder();
 		
-		builder.append(this.handlersOfProject.size());
+		String finalHandlersPerPackageCount = sortedPackages.stream()
+			.map(entry -> entry.getValue().size())
+			.map(Object::toString)
+			.collect(Collectors.joining(" "));
+		
+		builder.append(this.baseVisitor.getHandlers().size());
 		builder.append("\t");
 		builder.append(totalFinalHandlers);
 		builder.append("\t");
 		builder.append(this.handlersPerPackage.keySet().size());
 		builder.append("\t");
-		builder.append(packageCount);
+		builder.append(finalHandlersPerPackageCount);
 		builder.append("\t");
 		
 		return builder.toString();
-	}
-	
-	@Override
-	protected void clear ()
-	{
-		super.clear();
-		this.handlersPerPackage = new HashMap<>();
 	}
 }
