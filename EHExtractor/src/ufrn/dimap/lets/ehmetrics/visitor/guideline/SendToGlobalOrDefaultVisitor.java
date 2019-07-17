@@ -38,6 +38,7 @@ public class SendToGlobalOrDefaultVisitor extends AbstractGuidelineVisitor
 	{
 		super(baseVisitor, allowUnresolved);
 		this.dedicatedHandlers = new ArrayList<>();
+		this.handlerInScopeOptional = Optional.empty();
 	}
 	
 	@Override

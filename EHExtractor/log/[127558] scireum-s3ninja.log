@@ -1,4 +1,4 @@
-15/07/2019 01:48:32 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [127558] scireum-s3ninja files...
+17/07/2019 12:46:55 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [127558] scireum-s3ninja files...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[127558] scireum-s3ninja\src\test\java\TestSuite.java
 D:\Desenvolvimento\Projetos Github\A executar\[127558] scireum-s3ninja\src\main\java\ninja\APILog.java
@@ -14,7 +14,7 @@ D:\Desenvolvimento\Projetos Github\A executar\[127558] scireum-s3ninja\src\main\
 D:\Desenvolvimento\Projetos Github\A executar\[127558] scireum-s3ninja\src\main\java\ninja\Storage.java
 D:\Desenvolvimento\Projetos Github\A executar\[127558] scireum-s3ninja\src\main\java\ninja\StoredObject.java
 
-15/07/2019 01:48:32 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [127558] scireum-s3ninja artifacts...
+17/07/2019 12:46:55 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [127558] scireum-s3ninja artifacts...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[127558] scireum-s3ninja\src\main\java\ninja\APILog.java
 D:\Desenvolvimento\Projetos Github\A executar\[127558] scireum-s3ninja\src\main\java\ninja\Aws4HashCalculator.java

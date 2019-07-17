@@ -4,13 +4,10 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-import com.github.javaparser.ast.CompilationUnit;
 import com.github.javaparser.ast.expr.MethodCallExpr;
 import com.github.javaparser.ast.stmt.CatchClause;
-import com.github.javaparser.ast.stmt.ThrowStmt;
 
 import ufrn.dimap.lets.ehmetrics.abstractmodel.Handler;
-import ufrn.dimap.lets.ehmetrics.abstractmodel.Signaler;
 import ufrn.dimap.lets.ehmetrics.visitor.AbstractGuidelineVisitor;
 import ufrn.dimap.lets.ehmetrics.visitor.BaseGuidelineVisitor;
 import ufrn.dimap.lets.ehmetrics.visitor.VisitorsUtil;
@@ -28,6 +25,7 @@ public class LogTheExceptionVisitor extends AbstractGuidelineVisitor
 	public LogTheExceptionVisitor (BaseGuidelineVisitor baseVisitor, boolean allowUnresolved)
 	{
 		super(baseVisitor, allowUnresolved);
+		this.handlerInScopeOptional = Optional.empty();
 	}
 
 	@Override
