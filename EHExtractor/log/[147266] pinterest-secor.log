@@ -1,4 +1,4 @@
-17/07/2019 12:46:57 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [147266] pinterest-secor files...
+17/07/2019 12:55:19 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [147266] pinterest-secor files...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[147266] pinterest-secor\src\main\java\com\pinterest\secor\common\DeterministicUploadPolicyTracker.java
 D:\Desenvolvimento\Projetos Github\A executar\[147266] pinterest-secor\src\main\java\com\pinterest\secor\common\FileRegistry.java
@@ -130,7 +130,7 @@ D:\Desenvolvimento\Projetos Github\A executar\[147266] pinterest-secor\src\test\
 D:\Desenvolvimento\Projetos Github\A executar\[147266] pinterest-secor\src\main\java\com\pinterest\secor\util\orc\schema\DefaultORCSchemaProvider.java
 D:\Desenvolvimento\Projetos Github\A executar\[147266] pinterest-secor\src\main\java\com\pinterest\secor\util\orc\schema\ORCSchemaProvider.java
 
-17/07/2019 12:46:57 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [147266] pinterest-secor artifacts...
+17/07/2019 12:55:19 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [147266] pinterest-secor artifacts...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[147266] pinterest-secor\src\main\java\com\pinterest\secor\common\DeterministicUploadPolicyTracker.java
 D:\Desenvolvimento\Projetos Github\A executar\[147266] pinterest-secor\src\main\java\com\pinterest\secor\common\FileRegistry.java

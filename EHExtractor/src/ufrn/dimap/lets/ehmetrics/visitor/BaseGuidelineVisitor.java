@@ -35,12 +35,12 @@ public class BaseGuidelineVisitor extends VoidVisitorAdapter<Void>
 	
 	protected TypeHierarchy typeHierarchy;
 	
-	// Lista auxiliar para controlar os throws que existem na lista de signalers.
-	private VisitorList<ThrowStmt> throwsOfProject; 
+	// Lista auxiliar para controlar os throws do CompilationUnit sendo parseado e assim evitar falsos duplicatas
+	private VisitorList<ThrowStmt> throwsOfFile; 
 	protected List<Signaler> signalersOfProject;
 	
-	// Lista auxiliar para controlar os catch clauses que existem na lista de handlers.
-	private VisitorList<CatchClause> catchesOfProject; 
+	// Lista auxiliar para controlar os catches do CompilationUnit sendo parseado e assim evitar falsos duplicatas
+	private VisitorList<CatchClause> catchesOfFile; 
 	protected List<Handler> handlersOfProject;
 
 	private Optional<Handler> handlerInScopeOptional;
@@ -51,10 +51,10 @@ public class BaseGuidelineVisitor extends VoidVisitorAdapter<Void>
 		
 		this.typeHierarchy = new TypeHierarchy(allowUnresolved);
 		
-		this.throwsOfProject = new VisitorList<>(new ObjectIdentityHashCodeVisitor(), new ObjectIdentityEqualsVisitor());
+		this.throwsOfFile = new VisitorList<>(new ObjectIdentityHashCodeVisitor(), new ObjectIdentityEqualsVisitor());
 		this.signalersOfProject = new ArrayList<>();
 		
-		this.catchesOfProject = new VisitorList<>(new ObjectIdentityHashCodeVisitor(), new ObjectIdentityEqualsVisitor());
+		this.catchesOfFile = new VisitorList<>(new ObjectIdentityHashCodeVisitor(), new ObjectIdentityEqualsVisitor());
 		this.handlersOfProject = new ArrayList<>();
 		
 		this.handlerInScopeOptional = Optional.empty();
@@ -64,6 +64,8 @@ public class BaseGuidelineVisitor extends VoidVisitorAdapter<Void>
 	public void visit (CompilationUnit compilationUnit, Void arg)
 	{		
 		handlerInScopeOptional = Optional.empty();
+		this.throwsOfFile.clear();
+		this.catchesOfFile.clear();
 
 		super.visit(compilationUnit, arg);
 	}	
@@ -81,7 +83,7 @@ public class BaseGuidelineVisitor extends VoidVisitorAdapter<Void>
 	public void visit (CatchClause catchClause, Void arg)
 	{		
 		Handler newHandler = this.createHandler(catchClause);
-		this.catchesOfProject.add(catchClause);
+		this.catchesOfFile.add(catchClause);
 		
 		this.handlerInScopeOptional.ifPresent(handler ->
 		{
@@ -104,7 +106,7 @@ public class BaseGuidelineVisitor extends VoidVisitorAdapter<Void>
 		try
 		{
 			Signaler newSignaler = this.createSignaler(throwStatement);
-			this.throwsOfProject.add(throwStatement);
+			this.throwsOfFile.add(throwStatement);
 			
 			// All handlers in context have this signaler as escaping exception
 			if (handlerInScopeOptional.isPresent())
@@ -165,10 +167,10 @@ public class BaseGuidelineVisitor extends VoidVisitorAdapter<Void>
 
 		// Update handler references 
 		types.stream()
-		.forEach(t -> {
-			newHandler.getExceptions().add(t);
-			t.addHandler(newHandler);
-		});
+			.forEach(t -> {
+				newHandler.getExceptions().add(t);
+				t.addHandler(newHandler);
+			});
 
 		/* If allowUnresolved is true, some types, created from its declaration but with unresolved 
 		 * ancestors end up having the ClassType.UNRESOLVED. After being used in a catch clause, it is known
@@ -244,7 +246,7 @@ public class BaseGuidelineVisitor extends VoidVisitorAdapter<Void>
 
 	public Handler findHandler(CatchClause catchClause)
 	{
-		return this.handlersOfProject.get(this.catchesOfProject.indexOf(catchClause));
+		return this.handlersOfProject.get(this.catchesOfFile.indexOf(catchClause));
 	}
 	
 	/**
@@ -254,7 +256,7 @@ public class BaseGuidelineVisitor extends VoidVisitorAdapter<Void>
 	 * */
 	public Optional<Signaler> findSignaler(ThrowStmt throwStatement)
 	{
-		int index = this.throwsOfProject.indexOf(throwStatement);
+		int index = this.throwsOfFile.indexOf(throwStatement);
 		
 		if (index != -1)
 		{

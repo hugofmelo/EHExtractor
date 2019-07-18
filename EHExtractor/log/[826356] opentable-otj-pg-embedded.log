@@ -1,0 +1,50 @@
+18/07/2019 08:36:08 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [826356] opentable-otj-pg-embedded files...
+-- Java files
+D:\Desenvolvimento\Projetos Github\A executar\[826356] opentable-otj-pg-embedded\src\main\java\com\opentable\db\postgres\embedded\BundledPostgresBinaryResolver.java
+D:\Desenvolvimento\Projetos Github\A executar\[826356] opentable-otj-pg-embedded\src\main\java\com\opentable\db\postgres\embedded\ConnectionInfo.java
+D:\Desenvolvimento\Projetos Github\A executar\[826356] opentable-otj-pg-embedded\src\main\java\com\opentable\db\postgres\embedded\DatabaseConnectionPreparer.java
+D:\Desenvolvimento\Projetos Github\A executar\[826356] opentable-otj-pg-embedded\src\main\java\com\opentable\db\postgres\embedded\DatabasePreparer.java
+D:\Desenvolvimento\Projetos Github\A executar\[826356] opentable-otj-pg-embedded\src\main\java\com\opentable\db\postgres\embedded\EmbeddedPostgres.java
+D:\Desenvolvimento\Projetos Github\A executar\[826356] opentable-otj-pg-embedded\src\main\java\com\opentable\db\postgres\embedded\FlywayPreparer.java
+D:\Desenvolvimento\Projetos Github\A executar\[826356] opentable-otj-pg-embedded\src\main\java\com\opentable\db\postgres\embedded\LiquibasePreparer.java
+D:\Desenvolvimento\Projetos Github\A executar\[826356] opentable-otj-pg-embedded\src\main\java\com\opentable\db\postgres\embedded\PgBinaryResolver.java
+D:\Desenvolvimento\Projetos Github\A executar\[826356] opentable-otj-pg-embedded\src\main\java\com\opentable\db\postgres\embedded\PreparedDbProvider.java
+D:\Desenvolvimento\Projetos Github\A executar\[826356] opentable-otj-pg-embedded\src\main\java\com\opentable\db\postgres\embedded\ProcessOutputLogger.java
+D:\Desenvolvimento\Projetos Github\A executar\[826356] opentable-otj-pg-embedded\src\main\java\com\opentable\db\postgres\junit\EmbeddedPostgresRules.java
+D:\Desenvolvimento\Projetos Github\A executar\[826356] opentable-otj-pg-embedded\src\main\java\com\opentable\db\postgres\junit\PreparedDbRule.java
+D:\Desenvolvimento\Projetos Github\A executar\[826356] opentable-otj-pg-embedded\src\main\java\com\opentable\db\postgres\junit\SingleInstancePostgresRule.java
+D:\Desenvolvimento\Projetos Github\A executar\[826356] opentable-otj-pg-embedded\src\main\java\com\opentable\db\postgres\junit5\EmbeddedPostgresExtension.java
+D:\Desenvolvimento\Projetos Github\A executar\[826356] opentable-otj-pg-embedded\src\main\java\com\opentable\db\postgres\junit5\PreparedDbExtension.java
+D:\Desenvolvimento\Projetos Github\A executar\[826356] opentable-otj-pg-embedded\src\main\java\com\opentable\db\postgres\junit5\SingleInstancePostgresExtension.java
+D:\Desenvolvimento\Projetos Github\A executar\[826356] opentable-otj-pg-embedded\src\test\java\com\opentable\db\postgres\embedded\EmbeddedPostgresTest.java
+D:\Desenvolvimento\Projetos Github\A executar\[826356] opentable-otj-pg-embedded\src\test\java\com\opentable\db\postgres\embedded\FlywayPreparerTest.java
+D:\Desenvolvimento\Projetos Github\A executar\[826356] opentable-otj-pg-embedded\src\test\java\com\opentable\db\postgres\embedded\IsolationTest.java
+D:\Desenvolvimento\Projetos Github\A executar\[826356] opentable-otj-pg-embedded\src\test\java\com\opentable\db\postgres\embedded\LiquibasePreparerContextTest.java
+D:\Desenvolvimento\Projetos Github\A executar\[826356] opentable-otj-pg-embedded\src\test\java\com\opentable\db\postgres\embedded\LiquibasePreparerTest.java
+D:\Desenvolvimento\Projetos Github\A executar\[826356] opentable-otj-pg-embedded\src\test\java\com\opentable\db\postgres\embedded\PreparedDbCustomizerTest.java
+D:\Desenvolvimento\Projetos Github\A executar\[826356] opentable-otj-pg-embedded\src\test\java\com\opentable\db\postgres\embedded\PreparedDbTest.java
+D:\Desenvolvimento\Projetos Github\A executar\[826356] opentable-otj-pg-embedded\src\test\java\com\opentable\db\postgres\embedded\SingleInstanceRuleTest.java
+
+18/07/2019 08:36:08 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [826356] opentable-otj-pg-embedded artifacts...
+-- Java files
+D:\Desenvolvimento\Projetos Github\A executar\[826356] opentable-otj-pg-embedded\src\main\java\com\opentable\db\postgres\embedded\BundledPostgresBinaryResolver.java
+D:\Desenvolvimento\Projetos Github\A executar\[826356] opentable-otj-pg-embedded\src\main\java\com\opentable\db\postgres\embedded\ConnectionInfo.java
+D:\Desenvolvimento\Projetos Github\A executar\[826356] opentable-otj-pg-embedded\src\main\java\com\opentable\db\postgres\embedded\DatabaseConnectionPreparer.java
+D:\Desenvolvimento\Projetos Github\A executar\[826356] opentable-otj-pg-embedded\src\main\java\com\opentable\db\postgres\embedded\DatabasePreparer.java
+D:\Desenvolvimento\Projetos Github\A executar\[826356] opentable-otj-pg-embedded\src\main\java\com\opentable\db\postgres\embedded\EmbeddedPostgres.java
+D:\Desenvolvimento\Projetos Github\A executar\[826356] opentable-otj-pg-embedded\src\main\java\com\opentable\db\postgres\embedded\FlywayPreparer.java
+D:\Desenvolvimento\Projetos Github\A executar\[826356] opentable-otj-pg-embedded\src\main\java\com\opentable\db\postgres\embedded\LiquibasePreparer.java
+D:\Desenvolvimento\Projetos Github\A executar\[826356] opentable-otj-pg-embedded\src\main\java\com\opentable\db\postgres\embedded\PgBinaryResolver.java
+D:\Desenvolvimento\Projetos Github\A executar\[826356] opentable-otj-pg-embedded\src\main\java\com\opentable\db\postgres\embedded\PreparedDbProvider.java
+D:\Desenvolvimento\Projetos Github\A executar\[826356] opentable-otj-pg-embedded\src\main\java\com\opentable\db\postgres\embedded\ProcessOutputLogger.java
+D:\Desenvolvimento\Projetos Github\A executar\[826356] opentable-otj-pg-embedded\src\main\java\com\opentable\db\postgres\junit\EmbeddedPostgresRules.java
+D:\Desenvolvimento\Projetos Github\A executar\[826356] opentable-otj-pg-embedded\src\main\java\com\opentable\db\postgres\junit\PreparedDbRule.java
+D:\Desenvolvimento\Projetos Github\A executar\[826356] opentable-otj-pg-embedded\src\main\java\com\opentable\db\postgres\junit\SingleInstancePostgresRule.java
+D:\Desenvolvimento\Projetos Github\A executar\[826356] opentable-otj-pg-embedded\src\main\java\com\opentable\db\postgres\junit5\EmbeddedPostgresExtension.java
+D:\Desenvolvimento\Projetos Github\A executar\[826356] opentable-otj-pg-embedded\src\main\java\com\opentable\db\postgres\junit5\PreparedDbExtension.java
+D:\Desenvolvimento\Projetos Github\A executar\[826356] opentable-otj-pg-embedded\src\main\java\com\opentable\db\postgres\junit5\SingleInstancePostgresExtension.java
+-- Source dirs
+D:\Desenvolvimento\Projetos Github\A executar\[826356] opentable-otj-pg-embedded\src\main\java
+-- Test dirs
+D:\Desenvolvimento\Projetos Github\A executar\[826356] opentable-otj-pg-embedded\src\test\java
+

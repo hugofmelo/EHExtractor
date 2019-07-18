@@ -1,0 +1,53 @@
+17/07/2019 19:51:13 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [587720] ron-from-nl-FinalCrypt files...
+-- Java files
+D:\Desenvolvimento\Projetos Github\A executar\[587720] ron-from-nl-FinalCrypt\src\rdj\CLUI.java
+D:\Desenvolvimento\Projetos Github\A executar\[587720] ron-from-nl-FinalCrypt\src\rdj\Configuration.java
+D:\Desenvolvimento\Projetos Github\A executar\[587720] ron-from-nl-FinalCrypt\src\rdj\CreateOTPKey.java
+D:\Desenvolvimento\Projetos Github\A executar\[587720] ron-from-nl-FinalCrypt\src\rdj\DeviceController.java
+D:\Desenvolvimento\Projetos Github\A executar\[587720] ron-from-nl-FinalCrypt\src\rdj\DeviceManager.java
+D:\Desenvolvimento\Projetos Github\A executar\[587720] ron-from-nl-FinalCrypt\src\rdj\FCPath.java
+D:\Desenvolvimento\Projetos Github\A executar\[587720] ron-from-nl-FinalCrypt\src\rdj\FCPathList.java
+D:\Desenvolvimento\Projetos Github\A executar\[587720] ron-from-nl-FinalCrypt\src\rdj\FinalCrypt.java
+D:\Desenvolvimento\Projetos Github\A executar\[587720] ron-from-nl-FinalCrypt\src\rdj\GPT.java
+D:\Desenvolvimento\Projetos Github\A executar\[587720] ron-from-nl-FinalCrypt\src\rdj\GPT_Entries.java
+D:\Desenvolvimento\Projetos Github\A executar\[587720] ron-from-nl-FinalCrypt\src\rdj\GPT_Entry.java
+D:\Desenvolvimento\Projetos Github\A executar\[587720] ron-from-nl-FinalCrypt\src\rdj\GPT_Header.java
+D:\Desenvolvimento\Projetos Github\A executar\[587720] ron-from-nl-FinalCrypt\src\rdj\GPT_PMBR.java
+D:\Desenvolvimento\Projetos Github\A executar\[587720] ron-from-nl-FinalCrypt\src\rdj\GUIFX.java
+D:\Desenvolvimento\Projetos Github\A executar\[587720] ron-from-nl-FinalCrypt\src\rdj\MD5Converter.java
+D:\Desenvolvimento\Projetos Github\A executar\[587720] ron-from-nl-FinalCrypt\src\rdj\MemStats.java
+D:\Desenvolvimento\Projetos Github\A executar\[587720] ron-from-nl-FinalCrypt\src\rdj\Stat.java
+D:\Desenvolvimento\Projetos Github\A executar\[587720] ron-from-nl-FinalCrypt\src\rdj\Stats.java
+D:\Desenvolvimento\Projetos Github\A executar\[587720] ron-from-nl-FinalCrypt\src\rdj\Support.java
+D:\Desenvolvimento\Projetos Github\A executar\[587720] ron-from-nl-FinalCrypt\src\rdj\UI.java
+D:\Desenvolvimento\Projetos Github\A executar\[587720] ron-from-nl-FinalCrypt\src\rdj\Validate.java
+D:\Desenvolvimento\Projetos Github\A executar\[587720] ron-from-nl-FinalCrypt\src\rdj\Version.java
+
+17/07/2019 19:51:13 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [587720] ron-from-nl-FinalCrypt artifacts...
+-- Java files
+D:\Desenvolvimento\Projetos Github\A executar\[587720] ron-from-nl-FinalCrypt\src\rdj\CLUI.java
+D:\Desenvolvimento\Projetos Github\A executar\[587720] ron-from-nl-FinalCrypt\src\rdj\Configuration.java
+D:\Desenvolvimento\Projetos Github\A executar\[587720] ron-from-nl-FinalCrypt\src\rdj\CreateOTPKey.java
+D:\Desenvolvimento\Projetos Github\A executar\[587720] ron-from-nl-FinalCrypt\src\rdj\DeviceController.java
+D:\Desenvolvimento\Projetos Github\A executar\[587720] ron-from-nl-FinalCrypt\src\rdj\DeviceManager.java
+D:\Desenvolvimento\Projetos Github\A executar\[587720] ron-from-nl-FinalCrypt\src\rdj\FCPath.java
+D:\Desenvolvimento\Projetos Github\A executar\[587720] ron-from-nl-FinalCrypt\src\rdj\FCPathList.java
+D:\Desenvolvimento\Projetos Github\A executar\[587720] ron-from-nl-FinalCrypt\src\rdj\FinalCrypt.java
+D:\Desenvolvimento\Projetos Github\A executar\[587720] ron-from-nl-FinalCrypt\src\rdj\GPT.java
+D:\Desenvolvimento\Projetos Github\A executar\[587720] ron-from-nl-FinalCrypt\src\rdj\GPT_Entries.java
+D:\Desenvolvimento\Projetos Github\A executar\[587720] ron-from-nl-FinalCrypt\src\rdj\GPT_Entry.java
+D:\Desenvolvimento\Projetos Github\A executar\[587720] ron-from-nl-FinalCrypt\src\rdj\GPT_Header.java
+D:\Desenvolvimento\Projetos Github\A executar\[587720] ron-from-nl-FinalCrypt\src\rdj\GPT_PMBR.java
+D:\Desenvolvimento\Projetos Github\A executar\[587720] ron-from-nl-FinalCrypt\src\rdj\GUIFX.java
+D:\Desenvolvimento\Projetos Github\A executar\[587720] ron-from-nl-FinalCrypt\src\rdj\MD5Converter.java
+D:\Desenvolvimento\Projetos Github\A executar\[587720] ron-from-nl-FinalCrypt\src\rdj\MemStats.java
+D:\Desenvolvimento\Projetos Github\A executar\[587720] ron-from-nl-FinalCrypt\src\rdj\Stat.java
+D:\Desenvolvimento\Projetos Github\A executar\[587720] ron-from-nl-FinalCrypt\src\rdj\Stats.java
+D:\Desenvolvimento\Projetos Github\A executar\[587720] ron-from-nl-FinalCrypt\src\rdj\Support.java
+D:\Desenvolvimento\Projetos Github\A executar\[587720] ron-from-nl-FinalCrypt\src\rdj\UI.java
+D:\Desenvolvimento\Projetos Github\A executar\[587720] ron-from-nl-FinalCrypt\src\rdj\Validate.java
+D:\Desenvolvimento\Projetos Github\A executar\[587720] ron-from-nl-FinalCrypt\src\rdj\Version.java
+-- Source dirs
+D:\Desenvolvimento\Projetos Github\A executar\[587720] ron-from-nl-FinalCrypt\src
+-- Test dirs
+

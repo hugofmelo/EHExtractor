@@ -1,0 +1,20 @@
+17/07/2019 16:09:25 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [330680] os72-protoc-jar-maven-plugin files...
+-- Java files
+D:\Desenvolvimento\Projetos Github\A executar\[330680] os72-protoc-jar-maven-plugin\src\main\java\com\github\os72\protocjar\maven\OutputTarget.java
+D:\Desenvolvimento\Projetos Github\A executar\[330680] os72-protoc-jar-maven-plugin\src\main\java\com\github\os72\protocjar\maven\ProtocJarMojo.java
+D:\Desenvolvimento\Projetos Github\A executar\[330680] os72-protoc-jar-maven-plugin\src\test\java\com\github\os72\protocjar\maven\DetectorTest.java
+D:\Desenvolvimento\Projetos Github\A executar\[330680] os72-protoc-jar-maven-plugin\src\test\java\com\github\os72\protocjar\maven\MojoBasicTest.java
+D:\Desenvolvimento\Projetos Github\A executar\[330680] os72-protoc-jar-maven-plugin\src\test\java\com\github\os72\protocjar\maven\MojoGrpcTest.java
+D:\Desenvolvimento\Projetos Github\A executar\[330680] os72-protoc-jar-maven-plugin\src\test\java\com\github\os72\protocjar\maven\MojoImportTest.java
+D:\Desenvolvimento\Projetos Github\A executar\[330680] os72-protoc-jar-maven-plugin\src\test\java\com\github\os72\protocjar\maven\MojoMvnCompileTest.java
+D:\Desenvolvimento\Projetos Github\A executar\[330680] os72-protoc-jar-maven-plugin\src\test\java\com\github\os72\protocjar\maven\MojoShadingTest.java
+
+17/07/2019 16:09:25 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [330680] os72-protoc-jar-maven-plugin artifacts...
+-- Java files
+D:\Desenvolvimento\Projetos Github\A executar\[330680] os72-protoc-jar-maven-plugin\src\main\java\com\github\os72\protocjar\maven\OutputTarget.java
+D:\Desenvolvimento\Projetos Github\A executar\[330680] os72-protoc-jar-maven-plugin\src\main\java\com\github\os72\protocjar\maven\ProtocJarMojo.java
+-- Source dirs
+D:\Desenvolvimento\Projetos Github\A executar\[330680] os72-protoc-jar-maven-plugin\src\main\java
+-- Test dirs
+D:\Desenvolvimento\Projetos Github\A executar\[330680] os72-protoc-jar-maven-plugin\src\test\java
+

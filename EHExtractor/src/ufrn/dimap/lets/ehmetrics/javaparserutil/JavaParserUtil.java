@@ -19,6 +19,7 @@ import com.github.javaparser.ast.stmt.ThrowStmt;
 import com.github.javaparser.ast.type.ClassOrInterfaceType;
 import com.github.javaparser.ast.type.ReferenceType;
 import com.github.javaparser.ast.type.UnionType;
+import com.github.javaparser.ast.type.UnknownType;
 import com.github.javaparser.resolution.UnsolvedSymbolException;
 import com.github.javaparser.resolution.declarations.ResolvedClassDeclaration;
 import com.github.javaparser.resolution.declarations.ResolvedValueDeclaration;
@@ -26,6 +27,7 @@ import com.github.javaparser.symbolsolver.javaparsermodel.declarations.JavaParse
 import com.github.javaparser.symbolsolver.javaparsermodel.declarations.JavaParserParameterDeclaration;
 import com.github.javaparser.symbolsolver.javaparsermodel.declarations.JavaParserSymbolDeclaration;
 
+import ufrn.dimap.lets.ehmetrics.visitor.UnresolvedTypeException;
 import ufrn.dimap.lets.ehmetrics.visitor.UnsupportedSignalerException;
 
 /**
@@ -59,6 +61,10 @@ public class JavaParserUtil {
 			return multiCatch.getElements().stream()
 				.map(ReferenceType::asClassOrInterfaceType)
 				.collect(Collectors.toList());
+		}
+		else if ( parameter.getType() instanceof UnknownType )
+		{
+			throw new UnresolvedTypeException ("Tipo em expressão lambda que não pode ser resolvido", parameter.getType());
 		}
 		else
 		{
@@ -125,7 +131,7 @@ public class JavaParserUtil {
 
 				return findVariableTypes (declaration);
 			}
-			catch (UnsolvedSymbolException e)
+			catch (UnsolvedSymbolException | UnresolvedTypeException e)
 			{
 				throw new UnsupportedSignalerException("Sinalização de NameExpr cuja declaração não foi encontrada.", throwExpression.findAncestor(ThrowStmt.class).get(), e);
 			}

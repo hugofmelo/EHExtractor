@@ -1,0 +1,22 @@
+18/07/2019 08:36:14 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [835565] duydo-elasticsearch-analysis-vietnamese files...
+-- Java files
+D:\Desenvolvimento\Projetos Github\A executar\[835565] duydo-elasticsearch-analysis-vietnamese\src\main\java\org\elasticsearch\index\analysis\VietnameseAnalyzerProvider.java
+D:\Desenvolvimento\Projetos Github\A executar\[835565] duydo-elasticsearch-analysis-vietnamese\src\main\java\org\elasticsearch\index\analysis\VietnameseTokenizerFactory.java
+D:\Desenvolvimento\Projetos Github\A executar\[835565] duydo-elasticsearch-analysis-vietnamese\src\test\java\org\elasticsearch\index\analysis\VietnameseAnalysisIntegrationTest.java
+D:\Desenvolvimento\Projetos Github\A executar\[835565] duydo-elasticsearch-analysis-vietnamese\src\test\java\org\elasticsearch\index\analysis\VietnameseAnalysisTest.java
+D:\Desenvolvimento\Projetos Github\A executar\[835565] duydo-elasticsearch-analysis-vietnamese\src\main\java\org\apache\lucene\analysis\vi\VietnameseAnalyzer.java
+D:\Desenvolvimento\Projetos Github\A executar\[835565] duydo-elasticsearch-analysis-vietnamese\src\main\java\org\apache\lucene\analysis\vi\VietnameseTokenizer.java
+D:\Desenvolvimento\Projetos Github\A executar\[835565] duydo-elasticsearch-analysis-vietnamese\src\main\java\org\elasticsearch\plugin\analysis\vi\AnalysisVietnamesePlugin.java
+
+18/07/2019 08:36:14 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [835565] duydo-elasticsearch-analysis-vietnamese artifacts...
+-- Java files
+D:\Desenvolvimento\Projetos Github\A executar\[835565] duydo-elasticsearch-analysis-vietnamese\src\main\java\org\elasticsearch\index\analysis\VietnameseAnalyzerProvider.java
+D:\Desenvolvimento\Projetos Github\A executar\[835565] duydo-elasticsearch-analysis-vietnamese\src\main\java\org\elasticsearch\index\analysis\VietnameseTokenizerFactory.java
+D:\Desenvolvimento\Projetos Github\A executar\[835565] duydo-elasticsearch-analysis-vietnamese\src\main\java\org\apache\lucene\analysis\vi\VietnameseAnalyzer.java
+D:\Desenvolvimento\Projetos Github\A executar\[835565] duydo-elasticsearch-analysis-vietnamese\src\main\java\org\apache\lucene\analysis\vi\VietnameseTokenizer.java
+D:\Desenvolvimento\Projetos Github\A executar\[835565] duydo-elasticsearch-analysis-vietnamese\src\main\java\org\elasticsearch\plugin\analysis\vi\AnalysisVietnamesePlugin.java
+-- Source dirs
+D:\Desenvolvimento\Projetos Github\A executar\[835565] duydo-elasticsearch-analysis-vietnamese\src\main\java
+-- Test dirs
+D:\Desenvolvimento\Projetos Github\A executar\[835565] duydo-elasticsearch-analysis-vietnamese\src\test\java
+

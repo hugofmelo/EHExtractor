@@ -1,0 +1,49 @@
+17/07/2019 18:52:55 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [451086] verhas-License3j files...
+-- Java files
+D:\Desenvolvimento\Projetos Github\A executar\[451086] verhas-License3j\src\main\java\javax0\license3j\Feature.java
+D:\Desenvolvimento\Projetos Github\A executar\[451086] verhas-License3j\src\main\java\javax0\license3j\HardwareBinder.java
+D:\Desenvolvimento\Projetos Github\A executar\[451086] verhas-License3j\src\main\java\javax0\license3j\License.java
+D:\Desenvolvimento\Projetos Github\A executar\[451086] verhas-License3j\src\main\java\javax0\license3j\RevocableLicense.java
+D:\Desenvolvimento\Projetos Github\A executar\[451086] verhas-License3j\src\test\java\javax0\license3j\LicenseTest.java
+D:\Desenvolvimento\Projetos Github\A executar\[451086] verhas-License3j\src\test\java\javax0\license3j\TestFeature.java
+D:\Desenvolvimento\Projetos Github\A executar\[451086] verhas-License3j\src\test\java\javax0\license3j\TestFeatureSerialization.java
+D:\Desenvolvimento\Projetos Github\A executar\[451086] verhas-License3j\src\test\java\javax0\license3j\TestHardwareBinder.java
+D:\Desenvolvimento\Projetos Github\A executar\[451086] verhas-License3j\src\test\java\javax0\license3j\TestRevocableLicense.java
+D:\Desenvolvimento\Projetos Github\A executar\[451086] verhas-License3j\src\main\java\javax0\license3j\crypto\LicenseKeyPair.java
+D:\Desenvolvimento\Projetos Github\A executar\[451086] verhas-License3j\src\main\java\javax0\license3j\hardware\HashCalculator.java
+D:\Desenvolvimento\Projetos Github\A executar\[451086] verhas-License3j\src\main\java\javax0\license3j\hardware\Network.java
+D:\Desenvolvimento\Projetos Github\A executar\[451086] verhas-License3j\src\main\java\javax0\license3j\hardware\UUIDCalculator.java
+D:\Desenvolvimento\Projetos Github\A executar\[451086] verhas-License3j\src\main\java\javax0\license3j\io\ByteArrayReader.java
+D:\Desenvolvimento\Projetos Github\A executar\[451086] verhas-License3j\src\main\java\javax0\license3j\io\IOFormat.java
+D:\Desenvolvimento\Projetos Github\A executar\[451086] verhas-License3j\src\main\java\javax0\license3j\io\KeyPairReader.java
+D:\Desenvolvimento\Projetos Github\A executar\[451086] verhas-License3j\src\main\java\javax0\license3j\io\KeyPairWriter.java
+D:\Desenvolvimento\Projetos Github\A executar\[451086] verhas-License3j\src\main\java\javax0\license3j\io\LicenseReader.java
+D:\Desenvolvimento\Projetos Github\A executar\[451086] verhas-License3j\src\main\java\javax0\license3j\io\LicenseWriter.java
+D:\Desenvolvimento\Projetos Github\A executar\[451086] verhas-License3j\src\main\java\javax0\license3j\parsers\NumericParser.java
+D:\Desenvolvimento\Projetos Github\A executar\[451086] verhas-License3j\src\test\java\javax0\license3j\crypto\LicenseSignerTest.java
+D:\Desenvolvimento\Projetos Github\A executar\[451086] verhas-License3j\src\test\java\javax0\license3j\filecompare\SourceLine.java
+D:\Desenvolvimento\Projetos Github\A executar\[451086] verhas-License3j\src\test\java\javax0\license3j\hardware\TestInterfaceSelector.java
+D:\Desenvolvimento\Projetos Github\A executar\[451086] verhas-License3j\src\test\java\javax0\license3j\parsers\NumericParserTest.java
+
+17/07/2019 18:52:55 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [451086] verhas-License3j artifacts...
+-- Java files
+D:\Desenvolvimento\Projetos Github\A executar\[451086] verhas-License3j\src\main\java\javax0\license3j\Feature.java
+D:\Desenvolvimento\Projetos Github\A executar\[451086] verhas-License3j\src\main\java\javax0\license3j\HardwareBinder.java
+D:\Desenvolvimento\Projetos Github\A executar\[451086] verhas-License3j\src\main\java\javax0\license3j\License.java
+D:\Desenvolvimento\Projetos Github\A executar\[451086] verhas-License3j\src\main\java\javax0\license3j\RevocableLicense.java
+D:\Desenvolvimento\Projetos Github\A executar\[451086] verhas-License3j\src\main\java\javax0\license3j\crypto\LicenseKeyPair.java
+D:\Desenvolvimento\Projetos Github\A executar\[451086] verhas-License3j\src\main\java\javax0\license3j\hardware\HashCalculator.java
+D:\Desenvolvimento\Projetos Github\A executar\[451086] verhas-License3j\src\main\java\javax0\license3j\hardware\Network.java
+D:\Desenvolvimento\Projetos Github\A executar\[451086] verhas-License3j\src\main\java\javax0\license3j\hardware\UUIDCalculator.java
+D:\Desenvolvimento\Projetos Github\A executar\[451086] verhas-License3j\src\main\java\javax0\license3j\io\ByteArrayReader.java
+D:\Desenvolvimento\Projetos Github\A executar\[451086] verhas-License3j\src\main\java\javax0\license3j\io\IOFormat.java
+D:\Desenvolvimento\Projetos Github\A executar\[451086] verhas-License3j\src\main\java\javax0\license3j\io\KeyPairReader.java
+D:\Desenvolvimento\Projetos Github\A executar\[451086] verhas-License3j\src\main\java\javax0\license3j\io\KeyPairWriter.java
+D:\Desenvolvimento\Projetos Github\A executar\[451086] verhas-License3j\src\main\java\javax0\license3j\io\LicenseReader.java
+D:\Desenvolvimento\Projetos Github\A executar\[451086] verhas-License3j\src\main\java\javax0\license3j\io\LicenseWriter.java
+D:\Desenvolvimento\Projetos Github\A executar\[451086] verhas-License3j\src\main\java\javax0\license3j\parsers\NumericParser.java
+-- Source dirs
+D:\Desenvolvimento\Projetos Github\A executar\[451086] verhas-License3j\src\main\java
+-- Test dirs
+D:\Desenvolvimento\Projetos Github\A executar\[451086] verhas-License3j\src\test\java
+

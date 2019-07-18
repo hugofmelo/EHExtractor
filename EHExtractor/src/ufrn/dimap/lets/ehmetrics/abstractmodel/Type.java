@@ -30,10 +30,6 @@ public class Type extends AbstractEHModelElement
 		this.signalers = new ArrayList<>();
 		this.handlers = new ArrayList<>();
 	}
-
-	
-	
-	
 	
 	// UTIL METHODS **********************************
 

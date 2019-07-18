@@ -1,4 +1,4 @@
-17/07/2019 12:47:18 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [156752] ModeShape-modeshape files...
+18/07/2019 08:56:05 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [156752] ModeShape-modeshape files...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[156752] ModeShape-modeshape\modeshape-jcr\src\test\resources\mimetype\test.java
 D:\Desenvolvimento\Projetos Github\A executar\[156752] ModeShape-modeshape\sequencers\modeshape-sequencer-java\src\test\java\DefaultPackageClass.java
@@ -1954,7 +1954,7 @@ D:\Desenvolvimento\Projetos Github\A executar\[156752] ModeShape-modeshape\web\m
 D:\Desenvolvimento\Projetos Github\A executar\[156752] ModeShape-modeshape\web\modeshape-web-jcr-rest\src\main\java\org\modeshape\web\jcr\rest\output\JSONBodyWriter.java
 D:\Desenvolvimento\Projetos Github\A executar\[156752] ModeShape-modeshape\web\modeshape-web-jcr-rest\src\main\java\org\modeshape\web\jcr\rest\output\TextBodyWriter.java
 
-17/07/2019 12:47:18 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [156752] ModeShape-modeshape artifacts...
+18/07/2019 08:56:05 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [156752] ModeShape-modeshape artifacts...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[156752] ModeShape-modeshape\checkstyle\src\main\java\org\modeshape\checkstyle\ExcludeTestPackages.java
 D:\Desenvolvimento\Projetos Github\A executar\[156752] ModeShape-modeshape\checkstyle\src\main\java\org\modeshape\checkstyle\Header.java
