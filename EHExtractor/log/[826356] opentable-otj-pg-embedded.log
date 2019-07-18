@@ -1,4 +1,4 @@
-18/07/2019 08:36:08 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [826356] opentable-otj-pg-embedded files...
+18/07/2019 15:09:20 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [826356] opentable-otj-pg-embedded files...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[826356] opentable-otj-pg-embedded\src\main\java\com\opentable\db\postgres\embedded\BundledPostgresBinaryResolver.java
 D:\Desenvolvimento\Projetos Github\A executar\[826356] opentable-otj-pg-embedded\src\main\java\com\opentable\db\postgres\embedded\ConnectionInfo.java
@@ -25,7 +25,7 @@ D:\Desenvolvimento\Projetos Github\A executar\[826356] opentable-otj-pg-embedded
 D:\Desenvolvimento\Projetos Github\A executar\[826356] opentable-otj-pg-embedded\src\test\java\com\opentable\db\postgres\embedded\PreparedDbTest.java
 D:\Desenvolvimento\Projetos Github\A executar\[826356] opentable-otj-pg-embedded\src\test\java\com\opentable\db\postgres\embedded\SingleInstanceRuleTest.java
 
-18/07/2019 08:36:08 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [826356] opentable-otj-pg-embedded artifacts...
+18/07/2019 15:09:20 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [826356] opentable-otj-pg-embedded artifacts...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[826356] opentable-otj-pg-embedded\src\main\java\com\opentable\db\postgres\embedded\BundledPostgresBinaryResolver.java
 D:\Desenvolvimento\Projetos Github\A executar\[826356] opentable-otj-pg-embedded\src\main\java\com\opentable\db\postgres\embedded\ConnectionInfo.java

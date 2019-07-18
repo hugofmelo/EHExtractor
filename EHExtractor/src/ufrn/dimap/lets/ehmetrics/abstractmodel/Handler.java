@@ -10,6 +10,7 @@ import com.github.javaparser.resolution.UnsolvedSymbolException;
 public class Handler extends AbstractEHModelElement
 {
 	private List<Type> exceptions;
+	private String variableName;
 	private List<HandlingAction> handlingActions;
 	
 	
@@ -23,12 +24,23 @@ public class Handler extends AbstractEHModelElement
 		super();
 		
 		this.exceptions = new ArrayList<>();
+		this.variableName = null;
 		this.handlingActions = new ArrayList<>();
 		
 		this.nestedHandlers = new ArrayList<>();
 		this.parentHandler = Optional.empty();
 		
 		this.escapingSignalers = new ArrayList<>();
+	}
+	
+	public String getVariableName ()
+	{
+		return this.variableName;
+	}
+	
+	public void setVariableName (String variableName)
+	{
+		this.variableName = variableName;
 	}
 	
 	public List<Type> getExceptions()
@@ -100,7 +112,7 @@ public class Handler extends AbstractEHModelElement
 	{
 		HandlingAction newHandlingAction = new HandlingAction();
 		
-		newHandlingAction.setNode(callExpression);
+		//newHandlingAction.setNode(callExpression);
 		newHandlingAction.setHandler(this);
 		
 		this.getHandlingActions().add(newHandlingAction);

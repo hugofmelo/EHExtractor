@@ -1,4 +1,4 @@
-17/07/2019 19:50:10 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [576195] spring-projects-spring-boot files...
+18/07/2019 14:50:44 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [576195] spring-projects-spring-boot files...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[576195] spring-projects-spring-boot\spring-boot-project\spring-boot\src\test\java\sampleconfig\MyComponentInPackageWithoutDot.java
 D:\Desenvolvimento\Projetos Github\A executar\[576195] spring-projects-spring-boot\spring-boot-samples\spring-boot-sample-junit-jupiter\src\main\java\sample\MessageController.java
@@ -4684,7 +4684,7 @@ D:\Desenvolvimento\Projetos Github\A executar\[576195] spring-projects-spring-bo
 D:\Desenvolvimento\Projetos Github\A executar\[576195] spring-projects-spring-boot\spring-boot-project\spring-boot-tools\spring-boot-loader\src\it\executable-war\src\main\java\org\springframework\launcher\it\war\embedded\EmbeddedWarStarter.java
 D:\Desenvolvimento\Projetos Github\A executar\[576195] spring-projects-spring-boot\spring-boot-project\spring-boot-tools\spring-boot-loader\src\it\executable-war\src\main\java\org\springframework\launcher\it\war\embedded\WebApplicationInitializersConfiguration.java
 
-17/07/2019 19:50:10 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [576195] spring-projects-spring-boot artifacts...
+18/07/2019 14:50:44 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [576195] spring-projects-spring-boot artifacts...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[576195] spring-projects-spring-boot\spring-boot-samples\spring-boot-sample-junit-jupiter\src\main\java\sample\MessageController.java
 D:\Desenvolvimento\Projetos Github\A executar\[576195] spring-projects-spring-boot\spring-boot-samples\spring-boot-sample-junit-jupiter\src\main\java\sample\SampleJUnitJupiterApplication.java

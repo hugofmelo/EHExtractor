@@ -21,24 +21,6 @@ public class VisitorsUtil {
 	private VisitorsUtil ()	{}
 	
 	
-	
-	/**
-	 * Extract CatchClauses from given Handler e from nested handlers.
-	 * */
-	public static List<CatchClause> getCatchClausesFromHandler( Optional<Handler> handlerMaybe )
-	{
-		List <CatchClause> catchClauses = new ArrayList<>();
-		Optional <Handler> auxHandlerMaybe = handlerMaybe;
-		
-		while ( auxHandlerMaybe.isPresent() )
-		{
-			catchClauses.add((CatchClause) handlerMaybe.get().getNode());
-			auxHandlerMaybe = auxHandlerMaybe.get().getParentHandler();
-		}
-		
-		return catchClauses;
-	}
-	
 	/**
 	 * Check if a handler in the context has caught an exception which name is in the list of simpleNames.
 	 * */
@@ -66,9 +48,9 @@ public class VisitorsUtil {
 		
 		while ( handlerOptional.isPresent() )
 		{
-			CatchClause catchClause = (CatchClause) handlerOptional.get().getNode();
+			String variableName = handlerOptional.get().getVariableName();
 			
-			if ( catchClause.getParameter().getName().equals(exceptionName) )
+			if ( variableName.equals(exceptionName.asString()) )
 			{
 				return Optional.of(handler);
 			}

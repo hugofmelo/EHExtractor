@@ -33,15 +33,25 @@ public class BaseGuidelineVisitor extends VoidVisitorAdapter<Void>
 	protected File javaFile; // Java file being parsed
 	protected boolean allowUnresolved;
 	
+	// Atributos que persistem por todo o projeto
 	protected TypeHierarchy typeHierarchy;
-	
-	// Lista auxiliar para controlar os throws do CompilationUnit sendo parseado e assim evitar falsos duplicatas
-	private VisitorList<ThrowStmt> throwsOfFile; 
 	protected List<Signaler> signalersOfProject;
-	
-	// Lista auxiliar para controlar os catches do CompilationUnit sendo parseado e assim evitar falsos duplicatas
-	private VisitorList<CatchClause> catchesOfFile; 
 	protected List<Handler> handlersOfProject;
+	
+	
+	/** Atributos que existem durante o processamento de cada arquivo .java. No final do processamento de cada arquivo, signalers e handlers são adicionados aos do projeto
+	 * Essa solução foi necessária por 2 motivos: (1) permitir um sistema de rollback. Se houver uma falha durante a visita a um arquivo, nenhum signaler ou handler é adicionado. Por outro
+	 * lado, tipos são adicionados à hierarquia. (2) permitir à procura de handlers pelo CatchClause e de signalers pelo ThrowStmt, que devido à implementação do JP, poderiam ser erroneamente
+	 * considerados duplicatas em uma lista. Para lidar com isso, usamos uma lista especial do JP (VisitorList), o que impede o uso direto da lista de Handlers e Signalers.
+	 * Isso tudo seria resolvido com a possível implementação de VisitorListeners. No caso, os guidelines seriam listeners, e não visitors como agora. Eles escutariam cada método do BaseVisitor
+	 * antes ou depois da visita, e assim não precisariam revisitar os nós, o que leva à necessidade de procurar os nós na lista.
+	 */
+	private List<Signaler> signalersOfFile;
+	private VisitorList<ThrowStmt> throwsOfFile; 
+
+	private List<Handler> handlersOfFile;
+	private VisitorList<CatchClause> catchesOfFile; 
+	
 
 	private Optional<Handler> handlerInScopeOptional;
 	
@@ -50,12 +60,13 @@ public class BaseGuidelineVisitor extends VoidVisitorAdapter<Void>
 		this.allowUnresolved = allowUnresolved;
 		
 		this.typeHierarchy = new TypeHierarchy(allowUnresolved);
-		
-		this.throwsOfFile = new VisitorList<>(new ObjectIdentityHashCodeVisitor(), new ObjectIdentityEqualsVisitor());
 		this.signalersOfProject = new ArrayList<>();
-		
-		this.catchesOfFile = new VisitorList<>(new ObjectIdentityHashCodeVisitor(), new ObjectIdentityEqualsVisitor());
 		this.handlersOfProject = new ArrayList<>();
+		
+		this.signalersOfFile = new ArrayList<>();
+		this.throwsOfFile = new VisitorList<>(new ObjectIdentityHashCodeVisitor(), new ObjectIdentityEqualsVisitor());
+		this.handlersOfFile = new ArrayList<>();
+		this.catchesOfFile = new VisitorList<>(new ObjectIdentityHashCodeVisitor(), new ObjectIdentityEqualsVisitor());
 		
 		this.handlerInScopeOptional = Optional.empty();
 	}
@@ -64,10 +75,17 @@ public class BaseGuidelineVisitor extends VoidVisitorAdapter<Void>
 	public void visit (CompilationUnit compilationUnit, Void arg)
 	{		
 		handlerInScopeOptional = Optional.empty();
+		
 		this.throwsOfFile.clear();
+		this.signalersOfFile.clear();
+		
 		this.catchesOfFile.clear();
+		this.handlersOfFile.clear();
 
 		super.visit(compilationUnit, arg);
+		
+		this.signalersOfProject.addAll(this.signalersOfFile);
+		this.handlersOfProject.addAll(this.handlersOfFile);
 	}	
 	
 	@Override
@@ -142,7 +160,7 @@ public class BaseGuidelineVisitor extends VoidVisitorAdapter<Void>
 		{	
 			Type type = typeHierarchy.findOrCreateResolvedType(referenceTypeDeclaration.asClass());
 			type.setFile(javaFile);
-			type.setNode(classOrInterfaceDeclaration);
+			//type.setNode(classOrInterfaceDeclaration);
 			
 			return Optional.of(type);
 		}
@@ -159,7 +177,8 @@ public class BaseGuidelineVisitor extends VoidVisitorAdapter<Void>
 	{
 		Handler newHandler = new Handler();
 		newHandler.setFile(javaFile);
-		newHandler.setNode(catchClause);
+		newHandler.setVariableName(catchClause.getParameter().getNameAsString());
+		//newHandler.setNode(catchClause);
 
 		List<Type> types = JavaParserUtil.getHandledTypes(catchClause).stream()
 				.map(typeHierarchy::findOrCreateType)
@@ -183,7 +202,7 @@ public class BaseGuidelineVisitor extends VoidVisitorAdapter<Void>
 			.forEach(t -> t.setClassType(ClassType.UNRESOLVED_EXCEPTION));
 		}
 
-		this.handlersOfProject.add(newHandler);
+		this.handlersOfFile.add(newHandler);
 
 		return newHandler;
 	}
@@ -195,7 +214,7 @@ public class BaseGuidelineVisitor extends VoidVisitorAdapter<Void>
 	{
 		Signaler newSignaler = new Signaler();
 		newSignaler.setFile(javaFile);
-		newSignaler.setNode(throwStatement);
+		//newSignaler.setNode(throwStatement);
 
 		Optional <ResolvedClassDeclaration> classDeclaration = JavaParserUtil.getThrownClassDeclaration(throwStatement);
 
@@ -227,7 +246,7 @@ public class BaseGuidelineVisitor extends VoidVisitorAdapter<Void>
 		newSignaler.setThrownTypes( thrownTypes );
 		thrownTypes.forEach( type -> type.addSignaler(newSignaler));
 		
-		this.signalersOfProject.add(newSignaler);
+		this.signalersOfFile.add(newSignaler);
 		
 		return newSignaler;
 	}
@@ -246,7 +265,7 @@ public class BaseGuidelineVisitor extends VoidVisitorAdapter<Void>
 
 	public Handler findHandler(CatchClause catchClause)
 	{
-		return this.handlersOfProject.get(this.catchesOfFile.indexOf(catchClause));
+		return this.handlersOfFile.get(this.catchesOfFile.indexOf(catchClause));
 	}
 	
 	/**
@@ -260,7 +279,7 @@ public class BaseGuidelineVisitor extends VoidVisitorAdapter<Void>
 		
 		if (index != -1)
 		{
-			return Optional.of(this.signalersOfProject.get(index));
+			return Optional.of(this.signalersOfFile.get(index));
 		}
 		else
 		{

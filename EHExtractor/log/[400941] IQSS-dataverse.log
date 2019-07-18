@@ -1,4 +1,4 @@
-17/07/2019 18:50:00 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [400941] IQSS-dataverse files...
+18/07/2019 14:46:24 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [400941] IQSS-dataverse files...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[400941] IQSS-dataverse\src\main\java\edu\harvard\iq\dataverse\AbstractGlobalIdServiceBean.java
 D:\Desenvolvimento\Projetos Github\A executar\[400941] IQSS-dataverse\src\main\java\edu\harvard\iq\dataverse\AlternativePersistentIdentifier.java
@@ -961,7 +961,7 @@ D:\Desenvolvimento\Projetos Github\A executar\[400941] IQSS-dataverse\src\test\j
 D:\Desenvolvimento\Projetos Github\A executar\[400941] IQSS-dataverse\src\test\java\edu\harvard\iq\dataverse\ingest\tabulardata\impl\plugins\dta\DTAFileReaderTest.java
 D:\Desenvolvimento\Projetos Github\A executar\[400941] IQSS-dataverse\src\test\java\edu\harvard\iq\dataverse\ingest\tabulardata\impl\plugins\dta\NewDTAFileReaderTest.java
 
-17/07/2019 18:50:00 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [400941] IQSS-dataverse artifacts...
+18/07/2019 14:46:24 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [400941] IQSS-dataverse artifacts...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[400941] IQSS-dataverse\src\main\java\edu\harvard\iq\dataverse\AbstractGlobalIdServiceBean.java
 D:\Desenvolvimento\Projetos Github\A executar\[400941] IQSS-dataverse\src\main\java\edu\harvard\iq\dataverse\AlternativePersistentIdentifier.java

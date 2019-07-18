@@ -1,4 +1,4 @@
-17/07/2019 23:19:19 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [709058] OpenConext-Mujina files...
+18/07/2019 15:01:09 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [709058] OpenConext-Mujina files...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[709058] OpenConext-Mujina\mujina-idp\src\main\java\mujina\MujinaIdpApplication.java
 D:\Desenvolvimento\Projetos Github\A executar\[709058] OpenConext-Mujina\mujina-idp\src\test\java\mujina\AbstractIntegrationTest.java
@@ -52,7 +52,7 @@ D:\Desenvolvimento\Projetos Github\A executar\[709058] OpenConext-Mujina\mujina-
 D:\Desenvolvimento\Projetos Github\A executar\[709058] OpenConext-Mujina\mujina-sp\src\test\java\mujina\sp\MetadataEndPointTest.java
 D:\Desenvolvimento\Projetos Github\A executar\[709058] OpenConext-Mujina\mujina-sp\src\test\java\mujina\sp\UserControllerTest.java
 
-17/07/2019 23:19:19 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [709058] OpenConext-Mujina artifacts...
+18/07/2019 15:01:09 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [709058] OpenConext-Mujina artifacts...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[709058] OpenConext-Mujina\mujina-idp\src\main\java\mujina\MujinaIdpApplication.java
 D:\Desenvolvimento\Projetos Github\A executar\[709058] OpenConext-Mujina\mujina-sp\src\main\java\mujina\MujinaSpApplication.java

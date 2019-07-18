@@ -1,4 +1,4 @@
-17/07/2019 16:09:25 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [330680] os72-protoc-jar-maven-plugin files...
+18/07/2019 14:45:34 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [330680] os72-protoc-jar-maven-plugin files...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[330680] os72-protoc-jar-maven-plugin\src\main\java\com\github\os72\protocjar\maven\OutputTarget.java
 D:\Desenvolvimento\Projetos Github\A executar\[330680] os72-protoc-jar-maven-plugin\src\main\java\com\github\os72\protocjar\maven\ProtocJarMojo.java
@@ -9,7 +9,7 @@ D:\Desenvolvimento\Projetos Github\A executar\[330680] os72-protoc-jar-maven-plu
 D:\Desenvolvimento\Projetos Github\A executar\[330680] os72-protoc-jar-maven-plugin\src\test\java\com\github\os72\protocjar\maven\MojoMvnCompileTest.java
 D:\Desenvolvimento\Projetos Github\A executar\[330680] os72-protoc-jar-maven-plugin\src\test\java\com\github\os72\protocjar\maven\MojoShadingTest.java
 
-17/07/2019 16:09:25 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [330680] os72-protoc-jar-maven-plugin artifacts...
+18/07/2019 14:45:34 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [330680] os72-protoc-jar-maven-plugin artifacts...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[330680] os72-protoc-jar-maven-plugin\src\main\java\com\github\os72\protocjar\maven\OutputTarget.java
 D:\Desenvolvimento\Projetos Github\A executar\[330680] os72-protoc-jar-maven-plugin\src\main\java\com\github\os72\protocjar\maven\ProtocJarMojo.java

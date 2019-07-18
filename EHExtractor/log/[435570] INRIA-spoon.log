@@ -1,4 +1,4 @@
-17/07/2019 18:52:02 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [435570] INRIA-spoon files...
+18/07/2019 14:47:38 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [435570] INRIA-spoon files...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[435570] INRIA-spoon\src\test\resources\ConfigPlugin.java
 D:\Desenvolvimento\Projetos Github\A executar\[435570] INRIA-spoon\src\main\java\spoon\ContractVerifier.java
@@ -1653,7 +1653,7 @@ D:\Desenvolvimento\Projetos Github\A executar\[435570] INRIA-spoon\src\test\reso
 D:\Desenvolvimento\Projetos Github\A executar\[435570] INRIA-spoon\src\test\resources\noclasspath\issue1293\com\cristal\ircica\applicationcolis\userinterface\fragments\TransporteurFragment.java
 D:\Desenvolvimento\Projetos Github\A executar\[435570] INRIA-spoon\src\test\resources\noclasspath\org\elasticsearch\action\admin\cluster\node\tasks\TasksIT.java
 
-17/07/2019 18:52:02 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [435570] INRIA-spoon artifacts...
+18/07/2019 14:47:38 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [435570] INRIA-spoon artifacts...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[435570] INRIA-spoon\src\main\java\spoon\ContractVerifier.java
 D:\Desenvolvimento\Projetos Github\A executar\[435570] INRIA-spoon\src\main\java\spoon\IncrementalLauncher.java

@@ -1,4 +1,4 @@
-17/07/2019 19:53:28 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [651138] jdbi-jdbi files...
+18/07/2019 14:53:10 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [651138] jdbi-jdbi files...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[651138] jdbi-jdbi\docs\src\test\java\jdbi\doc\ArgumentsTest.java
 D:\Desenvolvimento\Projetos Github\A executar\[651138] jdbi-jdbi\docs\src\test\java\jdbi\doc\BatchTest.java
@@ -816,7 +816,7 @@ D:\Desenvolvimento\Projetos Github\A executar\[651138] jdbi-jdbi\core\src\main\j
 D:\Desenvolvimento\Projetos Github\A executar\[651138] jdbi-jdbi\core\src\main\java\org\jdbi\v3\core\mapper\reflect\internal\PojoProperties.java
 D:\Desenvolvimento\Projetos Github\A executar\[651138] jdbi-jdbi\core\src\main\java\org\jdbi\v3\core\mapper\reflect\internal\PojoTypes.java
 
-17/07/2019 19:53:28 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [651138] jdbi-jdbi artifacts...
+18/07/2019 14:53:10 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [651138] jdbi-jdbi artifacts...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[651138] jdbi-jdbi\benchmark\src\main\java\org\jdbi\v3\benchmark\CaseInsensitiveStringEqualsBenchmark.java
 D:\Desenvolvimento\Projetos Github\A executar\[651138] jdbi-jdbi\benchmark\src\main\java\org\jdbi\v3\benchmark\EnumMapperBenchmark.java

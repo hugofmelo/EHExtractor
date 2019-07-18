@@ -1,4 +1,4 @@
-17/07/2019 18:51:01 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [429430] TechEmpower-FrameworkBenchmarks files...
+18/07/2019 14:46:49 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [429430] TechEmpower-FrameworkBenchmarks files...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[429430] TechEmpower-FrameworkBenchmarks\frameworks\Java\play1\test\ApplicationTest.java
 D:\Desenvolvimento\Projetos Github\A executar\[429430] TechEmpower-FrameworkBenchmarks\frameworks\Java\play1\test\BasicTest.java
@@ -458,7 +458,7 @@ D:\Desenvolvimento\Projetos Github\A executar\[429430] TechEmpower-FrameworkBenc
 D:\Desenvolvimento\Projetos Github\A executar\[429430] TechEmpower-FrameworkBenchmarks\frameworks\Java\t-io\src\main\java\org\tio\http\server\benchmark\init\HttpServerInit.java
 D:\Desenvolvimento\Projetos Github\A executar\[429430] TechEmpower-FrameworkBenchmarks\frameworks\Java\t-io\src\main\java\org\tio\http\server\benchmark\model\Message.java
 
-17/07/2019 18:51:01 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [429430] TechEmpower-FrameworkBenchmarks artifacts...
+18/07/2019 14:46:49 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [429430] TechEmpower-FrameworkBenchmarks artifacts...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[429430] TechEmpower-FrameworkBenchmarks\frameworks\Java\play1\app\controllers\Application.java
 D:\Desenvolvimento\Projetos Github\A executar\[429430] TechEmpower-FrameworkBenchmarks\frameworks\Java\play1\app\models\World.java

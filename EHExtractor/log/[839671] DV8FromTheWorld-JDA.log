@@ -1,4 +1,4 @@
-18/07/2019 08:36:18 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [839671] DV8FromTheWorld-JDA files...
+18/07/2019 15:09:36 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [839671] DV8FromTheWorld-JDA files...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[839671] DV8FromTheWorld-JDA\src\examples\java\MessageListenerExample.java
 D:\Desenvolvimento\Projetos Github\A executar\[839671] DV8FromTheWorld-JDA\src\main\java\com\iwebpp\crypto\TweetNaclFast.java
@@ -511,7 +511,7 @@ D:\Desenvolvimento\Projetos Github\A executar\[839671] DV8FromTheWorld-JDA\src\m
 D:\Desenvolvimento\Projetos Github\A executar\[839671] DV8FromTheWorld-JDA\src\main\java\net\dv8tion\jda\core\events\message\priv\react\PrivateMessageReactionAddEvent.java
 D:\Desenvolvimento\Projetos Github\A executar\[839671] DV8FromTheWorld-JDA\src\main\java\net\dv8tion\jda\core\events\message\priv\react\PrivateMessageReactionRemoveEvent.java
 
-18/07/2019 08:36:18 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [839671] DV8FromTheWorld-JDA artifacts...
+18/07/2019 15:09:36 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [839671] DV8FromTheWorld-JDA artifacts...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[839671] DV8FromTheWorld-JDA\src\main\java\com\iwebpp\crypto\TweetNaclFast.java
 D:\Desenvolvimento\Projetos Github\A executar\[839671] DV8FromTheWorld-JDA\src\main\java\net\dv8tion\jda\package-info.java

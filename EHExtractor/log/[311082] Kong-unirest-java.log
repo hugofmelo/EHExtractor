@@ -1,4 +1,4 @@
-17/07/2019 16:09:17 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [311082] Kong-unirest-java files...
+18/07/2019 14:45:23 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [311082] Kong-unirest-java files...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[311082] Kong-unirest-java\bad-maven-test\src\test\java\kong\BadMavenConfigTest.java
 D:\Desenvolvimento\Projetos Github\A executar\[311082] Kong-unirest-java\unirest\src\test\java\BehaviorTests\AsEmptyTest.java
@@ -152,7 +152,7 @@ D:\Desenvolvimento\Projetos Github\A executar\[311082] Kong-unirest-java\unirest
 D:\Desenvolvimento\Projetos Github\A executar\[311082] Kong-unirest-java\unirest\src\test\java\kong\unirest\apache\SecurityConfigTest.java
 D:\Desenvolvimento\Projetos Github\A executar\[311082] Kong-unirest-java\unirest\src\test\java\kong\unirest\apache\UtilTest.java
 
-17/07/2019 16:09:17 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [311082] Kong-unirest-java artifacts...
+18/07/2019 14:45:23 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [311082] Kong-unirest-java artifacts...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[311082] Kong-unirest-java\object-mapper-gson\src\main\java\kong\unirest\GsonObjectMapper.java
 D:\Desenvolvimento\Projetos Github\A executar\[311082] Kong-unirest-java\object-mapper-jackson\src\main\java\kong\unirest\JacksonObjectMapper.java

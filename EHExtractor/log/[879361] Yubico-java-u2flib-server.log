@@ -1,4 +1,4 @@
-18/07/2019 08:36:26 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [879361] Yubico-java-u2flib-server files...
+18/07/2019 15:09:50 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [879361] Yubico-java-u2flib-server files...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[879361] Yubico-java-u2flib-server\u2flib-server-demo\src\main\java\demo\App.java
 D:\Desenvolvimento\Projetos Github\A executar\[879361] Yubico-java-u2flib-server\u2flib-server-demo\src\main\java\demo\Config.java
@@ -83,7 +83,7 @@ D:\Desenvolvimento\Projetos Github\A executar\[879361] Yubico-java-u2flib-server
 D:\Desenvolvimento\Projetos Github\A executar\[879361] Yubico-java-u2flib-server\u2flib-server-core\src\test\java\com\yubico\u2f\data\messages\key\util\CertificateParserTest.java
 D:\Desenvolvimento\Projetos Github\A executar\[879361] Yubico-java-u2flib-server\u2flib-server-core\src\test\java\com\yubico\u2f\data\messages\key\util\U2fB64EncodingTest.java
 
-18/07/2019 08:36:26 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [879361] Yubico-java-u2flib-server artifacts...
+18/07/2019 15:09:50 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [879361] Yubico-java-u2flib-server artifacts...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[879361] Yubico-java-u2flib-server\u2flib-server-demo\src\main\java\demo\App.java
 D:\Desenvolvimento\Projetos Github\A executar\[879361] Yubico-java-u2flib-server\u2flib-server-demo\src\main\java\demo\Config.java

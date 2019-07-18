@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
+import com.github.javaparser.ast.CompilationUnit;
 import com.github.javaparser.ast.expr.MethodCallExpr;
 import com.github.javaparser.ast.stmt.CatchClause;
 
@@ -28,6 +29,16 @@ public class LogTheExceptionVisitor extends AbstractGuidelineVisitor
 		this.handlerInScopeOptional = Optional.empty();
 	}
 
+	/*
+	@Override
+	public void visit (CompilationUnit compilationUnit, Void arg)
+	{		
+		handlerInScopeOptional = Optional.empty();
+
+		super.visit(compilationUnit, arg);
+	}
+	*/
+	
 	@Override
 	public void visit (CatchClause catchClause, Void arg)
 	{		

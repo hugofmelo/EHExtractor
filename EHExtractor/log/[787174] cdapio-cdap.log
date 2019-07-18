@@ -1,4 +1,4 @@
-18/07/2019 08:34:15 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [787174] cdapio-cdap files...
+18/07/2019 15:07:13 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [787174] cdapio-cdap files...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[787174] cdapio-cdap\cdap-gateway\src\test\java\VersionFilteredServiceDiscoveredTest.java
 D:\Desenvolvimento\Projetos Github\A executar\[787174] cdapio-cdap\cdap-app-fabric\src\test\java\io\cdap\cdap\AllProgramsApp.java
@@ -4426,7 +4426,7 @@ D:\Desenvolvimento\Projetos Github\A executar\[787174] cdapio-cdap\cdap-app-temp
 D:\Desenvolvimento\Projetos Github\A executar\[787174] cdapio-cdap\cdap-app-templates\cdap-etl\hydrator-test\src\main\java\io\cdap\cdap\etl\mock\spark\streaming\MockSource.java
 D:\Desenvolvimento\Projetos Github\A executar\[787174] cdapio-cdap\cdap-app-templates\cdap-etl\hydrator-spark-core-base\src\main\java\io\cdap\cdap\etl\spark\streaming\function\preview\LimitingFunction.java
 
-18/07/2019 08:34:15 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [787174] cdapio-cdap artifacts...
+18/07/2019 15:07:13 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [787174] cdapio-cdap artifacts...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[787174] cdapio-cdap\cdap-standalone\src\main\java\io\cdap\cdap\package-info.java
 D:\Desenvolvimento\Projetos Github\A executar\[787174] cdapio-cdap\cdap-standalone\src\main\java\io\cdap\cdap\StandaloneMain.java

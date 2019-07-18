@@ -1,4 +1,4 @@
-17/07/2019 16:03:11 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [286502] arthurgregorio-web-budget files...
+18/07/2019 14:45:14 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [286502] arthurgregorio-web-budget files...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[286502] arthurgregorio-web-budget\src\main\java\br\com\webbudget\application\controller\AuthenticationBean.java
 D:\Desenvolvimento\Projetos Github\A executar\[286502] arthurgregorio-web-budget\src\main\java\br\com\webbudget\application\controller\DashboardBean.java
@@ -292,7 +292,7 @@ D:\Desenvolvimento\Projetos Github\A executar\[286502] arthurgregorio-web-budget
 D:\Desenvolvimento\Projetos Github\A executar\[286502] arthurgregorio-web-budget\src\main\java\br\com\webbudget\domain\logics\financial\movement\period\QuoteDeleteLogic.java
 D:\Desenvolvimento\Projetos Github\A executar\[286502] arthurgregorio-web-budget\src\main\java\br\com\webbudget\domain\logics\financial\movement\period\ValueValidator.java
 
-17/07/2019 16:03:11 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [286502] arthurgregorio-web-budget artifacts...
+18/07/2019 14:45:14 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [286502] arthurgregorio-web-budget artifacts...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[286502] arthurgregorio-web-budget\src\main\java\br\com\webbudget\application\controller\AuthenticationBean.java
 D:\Desenvolvimento\Projetos Github\A executar\[286502] arthurgregorio-web-budget\src\main\java\br\com\webbudget\application\controller\DashboardBean.java

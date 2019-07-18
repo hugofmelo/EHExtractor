@@ -1,4 +1,4 @@
-17/07/2019 17:15:20 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [369279] JesseHu1520-mall files...
+18/07/2019 14:45:41 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [369279] JesseHu1520-mall files...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[369279] JesseHu1520-mall\src\main\java\priv\jesse\mall\MallApplication.java
 D:\Desenvolvimento\Projetos Github\A executar\[369279] JesseHu1520-mall\src\test\java\priv\jesse\mall\MallApplicationTests.java
@@ -45,7 +45,7 @@ D:\Desenvolvimento\Projetos Github\A executar\[369279] JesseHu1520-mall\src\main
 D:\Desenvolvimento\Projetos Github\A executar\[369279] JesseHu1520-mall\src\main\java\priv\jesse\mall\web\user\ProductController.java
 D:\Desenvolvimento\Projetos Github\A executar\[369279] JesseHu1520-mall\src\main\java\priv\jesse\mall\web\user\UserController.java
 
-17/07/2019 17:15:20 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [369279] JesseHu1520-mall artifacts...
+18/07/2019 14:45:41 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [369279] JesseHu1520-mall artifacts...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[369279] JesseHu1520-mall\src\main\java\priv\jesse\mall\MallApplication.java
 D:\Desenvolvimento\Projetos Github\A executar\[369279] JesseHu1520-mall\src\main\java\priv\jesse\mall\aspect\GlobalExceptionHandler.java

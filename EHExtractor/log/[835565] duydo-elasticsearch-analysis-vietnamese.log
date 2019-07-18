@@ -1,4 +1,4 @@
-18/07/2019 08:36:14 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [835565] duydo-elasticsearch-analysis-vietnamese files...
+18/07/2019 15:09:31 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [835565] duydo-elasticsearch-analysis-vietnamese files...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[835565] duydo-elasticsearch-analysis-vietnamese\src\main\java\org\elasticsearch\index\analysis\VietnameseAnalyzerProvider.java
 D:\Desenvolvimento\Projetos Github\A executar\[835565] duydo-elasticsearch-analysis-vietnamese\src\main\java\org\elasticsearch\index\analysis\VietnameseTokenizerFactory.java
@@ -8,7 +8,7 @@ D:\Desenvolvimento\Projetos Github\A executar\[835565] duydo-elasticsearch-analy
 D:\Desenvolvimento\Projetos Github\A executar\[835565] duydo-elasticsearch-analysis-vietnamese\src\main\java\org\apache\lucene\analysis\vi\VietnameseTokenizer.java
 D:\Desenvolvimento\Projetos Github\A executar\[835565] duydo-elasticsearch-analysis-vietnamese\src\main\java\org\elasticsearch\plugin\analysis\vi\AnalysisVietnamesePlugin.java
 
-18/07/2019 08:36:14 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [835565] duydo-elasticsearch-analysis-vietnamese artifacts...
+18/07/2019 15:09:31 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [835565] duydo-elasticsearch-analysis-vietnamese artifacts...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[835565] duydo-elasticsearch-analysis-vietnamese\src\main\java\org\elasticsearch\index\analysis\VietnameseAnalyzerProvider.java
 D:\Desenvolvimento\Projetos Github\A executar\[835565] duydo-elasticsearch-analysis-vietnamese\src\main\java\org\elasticsearch\index\analysis\VietnameseTokenizerFactory.java

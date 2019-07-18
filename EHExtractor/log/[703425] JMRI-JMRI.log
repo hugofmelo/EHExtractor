@@ -1,4 +1,4 @@
-17/07/2019 19:59:11 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [703425] JMRI-JMRI files...
+18/07/2019 14:56:59 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [703425] JMRI-JMRI files...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[703425] JMRI-JMRI\java\package-info.java
 D:\Desenvolvimento\Projetos Github\A executar\[703425] JMRI-JMRI\java\src\apps\AboutAction.java
@@ -9241,7 +9241,7 @@ D:\Desenvolvimento\Projetos Github\A executar\[703425] JMRI-JMRI\java\test\jmri\
 D:\Desenvolvimento\Projetos Github\A executar\[703425] JMRI-JMRI\java\test\jmri\jmrix\can\adapters\lawicell\canusb\serialdriver\configurexml\ConnectionConfigXmlTest.java
 D:\Desenvolvimento\Projetos Github\A executar\[703425] JMRI-JMRI\java\test\jmri\jmrix\can\adapters\lawicell\canusb\serialdriver\configurexml\PackageTest.java
 
-17/07/2019 19:59:11 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [703425] JMRI-JMRI artifacts...
+18/07/2019 14:56:59 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [703425] JMRI-JMRI artifacts...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[703425] JMRI-JMRI\java\src\apps\AboutAction.java
 D:\Desenvolvimento\Projetos Github\A executar\[703425] JMRI-JMRI\java\src\apps\AppConfigBase.java

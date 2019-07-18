@@ -1,4 +1,4 @@
-17/07/2019 19:53:01 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [629985] lettuce-io-lettuce-core files...
+18/07/2019 14:52:43 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [629985] lettuce-io-lettuce-core files...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[629985] lettuce-io-lettuce-core\src\main\java\io\lettuce\core\AbstractRedisAsyncCommands.java
 D:\Desenvolvimento\Projetos Github\A executar\[629985] lettuce-io-lettuce-core\src\main\java\io\lettuce\core\AbstractRedisClient.java
@@ -992,7 +992,7 @@ D:\Desenvolvimento\Projetos Github\A executar\[629985] lettuce-io-lettuce-core\s
 D:\Desenvolvimento\Projetos Github\A executar\[629985] lettuce-io-lettuce-core\src\main\java\io\lettuce\core\cluster\pubsub\api\sync\PubSubNodeSelection.java
 D:\Desenvolvimento\Projetos Github\A executar\[629985] lettuce-io-lettuce-core\src\main\java\io\lettuce\core\cluster\pubsub\api\sync\RedisClusterPubSubCommands.java
 
-17/07/2019 19:53:01 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [629985] lettuce-io-lettuce-core artifacts...
+18/07/2019 14:52:43 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [629985] lettuce-io-lettuce-core artifacts...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[629985] lettuce-io-lettuce-core\src\main\java\io\lettuce\core\AbstractRedisAsyncCommands.java
 D:\Desenvolvimento\Projetos Github\A executar\[629985] lettuce-io-lettuce-core\src\main\java\io\lettuce\core\AbstractRedisClient.java

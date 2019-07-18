@@ -1,4 +1,4 @@
-17/07/2019 19:51:24 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [597107] allegro-hermes files...
+18/07/2019 14:52:27 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [597107] allegro-hermes files...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[597107] allegro-hermes\hermes-api\src\main\java\pl\allegro\tech\hermes\api\Anonymizable.java
 D:\Desenvolvimento\Projetos Github\A executar\[597107] allegro-hermes\hermes-api\src\main\java\pl\allegro\tech\hermes\api\AvroMediaType.java
@@ -990,7 +990,7 @@ D:\Desenvolvimento\Projetos Github\A executar\[597107] allegro-hermes\hermes-man
 D:\Desenvolvimento\Projetos Github\A executar\[597107] allegro-hermes\hermes-management\src\main\java\pl\allegro\tech\hermes\management\infrastructure\kafka\service\retransmit\OffsetNotFoundException.java
 D:\Desenvolvimento\Projetos Github\A executar\[597107] allegro-hermes\hermes-management\src\main\java\pl\allegro\tech\hermes\management\infrastructure\query\parser\json\JsonQueryParser.java
 
-17/07/2019 19:51:24 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [597107] allegro-hermes artifacts...
+18/07/2019 14:52:27 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [597107] allegro-hermes artifacts...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[597107] allegro-hermes\hermes-api\src\main\java\pl\allegro\tech\hermes\api\Anonymizable.java
 D:\Desenvolvimento\Projetos Github\A executar\[597107] allegro-hermes\hermes-api\src\main\java\pl\allegro\tech\hermes\api\AvroMediaType.java

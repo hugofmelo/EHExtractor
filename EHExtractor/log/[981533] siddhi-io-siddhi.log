@@ -1,4 +1,4 @@
-18/07/2019 08:54:54 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [981533] siddhi-io-siddhi files...
+18/07/2019 15:13:17 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [981533] siddhi-io-siddhi files...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[981533] siddhi-io-siddhi\modules\siddhi-annotations\src\main\java\io\siddhi\annotation\Example.java
 D:\Desenvolvimento\Projetos Github\A executar\[981533] siddhi-io-siddhi\modules\siddhi-annotations\src\main\java\io\siddhi\annotation\Extension.java
@@ -964,7 +964,7 @@ D:\Desenvolvimento\Projetos Github\A executar\[981533] siddhi-io-siddhi\modules\
 D:\Desenvolvimento\Projetos Github\A executar\[981533] siddhi-io-siddhi\modules\siddhi-query-api\src\main\java\io\siddhi\query\api\execution\query\output\stream\UpdateSet.java
 D:\Desenvolvimento\Projetos Github\A executar\[981533] siddhi-io-siddhi\modules\siddhi-query-api\src\main\java\io\siddhi\query\api\execution\query\output\stream\UpdateStream.java
 
-18/07/2019 08:54:54 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [981533] siddhi-io-siddhi artifacts...
+18/07/2019 15:13:17 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [981533] siddhi-io-siddhi artifacts...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[981533] siddhi-io-siddhi\modules\siddhi-annotations\src\main\java\io\siddhi\annotation\Example.java
 D:\Desenvolvimento\Projetos Github\A executar\[981533] siddhi-io-siddhi\modules\siddhi-annotations\src\main\java\io\siddhi\annotation\Extension.java

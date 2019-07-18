@@ -1,4 +1,4 @@
-17/07/2019 16:03:22 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [290071] RoaringBitmap-RoaringBitmap files...
+18/07/2019 14:45:19 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [290071] RoaringBitmap-RoaringBitmap files...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[290071] RoaringBitmap-RoaringBitmap\examples\Basic.java
 D:\Desenvolvimento\Projetos Github\A executar\[290071] RoaringBitmap-RoaringBitmap\examples\Bitmap64.java
@@ -282,7 +282,7 @@ D:\Desenvolvimento\Projetos Github\A executar\[290071] RoaringBitmap-RoaringBitm
 D:\Desenvolvimento\Projetos Github\A executar\[290071] RoaringBitmap-RoaringBitmap\jmh\src\main\java\org\roaringbitmap\buffer\aggregation\andnot\identical\MutableRoaringBitmapBenchmark.java
 D:\Desenvolvimento\Projetos Github\A executar\[290071] RoaringBitmap-RoaringBitmap\jmh\src\main\java\org\roaringbitmap\buffer\aggregation\andnot\worstcase\MutableRoaringBitmapBenchmark.java
 
-17/07/2019 16:03:22 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [290071] RoaringBitmap-RoaringBitmap artifacts...
+18/07/2019 14:45:19 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [290071] RoaringBitmap-RoaringBitmap artifacts...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[290071] RoaringBitmap-RoaringBitmap\jmh\src\main\java\org\roaringbitmap\AbstractBenchmarkState.java
 D:\Desenvolvimento\Projetos Github\A executar\[290071] RoaringBitmap-RoaringBitmap\jmh\src\main\java\org\roaringbitmap\BasicBenchmark.java

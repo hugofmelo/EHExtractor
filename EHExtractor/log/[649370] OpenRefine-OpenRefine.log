@@ -1,4 +1,4 @@
-17/07/2019 19:53:16 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [649370] OpenRefine-OpenRefine files...
+18/07/2019 14:52:56 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [649370] OpenRefine-OpenRefine files...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[649370] OpenRefine-OpenRefine\main\src\com\google\refine\ClientSideResourceManager.java
 D:\Desenvolvimento\Projetos Github\A executar\[649370] OpenRefine-OpenRefine\main\src\com\google\refine\HttpResponder.java
@@ -939,7 +939,7 @@ D:\Desenvolvimento\Projetos Github\A executar\[649370] OpenRefine-OpenRefine\mai
 D:\Desenvolvimento\Projetos Github\A executar\[649370] OpenRefine-OpenRefine\main\tests\server\src\com\google\refine\tests\expr\functions\xml\xmlAttrTests.java
 D:\Desenvolvimento\Projetos Github\A executar\[649370] OpenRefine-OpenRefine\main\tests\server\src\com\google\refine\tests\expr\functions\xml\xmlTextTests.java
 
-17/07/2019 19:53:16 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [649370] OpenRefine-OpenRefine artifacts...
+18/07/2019 14:52:56 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [649370] OpenRefine-OpenRefine artifacts...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[649370] OpenRefine-OpenRefine\main\src\com\google\refine\ClientSideResourceManager.java
 D:\Desenvolvimento\Projetos Github\A executar\[649370] OpenRefine-OpenRefine\main\src\com\google\refine\HttpResponder.java

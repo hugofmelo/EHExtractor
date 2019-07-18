@@ -1,4 +1,4 @@
-17/07/2019 23:19:43 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [733224] box-box-java-sdk files...
+18/07/2019 15:01:50 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [733224] box-box-java-sdk files...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[733224] box-box-java-sdk\src\main\java\com\box\sdk\BackoffCounter.java
 D:\Desenvolvimento\Projetos Github\A executar\[733224] box-box-java-sdk\src\main\java\com\box\sdk\Base64.java
@@ -183,7 +183,7 @@ D:\Desenvolvimento\Projetos Github\A executar\[733224] box-box-java-sdk\src\main
 D:\Desenvolvimento\Projetos Github\A executar\[733224] box-box-java-sdk\src\main\java\com\box\sdk\internal\utils\Parsers.java
 D:\Desenvolvimento\Projetos Github\A executar\[733224] box-box-java-sdk\src\test\java\com\box\sdk\internal\utils\CollectionUtilsTest.java
 
-17/07/2019 23:19:43 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [733224] box-box-java-sdk artifacts...
+18/07/2019 15:01:50 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [733224] box-box-java-sdk artifacts...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[733224] box-box-java-sdk\src\main\java\com\box\sdk\BackoffCounter.java
 D:\Desenvolvimento\Projetos Github\A executar\[733224] box-box-java-sdk\src\main\java\com\box\sdk\Base64.java
