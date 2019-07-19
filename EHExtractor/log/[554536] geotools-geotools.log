@@ -1,4 +1,4 @@
-18/07/2019 10:13:59 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [554536] geotools-geotools files...
+18/07/2019 20:12:58 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [554536] geotools-geotools files...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[554536] geotools-geotools\docs\user\tutorial\quickstart\artifacts\module-info.java
 D:\Desenvolvimento\Projetos Github\A executar\[554536] geotools-geotools\docs\src\main\java\org\geotools\api\APIExamples.java
@@ -11326,7 +11326,7 @@ D:\Desenvolvimento\Projetos Github\A executar\[554536] geotools-geotools\modules
 D:\Desenvolvimento\Projetos Github\A executar\[554536] geotools-geotools\modules\library\coverage\src\main\java\org\geotools\coverage\grid\io\imageio\geotiff\codes\GeoTiffUoMCodes.java
 D:\Desenvolvimento\Projetos Github\A executar\[554536] geotools-geotools\modules\library\coverage\src\main\java\org\geotools\coverage\grid\io\imageio\geotiff\codes\GeoTiffVCSCodes.java
 
-18/07/2019 10:13:59 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [554536] geotools-geotools artifacts...
+18/07/2019 20:12:58 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [554536] geotools-geotools artifacts...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[554536] geotools-geotools\docs\src\main\java\org\geotools\api\APIExamples.java
 D:\Desenvolvimento\Projetos Github\A executar\[554536] geotools-geotools\docs\src\main\java\org\geotools\api\DataStoreExamples.java

@@ -12,9 +12,6 @@ import ufrn.dimap.lets.ehmetrics.visitor.GuidelineCheckerVisitor;
 
 /**
  * Visitor para verificar o guideline "Throw specific exceptions".
- * 
- * Para confirmar o guideline a seguinte heurística é usada:
- * 90% de todas as sinalizações são feitas com um tipo folha na hierarquia.
  * */
 public class ThrowSpecificExceptionsVisitor extends GuidelineCheckerVisitor
 {

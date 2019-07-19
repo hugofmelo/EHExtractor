@@ -10,9 +10,6 @@ import ufrn.dimap.lets.ehmetrics.visitor.BaseGuidelineVisitor;
 
 /**
  * Visitor para verificar o guideline "Define a super type".
- * 
- * Para confirmar o guideline a seguinte heurística é usada:
- * 95% de todas as exceções definidas pela aplicação possuem um mesmo supertipo
  * */
 public class DefineSuperTypeVisitor extends AbstractGuidelineVisitor
 {

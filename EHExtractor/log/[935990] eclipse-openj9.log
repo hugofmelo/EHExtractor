@@ -1,4 +1,4 @@
-18/07/2019 08:38:19 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [935990] eclipse-openj9 files...
+18/07/2019 21:00:16 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [935990] eclipse-openj9 files...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[935990] eclipse-openj9\runtime\bcverify\bcverify.java
 D:\Desenvolvimento\Projetos Github\A executar\[935990] eclipse-openj9\runtime\thrtrace\Tracing.java
@@ -4549,7 +4549,7 @@ D:\Desenvolvimento\Projetos Github\A executar\[935990] eclipse-openj9\jcl\src\op
 D:\Desenvolvimento\Projetos Github\A executar\[935990] eclipse-openj9\jcl\src\openj9.dtfj\share\classes\com\ibm\dtfj\javacore\parser\j9\section\title\TitleSectionParser.java
 D:\Desenvolvimento\Projetos Github\A executar\[935990] eclipse-openj9\jcl\src\openj9.dtfj\share\classes\com\ibm\dtfj\javacore\parser\j9\section\title\TitleTagParser.java
 
-18/07/2019 08:38:19 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [935990] eclipse-openj9 artifacts...
+18/07/2019 21:00:16 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [935990] eclipse-openj9 artifacts...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[935990] eclipse-openj9\sourcetools\com.ibm.uma\com\ibm\uma\DuplicateArtifactKeyException.java
 D:\Desenvolvimento\Projetos Github\A executar\[935990] eclipse-openj9\sourcetools\com.ibm.uma\com\ibm\uma\IConfiguration.java

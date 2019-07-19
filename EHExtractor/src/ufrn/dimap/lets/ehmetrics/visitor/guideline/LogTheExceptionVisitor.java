@@ -15,9 +15,6 @@ import ufrn.dimap.lets.ehmetrics.visitor.VisitorsUtil;
 
 /**
  * Visitor para verificar o guideline "Log the exception".
- * 
- * Para confirmar o guideline a seguinte heurística é usada:
- * ???????????????????????????
  * */
 public class LogTheExceptionVisitor extends AbstractGuidelineVisitor
 {	

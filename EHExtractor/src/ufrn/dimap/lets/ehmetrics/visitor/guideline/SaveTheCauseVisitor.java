@@ -19,10 +19,6 @@ import ufrn.dimap.lets.ehmetrics.visitor.VisitorsUtil;
 
 /**
  * Visitor para verificar o guideline "Save the cause".
- * 
- * Para confirmar o guideline a seguinte heurística é usada:
- * 95% de todos os signalers que lançam uma exceção no contexto de algum bloco catch
- * são do tipo wrapping.
  * */
 public class SaveTheCauseVisitor extends GuidelineCheckerVisitor
 {

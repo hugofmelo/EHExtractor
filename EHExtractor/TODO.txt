@@ -1,5 +1,5 @@
-Prioridade 0: Criar issue no JP perguntando se tem como resolver a classe de um método sem resolver todos os argumentos.
-Prioridade 0: Ajustar comentários das classes guidelines visitors para se adequar à pesquisa
+OK Prioridade 0: Criar issue no JP perguntando se tem como resolver a classe de um método sem resolver todos os argumentos.
+OK Prioridade 0: Ajustar comentários das classes guidelines visitors para se adequar à pesquisa
 Prioridade 1: resolver os TODOs no código
 Prioridade 2: Revisar todo o código, linha a linha, verificando como usar optional (abolir uso de null) e streams
 Prioridade 3: Revisar todo o código, linha a linha, verificando como usar parallelstreams

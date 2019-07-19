@@ -24,9 +24,6 @@ import ufrn.dimap.lets.ehmetrics.visitor.VisitorsUtil;
 
 /**
  * Visitor para verificar o guideline "Send to a global or default handler".
- * 
- * Para confirmar o guideline a seguinte heurística é usada:
- * ???????????????????????????
  * */
 public class SendToGlobalOrDefaultVisitor extends AbstractGuidelineVisitor
 {

@@ -1,4 +1,4 @@
-18/07/2019 10:19:23 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [605433] openmicroscopy-bioformats files...
+18/07/2019 20:46:08 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [605433] openmicroscopy-bioformats files...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[605433] openmicroscopy-bioformats\components\bio-formats-plugins\utils\Mass_Importer.java
 D:\Desenvolvimento\Projetos Github\A executar\[605433] openmicroscopy-bioformats\components\bio-formats-plugins\utils\Read_Image.java
@@ -634,7 +634,7 @@ D:\Desenvolvimento\Projetos Github\A executar\[605433] openmicroscopy-bioformats
 D:\Desenvolvimento\Projetos Github\A executar\[605433] openmicroscopy-bioformats\components\formats-gpl\test\loci\formats\utests\xml\Upgrade201006Test.java
 D:\Desenvolvimento\Projetos Github\A executar\[605433] openmicroscopy-bioformats\components\formats-gpl\test\loci\formats\utests\xml\Upgrade201106Test.java
 
-18/07/2019 10:19:23 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [605433] openmicroscopy-bioformats artifacts...
+18/07/2019 20:46:08 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [605433] openmicroscopy-bioformats artifacts...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[605433] openmicroscopy-bioformats\components\bio-formats-plugins\src\loci\plugins\About.java
 D:\Desenvolvimento\Projetos Github\A executar\[605433] openmicroscopy-bioformats\components\bio-formats-plugins\src\loci\plugins\BF.java

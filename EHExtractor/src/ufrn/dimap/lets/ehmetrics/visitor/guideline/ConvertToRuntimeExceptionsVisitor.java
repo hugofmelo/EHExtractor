@@ -17,9 +17,6 @@ import ufrn.dimap.lets.ehmetrics.visitor.BaseGuidelineVisitor;
 
 /**
  * Visitor para verificar o guideline "Convert to runtime exceptions".
- * 
- * Para confirmar o guideline a seguinte heurística é usada:
- * De todas as exceções que são lançadas no contexto de um handler, 95% são não-checadas.
  * */
 public class ConvertToRuntimeExceptionsVisitor extends AbstractGuidelineVisitor
 {
@@ -38,7 +35,7 @@ public class ConvertToRuntimeExceptionsVisitor extends AbstractGuidelineVisitor
 		
 		builder.append("# signalers");
 		builder.append("\t");
-		builder.append("# resignalers");
+		builder.append("# * -> unchecked");
 		builder.append("\t");
 		builder.append("# resignalers checked -> unchecked");
 		builder.append("\t");
@@ -58,7 +55,7 @@ public class ConvertToRuntimeExceptionsVisitor extends AbstractGuidelineVisitor
 			signaler.getThrownTypes().stream()
 				.anyMatch(type -> type.getClassType() == ClassType.UNCHECKED_EXCEPTION);
 		
-		List<Signaler> resignalers = this.baseVisitor.getSignalers().stream()
+		List<Signaler> resignalersOfUnchecked = this.baseVisitor.getSignalers().stream()
 			.filter(throwUncheckedException)
 			.filter(signaler -> signaler.getRelatedHandler().isPresent())
 			.collect(Collectors.toList());
@@ -71,11 +68,11 @@ public class ConvertToRuntimeExceptionsVisitor extends AbstractGuidelineVisitor
 			handler.getExceptions().stream()
 				.anyMatch(type -> type.getClassType() == ClassType.UNCHECKED_EXCEPTION);
 			
-		List<Signaler> checked2UncheckedResignalers = resignalers.stream()
+		List<Signaler> checked2UncheckedResignalers = resignalersOfUnchecked.stream()
 				.filter(signaler -> catchCheckedException.test(signaler.getRelatedHandler().get()))
 				.collect(Collectors.toList());
 		
-		List<Signaler> unchecked2UncheckedResignalers = resignalers.stream()
+		List<Signaler> unchecked2UncheckedResignalers = resignalersOfUnchecked.stream()
 				.filter(signaler -> catchUncheckedException.test(signaler.getRelatedHandler().get()))
 				.collect(Collectors.toList());
 
@@ -84,7 +81,7 @@ public class ConvertToRuntimeExceptionsVisitor extends AbstractGuidelineVisitor
 		
 		builder.append(this.baseVisitor.getSignalers().size());
 		builder.append("\t");
-		builder.append(resignalers.size());
+		builder.append(resignalersOfUnchecked.size());
 		builder.append("\t");
 		builder.append(checked2UncheckedResignalers.size());
 		builder.append("\t");

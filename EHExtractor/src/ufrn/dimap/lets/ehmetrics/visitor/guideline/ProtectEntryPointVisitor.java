@@ -20,12 +20,6 @@ import ufrn.dimap.lets.ehmetrics.visitor.GuidelineCheckerVisitor;
 
 /**
  * Visitor para verificar o guideline "Protect entrypoint ".
- * 
- * Para confirmar o guideline a seguinte heurística é usada:
- * 90% de todos os entrypoints são protegidos.
- * 
- * Um entrypoint é protegido se possui todas as chamadas de método dentro de blocos try que estão associados
- * a catches genéricos (Exception e Throwable).
  * */
 public class ProtectEntryPointVisitor extends GuidelineCheckerVisitor
 {

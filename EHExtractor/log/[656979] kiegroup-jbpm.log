@@ -1,4 +1,4 @@
-17/07/2019 19:53:53 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [656979] kiegroup-jbpm files...
+18/07/2019 20:57:19 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [656979] kiegroup-jbpm files...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[656979] kiegroup-jbpm\jbpm-bpmn2-emfextmodel\src\main\java\bpsim\BetaDistributionType.java
 D:\Desenvolvimento\Projetos Github\A executar\[656979] kiegroup-jbpm\jbpm-bpmn2-emfextmodel\src\main\java\bpsim\BinomialDistributionType.java
@@ -2413,7 +2413,7 @@ D:\Desenvolvimento\Projetos Github\A executar\[656979] kiegroup-jbpm\jbpm-contai
 D:\Desenvolvimento\Projetos Github\A executar\[656979] kiegroup-jbpm\jbpm-human-task\jbpm-human-task-core\src\main\java\org\jbpm\services\task\deadlines\notifications\impl\email\EmailNotificationListener.java
 D:\Desenvolvimento\Projetos Github\A executar\[656979] kiegroup-jbpm\jbpm-human-task\jbpm-human-task-core\src\main\java\org\jbpm\services\task\deadlines\notifications\impl\email\EmailSessionProducer.java
 
-17/07/2019 19:53:53 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [656979] kiegroup-jbpm artifacts...
+18/07/2019 20:57:19 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [656979] kiegroup-jbpm artifacts...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[656979] kiegroup-jbpm\jbpm-bpmn2-emfextmodel\src\main\java\bpsim\BetaDistributionType.java
 D:\Desenvolvimento\Projetos Github\A executar\[656979] kiegroup-jbpm\jbpm-bpmn2-emfextmodel\src\main\java\bpsim\BinomialDistributionType.java

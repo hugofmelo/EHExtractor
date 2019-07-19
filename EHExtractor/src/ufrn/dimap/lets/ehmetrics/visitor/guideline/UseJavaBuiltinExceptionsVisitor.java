@@ -11,17 +11,7 @@ import ufrn.dimap.lets.ehmetrics.logger.LoggerFacade;
 import ufrn.dimap.lets.ehmetrics.visitor.GuidelineCheckerVisitor;
 
 /**
- * Visitor para verificar o guideline "Use Java Built-in exceptions".
- * 
- * No mind map esse guideline é dividido em 2:
- * Reuse Java exceptions. Para reuso direto, como IllegalArgumentException; e
- * Extend Java exceptions. Quando no projeto são criados tipos que herdam de exceções não-genéricas Java, como MySQLException extends SQLException.
- * <p>
- * 
- * Então para confirmar o guideline a seguinte heurística é usada:
- * Quantidade de sinalizadores de exceções Java
- * Quantidade de sinalizadores de exceções que herdam de uma exceção não-genérica Java
- * Total de sinalizadores
+ * Visitor para verificar o guideline "Use Java Built-in exceptions"
  * */
 public class UseJavaBuiltinExceptionsVisitor extends GuidelineCheckerVisitor
 {

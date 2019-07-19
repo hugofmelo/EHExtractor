@@ -12,10 +12,6 @@ import ufrn.dimap.lets.ehmetrics.visitor.BaseGuidelineVisitor;
 
 /**
  * Visitor para verificar o guideline "Convert library exceptions".
- * 
- * Para confirmar o guideline a seguinte heurística é usada:
- * De todas as capturas de exceções externas em que aquele tratador re-signaliza
- * uma exceção, a re-sinalização não é de uma exceção externa em pelo menos 95% dos tratadores.
  * */
 public class ConvertLibraryExceptionsVisitor extends AbstractGuidelineVisitor
 {

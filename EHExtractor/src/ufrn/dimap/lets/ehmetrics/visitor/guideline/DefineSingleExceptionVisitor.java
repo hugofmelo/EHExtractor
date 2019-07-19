@@ -11,9 +11,6 @@ import ufrn.dimap.lets.ehmetrics.visitor.BaseGuidelineVisitor;
 
 /**
  * Visitor para verificar o guideline "Define a single exception".
- * 
- * Para confirmar o guideline a seguinte heurística é usada:
- * 95% de todas as sinalizações de exceções da aplicação são de uma mesma exceção
  * */
 public class DefineSingleExceptionVisitor extends AbstractGuidelineVisitor
 {

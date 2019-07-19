@@ -21,9 +21,6 @@ import ufrn.dimap.lets.ehmetrics.visitor.GuidelineCheckerVisitor;
 
 /**
  * Visitor para verificar o guideline "Add Contextual Information".
- * 
- * Para confirmar o guideline a seguinte heurística é usada:
- * 50% de todas as instanciações de exceções incluem mais argumentos do que 1 string e 1 Throwable.
  * */
 public class AddContextualInformationVisitor extends GuidelineCheckerVisitor
 {
