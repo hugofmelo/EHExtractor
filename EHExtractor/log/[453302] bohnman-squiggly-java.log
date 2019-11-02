@@ -1,4 +1,4 @@
-18/07/2019 14:48:39 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [453302] bohnman-squiggly-java files...
+31/10/2019 22:50:42 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [453302] bohnman-squiggly-java files...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[453302] bohnman-squiggly-java\src\main\java\com\github\bohnman\squiggly\Squiggly.java
 D:\Desenvolvimento\Projetos Github\A executar\[453302] bohnman-squiggly-java\examples\spring-data-jpa-hibernate\src\main\java\sample\data\jpa\SampleDataJpaApplication.java
@@ -101,7 +101,7 @@ D:\Desenvolvimento\Projetos Github\A executar\[453302] bohnman-squiggly-java\exa
 D:\Desenvolvimento\Projetos Github\A executar\[453302] bohnman-squiggly-java\examples\standalone\src\main\java\com\github\bohnman\squiggly\examples\standalone\model\OtherView.java
 D:\Desenvolvimento\Projetos Github\A executar\[453302] bohnman-squiggly-java\examples\standalone\src\main\java\com\github\bohnman\squiggly\examples\standalone\model\User.java
 
-18/07/2019 14:48:39 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [453302] bohnman-squiggly-java artifacts...
+31/10/2019 22:50:42 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [453302] bohnman-squiggly-java artifacts...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[453302] bohnman-squiggly-java\src\main\java\com\github\bohnman\squiggly\Squiggly.java
 D:\Desenvolvimento\Projetos Github\A executar\[453302] bohnman-squiggly-java\examples\spring-data-jpa-hibernate\src\main\java\sample\data\jpa\SampleDataJpaApplication.java

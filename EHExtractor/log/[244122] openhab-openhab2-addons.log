@@ -1,4 +1,4 @@
-18/07/2019 14:41:43 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [244122] openhab-openhab2-addons files...
+31/10/2019 21:58:09 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [244122] openhab-openhab2-addons files...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[244122] openhab-openhab2-addons\bundles\org.openhab.binding.smartmeter\src\3rdparty\java\org\openmuc\jrxtx\DataBits.java
 D:\Desenvolvimento\Projetos Github\A executar\[244122] openhab-openhab2-addons\bundles\org.openhab.binding.smartmeter\src\3rdparty\java\org\openmuc\jrxtx\FlowControl.java
@@ -5047,7 +5047,7 @@ D:\Desenvolvimento\Projetos Github\A executar\[244122] openhab-openhab2-addons\b
 D:\Desenvolvimento\Projetos Github\A executar\[244122] openhab-openhab2-addons\bundles\org.openhab.binding.digitalstrom\src\main\java\org\openhab\binding\digitalstrom\internal\lib\structure\devices\deviceparameters\impl\JSONDeviceConfigImpl.java
 D:\Desenvolvimento\Projetos Github\A executar\[244122] openhab-openhab2-addons\bundles\org.openhab.binding.digitalstrom\src\main\java\org\openhab\binding\digitalstrom\internal\lib\structure\devices\deviceparameters\impl\JSONDeviceSceneSpecImpl.java
 
-18/07/2019 14:41:43 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [244122] openhab-openhab2-addons artifacts...
+31/10/2019 21:58:09 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [244122] openhab-openhab2-addons artifacts...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[244122] openhab-openhab2-addons\bundles\org.openhab.binding.smartmeter\src\3rdparty\java\org\openmuc\jrxtx\DataBits.java
 D:\Desenvolvimento\Projetos Github\A executar\[244122] openhab-openhab2-addons\bundles\org.openhab.binding.smartmeter\src\3rdparty\java\org\openmuc\jrxtx\FlowControl.java

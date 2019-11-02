@@ -1,4 +1,4 @@
-18/07/2019 14:47:53 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [439026] apache-incubator-skywalking files...
+31/10/2019 22:49:21 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [439026] apache-incubator-skywalking files...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[439026] apache-incubator-skywalking\.mvn\wrapper\MavenWrapperDownloader.java
 D:\Desenvolvimento\Projetos Github\A executar\[439026] apache-incubator-skywalking\oap-server\generate-tool\src\test\resources\expectedFiles\MetricsImplementorExpected.java
@@ -1709,7 +1709,7 @@ D:\Desenvolvimento\Projetos Github\A executar\[439026] apache-incubator-skywalki
 D:\Desenvolvimento\Projetos Github\A executar\[439026] apache-incubator-skywalking\oap-server\server-receiver-plugin\skywalking-trace-receiver-plugin\src\main\java\org\apache\skywalking\oap\server\receiver\trace\provider\handler\v5\rest\reader\UniqueIdJsonReader.java
 D:\Desenvolvimento\Projetos Github\A executar\[439026] apache-incubator-skywalking\apm-sniffer\apm-sdk-plugin\spring-plugins\spring-cloud\netflix-plugins\spring-cloud-feign-1.x-plugin\src\main\java\org\apache\skywalking\apm\plugin\spring\cloud\netflix\feign\v11\define\NetflixFeignInstrumentation.java
 
-18/07/2019 14:47:53 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [439026] apache-incubator-skywalking artifacts...
+31/10/2019 22:49:21 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [439026] apache-incubator-skywalking artifacts...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[439026] apache-incubator-skywalking\apm-webapp\src\main\java\org\apache\skywalking\apm\webapp\ApplicationStartUp.java
 D:\Desenvolvimento\Projetos Github\A executar\[439026] apache-incubator-skywalking\apm-commons\apm-util\src\main\java\org\apache\skywalking\apm\util\ConfigInitializer.java

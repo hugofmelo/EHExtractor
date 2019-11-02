@@ -1,4 +1,4 @@
-18/07/2019 15:11:29 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [926202] openmrs-openmrs-core files...
+01/11/2019 00:03:02 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [926202] openmrs-openmrs-core files...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[926202] openmrs-openmrs-core\api\src\main\java\org\openmrs\Address.java
 D:\Desenvolvimento\Projetos Github\A executar\[926202] openmrs-openmrs-core\api\src\main\java\org\openmrs\Allergen.java
@@ -1091,7 +1091,7 @@ D:\Desenvolvimento\Projetos Github\A executar\[926202] openmrs-openmrs-core\web\
 D:\Desenvolvimento\Projetos Github\A executar\[926202] openmrs-openmrs-core\api\src\main\java\org\openmrs\api\db\hibernate\search\bridge\LocaleFieldBridge.java
 D:\Desenvolvimento\Projetos Github\A executar\[926202] openmrs-openmrs-core\api\src\main\java\org\openmrs\api\db\hibernate\search\bridge\OpenmrsObjectFieldBridge.java
 
-18/07/2019 15:11:29 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [926202] openmrs-openmrs-core artifacts...
+01/11/2019 00:03:02 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [926202] openmrs-openmrs-core artifacts...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[926202] openmrs-openmrs-core\api\src\main\java\org\openmrs\Address.java
 D:\Desenvolvimento\Projetos Github\A executar\[926202] openmrs-openmrs-core\api\src\main\java\org\openmrs\Allergen.java

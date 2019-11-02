@@ -2,8 +2,13 @@ package ufrn.dimap.lets.ehmetrics.visitor.guideline;
 
 import java.util.Comparator;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
+import com.github.javaparser.ast.body.ClassOrInterfaceDeclaration;
+import com.github.javaparser.ast.stmt.CatchClause;
+
+import ufrn.dimap.lets.ehmetrics.abstractmodel.Handler;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.Type;
 import ufrn.dimap.lets.ehmetrics.visitor.AbstractGuidelineVisitor;
 import ufrn.dimap.lets.ehmetrics.visitor.BaseGuidelineVisitor;
@@ -15,9 +20,9 @@ public class DefineSuperTypeVisitor extends AbstractGuidelineVisitor
 {
 	public DefineSuperTypeVisitor (BaseGuidelineVisitor baseVisitor, boolean allowUnresolved)
 	{
-		super(baseVisitor, allowUnresolved);
+		super(baseVisitor, allowUnresolved); 
 	}
-
+	
 	/**
 	 * Returns the guideline columns names
 	 * */

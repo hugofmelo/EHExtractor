@@ -1,4 +1,4 @@
-18/07/2019 14:53:40 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [699438] bndtools-bnd files...
+31/10/2019 23:35:24 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [699438] bndtools-bnd files...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[699438] bndtools-bnd\biz.aQute.bndlib.tests\test\DefaultPackage.java
 D:\Desenvolvimento\Projetos Github\A executar\[699438] bndtools-bnd\biz.aQute.bnd.runtime\test\exported_not_imported\ExportedNotImported.java
@@ -2554,7 +2554,7 @@ D:\Desenvolvimento\Projetos Github\A executar\[699438] bndtools-bnd\maven\bnd-ma
 D:\Desenvolvimento\Projetos Github\A executar\[699438] bndtools-bnd\maven\bnd-maven-plugin\src\test\resources\integration-test\test\test-in-build-pluginManagement-inheritance\test-inheriting-api-bundle\src\main\java\org\example\types\package-info.java
 D:\Desenvolvimento\Projetos Github\A executar\[699438] bndtools-bnd\maven\bnd-maven-plugin\src\test\resources\integration-test\test\test-in-build-pluginManagement-inheritance\test-inheriting-api-bundle\src\main\java\org\example\types\ThingyDTO.java
 
-18/07/2019 14:53:40 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [699438] bndtools-bnd artifacts...
+31/10/2019 23:35:24 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [699438] bndtools-bnd artifacts...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[699438] bndtools-bnd\bndtools.core\src\bndtools\Activator.java
 D:\Desenvolvimento\Projetos Github\A executar\[699438] bndtools-bnd\bndtools.core\src\bndtools\BndConstants.java

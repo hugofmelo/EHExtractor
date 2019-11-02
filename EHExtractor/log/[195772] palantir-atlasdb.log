@@ -1,4 +1,4 @@
-18/07/2019 14:40:07 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [195772] palantir-atlasdb files...
+31/10/2019 21:55:09 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [195772] palantir-atlasdb files...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[195772] palantir-atlasdb\atlasdb-cassandra\src\test\java\com\palantir\atlasdb\ThriftObjectSizeUtilsTest.java
 D:\Desenvolvimento\Projetos Github\A executar\[195772] palantir-atlasdb\atlasdb-client\src\main\java\com\palantir\atlasdb\AtlasDbConstants.java
@@ -1968,7 +1968,7 @@ D:\Desenvolvimento\Projetos Github\A executar\[195772] palantir-atlasdb\timelock
 D:\Desenvolvimento\Projetos Github\A executar\[195772] palantir-atlasdb\timelock-server-benchmark-client\src\main\java\com\palantir\atlasdb\timelock\benchmarks\schema\generated\KvRowsTable.java
 D:\Desenvolvimento\Projetos Github\A executar\[195772] palantir-atlasdb\timelock-server-benchmark-client\src\main\java\com\palantir\atlasdb\timelock\benchmarks\schema\generated\MetadataTable.java
 
-18/07/2019 14:40:07 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [195772] palantir-atlasdb artifacts...
+31/10/2019 21:55:09 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [195772] palantir-atlasdb artifacts...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[195772] palantir-atlasdb\atlasdb-client\src\main\java\com\palantir\atlasdb\AtlasDbConstants.java
 D:\Desenvolvimento\Projetos Github\A executar\[195772] palantir-atlasdb\atlasdb-client\src\main\java\com\palantir\atlasdb\AtlasDbMetricNames.java

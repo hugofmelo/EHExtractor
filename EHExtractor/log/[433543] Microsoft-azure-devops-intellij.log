@@ -1,4 +1,4 @@
-18/07/2019 14:47:04 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [433543] Microsoft-azure-devops-intellij files...
+31/10/2019 22:47:10 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [433543] Microsoft-azure-devops-intellij files...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[433543] Microsoft-azure-devops-intellij\tfsIntegration\resources\icons\TFSIcons.java
 D:\Desenvolvimento\Projetos Github\A executar\[433543] Microsoft-azure-devops-intellij\plugin.idea\.idea\fileTemplates\includes\File Header.java
@@ -805,7 +805,7 @@ D:\Desenvolvimento\Projetos Github\A executar\[433543] Microsoft-azure-devops-in
 D:\Desenvolvimento\Projetos Github\A executar\[433543] Microsoft-azure-devops-intellij\plugin.idea\test\com\microsoft\alm\plugin\idea\tfvc\core\tfs\conflicts\ResolveConflictHelperTest.java
 D:\Desenvolvimento\Projetos Github\A executar\[433543] Microsoft-azure-devops-intellij\plugin.idea\test\com\microsoft\alm\plugin\idea\tfvc\core\tfs\operations\RenameFileDirectoryTest.java
 
-18/07/2019 14:47:04 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [433543] Microsoft-azure-devops-intellij artifacts...
+31/10/2019 22:47:10 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [433543] Microsoft-azure-devops-intellij artifacts...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[433543] Microsoft-azure-devops-intellij\tfsIntegration\resources\icons\TFSIcons.java
 D:\Desenvolvimento\Projetos Github\A executar\[433543] Microsoft-azure-devops-intellij\tfsIntegration\src\org\jetbrains\tfsIntegration\actions\CheckoutAction.java

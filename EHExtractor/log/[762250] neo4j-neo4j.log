@@ -1,4 +1,4 @@
-18/07/2019 15:03:10 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [762250] neo4j-neo4j files...
+31/10/2019 23:50:47 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [762250] neo4j-neo4j files...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[762250] neo4j-neo4j\community\graph-algo\src\test\java\common\GraphDefinition.java
 D:\Desenvolvimento\Projetos Github\A executar\[762250] neo4j-neo4j\community\graph-algo\src\test\java\common\GraphDescription.java
@@ -5700,7 +5700,7 @@ D:\Desenvolvimento\Projetos Github\A executar\[762250] neo4j-neo4j\community\pro
 D:\Desenvolvimento\Projetos Github\A executar\[762250] neo4j-neo4j\community\cypher\cypher\src\main\scala\org\neo4j\cypher\internal\compatibility\v3_5\runtime\executionplan\Provider.java
 D:\Desenvolvimento\Projetos Github\A executar\[762250] neo4j-neo4j\community\cypher\front-end\frontend\src\main\java\org\neo4j\cypher\internal\v3_5\frontend\phases\CompilationPhaseTracer.java
 
-18/07/2019 15:03:10 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [762250] neo4j-neo4j artifacts...
+31/10/2019 23:50:47 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [762250] neo4j-neo4j artifacts...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[762250] neo4j-neo4j\community\bolt\src\main\java\org\neo4j\bolt\BoltChannel.java
 D:\Desenvolvimento\Projetos Github\A executar\[762250] neo4j-neo4j\community\bolt\src\main\java\org\neo4j\bolt\BoltProtocol.java

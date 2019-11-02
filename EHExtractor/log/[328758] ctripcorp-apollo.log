@@ -1,4 +1,4 @@
-18/07/2019 14:45:32 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [328758] ctripcorp-apollo files...
+31/10/2019 22:08:27 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [328758] ctripcorp-apollo files...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[328758] ctripcorp-apollo\apollo-adminservice\src\test\java\com\ctrip\framework\apollo\AdminServiceTestConfiguration.java
 D:\Desenvolvimento\Projetos Github\A executar\[328758] ctripcorp-apollo\apollo-adminservice\src\test\java\com\ctrip\framework\apollo\LocalAdminServiceApplication.java
@@ -659,7 +659,7 @@ D:\Desenvolvimento\Projetos Github\A executar\[328758] ctripcorp-apollo\apollo-d
 D:\Desenvolvimento\Projetos Github\A executar\[328758] ctripcorp-apollo\apollo-demo\src\main\java\com\ctrip\framework\apollo\demo\spring\xmlConfigDemo\bean\XmlBean.java
 D:\Desenvolvimento\Projetos Github\A executar\[328758] ctripcorp-apollo\apollo-portal\src\main\java\com\ctrip\framework\apollo\portal\spi\ctrip\filters\UserAccessFilter.java
 
-18/07/2019 14:45:32 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [328758] ctripcorp-apollo artifacts...
+31/10/2019 22:08:27 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [328758] ctripcorp-apollo artifacts...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[328758] ctripcorp-apollo\apollo-client\src\main\java\com\ctrip\framework\apollo\Config.java
 D:\Desenvolvimento\Projetos Github\A executar\[328758] ctripcorp-apollo\apollo-client\src\main\java\com\ctrip\framework\apollo\ConfigChangeListener.java

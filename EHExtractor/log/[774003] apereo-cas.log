@@ -1,4 +1,4 @@
-18/07/2019 15:04:20 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [774003] apereo-cas files...
+31/10/2019 23:53:34 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [774003] apereo-cas files...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[774003] apereo-cas\api\cas-server-core-api\src\main\java\org\apereo\cas\CentralAuthenticationService.java
 D:\Desenvolvimento\Projetos Github\A executar\[774003] apereo-cas\api\cas-server-core-api-protocol\src\main\java\org\apereo\cas\CasProtocolConstants.java
@@ -3763,7 +3763,7 @@ D:\Desenvolvimento\Projetos Github\A executar\[774003] apereo-cas\support\cas-se
 D:\Desenvolvimento\Projetos Github\A executar\[774003] apereo-cas\support\cas-server-support-saml-idp-web\src\main\java\org\apereo\cas\support\saml\web\idp\profile\builders\enc\encoder\sso\SamlResponsePostEncoder.java
 D:\Desenvolvimento\Projetos Github\A executar\[774003] apereo-cas\support\cas-server-support-saml-idp-web\src\main\java\org\apereo\cas\support\saml\web\idp\profile\builders\enc\encoder\sso\SamlResponsePostSimpleSignEncoder.java
 
-18/07/2019 15:04:20 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [774003] apereo-cas artifacts...
+31/10/2019 23:53:34 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [774003] apereo-cas artifacts...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[774003] apereo-cas\api\cas-server-core-api\src\main\java\org\apereo\cas\CentralAuthenticationService.java
 D:\Desenvolvimento\Projetos Github\A executar\[774003] apereo-cas\api\cas-server-core-api-protocol\src\main\java\org\apereo\cas\CasProtocolConstants.java

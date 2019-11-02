@@ -1,4 +1,4 @@
-18/07/2019 14:40:31 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [196056] tzaeschke-ode4j files...
+31/10/2019 21:55:33 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [196056] tzaeschke-ode4j files...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[196056] tzaeschke-ode4j\core\src\main\java9\module-info.java
 D:\Desenvolvimento\Projetos Github\A executar\[196056] tzaeschke-ode4j\core-cpp\src\main\java9\module-info.java
@@ -476,7 +476,7 @@ D:\Desenvolvimento\Projetos Github\A executar\[196056] tzaeschke-ode4j\core\src\
 D:\Desenvolvimento\Projetos Github\A executar\[196056] tzaeschke-ode4j\core\src\main\java\org\ode4j\ode\internal\cpp4j\java\RefInt.java
 D:\Desenvolvimento\Projetos Github\A executar\[196056] tzaeschke-ode4j\core\src\main\java\org\ode4j\ode\internal\cpp4j\java\RefString.java
 
-18/07/2019 14:40:31 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [196056] tzaeschke-ode4j artifacts...
+31/10/2019 21:55:33 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [196056] tzaeschke-ode4j artifacts...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[196056] tzaeschke-ode4j\core\src\main\java\org\ode4j\math\DMatrix3.java
 D:\Desenvolvimento\Projetos Github\A executar\[196056] tzaeschke-ode4j\core\src\main\java\org\ode4j\math\DMatrix3C.java

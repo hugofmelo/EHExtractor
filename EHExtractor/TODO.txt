@@ -4,7 +4,7 @@ Prioridade 1: resolver os TODOs no código
 Prioridade 2: Revisar todo o código, linha a linha, verificando como usar optional (abolir uso de null) e streams
 Prioridade 3: Revisar todo o código, linha a linha, verificando como usar parallelstreams
 DONE Prioridade 4: Mudar o Handler para ter handlers nested?
-Priodade 4: Procurar usos de map para usar putifabsent ou computeifabsent
+Prioridade 4: Procurar usos de map para usar putifabsent ou computeifabsent
 Prioridade 4: zerar o relatório da sonarlint
 
 

@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
+import ufrn.dimap.lets.ehmetrics.abstractmodel.ClassType;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.Handler;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.Signaler;
 import ufrn.dimap.lets.ehmetrics.abstractmodel.TypeOrigin;
@@ -27,80 +28,56 @@ public class ConvertLibraryExceptionsVisitor extends AbstractGuidelineVisitor
 	public String getGuidelineHeader ()
 	{
 		StringBuilder builder = new StringBuilder();
-		
-		builder.append("# handlers");
+
+		builder.append("# final handlers of external");
 		builder.append("\t");
-		builder.append("# resignalers handlers");
+		builder.append("# resignaler handlers external -> any");
 		builder.append("\t");
-		builder.append("# resignaler handlers of external exceptions");
+		builder.append("# resignaler handlers external -> project");
 		builder.append("\t");
-		builder.append("# resignaler handlers of external exceptions which signal project exceptions");
-		builder.append("\t");
-		builder.append("# final handlers");
-		builder.append("\t");
-		builder.append("# final handlers of external exceptions");
-		builder.append("\t");
-		
-		
+
 		return builder.toString();
 	}
-	
+
 	/**
 	 * Returns the guideline data
 	 * */
 	@Override
 	public String getGuidelineData ()
 	{	
-		Predicate <Handler> handleExternalExceptions = handler ->
+		Predicate <Handler> catchExternalException = handler -> 
 			handler.getExceptions().stream()
 				.anyMatch(type -> type.getOrigin() == TypeOrigin.LIBRARY || type.getOrigin() == TypeOrigin.UNRESOLVED);
+	
+		Predicate <Handler> finalHandler = Handler::isFinalHandler;
 		
-		Predicate <Signaler> throwNonExternalException = signaler -> 
-			signaler.getThrownTypes().stream()
-				.anyMatch(type -> type.getOrigin() == TypeOrigin.SYSTEM || type.getOrigin() == TypeOrigin.JAVA);
+		Predicate <Handler> resignalProject = handler -> 
+			handler.getEscapingSignalers().stream()
+				.flatMap(signaler -> signaler.getThrownTypes().stream())
+				.anyMatch(type -> type.getOrigin() == TypeOrigin.SYSTEM);
 		
-		List<Handler> resignalerHandlers = this.baseVisitor.getHandlers().stream()
-				.filter( handler -> !handler.isFinalHandler() )
-				.collect (Collectors.toList());
+		List<Handler> finalHandlersOfExternalExceptions = this.baseVisitor.getHandlers().stream()
+			.filter( finalHandler.and(catchExternalException) )
+			.collect(Collectors.toList());
+			
+		List<Handler> resignalersHandlersOfExternalWhichResignalAny = this.baseVisitor.getHandlers().stream()
+				.filter( finalHandler.negate().and(catchExternalException) )
+				.collect(Collectors.toList());
 		
-		List<Handler> resignalerHandlersOfExternalExceptions = resignalerHandlers.stream()
-				.filter ( handleExternalExceptions )
-				.collect (Collectors.toList());
-		
-		List<Handler> resignalerHandlersOfExternalExceptionsWhichResignalNonExternalExceptions = resignalerHandlersOfExternalExceptions.stream()
-				.filter ( handler -> handler.getEscapingSignalers().stream()
-						.anyMatch(throwNonExternalException ))
-				.collect (Collectors.toList());
-		
-		List<Handler> finalHandlers = this.baseVisitor.getHandlers().stream()
-				.filter( Handler::isFinalHandler )
-				.collect (Collectors.toList());
-		
-		List<Handler> finalHandlersOfExternalExceptions = finalHandlers.stream()
-				.filter ( handleExternalExceptions )
-				.collect (Collectors.toList());
-		
-		List<Handler> finalHandlersOfExternalExceptionsWhichResignalNonExternalExceptions = finalHandlersOfExternalExceptions.stream()
-				.filter ( handler -> handler.getEscapingSignalers().stream()
-						.anyMatch(throwNonExternalException ))
-				.collect (Collectors.toList());
-		
+		List<Handler> resignalersHandlersOfCheckedWhichResignalProject = resignalersHandlersOfExternalWhichResignalAny.stream()
+				.filter(resignalProject)
+				.collect(Collectors.toList());
+	
 		
 		StringBuilder builder = new StringBuilder();
 		
-		builder.append(this.baseVisitor.getHandlers().size());
-		builder.append("\t");
-		builder.append(resignalerHandlers.size());
-		builder.append("\t");
-		builder.append(resignalerHandlersOfExternalExceptions.size());
-		builder.append("\t");
-		builder.append(resignalerHandlersOfExternalExceptionsWhichResignalNonExternalExceptions.size());
-		builder.append("\t");
-		builder.append(finalHandlers.size());
-		builder.append("\t");
 		builder.append(finalHandlersOfExternalExceptions.size());
 		builder.append("\t");
-			
+		builder.append(resignalersHandlersOfExternalWhichResignalAny.size());
+		builder.append("\t");
+		builder.append(resignalersHandlersOfCheckedWhichResignalProject.size());
+		builder.append("\t");
+		
 		return builder.toString();
 	}
 }

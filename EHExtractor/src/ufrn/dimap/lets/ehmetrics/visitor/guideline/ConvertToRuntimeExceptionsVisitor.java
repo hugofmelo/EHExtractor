@@ -33,13 +33,11 @@ public class ConvertToRuntimeExceptionsVisitor extends AbstractGuidelineVisitor
 	{
 		StringBuilder builder = new StringBuilder();
 		
-		builder.append("# signalers");
+		builder.append("# final handlers of checked");
 		builder.append("\t");
-		builder.append("# * -> unchecked");
+		builder.append("# resignaler handlers checked -> any");
 		builder.append("\t");
-		builder.append("# resignalers checked -> unchecked");
-		builder.append("\t");
-		builder.append("# resignalers unchecked -> unchecked");
+		builder.append("# resignaler handlers checked -> unchecked");
 		builder.append("\t");
 		
 		return builder.toString();
@@ -51,41 +49,37 @@ public class ConvertToRuntimeExceptionsVisitor extends AbstractGuidelineVisitor
 	@Override
 	public String getGuidelineData ()
 	{	
-		Predicate <Signaler> throwUncheckedException = signaler -> 
-			signaler.getThrownTypes().stream()
-				.anyMatch(type -> type.getClassType() == ClassType.UNCHECKED_EXCEPTION);
-		
-		List<Signaler> resignalersOfUnchecked = this.baseVisitor.getSignalers().stream()
-			.filter(throwUncheckedException)
-			.filter(signaler -> signaler.getRelatedHandler().isPresent())
-			.collect(Collectors.toList());
-		
 		Predicate <Handler> catchCheckedException = handler -> 
 			handler.getExceptions().stream()
 				.anyMatch(type -> type.getClassType() == ClassType.CHECKED_EXCEPTION);
 		
-		Predicate <Handler> catchUncheckedException = handler -> 
-			handler.getExceptions().stream()
+		Predicate <Handler> finalHandler = Handler::isFinalHandler;
+		
+		Predicate <Handler> resignalUnchecked = handler -> 
+			handler.getEscapingSignalers().stream()
+				.flatMap(signaler -> signaler.getThrownTypes().stream())
 				.anyMatch(type -> type.getClassType() == ClassType.UNCHECKED_EXCEPTION);
+		
+		List<Handler> finalHandlersOfCheckedExceptions = this.baseVisitor.getHandlers().stream()
+			.filter( finalHandler.and(catchCheckedException) )
+			.collect(Collectors.toList());
 			
-		List<Signaler> checked2UncheckedResignalers = resignalersOfUnchecked.stream()
-				.filter(signaler -> catchCheckedException.test(signaler.getRelatedHandler().get()))
+		List<Handler> resignalersHandlersOfCheckedWhichResignalAny = this.baseVisitor.getHandlers().stream()
+				.filter( finalHandler.negate().and(catchCheckedException) )
 				.collect(Collectors.toList());
 		
-		List<Signaler> unchecked2UncheckedResignalers = resignalersOfUnchecked.stream()
-				.filter(signaler -> catchUncheckedException.test(signaler.getRelatedHandler().get()))
+		List<Handler> resignalersHandlersOfCheckedWhichResignalUnchecked = resignalersHandlersOfCheckedWhichResignalAny.stream()
+				.filter(resignalUnchecked)
 				.collect(Collectors.toList());
 
 		
 		StringBuilder builder = new StringBuilder();
 		
-		builder.append(this.baseVisitor.getSignalers().size());
+		builder.append(finalHandlersOfCheckedExceptions.size());
 		builder.append("\t");
-		builder.append(resignalersOfUnchecked.size());
+		builder.append(resignalersHandlersOfCheckedWhichResignalAny.size());
 		builder.append("\t");
-		builder.append(checked2UncheckedResignalers.size());
-		builder.append("\t");
-		builder.append(unchecked2UncheckedResignalers.size());
+		builder.append(resignalersHandlersOfCheckedWhichResignalUnchecked.size());
 		builder.append("\t");
 		
 		return builder.toString();

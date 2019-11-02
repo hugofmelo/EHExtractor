@@ -1,4 +1,4 @@
-18/07/2019 14:49:31 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [522426] swagger-api-swagger-parser files...
+31/10/2019 23:04:44 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [522426] swagger-api-swagger-parser files...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[522426] swagger-api-swagger-parser\modules\swagger-parser\src\main\java\io\swagger\parser\OpenAPIParser.java
 D:\Desenvolvimento\Projetos Github\A executar\[522426] swagger-api-swagger-parser\modules\swagger-parser\src\test\java\io\swagger\parser\OpenAPIParserTest.java
@@ -63,7 +63,7 @@ D:\Desenvolvimento\Projetos Github\A executar\[522426] swagger-api-swagger-parse
 D:\Desenvolvimento\Projetos Github\A executar\[522426] swagger-api-swagger-parser\modules\swagger-parser-core\src\main\java\io\swagger\v3\parser\core\models\ParseOptions.java
 D:\Desenvolvimento\Projetos Github\A executar\[522426] swagger-api-swagger-parser\modules\swagger-parser-core\src\main\java\io\swagger\v3\parser\core\models\SwaggerParseResult.java
 
-18/07/2019 14:49:31 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [522426] swagger-api-swagger-parser artifacts...
+31/10/2019 23:04:44 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [522426] swagger-api-swagger-parser artifacts...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[522426] swagger-api-swagger-parser\modules\swagger-parser\src\main\java\io\swagger\parser\OpenAPIParser.java
 D:\Desenvolvimento\Projetos Github\A executar\[522426] swagger-api-swagger-parser\modules\swagger-parser-v3\src\main\java\io\swagger\v3\parser\ObjectMapperFactory.java

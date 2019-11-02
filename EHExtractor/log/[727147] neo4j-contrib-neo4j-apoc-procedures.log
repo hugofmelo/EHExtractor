@@ -1,4 +1,4 @@
-18/07/2019 15:01:44 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [727147] neo4j-contrib-neo4j-apoc-procedures files...
+31/10/2019 23:43:25 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [727147] neo4j-contrib-neo4j-apoc-procedures files...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[727147] neo4j-contrib-neo4j-apoc-procedures\src\jmh\java\apoc\AsyncIndexingGraphDatabaseState.java
 D:\Desenvolvimento\Projetos Github\A executar\[727147] neo4j-contrib-neo4j-apoc-procedures\src\jmh\java\apoc\GraphDatabaseState.java
@@ -472,7 +472,7 @@ D:\Desenvolvimento\Projetos Github\A executar\[727147] neo4j-contrib-neo4j-apoc-
 D:\Desenvolvimento\Projetos Github\A executar\[727147] neo4j-contrib-neo4j-apoc-procedures\src\main\java\apoc\graph\document\builder\LabelBuilder.java
 D:\Desenvolvimento\Projetos Github\A executar\[727147] neo4j-contrib-neo4j-apoc-procedures\src\main\java\apoc\graph\document\builder\RelationshipBuilder.java
 
-18/07/2019 15:01:44 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [727147] neo4j-contrib-neo4j-apoc-procedures artifacts...
+31/10/2019 23:43:25 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [727147] neo4j-contrib-neo4j-apoc-procedures artifacts...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[727147] neo4j-contrib-neo4j-apoc-procedures\src\jmh\java\apoc\AsyncIndexingGraphDatabaseState.java
 D:\Desenvolvimento\Projetos Github\A executar\[727147] neo4j-contrib-neo4j-apoc-procedures\src\jmh\java\apoc\GraphDatabaseState.java

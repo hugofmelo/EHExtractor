@@ -1,4 +1,4 @@
-18/07/2019 14:45:50 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [379808] weibocom-motan files...
+31/10/2019 22:45:43 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [379808] weibocom-motan files...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[379808] weibocom-motan\motan-manager\src\main\java\com\weibo\MotanManagerApp.java
 D:\Desenvolvimento\Projetos Github\A executar\[379808] weibocom-motan\motan-manager\src\main\java\com\weibo\controller\CommandController.java
@@ -481,7 +481,7 @@ D:\Desenvolvimento\Projetos Github\A executar\[379808] weibocom-motan\motan-exte
 D:\Desenvolvimento\Projetos Github\A executar\[379808] weibocom-motan\motan-extension\protocol-extension\motan-protocol-restful\src\main\java\com\weibo\api\motan\protocol\restful\support\servlet\ServletEndpointFactory.java
 D:\Desenvolvimento\Projetos Github\A executar\[379808] weibocom-motan\motan-extension\protocol-extension\motan-protocol-restful\src\main\java\com\weibo\api\motan\protocol\restful\support\servlet\ServletRestServer.java
 
-18/07/2019 14:45:50 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [379808] weibocom-motan artifacts...
+31/10/2019 22:45:43 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [379808] weibocom-motan artifacts...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[379808] weibocom-motan\motan-manager\src\main\java\com\weibo\MotanManagerApp.java
 D:\Desenvolvimento\Projetos Github\A executar\[379808] weibocom-motan\motan-manager\src\main\java\com\weibo\controller\CommandController.java

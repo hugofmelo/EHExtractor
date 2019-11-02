@@ -1,4 +1,4 @@
-18/07/2019 14:49:21 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [510558] openpnp-openpnp files...
+31/10/2019 23:04:31 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [510558] openpnp-openpnp files...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[510558] openpnp-openpnp\src\test\java\BasicJobTest.java
 D:\Desenvolvimento\Projetos Github\A executar\[510558] openpnp-openpnp\src\test\java\EagleLoaderTest.java
@@ -448,7 +448,7 @@ D:\Desenvolvimento\Projetos Github\A executar\[510558] openpnp-openpnp\src\main\
 D:\Desenvolvimento\Projetos Github\A executar\[510558] openpnp-openpnp\src\main\java\org\openpnp\vision\pipeline\stages\convert\ColorConverter.java
 D:\Desenvolvimento\Projetos Github\A executar\[510558] openpnp-openpnp\src\test\java\org\openpnp\machine\reference\driver\test\TestDriver.java
 
-18/07/2019 14:49:21 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [510558] openpnp-openpnp artifacts...
+31/10/2019 23:04:31 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [510558] openpnp-openpnp artifacts...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[510558] openpnp-openpnp\src\main\java\org\openpnp\CameraListener.java
 D:\Desenvolvimento\Projetos Github\A executar\[510558] openpnp-openpnp\src\main\java\org\openpnp\ConfigurationListener.java

@@ -1,4 +1,4 @@
-18/07/2019 14:40:39 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [204308] testcontainers-testcontainers-java files...
+31/10/2019 21:55:40 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [204308] testcontainers-testcontainers-java files...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[204308] testcontainers-testcontainers-java\examples\disque-job-queue\src\main\java\DisqueBackedMailSenderService.java
 D:\Desenvolvimento\Projetos Github\A executar\[204308] testcontainers-testcontainers-java\examples\disque-job-queue\src\main\java\MailApiClient.java
@@ -341,7 +341,7 @@ D:\Desenvolvimento\Projetos Github\A executar\[204308] testcontainers-testcontai
 D:\Desenvolvimento\Projetos Github\A executar\[204308] testcontainers-testcontainers-java\modules\junit-jupiter\src\test\java\org\testcontainers\junit\jupiter\inheritance\RedisContainer.java
 D:\Desenvolvimento\Projetos Github\A executar\[204308] testcontainers-testcontainers-java\modules\neo4j\src\custom-neo4j-plugin\java\ac\simons\neo4j\demos\plugins\HelloWorld.java
 
-18/07/2019 14:40:39 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [204308] testcontainers-testcontainers-java artifacts...
+31/10/2019 21:55:40 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [204308] testcontainers-testcontainers-java artifacts...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[204308] testcontainers-testcontainers-java\core\src\jarFileTest\java\org\testcontainers\AbstractJarFileTest.java
 D:\Desenvolvimento\Projetos Github\A executar\[204308] testcontainers-testcontainers-java\core\src\jarFileTest\java\org\testcontainers\JarFileShadingTest.java

@@ -1,4 +1,4 @@
-18/07/2019 15:10:45 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [885474] allure-framework-allure-java files...
+01/11/2019 00:00:53 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [885474] allure-framework-allure-java files...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[885474] allure-framework-allure-java\gradle\quality-configs\spotless\header.java
 D:\Desenvolvimento\Projetos Github\A executar\[885474] allure-framework-allure-java\allure-junit4\src\test\java\SampleTestInDefaultPackage.java
@@ -335,7 +335,7 @@ D:\Desenvolvimento\Projetos Github\A executar\[885474] allure-framework-allure-j
 D:\Desenvolvimento\Projetos Github\A executar\[885474] allure-framework-allure-java\allure-testng\src\test\java\io\qameta\allure\testng\samples\TestWithTimeout.java
 D:\Desenvolvimento\Projetos Github\A executar\[885474] allure-framework-allure-java\allure-testng\src\test\java\io\qameta\allure\testng\samples\VarargsParameters.java
 
-18/07/2019 15:10:45 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [885474] allure-framework-allure-java artifacts...
+01/11/2019 00:00:53 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [885474] allure-framework-allure-java artifacts...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[885474] allure-framework-allure-java\allure-cucumber4-jvm\src\main\java\cucumber\runtime\formatter\TestSourcesModelProxy.java
 D:\Desenvolvimento\Projetos Github\A executar\[885474] allure-framework-allure-java\allure-java-commons\src\main\java\io\qameta\allure\Allure.java

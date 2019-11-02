@@ -2,3 +2,5 @@
 /target/
 /java_pid7616.hprof
 /log/
+/errors.log
+/guidelines.log

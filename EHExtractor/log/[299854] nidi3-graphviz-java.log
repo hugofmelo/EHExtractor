@@ -1,4 +1,4 @@
-18/07/2019 14:45:22 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [299854] nidi3-graphviz-java files...
+31/10/2019 22:07:55 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [299854] nidi3-graphviz-java files...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[299854] nidi3-graphviz-java\graphviz-java\src\main\java\guru\nidi\graphviz\NonnullApi.java
 D:\Desenvolvimento\Projetos Github\A executar\[299854] nidi3-graphviz-java\graphviz-java\src\test\java\guru\nidi\graphviz\CodeAnalysisTest.java
@@ -113,7 +113,7 @@ D:\Desenvolvimento\Projetos Github\A executar\[299854] nidi3-graphviz-java\graph
 D:\Desenvolvimento\Projetos Github\A executar\[299854] nidi3-graphviz-java\graphviz-java\src\test\java\guru\nidi\graphviz\service\CommandRunnerTest.java
 D:\Desenvolvimento\Projetos Github\A executar\[299854] nidi3-graphviz-java\graphviz-java\src\test\java\guru\nidi\graphviz\service\CommandRunnerWhichTest.java
 
-18/07/2019 14:45:22 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [299854] nidi3-graphviz-java artifacts...
+31/10/2019 22:07:55 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [299854] nidi3-graphviz-java artifacts...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[299854] nidi3-graphviz-java\graphviz-java\src\main\java\guru\nidi\graphviz\NonnullApi.java
 D:\Desenvolvimento\Projetos Github\A executar\[299854] nidi3-graphviz-java\graphviz-taglet\src\main\java\guru\nidi\graphviz\GraphvizTaglet.java

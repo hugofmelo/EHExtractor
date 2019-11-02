@@ -1,4 +1,4 @@
-18/07/2019 15:12:09 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [932384] MovingBlocks-Terasology files...
+01/11/2019 00:03:22 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [932384] MovingBlocks-Terasology files...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[932384] MovingBlocks-Terasology\fileTemplates\System.java
 D:\Desenvolvimento\Projetos Github\A executar\[932384] MovingBlocks-Terasology\engine-tests\src\main\java\org\terasology\Environment.java
@@ -2320,7 +2320,7 @@ D:\Desenvolvimento\Projetos Github\A executar\[932384] MovingBlocks-Terasology\e
 D:\Desenvolvimento\Projetos Github\A executar\[932384] MovingBlocks-Terasology\engine\src\main\java\org\terasology\rendering\nui\widgets\browser\data\html\basic\list\package-info.java
 D:\Desenvolvimento\Projetos Github\A executar\[932384] MovingBlocks-Terasology\engine\src\main\java\org\terasology\rendering\nui\widgets\browser\data\html\basic\list\UnorderedListDecorator.java
 
-18/07/2019 15:12:09 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [932384] MovingBlocks-Terasology artifacts...
+01/11/2019 00:03:22 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [932384] MovingBlocks-Terasology artifacts...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[932384] MovingBlocks-Terasology\engine-tests\src\main\java\org\terasology\Environment.java
 D:\Desenvolvimento\Projetos Github\A executar\[932384] MovingBlocks-Terasology\engine-tests\src\main\java\org\terasology\HeadlessEnvironment.java

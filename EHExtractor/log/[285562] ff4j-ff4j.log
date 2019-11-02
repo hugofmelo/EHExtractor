@@ -1,4 +1,4 @@
-18/07/2019 14:45:08 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [285562] ff4j-ff4j files...
+31/10/2019 22:07:38 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [285562] ff4j-ff4j files...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[285562] ff4j-ff4j\ff4j-core\src\main\java\org\ff4j\FF4j.java
 D:\Desenvolvimento\Projetos Github\A executar\[285562] ff4j-ff4j\ff4j-core\src\main\java\org\ff4j\package-info.java
@@ -666,7 +666,7 @@ D:\Desenvolvimento\Projetos Github\A executar\[285562] ff4j-ff4j\ff4j-webapi-jer
 D:\Desenvolvimento\Projetos Github\A executar\[285562] ff4j-ff4j\ff4j-webapi-jersey2x\src\test\java\org\ff4j\web\api\test\it\SecuredFF4JResourceTestIT.java
 D:\Desenvolvimento\Projetos Github\A executar\[285562] ff4j-ff4j\ff4j-webapi-jersey2x\src\test\java\org\ff4j\web\api\test\it\SecuredJersey2Application.java
 
-18/07/2019 14:45:08 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [285562] ff4j-ff4j artifacts...
+31/10/2019 22:07:38 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [285562] ff4j-ff4j artifacts...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[285562] ff4j-ff4j\ff4j-core\src\main\java\org\ff4j\FF4j.java
 D:\Desenvolvimento\Projetos Github\A executar\[285562] ff4j-ff4j\ff4j-core\src\main\java\org\ff4j\package-info.java

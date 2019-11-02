@@ -1,4 +1,4 @@
-18/07/2019 15:13:29 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [988787] meraki-analytics-orianna files...
+01/11/2019 00:04:42 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [988787] meraki-analytics-orianna files...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[988787] meraki-analytics-orianna\orianna\src\main\java\com\merakianalytics\orianna\Orianna.java
 D:\Desenvolvimento\Projetos Github\A executar\[988787] meraki-analytics-orianna\orianna\src\test\java\com\merakinanalytics\orianna\OriannaTest.java
@@ -378,7 +378,7 @@ D:\Desenvolvimento\Projetos Github\A executar\[988787] meraki-analytics-orianna\
 D:\Desenvolvimento\Projetos Github\A executar\[988787] meraki-analytics-orianna\orianna-android\src\main\java\com\merakianalytics\orianna\types\core\staticdata\Skin.java
 D:\Desenvolvimento\Projetos Github\A executar\[988787] meraki-analytics-orianna\orianna-android\src\main\java\com\merakianalytics\orianna\types\core\staticdata\Sprite.java
 
-18/07/2019 15:13:29 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [988787] meraki-analytics-orianna artifacts...
+01/11/2019 00:04:42 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [988787] meraki-analytics-orianna artifacts...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[988787] meraki-analytics-orianna\orianna\src\main\java\com\merakianalytics\orianna\Orianna.java
 D:\Desenvolvimento\Projetos Github\A executar\[988787] meraki-analytics-orianna\orianna\src\main\java\com\merakianalytics\orianna\datapipeline\AbstractLocallyCachedCDN.java

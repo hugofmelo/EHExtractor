@@ -1,4 +1,4 @@
-18/07/2019 17:05:37 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [351478] apache-ignite files...
+31/10/2019 22:25:45 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [351478] apache-ignite files...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[351478] apache-ignite\modules\dev-utils\ignite-modules-test\src\test\java\module-info.java
 D:\Desenvolvimento\Projetos Github\A executar\[351478] apache-ignite\modules\core\src\main\java\org\jsr166\ConcurrentHashMap8.java
@@ -10268,7 +10268,7 @@ D:\Desenvolvimento\Projetos Github\A executar\[351478] apache-ignite\modules\cor
 D:\Desenvolvimento\Projetos Github\A executar\[351478] apache-ignite\modules\extdata\uri\modules\uri-dependency\src\main\java\org\apache\ignite\spi\deployment\uri\tasks\GarHelloWorldBean.java
 D:\Desenvolvimento\Projetos Github\A executar\[351478] apache-ignite\modules\hadoop\src\test\java\org\apache\ignite\internal\processors\hadoop\impl\taskexecutor\external\communication\HadoopExternalCommunicationSelfTest.java
 
-18/07/2019 17:05:37 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [351478] apache-ignite artifacts...
+31/10/2019 22:25:45 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [351478] apache-ignite artifacts...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[351478] apache-ignite\modules\core\src\main\java\org\jsr166\ConcurrentHashMap8.java
 D:\Desenvolvimento\Projetos Github\A executar\[351478] apache-ignite\modules\core\src\main\java\org\jsr166\ConcurrentLinkedDeque8.java

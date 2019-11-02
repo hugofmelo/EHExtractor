@@ -1,4 +1,4 @@
-18/07/2019 14:45:39 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [332185] oshi-oshi files...
+31/10/2019 22:08:31 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [332185] oshi-oshi files...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[332185] oshi-oshi\.mvn\wrapper\MavenWrapperDownloader.java
 D:\Desenvolvimento\Projetos Github\A executar\[332185] oshi-oshi\oshi-core\src\main\java\oshi\package-info.java
@@ -219,7 +219,7 @@ D:\Desenvolvimento\Projetos Github\A executar\[332185] oshi-oshi\oshi-core\src\m
 D:\Desenvolvimento\Projetos Github\A executar\[332185] oshi-oshi\oshi-core\src\main\java\oshi\util\platform\unix\solaris\KstatUtil.java
 D:\Desenvolvimento\Projetos Github\A executar\[332185] oshi-oshi\oshi-core\src\main\java\oshi\util\platform\unix\solaris\package-info.java
 
-18/07/2019 14:45:39 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [332185] oshi-oshi artifacts...
+31/10/2019 22:08:31 ufrn.dimap.lets.ehmetrics.projectresolver.JavaProject#resolveArtifacts - INFO: [332185] oshi-oshi artifacts...
 -- Java files
 D:\Desenvolvimento\Projetos Github\A executar\[332185] oshi-oshi\oshi-core\src\main\java\oshi\package-info.java
 D:\Desenvolvimento\Projetos Github\A executar\[332185] oshi-oshi\oshi-core\src\main\java\oshi\PlatformEnum.java
